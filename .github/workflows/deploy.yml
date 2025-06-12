@@ -1,3 +1,4 @@
+# .github/workflows/deploy.yml
 name: Deploy
 
 on:
@@ -9,23 +10,27 @@ jobs:
   deploy:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
+
+    # 🔑 add actions:read so we can fetch the artifact
     permissions:
       pages: write
-      id-token: write          # required by deploy-pages action
+      id-token: write
+      actions: read       # <-- this line is the key fix
+
     environment:
       name: github-pages
-      url:  ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
-      # ⬇️ grab the artifact from the CI run that triggered this workflow
-      - uses: actions/download-artifact@v4
+      - name: Download github-pages artifact from CI run
+        uses: actions/download-artifact@v4
         with:
-          name: github-pages              # must match the upload name
-          run-id: ${{ github.event.workflow_run.id }}  # <- critical!
+          name: github-pages
+          run-id: ${{ github.event.workflow_run.id }}
           path: ./dist
 
-      # ⬆️ publish ./dist to Pages
-      - uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
         id: deploy
+        uses: actions/deploy-pages@v4
         with:
           source: ./dist
