@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Deploy
 
 on:
@@ -18,12 +17,14 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
+      # ⬇️ Fetch the artifact produced by the CI run that triggered this workflow
       - uses: actions/download-artifact@v4
         with:
           name: github-pages
-          run-id: ${{ github.event.workflow_run.id }}   # ← add this line
+          run-id: ${{ github.event.workflow_run.id }}
           path: ./dist
 
+      # ⬇️ Publish the contents of ./dist to GitHub Pages
       - uses: actions/deploy-pages@v4
         id: deploy
         with:
