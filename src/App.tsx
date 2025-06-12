@@ -1,35 +1,42 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
+import { ChakraProvider, Flex, Center, Spinner } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+import type { Painting } from './types/labels';
+import PaintingViewer from './components/PaintingViewer';
+import Sidebar from './components/Sidebar';
 
-function App() {
-  const [count, setCount] = useState(0);
+export default function App() {
+  const [data, setData] = useState<Painting | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch('/data/nightwatch.labels.json')
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
+      .then(setData)
+      .catch((e) => setError(e.message));
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ChakraProvider>
+      {error ? (
+        <Center h="100vh" color="red.500">
+          Error: {error}
+        </Center>
+      ) : !data ? (
+        <Center h="100vh">
+          <Spinner size="xl" />
+        </Center>
+      ) : (
+        <Flex h="100vh">
+          <PaintingViewer
+            src="/images/nightwatch.jpg"
+            alt={data.painting.title}
+          />
+          <Sidebar labels={data.labels} />
+        </Flex>
+      )}
+    </ChakraProvider>
   );
 }
-
-export default App;
