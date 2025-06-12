@@ -22,10 +22,10 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
-      - name: Download github-pages artifact from CI run
+      - name: Download Pages artifact from CI run
         uses: actions/download-artifact@v4
         with:
-          name: github-pages
+          name: pages
           run-id: ${{ github.event.workflow_run.id }}
           path: ./dist
 
