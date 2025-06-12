@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "format": "prettier --check .",
-    "test": "vitest",
+    "test": "vitest --run --passWithNoTests",
     "prepare": "husky install"
   },
   "lint-staged": {
