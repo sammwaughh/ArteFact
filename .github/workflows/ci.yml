@@ -20,12 +20,9 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run test
-      - run: npm run build          # → creates ./dist
+      - run: npm run build
 
-      # ⬇️ explicitly upload the built site
-      - name: Upload Pages artifact
-        uses: actions/upload-artifact@v4
+      # 📦 upload the build for Pages; default name is “github-pages”
+      - uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages        # MUST match the download name
-          path: ./dist              # folder to publish
-          retention-days: 1         # keep it just long enough for Deploy
+          path: dist
