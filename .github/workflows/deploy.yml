@@ -17,14 +17,11 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
-      # ⬇️ Fetch the artifact produced by the CI run that triggered this workflow
       - uses: actions/download-artifact@v4
         with:
-          name: github-pages
-          run-id: ${{ github.event.workflow_run.id }}
+          name: github-pages        # must match the upload step
           path: ./dist
 
-      # ⬇️ Publish the contents of ./dist to GitHub Pages
       - uses: actions/deploy-pages@v4
         id: deploy
         with:
