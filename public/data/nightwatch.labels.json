@@ -1,0 +1,21 @@
+{
+  "painting": {
+    "title": "The Night Watch",
+    "artist": "Rembrandt van Rijn",
+    "year": "1642",
+    "image": "images/nightwatch.jpg"
+  },
+  "labels": [
+    {
+      "id": "l1",
+      "text": "The captain, dressed in black with a red sash, orders his lieutenant to start marching.",
+      "confidence": 0.82,
+      "source": {
+        "title": "Rembrandt and Civic Guard Portraits",
+        "authors": "Smith J.",
+        "year": 2015,
+        "doi": "10.1234/abc.5678"
+      }
+    }
+  ]
+}
