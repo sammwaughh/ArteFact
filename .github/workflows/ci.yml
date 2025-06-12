@@ -1,3 +1,4 @@
+# .github/workflows/ci.yml  (single source of truth for build + deploy)
 name: CI
 
 on:
@@ -6,7 +7,8 @@ on:
   pull_request:
 
 jobs:
-  build-test-lint:
+  # ---------- Build / test / lint ----------
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,10 +21,30 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
-      - run: npm run test
-      - run: npm run build
+      - run: npm run test     # vitest → passes even w/ no tests
+      - run: npm run build    # outputs files in dist/
 
-      # 📦 upload the build for Pages; default name is “github-pages”
+      # Upload dist/ → artifact called “github-pages”
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+
+  # ---------- Deploy to GitHub Pages ----------
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    # minimum perms for a Pages publish
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages        # creates the special Pages env
+      url:  ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      - name: Deploy to Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+        # no other inputs needed – it automatically grabs the
+        # “github-pages” artifact from the *same* workflow run
