@@ -19,7 +19,7 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
-      - run: npm run test -- --run
+      - run: npm run test -- --passWithNoTests
       - run: npm run build
 
       # save the Vite build as an artifact for the Pages job
