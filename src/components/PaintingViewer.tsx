@@ -24,7 +24,7 @@ export default function PaintingViewer({ src, alt }: Props) {
         maxH="100%"
         maxW="100%"
         objectFit="contain"
-        fallbackSrc="/vite.svg"
+        fallbackSrc={`${import.meta.env.BASE_URL}vite.svg`}
       />
     </Box>
   );

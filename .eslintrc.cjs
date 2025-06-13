@@ -1,6 +1,7 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
+
   parser: '@typescript-eslint/parser',
   parserOptions: { project: './tsconfig.eslint.json' },
 
@@ -8,7 +9,7 @@ module.exports = {
     '@typescript-eslint',
     'react',
     'react-hooks',
-    'import'          // <<-- loads the import rules
+    'import'            // import-plugin rules
   ],
 
   extends: [
@@ -26,10 +27,23 @@ module.exports = {
   },
 
   rules: {
-    // modern React: no need to import React in scope
+    // modern React: no need to put React in scope
     'react/react-in-jsx-scope': 'off',
 
-    // target="_blank" rule is too strict for MVP; re-enable later if desired
+    // loosen target="_blank" warning for early prototypes
     'react/jsx-no-target-blank': 'off'
-  }
+  },
+
+  // 👉 NEW: allow devDependencies in build-config files
+  overrides: [
+    {
+      files: ['vite.config.*'],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          { devDependencies: true }
+        ]
+      }
+    }
+  ]
 };
