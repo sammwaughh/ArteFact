@@ -3,8 +3,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]          # build + deploy on main pushes
   pull_request:
+    branches: [ main ]          # build only on PRs
 
 jobs:
   # ---------- Build / test / lint ----------
@@ -21,10 +22,10 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
-      - run: npm run test     # vitest → passes even w/ no tests
-      - run: npm run build    # outputs files in dist/
+      - run: npm run test        # Vitest (passes even with no tests yet)
+      - run: npm run build       # outputs files in dist/
 
-      # Upload dist/ → artifact called “github-pages”
+      # Upload dist/ as an artifact called “github-pages”
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
@@ -32,19 +33,20 @@ jobs:
   # ---------- Deploy to GitHub Pages ----------
   deploy:
     needs: build
+    # ⬇️  Skip deploy for PRs — run only on direct pushes to main
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
-    # minimum perms for a Pages publish
+
+    # Minimum perms for a Pages publish
     permissions:
       pages: write
       id-token: write
 
     environment:
-      name: github-pages        # creates the special Pages env
+      name: github-pages
       url:  ${{ steps.deploy.outputs.page_url }}
 
     steps:
       - name: Deploy to Pages
         id: deploy
         uses: actions/deploy-pages@v4
-        # no other inputs needed – it automatically grabs the
-        # “github-pages” artifact from the *same* workflow run
