@@ -11,6 +11,15 @@ export default function App() {
   // import.meta.env.BASE_URL is injected at build time and never changes
   const BASE = import.meta.env.BASE_URL;
 
+  // ▶ NEW: set tab title
+  useEffect(() => {
+    if (data?.painting?.title) {
+      document.title = `${data.painting.title} – ArtContext Viewer`;
+    } else {
+      document.title = 'ArtContext Viewer';
+    }
+  }, [data]);
+
   useEffect(() => {
     fetch(`${BASE}data/nightwatch.labels.json`)
       .then((r) => {
