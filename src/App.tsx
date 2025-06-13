@@ -1,4 +1,11 @@
-import { ChakraProvider, Flex, Center, Spinner } from '@chakra-ui/react';
+import {
+  ChakraProvider,
+  Flex,
+  Center,
+  Spinner,
+  Heading,
+  Box,
+} from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import type { Painting } from './types/labels';
 import PaintingViewer from './components/PaintingViewer';
@@ -11,7 +18,7 @@ export default function App() {
   // import.meta.env.BASE_URL is injected at build time and never changes
   const BASE = import.meta.env.BASE_URL;
 
-  // ▶ NEW: set tab title
+  // ▶ set tab title
   useEffect(() => {
     if (data?.painting?.title) {
       document.title = `${data.painting.title} – ArtContext Viewer`;
@@ -32,23 +39,34 @@ export default function App() {
 
   return (
     <ChakraProvider>
-      {error ? (
-        <Center h="100vh" color="red.500">
-          Error: {error}
-        </Center>
-      ) : !data ? (
-        <Center h="100vh">
-          <Spinner size="xl" />
-        </Center>
-      ) : (
-        <Flex h="100vh">
-          <PaintingViewer
-            src={`${BASE}images/nightwatch.jpg`}
-            alt={data.painting.title}
-          />
-          <Sidebar labels={data.labels} />
-        </Flex>
-      )}
+      {/* Column layout: header at top, main area fills the rest */}
+      <Flex direction="column" h="100vh">
+        {/* --- HEADER --- */}
+        <Box as="header" p={4} borderBottomWidth="1px">
+          <Heading as="h1" size="lg">
+            ArtContext Viewer
+          </Heading>
+        </Box>
+
+        {/* --- MAIN AREA --- */}
+        {error ? (
+          <Center flex="1" color="red.500">
+            Error: {error}
+          </Center>
+        ) : !data ? (
+          <Center flex="1">
+            <Spinner size="xl" />
+          </Center>
+        ) : (
+          <Flex flex="1">
+            <PaintingViewer
+              src={`${BASE}images/nightwatch.jpg`}
+              alt={data.painting.title}
+            />
+            <Sidebar labels={data.labels} />
+          </Flex>
+        )}
+      </Flex>
     </ChakraProvider>
   );
 }
