@@ -3,8 +3,8 @@ import {
   Flex,
   Center,
   Spinner,
-  Heading,
   Box,
+  Image,
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import type { Painting } from './types/labels';
@@ -43,9 +43,12 @@ export default function App() {
       <Flex direction="column" h="100vh">
         {/* --- HEADER --- */}
         <Box as="header" p={4} borderBottomWidth="1px">
-          <Heading as="h1" size="lg">
-            ArtContext Viewer
-          </Heading>
+          <Image
+            src={`${BASE}images/ArteFact.png`}
+            alt="ArteFact"
+            h="40px"
+            objectFit="contain"
+          />
         </Box>
 
         {/* --- MAIN AREA --- */}
