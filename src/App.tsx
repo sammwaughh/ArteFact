@@ -44,7 +44,7 @@ export default function App() {
         {/* --- HEADER --- */}
         <Box as="header" p={4} borderBottomWidth="1px">
           <Image
-            src={`${BASE}images/ArteFact.png`}
+            src={`${BASE}images/logo-16-9.JPEG`}
             alt="ArteFact"
             h="80px"
             objectFit="contain"
