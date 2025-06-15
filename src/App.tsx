@@ -6,11 +6,13 @@ import {
   Heading,
   Box,
   Text,
+  Image,
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import type { Painting } from './types/labels';
 import PaintingViewer from './components/PaintingViewer';
 import Sidebar from './components/Sidebar';
+import artefactLogo from './assets/artefact-logo.svg';
 
 export default function App() {
   const [data, setData] = useState<Painting | null>(null);
@@ -47,15 +49,13 @@ export default function App() {
           <Flex align="center" justify="space-between">
             {/* ArteFact Logo */}
             <Flex align="center" gap={2}>
-              <Text
-                fontSize="xl"
-                fontWeight="bold"
-                color="purple.600"
-                fontFamily="serif"
-                letterSpacing="wide"
-              >
-                ArteFact
-              </Text>
+              <Image
+                src={artefactLogo}
+                alt="ArteFact Logo"
+                height="32px"
+                width="32px"
+                // TODO: Replace placeholder logo with actual ArteFact logo file
+              />
               <Text fontSize="sm" color="gray.500">
                 📜
               </Text>
