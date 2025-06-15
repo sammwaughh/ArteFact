@@ -4,6 +4,8 @@
 
 A modern web application for viewing paintings with contextual academic annotations and labels. Built with React and TypeScript, this viewer displays artwork alongside scholarly interpretations, confidence ratings, and academic source citations.
 
+View the MVP GitHub Pages site here [ArteFact](https://sammwaughh.github.io/viewer-v1/)
+
 ## Features
 
 - **Interactive Art Viewing**: Full-screen painting display with responsive image scaling
