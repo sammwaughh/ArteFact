@@ -46,7 +46,7 @@ export default function App() {
           <Image
             src={`${BASE}images/ArteFact.png`}
             alt="ArteFact"
-            h="40px"
+            h="80px"
             objectFit="contain"
           />
         </Box>
