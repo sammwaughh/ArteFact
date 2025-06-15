@@ -1,5 +1,7 @@
 # ArtContext Viewer
 
+![ArtContext Viewer Logo](public/images/ArteFact.png)
+
 A modern web application for viewing paintings with contextual academic annotations and labels. Built with React and TypeScript, this viewer displays artwork alongside scholarly interpretations, confidence ratings, and academic source citations.
 
 ## Features
