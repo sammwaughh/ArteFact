@@ -21,9 +21,9 @@ export default function App() {
   // ▶ set tab title
   useEffect(() => {
     if (data?.painting?.title) {
-      document.title = `${data.painting.title} – ArtContext Viewer`;
+      document.title = `${data.painting.title} – Viewer`;
     } else {
-      document.title = 'ArtContext Viewer';
+      document.title = 'ArteFact Viewer';
     }
   }, [data]);
 
