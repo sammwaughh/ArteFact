@@ -5,6 +5,7 @@ import {
   Spinner,
   Heading,
   Box,
+  Text,
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import type { Painting } from './types/labels';
@@ -43,9 +44,31 @@ export default function App() {
       <Flex direction="column" h="100vh">
         {/* --- HEADER --- */}
         <Box as="header" p={4} borderBottomWidth="1px">
-          <Heading as="h1" size="lg">
-            ArtContext Viewer
-          </Heading>
+          <Flex align="center" justify="space-between">
+            {/* ArteFact Logo */}
+            <Flex align="center" gap={2}>
+              <Text
+                fontSize="xl"
+                fontWeight="bold"
+                color="purple.600"
+                fontFamily="serif"
+                letterSpacing="wide"
+              >
+                ArteFact
+              </Text>
+              <Text fontSize="sm" color="gray.500">
+                📜
+              </Text>
+            </Flex>
+
+            {/* Main Title */}
+            <Heading as="h1" size="lg" flex="1" textAlign="center">
+              ArtContext Viewer
+            </Heading>
+
+            {/* Spacer for balance */}
+            <Box w="80px" />
+          </Flex>
         </Box>
 
         {/* --- MAIN AREA --- */}
