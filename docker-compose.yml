@@ -1,0 +1,20 @@
+services:
+  runner-svc:
+    build: ./services/runner
+    command: echo "Runner service placeholder - exiting cleanly"
+    volumes:
+      - runs:/runs
+
+  worker:
+    build: ./services/runner
+    command: echo "Worker service placeholder - exiting cleanly"
+    volumes:
+      - runs:/runs
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  runs:
