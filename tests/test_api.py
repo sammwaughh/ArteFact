@@ -6,8 +6,8 @@ from moto import mock_s3, mock_dynamodb
 import boto3
 import json
 
-from services.runner.app import app
-from services.runner.constants import ARTIFACT_BUCKET, RUNS_TABLE
+from hc_services.runner.app import app
+from hc_services.runner.constants import ARTIFACT_BUCKET, RUNS_TABLE
 
 @mock_s3
 @mock_dynamodb
