@@ -1,0 +1,51 @@
+name: deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      SPA_BUCKET: ${{ secrets.SPA_BUCKET }}
+      ECR_REPO:   ${{ secrets.ECR_REPO }}
+      CLUSTER:    ${{ secrets.CLUSTER }}
+      RUNNER_SERVICE:  ${{ secrets.RUNNER_SERVICE }}
+      WORKER_SERVICE:  ${{ secrets.WORKER_SERVICE }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # ------ Front‑end ----------------------------------------------------
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with: { node-version: 20 }
+
+      - run: |
+          cd viewer
+          npm ci
+          npm run build
+
+      - name: Upload SPA to S3
+        run: |
+          aws s3 sync viewer/dist "s3://${SPA_BUCKET}" --delete
+
+      # ------ Back‑end image ----------------------------------------------
+      - name: Login to ECR
+        run: |
+          aws ecr get-login-password --region $AWS_REGION \
+            | docker login --username AWS --password-stdin $ECR_REPO
+
+      - name: Build & push image
+        run: |
+          docker build -t $ECR_REPO:${{ github.sha }} -f services/runner/Dockerfile .
+          docker push $ECR_REPO:${{ github.sha }}
+
+      # ------ ECS rollout --------------------------------------------------
+      - name: Update ECS services
+        run: |
+          aws ecs update-service --cluster $CLUSTER \
+            --service $RUNNER_SERVICE --force-new-deployment
+          aws ecs update-service --cluster $CLUSTER \
+            --service $WORKER_SERVICE --force-new-deployment
