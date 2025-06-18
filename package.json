@@ -1,0 +1,31 @@
+{
+  "name": "viewer-v1",
+  "version": "1.0.0",
+  "description": "![ArteFact Logo](public/images/logo-16-9.JPEG)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammwaughh/viewer-v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sammwaughh/viewer-v1/issues"
+  },
+  "homepage": "https://github.com/sammwaughh/viewer-v1#readme",
+  "devDependencies": {
+    "aws-cdk-lib": "^2.201.0",
+    "constructs": "^10.4.2",
+    "jest": "^30.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
