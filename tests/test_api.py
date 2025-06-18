@@ -2,6 +2,13 @@
 Tiny smoke test: starts Flask app w/ test_client + Moto mocks S3 & DDB.
 """
 
+import os
+
+# Dummy creds so boto3 SigV4 presign succeeds under Moto
+os.environ.setdefault("AWS_ACCESS_KEY_ID", "test")
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "test")
+os.environ.setdefault("AWS_DEFAULT_REGION", "us-east-1")
+
 from moto import mock_s3, mock_dynamodb
 import boto3
 import json
