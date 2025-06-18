@@ -1,29 +1,62 @@
-version: "3.9"
+version: "3.9"        # optional, harmless if you keep it
 
 services:
+  # ------------------------------------------------------------------ #
   redis:
     image: redis:7-alpine
-    ports: ["6379:6379"]
+    ports:
+      - "6379:6379"
 
+  # ------------------------------------------------------------------ #
   runner:
     build:
       context: .
-      dockerfile: services/runner/Dockerfile
+      dockerfile: hc_services/runner/Dockerfile   # service Dockerfile
     environment:
+      # Celery broker
       - CELERY_BROKER_URL=redis://redis:6379/0
-    volumes:
-      - ./services/runner:/app  # hot‑reload dev code
-    ports:
-      - "8000:8000"             # if we bind gunicorn later
 
+      # dummy AWS creds for local / Moto runs
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - AWS_DEFAULT_REGION=eu-west-2
+
+      # same constants the code imports from hc_services.runner.constants
+      - ARTIFACT_BUCKET=hc-artifacts
+      - RUNS_TABLE=hc-runs
+      - QUEUE_NAME=hc-artifacts-queue
+    volumes:
+      - .:/app                    # mount whole repo for hot-reload
+    ports:
+      - "8000:8000"               # Flask on host → 8000
+    depends_on:
+      - redis
+
+  # ------------------------------------------------------------------ #
   worker:
     build:
       context: .
-      dockerfile: services/runner/Dockerfile
-    command: ["celery", "-A", "tasks", "worker", "--loglevel=info"]
+      dockerfile: hc_services/runner/Dockerfile
+    command:
+      [
+        "celery",
+        "-A",
+        "hc_services.runner.tasks",   # full module path
+        "worker",
+        "--loglevel=info",
+      ]
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - AWS_DEFAULT_REGION=eu-west-2
+
+      # keep env-vars in sync with runner
+      - ARTIFACT_BUCKET=hc-artifacts
+      - RUNS_TABLE=hc-runs
+      - QUEUE_NAME=hc-artifacts-queue
     volumes:
-      - ./services/runner:/app
+      - .:/app                    # hot-reload worker code
     depends_on:
       - redis
+      - runner                    # start once API image exists
