@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
 
-# Use viewer/ as both NPM prefix (where node_modules live) and lint-staged cwd
-npx --no-install --prefix viewer lint-staged --cwd viewer
+# Put viewer’s local binaries (eslint, prettier, etc.) on PATH
+export PATH="$PWD/viewer/node_modules/.bin:$PATH"
+
+# Run lint-staged against files inside viewer/
+npx --no-install lint-staged --cwd viewer
