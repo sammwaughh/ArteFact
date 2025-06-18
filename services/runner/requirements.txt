@@ -1,1 +1,7 @@
-flask boto3 celery redis torch pillow peft
+flask
+boto3
+celery
+redis
+torch      # heavy; fine for now because inference is stubbed
+pillow
+peft
