@@ -1,5 +1,16 @@
 services:
   # ------------------------------------------------------------------ #
+  localstack:
+    image: localstack/localstack:3          # Local AWS mock (S3/SQS/Dynamo)
+    ports:
+      - "4566:4566"                         # single edge port for every API
+    environment:
+      - SERVICES=s3,sqs,dynamodb            # only what we need
+      - LS_LOG=warn                         # quieter output
+    volumes:
+      - ./localstack-data:/var/lib/localstack   # persist data between runs
+
+  # ------------------------------------------------------------------ #
   redis:
     image: redis:7-alpine
     ports:
@@ -18,6 +29,8 @@ services:
       - AWS_ACCESS_KEY_ID=test
       - AWS_SECRET_ACCESS_KEY=test
       - AWS_DEFAULT_REGION=eu-west-2
+      # point boto3 at LocalStack instead of AWS
+      - AWS_ENDPOINT_URL=http://localstack:4566
 
       # same constants the code imports from hc_services.runner.constants
       - ARTIFACT_BUCKET=hc-artifacts
@@ -26,8 +39,9 @@ services:
     volumes:
       - .:/app                    # mount whole repo for hot-reload
     ports:
-      - "8000:8000"               # Flask on host → 8000
+      - "8000:8000"               # expose Flask
     depends_on:
+      - localstack
       - redis
 
   # ------------------------------------------------------------------ #
@@ -41,13 +55,14 @@ services:
         "-A",
         "hc_services.runner.tasks",   # full module path
         "worker",
-        "--loglevel=info",
+        "--loglevel=info"
       ]
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - AWS_ACCESS_KEY_ID=test
       - AWS_SECRET_ACCESS_KEY=test
       - AWS_DEFAULT_REGION=eu-west-2
+      - AWS_ENDPOINT_URL=http://localstack:4566   # hit LocalStack
 
       # keep env-vars in sync with runner
       - ARTIFACT_BUCKET=hc-artifacts
@@ -56,5 +71,6 @@ services:
     volumes:
       - .:/app                    # hot-reload worker code
     depends_on:
+      - localstack
       - redis
       - runner                    # start once API image exists
