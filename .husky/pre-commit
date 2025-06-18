@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
 
-cd viewer           # <── added
-npx lint-staged     # runs with viewer/node_modules
+# Run lint-staged as if viewer/ were the repo root
+npx --no-install lint-staged --cwd viewer
