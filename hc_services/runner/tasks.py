@@ -10,12 +10,12 @@ from tempfile import NamedTemporaryFile
 import boto3
 from celery import Celery
 
-from constants import (
+from .constants import (
     ARTIFACT_BUCKET,
     RUNS_TABLE,
     QUEUE_NAME,
 )
-from inference import run_inference
+from .inference import run_inference
 
 # ----------------------------------------------------------------------
 BROKER_URL = os.getenv("CELERY_BROKER_URL", "redis://localhost")  # dev default
@@ -24,7 +24,7 @@ celery = Celery(__name__, broker=BROKER_URL)
 
 # AWS clients (inside worker container)
 _s3       = boto3.client("s3")
-_dynamodb = boto3.resource("dynamodb")
+_dynamodb = boto3.resource("dynamodb", region_name="eu-west-2")
 _table    = _dynamodb.Table(RUNS_TABLE)
 
 
