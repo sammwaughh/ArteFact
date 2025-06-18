@@ -1,18 +1,18 @@
 """
-Tiny smoke test: starts Flask app w/ test_client + Moto mocks S3 & DynamoDB.
+Tiny smoke test: starts Flask app w/ test_client + Moto mocks
+S3 - DynamoDB - SQS.
 
-The test region **must** match the service’s hard-coded `_REGION = "eu-west-2"`
-(otherwise Moto will create resources in the wrong partition and the service
-will fail with ResourceNotFound).
+⚠️ The test region **must** match the constant in the runner service
+(`_REGION = "eu-west-2"`). Moto resources created in a different region
+won’t be visible to the code under test.
 """
-
 from __future__ import annotations
 
 import os
 import json
 
 # --------------------------------------------------------------------------- #
-#  Configure dummy credentials & default region for boto3                     #
+#  Dummy credentials + default region so SigV4 & boto3 don’t error            #
 # --------------------------------------------------------------------------- #
 _REGION = "eu-west-2"  # keep in sync with hc_services.runner.app
 
@@ -21,21 +21,30 @@ os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "test")
 os.environ.setdefault("AWS_DEFAULT_REGION", _REGION)
 
 # --------------------------------------------------------------------------- #
-from moto import mock_s3, mock_dynamodb  # noqa: E402  (import after env vars)
+#  Third-party                                                               #
+# --------------------------------------------------------------------------- #
+from moto import mock_s3, mock_dynamodb, mock_sqs  # ← SQS added
 import boto3
+
+#  Local imports (after env vars are set)                                     #
 from hc_services.runner.app import app
-from hc_services.runner.constants import ARTIFACT_BUCKET, RUNS_TABLE
+from hc_services.runner.constants import (
+    ARTIFACT_BUCKET,
+    RUNS_TABLE,
+    QUEUE_NAME,
+)
 
 # --------------------------------------------------------------------------- #
 @mock_s3
 @mock_dynamodb
+@mock_sqs
 def test_presign_and_create_run() -> None:
-    """Happy-path: presign upload → create run → 202 Accepted."""
+    """Happy-path: /presign then /runs returns 202 Accepted."""
     # -- Moto infra ---------------------------------------------------------
     s3 = boto3.client("s3", region_name=_REGION)
     s3.create_bucket(
-    Bucket=ARTIFACT_BUCKET,
-    CreateBucketConfiguration={"LocationConstraint": _REGION},  # NEW ✔
+        Bucket=ARTIFACT_BUCKET,
+        CreateBucketConfiguration={"LocationConstraint": _REGION},
     )
 
     ddb = boto3.client("dynamodb", region_name=_REGION)
@@ -46,6 +55,9 @@ def test_presign_and_create_run() -> None:
         BillingMode="PAY_PER_REQUEST",
     )
 
+    sqs = boto3.client("sqs", region_name=_REGION)
+    sqs.create_queue(QueueName=QUEUE_NAME)  # required by /runs endpoint
+
     # -- Flask client -------------------------------------------------------
     client = app.test_client()
 
@@ -55,6 +67,5 @@ def test_presign_and_create_run() -> None:
     assert "runId" in data
 
     run_id, s3_key = data["runId"], data["s3Key"]
-
     create_resp = client.post("/runs", json={"runId": run_id, "s3Key": s3_key})
     assert create_resp.status_code == 202
