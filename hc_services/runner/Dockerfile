@@ -26,7 +26,12 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY hc_services/runner /app
 
 # ---------- Entrypoint -------------------------------------------------
-# The CMD is overridden in docker-compose / ECS Task-Definitions:
-#   • Runner API  → default below
-#   • Worker      → ["celery", "-A", "tasks", "worker", "--loglevel=info"]
-CMD ["python", "app.py"]
+# We now run the Flask API as a *module* so Python finds it inside the
+# package we renamed to `hc_services`.  The same image is reused for the
+# Celery worker:
+#
+#   • Runner API  → default CMD below
+#   • Worker      → override with:
+#       ["celery", "-A", "hc_services.runner.tasks", "worker", "--loglevel=info"]
+#
+CMD ["python", "-m", "hc_services.runner.app"]
