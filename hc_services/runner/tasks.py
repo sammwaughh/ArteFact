@@ -23,7 +23,7 @@ BROKER_URL = os.getenv("CELERY_BROKER_URL", "redis://localhost")  # dev default
 celery = Celery(__name__, broker=BROKER_URL)
 
 # AWS clients (inside worker container)
-_s3       = boto3.client("s3")
+_s3        = boto3.client("s3",  region_name="eu-west-2")
 _dynamodb = boto3.resource("dynamodb", region_name="eu-west-2")
 _table    = _dynamodb.Table(RUNS_TABLE)
 

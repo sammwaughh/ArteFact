@@ -24,7 +24,7 @@ app = Flask(__name__)
 _s3          = boto3.client("s3", region_name="eu-west-2")  # adjust region
 _dynamodb = boto3.resource("dynamodb", region_name="eu-west-2")
 _table       = _dynamodb.Table(RUNS_TABLE)
-_sqs         = boto3.client("sqs")
+_sqs       = boto3.client("sqs", region_name="eu-west-2")  
 _queue_url   = _sqs.get_queue_url(QueueName=QUEUE_NAME)["QueueUrl"]
 
 # Health‑check for ALB --------------------------------------------------
