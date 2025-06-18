@@ -33,7 +33,10 @@ def test_presign_and_create_run() -> None:
     """Happy-path: presign upload → create run → 202 Accepted."""
     # -- Moto infra ---------------------------------------------------------
     s3 = boto3.client("s3", region_name=_REGION)
-    s3.create_bucket(Bucket=ARTIFACT_BUCKET)
+    s3.create_bucket(
+    Bucket=ARTIFACT_BUCKET,
+    CreateBucketConfiguration={"LocationConstraint": _REGION},  # NEW ✔
+    )
 
     ddb = boto3.client("dynamodb", region_name=_REGION)
     ddb.create_table(
