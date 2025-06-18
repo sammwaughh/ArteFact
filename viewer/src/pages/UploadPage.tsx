@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useUploadAndRun } from '../hooks';
-import ImageWithOverlays, { Label } from '../components/ImageWithOverlays';
+import ImageWithOverlays, { type Label } from '../components/ImageWithOverlays';
 
-/* Helper component declared first to avoid use-before-define rule */
+/* Helper component declared first to obey no-use-before-define */
 function ViewerInner({
   labels,
   imageUrl,

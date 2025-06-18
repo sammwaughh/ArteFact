@@ -2,13 +2,18 @@
  * React hooks that orchestrate upload → run → poll.
  */
 
-import { useEffect, useState } from 'react';
-import { requestPresign, createRun, getRun, RunStatus } from './api';
+import { useEffect, useState, Dispatch, SetStateAction } from 'react';
+import {
+  requestPresign,
+  createRun,
+  getRun,
+  type RunStatus, // ⬅ type-only import
+} from './api';
 
 interface UseUploadAndRunState {
   runId?: string;
   status?: RunStatus['status'];
-  labels?: unknown[]; // was any[]
+  labels?: unknown[];
   imageUrl?: string;
   error?: Error;
 }
@@ -17,7 +22,7 @@ interface UseUploadAndRunState {
 /** Polls the back-end every `intervalMs` until the run is done. */
 function usePollRun(
   runId: string | undefined,
-  setState: (s: UseUploadAndRunState) => void,
+  setState: Dispatch<SetStateAction<UseUploadAndRunState>>,
   intervalMs = 3000,
 ) {
   useEffect(() => {
@@ -26,6 +31,7 @@ function usePollRun(
     const id = setInterval(async () => {
       try {
         const run = await getRun(runId);
+
         if (run.status === 'done' && run.outputKey) {
           clearInterval(id);
 
@@ -41,6 +47,7 @@ function usePollRun(
             imageUrl: `${base}/artifacts/${runId}.jpg`,
           });
         } else {
+          // updater-function keeps TS happy
           setState((prev) => ({ ...prev, status: run.status }));
         }
       } catch (err: unknown) {
@@ -66,11 +73,13 @@ export function useUploadAndRun(file: File | null): UseUploadAndRunState {
     (async () => {
       try {
         const { runId, uploadUrl, s3Key } = await requestPresign(file.name);
+
         await fetch(uploadUrl, {
           method: 'PUT',
           headers: { 'Content-Type': file.type },
           body: file,
         });
+
         await createRun(runId, s3Key);
         setState({ runId, status: 'queued' });
       } catch (err: unknown) {
