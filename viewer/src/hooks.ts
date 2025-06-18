@@ -2,12 +2,13 @@
  * React hooks that orchestrate upload → run → poll.
  */
 
-import { useEffect, useState, Dispatch, SetStateAction } from 'react';
+import { useEffect, useState } from 'react';
+import type { Dispatch, SetStateAction } from 'react'; // ← type-only import
 import {
   requestPresign,
   createRun,
   getRun,
-  type RunStatus, // ⬅ type-only import
+  type RunStatus, // ← type-only
 } from './api';
 
 interface UseUploadAndRunState {
