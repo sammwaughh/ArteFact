@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+
+  runner:
+    build:
+      context: .
+      dockerfile: services/runner/Dockerfile
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+    volumes:
+      - ./services/runner:/app  # hot‑reload dev code
+    ports:
+      - "8000:8000"             # if we bind gunicorn later
+
+  worker:
+    build:
+      context: .
+      dockerfile: services/runner/Dockerfile
+    command: ["celery", "-A", "tasks", "worker", "--loglevel=info"]
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+    volumes:
+      - ./services/runner:/app
+    depends_on:
+      - redis
