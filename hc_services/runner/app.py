@@ -130,3 +130,11 @@ def get_run(run_id: str):
     if "Item" not in resp:
         return jsonify({"error": "not-found"}), 404
     return jsonify(resp["Item"])
+
+# ----------------------------------------------------------------------
+# Launch the API if the module is executed as a script
+# (that’s what `python -m hc_services.runner.app` does in the container).
+if __name__ == "__main__":
+    # Listen on all interfaces so Docker can expose the port
+    # Port 8000 matches the mapping in docker-compose.yml
+    app.run(host="0.0.0.0", port=8000, debug=False)
