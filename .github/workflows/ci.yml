@@ -23,7 +23,7 @@ jobs:
           --health-cmd="curl -fs http://localhost:4566 || exit 1"
           --health-interval=5s
           --health-timeout=3s
-          --health-retries=20        # waits up to ~100 s – plenty now
+          --health-retries=20
 
     # ── Steps ───────────────────────────────────────────────────────────────────
     steps:
