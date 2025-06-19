@@ -11,20 +11,14 @@ services:
       - ./localstack-data:/var/lib/localstack   # persist data between runs
 
   # ------------------------------------------------------------------ #
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
-
-  # ------------------------------------------------------------------ #
   runner:
     build:
       context: .
       dockerfile: hc_services/runner/Dockerfile   # service Dockerfile
     environment:
-      # Celery broker
-      - CELERY_BROKER_URL=redis://redis:6379/0
-
+      # Celery → SQS (LocalStack)
+      - CELERY_BROKER_URL=sqs://
+      - CELERY_BROKER_TRANSPORT_OPTIONS={"region":"eu-west-2","queue_name_prefix":"","visibility_timeout":30}
       # dummy AWS creds for local / Moto runs
       - AWS_ACCESS_KEY_ID=test
       - AWS_SECRET_ACCESS_KEY=test
@@ -42,7 +36,6 @@ services:
       - "8000:8000"               # expose Flask
     depends_on:
       - localstack
-      - redis
 
   # ------------------------------------------------------------------ #
   worker:
@@ -58,7 +51,8 @@ services:
         "--loglevel=info"
       ]
     environment:
-      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=sqs://
+      - CELERY_BROKER_TRANSPORT_OPTIONS={"region":"eu-west-2","queue_name_prefix":"","visibility_timeout":30}
       - AWS_ACCESS_KEY_ID=test
       - AWS_SECRET_ACCESS_KEY=test
       - AWS_DEFAULT_REGION=eu-west-2
@@ -72,5 +66,4 @@ services:
       - .:/app                    # hot-reload worker code
     depends_on:
       - localstack
-      - redis
       - runner                    # start once API image exists

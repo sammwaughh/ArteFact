@@ -21,6 +21,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 from .constants import ARTIFACT_BUCKET, RUNS_TABLE, QUEUE_NAME
+from .tasks import run_task            # ← add
 
 # --------------------------------------------------------------------------- #
 #  AWS / LocalStack configuration                                             #
@@ -161,10 +162,9 @@ def create_run():
             "updatedAt": now,
         }
     )
-    _sqs.send_message(
-        QueueUrl=_ensure_queue_url(),
-        MessageBody=json.dumps({"runId": run_id, "s3Key": s3_key}),
-    )
+    # hand the work off to Celery (goes via SQS broker)
+    run_task.apply_async(args=[run_id, s3_key], queue=QUEUE_NAME)
+
     return "", 202  # Accepted
 
 # --------------------------------------------------------------------------- #
