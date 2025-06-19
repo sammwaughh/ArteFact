@@ -20,10 +20,10 @@ jobs:
         env:
           SERVICES: s3,sqs,dynamodb
         options: >-
-          --health-cmd="curl -f http://localhost:4566/health || exit 1"
+          --health-cmd="curl -fs http://localhost:4566 || exit 1"
           --health-interval=5s
           --health-timeout=3s
-          --health-retries=20
+          --health-retries=20        # waits up to ~100 s – plenty now
 
     # ── Steps ───────────────────────────────────────────────────────────────────
     steps:
