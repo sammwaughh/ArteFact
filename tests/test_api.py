@@ -33,6 +33,7 @@ os.environ.setdefault("AWS_ACCESS_KEY_ID", "test")
 os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "test")
 os.environ.setdefault("AWS_DEFAULT_REGION", _REGION)
 
+
 # --------------------------------------------------------------------------- #
 @mock_s3
 @mock_dynamodb
