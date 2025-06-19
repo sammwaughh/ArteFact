@@ -13,7 +13,7 @@ import os
 # --------------------------------------------------------------------------- #
 #  Third-party                                                               #
 # --------------------------------------------------------------------------- #
-from moto import mock_s3, mock_dynamodb, mock_sqs  # ← SQS added
+from moto import mock_aws
 import boto3
 
 #  Local imports (after env vars are set)                                     #
@@ -35,9 +35,7 @@ os.environ.setdefault("AWS_DEFAULT_REGION", _REGION)
 
 
 # --------------------------------------------------------------------------- #
-@mock_s3
-@mock_dynamodb
-@mock_sqs
+@mock_aws
 def test_presign_and_create_run() -> None:
     """Happy-path: /presign then /runs returns 202 Accepted."""
     # -- Moto infra ---------------------------------------------------------
