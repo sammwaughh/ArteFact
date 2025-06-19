@@ -4,20 +4,6 @@
 
 Modern web application for analyzing artwork using machine learning models. Upload paintings and get academic annotations, contextual labels, and confidence scores in real-time.
 
-## Architecture
-
-```mermaid
-graph LR
-    SPA[React SPA] -->|PUT| S3[S3 Bucket]
-    SPA -->|POST| Runner[Flask Runner]
-    Runner -->|Queue| SQS[SQS Queue]
-    Worker[Celery Worker] -->|Poll| SQS
-    Worker -->|GET| S3
-    Worker -->|PUT| DDB[DynamoDB]
-    SPA -->|Poll| Runner
-    Runner -->|GET| DDB
-```
-
 ### Components
 
 - **Front-end**: React/TypeScript SPA with real-time status updates
@@ -125,14 +111,3 @@ GitHub Actions workflow:
 - Task retries via Celery
 - DynamoDB status tracking
 - 5-minute SQS visibility timeout
-
-## Contributing
-
-1. Branch from `main`
-2. Make changes
-3. Ensure tests pass locally
-4. Open PR against `main`
-
-## License
-
-MIT
