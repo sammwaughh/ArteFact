@@ -8,18 +8,7 @@ won’t be visible to the code under test.
 """
 
 from __future__ import annotations
-
 import os
-import json
-
-# --------------------------------------------------------------------------- #
-#  Dummy credentials + default region so SigV4 & boto3 don’t error            #
-# --------------------------------------------------------------------------- #
-_REGION = "eu-west-2"  # keep in sync with hc_services.runner.app
-
-os.environ.setdefault("AWS_ACCESS_KEY_ID", "test")
-os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "test")
-os.environ.setdefault("AWS_DEFAULT_REGION", _REGION)
 
 # --------------------------------------------------------------------------- #
 #  Third-party                                                               #
@@ -35,6 +24,14 @@ from hc_services.runner.constants import (
     QUEUE_NAME,
 )
 
+# --------------------------------------------------------------------------- #
+#  Dummy credentials + default region so SigV4 & boto3 don’t error            #
+# --------------------------------------------------------------------------- #
+_REGION = "eu-west-2"  # keep in sync with hc_services.runner.app
+
+os.environ.setdefault("AWS_ACCESS_KEY_ID", "test")
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "test")
+os.environ.setdefault("AWS_DEFAULT_REGION", _REGION)
 
 # --------------------------------------------------------------------------- #
 @mock_s3

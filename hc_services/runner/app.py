@@ -10,7 +10,6 @@ GET  /runs/<runId>
 
 from __future__ import annotations
 
-import json
 import os
 import uuid
 from datetime import datetime
