@@ -2,28 +2,43 @@ name: deploy
 
 on:
   push:
-    branches: [main]
+    branches: [main]          # only prod deploys go via main
+
+permissions:
+  id-token: write             # needed for OIDC → AWS STS
+  contents: read
+
+env:
+  AWS_REGION: eu-west-2       # default; can still override via secret
+  SPA_BUCKET: ${{ secrets.SPA_BUCKET }}
+  ECR_REPO:   ${{ secrets.ECR_REPO }}
+  CLUSTER:    ${{ secrets.CLUSTER }}
+  RUNNER_SERVICE:  ${{ secrets.RUNNER_SERVICE }}
+  WORKER_SERVICE:  ${{ secrets.WORKER_SERVICE }}
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    env:
-      AWS_REGION: ${{ secrets.AWS_REGION }}
-      SPA_BUCKET: ${{ secrets.SPA_BUCKET }}
-      ECR_REPO:   ${{ secrets.ECR_REPO }}
-      CLUSTER:    ${{ secrets.CLUSTER }}
-      RUNNER_SERVICE:  ${{ secrets.RUNNER_SERVICE }}
-      WORKER_SERVICE:  ${{ secrets.WORKER_SERVICE }}
+
     steps:
       - uses: actions/checkout@v4
 
-      # ------ Front‑end ----------------------------------------------------
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with: { node-version: 20 }
+      # ----- AWS creds via OIDC -----
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region:     ${{ env.AWS_REGION }}
 
-      - run: |
-          cd viewer
+      # ----- Front-end -----
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: viewer/package-lock.json
+
+      - name: Build viewer
+        working-directory: viewer
+        run: |
           npm ci
           npm run build
 
@@ -31,21 +46,25 @@ jobs:
         run: |
           aws s3 sync viewer/dist "s3://${SPA_BUCKET}" --delete
 
-      # ------ Back‑end image ----------------------------------------------
-      - name: Login to ECR
+      # ----- Back-end image -----
+      - name: Log in to ECR
         run: |
           aws ecr get-login-password --region $AWS_REGION \
             | docker login --username AWS --password-stdin $ECR_REPO
 
       - name: Build & push image
         run: |
-          docker build -t $ECR_REPO:${{ github.sha }} -f services/runner/Dockerfile .
-          docker push $ECR_REPO:${{ github.sha }}
+          docker build -t $ECR_REPO:${{ github.sha }} \
+                       -t $ECR_REPO:latest \
+                       -f hc_services/runner/Dockerfile .
+          docker push --all-tags $ECR_REPO
 
-      # ------ ECS rollout --------------------------------------------------
+      # ----- ECS rollout -----
       - name: Update ECS services
         run: |
-          aws ecs update-service --cluster $CLUSTER \
-            --service $RUNNER_SERVICE --force-new-deployment
-          aws ecs update-service --cluster $CLUSTER \
-            --service $WORKER_SERVICE --force-new-deployment
+          for svc in "$RUNNER_SERVICE" "$WORKER_SERVICE"; do
+            aws ecs update-service \
+              --cluster "$CLUSTER" \
+              --service "$svc" \
+              --force-new-deployment
+          done

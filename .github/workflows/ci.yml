@@ -1,52 +1,81 @@
-# .github/workflows/ci.yml  (single source of truth for build + deploy)
+# .github/workflows/ci.yml
 name: CI
 
 on:
   push:
-    branches: [ main ]          # build + deploy on main pushes
-  pull_request:
-    branches: [ main ]          # build only on PRs
+    branches: [ main, v2-** ]      # build on the feature branch too
+  pull_request:                     # PRs against main still trigger build
+    branches: [ main ]
 
 jobs:
-  # ---------- Build / test / lint ----------
-  build:
+  build-test:
     runs-on: ubuntu-latest
+
+    # Spin up LocalStack so pytest can talk to S3/SQS/Dynamo
+    services:
+      localstack:
+        image: localstack/localstack:3
+        ports: [ "4566:4566" ]
+        env:
+          SERVICES: s3,sqs,dynamodb
+        options: >-
+          --health-cmd "curl -f http://localhost:4566/health || exit 1"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
       - uses: actions/checkout@v4
 
+      # ---------- Front-end ----------
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: viewer/package-lock.json
 
-      - run: npm ci
-      - run: npm run lint
-      - run: npm run test        # Vitest (passes even with no tests yet)
-      - run: npm run build       # outputs files in dist/
+      - name: Build viewer
+        working-directory: viewer
+        run: |
+          npm ci
+          npm run lint
+          npm run test
+          npm run build
 
-      # Upload dist/ as an artifact called “github-pages”
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
-          path: dist
+          name: spa-dist
+          path: viewer/dist          # << correct output folder
 
-  # ---------- Deploy to GitHub Pages ----------
-  deploy:
-    needs: build
-    # ⬇️  Skip deploy for PRs — run only on direct pushes to main
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      # ---------- Back-end ----------
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Python deps
+        run: |
+          pip install -e .[dev]      # includes pytest, moto, black, flake8, etc.
+
+      - name: Lint & unit tests
+        run: |
+          black --check .
+          flake8 .
+          pytest -q
+
+  # ---------- Optional preview deploy to GitHub Pages ----------
+  pages-preview:
+    needs: build-test
+    if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
 
-    # Minimum perms for a Pages publish
     permissions:
       pages: write
       id-token: write
 
-    environment:
-      name: github-pages
-      url:  ${{ steps.deploy.outputs.page_url }}
-
     steps:
-      - name: Deploy to Pages
-        id: deploy
+      - uses: actions/download-artifact@v4
+        with: { name: spa-dist }
+
+      - id: deploy
         uses: actions/deploy-pages@v4
