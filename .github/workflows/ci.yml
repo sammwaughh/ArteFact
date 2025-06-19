@@ -3,27 +3,29 @@ name: CI
 
 on:
   push:
-    branches: [ main, v2-** ]      # build on the feature branch too
-  pull_request:                     # PRs against main still trigger build
+    branches: [ main, v2-** ]      # build on feature branches too
+  pull_request:                    # PRs against main still trigger build
     branches: [ main ]
 
 jobs:
   build-test:
     runs-on: ubuntu-latest
 
-    # Spin up LocalStack so pytest can talk to S3/SQS/Dynamo
+    # ── LocalStack service container ────────────────────────────────────────────
     services:
       localstack:
         image: localstack/localstack:3
-        ports: [ "4566:4566" ]
+        ports:
+          - "4566:4566"
         env:
           SERVICES: s3,sqs,dynamodb
         options: >-
-          --health-cmd "curl -f http://localhost:4566/health || exit 1"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+          --health-cmd="curl -f http://localhost:4566/health || exit 1"
+          --health-interval=5s
+          --health-timeout=3s
+          --health-retries=20
 
+    # ── Steps ───────────────────────────────────────────────────────────────────
     steps:
       - uses: actions/checkout@v4
 
@@ -75,7 +77,8 @@ jobs:
 
     steps:
       - uses: actions/download-artifact@v4
-        with: { name: spa-dist }
+        with:
+          name: spa-dist
 
       - id: deploy
         uses: actions/deploy-pages@v4
