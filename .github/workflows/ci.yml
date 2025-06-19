@@ -55,6 +55,11 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
+      - name: Set dummy AWS creds for tests
+        run: |
+          echo "AWS_ACCESS_KEY_ID=test" >> $GITHUB_ENV
+          echo "AWS_SECRET_ACCESS_KEY=test" >> $GITHUB_ENV
+
       - name: Install Python deps
         run: |
           pip install -e .[dev]      # includes pytest, moto, black, flake8, etc.

@@ -16,26 +16,38 @@ from datetime import datetime
 from typing import Dict, cast
 
 import boto3
-from botocore.exceptions import ClientError  # ← NEW
+from botocore.exceptions import ClientError
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 from .constants import ARTIFACT_BUCKET, RUNS_TABLE, QUEUE_NAME
-from .tasks import run_task  # ← add
+from .tasks import run_task
 
 # --------------------------------------------------------------------------- #
 #  AWS / LocalStack configuration                                             #
 # --------------------------------------------------------------------------- #
 _REGION = "eu-west-2"
-AWS_ENDPOINT = os.getenv("AWS_ENDPOINT_URL")  # e.g. http://localstack:4566
+# Endpoint for real AWS (None) or LocalStack
+AWS_ENDPOINT = os.getenv("AWS_ENDPOINT_URL")
 
 # --------------------------------------------------------------------------- #
-#  Clients – created once; boto3 is thread-safe                               #
+#  Helper factories – ensure Moto patches clients created *after* mock_aws    #
 # --------------------------------------------------------------------------- #
-_s3 = boto3.client("s3", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
-_sqs = boto3.client("sqs", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
-_dynamodb = boto3.resource("dynamodb", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
-_table = _dynamodb.Table(RUNS_TABLE)
+
+def _s3():
+    return boto3.client("s3", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
+
+
+def _sqs():
+    return boto3.client("sqs", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
+
+
+def _dynamodb():
+    return boto3.resource("dynamodb", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
+
+
+def _table():
+    return _dynamodb().Table(RUNS_TABLE)
 
 
 # --------------------------------------------------------------------------- #
@@ -43,7 +55,7 @@ _table = _dynamodb.Table(RUNS_TABLE)
 # --------------------------------------------------------------------------- #
 def _ensure_bucket() -> None:
     try:
-        _s3.head_bucket(Bucket=ARTIFACT_BUCKET)
+        _s3().head_bucket(Bucket=ARTIFACT_BUCKET)
     except ClientError as err:
         code = err.response.get("Error", {}).get("Code", "")
         if code not in ("NoSuchBucket", "404"):
@@ -52,9 +64,9 @@ def _ensure_bucket() -> None:
         create_kwargs = {"Bucket": ARTIFACT_BUCKET}
         if _REGION != "us-east-1":  # ← NEW
             create_kwargs["CreateBucketConfiguration"] = {"LocationConstraint": _REGION}
-        _s3.create_bucket(**create_kwargs)  # ← pass the dict
+        _s3().create_bucket(**create_kwargs)
         # --- open CORS so the SPA can PUT directly --------------------------
-        _s3.put_bucket_cors(
+        _s3().put_bucket_cors(
             Bucket=ARTIFACT_BUCKET,
             CORSConfiguration={
                 "CORSRules": [
@@ -71,7 +83,7 @@ def _ensure_bucket() -> None:
 
 def _ensure_table() -> None:
     """Create DynamoDB table `hc-runs` in LocalStack if missing."""
-    client = _dynamodb.meta.client
+    client = _dynamodb().meta.client
     try:
         client.describe_table(TableName=RUNS_TABLE)
     except client.exceptions.ResourceNotFoundException:
@@ -94,10 +106,11 @@ if AWS_ENDPOINT:  # only when using LocalStack
 # --------------------------------------------------------------------------- #
 def _ensure_queue_url() -> str:
     if not hasattr(_ensure_queue_url, "_cache"):
+        sqs = _sqs()
         try:
-            url = _sqs.get_queue_url(QueueName=QUEUE_NAME)["QueueUrl"]
-        except _sqs.exceptions.QueueDoesNotExist:
-            url = _sqs.create_queue(QueueName=QUEUE_NAME)["QueueUrl"]
+            url = sqs.get_queue_url(QueueName=QUEUE_NAME)["QueueUrl"]
+        except sqs.exceptions.QueueDoesNotExist:
+            url = sqs.create_queue(QueueName=QUEUE_NAME)["QueueUrl"]
         _ensure_queue_url._cache = url  # type: ignore[attr-defined]
     return cast(str, _ensure_queue_url._cache)  # type: ignore[attr-defined]
 
@@ -127,14 +140,14 @@ def presign_upload():
     filetype = data.get("fileName", "upload.jpg").split(".")[-1].lower()
     mime = "image/jpeg" if filetype in ("jpg", "jpeg") else "image/png"
 
-    upload_url = _s3.generate_presigned_url(
+    upload_url = _s3().generate_presigned_url(
         ClientMethod="put_object",
         Params={"Bucket": ARTIFACT_BUCKET, "Key": key, "ContentType": mime},
         ExpiresIn=15 * 60,
     )
 
     # --- DEV-ONLY tweak: make the URL accessible from the host browser ----------
-    if AWS_ENDPOINT:  # we’re talking to LocalStack
+    if AWS_ENDPOINT:  # we're talking to LocalStack
         public_host = os.getenv("AWS_PUBLIC_ENDPOINT", "http://localhost:4566")
         # internal presign points to  http://localstack:4566/...
         upload_url = upload_url.replace("http://localstack:4566", public_host)
@@ -156,7 +169,7 @@ def create_run():
     s3_key = payload["s3Key"]
     now = datetime.utcnow().isoformat(timespec="seconds")
 
-    _table.put_item(
+    _table().put_item(
         Item={
             "runId": run_id,
             "status": "queued",
@@ -174,7 +187,7 @@ def create_run():
 # --------------------------------------------------------------------------- #
 @app.route("/runs/<run_id>", methods=["GET"])
 def get_run(run_id: str):
-    resp = _table.get_item(Key={"runId": run_id})
+    resp = _table().get_item(Key={"runId": run_id})
     if "Item" not in resp:
         return jsonify({"error": "not-found"}), 404
     return jsonify(resp["Item"])
