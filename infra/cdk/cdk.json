@@ -1,0 +1,6 @@
+{
+  "app": "ts-node --prefer-ts-exts app.ts",
+  "context": {
+    "aws-cdk:enableDiffNoFail": "true"
+  }
+}

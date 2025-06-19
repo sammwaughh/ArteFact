@@ -18,6 +18,7 @@ import {
   LogDriver,
   FargateService,
   Protocol,
+  Compatibility,           // ← add
 } from "aws-cdk-lib/aws-ecs";
 import {
   Queue,
@@ -36,7 +37,7 @@ import {
 import {
   Repository,
 } from "aws-cdk-lib/aws-ecr";
-import { Bucket } from "aws-cdk-lib/aws-s3";
+import { Bucket, BucketEncryption } from "aws-cdk-lib/aws-s3";
 
 export class EcsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -53,9 +54,17 @@ export class EcsStack extends Stack {
     // ECS Cluster -----------------------------------------------------------
     const cluster = new Cluster(this, "Cluster", { vpc });
 
+    // S3 artefact bucket ----------------------------------------------------
+    const artifactsBucket = new Bucket(this, "ArtifactsBucket", {
+      bucketName: "hc-artifacts",
+      encryption: BucketEncryption.S3_MANAGED,
+      removalPolicy: RemovalPolicy.RETAIN,      // keep data if stack deleted
+    });
+
     // SQS queue -------------------------------------------------------------
     const queue = new Queue(this, "ArtifactsQueue", {
       queueName: "hc-artifacts-queue",
+      visibilityTimeout: Duration.seconds(300), // 5 min, matches celery
       retentionPeriod: Duration.days(4),
     });
 
@@ -76,14 +85,17 @@ export class EcsStack extends Stack {
     const taskDef = new TaskDefinition(this, "TaskDef", {
       memoryMiB: "1024",
       cpu: "512",
-      compatibility: "FARGATE",
+      compatibility: Compatibility.FARGATE,
     });
 
-    taskDef.addContainer("AppContainer", {
+    const container = taskDef.addContainer("AppContainer", {
       image: ContainerImage.fromEcrRepository(repo, "latest"),
       essential: true,
       logging: LogDriver.awsLogs({ streamPrefix: "runner" }),
-      command: ["python", "app.py"], // overridden for worker‑svc
+      command: ["python", "app.py"],
+      portMappings: [
+        { containerPort: 8000, protocol: Protocol.TCP },   // ← add
+      ],
     });
 
     // ALB + service ---------------------------------------------------------
@@ -108,7 +120,7 @@ export class EcsStack extends Stack {
     });
 
     listener.addTargets("RunnerTG", {
-      port: 5000,
+      port: 8000,                       // match containerPort
       protocol: ApplicationProtocol.HTTP,
       targets: [runnerSvc],
       healthCheck: { path: "/health" },
