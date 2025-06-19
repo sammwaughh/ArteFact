@@ -6,6 +6,7 @@ S3 - DynamoDB - SQS.
 (`_REGION = "eu-west-2"`). Moto resources created in a different region
 won’t be visible to the code under test.
 """
+
 from __future__ import annotations
 
 import os
@@ -33,6 +34,7 @@ from hc_services.runner.constants import (
     RUNS_TABLE,
     QUEUE_NAME,
 )
+
 
 # --------------------------------------------------------------------------- #
 @mock_s3

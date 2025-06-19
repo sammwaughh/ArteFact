@@ -6,7 +6,8 @@ JSON‑serialisable Python objects.  That makes it easy to unit‑test.
 """
 
 from pathlib import Path
-from typing import List, Dict, Any          # add Any
+from typing import List, Dict, Any  # add Any
+
 
 # ----------------------------------------------------------------------
 def run_inference(image_path: str) -> List[Dict[str, Any]]:

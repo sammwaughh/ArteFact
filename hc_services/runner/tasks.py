@@ -4,7 +4,7 @@ Celery configuration + asynchronous job definition (worker‑svc).
 
 import json
 import os
-import time                                  # ← add
+import time  # ← add
 from datetime import datetime
 from tempfile import NamedTemporaryFile
 
@@ -19,7 +19,7 @@ from .constants import (
 from .inference import run_inference
 
 # ----------------------------------------------------------------------
-BROKER_URL = os.getenv("CELERY_BROKER_URL", "sqs://")             # dev default = SQS
+BROKER_URL = os.getenv("CELERY_BROKER_URL", "sqs://")  # dev default = SQS
 
 celery = Celery(__name__, broker=BROKER_URL)
 
@@ -27,17 +27,22 @@ celery = Celery(__name__, broker=BROKER_URL)
 celery.conf.task_default_queue = QUEUE_NAME
 
 # AWS clients (inside worker container)
-_s3        = boto3.client("s3",  region_name="eu-west-2")
+_s3 = boto3.client("s3", region_name="eu-west-2")
 _dynamodb = boto3.resource("dynamodb", region_name="eu-west-2")
-_table    = _dynamodb.Table(RUNS_TABLE)
+_table = _dynamodb.Table(RUNS_TABLE)
 
 FORCE_ERROR = os.getenv("FORCE_ERROR") == "1"
 
-SLEEP_SECS = int(os.getenv("SLEEP_SECS", "0"))   # ← add
+SLEEP_SECS = int(os.getenv("SLEEP_SECS", "0"))  # ← add
+
 
 # ----------------------------------------------------------------------
-@celery.task(name="run_task", autoretry_for=(Exception,), retry_backoff=True,
-             retry_kwargs={"max_retries": 2})
+@celery.task(
+    name="run_task",
+    autoretry_for=(Exception,),
+    retry_backoff=True,
+    retry_kwargs={"max_retries": 2},
+)
 def run_task(run_id: str, s3_key: str) -> None:
     """
     Receive message → run inference → upload labels → update DDB.
@@ -58,7 +63,7 @@ def run_task(run_id: str, s3_key: str) -> None:
         with NamedTemporaryFile(suffix=".jpg") as tmp:
             _s3.download_file(ARTIFACT_BUCKET, s3_key, tmp.name)
 
-        if SLEEP_SECS:                         # simulate slow inference
+        if SLEEP_SECS:  # simulate slow inference
             time.sleep(SLEEP_SECS)
 
         labels = run_inference(tmp.name)
@@ -70,7 +75,8 @@ def run_task(run_id: str, s3_key: str) -> None:
         # 2. upload outputs
         out_key = f"outputs/{run_id}.json"
         with NamedTemporaryFile(suffix=".json", mode="w+") as jf:
-            json.dump(labels, jf); jf.flush()
+            json.dump(labels, jf)
+            jf.flush()
             _s3.upload_file(jf.name, ARTIFACT_BUCKET, out_key)
 
         # 3. mark done
@@ -95,8 +101,8 @@ def run_task(run_id: str, s3_key: str) -> None:
             ExpressionAttributeNames={"#s": "status"},
             ExpressionAttributeValues={
                 ":s": "error",
-                ":e": str(exc)[:500],                       # keep concise
+                ":e": str(exc)[:500],  # keep concise
                 ":t": datetime.utcnow().isoformat(timespec="seconds"),
             },
         )
-        raise   # lets Celery retry up to max_retries
+        raise  # lets Celery retry up to max_retries
