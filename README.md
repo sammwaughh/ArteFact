@@ -1,4 +1,4 @@
-# ArteFact v2
+# ArteFact v2 - EDIT
 
 ![ArteFact Logo](public/images/logo-16-9.JPEG)
 
