@@ -4,4 +4,16 @@ version = "0.0.0"
 requires-python = ">=3.9"
 
 [tool.setuptools.packages.find]
-where = ["hc_services"]   # ← change from "services"
+where = ["hc_services"]      # ← unchanged
+
+# ──────────────────────────────────────────────────────────────
+# Extra dependency groups
+# Install locally with:  pip install -e .[dev]
+# CI workflow already uses this extra.
+[project.optional-dependencies]
+dev = [
+    "black>=24",
+    "flake8>=7",
+    "pytest>=8",
+    "moto[s3,sqs,dynamodb]",
+]
