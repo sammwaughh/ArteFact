@@ -18,7 +18,7 @@ services:
     environment:
       # Celery → SQS (LocalStack)
       - CELERY_BROKER_URL=sqs://
-      - CELERY_BROKER_TRANSPORT_OPTIONS={"region":"eu-west-2","queue_name_prefix":"","visibility_timeout":30}
+      - CELERY_BROKER_TRANSPORT_OPTIONS={"region":"eu-west-2","queue_name_prefix":"","visibility_timeout":300}
       # dummy AWS creds for local / Moto runs
       - AWS_ACCESS_KEY_ID=test
       - AWS_SECRET_ACCESS_KEY=test
@@ -52,7 +52,7 @@ services:
       ]
     environment:
       - CELERY_BROKER_URL=sqs://
-      - CELERY_BROKER_TRANSPORT_OPTIONS={"region":"eu-west-2","queue_name_prefix":"","visibility_timeout":30}
+      - CELERY_BROKER_TRANSPORT_OPTIONS={"region":"eu-west-2","queue_name_prefix":"","visibility_timeout":300}
       - AWS_ACCESS_KEY_ID=test
       - AWS_SECRET_ACCESS_KEY=test
       - AWS_DEFAULT_REGION=eu-west-2

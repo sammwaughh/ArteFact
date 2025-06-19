@@ -4,6 +4,7 @@ Celery configuration + asynchronous job definition (worker‑svc).
 
 import json
 import os
+import time                                  # ← add
 from datetime import datetime
 from tempfile import NamedTemporaryFile
 
@@ -32,6 +33,8 @@ _table    = _dynamodb.Table(RUNS_TABLE)
 
 FORCE_ERROR = os.getenv("FORCE_ERROR") == "1"
 
+SLEEP_SECS = int(os.getenv("SLEEP_SECS", "0"))   # ← add
+
 # ----------------------------------------------------------------------
 @celery.task(name="run_task", autoretry_for=(Exception,), retry_backoff=True,
              retry_kwargs={"max_retries": 2})
@@ -54,7 +57,11 @@ def run_task(run_id: str, s3_key: str) -> None:
         # 1. download image
         with NamedTemporaryFile(suffix=".jpg") as tmp:
             _s3.download_file(ARTIFACT_BUCKET, s3_key, tmp.name)
-            labels = run_inference(tmp.name)
+
+        if SLEEP_SECS:                         # simulate slow inference
+            time.sleep(SLEEP_SECS)
+
+        labels = run_inference(tmp.name)
 
         # DEV-only toggle (kept for future manual tests)
         # if FORCE_ERROR:
