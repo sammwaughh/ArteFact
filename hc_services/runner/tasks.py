@@ -30,35 +30,66 @@ _s3        = boto3.client("s3",  region_name="eu-west-2")
 _dynamodb = boto3.resource("dynamodb", region_name="eu-west-2")
 _table    = _dynamodb.Table(RUNS_TABLE)
 
+FORCE_ERROR = os.getenv("FORCE_ERROR") == "1"
 
 # ----------------------------------------------------------------------
-@celery.task(name="run_task")  # explicit name so we can change module paths later
+@celery.task(name="run_task", autoretry_for=(Exception,), retry_backoff=True,
+             retry_kwargs={"max_retries": 2})
 def run_task(run_id: str, s3_key: str) -> None:
     """
     Receive message → run inference → upload labels → update DDB.
     """
-    # 1. Download image from S3
-    with NamedTemporaryFile(suffix=".jpg") as tmp:
-        _s3.download_file(ARTIFACT_BUCKET, s3_key, tmp.name)
-
-        # 2. Run ML (stubbed)
-        labels = run_inference(tmp.name)
-
-    # 3. Upload outputs JSON
-    out_key = f"outputs/{run_id}.json"
-    with NamedTemporaryFile(suffix=".json", mode="w+") as tmp_json:
-        json.dump(labels, tmp_json)
-        tmp_json.flush()
-        _s3.upload_file(tmp_json.name, ARTIFACT_BUCKET, out_key)
-
-    # 4. Update DynamoDB
+    # --- mark as processing ------------------------------------------
     _table.update_item(
         Key={"runId": run_id},
-        UpdateExpression="SET #s = :s, outputKey = :k, updatedAt = :u",
+        UpdateExpression="SET #s = :s, startedAt = :t",
         ExpressionAttributeNames={"#s": "status"},
         ExpressionAttributeValues={
-            ":s": "done",
-            ":k": out_key,
-            ":u": datetime.utcnow().isoformat(timespec="seconds"),
+            ":s": "processing",
+            ":t": datetime.utcnow().isoformat(timespec="seconds"),
         },
     )
+
+    try:
+        # 1. download image
+        with NamedTemporaryFile(suffix=".jpg") as tmp:
+            _s3.download_file(ARTIFACT_BUCKET, s3_key, tmp.name)
+            labels = run_inference(tmp.name)
+
+        # DEV-only toggle (kept for future manual tests)
+        # if FORCE_ERROR:
+        #     raise RuntimeError("forced-error test")
+
+        # 2. upload outputs
+        out_key = f"outputs/{run_id}.json"
+        with NamedTemporaryFile(suffix=".json", mode="w+") as jf:
+            json.dump(labels, jf); jf.flush()
+            _s3.upload_file(jf.name, ARTIFACT_BUCKET, out_key)
+
+        # 3. mark done
+        _table.update_item(
+            Key={"runId": run_id},
+            UpdateExpression="""
+              SET #s = :s, outputKey = :k,
+                  finishedAt = :t, updatedAt = :t
+            """,
+            ExpressionAttributeNames={"#s": "status"},
+            ExpressionAttributeValues={
+                ":s": "done",
+                ":k": out_key,
+                ":t": datetime.utcnow().isoformat(timespec="seconds"),
+            },
+        )
+
+    except Exception as exc:
+        _table.update_item(
+            Key={"runId": run_id},
+            UpdateExpression="SET #s = :s, errorMessage = :e, updatedAt = :t",
+            ExpressionAttributeNames={"#s": "status"},
+            ExpressionAttributeValues={
+                ":s": "error",
+                ":e": str(exc)[:500],                       # keep concise
+                ":t": datetime.utcnow().isoformat(timespec="seconds"),
+            },
+        )
+        raise   # lets Celery retry up to max_retries

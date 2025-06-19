@@ -6,10 +6,10 @@ JSON‑serialisable Python objects.  That makes it easy to unit‑test.
 """
 
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict, Any          # add Any
 
 # ----------------------------------------------------------------------
-def run_inference(image_path: str) -> List[Dict]:
+def run_inference(image_path: str) -> List[Dict[str, Any]]:
     """
     Parameters
     ----------
@@ -22,10 +22,10 @@ def run_inference(image_path: str) -> List[Dict]:
         [{ "label": str, "score": float, "evidence": dict }, …]
     """
     # TODO: load PaintingCLIP once, run encode + FAISS search, etc.
-    # For skeleton we emit a single stub label.
+    # Skeleton output:
     return [
         {
-            "label": "stub‑label",
+            "label": "stub-label",
             "score": 0.99,
             "evidence": {"note": "replace with real provenance"},
         }

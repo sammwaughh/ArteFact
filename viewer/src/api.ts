@@ -12,6 +12,7 @@ export interface RunStatus {
   runId: string;
   status: 'queued' | 'processing' | 'done' | 'error';
   outputKey?: string;
+  errorMessage?: string; // ← new
 }
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';

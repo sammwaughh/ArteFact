@@ -47,9 +47,15 @@ function usePollRun(
             labels,
             imageUrl: `${base}/artifacts/${runId}.jpg`,
           });
+        } else if (run.status === 'error') {
+          clearInterval(id);
+          setState({
+            runId,
+            status: 'error',
+            error: new Error(run.errorMessage ?? 'Run failed on the server'),
+          });
         } else {
-          // updater-function keeps TS happy
-          setState((prev) => ({ ...prev, status: run.status }));
+          setState((prev) => ({ ...prev, status: run.status })); // queued / processing
         }
       } catch (err: unknown) {
         setState({
