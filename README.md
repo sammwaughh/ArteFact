@@ -1,139 +1,138 @@
-# ArteFact v2 - EDIT
+# ArteFact v2
 
-![ArteFact Logo](public/images/logo-16-9.JPEG)
+![ArteFact Logo](viewer/public/images/logo-16-9.JPEG)
 
-A modern web application for viewing paintings with contextual academic annotations and labels. Built with React and TypeScript, this viewer displays artwork alongside scholarly interpretations, confidence ratings, and academic source citations.
-
-View the MVP GitHub Pages site here [ArteFact](https://sammwaughh.github.io/viewer-v1/)
-
-## Features
-
-- **Interactive Art Viewing**: Full-screen painting display with responsive image scaling
-- **Academic Context**: Scholarly labels and interpretations with confidence scores
-- **Source Attribution**: Direct links to academic papers via DOI when available
-- **Responsive Design**: Clean, professional interface that works across devices
-- **Modern Tech Stack**: Built with React, TypeScript, and Chakra UI
+Modern web application for analyzing artwork using machine learning models. Upload paintings and get academic annotations, contextual labels, and confidence scores in real-time.
 
 ## Architecture
 
-The application follows a component-based architecture built on modern web technologies:
-
-### Frontend Stack
-
-- **React 18** - Component-based UI framework with hooks and modern patterns
-- **TypeScript** - Type-safe JavaScript for better development experience
-- **Chakra UI** - Modular and accessible component library for consistent design
-- **Vite** - Fast build tool with hot module replacement for development
-
-### Project Structure
-
-```
-src/
-├── components/           # Reusable UI components
-│   ├── PaintingViewer.tsx   # Main artwork display component
-│   ├── Sidebar.tsx          # Labels and metadata panel
-│   └── LabelCard.tsx        # Individual label with source info
-├── types/               # TypeScript type definitions
-│   └── labels.d.ts         # Data structure interfaces
-└── App.tsx             # Main application component
+```mermaid
+graph LR
+    SPA[React SPA] -->|PUT| S3[S3 Bucket]
+    SPA -->|POST| Runner[Flask Runner]
+    Runner -->|Queue| SQS[SQS Queue]
+    Worker[Celery Worker] -->|Poll| SQS
+    Worker -->|GET| S3
+    Worker -->|PUT| DDB[DynamoDB]
+    SPA -->|Poll| Runner
+    Runner -->|GET| DDB
 ```
 
-### Data Architecture
+### Components
 
-- **JSON-based content**: Painting metadata and labels stored in structured JSON
-- **Type-safe interfaces**: Strongly typed data models for paintings, labels, and sources
-- **Dynamic content loading**: Async data fetching with error handling and loading states
+- **Front-end**: React/TypeScript SPA with real-time status updates
+- **Runner Service**: Flask API handling presigned URLs and job coordination
+- **Worker Service**: Celery-based ML inference worker consuming SQS messages
+- **Storage**: S3 for images, DynamoDB for metadata, SQS for job queue
 
-## Installation
+## Local Development
 
 ### Prerequisites
 
-- **Node.js** (version 18 or higher)
-- **npm** (comes with Node.js)
+- Docker Desktop
+- Node.js 20+
+- Python 3.11+
+- AWS CDK v2
 
-### Windows Installation
+### Quick Start
 
-1. Install Node.js from [nodejs.org](https://nodejs.org/)
-2. Open Command Prompt or PowerShell
-3. Clone and setup the project:
-
-```cmd
-git clone https://github.com/sammwaughh/viewer-v1.git
+1. Clone and install dependencies:
+```bash
+git clone <repo-url>
 cd viewer-v1
+
+# Front-end
+cd viewer
 npm install
+
+# Back-end
+pip install -e ".[dev]"
 ```
 
-### Linux/macOS Installation
-
-1. Install Node.js:
-
-   - **Ubuntu/Debian**: `sudo apt update && sudo apt install nodejs npm`
-   - **macOS with Homebrew**: `brew install node`
-   - **Or download from** [nodejs.org](https://nodejs.org/)
-
-2. Clone and setup the project:
-
+2. Start the local stack:
 ```bash
-git clone https://github.com/sammwaughh/viewer-v1.git
-cd viewer-v1
-npm install
+docker compose up -d
 ```
 
-## Usage
+This launches:
+- LocalStack (S3, SQS, DynamoDB emulation)  
+- Flask runner service
+- Celery worker service
 
-### Development
-
-Start the development server with hot reload:
-
+3. Start the development SPA:
 ```bash
+cd viewer
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
+Visit http://localhost:5173
 
-### Production Build
-
-Create an optimized production build:
+### Testing
 
 ```bash
-npm run build
+# Front-end tests
+cd viewer
+npm test
+
+# Back-end tests (with Moto AWS mocking)
+pytest -q
+
+# Manual long-task test
+SLEEP_SECS=90 docker compose run --rm -e SLEEP_SECS=90 worker
 ```
 
-Built files will be in the `dist/` directory.
+### Infrastructure
 
-### Preview Production Build
-
-Preview the production build locally:
+AWS resources are defined in TypeScript using CDK:
 
 ```bash
-npm run preview
+cd infra/cdk
+npm install
+npx cdk synth        # Generate CloudFormation
+npx cdk diff         # Review changes
+npx cdk deploy       # Deploy to AWS
 ```
 
-## Development Workflow
+Key resources:
+- S3 bucket (`hc-artifacts`) - Image storage
+- SQS queue (`hc-artifacts-queue`) - Task queue
+- DynamoDB table (`hc-runs`) - Run metadata
+- ECS services - Runner and worker containers
 
-### Code Quality
+## CI/CD
 
-The project includes comprehensive code quality tools:
+GitHub Actions workflow:
+1. Builds and tests front-end
+2. Runs Python tests with LocalStack
+3. Deploys infrastructure via CDK
+4. Pushes container images to ECR
+5. Updates ECS services
 
-- **Linting**: `npm run lint` - ESLint with Airbnb TypeScript configuration
-- **Formatting**: `npm run format` - Prettier code formatting
-- **Testing**: `npm test` - Vitest test runner
-- **Git Hooks**: Husky pre-commit hooks ensure code quality
+## Architecture Details
 
-### Adding New Artwork
+### Request Flow
 
-1. Add image to `public/images/`
-2. Create corresponding JSON file in `public/data/` following the schema in `src/types/labels.d.ts`
-3. Update the fetch URL in `App.tsx` to load your new data file
+1. SPA requests presigned S3 URL from runner
+2. SPA uploads image directly to S3
+3. Runner queues task in SQS
+4. Worker consumes message, processes image
+5. Worker updates DynamoDB with results
+6. SPA polls runner until complete
 
-## Technology Stack
+### Error Handling
 
-- **React 18.2** - UI framework
-- **TypeScript 5.5** - Type safety
-- **Vite 6.3** - Build tool and dev server
-- **Chakra UI 2.8** - Component library
-- **Framer Motion 10** - Animation library
-- **ESLint** - Code linting with Airbnb configuration
-- **Prettier** - Code formatting
-- **Husky** - Git hooks
-- **Vitest** - Testing framework
+- Graceful failure display in UI
+- Task retries via Celery
+- DynamoDB status tracking
+- 5-minute SQS visibility timeout
+
+## Contributing
+
+1. Branch from `main`
+2. Make changes
+3. Ensure tests pass locally
+4. Open PR against `main`
+
+## License
+
+MIT
