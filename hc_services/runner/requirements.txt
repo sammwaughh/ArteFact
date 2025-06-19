@@ -2,7 +2,6 @@ flask
 flask-cors
 boto3
 celery
-redis
-torch      # heavy; fine for now because inference is stubbed
+torch
 pillow
 peft

@@ -19,7 +19,7 @@ from .constants import (
 from .inference import run_inference
 
 # ----------------------------------------------------------------------
-BROKER_URL = os.getenv("CELERY_BROKER_URL", "redis://localhost")  # dev default
+BROKER_URL = os.getenv("CELERY_BROKER_URL", "sqs://")             # dev default = SQS
 
 celery = Celery(__name__, broker=BROKER_URL)
 
