@@ -34,6 +34,7 @@ AWS_ENDPOINT = os.getenv("AWS_ENDPOINT_URL")
 #  Helper factories – ensure Moto patches clients created *after* mock_aws    #
 # --------------------------------------------------------------------------- #
 
+
 def _s3():
     return boto3.client("s3", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
 
