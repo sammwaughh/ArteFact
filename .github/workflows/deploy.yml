@@ -9,6 +9,7 @@ permissions:
   contents: read
 
 env:
+  VITE_API_URL: https://api.artefactcontext.com
   AWS_REGION: eu-west-2       # default; can still override via secret
   SPA_BUCKET: ${{ secrets.SPA_BUCKET }}
   CF_DIST_ID: ${{ secrets.CF_DIST_ID }}   # ← NEW
