@@ -1,60 +1,32 @@
 {
-  "name": "viewer-v1",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "artefact-context",
+  "version": "1.0.0",
+  "description": "![ArteFact Logo](public/images/logo-16-9.JPEG)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview",
-    "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "format": "prettier --check .",
-    "test": "vitest --run --passWithNoTests",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.json": [
-      "prettier --write"
-    ],
-    "*.md": [
-      "prettier --write"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammwaughh/artefact-context.git"
   },
-  "dependencies": {
-    "@chakra-ui/react": "^2.8.2",
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "framer-motion": "^10.16.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet-async": "^2.0.5"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sammwaughh/artefact-context/issues"
   },
+  "homepage": "https://github.com/sammwaughh/artefact-context#readme",
   "devDependencies": {
-    "@eslint/js": "^9.28.0",
-    "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.1",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
-    "@vitejs/plugin-react": "^4.4.1",
-    "eslint": "^8.57.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.2.0",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.4",
-    "vite": "^6.3.5",
-    "vitest": "^1.5.0"
+    "aws-cdk": "^2.1019.1",
+    "aws-cdk-lib": "^2.201.0",
+    "constructs": "^10.4.2",
+    "jest": "^30.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }

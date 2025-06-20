@@ -1,24 +1,110 @@
+###############################################################################
+#  GLOBAL – cross-language artefacts & clutter                                #
+###############################################################################
+# System / OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Generic archives & temp files
+*.bak
+*.tmp
+*.swp
+*.swo
+*.orig
+*.patch
+*.rej
+
+# Environment / secrets
+.env
+.env.*
+*.local
+
+###############################################################################
+#  NODE / FRONT-END (Vite, React, etc.)                                       #
+###############################################################################
+# Dependency cache
+node_modules/
+
+# Build artefacts
+dist/
+dist-ssr/
+build/
+coverage/
+.nyc_output/
+vite.svg
+localstack-data/
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+###############################################################################
+#  PYTHON                                                                     #
+###############################################################################
+# Byte-code & metadata
+__pycache__/
+*.py[co]
+*.pyd
+*.pyo
+.pytest_cache/
+*.egg-info/
+.eggs/
+*.egg
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+# Virtual-envs
+.venv/
+venv/
+.env/               # (virtualenvwrapper)
+
+# Test & coverage
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+
+###############################################################################
+#  AWS CDK / IaC                                                              #
+###############################################################################
+cdk.out/
+
+###############################################################################
+#  DOCKER                                                                     #
+###############################################################################
+*.Dockerfile.swp
+docker-compose.override.yml
+.docker/
+
+###############################################################################
+#  EDITORS                                                                    #
+###############################################################################
+# VS Code
+.vscode/
+!.vscode/extensions.json   # keep team-shared recommendations
+
+# JetBrains / IntelliJ
+.idea/
+
+# Visual Studio
 *.suo
-*.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.vcxproj*
+*.ntvs*
+
+###############################################################################
+#  MISC                                                                       #
+###############################################################################
+# Mac Finder attributes
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# End of file
