@@ -25,7 +25,7 @@ Modern web application for analyzing artwork using machine learning models. Uplo
 1. Clone and install dependencies:
 ```bash
 git clone <repo-url>
-cd viewer-v1
+cd artefact-context
 
 # Front-end
 cd viewer

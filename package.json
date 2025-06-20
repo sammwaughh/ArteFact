@@ -1,5 +1,5 @@
 {
-  "name": "viewer-v1",
+  "name": "artefact-context",
   "version": "1.0.0",
   "description": "![ArteFact Logo](public/images/logo-16-9.JPEG)",
   "main": "index.js",
@@ -11,16 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sammwaughh/viewer-v1.git"
+    "url": "git+https://github.com/sammwaughh/artefact-context.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/sammwaughh/viewer-v1/issues"
+    "url": "https://github.com/sammwaughh/artefact-context/issues"
   },
-  "homepage": "https://github.com/sammwaughh/viewer-v1#readme",
+  "homepage": "https://github.com/sammwaughh/artefact-context#readme",
   "devDependencies": {
     "aws-cdk": "^2.1019.1",
     "aws-cdk-lib": "^2.201.0",
