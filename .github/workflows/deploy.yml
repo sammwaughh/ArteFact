@@ -11,6 +11,7 @@ permissions:
 env:
   AWS_REGION: eu-west-2       # default; can still override via secret
   SPA_BUCKET: ${{ secrets.SPA_BUCKET }}
+  CF_DIST_ID: ${{ secrets.CF_DIST_ID }}   # ← NEW
   ECR_REPO:   ${{ secrets.ECR_REPO }}
   CLUSTER:    ${{ secrets.CLUSTER }}
   RUNNER_SERVICE:  ${{ secrets.RUNNER_SERVICE }}
@@ -45,6 +46,12 @@ jobs:
       - name: Upload SPA to S3
         run: |
           aws s3 sync viewer/dist "s3://${SPA_BUCKET}" --delete
+
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "$CF_DIST_ID" \
+            --paths "/*"
 
       # ----- Back-end image -----
       - name: Log in to ECR
