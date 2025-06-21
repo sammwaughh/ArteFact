@@ -1,8 +1,10 @@
 # ArteFact v2
 
-![ArteFact Logo](viewer/public/images/logo-16-9.JPEG)
+<img src="viewer/public/images/logo-16-9.JPEG" alt="ArteFact Logo" width="400">
 
 Modern web application for analyzing artwork using machine learning models. Upload paintings and get academic annotations, contextual labels, and confidence scores in real-time.
+
+🌐 **Live Demo**: [artefactcontext.com](https://artefactcontext.com)
 
 ### Components
 
@@ -23,6 +25,7 @@ Modern web application for analyzing artwork using machine learning models. Uplo
 ### Quick Start
 
 1. Clone and install dependencies:
+
 ```bash
 git clone <repo-url>
 cd artefact-context
@@ -36,16 +39,19 @@ pip install -e ".[dev]"
 ```
 
 2. Start the local stack:
+
 ```bash
 docker compose up -d
 ```
 
 This launches:
-- LocalStack (S3, SQS, DynamoDB emulation)  
+
+- LocalStack (S3, SQS, DynamoDB emulation)
 - Flask runner service
 - Celery worker service
 
 3. Start the development SPA:
+
 ```bash
 cd viewer
 npm run dev
@@ -80,6 +86,7 @@ npx cdk deploy       # Deploy to AWS
 ```
 
 Key resources:
+
 - S3 bucket (`hc-artifacts`) - Image storage
 - SQS queue (`hc-artifacts-queue`) - Task queue
 - DynamoDB table (`hc-runs`) - Run metadata
@@ -88,6 +95,7 @@ Key resources:
 ## CI/CD
 
 GitHub Actions workflow:
+
 1. Builds and tests front-end
 2. Runs Python tests with LocalStack
 3. Deploys infrastructure via CDK
