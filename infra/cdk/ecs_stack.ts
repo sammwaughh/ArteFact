@@ -20,7 +20,11 @@ import {
   Compatibility,
 } from "aws-cdk-lib/aws-ecs";
 import { Queue } from "aws-cdk-lib/aws-sqs";
-import { Table } from "aws-cdk-lib/aws-dynamodb";
+import {
+  Table,
+  AttributeType,
+  BillingMode,
+} from "aws-cdk-lib/aws-dynamodb";
 import {
   ApplicationLoadBalancer,
   ApplicationProtocol,
@@ -56,6 +60,7 @@ export class EcsStack extends Stack {
       ARTIFACT_BUCKET_NAME,
     );
 
+    // Adopt the table that already exists in your account
     const table = Table.fromTableName(this, "RunsTable", "hc-runs");
 
     const queue = new Queue(this, "ArtifactsQueue", {
