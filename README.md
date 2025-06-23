@@ -2,6 +2,7 @@
 
 <img src="viewer/public/images/logo-16-9.JPEG" alt="ArteFact Logo" width="400">
 
+Test Change
 Modern web application for analysing artwork using machine-learning models.  
 Upload paintings and get academic annotations, contextual labels, and confidence scores in real-time.
 
