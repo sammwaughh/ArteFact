@@ -147,11 +147,11 @@ def presign_upload():
     post = _s3().generate_presigned_post(
         Bucket=ARTIFACT_BUCKET,
         Key=key,
-        ExpiresIn=15 * 60,           # 15 min
+        ExpiresIn=15 * 60,  # 15 min
         Fields={"acl": "private"},
         Conditions=[
             ["starts-with", "$Content-Type", "image/"],
-            ["content-length-range", 0, 10 * 1024 * 1024]  # ≤ 10 MB
+            ["content-length-range", 0, 10 * 1024 * 1024],  # ≤ 10 MB
         ],
     )
     # ----------------------------------------
