@@ -139,7 +139,7 @@ def presign_upload():
         "upload": { "url": "...", "fields": { ... } }
     }
     """
-    data: Dict[str, str] = request.get_json(force=True)
+    # data: Dict[str, str] = request.get_json(force=True)
     run_id = uuid.uuid4().hex
     key = f"artifacts/{run_id}.jpg"
 
