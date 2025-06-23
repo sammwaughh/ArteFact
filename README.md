@@ -1,4 +1,4 @@
-# ArteFact v2 Test Reboot MacBook
+# ArteFact v2
 
 <img src="viewer/public/images/logo-16-9.JPEG" alt="ArteFact Logo" width="400">
 
