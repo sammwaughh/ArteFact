@@ -2,120 +2,35 @@
 
 <img src="viewer/public/images/logo-16-9.JPEG" alt="ArteFact Logo" width="400">
 
-Modern web application for analyzing artwork using machine learning models. Upload paintings and get academic annotations, contextual labels, and confidence scores in real-time.
+Modern web application for analyzing artwork using machine-learning models.  
+Upload paintings and get academic annotations, contextual labels, and confidence scores in real-time.
 
 🌐 **Live Demo**: [artefactcontext.com](https://artefactcontext.com)
 
-### Components
+---
 
-- **Front-end**: React/TypeScript SPA with real-time status updates
-- **Runner Service**: Flask API handling presigned URLs and job coordination
-- **Worker Service**: Celery-based ML inference worker consuming SQS messages
-- **Storage**: S3 for images, DynamoDB for metadata, SQS for job queue
+## Components at a Glance
 
-## Local Development
+| Layer | Component | What it runs | Purpose |
+|-------|-----------|--------------|---------|
+| **Front-end** | React/TypeScript SPA | Browser | Upload UI, live-status polling, IIIF-style viewer |
+| **Runner Service** | Flask API (`runner-svc`) | Fargate task (ECS) | Presigned upload URLs, job creation, status endpoint |
+| **Worker Service** | Celery worker (`worker-svc`) | Fargate task (ECS) | ML inference + post-processing |
+| **Storage** | S3 (`hc-artifacts`) | AWS | Images **and** JSON label outputs |
+| **Queue** | SQS (`hc-artifacts-queue`) | AWS | Decouples API from heavy ML work |
+| **Metadata** | DynamoDB (`hc-runs`) | AWS | Run status & bookkeeping |
 
-### Prerequisites
+---
 
-- Docker Desktop
-- Node.js 20+
-- Python 3.11+
-- AWS CDK v2
+## How the Pieces Talk 🚦
 
-### Quick Start
-
-1. Clone and install dependencies:
-
-```bash
-git clone <repo-url>
-cd artefact-context
-
-# Front-end
-cd viewer
-npm install
-
-# Back-end
-pip install -e ".[dev]"
-```
-
-2. Start the local stack:
-
-```bash
-docker compose up -d
-```
-
-This launches:
-
-- LocalStack (S3, SQS, DynamoDB emulation)
-- Flask runner service
-- Celery worker service
-
-3. Start the development SPA:
-
-```bash
-cd viewer
-npm run dev
-```
-
-Visit http://localhost:5173
-
-### Testing
-
-```bash
-# Front-end tests
-cd viewer
-npm test
-
-# Back-end tests (with Moto AWS mocking)
-pytest -q
-
-# Manual long-task test
-SLEEP_SECS=90 docker compose run --rm -e SLEEP_SECS=90 worker
-```
-
-### Infrastructure
-
-AWS resources are defined in TypeScript using CDK:
-
-```bash
-cd infra/cdk
-npm install
-npx cdk synth        # Generate CloudFormation
-npx cdk diff         # Review changes
-npx cdk deploy       # Deploy to AWS
-```
-
-Key resources:
-
-- S3 bucket (`hc-artifacts`) - Image storage
-- SQS queue (`hc-artifacts-queue`) - Task queue
-- DynamoDB table (`hc-runs`) - Run metadata
-- ECS services - Runner and worker containers
-
-## CI/CD
-
-GitHub Actions workflow:
-
-1. Builds and tests front-end
-2. Runs Python tests with LocalStack
-3. Deploys infrastructure via CDK
-4. Pushes container images to ECR
-5. Updates ECS services
-
-## Architecture Details
-
-### Request Flow
-
-1. SPA requests presigned S3 URL from runner
-2. SPA uploads image directly to S3
-3. Runner queues task in SQS
-4. Worker consumes message, processes image
-5. Worker updates DynamoDB with results
-6. SPA polls runner until complete
-
-### Error Handling
-
-- Graceful failure display in UI
-- Task retries via Celery
-- DynamoDB status tracking
-- 5-minute SQS visibility timeout
+```text
+Browser ──(1) POST /presign────────► Runner API ──▶ S3   (presigned PUT URL)
+Browser ──(2) PUT image to S3
+Browser ──(3) POST /runs──────────► Runner API ──▶ SQS   (job message)
+Worker ◄────────────────────────────── SQS
+Worker ──▶ run_inference ──▶ S3 (outputs/<id>.json)
+Worker ──▶ DynamoDB status = done
+Browser ──(4) poll /runs/<id>────────► Runner API (reads DDB)
+Browser ──(5) GET outputs/<id>.json ─► CloudFront → S3   (labels)
+SPA overlays red boxes ⇢ 🎉
