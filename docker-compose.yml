@@ -27,7 +27,7 @@ services:
       - AWS_ENDPOINT_URL=http://localstack:4566
 
       # same constants the code imports from hc_services.runner.constants
-      - ARTIFACT_BUCKET=hc-artifacts
+      - ARTIFACT_BUCKET=artefact-context-artifacts-eu2
       - RUNS_TABLE=hc-runs
       - QUEUE_NAME=hc-artifacts-queue
     volumes:
@@ -59,7 +59,7 @@ services:
       - AWS_ENDPOINT_URL=http://localstack:4566   # hit LocalStack
 
       # keep env-vars in sync with runner
-      - ARTIFACT_BUCKET=hc-artifacts
+      - ARTIFACT_BUCKET=artefact-context-artifacts-eu2
       - RUNS_TABLE=hc-runs
       - QUEUE_NAME=hc-artifacts-queue
     volumes:

@@ -16,7 +16,7 @@ Upload paintings and get academic annotations, contextual labels, and confidence
 | **Front-end** | React/TypeScript SPA | Browser | Upload UI, live-status polling, IIIF-style viewer |
 | **Runner Service** | Flask API (`runner-svc`) | Fargate task (ECS) | Presigned upload URLs, job creation, status endpoint |
 | **Worker Service** | Celery worker (`worker-svc`) | Fargate task (ECS) | ML inference + post-processing |
-| **Storage** | S3 (`hc-artifacts`) | AWS | Images **and** JSON label outputs |
+| **Storage** | S3 (`artefact-context-artifacts-eu2`) | AWS | Images **and** JSON label outputs |
 | **Queue** | SQS (`hc-artifacts-queue`) | AWS | Decouples API from heavy ML work |
 | **Metadata** | DynamoDB (`hc-runs`) | AWS | Run status & bookkeeping |
 
