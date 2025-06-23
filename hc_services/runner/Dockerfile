@@ -22,16 +22,13 @@ COPY hc_services/runner/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # ---------- Application code ------------------------------------------
-# Copy the service source tree *after* the deps layer for better caching.
-COPY hc_services/runner /app
+# Copy the *entire* hc_services package so `python -m hc_services.runner.app`
+# can resolve the package hierarchy.
+COPY hc_services /app/hc_services
 
 # ---------- Entrypoint -------------------------------------------------
-# We now run the Flask API as a *module* so Python finds it inside the
-# package we renamed to `hc_services`.  The same image is reused for the
-# Celery worker:
-#
+# The same image is reused for both:
 #   • Runner API  → default CMD below
 #   • Worker      → override with:
 #       ["celery", "-A", "hc_services.runner.tasks", "worker", "--loglevel=info"]
-#
 CMD ["python", "-m", "hc_services.runner.app"]
