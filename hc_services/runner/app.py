@@ -13,7 +13,7 @@ from __future__ import annotations
 import os
 import uuid
 from datetime import datetime
-from typing import Dict, cast
+from typing import cast
 
 import boto3
 from botocore.exceptions import ClientError
@@ -139,7 +139,7 @@ def presign_upload():
         "upload": { "url": "...", "fields": { ... } }
     }
     """
-    # data: Dict[str, str] = request.get_json(force=True)
+    request.get_json(force=True)
     run_id = uuid.uuid4().hex
     key = f"artifacts/{run_id}.jpg"
 
