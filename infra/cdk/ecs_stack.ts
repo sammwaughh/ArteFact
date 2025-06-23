@@ -97,6 +97,10 @@ export class EcsStack extends Stack {
       portMappings: [{ containerPort: 8000, protocol: Protocol.TCP }],
     });
 
+    // ----- IAM: let the runner touch S3 + DynamoDB --------------------
+    artifactsBucket.grantReadWrite(taskDef.taskRole);   // presign & uploads
+    table.grantReadWriteData(taskDef.taskRole);         // create/update runs
+
     // ------------------------------------------------------------------ #
     // ALB + Fargate service                                               #
     // ------------------------------------------------------------------ #
