@@ -27,7 +27,8 @@ import {
 } from "aws-cdk-lib/aws-elasticloadbalancingv2";
 import { Repository } from "aws-cdk-lib/aws-ecr";
 import { Bucket } from "aws-cdk-lib/aws-s3";
-import { PolicyStatement } from "aws-cdk-lib/aws-iam";       // ← NEW
+import { PolicyStatement } from "aws-cdk-lib/aws-iam";
+import { Certificate } from "aws-cdk-lib/aws-certificatemanager";   // ★ NEW ★
 
 export class EcsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -97,11 +98,12 @@ export class EcsStack extends Stack {
     artifactsBucket.grantReadWrite(workerTaskDef.taskRole);
     table.grantReadWriteData(workerTaskDef.taskRole);
     queue.grantConsumeMessages(workerTaskDef.taskRole);
-
-    workerTaskDef.taskRole.addToPrincipalPolicy(new PolicyStatement({  // ← NEW
-      actions: ["sqs:ListQueues"],
-      resources: ["*"],        // ListQueues has no resource-level ARN
-    }));
+    workerTaskDef.taskRole.addToPrincipalPolicy(
+      new PolicyStatement({
+        actions: ["sqs:ListQueues"],
+        resources: ["*"],
+      })
+    );
 
     // ───────────────────────────────────────── ALB
     const alb = new ApplicationLoadBalancer(this, "Alb", {
@@ -109,7 +111,8 @@ export class EcsStack extends Stack {
       internetFacing: true,
     });
 
-    const listener = alb.addListener("Http", {
+    // HTTP listener (kept for redirect / health-checks)
+    const httpListener = alb.addListener("Http", {
       port: 80,
       protocol: ApplicationProtocol.HTTP,
       defaultAction: ListenerAction.fixedResponse(200, {
@@ -127,7 +130,8 @@ export class EcsStack extends Stack {
       assignPublicIp: true,
     });
 
-    listener.addTargets("RunnerTG", {
+    // Target group for both HTTP & HTTPS
+    const runnerTG = httpListener.addTargets("RunnerTG", {
       port: 8000,
       protocol: ApplicationProtocol.HTTP,
       targets: [runnerSvc],
@@ -135,7 +139,7 @@ export class EcsStack extends Stack {
     });
 
     // ───────────────────────────────────────── Worker service
-    const workerSvc = new FargateService(this, "WorkerSvc", {
+    new FargateService(this, "WorkerSvc", {
       cluster,
       taskDefinition: workerTaskDef,
       desiredCount: 1,
@@ -143,10 +147,24 @@ export class EcsStack extends Stack {
       assignPublicIp: true,
     });
 
+    // ───────────────────────────────────────── HTTPS listener  ★ NEW ★
+    const cert = Certificate.fromCertificateArn(
+      this,
+      "ApiCert",
+      "arn:aws:acm:eu-west-2:863836597822:certificate/5d8bfde1-021e-41ce-9a8f-927ee83b273e"
+    );
+
+    alb.addListener("Https", {
+      port: 443,
+      protocol: ApplicationProtocol.HTTPS,
+      certificates: [cert],
+      defaultAction: ListenerAction.forward([runnerTG]),
+    });
+
     // ───────────────────────────────────────── Outputs
     new CfnOutput(this, "AlbDNS",      { value: alb.loadBalancerDnsName });
     new CfnOutput(this, "ClusterName", { value: cluster.clusterName });
     new CfnOutput(this, "RunnerName",  { value: runnerSvc.serviceName });
-    new CfnOutput(this, "WorkerName",  { value: workerSvc.serviceName });
+    new CfnOutput(this, "WorkerName",  { value: "worker-svc" });
   }
 }
