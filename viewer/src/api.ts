@@ -2,10 +2,16 @@
  * Thin fetch wrapper around the Flask backend.
  */
 
+/** Fields returned by S3's `generate_presigned_post` */
+export interface PresignUpload {
+  url: string;
+  fields: Record<string, string>;
+}
+
 export interface PresignResponse {
   runId: string;
-  uploadUrl: string;
   s3Key: string;
+  upload: PresignUpload;
 }
 
 export interface RunStatus {

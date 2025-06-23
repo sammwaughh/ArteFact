@@ -73,7 +73,7 @@ def _ensure_bucket() -> None:
                 "CORSRules": [
                     {
                         "AllowedOrigins": ["*"],
-                        "AllowedMethods": ["PUT", "GET", "HEAD"],
+                        "AllowedMethods": ["POST", "GET", "HEAD"],
                         "AllowedHeaders": ["*"],
                         "MaxAgeSeconds": 3600,
                     }
@@ -133,27 +133,35 @@ def health() -> str:
 def presign_upload():
     """
     Body:     { "fileName": "myfile.jpg" }
-    Response: { "runId", "uploadUrl", "s3Key" }
+    Response: {
+        "runId": "...",
+        "s3Key": "artifacts/<id>.jpg",
+        "upload": { "url": "...", "fields": { ... } }
+    }
     """
     data: Dict[str, str] = request.get_json(force=True)
     run_id = uuid.uuid4().hex
     key = f"artifacts/{run_id}.jpg"
-    filetype = data.get("fileName", "upload.jpg").split(".")[-1].lower()
-    mime = "image/jpeg" if filetype in ("jpg", "jpeg") else "image/png"
 
-    upload_url = _s3().generate_presigned_url(
-        ClientMethod="put_object",
-        Params={"Bucket": ARTIFACT_BUCKET, "Key": key, "ContentType": mime},
-        ExpiresIn=15 * 60,
+    # ----------- presigned *POST* -----------
+    post = _s3().generate_presigned_post(
+        Bucket=ARTIFACT_BUCKET,
+        Key=key,
+        ExpiresIn=15 * 60,           # 15 min
+        Fields={"acl": "private"},
+        Conditions=[
+            ["starts-with", "$Content-Type", "image/"],
+            ["content-length-range", 0, 10 * 1024 * 1024]  # ≤ 10 MB
+        ],
     )
+    # ----------------------------------------
 
-    # --- DEV-ONLY tweak: make the URL accessible from the host browser ----------
-    if AWS_ENDPOINT:  # we're talking to LocalStack
+    # Dev-only tweak for LocalStack
+    if AWS_ENDPOINT:
         public_host = os.getenv("AWS_PUBLIC_ENDPOINT", "http://localhost:4566")
-        # internal presign points to  http://localstack:4566/...
-        upload_url = upload_url.replace("http://localstack:4566", public_host)
+        post["url"] = post["url"].replace("http://localstack:4566", public_host)
 
-    return jsonify({"runId": run_id, "uploadUrl": upload_url, "s3Key": key})
+    return jsonify({"runId": run_id, "s3Key": key, "upload": post})
 
 
 # --------------------------------------------------------------------------- #

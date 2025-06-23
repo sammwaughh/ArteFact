@@ -79,12 +79,20 @@ export function useUploadAndRun(file: File | null): UseUploadAndRunState {
 
     (async () => {
       try {
-        const { runId, uploadUrl, s3Key } = await requestPresign(file.name);
+        // NEW response shape: { runId, s3Key, upload:{ url, fields:{…} } }
+        const { runId, s3Key, upload } = await requestPresign(file.name);
 
-        await fetch(uploadUrl, {
-          method: 'PUT',
-          headers: { 'Content-Type': file.type },
-          body: file,
+        // Build the <form> body required by S3's presigned POST
+        const form = new FormData();
+        Object.entries(upload.fields).forEach(([k, v]) =>
+          form.append(k, v as string),
+        );
+        form.append('Content-Type', file.type); // must satisfy the policy
+        form.append('file', file);              // ✱ must be the last field ✱
+
+        await fetch(upload.url, {
+          method: 'POST',
+          body: form,
         });
 
         await createRun(runId, s3Key);
