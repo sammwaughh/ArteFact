@@ -73,9 +73,10 @@ export class EcsStack extends Stack {
 
     const COMMON_ENV = {
       ARTIFACT_BUCKET: ARTIFACT_BUCKET_NAME,
-      RUNS_TABLE:      "hc-runs",            // <- for DynamoDB client
-      QUEUE_NAME:      queue.queueName,      // <- workers resolve by name
-      QUEUE_URL:       queue.queueUrl,       // <- runner can SendMessage fast
+      RUNS_TABLE:      "hc-runs",
+      QUEUE_NAME:      queue.queueName,
+      QUEUE_URL:       queue.queueUrl,
+      AWS_DEFAULT_REGION: this.region,      // eu-west-2 at deploy-time
     };
 
     /* ============ Runner task-def ============ */
@@ -100,7 +101,11 @@ export class EcsStack extends Stack {
 
     runnerTaskDef.taskRole.addToPrincipalPolicy(
       new PolicyStatement({
-        actions: ["sqs:ListQueues"],
+        actions: [
+          "sqs:ListQueues",
+          "sqs:GetQueueUrl",
+          "sqs:GetQueueAttributes",
+        ],
         resources: ["*"],
       }),
     );
@@ -125,7 +130,11 @@ export class EcsStack extends Stack {
     queue.grantConsumeMessages(workerTaskDef.taskRole);
     workerTaskDef.taskRole.addToPrincipalPolicy(
       new PolicyStatement({
-        actions: ["sqs:ListQueues"],
+        actions: [
+          "sqs:ListQueues",
+          "sqs:GetQueueUrl",
+          "sqs:GetQueueAttributes",
+        ],
         resources: ["*"],
       }),
     );

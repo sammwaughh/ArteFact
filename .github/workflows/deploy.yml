@@ -10,6 +10,9 @@ permissions:
 
 env:
   VITE_API_URL: https://api.artefactcontext.com
+  # Domain (or full URL) of the CloudFront distribution that fronts the S3
+  # artefacts bucket. Store it as a secret so you don’t hard-code it here.
+  VITE_CLOUDFRONT_URL: ${{ secrets.CF_URL }}
   AWS_REGION: eu-west-2       # default; can still override via secret
   SPA_BUCKET: ${{ secrets.SPA_BUCKET }}
   CF_DIST_ID: ${{ secrets.CF_DIST_ID }}   # ← NEW

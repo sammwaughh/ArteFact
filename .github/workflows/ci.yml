@@ -10,6 +10,9 @@ on:
 jobs:
   build-test:
     runs-on: ubuntu-latest
+    env:                               # make Vite vars available to Vite/PNPM
+      VITE_API_URL:       http://localhost:8000        # dummy value for tests
+      VITE_CLOUDFRONT_URL: http://localhost:4566       # placeholder
 
     # ── LocalStack service container ────────────────────────────────────────────
     services:
