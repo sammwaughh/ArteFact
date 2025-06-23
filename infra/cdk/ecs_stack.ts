@@ -61,11 +61,11 @@ export class EcsStack extends Stack {
       ARTIFACT_BUCKET_NAME,
     );
 
-    // ── NEW: grant CloudFront OAI read access to the whole bucket ─────────
+    // ── grant CloudFront OAI read access to the whole bucket ─────────
     const oai = OriginAccessIdentity.fromOriginAccessIdentityId(
       this,
       "CloudFrontOAI",
-      "E1234567890",              // ← replace with the real OAI ID shown in the CF console
+      "E397ARZVPD1LCA", // ← New
     );
 
     artifactsBucket.addToResourcePolicy(
