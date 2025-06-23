@@ -2,14 +2,12 @@ import {
   Stack,
   StackProps,
   Duration,
-  RemovalPolicy,
   CfnOutput,
 } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import {
   Vpc,
   SubnetType,
-  SecurityGroup,
 } from "aws-cdk-lib/aws-ec2";
 import {
   Cluster,
@@ -18,32 +16,25 @@ import {
   LogDriver,
   FargateService,
   Protocol,
-  Compatibility,           // ← add
+  Compatibility,
 } from "aws-cdk-lib/aws-ecs";
-import {
-  Queue,
-} from "aws-cdk-lib/aws-sqs";
-import {
-  Table,
-  AttributeType,
-} from "aws-cdk-lib/aws-dynamodb";
+import { Queue } from "aws-cdk-lib/aws-sqs";
+import { Table } from "aws-cdk-lib/aws-dynamodb";
 import {
   ApplicationLoadBalancer,
   ApplicationProtocol,
   ListenerAction,
-  ApplicationTargetGroup,
-  TargetType,
 } from "aws-cdk-lib/aws-elasticloadbalancingv2";
-import {
-  Repository,
-} from "aws-cdk-lib/aws-ecr";
-import { Bucket, BucketEncryption } from "aws-cdk-lib/aws-s3";
+import { Repository } from "aws-cdk-lib/aws-ecr";
+import { Bucket } from "aws-cdk-lib/aws-s3";
 
 export class EcsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    // VPC -------------------------------------------------------------------
+    // ------------------------------------------------------------------ #
+    // Networking                                                          #
+    // ------------------------------------------------------------------ #
     const vpc = new Vpc(this, "Vpc", {
       maxAzs: 2,
       subnetConfiguration: [
@@ -51,35 +42,45 @@ export class EcsStack extends Stack {
       ],
     });
 
-    // ECS Cluster -----------------------------------------------------------
-    const cluster = new Cluster(this, "Cluster", { vpc });
-
-    // S3 artefact bucket ----------------------------------------------------
-    const artifactsBucket = new Bucket(this, "ArtifactsBucket", {
-      bucketName: "hc-artifacts",
-      encryption: BucketEncryption.S3_MANAGED,
-      removalPolicy: RemovalPolicy.RETAIN,      // keep data if stack deleted
+    // ------------------------------------------------------------------ #
+    // ECS cluster (stable, friendly name)                                 #
+    // ------------------------------------------------------------------ #
+    const cluster = new Cluster(this, "Cluster", {
+      vpc,
+      clusterName: "artefact-context-cluster",   // stays constant
     });
 
-    // SQS queue -------------------------------------------------------------
+    // ------------------------------------------------------------------ #
+    // Existing resources (adopt, don’t create)                            #
+    // ------------------------------------------------------------------ #
+    const artifactsBucket = Bucket.fromBucketName(
+      this,
+      "ArtifactsBucket",
+      "hc-artifacts",
+    );
+
+    const table = Table.fromTableName(
+      this,
+      "RunsTable",
+      "hc-runs",
+    );
+
+    // ------------------------------------------------------------------ #
+    // SQS queue (safe to recreate)                                        #
+    // ------------------------------------------------------------------ #
     const queue = new Queue(this, "ArtifactsQueue", {
       queueName: "hc-artifacts-queue",
-      visibilityTimeout: Duration.seconds(300), // 5 min, matches celery
+      visibilityTimeout: Duration.seconds(300),
       retentionPeriod: Duration.days(4),
     });
 
-    // DynamoDB table --------------------------------------------------------
-    const table = new Table(this, "RunsTable", {
-      tableName: "hc-runs",
-      partitionKey: { name: "runId", type: AttributeType.STRING },
-      removalPolicy: RemovalPolicy.RETAIN,
-    });
-
-    // Task definition (shared image) ---------------------------------------
+    // ------------------------------------------------------------------ #
+    // Task definition                                                     #
+    // ------------------------------------------------------------------ #
     const repo = Repository.fromRepositoryName(
       this,
       "RunnerRepo",
-      "hc-runner"
+      "viewer-backend",
     );
 
     const taskDef = new TaskDefinition(this, "TaskDef", {
@@ -88,25 +89,25 @@ export class EcsStack extends Stack {
       compatibility: Compatibility.FARGATE,
     });
 
-    const container = taskDef.addContainer("AppContainer", {
+    taskDef.addContainer("AppContainer", {
       image: ContainerImage.fromEcrRepository(repo, "latest"),
       essential: true,
       logging: LogDriver.awsLogs({ streamPrefix: "runner" }),
       command: ["python", "-m", "hc_services.runner.app"],
-      portMappings: [
-        { containerPort: 8000, protocol: Protocol.TCP },   // ← add
-      ],
+      portMappings: [{ containerPort: 8000, protocol: Protocol.TCP }],
     });
 
-    // ALB + service ---------------------------------------------------------
+    // ------------------------------------------------------------------ #
+    // ALB + Fargate service                                               #
+    // ------------------------------------------------------------------ #
     const alb = new ApplicationLoadBalancer(this, "Alb", {
       vpc,
       internetFacing: true,
     });
 
-    const listener = alb.addListener("Https", {
+    const listener = alb.addListener("Http", {
       port: 80,
-      protocol: ApplicationProtocol.HTTP, // demo; add HTTPS + cert later
+      protocol: ApplicationProtocol.HTTP,
       defaultAction: ListenerAction.fixedResponse(200, {
         contentType: "text/plain",
         messageBody: "OK",
@@ -117,15 +118,22 @@ export class EcsStack extends Stack {
       cluster,
       taskDefinition: taskDef,
       desiredCount: 1,
+      serviceName: "runner-svc",      // ← fixed, readable name
+      assignPublicIp: true,           // quick way to reach ECR/S3
     });
 
     listener.addTargets("RunnerTG", {
-      port: 8000,                       // match containerPort
+      port: 8000,
       protocol: ApplicationProtocol.HTTP,
       targets: [runnerSvc],
       healthCheck: { path: "/health" },
     });
 
-    new CfnOutput(this, "AlbDNS", { value: alb.loadBalancerDnsName });
+    // ------------------------------------------------------------------ #
+    // Stack outputs                                                      #
+    // ------------------------------------------------------------------ #
+    new CfnOutput(this, "AlbDNS",   { value: alb.loadBalancerDnsName });
+    new CfnOutput(this, "ClusterName", { value: cluster.clusterName });
+    new CfnOutput(this, "ServiceName", { value: runnerSvc.serviceName });
   }
 }
