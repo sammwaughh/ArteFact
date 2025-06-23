@@ -92,7 +92,7 @@ export class EcsStack extends Stack {
       image: ContainerImage.fromEcrRepository(repo, "latest"),
       essential: true,
       logging: LogDriver.awsLogs({ streamPrefix: "runner" }),
-      command: ["python", "app.py"],
+      command: ["python", "-m", "hc_services.runner.app"],
       portMappings: [
         { containerPort: 8000, protocol: Protocol.TCP },   // ← add
       ],
