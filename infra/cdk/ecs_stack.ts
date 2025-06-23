@@ -32,64 +32,40 @@ export class EcsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    // ------------------------------------------------------------------ #
-    // Networking                                                          #
-    // ------------------------------------------------------------------ #
+    // ───────────────────────────────────────── VPC
     const vpc = new Vpc(this, "Vpc", {
       maxAzs: 2,
-      subnetConfiguration: [
-        { name: "public", subnetType: SubnetType.PUBLIC },
-      ],
+      subnetConfiguration: [{ name: "public", subnetType: SubnetType.PUBLIC }],
     });
 
-    // ------------------------------------------------------------------ #
-    // ECS cluster (stable, friendly name)                                 #
-    // ------------------------------------------------------------------ #
+    // ───────────────────────────────────────── ECS cluster
     const cluster = new Cluster(this, "Cluster", {
       vpc,
-      clusterName: "artefact-context-cluster",   // stays constant
+      clusterName: "artefact-context-cluster",
     });
 
-    // ------------------------------------------------------------------ #
-    // Existing resources (adopt, don’t create)                            #
-    // ------------------------------------------------------------------ #
-    const artifactsBucket = Bucket.fromBucketName(
-      this,
-      "ArtifactsBucket",
-      "hc-artifacts",
-    );
+    // ───────────────────────────────────────── Adopt existing resources
+    const artifactsBucket = Bucket.fromBucketName(this, "ArtifactsBucket", "hc-artifacts");
+    const table           = Table.fromTableName(this,  "RunsTable",      "hc-runs");
 
-    const table = Table.fromTableName(
-      this,
-      "RunsTable",
-      "hc-runs",
-    );
-
-    // ------------------------------------------------------------------ #
-    // SQS queue (safe to recreate)                                        #
-    // ------------------------------------------------------------------ #
+    // ───────────────────────────────────────── SQS queue
     const queue = new Queue(this, "ArtifactsQueue", {
       queueName: "hc-artifacts-queue",
       visibilityTimeout: Duration.seconds(300),
-      retentionPeriod: Duration.days(4),
+      retentionPeriod:   Duration.days(4),
     });
 
-    // ------------------------------------------------------------------ #
-    // Task definition                                                     #
-    // ------------------------------------------------------------------ #
-    const repo = Repository.fromRepositoryName(
-      this,
-      "RunnerRepo",
-      "viewer-backend",
-    );
+    // ───────────────────────────────────────── Shared task image
+    const repo = Repository.fromRepositoryName(this, "RunnerRepo", "viewer-backend");
 
-    const taskDef = new TaskDefinition(this, "TaskDef", {
+    // ============ Runner task-def (Flask) =================================
+    const runnerTaskDef = new TaskDefinition(this, "RunnerTaskDef", {
       memoryMiB: "1024",
       cpu: "512",
       compatibility: Compatibility.FARGATE,
     });
 
-    taskDef.addContainer("AppContainer", {
+    runnerTaskDef.addContainer("AppContainer", {
       image: ContainerImage.fromEcrRepository(repo, "latest"),
       essential: true,
       logging: LogDriver.awsLogs({ streamPrefix: "runner" }),
@@ -97,13 +73,31 @@ export class EcsStack extends Stack {
       portMappings: [{ containerPort: 8000, protocol: Protocol.TCP }],
     });
 
-    // ----- IAM: let the runner touch S3 + DynamoDB --------------------
-    artifactsBucket.grantReadWrite(taskDef.taskRole);   // presign & uploads
-    table.grantReadWriteData(taskDef.taskRole);         // create/update runs
+    // IAM – runner needs S3, DDB, **send** to SQS
+    artifactsBucket.grantReadWrite(runnerTaskDef.taskRole);
+    table.grantReadWriteData(runnerTaskDef.taskRole);
+    queue.grantSendMessages(runnerTaskDef.taskRole);
 
-    // ------------------------------------------------------------------ #
-    // ALB + Fargate service                                               #
-    // ------------------------------------------------------------------ #
+    // ============ Worker task-def (Celery) ================================
+    const workerTaskDef = new TaskDefinition(this, "WorkerTaskDef", {
+      memoryMiB: "1024",
+      cpu: "512",
+      compatibility: Compatibility.FARGATE,
+    });
+
+    workerTaskDef.addContainer("AppContainer", {
+      image: ContainerImage.fromEcrRepository(repo, "latest"),
+      essential: true,
+      logging: LogDriver.awsLogs({ streamPrefix: "worker" }),
+      command: ["celery", "-A", "hc_services.runner.tasks", "worker", "--loglevel=info"],
+    });
+
+    // IAM – worker needs S3, DDB, **consume** SQS
+    artifactsBucket.grantReadWrite(workerTaskDef.taskRole);
+    table.grantReadWriteData(workerTaskDef.taskRole);
+    queue.grantConsumeMessages(workerTaskDef.taskRole);
+
+    // ───────────────────────────────────────── ALB
     const alb = new ApplicationLoadBalancer(this, "Alb", {
       vpc,
       internetFacing: true,
@@ -118,12 +112,13 @@ export class EcsStack extends Stack {
       }),
     });
 
+    // ───────────────────────────────────────── Runner service
     const runnerSvc = new FargateService(this, "RunnerSvc", {
       cluster,
-      taskDefinition: taskDef,
+      taskDefinition: runnerTaskDef,
       desiredCount: 1,
-      serviceName: "runner-svc",      // ← fixed, readable name
-      assignPublicIp: true,           // quick way to reach ECR/S3
+      serviceName: "runner-svc",
+      assignPublicIp: true,
     });
 
     listener.addTargets("RunnerTG", {
@@ -133,11 +128,19 @@ export class EcsStack extends Stack {
       healthCheck: { path: "/health" },
     });
 
-    // ------------------------------------------------------------------ #
-    // Stack outputs                                                      #
-    // ------------------------------------------------------------------ #
-    new CfnOutput(this, "AlbDNS",   { value: alb.loadBalancerDnsName });
+    // ───────────────────────────────────────── Worker service
+    const workerSvc = new FargateService(this, "WorkerSvc", {
+      cluster,
+      taskDefinition: workerTaskDef,
+      desiredCount: 1,
+      serviceName: "worker-svc",
+      assignPublicIp: true,
+    });
+
+    // ───────────────────────────────────────── Outputs
+    new CfnOutput(this, "AlbDNS",      { value: alb.loadBalancerDnsName });
     new CfnOutput(this, "ClusterName", { value: cluster.clusterName });
-    new CfnOutput(this, "ServiceName", { value: runnerSvc.serviceName });
+    new CfnOutput(this, "RunnerName",  { value: runnerSvc.serviceName });
+    new CfnOutput(this, "WorkerName",  { value: workerSvc.serviceName });
   }
 }
