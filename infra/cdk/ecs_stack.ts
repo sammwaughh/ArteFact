@@ -98,6 +98,13 @@ export class EcsStack extends Stack {
     table.grantReadWriteData(runnerTaskDef.taskRole);
     queue.grantSendMessages(runnerTaskDef.taskRole);
 
+    runnerTaskDef.taskRole.addToPrincipalPolicy(
+      new PolicyStatement({
+        actions: ["sqs:ListQueues"],
+        resources: ["*"],
+      }),
+    );
+
     /* ============ Worker task-def ============ */
     const workerTaskDef = new TaskDefinition(this, "WorkerTaskDef", {
       memoryMiB: "1024",
