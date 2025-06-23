@@ -34,6 +34,7 @@ import { Repository } from "aws-cdk-lib/aws-ecr";
 import { Bucket } from "aws-cdk-lib/aws-s3";
 import { PolicyStatement } from "aws-cdk-lib/aws-iam";
 import { Certificate } from "aws-cdk-lib/aws-certificatemanager";
+import { OriginAccessIdentity } from "aws-cdk-lib/aws-cloudfront";   // NEW
 
 const ARTIFACT_BUCKET_NAME = "artefact-context-artifacts-eu2";   // <— single-source
 
@@ -59,6 +60,22 @@ export class EcsStack extends Stack {
       "ArtifactsBucket",
       ARTIFACT_BUCKET_NAME,
     );
+
+    // ── NEW: grant CloudFront OAI read access to the whole bucket ─────────
+    const oai = OriginAccessIdentity.fromOriginAccessIdentityId(
+      this,
+      "CloudFrontOAI",
+      "E1234567890",              // ← replace with the real OAI ID shown in the CF console
+    );
+
+    artifactsBucket.addToResourcePolicy(
+      new PolicyStatement({
+        actions: ["s3:GetObject"],
+        principals: [oai.grantPrincipal],
+        resources: [artifactsBucket.arnForObjects("*")],  // covers artifacts/* and outputs/*
+      }),
+    );
+    // ───────────────────────────────────────────────────────────────────────
 
     // Adopt the table that already exists in your account
     const table = Table.fromTableName(this, "RunsTable", "hc-runs");
