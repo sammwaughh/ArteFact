@@ -165,7 +165,6 @@ def presign_upload():
         public_host = os.getenv("AWS_PUBLIC_ENDPOINT", "http://localhost:4566")
         post["url"] = post["url"].replace("http://localstack:4566", public_host)
 
-
     return jsonify({"runId": run_id, "s3Key": key, "upload": post})
 
 
