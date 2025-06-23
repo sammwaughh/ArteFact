@@ -154,12 +154,17 @@ def presign_upload():
             ["content-length-range", 0, 10 * 1024 * 1024],  # ≤ 10 MB
         ],
     )
-    # ----------------------------------------
+
+    # --- avoid 307 redirect that breaks CORS (only in real AWS) -----------
+    if not AWS_ENDPOINT:
+        region_host = f"https://{ARTIFACT_BUCKET}.s3.{_REGION}.amazonaws.com"
+        post["url"] = region_host
 
     # Dev-only tweak for LocalStack
     if AWS_ENDPOINT:
         public_host = os.getenv("AWS_PUBLIC_ENDPOINT", "http://localhost:4566")
         post["url"] = post["url"].replace("http://localstack:4566", public_host)
+
 
     return jsonify({"runId": run_id, "s3Key": key, "upload": post})
 
