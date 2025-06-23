@@ -27,6 +27,7 @@ import {
 } from "aws-cdk-lib/aws-elasticloadbalancingv2";
 import { Repository } from "aws-cdk-lib/aws-ecr";
 import { Bucket } from "aws-cdk-lib/aws-s3";
+import { PolicyStatement } from "aws-cdk-lib/aws-iam";       // ← NEW
 
 export class EcsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -58,7 +59,7 @@ export class EcsStack extends Stack {
     // ───────────────────────────────────────── Shared task image
     const repo = Repository.fromRepositoryName(this, "RunnerRepo", "viewer-backend");
 
-    // ============ Runner task-def (Flask) =================================
+    // ============ Runner task-def (Flask) ===============================
     const runnerTaskDef = new TaskDefinition(this, "RunnerTaskDef", {
       memoryMiB: "1024",
       cpu: "512",
@@ -73,12 +74,12 @@ export class EcsStack extends Stack {
       portMappings: [{ containerPort: 8000, protocol: Protocol.TCP }],
     });
 
-    // IAM – runner needs S3, DDB, **send** to SQS
+    // IAM – runner: S3, DynamoDB, send SQS
     artifactsBucket.grantReadWrite(runnerTaskDef.taskRole);
     table.grantReadWriteData(runnerTaskDef.taskRole);
     queue.grantSendMessages(runnerTaskDef.taskRole);
 
-    // ============ Worker task-def (Celery) ================================
+    // ============ Worker task-def (Celery) ==============================
     const workerTaskDef = new TaskDefinition(this, "WorkerTaskDef", {
       memoryMiB: "1024",
       cpu: "512",
@@ -92,10 +93,15 @@ export class EcsStack extends Stack {
       command: ["celery", "-A", "hc_services.runner.tasks", "worker", "--loglevel=info"],
     });
 
-    // IAM – worker needs S3, DDB, **consume** SQS
+    // IAM – worker: S3, DynamoDB, consume SQS + ListQueues
     artifactsBucket.grantReadWrite(workerTaskDef.taskRole);
     table.grantReadWriteData(workerTaskDef.taskRole);
     queue.grantConsumeMessages(workerTaskDef.taskRole);
+
+    workerTaskDef.taskRole.addToPrincipalPolicy(new PolicyStatement({  // ← NEW
+      actions: ["sqs:ListQueues"],
+      resources: ["*"],        // ListQueues has no resource-level ARN
+    }));
 
     // ───────────────────────────────────────── ALB
     const alb = new ApplicationLoadBalancer(this, "Alb", {
