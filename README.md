@@ -2,7 +2,7 @@
 
 <img src="viewer/public/images/logo-16-9.JPEG" alt="ArteFact Logo" width="400">
 
-Modern web application for analyzing artwork using machine-learning models.  
+Modern web application for analysing artwork using machine-learning models.  
 Upload paintings and get academic annotations, contextual labels, and confidence scores in real-time.
 
 🌐 **Live Demo**: [artefactcontext.com](https://artefactcontext.com)
