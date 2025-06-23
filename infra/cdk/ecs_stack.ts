@@ -71,6 +71,13 @@ export class EcsStack extends Stack {
 
     const repo = Repository.fromRepositoryName(this, "RunnerRepo", "viewer-backend");
 
+    const COMMON_ENV = {
+      ARTIFACT_BUCKET: ARTIFACT_BUCKET_NAME,
+      RUNS_TABLE:      "hc-runs",            // <- for DynamoDB client
+      QUEUE_NAME:      queue.queueName,      // <- workers resolve by name
+      QUEUE_URL:       queue.queueUrl,       // <- runner can SendMessage fast
+    };
+
     /* ============ Runner task-def ============ */
     const runnerTaskDef = new TaskDefinition(this, "RunnerTaskDef", {
       memoryMiB: "1024",
@@ -84,7 +91,7 @@ export class EcsStack extends Stack {
       logging: LogDriver.awsLogs({ streamPrefix: "runner" }),
       command: ["python", "-m", "hc_services.runner.app"],
       portMappings: [{ containerPort: 8000, protocol: Protocol.TCP }],
-      environment: { ARTIFACT_BUCKET: ARTIFACT_BUCKET_NAME },    // ★
+      environment: COMMON_ENV,
     });
 
     artifactsBucket.grantReadWrite(runnerTaskDef.taskRole);
@@ -103,7 +110,7 @@ export class EcsStack extends Stack {
       essential: true,
       logging: LogDriver.awsLogs({ streamPrefix: "worker" }),
       command: ["celery", "-A", "hc_services.runner.tasks", "worker", "--loglevel=info"],
-      environment: { ARTIFACT_BUCKET: ARTIFACT_BUCKET_NAME },    // ★
+      environment: COMMON_ENV,
     });
 
     artifactsBucket.grantReadWrite(workerTaskDef.taskRole);
