@@ -90,10 +90,13 @@ export function useUploadAndRun(file: File | null): UseUploadAndRunState {
         form.append('Content-Type', file.type); // must satisfy the policy
         form.append('file', file);              // ✱ must be the last field ✱
 
-        await fetch(upload.url, {
+        const resp = await fetch(upload.url, {
           method: 'POST',
           body: form,
         });
+        if (!resp.ok) {
+          throw new Error(`upload failed (${resp.status})`);
+        }
 
         await createRun(runId, s3Key);
         setState({ runId, status: 'queued' });

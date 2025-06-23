@@ -148,7 +148,6 @@ def presign_upload():
         Bucket=ARTIFACT_BUCKET,
         Key=key,
         ExpiresIn=15 * 60,  # 15 min
-        Fields={"acl": "private"},
         Conditions=[
             ["starts-with", "$Content-Type", "image/"],
             ["content-length-range", 0, 10 * 1024 * 1024],  # ≤ 10 MB
