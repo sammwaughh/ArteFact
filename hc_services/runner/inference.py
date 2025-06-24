@@ -22,14 +22,26 @@ def run_inference(image_path: str) -> List[Dict[str, Any]]:
     list[dict]
         [{ "label": str, "score": float, "evidence": dict }, …]
     """
-    # TODO: load PaintingCLIP once, run encode + FAISS search, etc.
-    # Skeleton output:
+    # TODO: load PaintingCLIP once, run encode + FAISS search, etc.
+    # Temporary stub: return three labels so we can confirm the UI
+    # renders multiple results correctly.  Replace with real model
+    # outputs in a later step.
     return [
         {
-            "label": "This is a dummy label",
-            "score": 0.72,
-            "evidence": {"note": "replace with real provenance"},
-        }
+            "label": "leaf motif",
+            "score": 0.92,
+            "evidence": {"note": "dummy evidence – will be CLIP-based"},
+        },
+        {
+            "label": "gilded frame",
+            "score": 0.85,
+            "evidence": {"note": "dummy evidence – will be CLIP-based"},
+        },
+        {
+            "label": "Renaissance style",
+            "score": 0.77,
+            "evidence": {"note": "dummy evidence – will be CLIP-based"},
+        },
     ]
 
 
