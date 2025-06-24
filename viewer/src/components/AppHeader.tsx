@@ -1,4 +1,4 @@
-import { Flex, Image, Heading } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 
 export default function AppHeader() {
   return (
@@ -13,13 +13,12 @@ export default function AppHeader() {
       top={0}
       zIndex={10}
     >
-      <Image
-        src={`${import.meta.env.BASE_URL}images/logo-16-9.JPEG`}
-        alt="ArteFact logo"
-        h="36px"
-        mr={3}
-      />
-      <Heading size="md" letterSpacing="tight">
+      <Heading
+        size="md"
+        letterSpacing="tight"
+        cursor="pointer"
+        onClick={() => window.location.reload()}
+      >
         ArteFact
       </Heading>
     </Flex>
