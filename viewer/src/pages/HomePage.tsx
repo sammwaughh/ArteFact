@@ -5,7 +5,7 @@ import ProcessingScreen from '../components/ProcessingScreen';
 import ViewerPage from './ViewerPage';
 import type { Label } from '../types/labels';
 
-export default function UploadPage() {
+export default function HomePage() {
   const [file, setFile] = useState<File | null>(null);
   const { status, labels = [], imageUrl, error } = useUploadAndRun(file);
 

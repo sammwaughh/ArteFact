@@ -4,8 +4,14 @@
  * For now we mount the single-page upload / inference flow.
  * (Routing can be added later with React-Router if we grow beyond one page.)
  */
-import UploadPage from './pages/UploadPage';
+import HomePage from './pages/HomePage';
+import AppHeader from './components/AppHeader';
 
-export default function App() {
-  return <UploadPage />;
-}
+ export default function App() {
+   return (
+     <>
+       <AppHeader />
+       <HomePage />
+     </>
+   );
+ }
