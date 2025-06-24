@@ -8,13 +8,14 @@ import {
   requestPresign,
   createRun,
   getRun,
-  type RunStatus, // ← type-only
+  type RunStatus,
 } from './api';
+import type { Label, Source } from './types/labels';   // 🆕
 
 interface UseUploadAndRunState {
   runId?: string;
   status?: RunStatus['status'];
-  labels?: unknown[];
+  labels?: Label[];              // 🆕
   imageUrl?: string;
   error?: Error;
 }
@@ -36,10 +37,27 @@ function usePollRun(
         if (run.status === 'done' && run.outputKey) {
           clearInterval(id);
 
-          // Fetch labels JSON from CloudFront
+          // ── 1 ) fetch raw JSON from S3/CloudFront ──────────────────────
           const base = import.meta.env.VITE_CLOUDFRONT_URL;
           const labelsResp = await fetch(`${base}/${run.outputKey}`);
-          const labels: unknown[] = await labelsResp.json();
+          const raw: { label: string; score: number; evidence?: Partial<Source> }[] =
+            await labelsResp.json();
+
+          // ── 2 ) normalise to the UI `Label` shape ──────────────────────
+          const fallbackSource: Source = {
+            title: 'Model inference',
+            authors: 'ArteFact',
+            year: new Date().getFullYear(),
+          };
+
+          const labels: Label[] = raw.map(
+            (r, i): Label => ({
+              id: `l${i}`,
+              text: r.label,
+              confidence: r.score,
+              source: { ...fallbackSource, ...r.evidence } as Source,
+            }),
+          );
 
           setState({
             runId,
