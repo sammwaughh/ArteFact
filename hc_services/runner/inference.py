@@ -26,8 +26,8 @@ def run_inference(image_path: str) -> List[Dict[str, Any]]:
     # Skeleton output:
     return [
         {
-            "label": "stub-label",
-            "score": 0.99,
+            "label": "This is a dummy label",
+            "score": 0.72,
             "evidence": {"note": "replace with real provenance"},
         }
     ]
