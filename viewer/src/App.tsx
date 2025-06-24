@@ -7,11 +7,11 @@
 import HomePage from './pages/HomePage';
 import AppHeader from './components/AppHeader';
 
- export default function App() {
-   return (
+export default function App() {
+  return (
      <>
        <AppHeader />
        <HomePage />
      </>
-   );
- }
+  );
+}
