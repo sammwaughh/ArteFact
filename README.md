@@ -20,6 +20,125 @@ This is a simplified, local-only version of ArteFact that runs entirely on your 
 
 ---
 
+## 🚀 Quick Start - Complete Setup Instructions
+
+### Prerequisites
+- Python 3.9+ (check with `python3 --version`)
+- Node.js 16+ (check with `node --version`)
+- Git (check with `git --version`)
+- 2GB free disk space (for ML dependencies)
+
+### Step 1: Clone and Checkout
+
+```bash
+# Clone the repository
+git clone https://github.com/[your-repo]/artefact-context.git
+cd artefact-context
+
+# IMPORTANT: Switch to the 'local' branch
+git checkout local
+
+# Verify you're on the correct branch
+git branch --show-current
+# Should output: local
+```
+
+### Step 2: Set up Python Backend
+
+```bash
+# Create a Python virtual environment
+python3 -m venv venv
+
+# Activate the virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+# venv\Scripts\activate
+
+# You should now see (venv) at the start of your terminal prompt
+
+# Upgrade pip
+pip install --upgrade pip
+
+# Install the project and all dependencies
+pip install -e .
+
+# This will install Flask, torch, pillow, and other dependencies
+# Note: torch is large (2GB+) so this may take a few minutes
+```
+
+### Step 3: Set up React Frontend
+
+```bash
+# Navigate to the frontend directory
+cd viewer
+
+# Install Node dependencies
+npm install
+
+# Create the environment file for the frontend
+echo "VITE_API_URL=http://localhost:8000" > .env
+
+# Return to the project root
+cd ..
+```
+
+### Step 4: Run the Application
+
+You'll need **two terminal windows** for this:
+
+#### Terminal 1 - Backend Server:
+```bash
+# Make sure you're in the project root directory
+cd /path/to/artefact-context
+
+# Activate the virtual environment (if not already active)
+source venv/bin/activate  # macOS/Linux
+# or
+# venv\Scripts\activate   # Windows
+
+# Start the Flask backend
+python -m hc_services.runner.app
+
+# You should see:
+# * Running on http://127.0.0.1:8000
+# Press CTRL+C to quit
+```
+
+#### Terminal 2 - Frontend Server:
+```bash
+# Open a new terminal
+cd /path/to/artefact-context/viewer
+
+# Start the React development server
+npm run dev
+
+# You should see:
+# VITE v5.x.x  ready in xxx ms
+# ➜  Local:   http://localhost:5173/
+```
+
+### Step 5: Test the Application
+
+1. Open your web browser and go to **http://localhost:5173**
+2. Click **"Select an image"** button
+3. Choose any JPEG or PNG image file
+4. Watch the upload and processing:
+   - You'll see "Processing..." with a spinner
+   - After 3-5 seconds, your image will appear with AI-generated labels
+5. The labels currently show dummy data (leaf motif, gilded frame, Renaissance style)
+
+### Verify Everything is Working
+
+Check that files are being created:
+```bash
+# From the project root
+ls artifacts/   # Should show uploaded images like: abc123def456.jpg
+ls outputs/     # Should show JSON results like: abc123def456.json
+```
+
+---
+
 ## 🛠 How it Works
 
 <details>
@@ -56,71 +175,23 @@ When status=done:
 ```
 </details>
 
-### Request Flow
-
-| Step | Endpoint | Description |
-|------|----------|-------------|
-| 1. **Get upload URL** | `POST /presign` | Returns a unique `runId` and local upload endpoint |
-| 2. **Upload image** | `POST /upload/<runId>` | Saves image to `artifacts/` directory |
-| 3. **Start processing** | `POST /runs` | Creates run record and starts background thread |
-| 4. **Check status** | `GET /runs/<runId>` | Returns current status (queued → processing → done) |
-| 5. **Get results** | `GET /outputs/<runId>.json` | Returns inference results when ready |
-| 6. **Get image** | `GET /artifacts/<runId>.jpg` | Returns the uploaded image |
-
 ---
 
-## 🚀 Quick Start
+## 🧪 Testing Different Scenarios
 
-### Prerequisites
-- Python 3.9+
-- Node.js 16+
-- 2GB free disk space (for ML dependencies)
+### Test Slow Processing
+```bash
+# In Terminal 1, stop the server (CTRL+C) and restart with:
+SLEEP_SECS=10 python -m hc_services.runner.app
+```
+Upload an image - it will take ~10 seconds to process.
 
-### Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/[your-repo]/artefact-context.git
-   cd artefact-context
-   ```
-
-2. **Set up Python environment:**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install --upgrade pip
-   pip install -e .
-   ```
-
-3. **Set up frontend:**
-   ```bash
-   cd viewer
-   npm install
-   echo "VITE_API_URL=http://localhost:8000" > .env
-   cd ..
-   ```
-
-### Running the Application
-
-1. **Start the backend (in one terminal):**
-   ```bash
-   source venv/bin/activate
-   python -m hc_services.runner.app
-   ```
-   You should see: `Running on http://127.0.0.1:8000`
-
-2. **Start the frontend (in another terminal):**
-   ```bash
-   cd viewer
-   npm run dev
-   ```
-   You should see: `Local: http://localhost:5173/`
-
-3. **Use the app:**
-   - Open http://localhost:5173 in your browser
-   - Click "Select an image" and upload a JPEG or PNG
-   - Wait for processing (3-5 seconds with dummy inference)
-   - View your image with AI-generated labels!
+### Test Error Handling
+```bash
+# In Terminal 1, stop the server (CTRL+C) and restart with:
+FORCE_ERROR=1 python -m hc_services.runner.app
+```
+Upload an image - you'll see an error message instead of results.
 
 ---
 
@@ -143,63 +214,22 @@ artefact-context/
 
 ---
 
-## 🔧 Configuration
+## ⚠️ Common Issues & Solutions
 
-### Environment Variables
+### Issue: `ModuleNotFoundError: No module named 'hc_services'`
+**Solution**: Make sure you ran `pip install -e .` from the project root
 
-- `SLEEP_SECS`: Simulate slow processing (e.g., `SLEEP_SECS=10`)
-- `FORCE_ERROR`: Force processing to fail for testing (e.g., `FORCE_ERROR=1`)
+### Issue: Frontend can't connect to backend
+**Solution**: 
+- Verify Flask is running on port 8000
+- Check that `viewer/.env` contains `VITE_API_URL=http://localhost:8000`
+- Make sure both servers are running
 
-Example:
-```bash
-SLEEP_SECS=5 python -m hc_services.runner.app
-```
+### Issue: `command not found: python3`
+**Solution**: Install Python 3.9+ from https://www.python.org/downloads/
 
-### Frontend Configuration
-
-The frontend reads from `viewer/.env`:
-- `VITE_API_URL`: Backend URL (default: `http://localhost:8000`)
-
----
-
-## 🧪 Testing
-
-1. **Test successful processing:**
-   ```bash
-   python -m hc_services.runner.app
-   ```
-   Upload an image - should complete in 3-5 seconds.
-
-2. **Test slow processing:**
-   ```bash
-   SLEEP_SECS=10 python -m hc_services.runner.app
-   ```
-   Upload an image - should take ~10 seconds.
-
-3. **Test error handling:**
-   ```bash
-   FORCE_ERROR=1 python -m hc_services.runner.app
-   ```
-   Upload an image - should show an error message.
-
----
-
-## 🎯 Adding Real ML Inference
-
-Currently, the app returns dummy labels. To add real ML inference:
-
-1. Edit `hc_services/runner/inference.py`
-2. Load your model in the `run_inference()` function
-3. Process the image and return results in the expected format:
-   ```python
-   [
-       {
-           "label": "detected object/style",
-           "score": 0.95,
-           "evidence": {"note": "explanation"}
-       }
-   ]
-   ```
+### Issue: `command not found: npm`
+**Solution**: Install Node.js from https://nodejs.org/
 
 ---
 
@@ -211,13 +241,3 @@ Currently, the app returns dummy labels. To add real ML inference:
 - Perfect for development, testing, or offline use
 
 ---
-
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
----
-
-## 📄 License
-
-[Your license here]
