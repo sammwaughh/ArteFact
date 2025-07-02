@@ -107,4 +107,11 @@ docker-compose.override.yml
 # Thumbnails
 ._*
 
+###############################################################################
+#  LOCAL STORAGE                                                               #
+###############################################################################
+# Local storage directories
+artifacts/
+outputs/
+
 # End of file

@@ -1,134 +1,49 @@
 """
-Flask API gateway (runner-svc).
+Flask API gateway (local-only version).
 
 Routes
 ------
 POST /presign
+POST /upload/<runId>
 POST /runs
 GET  /runs/<runId>
+GET  /artifacts/<filename>
+GET  /outputs/<filename>
 """
-
-from __future__ import annotations
 
 import os
 import uuid
-from datetime import datetime
-from typing import cast
+from datetime import datetime, timezone
+from concurrent.futures import ThreadPoolExecutor
 
-import boto3
-from botocore.exceptions import ClientError
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 
-from .constants import ARTIFACT_BUCKET, RUNS_TABLE, QUEUE_NAME
-from .tasks import run_task
+# Import the tasks module (contains run_task, runs dict, etc.)
+from . import tasks
 
 # --------------------------------------------------------------------------- #
-#  AWS / LocalStack configuration                                             #
-# --------------------------------------------------------------------------- #
-_REGION = "eu-west-2"
-# Endpoint for real AWS (None) or LocalStack
-AWS_ENDPOINT = os.getenv("AWS_ENDPOINT_URL")
-
-# --------------------------------------------------------------------------- #
-#  Helper factories – ensure Moto patches clients created *after* mock_aws    #
-# --------------------------------------------------------------------------- #
-
-
-def _s3():
-    return boto3.client("s3", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
-
-
-def _sqs():
-    return boto3.client("sqs", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
-
-
-def _dynamodb():
-    return boto3.resource("dynamodb", region_name=_REGION, endpoint_url=AWS_ENDPOINT)
-
-
-def _table():
-    return _dynamodb().Table(RUNS_TABLE)
-
-
-# --------------------------------------------------------------------------- #
-#  Dev-only bootstrap: ensure bucket exists & permissive CORS on LocalStack   #
-# --------------------------------------------------------------------------- #
-def _ensure_bucket() -> None:
-    try:
-        _s3().head_bucket(Bucket=ARTIFACT_BUCKET)
-    except ClientError as err:
-        code = err.response.get("Error", {}).get("Code", "")
-        if code not in ("NoSuchBucket", "404"):
-            raise  # genuine AWS error
-        # --- create bucket (add LocationConstraint outside us-east-1) -------
-        create_kwargs = {"Bucket": ARTIFACT_BUCKET}
-        if _REGION != "us-east-1":  # ← NEW
-            create_kwargs["CreateBucketConfiguration"] = {"LocationConstraint": _REGION}
-        _s3().create_bucket(**create_kwargs)
-        # --- open CORS so the SPA can PUT directly --------------------------
-        _s3().put_bucket_cors(
-            Bucket=ARTIFACT_BUCKET,
-            CORSConfiguration={
-                "CORSRules": [
-                    {
-                        "AllowedOrigins": ["*"],
-                        "AllowedMethods": ["POST", "GET", "HEAD"],
-                        "AllowedHeaders": ["*"],
-                        "MaxAgeSeconds": 3600,
-                    }
-                ]
-            },
-        )
-
-
-def _ensure_table() -> None:
-    """Create DynamoDB table `hc-runs` in LocalStack if missing."""
-    client = _dynamodb().meta.client
-    try:
-        client.describe_table(TableName=RUNS_TABLE)
-    except client.exceptions.ResourceNotFoundException:
-        client.create_table(
-            TableName=RUNS_TABLE,
-            KeySchema=[{"AttributeName": "runId", "KeyType": "HASH"}],
-            AttributeDefinitions=[{"AttributeName": "runId", "AttributeType": "S"}],
-            BillingMode="PAY_PER_REQUEST",
-        )
-        client.get_waiter("table_exists").wait(TableName=RUNS_TABLE)
-
-
-if AWS_ENDPOINT:  # only when using LocalStack
-    _ensure_bucket()
-    _ensure_table()
-
-
-# --------------------------------------------------------------------------- #
-#  Helper: resolve the SQS queue URL lazily (avoid AWS calls at import time)  #
-# --------------------------------------------------------------------------- #
-def _ensure_queue_url() -> str:
-    if not hasattr(_ensure_queue_url, "_cache"):
-        sqs = _sqs()
-        try:
-            url = sqs.get_queue_url(QueueName=QUEUE_NAME)["QueueUrl"]
-        except sqs.exceptions.QueueDoesNotExist:
-            url = sqs.create_queue(QueueName=QUEUE_NAME)["QueueUrl"]
-        _ensure_queue_url._cache = url  # type: ignore[attr-defined]
-    return cast(str, _ensure_queue_url._cache)  # type: ignore[attr-defined]
-
-
-# --------------------------------------------------------------------------- #
-#  Flask application & routes                                                 #
+#  Flask application & thread pool setup                                      #
 # --------------------------------------------------------------------------- #
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})  # allow SPA on :5173
 
+# Thread pool to handle background inference tasks
+executor = ThreadPoolExecutor(max_workers=4)
 
+# Get the base directory for file storage (project root)
+BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+ARTIFACTS_DIR = os.path.join(BASE_DIR, "artifacts")
+OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+
+# --------------------------------------------------------------------------- #
+#  Routes                                                                     #
+# --------------------------------------------------------------------------- #
 @app.route("/health")
 def health() -> str:
     return "ok"
 
 
-# --------------------------------------------------------------------------- #
 @app.route("/presign", methods=["POST"])
 def presign_upload():
     """
@@ -136,75 +51,96 @@ def presign_upload():
     Response: {
         "runId": "...",
         "s3Key": "artifacts/<id>.jpg",
-        "upload": { "url": "...", "fields": { ... } }
+        "upload": { "url": "...", "fields": { } }
     }
     """
-    request.get_json(force=True)
+    data = request.get_json(force=True)
     run_id = uuid.uuid4().hex
-    key = f"artifacts/{run_id}.jpg"
-
-    # ----------- presigned *POST* -----------
-    post = _s3().generate_presigned_post(
-        Bucket=ARTIFACT_BUCKET,
-        Key=key,
-        ExpiresIn=15 * 60,  # 15 min
-        Conditions=[
-            ["starts-with", "$Content-Type", "image/"],
-            ["content-length-range", 0, 10 * 1024 * 1024],  # ≤ 10 MB
-        ],
-    )
-
-    # --- avoid 307 redirect that breaks CORS (only in real AWS) -----------
-    if not AWS_ENDPOINT:
-        region_host = f"https://{ARTIFACT_BUCKET}.s3.{_REGION}.amazonaws.com"
-        post["url"] = region_host
-
-    # Dev-only tweak for LocalStack
-    if AWS_ENDPOINT:
-        public_host = os.getenv("AWS_PUBLIC_ENDPOINT", "http://localhost:4566")
-        post["url"] = post["url"].replace("http://localstack:4566", public_host)
-
-    return jsonify({"runId": run_id, "s3Key": key, "upload": post})
+    # We'll use a local file path as the "s3Key"
+    s3_key = f"artifacts/{run_id}.jpg"
+    # Local upload endpoint URL (where the front-end will POST the file)
+    upload_url = request.host_url + f"upload/{run_id}"
+    # Return the run info and upload instructions (fields remain empty for compatibility)
+    return jsonify({
+        "runId": run_id,
+        "s3Key": s3_key,
+        "upload": {
+            "url": upload_url,
+            "fields": {}  # no fields needed for local upload
+        }
+    })
 
 
-# --------------------------------------------------------------------------- #
+@app.route("/upload/<run_id>", methods=["POST"])
+def upload_file(run_id: str):
+    """
+    Receives the image file upload for the given runId and saves it to disk.
+    """
+    if 'file' not in request.files:
+        return jsonify({"error": "no-file"}), 400
+    file = request.files['file']
+    # Ensure artifacts directory exists
+    os.makedirs(ARTIFACTS_DIR, exist_ok=True)
+    # Save the file as artifacts/<runId>.jpg
+    file_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
+    file.save(file_path)
+    # Respond with 204 No Content (success, no response body)
+    return "", 204
+
+
 @app.route("/runs", methods=["POST"])
 def create_run():
     """
-    Body: { "runId": "...", "s3Key": "artifacts/....jpg" }
-
-    * writes Dynamo item (status = queued)
-    * publishes SQS message
+    Body: { "runId": "...", "s3Key": "artifacts/...jpg" }
+    - Save initial run status in memory
+    - Launch background thread for processing
     """
     payload = request.get_json(force=True)
     run_id = payload["runId"]
     s3_key = payload["s3Key"]
-    now = datetime.utcnow().isoformat(timespec="seconds")
-
-    _table().put_item(
-        Item={
+    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    
+    # Store initial run info in the in-memory dictionary
+    with tasks.runs_lock:
+        tasks.runs[run_id] = {
             "runId": run_id,
             "status": "queued",
             "s3Key": s3_key,
             "createdAt": now,
-            "updatedAt": now,
+            "updatedAt": now
         }
-    )
-    # hand the work off to Celery (goes via SQS broker)
-    run_task.apply_async(args=[run_id, s3_key], queue=QUEUE_NAME)
-
+    
+    # Submit the background inference task to the thread pool
+    # Pass the absolute path to the image
+    image_path = os.path.join(BASE_DIR, s3_key)
+    executor.submit(tasks.run_task, run_id, image_path)
+    
     return "", 202  # Accepted
 
 
-# --------------------------------------------------------------------------- #
 @app.route("/runs/<run_id>", methods=["GET"])
 def get_run(run_id: str):
-    resp = _table().get_item(Key={"runId": run_id})
-    if "Item" not in resp:
+    """
+    Return the status of the run (from in-memory store).
+    """
+    run = tasks.runs.get(run_id)
+    if run is None:
         return jsonify({"error": "not-found"}), 404
-    return jsonify(resp["Item"])
+    return jsonify(run)
+
+
+@app.route("/artifacts/<path:filename>", methods=["GET"])
+def get_artifact_file(filename: str):
+    """Serve an uploaded image from the artifacts directory."""
+    return send_from_directory(ARTIFACTS_DIR, filename)
+
+
+@app.route("/outputs/<path:filename>", methods=["GET"])
+def get_output_file(filename: str):
+    """Serve a JSON output file from the outputs directory."""
+    return send_from_directory(OUTPUTS_DIR, filename)
 
 
 # --------------------------------------------------------------------------- #
 if __name__ == "__main__":  # invoked via  python -m …
-    app.run(host="0.0.0.0", port=8000, debug=False)
+    app.run(host="0.0.0.0", port=8000, debug=True)
