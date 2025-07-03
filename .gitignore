@@ -114,4 +114,7 @@ docker-compose.override.yml
 artifacts/
 outputs/
 
+# Sentence Embeddings
+.pt
+
 # End of file
