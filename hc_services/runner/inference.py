@@ -19,7 +19,7 @@ from peft import PeftModel
 # ─── paths ──────────────────────────────────────────────
 ROOT      = Path(__file__).resolve().parents[2]          # artefact-context/
 LORA_DIR  = ROOT / "PaintingClip" / "clip_finetuned_lora_best"
-EMB_PATH  = ROOT / "Sentence Embeddings" / "Rembrandt van Rijn_finetuned_clip_embedding_cache.pt"
+EMB_PATH  = ROOT / "Sentence Embeddings" / "Rembrandt van Rijn_clip_embedding_cache.pt"
 MODEL_ID  = "openai/clip-vit-base-patch32"
 TOP_K     = 5                                            # results returned
 # ────────────────────────────────────────────────────────
