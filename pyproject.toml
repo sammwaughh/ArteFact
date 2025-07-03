@@ -6,8 +6,7 @@ requires-python = ">=3.9"
 dependencies = [
     "flask>=2.3",
     "flask-cors>=4.0",
-    # Torch and PEFT moved to main dependencies for local inference
-    "torch",
+    "torch>=2.6",          # CVE-2025-32434 fix
     "peft",
     "pillow",
 ]
