@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artefact Context Viewer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/artefact-context.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Artefact Viewer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Upload</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid py-4">
+    <div class="row" style="height: 80vh;">
+      <div class="col-md-9 d-flex justify-content-center align-items-center">
+        <div id="uploadedImageContainer" class="position-relative bg-secondary d-flex justify-content-center align-items-center text-white w-100 h-100">
+          <div class="text-center w-100">
+            <button id="uploadTrigger" class="btn btn-outline-light mb-3" style="font-size: 1.2rem;">
+              <i class="bi bi-upload" style="font-size: 2rem;"></i><br>Upload an Image
+            </button>
+            <input type="file" id="imageUpload" accept="image/*" class="d-none">
+            
+            <div id="exampleContainer">
+              <div class="example-scroll overflow-auto d-flex flex-row gap-3 px-2" style="max-width: 100%; white-space: nowrap;">
+                <img class="example-img rounded border" src="images/examples/_The_School_of_Athens__by_Raffaello_Sanzio_da_Urbino.jpg" alt="" height="300">
+                <img class="example-img rounded border" src="images/examples/Giotto_-_Scrovegni_-_-31-_-_Kiss_of_Judas.jpg" alt="" height="300">
+                <img class="example-img rounded border" src="images/examples/Last_Judgement_(Michelangelo).jpg" alt="" height="300">
+                <img class="example-img rounded border" src="images/examples/Michelangelo_-_Creation_of_Adam_(cropped).jpg" alt="" height="300">
+                <img class="example-img rounded border" src="images/examples/RAFAEL_-_Madonna_Sixtina_(Gemäldegalerie_Alter_Meister,_Dresden,_1513-14._Óleo_sobre_lienzo,_265_x_196_cm).jpg" alt="" height="300">
+                <img class="example-img rounded border" src="images/examples/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg" alt="" height="300">
+                <img class="example-img rounded border" src="images/examples/Tizian_041.jpg" alt="" height="300">
+                <img class="example-img rounded border" src="images/examples/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="" height="300">
+              </div>
+              <div class="mt-3">
+                <button id="selectImageBtn" class="btn btn-light d-none">Select</button>
+              </div>
+            </div>
+  <style>
+    .selected-img {
+      border: 4px solid #ffc107 !important;
+    }
+    .example-scroll::-webkit-scrollbar {
+      height: 10px;
+    }
+    .example-scroll::-webkit-scrollbar-thumb {
+      background-color: #bbb;
+      border-radius: 5px;
+    }
+    .example-scroll::-webkit-scrollbar-track {
+      background: #eee;
+    }
+  </style>
+          </div>
+          <img id="uploadedImage" src="" alt="Uploaded Image" draggable="false" class="img-fluid d-none position-absolute" style="max-height: 100%; max-width: 100%;">
+          <div id="imageTools" class="d-none position-absolute top-0 start-0 m-3 bg-white bg-opacity-75 p-2 rounded d-flex flex-column align-items-center">
+            <button id="cropToolBtn" class="btn btn-sm btn-outline-dark mb-2" title="Crop">
+              <i class="bi bi-crop"></i>
+            </button>
+            <button id="undoToolBtn" class="btn btn-sm btn-outline-dark mb-2" title="Undo">
+              <i class="bi bi-arrow-counterclockwise"></i>
+            </button>
+            <button id="rerunToolBtn" class="btn btn-sm btn-outline-dark" title="Rerun">
+              <i class="bi bi-arrow-repeat"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 bg-light overflow-auto" style="height: 100%;">
+        <h3 class="mt-3">Sentences</h3>
+        <div id="sentenceInfoPanel" class="alert alert-info alert-dismissible fade show mt-2" role="alert">
+          Sentences are identified as relevant from the corpus of articles. Selecting a sentence will allow more information to be displayed or hovering to localise within the image.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <ul id="sentenceList" class="list-group list-group-flush">
+          <!-- List items will go here -->
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12">
+        <h5>Image History</h5>
+        <div id="imageHistory" class="d-flex flex-row flex-wrap gap-2 overflow-auto" style="max-height: 200px;">
+          <!-- Cropped images will be appended here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/artefact-context.js"></script>
+
+  <!-- Debug Info Button and Panel -->
+  <div id="debugPanelToggle" class="position-fixed bottom-0 end-0 m-3">
+    <button class="btn btn-outline-secondary rounded-circle" style="width: 48px; height: 48px;" aria-label="Toggle Debug Panel">
+      <i class="bi bi-info-circle" style="font-size: 1.5rem;"></i>
+    </button>
+  </div>
+
+  <div id="debugPanel" class="position-fixed bottom-0 end-0 bg-light border p-3 m-3" style="width: 250px; display: none; z-index: 1050;">
+    <h4>Debug Info</h4>
+    <dl class="row mb-0">
+      <dt class="col-6">Session ID</dt>
+      <dd class="col-6" id="debugSessionId">N/A</dd>
+      <dt class="col-6">Status</dt>
+      <dd class="col-6" id="debugStatus">Idle</dd>
+    </dl>
+  </div>
+
+  <!-- Working Overlay -->
+  <div id="workingOverlay" class="d-none position-fixed top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-75 text-white" style="z-index: 1100;">
+    <div class="text-center">
+      <i class="bi bi-gear-fill spin me-2" style="font-size: 3rem;"></i>
+      <h3>Working</h3>
+      <div id="workingLog" class="mt-3 bg-secondary bg-opacity-75 p-3 rounded" style="max-height: 200px; overflow-y: auto; width: 300px; text-align: left;">
+        <div>Beginning Processing...</div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .spin {
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</body>
+</html>
