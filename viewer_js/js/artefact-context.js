@@ -23,6 +23,7 @@ $(document).ready(function () {
       reader.onload = function (e) {
         $('#uploadedImage').attr('src', e.target.result).removeClass('d-none');
         $('#uploadTrigger').addClass('d-none');
+        $('.card:has(#uploadTrigger)').remove();
         $('#exampleContainer').remove();
         $('#workingOverlay').removeClass('d-none');
         $('#imageTools').removeClass('d-none');
@@ -77,6 +78,7 @@ $(document).ready(function () {
     if (selectedSrc) {
       $('#uploadedImage').attr('src', selectedSrc).removeClass('d-none');
       $('#uploadTrigger').addClass('d-none');
+      $('.card:has(#uploadTrigger)').remove();
       $('#exampleContainer').remove();
       $('#workingOverlay').removeClass('d-none');
       $('#imageTools').removeClass('d-none');
@@ -210,6 +212,8 @@ function escapeHTML(str) {
  * @param {Array} data - Array of sentence objects.
  */
 function display_sentences(data) {
+  // Show the sentences panel
+  $('.col-md-3').removeClass('d-none');
   console.log("Displaying sentences:", data);
   $('#sentenceList').empty();
 
