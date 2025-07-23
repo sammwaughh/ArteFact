@@ -1,8 +1,21 @@
+// ==========================
+// == GLOBAL CONFIGURATION ==
+// ==========================
+const API_BASE_URL = 'http://127.0.0.1:8000';
+
+// Variables to store session/run state
+let runId;
+let s3Key;
+let upload;
+
+// Main script entry point: sets up event handlers on document ready
 $(document).ready(function () {
+  // Trigger file upload dialog when upload button is clicked
   $('#uploadTrigger').on('click', function () {
     $('#imageUpload').click();
   });
 
+  // Handle image file selected from file input
   $('#imageUpload').on('change', function (event) {
     const file = event.target.files[0];
     if (file) {
@@ -10,6 +23,7 @@ $(document).ready(function () {
       reader.onload = function (e) {
         $('#uploadedImage').attr('src', e.target.result).removeClass('d-none');
         $('#uploadTrigger').addClass('d-none');
+        $('#exampleContainer').remove();
         $('#workingOverlay').removeClass('d-none');
         $('#imageTools').removeClass('d-none');
         fetchPresign();
@@ -18,7 +32,7 @@ $(document).ready(function () {
     }
   });
 
-  // Drag and drop support
+  // --- Drag and drop support for uploading images ---
   $('#uploadedImageContainer').on('dragover', function (e) {
     e.preventDefault();
     e.stopPropagation();
@@ -48,8 +62,9 @@ $(document).ready(function () {
       reader.readAsDataURL(file);
     }
   });
-  let selectedSrc = null;
 
+  // --- Example image selection logic ---
+  let selectedSrc = null;
   $('.example-img').on('click', function () {
     $('.example-img').removeClass('selected-img');
     $(this).addClass('selected-img');
@@ -57,6 +72,7 @@ $(document).ready(function () {
     $('#selectImageBtn').removeClass('d-none');
   });
 
+  // Handle selection of an example image
   $('#selectImageBtn').on('click', function () {
     if (selectedSrc) {
       $('#uploadedImage').attr('src', selectedSrc).removeClass('d-none');
@@ -67,16 +83,22 @@ $(document).ready(function () {
       fetchPresign();
     }
   });
+
+  // Toggle debug panel visibility
   $('#debugPanelToggle button').on('click', function () {
     $('#debugPanel').toggle();
   });
 });
 
+/**
+ * Initiates a new session by requesting a presigned upload URL
+ * and registering a run. Triggers polling for run status.
+ */
 function fetchPresign() {
   $('#debugStatus').text('Requesting ID...');
   $('#workingLog').append('<div class="text-white">Requesting Session ID...</div>');
 
-  fetch('http://127.0.0.1:8000/presign', {
+  fetch(`${API_BASE_URL}/presign`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -95,7 +117,8 @@ function fetchPresign() {
       $('#workingLog').append('<div class="text-white">Sending /runs request...</div>');
       $('#debugStatus').text('Posting run info');
 
-      fetch('http://127.0.0.1:8000/runs', {
+      // Register the run on the backend
+      fetch(`${API_BASE_URL}/runs`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -124,11 +147,16 @@ function fetchPresign() {
     });
 }
 
+/**
+ * Polls the backend for the status of the current run.
+ * When complete, fetches and displays output sentences.
+ * @param {string} runId - The run/session ID to poll.
+ */
 function pollRunStatus(runId) {
   $('#workingLog').append('<div class="text-white">Polling run status...</div>');
 
   const intervalId = setInterval(() => {
-    fetch(`http://127.0.0.1:8000/runs/${runId}`)
+    fetch(`${API_BASE_URL}/runs/${runId}`)
       .then(res => res.json())
       .then(data => {
         $('#debugStatus').text(`Status: ${data.status}`);
@@ -139,10 +167,12 @@ function pollRunStatus(runId) {
           $('#workingLog').append('<div class="text-white">Processing complete</div>');
 
           if (data.status === 'done') {
+            // Extract file path from upload URL
             const filePath = upload?.url?.split('/').pop();
             $('#workingLog').append('<div class="text-white">Fetching outputs from: ' + filePath + '</div>');
 
-            fetch(`http://127.0.0.1:8000/outputs/${filePath}`)
+            // Fetch output sentences from backend
+            fetch(`${API_BASE_URL}/outputs/${filePath}`)
               .then(res => res.json())
               .then(output => {
                 $('#workingLog').append('<div class="text-white">Outputs received</div>');
@@ -164,12 +194,21 @@ function pollRunStatus(runId) {
   }, 1000);
 }
 
+/**
+ * Escapes HTML special characters in a string to prevent XSS.
+ * @param {string} str - The string to escape.
+ * @returns {string}
+ */
 function escapeHTML(str) {
   return str.replace(/[&<>'"]/g, tag => (
     {'&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'}[tag]
   ));
 }
 
+/**
+ * Displays the list of output sentences in the sidebar.
+ * @param {Array} data - Array of sentence objects.
+ */
 function display_sentences(data) {
   console.log("Displaying sentences:", data);
   $('#sentenceList').empty();
@@ -192,118 +231,166 @@ function display_sentences(data) {
   });
 }
 
-  // --- Begin Crop Tool Functionality ---
-  let isCropping = false;
-  let cropStartX = 0;
-  let cropStartY = 0;
-  let cropRect = null;
+// --- Begin Crop Tool Functionality ---
+// Variables for cropping state
+let isCropping = false;
+let cropStartX = 0;
+let cropStartY = 0;
+let cropRect = null;
 
-  $('#cropToolBtn').on('click', function () {
-    isCropping = true;
-    $('#uploadedImageContainer').css('cursor', 'crosshair');
-  });
+// Activate cropping mode when crop tool button is clicked
+$('#cropToolBtn').on('click', function () {
+  isCropping = true;
+  $('#uploadedImageContainer').css('cursor', 'crosshair');
+});
 
-  $('#uploadedImageContainer').on('mousedown', function (e) {
-    if (!isCropping) return;
-    const rect = this.getBoundingClientRect();
-    cropStartX = e.clientX - rect.left;
-    cropStartY = e.clientY - rect.top;
+// Start drawing crop rectangle on mouse down
+$('#uploadedImageContainer').on('mousedown', function (e) {
+  if (!isCropping) return;
+  const rect = this.getBoundingClientRect();
+  cropStartX = e.clientX - rect.left;
+  cropStartY = e.clientY - rect.top;
 
-    if (cropRect) {
-      cropRect.remove();
-    }
+  if (cropRect) {
+    cropRect.remove();
+  }
 
-    cropRect = $('<div>').addClass('position-absolute border border-warning').css({
+  cropRect = $('<div>')
+    .addClass('position-absolute border border-warning')
+    .css({
       left: cropStartX,
       top: cropStartY,
       width: 0,
       height: 0,
       zIndex: 10,
       pointerEvents: 'none'
-    }).appendTo('#uploadedImageContainer');
-  });
+    })
+    .appendTo('#uploadedImageContainer');
+});
 
-  $('#uploadedImageContainer').on('mousemove', function (e) {
-    if (!isCropping || !cropRect) return;
-    const rect = this.getBoundingClientRect();
-    const currentX = e.clientX - rect.left;
-    const currentY = e.clientY - rect.top;
+// Update crop rectangle size on mouse move
+$('#uploadedImageContainer').on('mousemove', function (e) {
+  if (!isCropping || !cropRect) return;
+  const rect = this.getBoundingClientRect();
+  const currentX = e.clientX - rect.left;
+  const currentY = e.clientY - rect.top;
 
-    const width = Math.abs(currentX - cropStartX);
-    const height = Math.abs(currentY - cropStartY);
-    const left = Math.min(currentX, cropStartX);
-    const top = Math.min(currentY, cropStartY);
+  const width = Math.abs(currentX - cropStartX);
+  const height = Math.abs(currentY - cropStartY);
+  const left = Math.min(currentX, cropStartX);
+  const top = Math.min(currentY, cropStartY);
 
-    cropRect.css({ left, top, width, height });
-  });
+  cropRect.css({ left, top, width, height });
+});
 
-  $('#uploadedImageContainer').on('mouseup', function (e) {
-    if (!isCropping || !cropRect) return;
-    isCropping = false;
-    $('#uploadedImageContainer').css('cursor', 'default');
+// Complete cropping on mouse up, update image, and save history
+$('#uploadedImageContainer').on('mouseup', function (e) {
+  if (!isCropping || !cropRect) return;
+  isCropping = false;
+  $('#uploadedImageContainer').css('cursor', 'default');
 
-    const img = document.getElementById('uploadedImage');
-    // Use the actual image's bounding box for accurate alignment
-    const imageRect = img.getBoundingClientRect();
-    const cropOffset = cropRect.offset();
+  const img = document.getElementById('uploadedImage');
+  // Use the actual image's bounding box for accurate alignment
+  const imageRect = img.getBoundingClientRect();
+  const cropOffset = cropRect.offset();
 
-    // Calculate crop rectangle relative to image natural size
-    const sx = ((cropOffset.left - imageRect.left) / imageRect.width) * img.naturalWidth;
-    const sy = ((cropOffset.top - imageRect.top) / imageRect.height) * img.naturalHeight;
-    const sw = (cropRect.width() / imageRect.width) * img.naturalWidth;
-    const sh = (cropRect.height() / imageRect.height) * img.naturalHeight;
+  // Calculate crop rectangle relative to image's natural size
+  const sx = ((cropOffset.left - imageRect.left) / imageRect.width) * img.naturalWidth;
+  const sy = ((cropOffset.top - imageRect.top) / imageRect.height) * img.naturalHeight;
+  const sw = (cropRect.width() / imageRect.width) * img.naturalWidth;
+  const sh = (cropRect.height() / imageRect.height) * img.naturalHeight;
 
-    // Don't crop if width or height is zero or negative
-    if (sw <= 0 || sh <= 0) {
-      cropRect.remove();
-      cropRect = null;
-      return;
-    }
-
-    // Save current image to history
-    const historyImg = new Image();
-    historyImg.src = img.src;
-    historyImg.className = "img-thumbnail";
-    historyImg.style.height = "100px";
-    $('#imageHistory').append(historyImg);
-
-    const canvas = document.createElement('canvas');
-    canvas.width = sw;
-    canvas.height = sh;
-    const ctx = canvas.getContext('2d');
-    ctx.drawImage(img, sx, sy, sw, sh, 0, 0, sw, sh);
-
-    img.src = canvas.toDataURL();
-    $('#uploadedImage').removeClass('d-none');
+  // Don't crop if width or height is zero or negative
+  if (sw <= 0 || sh <= 0) {
     cropRect.remove();
     cropRect = null;
-  });
-  // --- End Crop Tool Functionality ---
+    return;
+  }
 
-  // --- Begin Undo Tool Functionality ---
-  $('#undoToolBtn').on('click', function () {
-    const historyImgs = $('#imageHistory img');
-    if (historyImgs.length > 0) {
-      const lastImg = historyImgs.last();
-      const previousSrc = lastImg.attr('src');
-      $('#uploadedImage').attr('src', previousSrc).removeClass('d-none');
-      lastImg.remove();
-    }
-  });
-  // --- End Undo Tool Functionality ---
+  // Save current image to history for undo functionality
+  const historyImg = new Image();
+  historyImg.src = img.src;
+  historyImg.className = "rounded border border-secondary shadow-sm";
+  historyImg.style.height = "100px";
+  historyImg.style.cursor = "pointer";
+  historyImg.title = "Previous version";
+  $('#imageHistoryWrapper').removeClass('d-none');
+  $('#imageHistory').append(historyImg);
 
-  // --- Begin Rerun Tool Functionality ---
-  $('#rerunToolBtn').on('click', function () {
-    $('#workingOverlay').removeClass('d-none');
-    $('#workingLog').append('<div class="text-white">Rerunning with current image...</div>');
-    fetchPresign();
-  });
-  // --- End Rerun Tool Functionality ---
+  // Draw the cropped region onto a canvas and update the image
+  const canvas = document.createElement('canvas');
+  canvas.width = sw;
+  canvas.height = sh;
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(img, sx, sy, sw, sh, 0, 0, sw, sh);
 
+  img.src = canvas.toDataURL();
+  $('#uploadedImage').removeClass('d-none');
+  cropRect.remove();
+  cropRect = null;
+
+  $('#workingOverlay').removeClass('d-none');
+  $('#workingLog').append('<div class="text-white">Rerunning with cropped image...</div>');
+  fetchPresign();
+});
+// --- End Crop Tool Functionality ---
+
+// --- Begin Undo Tool Functionality ---
+// Restore previous image from history when undo is clicked
+$('#undoToolBtn').on('click', function () {
+  const historyImgs = $('#imageHistory img');
+  if (historyImgs.length > 0) {
+    const lastImg = historyImgs.last();
+    const previousSrc = lastImg.attr('src');
+    $('#uploadedImage').attr('src', previousSrc).removeClass('d-none');
+    lastImg.remove();
+  }
+});
+
+// --- End Undo Tool Functionality ---
+
+// --- Begin Image History Selection Functionality ---
+// When a history image is clicked, make it the current image and rerun the API flow
+$('#imageHistory').on('click', 'img', function () {
+  const currentImg = $('#uploadedImage')[0];
+
+  // Save the currently displayed image into history
+  const historyImg = new Image();
+  historyImg.src = currentImg.src;
+  historyImg.className = "rounded border border-secondary shadow-sm";
+  historyImg.style.height = "100px";
+  historyImg.style.cursor = "pointer";
+  historyImg.title = "Previous version";
+  $('#imageHistory').append(historyImg);
+
+  // Update to the selected history image
+  const newSrc = $(this).attr('src');
+  $('#uploadedImage').attr('src', newSrc).removeClass('d-none');
+
+  // Rerun the API processing
+  $('#workingOverlay').removeClass('d-none');
+  $('#workingLog').append('<div class="text-white">Rerunning with selected image from history...</div>');
+  fetchPresign();
+});
+// --- End Image History Selection Functionality ---
+
+// --- Begin Rerun Tool Functionality ---
+// Rerun the backend pipeline with the current image
+$('#rerunToolBtn').on('click', function () {
+  $('#workingOverlay').removeClass('d-none');
+  $('#workingLog').append('<div class="text-white">Rerunning with current image...</div>');
+  fetchPresign();
+});
+// --- End Rerun Tool Functionality ---
+
+/**
+ * Looks up metadata for a given work ID (e.g., DOI) and displays details.
+ * @param {string} work_id - The identifier for the work to look up.
+ */
 function lookupDOI(work_id) {
   console.log("Looking up DOI for work:", work_id);
 
-  fetch(`http://127.0.0.1:8000/work/${encodeURIComponent(work_id)}`)
+  fetch(`${API_BASE_URL}/work/${encodeURIComponent(work_id)}`)
     .then(response => response.json())
     .then(data => {
       console.log("DOI Lookup result:", data);
@@ -315,13 +402,15 @@ function lookupDOI(work_id) {
     });
 }
 
+/**
+ * Displays a banner with work/DOI details at the top of the page.
+ * @param {Object} workData - Metadata object for the work.
+ */
 function showWorkDetails(workData) {
-  // const workId = Object.keys(workData)[0];
-  const details = workData;
-
   // Remove existing banner if present
   $('#workDetailsBanner').remove();
 
+  const details = workData;
   const banner = $(`
     <div id="workDetailsBanner" class="position-fixed top-0 start-0 w-100 bg-info text-white p-3 border-bottom border-dark" style="z-index: 2000;">
       <div class="d-flex justify-content-between align-items-start">
