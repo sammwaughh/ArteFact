@@ -1,83 +1,202 @@
-# ArtContext
-
+---
+base_model: openai/clip-vit-base-patch32
+library_name: peft
 ---
 
-**Submitted by:** Samuel Waugh  
-**Supervised by:** Dr Stuart James
-**Affiliation:** Department of Computer Science, Durham University  
-**Degree:** Bachelor of Science (BSc) in Computer Science  
-**Submission date:** 8 May 2025  
+# Model Card for Model ID
 
----
+<!-- Provide a quick summary of what the model is/does. -->
 
 
-## Quick-start (Conda)
 
-```bash
-# 1) Install Miniconda / Anaconda if you don’t already have it
-#    https://docs.conda.io/en/latest/miniconda.html
+## Model Details
 
-# 2) Create the environment from this repo’s file
-conda env create -f environment.yml        # → installs as “painting_clip_env”
+### Model Description
 
-# 3) Activate and go
-conda activate painting_clip_env
-```
+<!-- Provide a longer summary of what this model is. -->
 
-## Project structure
 
-```text
-.
-├── README.md
-├── environment_lock.yml
-│
-├── clip_finetuned_lora_best
-│   ├── adapter_config.json
-│   ├── adapter_model.safetensors
-│   └── README.md
-│
-├── Excel Files
-│   ├── big_results.xlsx
-│   ├── clip_inference.xlsx
-│   ├── fine_tune_dataset.xlsx
-│   ├── openalex_topics_formatted.xlsx
-│   ├── painters.xlsx
-│   ├── painting_clip_inference.xlsx
-│   ├── paintings_metadata.xlsx
-│   └── paintings_with_labels.xlsx
-│
-├── Graphs
-│   ├── avg_precision_recall.png
-│   ├── linkcount_histogram.png
-│   ├── pdf_count_histogram.png
-│   ├── pdf_count_top_bottom.png
-│   ├── train_loss_over_epochs.png
-│   └── val_nce_over_epochs.png
-│
-└── Scripts
-    ├── Evaluation
-    │   ├── big_compare_zero_shot.py
-    │   ├── distribution_of_link_counts.py
-    │   ├── may_attention_map.py
-    │   ├── open_access_count.py
-    │   ├── precision_recall_curves.py
-    │   └── top_ten_sentences.py
-    │
-    └── Pipeline
-        ├── do_fine_tune.py
-        ├── find_needle_in_haystack.py
-        ├── generate_labels.py
-        ├── harvest_open_alex.py
-        ├── pdfs_to_markdown.py
-        ├── process_wikidata.py
-        └── save_bert_embeddings.py
 
-```
+- **Developed by:** [More Information Needed]
+- **Funded by [optional]:** [More Information Needed]
+- **Shared by [optional]:** [More Information Needed]
+- **Model type:** [More Information Needed]
+- **Language(s) (NLP):** [More Information Needed]
+- **License:** [More Information Needed]
+- **Finetuned from model [optional]:** [More Information Needed]
 
-## Important Notes
-This code submission is structured to be easily readable and such that an examiner can verify that the work has been undertaken.
-To actually run the code files with ease, they will need to be in the same directory as the Excel Files they depend upon.
-Furthermore, the pipeline relies on several largedataset like the PDFs, Markdown Works, The Markdown Metadata, and the Images. Taken together these constitute over 30GB of data and it was not feasible to submit any of them with this code base. There is also a lot of small intermediate scripts which do things like formatting, renaming, and the like which have not been included.
+### Model Sources [optional]
 
-## Declration of use of generative AI
-In accordance with the department's guidelines on using generative AI I declare here how I used it for this project: helped me write LaTeX code for tables, graphs and mathematical notation, translating from plain english descriptions of what I wanted; helped me to clean and comment my code scripts, rendering them more readable; helped me write a legally sound paragraph about copyright for the project paper and found me the sources I needed for it; helped me to understand older code which I had written previously when revisiting the project; helped me to make this README.md file prettier.
+<!-- Provide the basic links for the model. -->
+
+- **Repository:** [More Information Needed]
+- **Paper [optional]:** [More Information Needed]
+- **Demo [optional]:** [More Information Needed]
+
+## Uses
+
+<!-- Address questions around how the model is intended to be used, including the foreseeable users of the model and those affected by the model. -->
+
+### Direct Use
+
+<!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
+
+[More Information Needed]
+
+### Downstream Use [optional]
+
+<!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
+
+[More Information Needed]
+
+### Out-of-Scope Use
+
+<!-- This section addresses misuse, malicious use, and uses that the model will not work well for. -->
+
+[More Information Needed]
+
+## Bias, Risks, and Limitations
+
+<!-- This section is meant to convey both technical and sociotechnical limitations. -->
+
+[More Information Needed]
+
+### Recommendations
+
+<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
+
+Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations.
+
+## How to Get Started with the Model
+
+Use the code below to get started with the model.
+
+[More Information Needed]
+
+## Training Details
+
+### Training Data
+
+<!-- This should link to a Dataset Card, perhaps with a short stub of information on what the training data is all about as well as documentation related to data pre-processing or additional filtering. -->
+
+[More Information Needed]
+
+### Training Procedure
+
+<!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
+
+#### Preprocessing [optional]
+
+[More Information Needed]
+
+
+#### Training Hyperparameters
+
+- **Training regime:** [More Information Needed] <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
+
+#### Speeds, Sizes, Times [optional]
+
+<!-- This section provides information about throughput, start/end time, checkpoint size if relevant, etc. -->
+
+[More Information Needed]
+
+## Evaluation
+
+<!-- This section describes the evaluation protocols and provides the results. -->
+
+### Testing Data, Factors & Metrics
+
+#### Testing Data
+
+<!-- This should link to a Dataset Card if possible. -->
+
+[More Information Needed]
+
+#### Factors
+
+<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
+
+[More Information Needed]
+
+#### Metrics
+
+<!-- These are the evaluation metrics being used, ideally with a description of why. -->
+
+[More Information Needed]
+
+### Results
+
+[More Information Needed]
+
+#### Summary
+
+
+
+## Model Examination [optional]
+
+<!-- Relevant interpretability work for the model goes here -->
+
+[More Information Needed]
+
+## Environmental Impact
+
+<!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
+
+Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
+
+- **Hardware Type:** [More Information Needed]
+- **Hours used:** [More Information Needed]
+- **Cloud Provider:** [More Information Needed]
+- **Compute Region:** [More Information Needed]
+- **Carbon Emitted:** [More Information Needed]
+
+## Technical Specifications [optional]
+
+### Model Architecture and Objective
+
+[More Information Needed]
+
+### Compute Infrastructure
+
+[More Information Needed]
+
+#### Hardware
+
+[More Information Needed]
+
+#### Software
+
+[More Information Needed]
+
+## Citation [optional]
+
+<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
+
+**BibTeX:**
+
+[More Information Needed]
+
+**APA:**
+
+[More Information Needed]
+
+## Glossary [optional]
+
+<!-- If relevant, include terms and calculations in this section that can help readers understand the model or model card. -->
+
+[More Information Needed]
+
+## More Information [optional]
+
+[More Information Needed]
+
+## Model Card Authors [optional]
+
+[More Information Needed]
+
+## Model Card Contact
+
+[More Information Needed]
+### Framework versions
+
+- PEFT 0.15.2
