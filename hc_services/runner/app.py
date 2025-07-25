@@ -13,6 +13,8 @@ GET  /outputs/<filename>
 
 import os
 import uuid
+import json
+import random
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor
 
@@ -35,6 +37,22 @@ executor = ThreadPoolExecutor(max_workers=4)
 BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 ARTIFACTS_DIR = os.path.join(BASE_DIR, "artifacts")
 OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+
+
+# --------------------------------------------------------------------------- #
+#  Global Data                                      #
+# --------------------------------------------------------------------------- #
+# Load data/sentences.json into a variable called sentences
+sentences = {}
+with open(os.path.join(BASE_DIR,"hc_services", "runner" , "data", "sentences.json"), "r") as f:
+    sentences = json.load(f)  
+    # Print the first sentence for debugging
+    print(f"First sentence: {list(sentences.keys())[0]}")
+
+works = {}
+with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "works.json"), "r") as f:
+    works = json.load(f)  
+
 
 # --------------------------------------------------------------------------- #
 #  Routes                                                                     #
@@ -84,8 +102,11 @@ def upload_file(run_id: str):
     # Save the file as artifacts/<runId>.jpg
     file_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
     file.save(file_path)
+    # Check file exists otherwise 400
+    if not os.path.exists(file_path):
+        return jsonify({"error": "file-not-saved"}), 500
     # Respond with 204 No Content (success, no response body)
-    return "", 204
+    return "{}", 204
 
 
 @app.route("/runs", methods=["POST"])
@@ -140,6 +161,13 @@ def get_output_file(filename: str):
     """Serve a JSON output file from the outputs directory."""
     return send_from_directory(OUTPUTS_DIR, filename)
 
+
+
+@app.route("/work/<id>", methods=["GET"])
+def get_work(id: str):
+    # Get the work by id and return it as JSON
+    work = works.get(id, {})
+    return work
 
 # --------------------------------------------------------------------------- #
 if __name__ == "__main__":  # invoked via  python -m …

@@ -113,23 +113,50 @@ function fetchPresign() {
       s3Key = data.s3Key;
       upload = data.upload;
 
-      $('#debugSessionId').text(runId);
-      $('#debugStatus').text('Got ID');
-      $('#workingLog').append('<div class="text-white">Session ID: ' + runId + '</div>');
-      $('#workingLog').append('<div class="text-white">Sending /runs request...</div>');
-      $('#debugStatus').text('Posting run info');
+      // --- Unified canvas-based image upload logic ---
+      const imgElement = document.getElementById('uploadedImage');
+      const canvas = document.createElement('canvas');
+      canvas.width = imgElement.naturalWidth;
+      canvas.height = imgElement.naturalHeight;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(imgElement, 0, 0);
 
-      // Register the run on the backend
-      fetch(`${API_BASE_URL}/runs`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          runId: runId,
-          s3Key: s3Key
+      canvas.toBlob(function (blob) {
+        const file = new File([blob], 'uploaded.jpg', { type: blob.type });
+        const formData = new FormData();
+        formData.append('file', file);
+
+        fetch(`${API_BASE_URL}/upload/${runId}`, {
+          method: 'POST',
+          body: formData
         })
-      })
+        .then(res => {
+          if (res.status === 204) {
+            $('#workingLog').append('<div class="text-white">Image uploaded successfully (204 No Content)</div>');
+          } else {
+            return res.json().then(() => {
+              $('#workingLog').append('<div class="text-white">Image uploaded successfully</div>');
+            });
+          }
+        })
+        .then(() => {
+          $('#debugSessionId').text(runId);
+          $('#debugStatus').text('Got ID');
+          $('#workingLog').append('<div class="text-white">Session ID: ' + runId + '</div>');
+          $('#workingLog').append('<div class="text-white">Sending /runs request...</div>');
+          $('#debugStatus').text('Posting run info');
+
+          return fetch(`${API_BASE_URL}/runs`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              runId: runId,
+              s3Key: s3Key
+            })
+          });
+        })
         .then(res => res.json())
         .then(response => {
           $('#workingLog').append('<div class="text-white">Run registered successfully</div>');
@@ -137,10 +164,12 @@ function fetchPresign() {
           pollRunStatus(runId);
         })
         .catch(err => {
-          console.error('Runs error:', err);
-          $('#workingLog').append('<div class="text-danger">Error submitting run</div>');
+          console.error('Upload or /runs error:', err);
+          $('#workingLog').append('<div class="text-danger">Error uploading image or submitting run</div>');
           $('#debugStatus').text('Run submission failed');
         });
+      }, 'image/jpeg');
+      // --- End unified image upload logic ---
     })
     .catch(err => {
       console.error('Presign error:', err);
