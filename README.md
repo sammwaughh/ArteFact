@@ -1,243 +1,265 @@
-# ArteFact v2 (Local Edition) &nbsp;&nbsp;<img src="viewer/public/images/logo-16-9.JPEG" alt="ArteFact Logo" width="320">
+# Artefact Context Viewer
 
-Modern web application for analysing artwork with machine-learning models.  
-Upload paintings, then receive academic annotations, contextual labels and confidence scores – all processed locally on your machine.
-
----
+A web-based application for analyzing artwork images using PaintingCLIP, a fine-tuned CLIP model specialized for art-historical content. The system matches uploaded artwork images against a corpus of pre-computed sentence embeddings from art history texts, returning the most semantically similar passages.
 
 ## Overview
 
-This is a simplified, local-only version of ArteFact that runs entirely on your machine without any cloud services. Perfect for development, testing, or running the application offline.
+This application consists of:
+- A Flask backend API that handles image uploads and runs ML inference
+- A vanilla JavaScript frontend for image upload and result display
+- A PaintingCLIP model for specialized art analysis
+- Pre-computed embeddings from art-historical texts
 
-## Architecture
+## Prerequisites
 
-| Component     | Technology          | Port | Role |
-|---------------|---------------------|------|------|
-| **Frontend**  | React + Vite SPA    | 5173 | Upload UI, polling, image viewer with label overlays |
-| **Backend**   | Flask API           | 8000 | File uploads, run management, serving files |
-| **Processing**| Python threads      | N/A  | Background ML inference (currently using dummy data) |
-| **Storage**   | Local filesystem    | N/A  | `artifacts/` for images, `outputs/` for results |
+- Python 3.8+
+- pip
+- A modern web browser
 
----
+## Installation
 
-## 🚀 Quick Start - Complete Setup Instructions
-
-### Prerequisites
-- Python 3.9+ (check with `python3 --version`)
-- Node.js 16+ (check with `node --version`)
-- Git (check with `git --version`)
-- 2GB free disk space (for ML dependencies)
-
-### Step 1: Clone and Checkout
+### 1. Clone the Repository
 
 ```bash
-# Clone the repository
-git clone https://github.com/[your-repo]/artefact-context.git
+git clone <repository-url>
 cd artefact-context
-
-# IMPORTANT: Switch to the 'local' branch
-git checkout local
-
-# Verify you're on the correct branch
-git branch --show-current
-# Should output: local
 ```
 
-### Step 2: Set up Python Backend
+### 2. Set Up Python Environment
 
 ```bash
-# Create a Python virtual environment
-python3 -m venv venv
+# Create a virtual environment
+python -m venv .venv
 
 # Activate the virtual environment
 # On macOS/Linux:
-source venv/bin/activate
+source .venv/bin/activate
 # On Windows:
-# venv\Scripts\activate
+# .venv\Scripts\activate
 
-# You should now see (venv) at the start of your terminal prompt
-
-# Upgrade pip
-pip install --upgrade pip
-
-# Install the project and all dependencies
-pip install -e .
-
-# This will install Flask, torch, pillow, and other dependencies
-# Note: torch is large (2GB+) so this may take a few minutes
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-### Step 3: Set up React Frontend
+### 3. Verify Model Files
+
+Ensure you have the following directories with their required files:
+- PaintingCLIP - LoRA adapter files for the fine-tuned model
+- PaintingCLIP_Embeddings - Pre-computed sentence embeddings (`.pt` files)
+
+## Running the Application
+
+### Option 1: Using the Run Script (Recommended)
 
 ```bash
-# Navigate to the frontend directory
-cd viewer
+# Make the script executable (first time only)
+chmod +x run.sh
 
-# Install Node dependencies
-npm install
-
-# Create the environment file for the frontend
-echo "VITE_API_URL=http://localhost:8000" > .env
-
-# Return to the project root
-cd ..
+# Run both frontend and backend
+./run.sh
 ```
 
-### Step 4: Run the Application
+This will:
+1. Start the Flask backend on `http://localhost:8000`
+2. Start a simple HTTP server for the frontend on `http://localhost:8080`
+3. Open your default browser to the application
 
-You'll need **two terminal windows** for this:
+### Option 2: Manual Start
 
-#### Terminal 1 - Backend Server:
+#### Start the Backend
+
 ```bash
-# Make sure you're in the project root directory
-cd /path/to/artefact-context
+# Activate virtual environment if not already active
+source .venv/bin/activate
 
-# Activate the virtual environment (if not already active)
-source venv/bin/activate  # macOS/Linux
-# or
-# venv\Scripts\activate   # Windows
-
-# Start the Flask backend
+# Run the Flask application
 python -m hc_services.runner.app
-
-# You should see:
-# * Running on http://127.0.0.1:8000
-# Press CTRL+C to quit
 ```
 
-#### Terminal 2 - Frontend Server:
+The backend will start on `http://localhost:8000`
+
+#### Start the Frontend
+
+In a new terminal:
+
 ```bash
-# Open a new terminal
-cd /path/to/artefact-context/viewer
+# Navigate to the viewer directory
+cd viewer_js
 
-# Start the React development server
-npm run dev
-
-# You should see:
-# VITE v5.x.x  ready in xxx ms
-# ➜  Local:   http://localhost:5173/
+# Start a simple HTTP server
+python -m http.server 8080
 ```
 
-### Step 5: Test the Application
+Then open `http://localhost:8080` in your browser.
 
-1. Open your web browser and go to **http://localhost:5173**
-2. Click **"Select an image"** button
-3. Choose any JPEG or PNG image file
-4. Watch the upload and processing:
-   - You'll see "Processing..." with a spinner
-   - After 3-5 seconds, your image will appear with AI-generated labels
-5. The labels currently show dummy data (leaf motif, gilded frame, Renaissance style)
+## Usage
 
-### Verify Everything is Working
+1. **Upload an Image**: 
+   - Click "Upload an Image" or drag-drop an image
+   - Select from provided historical examples
+   
+2. **Process**: The system will:
+   - Upload the image to the backend
+   - Compute image embeddings using PaintingCLIP
+   - Find the most similar sentences from the corpus
+   
+3. **View Results**: 
+   - See the top 10 most relevant text passages
+   - Click the search icon next to any result to view source metadata
+   
+4. **Image Tools**:
+   - **Crop**: Select a region of interest
+   - **Undo**: Revert to previous image
+   - **Rerun**: Process the current image again
 
-Check that files are being created:
-```bash
-# From the project root
-ls artifacts/   # Should show uploaded images like: abc123def456.jpg
-ls outputs/     # Should show JSON results like: abc123def456.json
-```
-
----
-
-## 🛠 How it Works
-
-<details>
-<summary>Click to expand the flow diagram ▶</summary>
-
-```text
-User selects image
-└─► (1) POST /presign ……………………………… Flask API
-        ↳ returns local upload URL + runId
-
-Browser uploads file (2)
-└─► POST /upload/<runId> ……………………… Flask API
-        ↳ saves to artifacts/<runId>.jpg
-
-Browser creates run (3)
-└─► POST /runs ………………………………………… Flask API
-        • Creates run in memory (status=queued)
-        • Starts background thread for processing
-
-Background thread (4)
-        • Updates status → processing
-        • Runs inference (currently dummy data)
-        • Saves outputs/<runId>.json
-        • Updates status → done
-
-Browser polls every 3s (5)
-└─► GET /runs/<runId> …………………………… Flask API
-        ↳ returns current status
-
-When status=done:
-└─► GET /outputs/<runId>.json (6) … Flask serves file
-└─► GET /artifacts/<runId>.jpg (7)… Flask serves file
-        ↳ React renders image + overlays ✅
-```
-</details>
-
----
-
-## 🧪 Testing Different Scenarios
-
-### Test Slow Processing
-```bash
-# In Terminal 1, stop the server (CTRL+C) and restart with:
-SLEEP_SECS=10 python -m hc_services.runner.app
-```
-Upload an image - it will take ~10 seconds to process.
-
-### Test Error Handling
-```bash
-# In Terminal 1, stop the server (CTRL+C) and restart with:
-FORCE_ERROR=1 python -m hc_services.runner.app
-```
-Upload an image - you'll see an error message instead of results.
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 artefact-context/
 ├── hc_services/
 │   └── runner/
-│       ├── app.py          # Flask API server
-│       ├── tasks.py        # Background processing logic
-│       └── inference.py    # ML inference (currently dummy data)
-├── viewer/                 # React frontend
-│   ├── src/
-│   └── package.json
-├── artifacts/             # Uploaded images (created automatically)
-├── outputs/               # Processing results (created automatically)
-└── pyproject.toml         # Python package configuration
+│       ├── app.py           # Flask API server
+│       ├── tasks.py         # Background task processing
+│       ├── inference.py     # PaintingCLIP inference pipeline
+│       └── data/           # JSON data files
+│           ├── sentences.json
+│           ├── works.json
+│           ├── topics.json
+│           ├── topic_names.json
+│           └── creators.json
+├── viewer_js/              # Frontend application
+│   ├── index.html
+│   ├── js/
+│   │   └── artefact-context.js
+│   └── css/
+│       └── artefact-context.css
+├── PaintingCLIP/          # LoRA adapter files
+├── PaintingCLIP_Embeddings/ # Pre-computed embeddings
+├── artifacts/             # Uploaded images (created at runtime)
+├── outputs/               # Inference results (created at runtime)
+└── requirements.txt
 ```
 
----
+## Data File Structures
 
-## ⚠️ Common Issues & Solutions
+### sentences.json
+Maps sentence IDs to their metadata. Currently contains minimal metadata:
 
-### Issue: `ModuleNotFoundError: No module named 'hc_services'`
-**Solution**: Make sure you ran `pip install -e .` from the project root
+```json
+{
+  "W1982215463_s0001": {
+    "English Original": "The actual sentence text...",
+    "Has PaintingCLIP Embedding": true
+  }
+}
+```
 
-### Issue: Frontend can't connect to backend
-**Solution**: 
-- Verify Flask is running on port 8000
-- Check that `viewer/.env` contains `VITE_API_URL=http://localhost:8000`
-- Make sure both servers are running
+**Note**: The inference pipeline adds the "English Original" field dynamically from other sources if not present in this file.
 
-### Issue: `command not found: python3`
-**Solution**: Install Python 3.9+ from https://www.python.org/downloads/
+### works.json
+Contains metadata about source works (papers, books, etc.):
 
-### Issue: `command not found: npm`
-**Solution**: Install Node.js from https://nodejs.org/
+```json
+{
+  "W4206160935": {
+    "Artist": "arthur_hughes",
+    "Link": "https://...",              // Direct PDF/document link
+    "Number of Sentences": 4874,
+    "DOI": "https://doi.org/...",      // Digital Object Identifier
+    "ImageIDs": [],                     // Associated image IDs
+    "TopicIDs": ["C2778983918", ...],  // Related topic IDs
+    "Relevance": 3.7782803              // Relevance score
+  }
+}
+```
 
----
+### topics.json
+Maps topic IDs to lists of work IDs that cover that topic:
 
-## 📝 Notes
+```json
+{
+  "C2778983918": ["W4206160935"],
+  "C520712124": ["W4206160935", "W1234567890"]
+}
+```
 
-- All data is stored locally in `artifacts/` and `outputs/` directories
-- The application uses in-memory storage for run metadata (resets on restart)
-- No external services or cloud resources are required
-- Perfect for development, testing, or offline use
+### topic_names.json
+Human-readable names for topic IDs:
 
----
+```json
+{
+  "C52119013": "Art History",
+  "C204034006": "Art Criticism",
+  "C501303744": "Iconography"
+}
+```
+
+### creators.json
+Maps artist/creator names to their associated works:
+
+```json
+{
+  "arthur_hughes": ["W4206160935", "W2029124454", ...],
+  "francesco_hayez": ["W1982215463", "W4388661114", ...],
+  "george_stubbs": ["W2020798572", "W2021094421", ...]
+}
+```
+
+## API Endpoints
+
+- `POST /presign` - Request upload credentials
+- `POST /upload/<runId>` - Upload image file
+- `POST /runs` - Start inference job
+- `GET /runs/<runId>` - Check job status
+- `GET /outputs/<filename>` - Retrieve inference results
+- `GET /work/<id>` - Get work metadata for DOI lookup
+
+## Key Components
+
+### Backend (app.py)
+- Flask server handling HTTP requests
+- Manages file uploads and storage
+- Coordinates inference jobs via thread pool
+
+### Task Processing (tasks.py)
+- Handles background inference jobs
+- Updates job status in memory
+- Writes results to JSON files
+
+### Inference Pipeline (inference.py)
+- Loads PaintingCLIP model with LoRA adapters
+- Computes image embeddings
+- Performs similarity search against sentence corpus
+- Returns top-K most similar passages
+
+### Frontend (artefact-context.js)
+- Handles image upload and display
+- Polls backend for job status
+- Displays results and metadata
+- Provides image manipulation tools
+
+## Troubleshooting
+
+1. **Port Already in Use**: If ports 8000 or 8080 are occupied, modify the port numbers in:
+   - app.py (line with `app.run()`)
+   - `run.sh` 
+   - artefact-context.js (API_BASE_URL)
+
+2. **Missing Dependencies**: Ensure all packages are installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Model Loading Errors**: Verify that:
+   - PaintingCLIP directory contains LoRA adapter files
+   - PaintingCLIP_Embeddings contains `.pt` files
+
+4. **CORS Issues**: The backend is configured to accept requests from any origin. For production, update CORS settings in app.py.
+
+## Development Notes
+
+- The system uses an in-memory store for job tracking (resets on server restart)
+- Uploaded images are saved to artifacts
+- Inference results are saved to outputs
+- The frontend uses jQuery and Bootstrap for UI components
+- Debug panel available via the (i) button in the bottom-right corner
