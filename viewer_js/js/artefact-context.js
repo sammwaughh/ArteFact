@@ -157,12 +157,18 @@ function fetchPresign() {
             })
           });
         })
-        .then(res => res.json())
-        .then(response => {
+        .then(res => {
+           // Don't parse empty 202 response as JSON
+           if (res.status === 202) {
+             return {};
+           }
+           return res.json();
+         })
+         .then(response => {
           $('#workingLog').append('<div class="text-white">Run registered successfully</div>');
           $('#debugStatus').text('Run submitted');
           pollRunStatus(runId);
-        })
+         })
         .catch(err => {
           console.error('Upload or /runs error:', err);
           $('#workingLog').append('<div class="text-danger">Error uploading image or submitting run</div>');
@@ -198,9 +204,10 @@ function pollRunStatus(runId) {
           $('#workingLog').append('<div class="text-white">Processing complete</div>');
 
           if (data.status === 'done') {
-            // Extract file path from upload URL
-            const filePath = upload?.url?.split('/').pop();
-            $('#workingLog').append('<div class="text-white">Fetching outputs from: ' + filePath + '</div>');
+             // Use outputKey from backend response instead of deriving from upload URL
+             const filePath = data.outputKey ? data.outputKey.split('/').pop() : `${runId}.json`;
+             
+             $('#workingLog').append('<div class="text-white">Fetching outputs from: ' + filePath + '</div>');
 
             // Fetch output sentences from backend
             fetch(`${API_BASE_URL}/outputs/${filePath}`)
@@ -243,16 +250,15 @@ function escapeHTML(str) {
 function display_sentences(data) {
   // Show the sentences panel
   $('.col-md-3').removeClass('d-none');
-  console.log("Displaying sentences:", data);
-  $('#sentenceList').empty();
+   $('#sentenceList').empty();
 
   data.forEach((item, index) => {
     const sentenceItem = $(`
       <li class="list-group-item">
         <div class="d-flex">
           <div class="flex-grow-1">
-            <p class="mb-1">${escapeHTML(item["sentence"]["English Original"])}
-            <button class="btn btn-sm btn-outline-primary" onclick="lookupDOI('${item["sentence"]["Work"]}')" title="Look Up DOI">
+            <p class="mb-1">${escapeHTML(item["english_original"])}
+            <button class="btn btn-sm btn-outline-primary" onclick="lookupDOI('${item["work"]}')" title="Look Up DOI">
               <i class="bi bi-search"></i>
             </button>
             </p>
@@ -421,12 +427,9 @@ $('#rerunToolBtn').on('click', function () {
  * @param {string} work_id - The identifier for the work to look up.
  */
 function lookupDOI(work_id) {
-  console.log("Looking up DOI for work:", work_id);
-
   fetch(`${API_BASE_URL}/work/${encodeURIComponent(work_id)}`)
     .then(response => response.json())
     .then(data => {
-      console.log("DOI Lookup result:", data);
       showWorkDetails(data);
     })
     .catch(error => {

@@ -1,0 +1,17 @@
+# Core web framework
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Deep learning and ML
+torch>=2.6          # CVE-2025-32434 fix
+torchvision>=0.18   # Required for CLIPImageProcessorFast
+transformers>=4.40  # CLIP model support
+peft>=0.10          # LoRA adapter support
+accelerate>=0.25    # Optimized model loading
+
+# Model storage and serialization
+huggingface-hub>=0.20
+safetensors>=0.4
+
+# Image processing
+pillow>=10.0

@@ -46,8 +46,7 @@ OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
 sentences = {}
 with open(os.path.join(BASE_DIR,"hc_services", "runner" , "data", "sentences.json"), "r") as f:
     sentences = json.load(f)  
-    # Print the first sentence for debugging
-    print(f"First sentence: {list(sentences.keys())[0]}")
+
 
 works = {}
 with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "works.json"), "r") as f:
@@ -79,7 +78,7 @@ def presign_upload():
     # Local upload endpoint URL (where the front-end will POST the file)
     upload_url = request.host_url + f"upload/{run_id}"
     # Return the run info and upload instructions (fields remain empty for compatibility)
-    return jsonify({
+    response = jsonify({
         "runId": run_id,
         "s3Key": s3_key,
         "upload": {
@@ -87,6 +86,7 @@ def presign_upload():
             "fields": {}  # no fields needed for local upload
         }
     })
+    return response
 
 
 @app.route("/upload/<run_id>", methods=["POST"])
@@ -136,7 +136,7 @@ def create_run():
     image_path = os.path.join(BASE_DIR, s3_key)
     executor.submit(tasks.run_task, run_id, image_path)
     
-    return "", 202  # Accepted
+    return jsonify({"status": "accepted"}), 202
 
 
 @app.route("/runs/<run_id>", methods=["GET"])
@@ -159,6 +159,16 @@ def get_artifact_file(filename: str):
 @app.route("/outputs/<path:filename>", methods=["GET"])
 def get_output_file(filename: str):
     """Serve a JSON output file from the outputs directory."""
+    
+    # If the filename doesn't end with .json, add it
+    if not filename.endswith('.json'):
+        filename = filename + '.json'
+    
+    # Check if file exists
+    file_path = os.path.join(OUTPUTS_DIR, filename)
+    if not os.path.exists(file_path):
+        return jsonify({"error": "file-not-found"}), 404
+        
     return send_from_directory(OUTPUTS_DIR, filename)
 
 

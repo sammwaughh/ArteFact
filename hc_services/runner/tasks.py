@@ -35,7 +35,8 @@ def run_task(run_id: str, image_path: str) -> None:
     with runs_lock:
         if run_id not in runs:
             # This shouldn't happen, but let's be defensive
-            print(f"Warning: run {run_id} not found in runs dict")
+            # still warn, but with logging or silently return
+            # removed debug print
             return
         runs[run_id]["status"] = "processing"
         runs[run_id]["startedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -52,6 +53,8 @@ def run_task(run_id: str, image_path: str) -> None:
         # 2. Run the ML inference
         labels = run_inference(image_path)
 
+        # removed verbose debug block
+
         # If FORCE_ERROR is enabled (for testing), raise an error to simulate a failure
         if FORCE_ERROR:
             raise RuntimeError("Forced error for testing")
@@ -64,6 +67,8 @@ def run_task(run_id: str, image_path: str) -> None:
         
         with open(output_path, "w") as f:
             json.dump(labels, f)
+
+        # removed debug print
         
         # Verify the file was created
         if not os.path.exists(output_path):
