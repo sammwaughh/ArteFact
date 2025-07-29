@@ -26,7 +26,6 @@ from transformers import CLIPProcessor, CLIPModel
 from peft import PeftModel
 # on-demand Grad-ECLIP & region-aware ranking
 from .heatmap import generate_heatmap
-from .patch_inference import rank_sentences_for_cell as _rank_sentences_for_cell
 
 
 # ─── Configuration ───────────────────────────────────────────────────────────
@@ -281,8 +280,11 @@ def run_inference(
     """
     # ---- Region-aware pathway --------------------------------------------
     if cell is not None:
+        # Lazy-import to avoid circular dependency at module load time
+        from .patch_inference import rank_sentences_for_cell
+
         row, col = cell
-        return _rank_sentences_for_cell(
+        return rank_sentences_for_cell(
             image_path=image_path,
             cell_row=row,
             cell_col=col,
