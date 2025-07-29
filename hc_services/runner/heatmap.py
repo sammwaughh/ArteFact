@@ -162,12 +162,18 @@ def generate_heatmap(
     if resize:
         pil = pil.resize(resize, Image.BICUBIC)
 
-    inputs = processor(text=[sentence], images=pil, return_tensors="pt", padding=True)
+    # Call order “images first, then text” avoids secondary kwargs filtering bug
+    inputs = processor(images=pil, text=[sentence], return_tensors="pt", padding=True)
     inputs = {k: v.to(device) for k, v in inputs.items()}
 
     # ------------------------------------------------------------#
     # 2. Forward + backward with hooks                            #
     # ------------------------------------------------------------#
+    # temporarily switch parameters to require_grad=True
+    prev = [p.requires_grad for p in model.parameters()]
+    for p in model.parameters():
+        p.requires_grad_(True)
+
     model.eval()
     with torch.set_grad_enabled(True), _grad_eclip_hooks(model, layer_idx) as get_tensors:
         outputs = model(**inputs, output_attentions=True, output_hidden_states=True)
@@ -182,6 +188,10 @@ def generate_heatmap(
 
         v, raw_qk, v_grad = get_tensors()  # shapes: (1,N,C), (1,N,N), (1,N,C)
 
+    # restore original requires_grad flags
+    for flag, param in zip(prev, model.parameters()):
+        param.requires_grad_(flag)
+
     # ------------------------------------------------------------#
     # 3. Channel & spatial importance (Eq 19)                     #
     # ------------------------------------------------------------#
@@ -193,9 +203,15 @@ def generate_heatmap(
     cls_row = raw_qk[0, 0]  # (N,)
     lam = (cls_row - cls_row.min()) / (cls_row.max() - cls_row.min() + 1e-8)
 
-    # feature map (exclude CLS) → (N‑1,C)
-    v_patches = v[0, 1:]  # (N-1,C)
-    lam_patches = lam[1:]  # (N-1,)
+    # feature map (exclude CLS) → (N-1,C)
+    v_patches = v[0, 1:]                 # (M,C)
+
+    # Ensure the λ vector has the same length as the patch sequence.
+    # Some CLIP checkpoints include an extra token that appears in raw_qk
+    # but not in the value tensor, which creates a 50 vs 49 size mismatch.
+    # `v_patches` has shape (M,C).  Keep only the first M spatial weights.
+    num_patch_tokens = v_patches.size(0)
+    lam_patches = lam.narrow(0, 1, num_patch_tokens)   # (M,)
 
     # importance per patch: ReLU( Σ_c wc * λ_i * v_i,c )
     imp = torch.relu((v_patches * wc).sum(dim=-1) * lam_patches)  # (N-1,)

@@ -172,7 +172,7 @@ def _initialize_pipeline():
         device = torch.device("cpu")
     
     # Load CLIP processor and base model
-    processor = CLIPProcessor.from_pretrained(config["model_id"], use_fast=True)
+    processor = CLIPProcessor.from_pretrained(config["model_id"], use_fast=False)
     base_model = CLIPModel.from_pretrained(config["model_id"])
     
     # Apply LoRA adapter if configured
