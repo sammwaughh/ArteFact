@@ -9,6 +9,8 @@ POST /runs
 GET  /runs/<runId>
 GET  /artifacts/<filename>
 GET  /outputs/<filename>
+GET  /cell-sim
+POST /heatmap
 """
 
 import os
@@ -23,6 +25,8 @@ from flask_cors import CORS
 
 # Import the tasks module (contains run_task, runs dict, etc.)
 from . import tasks
+from . import inference
+from .inference import compute_heatmap      #  ← reuse helper
 
 # --------------------------------------------------------------------------- #
 #  Flask application & thread pool setup                                      #
@@ -178,6 +182,50 @@ def get_work(id: str):
     # Get the work by id and return it as JSON
     work = works.get(id, {})
     return work
+
+
+@app.route("/cell-sim", methods=["GET"])
+def cell_similarity():
+    run_id = request.args["runId"]
+    row = int(request.args["row"])
+    col = int(request.args["col"])
+    k   = int(request.args.get("k", 10))
+
+    img_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
+    results = inference.run_inference(img_path, cell=(row, col), top_k=k)
+    return jsonify(results)
+ 
+# --------------------------------------------------------------------------- #
+#  Accurate Grad-ECLIP heat-map                                              #
+# --------------------------------------------------------------------------- #
+@app.route("/heatmap", methods=["POST"])
+def heatmap():
+    """
+    Body:
+        {
+            "runId":   "...",
+            "sentence": "Full English Original text …",
+            "layerIdx": -1          # optional, defaults to last block
+        }
+
+    Response:
+        { "dataUrl": "data:image/png;base64,..." }
+    """
+    payload   = request.get_json(force=True)
+    run_id    = payload["runId"]
+    sentence  = payload["sentence"]
+    layer     = int(payload.get("layerIdx", -1))
+
+    # Path of the already-uploaded artefact
+    img_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
+    if not os.path.exists(img_path):
+        return jsonify({"error": "image-not-found"}), 404
+
+    try:
+        data_url = compute_heatmap(img_path, sentence, layer_idx=layer)
+        return jsonify({"dataUrl": data_url})
+    except Exception as exc:
+        return jsonify({"error": str(exc)}), 500
 
 # --------------------------------------------------------------------------- #
 if __name__ == "__main__":  # invoked via  python -m …

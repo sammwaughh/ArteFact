@@ -13,15 +13,20 @@ The pipeline:
 
 import json
 from pathlib import Path
-from typing import List, Dict, Any, Tuple, Literal
+from typing import List, Dict, Any, Tuple, Literal, Optional
 from functools import lru_cache
 import time
+import base64
+import io
 
 import torch
 import torch.nn.functional as F
 from PIL import Image
 from transformers import CLIPProcessor, CLIPModel
 from peft import PeftModel
+# on-demand Grad-ECLIP & region-aware ranking
+from .heatmap import generate_heatmap
+from .patch_inference import rank_sentences_for_cell as _rank_sentences_for_cell
 
 
 # ─── Configuration ───────────────────────────────────────────────────────────
@@ -189,19 +194,79 @@ def _initialize_pipeline():
     return processor, model, embeddings, sentence_ids, sentences_data, device
 
 
-def run_inference(image_path: str) -> List[Dict[str, Any]]:
+# ========================================================================== #
+#  Optional saliency overlay                                                 #
+# ========================================================================== #
+def compute_heatmap(
+    image_path: str,
+    sentence: str,
+    *,
+    layer_idx: int = -1,
+) -> str:
     """
-    Perform semantic similarity search between an image and sentence corpus.
+    Generate a Grad-ECLIP heat-map for (image, sentence).
+
+    Parameters
+    ----------
+    image_path : str
+        Path to the input image (same one sent to run_inference).
+    sentence : str
+        Caption text to explain (usually one of the sentences returned by
+        run_inference).
+    layer_idx : int, optional
+        Vision transformer block to analyse (default last).
+
+    Returns
+    -------
+    data_url : str
+        PNG overlay encoded as ``data:image/png;base64,...`` suitable for the
+        front-end.
+    """
+    # Re-use cached objects
+    processor, model, _, _, _, device = _initialize_pipeline()
+
+    pil_img = Image.open(image_path).convert("RGB")
+
+    overlay = generate_heatmap(
+        image=pil_img,
+        sentence=sentence,
+        model=model,
+        processor=processor,
+        device=device,
+        layer_idx=layer_idx,
+    )
+
+    buf = io.BytesIO()
+    overlay.save(buf, format="PNG")
+    b64 = base64.b64encode(buf.getvalue()).decode("utf-8")
+    return f"data:image/png;base64,{b64}"
+
+# ========================================================================== #
+#  Main retrieval routine                                                    #
+# ========================================================================== #
+def run_inference(
+    image_path: str,
+    *,
+    cell: Optional[Tuple[int, int]] = None,
+    grid_size: Tuple[int, int] = (8, 8),
+    top_k: int = TOP_K,
+) -> List[Dict[str, Any]]:
+    """
+    Perform semantic similarity search.
     
-    This function:
-    1. Loads and processes the input image
-    2. Computes its embedding using the configured CLIP model
-    3. Calculates cosine similarity with all sentence embeddings
-    4. Returns the top-K most similar sentences with their metadata
+    Parameters
+    ----------
+    image_path : str
+        Local path of the RGB image.
+    cell : (int, int) | None
+        If supplied (row, col) → return region-aware ranking using
+        `patch_inference.rank_sentences_for_cell`.  If *None* (default)
+        compute whole-painting similarity (legacy behaviour).
+    grid_size : (int, int), default (8, 8)
+        UI grid resolution for region mode.
+    top_k : int, default 10
+        Number of sentences to return.
     
-    Args:
-        image_path: Path to the input image file
-        
     Returns:
         List of dictionaries, each containing:
         - sentence_id: Unique identifier (e.g., "W1982215463_s0001")
@@ -214,6 +279,18 @@ def run_inference(image_path: str) -> List[Dict[str, Any]]:
         >>> print(results[0]["sentence"]["English Original"])
         "The artist's use of light creates dramatic contrast..."
     """
+    # ---- Region-aware pathway --------------------------------------------
+    if cell is not None:
+        row, col = cell
+        return _rank_sentences_for_cell(
+            image_path=image_path,
+            cell_row=row,
+            cell_col=col,
+            grid_size=grid_size,
+            top_k=top_k,
+        )
+
+    # ---- Whole-painting pathway (original implementation) ----------------
     # DEBUG: Start timing the entire inference
     start_time = time.time()
     
