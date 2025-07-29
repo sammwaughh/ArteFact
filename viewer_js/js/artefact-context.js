@@ -8,8 +8,120 @@ let runId;
 let s3Key;
 let upload;
 
+// --- Available models list ---
+let availableModels = [];
+let selectedModel = '';
+
+/**
+ * Appends a message to the working log with the specified type.
+ * @param {string} message - The message to display.
+ * @param {string} [type='text-white'] - The CSS class for the message (e.g., 'text-white', 'text-danger').
+ */
+function logWorkingMessage(message, type = 'text-white') {
+  const logContainer = $('#workingLog');
+  logContainer.append(`<div class="${type}">${message}</div>`);
+  logContainer.scrollTop(logContainer[0].scrollHeight);
+}
+
+// ==========================
+// == TOPIC TAG SELECTION  ==
+// ==========================
+let selectedTopics = [];
+let topicMap = {};
+
+/**
+ * Updates the display of selected topics in the #selectedTopicsWrapper.
+ * Shows all topics from topicMap, visually indicating which are selected.
+ */
+function updateSelectedTopicsDisplay() {
+  $('#selectedTopicsWrapper').removeClass('d-none');
+  const selectedTagContainer = $('#selectedTopicTags');
+  selectedTagContainer.empty();
+
+  for (const [code, label] of Object.entries(topicMap)) {
+    const isSelected = selectedTopics.includes(code);
+    const tag = $('<button>')
+      .addClass('btn btn-sm px-3 py-1 rounded-pill')
+      .addClass(isSelected ? 'btn-primary' : 'btn-outline-secondary')
+      .text(label)
+      .data('code', code)
+      .on('click', function () {
+        const idx = selectedTopics.indexOf(code);
+        if (idx === -1) {
+          selectedTopics.push(code);
+        } else {
+          selectedTopics.splice(idx, 1);
+        }
+        updateSelectedTopicsDisplay();
+        $(`#topicTags button[data-code="${code}"]`)
+          .toggleClass('active')
+          .toggleClass('btn-primary')
+          .toggleClass('btn-outline-primary');
+      });
+    selectedTagContainer.append(tag);
+  }
+}
+
 // Main script entry point: sets up event handlers on document ready
 $(document).ready(function () {
+  // --- Load topic tags from /topics ---
+  fetch(`${API_BASE_URL}/topics`)
+    .then(response => response.json())
+    .then(data => {
+      topicMap = data;
+      const tagContainer = document.getElementById('topicTags');
+      for (const [code, label] of Object.entries(data)) {
+        const tag = document.createElement('button');
+        tag.className = 'btn btn-outline-primary btn-sm px-3 py-1 rounded-pill';
+        tag.textContent = label;
+        tag.dataset.code = code;
+        tag.addEventListener('click', function () {
+          this.classList.toggle('active');
+          if (this.classList.contains('active')) {
+            this.classList.replace('btn-outline-primary', 'btn-primary');
+            selectedTopics.push(code);
+          } else {
+            this.classList.replace('btn-primary', 'btn-outline-primary');
+            selectedTopics = selectedTopics.filter(c => c !== code);
+          }
+        });
+        tagContainer.appendChild(tag);
+      }
+    })
+    .catch(error => {
+      console.error('Error loading topics:', error);
+    });
+
+  // --- Load model list from /models ---
+  fetch(`${API_BASE_URL}/models`)
+    .then(response => response.json())
+    .then(data => {
+      availableModels = data;
+      console.log("Available models:", availableModels);
+      // Populate the model dropdown
+      const dropdownMenu = $('#modelDropdownMenu');
+      if (availableModels.length > 0) {
+        dropdownMenu.empty();
+        availableModels.forEach((model, index) => {
+          const item = $('<li><a class="dropdown-item" href="#">' + model + '</a></li>');
+          if (index === 0) {
+            $('#modelDropdown').text('Model: ' + model);
+            item.find('a').addClass('active');
+            selectedModel = model;
+          }
+          item.on('click', function () {
+            selectedModel = model;
+            $('#modelDropdownMenu a').removeClass('active');
+            $(this).find('a').addClass('active');
+            $('#modelDropdown').text('Model: ' + model);
+          });
+          dropdownMenu.append(item);
+        });
+      }
+    })
+    .catch(error => {
+      console.error('Error loading models:', error);
+    });
   // Trigger file upload dialog when upload button is clicked
   $('#uploadTrigger').on('click', function () {
     $('#imageUpload').click();
@@ -98,7 +210,7 @@ $(document).ready(function () {
  */
 function fetchPresign() {
   $('#debugStatus').text('Requesting ID...');
-  $('#workingLog').append('<div class="text-white">Requesting Session ID...</div>');
+  logWorkingMessage('Requesting Session ID...', 'text-white');
 
   fetch(`${API_BASE_URL}/presign`, {
     method: 'POST',
@@ -132,19 +244,22 @@ function fetchPresign() {
         })
         .then(res => {
           if (res.status === 204) {
-            $('#workingLog').append('<div class="text-white">Image uploaded successfully (204 No Content)</div>');
+            logWorkingMessage('Image uploaded successfully (204 No Content)', 'text-white');
           } else {
             return res.json().then(() => {
-              $('#workingLog').append('<div class="text-white">Image uploaded successfully</div>');
+              logWorkingMessage('Image uploaded successfully', 'text-white');
             });
           }
         })
         .then(() => {
           $('#debugSessionId').text(runId);
           $('#debugStatus').text('Got ID');
-          $('#workingLog').append('<div class="text-white">Session ID: ' + runId + '</div>');
-          $('#workingLog').append('<div class="text-white">Sending /runs request...</div>');
+          logWorkingMessage('Session ID: ' + runId, 'text-white');
+          logWorkingMessage('Sending /runs request...', 'text-white');
           $('#debugStatus').text('Posting run info');
+
+          // Show selected topics box using helper
+          updateSelectedTopicsDisplay();
 
           return fetch(`${API_BASE_URL}/runs`, {
             method: 'POST',
@@ -153,7 +268,9 @@ function fetchPresign() {
             },
             body: JSON.stringify({
               runId: runId,
-              s3Key: s3Key
+              s3Key: s3Key,
+              topics: selectedTopics,
+              model: selectedModel
             })
           });
         })
@@ -165,13 +282,13 @@ function fetchPresign() {
            return res.json();
          })
          .then(response => {
-          $('#workingLog').append('<div class="text-white">Run registered successfully</div>');
+          logWorkingMessage('Run registered successfully', 'text-white');
           $('#debugStatus').text('Run submitted');
           pollRunStatus(runId);
          })
         .catch(err => {
           console.error('Upload or /runs error:', err);
-          $('#workingLog').append('<div class="text-danger">Error uploading image or submitting run</div>');
+          logWorkingMessage('Error uploading image or submitting run', 'text-danger');
           $('#debugStatus').text('Run submission failed');
         });
       }, 'image/jpeg');
@@ -180,7 +297,7 @@ function fetchPresign() {
     .catch(err => {
       console.error('Presign error:', err);
       $('#debugStatus').text('Error fetching ID');
-      $('#workingLog').append('<div class="text-danger">Error fetching ID</div>');
+      logWorkingMessage('Error fetching ID', 'text-danger');
     });
 }
 
@@ -190,43 +307,60 @@ function fetchPresign() {
  * @param {string} runId - The run/session ID to poll.
  */
 function pollRunStatus(runId) {
-  $('#workingLog').append('<div class="text-white">Polling run status...</div>');
+  logWorkingMessage('Polling run status...', 'text-white');
 
   const intervalId = setInterval(() => {
     fetch(`${API_BASE_URL}/runs/${runId}`)
       .then(res => res.json())
       .then(data => {
         $('#debugStatus').text(`Status: ${data.status}`);
-        $('#workingLog').append(`<div class="text-white">Status: ${data.status}</div>`);
+        logWorkingMessage(`Status: ${data.status}`, 'text-white');
 
         if (data.status !== 'processing') {
           clearInterval(intervalId);
-          $('#workingLog').append('<div class="text-white">Processing complete</div>');
+          logWorkingMessage('Processing complete', 'text-white');
 
           if (data.status === 'done') {
              // Use outputKey from backend response instead of deriving from upload URL
              const filePath = data.outputKey ? data.outputKey.split('/').pop() : `${runId}.json`;
              
-             $('#workingLog').append('<div class="text-white">Fetching outputs from: ' + filePath + '</div>');
+             logWorkingMessage('Fetching outputs from: ' + filePath, 'text-white');
 
             // Fetch output sentences from backend
             fetch(`${API_BASE_URL}/outputs/${filePath}`)
               .then(res => res.json())
               .then(output => {
-                $('#workingLog').append('<div class="text-white">Outputs received</div>');
+                logWorkingMessage('Outputs received', 'text-white');
                 display_sentences(output);
                 $('#workingOverlay').addClass('d-none');
               })
               .catch(err => {
                 console.error('Error fetching outputs:', err);
-                $('#workingLog').append('<div class="text-danger">Error fetching outputs</div>');
+                logWorkingMessage('Error fetching outputs', 'text-danger');
               });
+          }
+          else if (data.status === 'error') {
+            logWorkingMessage('An error occurred during processing.', 'text-danger');
+            setTimeout(() => {
+              $('#workingOverlay').addClass('d-none');
+              // $('#uploadedImage').addClass('d-none').attr('src', '');
+              // $('#uploadTrigger').removeClass('d-none');
+              // $('#imageTools').addClass('d-none');
+              // $('.col-md-3').addClass('d-none');
+              // $('#imageHistoryWrapper').addClass('d-none');
+              // $('#selectedTopicsWrapper').addClass('d-none');
+              $('#debugStatus').text('Idle');
+              $('#debugSessionId').text('N/A');
+              selectedTopics = [];
+              // $('#topicTags button').removeClass('active btn-primary').addClass('btn-outline-primary');
+              // $('#selectedTopicTags').empty();
+            }, 5000);
           }
         }
       })
       .catch(err => {
         console.error('Polling error:', err);
-        $('#workingLog').append('<div class="text-danger">Error polling status</div>');
+        logWorkingMessage('Error polling status', 'text-danger');
         clearInterval(intervalId);
       });
   }, 1000);
@@ -369,7 +503,7 @@ $('#uploadedImageContainer').on('mouseup', function (e) {
   cropRect = null;
 
   $('#workingOverlay').removeClass('d-none');
-  $('#workingLog').append('<div class="text-white">Rerunning with cropped image...</div>');
+  logWorkingMessage('Rerunning with cropped image...', 'text-white');
   fetchPresign();
 });
 // --- End Crop Tool Functionality ---
@@ -408,7 +542,7 @@ $('#imageHistory').on('click', 'img', function () {
 
   // Rerun the API processing
   $('#workingOverlay').removeClass('d-none');
-  $('#workingLog').append('<div class="text-white">Rerunning with selected image from history...</div>');
+  logWorkingMessage('Rerunning with selected image from history...', 'text-white');
   fetchPresign();
 });
 // --- End Image History Selection Functionality ---
@@ -417,7 +551,7 @@ $('#imageHistory').on('click', 'img', function () {
 // Rerun the backend pipeline with the current image
 $('#rerunToolBtn').on('click', function () {
   $('#workingOverlay').removeClass('d-none');
-  $('#workingLog').append('<div class="text-white">Rerunning with current image...</div>');
+  logWorkingMessage('Rerunning with current image...', 'text-white');
   fetchPresign();
 });
 // --- End Rerun Tool Functionality ---

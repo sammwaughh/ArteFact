@@ -9,6 +9,9 @@ POST /runs
 GET  /runs/<runId>
 GET  /artifacts/<filename>
 GET  /outputs/<filename>
+GET  /work/<id>
+GET  /topics
+GET  /creators
 """
 
 import os
@@ -52,6 +55,18 @@ works = {}
 with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "works.json"), "r") as f:
     works = json.load(f)  
 
+
+creators = {}
+with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "creators.json"), "r") as f:
+    creators = json.load(f)
+
+topics = {}
+with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "topics.json"), "r") as f:
+    topics = json.load(f)
+
+topic_names = {}
+with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "topic_names.json"), "r") as f:
+    topic_names = json.load(f)
 
 # --------------------------------------------------------------------------- #
 #  Routes                                                                     #
@@ -178,6 +193,27 @@ def get_work(id: str):
     # Get the work by id and return it as JSON
     work = works.get(id, {})
     return work
+
+@app.route("/topics", methods=["GET"])
+def get_topics():
+    """
+    Return the list of topics.
+    """
+    return jsonify(topic_names)
+
+@app.route("/creators", methods=["GET"])
+def get_creators():
+    """
+    Return the list of creators.
+    """
+    return jsonify(creators)
+
+@app.route("/models", methods=["GET"])
+def get_models():
+    """
+    Return the list of models.
+    """
+    return jsonify(["CLIP", "PaintingCLIP"])
 
 # --------------------------------------------------------------------------- #
 if __name__ == "__main__":  # invoked via  python -m …
