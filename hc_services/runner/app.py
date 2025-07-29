@@ -138,6 +138,8 @@ def create_run():
     payload = request.get_json(force=True)
     run_id = payload["runId"]
     s3_key = payload["s3Key"]
+    topics = payload["topics"]
+    model = payload["model"]
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     
     # Store initial run info in the in-memory dictionary
