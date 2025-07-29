@@ -49,7 +49,35 @@ Ensure you have the following directories with their required files:
 
 ## Running the Application
 
-### Option 1: Using the Run Script (Recommended)
+### Quick start (two terminals – fastest way)
+
+1. Start the **backend**  
+   ```bash
+   # First time only
+   chmod +x run_hc.sh
+
+   # From the repo root
+   ./run_hc.sh          # → Flask on http://localhost:8000
+   ```
+
+2. Start the **frontend** in a second terminal  
+   ```bash
+   # First time only
+   chmod +x viewer_js/run.sh
+
+   # From the repo root
+   cd viewer_js && ./run.sh     # → static server on http://localhost:8080
+   ```
+
+3. Open your browser at `http://localhost:8080` and use the app.
+
+Both scripts are tiny wrappers:
+* `run_hc.sh` → `python -m hc_services.runner.app`
+* `viewer_js/run.sh` → `python3 -m http.server 8080`
+
+They simply save you from typing the full commands each time.
+
+### Alternative: mono-script run (old behaviour)
 
 ```bash
 # Make the script executable (first time only)
