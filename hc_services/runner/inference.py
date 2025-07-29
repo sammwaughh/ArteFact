@@ -53,7 +53,6 @@ SENTENCES_JSON = ROOT / "hc_services" / "runner" / "data" / "sentences.json"
 TOP_K = 10  # Number of results to return
 # ─────────────────────────────────────────────────────────────────────────────
 
-
 def _load_embeddings(embeddings_dir: Path) -> Tuple[torch.Tensor, List[str]]:
     """
     Load pre-computed sentence embeddings from individual .pt files.
