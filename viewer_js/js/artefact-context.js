@@ -32,7 +32,7 @@ function updateCreatorTags() {
   selectedCreators.forEach(name => {
     const tag = $('<span>')
       .addClass('badge bg-primary px-3 py-2 d-flex align-items-center')
-      .html(`${name.replace(/_/g, ' ')} <i class="bi bi-x ms-2" style="cursor:pointer;"></i>`);
+      .html(`${name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} <i class="bi bi-x ms-2" style="cursor:pointer;"></i>`);
     tag.find('i').on('click', function () {
       selectedCreators = selectedCreators.filter(c => c !== name);
       updateCreatorTags();
@@ -99,7 +99,7 @@ function updateSelectedCreatorsDisplay() {
   selectedCreators.forEach(name => {
     const tag = $('<span>')
       .addClass('badge bg-primary px-3 py-2 d-flex align-items-center')
-      .html(`${name.replace(/_/g, ' ')} <i class="bi bi-x ms-2" style="cursor:pointer;"></i>`);
+      .html(`${name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} <i class="bi bi-x ms-2" style="cursor:pointer;"></i>`);
     tag.find('i').on('click', function () {
       selectedCreators = selectedCreators.filter(c => c !== name);
       updateSelectedCreatorsDisplay();
@@ -268,7 +268,7 @@ $(document).ready(function () {
       matches.forEach((name, index) => {
         const item = $('<button>')
           .addClass('list-group-item list-group-item-action')
-          .text(name.replace(/_/g, ' '))
+          .text(name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()))
           .on('click', function () {
             if (!selectedCreators.includes(name)) {
               selectedCreators.push(name);
@@ -308,7 +308,7 @@ $(document).ready(function () {
       matches.forEach((name, index) => {
         const item = $('<button>')
           .addClass('list-group-item list-group-item-action')
-          .text(name.replace(/_/g, ' '))
+          .text(name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()))
           .on('click', function () {
             if (!selectedCreators.includes(name)) {
               selectedCreators.push(name);
