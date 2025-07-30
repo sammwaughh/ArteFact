@@ -20,6 +20,10 @@ with open(DATA_DIR / "works.json", "r", encoding="utf-8") as f:
 with open(DATA_DIR / "topics.json", "r", encoding="utf-8") as f:
     TOPICS = json.load(f)
 
+# Load creators mapping
+with open(DATA_DIR / "creators.json", "r", encoding="utf-8") as f:
+    CREATORS_MAP = json.load(f)
+
 
 def get_filtered_sentence_ids(
     filter_topics: List[str] = None,
@@ -47,42 +51,30 @@ def get_filtered_sentence_ids(
     
     # Apply topic filter
     if filter_topics:
-        # Method 1: Using topics.json (topic -> works mapping)
+        # Using topics.json (topic -> works mapping)
         # For each selected topic, get all works that have it
         for topic_id in filter_topics:
             if topic_id in TOPICS:
                 # Add all works that have this topic
                 valid_work_ids.update(TOPICS[topic_id])
-        
-        # Alternative Method 2: Using works.json (work -> topics mapping)
-        # This would be less efficient but equivalent:
-        # for work_id, work_data in WORKS.items():
-        #     work_topics = work_data.get("TopicIDs", [])
-        #     if any(topic in work_topics for topic in filter_topics):
-        #         valid_work_ids.add(work_id)
     else:
         # If no topic filter, all works are valid so far
         valid_work_ids = set(WORKS.keys())
     
     # Apply creator filter
     if filter_creators:
-        # Further filter by creator
+        # Direct lookup in creators.json (more efficient)
+        creator_work_ids = set()
+        for creator_name in filter_creators:
+            if creator_name in CREATORS_MAP:
+                # Get all works by this creator directly from creators.json
+                creator_work_ids.update(CREATORS_MAP[creator_name])
+        
+        # Intersect with existing valid_work_ids if topics were filtered
         if filter_topics:
-            # If we already filtered by topics, only check those works
-            creator_filtered_works = set()
-            for work_id in valid_work_ids:
-                work_data = WORKS.get(work_id, {})
-                work_artist = work_data.get("Artist", "")
-                if work_artist in filter_creators:
-                    creator_filtered_works.add(work_id)
-            valid_work_ids = creator_filtered_works
+            valid_work_ids = valid_work_ids.intersection(creator_work_ids)
         else:
-            # If no topic filter was applied, check all works
-            valid_work_ids = set()
-            for work_id, work_data in WORKS.items():
-                work_artist = work_data.get("Artist", "")
-                if work_artist in filter_creators:
-                    valid_work_ids.add(work_id)
+            valid_work_ids = creator_work_ids
     
     # Now filter sentences to only those from valid works
     filtered_sentence_ids = set()
