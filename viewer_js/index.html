@@ -45,6 +45,12 @@
     <div class="row" style="height: 75vh;">
       <div class="col-md-9 d-flex justify-content-center align-items-center">
         <div id="uploadedImageContainer" class="position-relative bg-secondary d-flex justify-content-center align-items-center text-white w-100 h-100">
+          <div id="gridOverlay"
+            class="position-absolute"
+            style="pointer-events:none; display:none; z-index:9;"></div>
+          <div id="gridHighlightOverlay"
+            class="position-absolute"
+            style="pointer-events:none; display:none; z-index:11;"></div>
           <div class="text-center w-100">
             <div class="card bg-dark bg-opacity-50 text-white">
               <div class="card-body">
@@ -172,6 +178,25 @@
       </div>
     </div>
   </div>
-
+<!-- Settings Modal -->
+<div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="settingsModalLabel">Settings</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="toggleViewGrid">
+          <label class="form-check-label" for="toggleViewGrid">View Grid (8 × 8)</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

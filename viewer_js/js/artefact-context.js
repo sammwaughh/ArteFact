@@ -8,12 +8,23 @@ let runId;
 let s3Key;
 let upload;
 
+// --- Grid overlay state ---
+let viewGridEnabled = false;
+
+const GRID_ROWS = 8;
+const GRID_COLS = 8;
+const CELL_SIM_K = 10;
+
 // --- Available models list ---
 let availableModels = [];
 let selectedModel = '';
 let creatorsMap = {};
 
 let selectedCreators = [];
+
+
+// --- Cell highlight state ---
+let cellHighlightTimeout = null;
 
 function updateCreatorTags() {
   const tagContainer = $('#creatorTags');
@@ -724,4 +735,225 @@ function showWorkDetails(workData) {
     </div>
   `);
   $('body').append(banner);
+}
+
+
+/**
+ * Positions the #gridOverlay to exactly cover the visible image area.
+ */
+function positionGridOverlayToImage() {
+  const container = document.getElementById('uploadedImageContainer');
+  const img = document.getElementById('uploadedImage');
+  const overlay = document.getElementById('gridOverlay');
+  if (!container || !img || !overlay) return;
+  if (img.classList.contains('d-none') || !img.src) return;
+
+  const containerRect = container.getBoundingClientRect();
+  const imageRect = img.getBoundingClientRect();
+  // Compute image rect relative to the container
+  const left = imageRect.left - containerRect.left;
+  const top = imageRect.top - containerRect.top;
+
+  overlay.style.left = `${left}px`;
+  overlay.style.top = `${top}px`;
+  overlay.style.width = `${imageRect.width}px`;
+  overlay.style.height = `${imageRect.height}px`;
+}
+
+/**
+ * Draws an 8×8 grid (i.e., 9 vertical + 9 horizontal lines) inside #gridOverlay.
+ */
+function drawGridOverlay() {
+  const overlay = document.getElementById('gridOverlay');
+  const img = document.getElementById('uploadedImage');
+  if (!overlay || !img || img.classList.contains('d-none') || !img.src) return;
+
+  positionGridOverlayToImage();
+
+  // Clear previous lines
+  overlay.innerHTML = '';
+
+  const cols = 8;
+  const rows = 8;
+
+  // Helper to create line
+  const makeLine = (styleObj) => {
+    const line = document.createElement('div');
+    line.style.position = 'absolute';
+    line.style.background = 'rgba(255,255,255,0.6)';
+    // hairline-ish width
+    line.style.boxShadow = '0 0 0 1px rgba(0,0,0,0.1) inset';
+    Object.assign(line.style, styleObj);
+    overlay.appendChild(line);
+  };
+
+  // Vertical lines (9)
+  for (let i = 0; i <= cols; i++) {
+    const xPct = (i / cols) * 100;
+    makeLine({
+      top: '0',
+      bottom: '0',
+      width: '1px',
+      left: `calc(${xPct}% - 0.5px)`,
+    });
+  }
+
+  // Horizontal lines (9)
+  for (let j = 0; j <= rows; j++) {
+    const yPct = (j / rows) * 100;
+    makeLine({
+      left: '0',
+      right: '0',
+      height: '1px',
+      top: `calc(${yPct}% - 0.5px)`,
+    });
+  }
+}
+
+/**
+ * Shows/hides and (re)draws the grid depending on toggle state.
+ */
+function updateGridVisibility() {
+  const overlay = document.getElementById('gridOverlay');
+  if (!overlay) return;
+  if (viewGridEnabled) {
+    overlay.style.display = 'block';
+    drawGridOverlay();
+  } else {
+    overlay.style.display = 'none';
+    overlay.innerHTML = '';
+  }
+}
+
+// Ensure the toggle reflects current state when modal opens
+$('#settingsModal').on('shown.bs.modal', function () {
+  $('#toggleViewGrid').prop('checked', viewGridEnabled);
+});
+
+// Toggle handler
+$(document).on('change', '#toggleViewGrid', function () {
+  viewGridEnabled = $(this).is(':checked');
+  updateGridVisibility();
+});
+
+$(window).on('resize', function () {
+  if (viewGridEnabled) {
+    drawGridOverlay();
+  }
+});
+// Redraw the grid whenever the image finishes loading / changes
+$('#uploadedImage').on('load', function () {
+    if (viewGridEnabled) drawGridOverlay();
+    updateGridVisibility(); // positions + draws
+  const hi = document.getElementById('gridHighlightOverlay');
+  if (hi) { hi.style.display = 'none'; }
+});
+
+
+function getGridCellFromClick(event) {
+  const img = document.getElementById('uploadedImage');
+  if (!img || img.classList.contains('d-none') || !img.src) return null;
+
+  const rect = img.getBoundingClientRect();
+  const x = event.clientX;
+  const y = event.clientY;
+
+  if (x < rect.left || x > rect.right || y < rect.top || y > rect.bottom) {
+    return null; // clicked outside visible image bounds
+  }
+
+  const dx = (x - rect.left) / rect.width;  // 0..1
+  const dy = (y - rect.top) / rect.height;  // 0..1
+
+  let col = Math.floor(dx * GRID_COLS);
+  let row = Math.floor(dy * GRID_ROWS);
+
+  // Clamp just in case of boundary rounding
+  col = Math.max(0, Math.min(GRID_COLS - 1, col));
+  row = Math.max(0, Math.min(GRID_ROWS - 1, row));
+
+  return { row, col };
+}
+
+$('#uploadedImageContainer').on('click', function (e) {
+  // Ignore if cropping in progress
+  if (typeof isCropping !== 'undefined' && isCropping) return;
+
+  if (!runId) {
+    logWorkingMessage('No run active yet. Upload/select an image first.', 'text-danger');
+    return;
+  }
+
+  const cell = getGridCellFromClick(e);
+  if (!cell) return;
+
+  const { row, col } = cell;
+
+  // NEW: spatial feedback
+  showCellHighlight(row, col);
+
+  logWorkingMessage(`Cell click → row ${row}, col ${col}. Requesting /cell-sim...`, 'text-white');
+
+const params = new URLSearchParams({
+  runId: runId,
+  row: String(row),
+  col: String(col),
+  K: String(CELL_SIM_K)
+});
+
+fetch(`${API_BASE_URL}/cell-sim?${params.toString()}`)
+  .then(res => res.json())
+  .then(data => {
+    logWorkingMessage('Cell similarities received.', 'text-white');
+    display_sentences(data);
+  })
+  .catch(err => {
+    console.error('cell-sim error:', err);
+    logWorkingMessage('Error fetching cell similarities.', 'text-danger');
+  });
+});
+
+
+/**
+ * Briefly highlight a specific grid cell on the visible image.
+ * @param {number} row - 0..GRID_ROWS-1
+ * @param {number} col - 0..GRID_COLS-1
+ */
+function showCellHighlight(row, col) {
+  const container = document.getElementById('uploadedImageContainer');
+  const img = document.getElementById('uploadedImage');
+  const hi = document.getElementById('gridHighlightOverlay');
+  if (!container || !img || !hi) return;
+  if (img.classList.contains('d-none') || !img.src) return;
+
+  // Position relative to container, aligned to visible image rect.
+  const containerRect = container.getBoundingClientRect();
+  const imageRect = img.getBoundingClientRect();
+
+  const cellW = imageRect.width / GRID_COLS;
+  const cellH = imageRect.height / GRID_ROWS;
+
+  const left = (imageRect.left - containerRect.left) + col * cellW;
+  const top  = (imageRect.top  - containerRect.top)  + row * cellH;
+
+  // Style as an outline box with subtle fill, and fade-out transition.
+  hi.style.left = `${left}px`;
+  hi.style.top = `${top}px`;
+  hi.style.width = `${cellW}px`;
+  hi.style.height = `${cellH}px`;
+  hi.style.border = '2px solid rgba(255, 255, 0, 0.9)';
+  hi.style.boxShadow = '0 0 0 1px rgba(0,0,0,0.25) inset';
+  hi.style.background = 'rgba(255, 255, 0, 0.10)';
+  hi.style.opacity = '1';
+  hi.style.transition = 'opacity 200ms ease';
+  hi.style.display = 'block';
+
+  // Clear any previous timer, then fade out and hide.
+  if (cellHighlightTimeout) clearTimeout(cellHighlightTimeout);
+  cellHighlightTimeout = setTimeout(() => {
+    hi.style.opacity = '0';
+    setTimeout(() => {
+      hi.style.display = 'none';
+    }, 210);
+  }, 600);
 }
