@@ -223,7 +223,7 @@ def get_models():
     """
     Return the list of models.
     """
-    return jsonify(["CLIP", "PaintingCLIP"])
+    return jsonify(["clip", "paintingclip"])  # Changed to lowercase
 
 
 @app.route("/cell-sim", methods=["GET"])
