@@ -110,6 +110,82 @@ function updateSelectedCreatorsDisplay() {
 
 // Main script entry point: sets up event handlers on document ready
 $(document).ready(function () {
+  // Add click handler for Artefact Viewer logo/text to refresh the app
+  $('.navbar-brand').on('click', function(e) {
+    e.preventDefault();
+    
+    // Clear all state variables
+    runId = null;
+    s3Key = null;
+    upload = null;
+    viewGridEnabled = false;
+    selectedTopics = [];
+    selectedCreators = [];
+    selectedModel = '';
+    
+    // Reset UI elements
+    $('#uploadedImage').addClass('d-none').attr('src', '');
+    $('#uploadTrigger').removeClass('d-none');
+    $('#imageTools').addClass('d-none');
+    $('#workingOverlay').addClass('d-none');
+    $('#workDetailsBanner').remove();
+    $('#gridOverlay').hide().html('');
+    $('#gridHighlightOverlay').hide();
+    
+    // Hide panels
+    $('.col-md-3').addClass('d-none');
+    $('#sentenceList').empty();
+    $('#imageHistoryWrapper').addClass('d-none');
+    $('#imageHistory').empty();
+    $('#selectedTopicsWrapper').addClass('d-none');
+    $('#selectedCreatorsWrapper').addClass('d-none');
+    
+    // Reset topic selections
+    $('#topicTags button').removeClass('active btn-primary').addClass('btn-outline-primary');
+    $('#selectedTopicTags').empty();
+    
+    // Reset creator selections  
+    $('#creatorTags').empty();
+    $('#selectedCreatorTags').empty();
+    $('#creatorSearch').val('');
+    $('#creatorSearchResults').empty();
+    $('#creatorPanelSearch').val('');
+    $('#creatorPanelResults').empty();
+    
+    // Reset model selection to first available
+    if (availableModels.length > 0) {
+      selectedModel = availableModels[0];
+      $('#modelDropdown').text('Model: ' + selectedModel);
+      $('#modelDropdownMenu a').removeClass('active');
+      $('#modelDropdownMenu a').first().addClass('active');
+    }
+    
+    // Reset debug panel
+    $('#debugStatus').text('Idle');
+    $('#debugSessionId').text('N/A');
+    $('#workingLog').empty();
+    
+    // Recreate the upload card if it was removed
+    if ($('.card:has(#uploadTrigger)').length === 0 && $('#exampleContainer').length === 0) {
+      const uploadCard = $(`
+        <div class="card h-100 text-center d-flex align-items-center justify-content-center" style="cursor: pointer; background-color: rgba(255,255,255,0.1);">
+          <div class="card-body">
+            <p class="mb-2">Drop an image here or click to upload</p>
+            <button class="btn btn-primary" id="uploadTrigger">
+              <i class="bi bi-upload"></i> Upload Image
+            </button>
+          </div>
+        </div>
+      `);
+      $('#uploadedImageContainer').prepend(uploadCard);
+    }
+    
+    // Show example container if it was hidden
+    if ($('#exampleContainer').length === 0) {
+      location.reload(); // Simplest way to restore the example images section
+    }
+  });
+
   // --- Load topic tags from /topics ---
   fetch(`${API_BASE_URL}/topics`)
     .then(response => response.json())
