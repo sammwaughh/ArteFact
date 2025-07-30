@@ -727,7 +727,15 @@ function showWorkDetails(workData) {
           <p class="mb-1"><strong>Year:</strong> ${details.Year || 'Unknown'}</p>
           <p class="mb-1"><strong>DOI:</strong> <a href="${details.DOI}" target="_blank" class="text-white text-decoration-underline">${details.DOI}</a></p>
           <p class="mb-1"><strong>Link:</strong> <a href="${details.Link}" target="_blank" class="text-white text-decoration-underline">${details.Link}</a></p>
-          <iframe src="${details.DOI}" style="width: 100%; height: 50vh; border: none;" class="mt-2"></iframe>
+          
+          <details class="mt-2">
+            <summary class="cursor-pointer text-white">BibTeX Citation</summary>
+            <pre class="bg-dark p-2 mt-1 rounded text-light" style="white-space: pre-wrap; word-break: break-word; font-size: 0.875rem;">
+${details.BibTeX || 'Citation not available'}
+            </pre>
+          </details>
+          
+          <iframe src="${details.DOI}" style="width: 100%; height: 50vh; border: none;" class="mt-3"></iframe>
         </div>
         <button class="btn btn-sm btn-outline-light ms-3" onclick="$('#workDetailsBanner').remove()">
           <i class="bi bi-x-lg"></i>
