@@ -730,9 +730,16 @@ function showWorkDetails(workData) {
           
           <details class="mt-2">
             <summary class="cursor-pointer text-white">BibTeX Citation</summary>
-            <pre class="bg-dark p-2 mt-1 rounded text-light" style="white-space: pre-wrap; word-break: break-word; font-size: 0.875rem;">
+            <div class="position-relative">
+              <button class="btn btn-sm btn-outline-light position-absolute top-0 end-0 mt-2 me-2" 
+                      onclick="copyBibTeX()" 
+                      title="Copy to clipboard">
+                <i class="bi bi-clipboard"></i>
+              </button>
+              <pre id="bibtexContent" class="bg-dark p-2 mt-1 rounded text-light" style="white-space: pre-wrap; word-break: break-word; font-size: 0.875rem; padding-right: 3rem;">
 ${details.BibTeX || 'Citation not available'}
-            </pre>
+              </pre>
+            </div>
           </details>
           
           <iframe src="${details.DOI}" style="width: 100%; height: 50vh; border: none;" class="mt-3"></iframe>
@@ -746,6 +753,38 @@ ${details.BibTeX || 'Citation not available'}
   $('body').append(banner);
 }
 
+// Add this helper function for copying BibTeX
+function copyBibTeX() {
+  const bibtexText = document.getElementById('bibtexContent').textContent.trim();
+  
+  // Create a temporary textarea to copy from
+  const tempTextarea = document.createElement('textarea');
+  tempTextarea.value = bibtexText;
+  tempTextarea.style.position = 'fixed';
+  tempTextarea.style.opacity = '0';
+  document.body.appendChild(tempTextarea);
+  
+  // Select and copy the text
+  tempTextarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempTextarea);
+  
+  // Visual feedback - change icon temporarily
+  const copyBtn = event.target.closest('button');
+  const icon = copyBtn.querySelector('i');
+  icon.classList.remove('bi-clipboard');
+  icon.classList.add('bi-clipboard-check');
+  
+  // Change button text temporarily
+  copyBtn.setAttribute('title', 'Copied!');
+  
+  // Reset after 2 seconds
+  setTimeout(() => {
+    icon.classList.remove('bi-clipboard-check');
+    icon.classList.add('bi-clipboard');
+    copyBtn.setAttribute('title', 'Copy to clipboard');
+  }, 2000);
+}
 
 /**
  * Positions the #gridOverlay to exactly cover the visible image area.
