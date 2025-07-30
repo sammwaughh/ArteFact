@@ -18,6 +18,7 @@ from functools import lru_cache
 import time
 import base64
 import io
+import cv2
 
 import torch
 import torch.nn.functional as F
@@ -201,6 +202,8 @@ def compute_heatmap(
     sentence: str,
     *,
     layer_idx: int = -1,
+    alpha: float = 0.45,  # Add this
+    colormap: int = cv2.COLORMAP_JET,  # Add this
 ) -> str:
     """
     Generate a Grad-ECLIP heat-map for (image, sentence).
@@ -214,6 +217,10 @@ def compute_heatmap(
         run_inference).
     layer_idx : int, optional
         Vision transformer block to analyse (default last).
+    alpha : float, optional
+        Heatmap overlay opacity (default: 0.45)
+    colormap : int, optional
+        OpenCV colormap for visualization (default: COLORMAP_JET)
 
     Returns
     -------
@@ -233,6 +240,8 @@ def compute_heatmap(
         processor=processor,
         device=device,
         layer_idx=layer_idx,
+        alpha=alpha,  # Pass through
+        colormap=colormap,  # Pass through
     )
 
     buf = io.BytesIO()

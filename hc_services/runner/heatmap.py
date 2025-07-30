@@ -1,117 +1,205 @@
 """
 heatmap.py
------------
+----------
 
-Create Grad‑ECLIP saliency overlays for CLIP / PaintingCLIP.
+Grad-ECLIP visual explanations for CLIP/PaintingCLIP models.
+Generates heatmap overlays showing which image regions contribute to image-text similarity.
 
-Public entry‑point
+Based on "Gradient-based Visual Explanation for Transformer-based CLIP" 
+by Zhao et al. (ICML 2024)
+
+Public entry point:
 ------------------
 generate_heatmap(
     image,                 # str | PIL.Image.Image
     sentence,              # caption text
-    model,                 # CLIPModel or PEFT‑wrapped model
+    model,                 # CLIPModel or PEFT-wrapped model
     processor,             # CLIPProcessor
     device,                # torch.device
     *,
     layer_idx: int = -1,   # which visual transformer block to explain
     alpha: float = 0.45,   # overlay opacity
-    colormap: int =  cv2.COLORMAP_JET,
-) -> PIL.Image.Image       # RGB overlay the UI can send to the browser
-
-The implementation is a faithful re‑creation of Grad‑ECLIP’s
-“channel‑× spatial” weighting ⁠— see Section 3.2, Eq 19 of the
-paper :contentReference[oaicite:2]{index=2}.
+    colormap: int = cv2.COLORMAP_JET,
+    resize: Optional[Tuple[int, int]] = None,
+) -> PIL.Image.Image       # RGB overlay for display
 """
 
 from __future__ import annotations
 
 import contextlib
-import types
-from typing import Callable, Tuple, Union, Optional, Iterator
+from typing import Dict, Tuple, Union, Optional, Any
 
 import cv2
 import numpy as np
 import torch
 import torch.nn.functional as F
 from PIL import Image
-from transformers.models.clip.modeling_clip import CLIPModel, CLIPVisionEmbeddings
-from transformers import CLIPProcessor
-
-# -----------------------------------------------------------------------------#
-# Internal helpers                                                             #
-# -----------------------------------------------------------------------------#
-
-_AttnTensors = Tuple[torch.Tensor, torch.Tensor]  # (value (B,N,C), raw_qk (B,N,N))
+from transformers import CLIPModel, CLIPProcessor
+from peft import PeftModel
 
 
-def _select_block(
-    model: CLIPModel,
-    layer_idx: int,
-) -> torch.nn.Module:
+# ============================================================================ #
+# Core Grad-ECLIP Implementation                                               #
+# ============================================================================ #
+
+class _GradECLIPHooks:
     """
-    Return the `layer_idx`‑th transformer block inside the visual tower.
-    Negative indices follow Python slice semantics.
+    Context manager for forward/backward hooks to capture Grad-ECLIP components.
     """
-    blocks = model.vision_model.encoder.layers
-    if layer_idx < 0:
-        layer_idx += len(blocks)
-    if layer_idx < 0 or layer_idx >= len(blocks):
-        raise IndexError(f"layer_idx {layer_idx} out of range [0,{len(blocks)-1}]")
-    return blocks[layer_idx]
+    
+    def __init__(self, model: CLIPModel, layer_idx: int):
+        self.model = model
+        self.layer_idx = layer_idx
+        self.captures: Dict[str, Any] = {}
+        self.handles = []
+        
+    def __enter__(self):
+        # Get target layer
+        vision_layers = self.model.vision_model.encoder.layers
+        if self.layer_idx < 0:
+            self.layer_idx = len(vision_layers) + self.layer_idx
+        self.target_layer = vision_layers[self.layer_idx]
+        
+        # Register hooks
+        self._register_forward_hook()
+        self._register_backward_hook()
+        
+        return self
+        
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        # Clean up hooks
+        for handle in self.handles:
+            handle.remove()
+        self.handles.clear()
+        
+    def _register_forward_hook(self):
+        """Register forward hook to capture Q, K, V and attention weights."""
+        def forward_hook(module, input, output):
+            if len(input) > 0:
+                hidden_states = input[0]
+                
+                # Get attention inputs
+                x = hidden_states
+                if hasattr(module.self_attn, 'layer_norm'):
+                    x = module.self_attn.layer_norm(x)
+                
+                # Compute Q, K, V
+                if hasattr(module.self_attn, 'q_proj'):
+                    batch_size, seq_len, hidden_dim = x.shape
+                    
+                    Q = module.self_attn.q_proj(x)
+                    K = module.self_attn.k_proj(x)
+                    V = module.self_attn.v_proj(x)
+                    
+                    # Store raw projections
+                    self.captures['V'] = V
+                    self.captures['hidden_states_pre'] = hidden_states
+                    
+                    # Compute attention for head-averaged weights
+                    head_dim = hidden_dim // module.self_attn.num_heads
+                    num_heads = module.self_attn.num_heads
+                    
+                    # Reshape for multi-head attention
+                    Q_heads = Q.view(batch_size, seq_len, num_heads, head_dim).transpose(1, 2)
+                    K_heads = K.view(batch_size, seq_len, num_heads, head_dim).transpose(1, 2)
+                    
+                    # Compute attention weights
+                    scale = head_dim ** -0.5
+                    attn_weights = torch.matmul(Q_heads, K_heads.transpose(-2, -1)) * scale
+                    attn_weights = torch.softmax(attn_weights, dim=-1)
+                    
+                    # Store for later use
+                    self.captures['Q'] = Q_heads
+                    self.captures['K'] = K_heads
+                    self.captures['attn_weights'] = attn_weights.mean(dim=1)  # Average over heads
+        
+        handle = self.target_layer.register_forward_hook(forward_hook)
+        self.handles.append(handle)
+        
+    def _register_backward_hook(self):
+        """Register backward hook to capture gradients."""
+        def backward_hook(module, grad_input, grad_output):
+            if len(grad_output) > 0:
+                self.captures['grad_attn'] = grad_output[0]
+        
+        handle = self.target_layer.register_full_backward_hook(backward_hook)
+        self.handles.append(handle)
+        
+    def get_captures(self) -> Dict[str, torch.Tensor]:
+        """Return captured tensors."""
+        return self.captures
 
 
-@contextlib.contextmanager
-def _grad_eclip_hooks(
-    model: CLIPModel,
-    layer_idx: int,
-) -> Iterator[Callable[[], _AttnTensors]]:
+def _compute_gradeclip_importance(
+    captures: Dict[str, torch.Tensor],
+    use_k_similarity: bool = True,
+    device: torch.device = None
+) -> torch.Tensor:
     """
-    Forward‑/backward‑hook manager that captures:
-        • V  (values after projection)             – forward
-        • raw QKᵀ/√d (before softmax)             – forward
-        • ∂s/∂V   (channel gradients)              – backward
-    Returns a getter that, after backward(), yields needed tensors.
+    Compute Grad-ECLIP importance scores from captured tensors.
+    
+    Args:
+        captures: Dictionary with captured tensors from hooks
+        use_k_similarity: Whether to use Q-K similarity weighting
+        device: Computation device
+        
+    Returns:
+        Importance scores for each patch (excluding CLS token)
     """
-    block = _select_block(model, layer_idx)
-    holder: dict[str, torch.Tensor] = {}
+    # Extract captured tensors
+    V = captures.get('V')
+    grad_attn = captures.get('grad_attn')
+    attn_weights = captures.get('attn_weights')
+    
+    if V is None or grad_attn is None:
+        raise ValueError("Missing required captures for Grad-ECLIP computation")
+    
+    # 1. Channel importance: gradients at CLS token
+    grad_cls = grad_attn[0, 0, :]  # Shape: (hidden_dim,)
+    
+    # 2. Extract patch values (exclude CLS token)
+    V_patches = V[0, 1:, :]  # Shape: (num_patches, hidden_dim)
+    num_patches = V_patches.shape[0]
+    
+    # 3. Get spatial attention weights
+    if attn_weights is not None:
+        # Use captured attention from CLS to patches
+        cls_attn = attn_weights[0, 0, 1:num_patches+1]
+    else:
+        # Fallback: uniform weights
+        cls_attn = torch.ones(num_patches, device=device or V.device) / num_patches
+    
+    # 4. Optional: Apply Q-K similarity normalization
+    if use_k_similarity and 'Q' in captures and 'K' in captures:
+        Q = captures['Q']
+        K = captures['K']
+        
+        # Get CLS token query (average over heads)
+        q_cls = Q[:, :, 0:1, :].mean(dim=1)  # Shape: (1, 1, head_dim)
+        k_patches = K[:, :, 1:, :].mean(dim=1)  # Shape: (1, num_patches, head_dim)
+        
+        # Normalize and compute cosine similarity
+        q_cls = F.normalize(q_cls, dim=-1)
+        k_patches = F.normalize(k_patches, dim=-1)
+        
+        k_similarity = torch.matmul(q_cls, k_patches.transpose(-2, -1)).squeeze()
+        # Normalize to [0, 1]
+        k_similarity = (k_similarity - k_similarity.min()) / (k_similarity.max() - k_similarity.min() + 1e-8)
+        
+        # Apply K-similarity weighting
+        cls_attn = cls_attn * k_similarity[:num_patches]
+    
+    # 5. Compute importance: ReLU(Σ_c grad_c * v_i,c * attn_i)
+    importance = (grad_cls * V_patches).sum(dim=-1)  # Channel-wise importance
+    importance = importance * cls_attn  # Spatial weighting
+    importance = torch.relu(importance)  # ReLU activation
+    
+    return importance
 
-    def fwd_hook(module, inputs, output):
-        # module: CLIPEncoderLayer
-        # output[0] == hidden_states, output[1] == attn_weights (if asked)
-        # We ensure `output_attentions=True` in forward() call later.
-        hidden, attn_weights = output
-        # save V (value vectors)   shape: (B, N, C)
-        holder["v"] = module.self_attn.v_proj(
-            hidden
-        ).detach()  # store detached copy to avoid interfering with autograd
-        # save raw qk pre‑softmax   shape: (B, N, N)
-        holder["raw_qk"] = attn_weights.detach()
 
-    def bwd_hook(module, grad_input, grad_output):
-        # grad_output[0] corresponds to grad wrt hidden_states
-        holder["v_grad"] = module.self_attn.v_proj(
-            grad_output[0]
-        ).detach()
-
-    h1 = block.register_forward_hook(fwd_hook, with_kwargs=False)
-    h2 = block.register_full_backward_hook(bwd_hook)
-
-    try:
-        yield lambda: (
-            holder["v"],
-            holder["raw_qk"],
-            holder["v_grad"],
-        )
-    finally:
-        h1.remove()
-        h2.remove()
-        holder.clear()
-
-
-# -----------------------------------------------------------------------------#
+# ============================================================================ #
 # Public API                                                                   #
-# -----------------------------------------------------------------------------#
-
+# ============================================================================ #
 
 def generate_heatmap(
     image: Union[str, Image.Image],
@@ -126,117 +214,124 @@ def generate_heatmap(
     resize: Optional[Tuple[int, int]] = None,
 ) -> Image.Image:
     """
-    Compute a Grad‑ECLIP heat‑map for (image, sentence) and blend it
-    over the original picture.
-
+    Generate Grad-ECLIP heatmap overlay for image-text pair.
+    
     Parameters
     ----------
-    image:
-        Path or already‑loaded PIL image.
-    sentence:
-        Caption query.
-    model / processor / device:
-        Re‑use the cached objects from `inference._initialize_pipeline`.
-    layer_idx:
-        Index of vision transformer block to explain (default: last).
-    alpha:
-        Heat‑map opacity in overlay.
-    colormap:
-        OpenCV colormap code.
-    resize:
-        Optional target size (W,H) for output overlay; if None, keep original.
-
+    image : str or PIL.Image
+        Input image path or PIL Image object
+    sentence : str
+        Text description to explain
+    model : CLIPModel
+        Pre-loaded CLIP model (possibly with LoRA adapter)
+    processor : CLIPProcessor
+        CLIP processor for preprocessing
+    device : torch.device
+        Computation device
+    layer_idx : int, optional
+        Which vision transformer layer to analyze (default: -1 for last layer)
+    alpha : float, optional
+        Heatmap overlay opacity (default: 0.45)
+    colormap : int, optional
+        OpenCV colormap for visualization (default: COLORMAP_JET)
+    resize : tuple, optional
+        Target (width, height) for output image
+        
     Returns
     -------
-    overlay : PIL.Image.Image
-        RGB image with heat‑map blended for immediate saving / streaming.
+    PIL.Image
+        RGB image with heatmap overlay
     """
-    # ------------------------------------------------------------#
-    # 1. Pre‑process inputs                                       #
-    # ------------------------------------------------------------#
+    # Load image if path provided
     if isinstance(image, str):
-        pil = Image.open(image).convert("RGB")
+        pil_image = Image.open(image).convert('RGB')
     else:
-        pil = image.copy()
-
+        pil_image = image.convert('RGB')
+    
+    # Store original size
+    orig_size = pil_image.size  # (width, height)
+    
+    # Apply resize if requested
     if resize:
-        pil = pil.resize(resize, Image.BICUBIC)
-
-    # Call order “images first, then text” avoids secondary kwargs filtering bug
-    inputs = processor(images=pil, text=[sentence], return_tensors="pt", padding=True)
+        display_image = pil_image.resize(resize, Image.Resampling.BICUBIC)
+    else:
+        display_image = pil_image
+    
+    # Prepare inputs
+    inputs = processor(
+        images=pil_image,
+        text=sentence,
+        return_tensors="pt",
+        padding=True
+    )
     inputs = {k: v.to(device) for k, v in inputs.items()}
-
-    # ------------------------------------------------------------#
-    # 2. Forward + backward with hooks                            #
-    # ------------------------------------------------------------#
-    # temporarily switch parameters to require_grad=True
-    prev = [p.requires_grad for p in model.parameters()]
-    for p in model.parameters():
-        p.requires_grad_(True)
-
-    model.eval()
-    with torch.set_grad_enabled(True), _grad_eclip_hooks(model, layer_idx) as get_tensors:
-        outputs = model(**inputs, output_attentions=True, output_hidden_states=True)
-        image_emb = F.normalize(outputs.image_embeds, dim=-1)  # (1,512)
-        text_emb = F.normalize(outputs.text_embeds, dim=-1)    # (1,512)
-
-        # similarity scalar
-        sim = (image_emb @ text_emb.T).squeeze()
-        # backward to populate gradients captured by hook
-        model.zero_grad(set_to_none=True)
-        sim.backward(retain_graph=False)
-
-        v, raw_qk, v_grad = get_tensors()  # shapes: (1,N,C), (1,N,N), (1,N,C)
-
-    # restore original requires_grad flags
-    for flag, param in zip(prev, model.parameters()):
-        param.requires_grad_(flag)
-
-    # ------------------------------------------------------------#
-    # 3. Channel & spatial importance (Eq 19)                     #
-    # ------------------------------------------------------------#
-    # channel weights wc – gradients for CLS row
-    # CLS token is position 0
-    wc = v_grad[0, 0]  # (C,)
-
-    # loosened spatial weights λᵢ – 0‑1 norm of raw_qk CLS row
-    cls_row = raw_qk[0, 0]  # (N,)
-    lam = (cls_row - cls_row.min()) / (cls_row.max() - cls_row.min() + 1e-8)
-
-    # feature map (exclude CLS) → (N-1,C)
-    v_patches = v[0, 1:]                 # (M,C)
-
-    # Ensure the λ vector has the same length as the patch sequence.
-    # Some CLIP checkpoints include an extra token that appears in raw_qk
-    # but not in the value tensor, which creates a 50 vs 49 size mismatch.
-    # `v_patches` has shape (M,C).  Keep only the first M spatial weights.
-    num_patch_tokens = v_patches.size(0)
-    lam_patches = lam.narrow(0, 1, num_patch_tokens)   # (M,)
-
-    # importance per patch: ReLU( Σ_c wc * λ_i * v_i,c )
-    imp = torch.relu((v_patches * wc).sum(dim=-1) * lam_patches)  # (N-1,)
-
-    # ------------------------------------------------------------#
-    # 4. Reshape to patch grid & upscale                          #
-    # ------------------------------------------------------------#
-    num_patches = imp.shape[0]
-    side = int(np.sqrt(num_patches))
-    heat = imp.view(side, side).cpu().numpy()
-    heat = cv2.resize(heat, pil.size, interpolation=cv2.INTER_CUBIC)
-    heat = heat - heat.min()
-    heat = heat / (heat.max() + 1e-8)
-    heat_uint8 = np.uint8(255 * heat)
-    heat_color = cv2.applyColorMap(heat_uint8, colormap)
-    heat_color = cv2.cvtColor(heat_color, cv2.COLOR_BGR2RGB)
-
-    # ------------------------------------------------------------#
-    # 5. Blend & return                                           #
-    # ------------------------------------------------------------#
-    orig = np.asarray(pil).astype(np.float32)
-    overlay = (1 - alpha) * orig + alpha * heat_color
-    overlay = np.clip(overlay, 0, 255).astype(np.uint8)
-
-    return Image.fromarray(overlay, mode="RGB")
+    
+    # Temporarily enable gradients
+    model_requires_grad = [p.requires_grad for p in model.parameters()]
+    for param in model.parameters():
+        param.requires_grad = True
+    
+    try:
+        # Forward and backward pass with hooks
+        with torch.set_grad_enabled(True):
+            with _GradECLIPHooks(model, layer_idx) as hooks:
+                # Forward pass
+                outputs = model(**inputs, output_attentions=False)
+                
+                # Get normalized embeddings
+                image_embeds = F.normalize(outputs.image_embeds, dim=-1)
+                text_embeds = F.normalize(outputs.text_embeds, dim=-1)
+                
+                # Compute similarity
+                similarity = (image_embeds @ text_embeds.T).squeeze()
+                
+                # Backward pass
+                model.zero_grad()
+                similarity.backward(retain_graph=False)
+                
+                # Get captured tensors
+                captures = hooks.get_captures()
+        
+        # Compute Grad-ECLIP importance
+        importance = _compute_gradeclip_importance(
+            captures,
+            use_k_similarity=True,
+            device=device
+        )
+        
+        # Reshape to 2D grid
+        num_patches = importance.shape[0]
+        grid_size = int(np.sqrt(num_patches))
+        importance_map = importance.reshape(grid_size, grid_size)
+        
+        # Convert to numpy and normalize
+        saliency_map = importance_map.detach().cpu().numpy()
+        saliency_map = saliency_map - saliency_map.min()
+        saliency_map = saliency_map / (saliency_map.max() + 1e-8)
+        
+        # Resize saliency map to match display image
+        saliency_resized = cv2.resize(
+            saliency_map,
+            display_image.size,  # (width, height)
+            interpolation=cv2.INTER_CUBIC
+        )
+        
+        # Apply colormap
+        heatmap_uint8 = (saliency_resized * 255).astype(np.uint8)
+        heatmap_bgr = cv2.applyColorMap(heatmap_uint8, colormap)
+        heatmap_rgb = cv2.cvtColor(heatmap_bgr, cv2.COLOR_BGR2RGB)
+        
+        # Blend with original image
+        img_array = np.array(display_image).astype(np.float32)
+        overlay = (1 - alpha) * img_array + alpha * heatmap_rgb
+        overlay = np.clip(overlay, 0, 255).astype(np.uint8)
+        
+        return Image.fromarray(overlay, mode="RGB")
+        
+    finally:
+        # Restore original gradient settings
+        for param, requires_grad in zip(model.parameters(), model_requires_grad):
+            param.requires_grad = requires_grad
 
 
 __all__ = ["generate_heatmap"]
