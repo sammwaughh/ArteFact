@@ -11,6 +11,24 @@ let upload;
 // --- Available models list ---
 let availableModels = [];
 let selectedModel = '';
+let creatorsMap = {};
+
+let selectedCreators = [];
+
+function updateCreatorTags() {
+  const tagContainer = $('#creatorTags');
+  tagContainer.empty();
+  selectedCreators.forEach(name => {
+    const tag = $('<span>')
+      .addClass('badge bg-primary px-3 py-2 d-flex align-items-center')
+      .html(`${name.replace(/_/g, ' ')} <i class="bi bi-x ms-2" style="cursor:pointer;"></i>`);
+    tag.find('i').on('click', function () {
+      selectedCreators = selectedCreators.filter(c => c !== name);
+      updateCreatorTags();
+    });
+    tagContainer.append(tag);
+  });
+}
 
 /**
  * Appends a message to the working log with the specified type.
@@ -60,6 +78,23 @@ function updateSelectedTopicsDisplay() {
       });
     selectedTagContainer.append(tag);
   }
+}
+
+// Updates the display of selected creators in the #selectedCreatorsWrapper.
+function updateSelectedCreatorsDisplay() {
+  $('#selectedCreatorsWrapper').removeClass('d-none');
+  const tagContainer = $('#selectedCreatorTags');
+  tagContainer.empty();
+  selectedCreators.forEach(name => {
+    const tag = $('<span>')
+      .addClass('badge bg-primary px-3 py-2 d-flex align-items-center')
+      .html(`${name.replace(/_/g, ' ')} <i class="bi bi-x ms-2" style="cursor:pointer;"></i>`);
+    tag.find('i').on('click', function () {
+      selectedCreators = selectedCreators.filter(c => c !== name);
+      updateSelectedCreatorsDisplay();
+    });
+    tagContainer.append(tag);
+  });
 }
 
 // Main script entry point: sets up event handlers on document ready
@@ -122,6 +157,96 @@ $(document).ready(function () {
     .catch(error => {
       console.error('Error loading models:', error);
     });
+
+  // --- Load creators list from /creators ---
+  fetch(`${API_BASE_URL}/creators`)
+    .then(response => response.json())
+    .then(data => {
+      creatorsMap = data;
+      console.log("Available creators:", creatorsMap);
+    })
+    .catch(error => {
+      console.error('Error loading creators:', error);
+    });
+
+  // --- Creator search logic ---
+  $('#creatorSearch').on('input', function () {
+    const query = $(this).val().toLowerCase();
+    const resultsContainer = $('#creatorSearchResults');
+    resultsContainer.empty();
+    if (query.length > 0) {
+      const matches = Object.keys(creatorsMap).filter(name =>
+        name.toLowerCase().includes(query)
+      );
+      matches.forEach((name, index) => {
+        const item = $('<button>')
+          .addClass('list-group-item list-group-item-action')
+          .text(name.replace(/_/g, ' '))
+          .on('click', function () {
+            if (!selectedCreators.includes(name)) {
+              selectedCreators.push(name);
+              updateCreatorTags();
+            }
+            $('#creatorSearch').val('');
+            resultsContainer.empty();
+          });
+        if (index === 0) {
+          item.addClass('active');
+        }
+        resultsContainer.append(item);
+      });
+    }
+  });
+
+  // Add enter-to-select first match
+  $('#creatorSearch').on('keydown', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const firstItem = $('#creatorSearchResults button').first();
+      if (firstItem.length) {
+        firstItem.click();
+      }
+    }
+  });
+
+  // --- Creator panel search logic ---
+  $('#creatorPanelSearch').on('input', function () {
+    const query = $(this).val().toLowerCase();
+    const resultsContainer = $('#creatorPanelResults');
+    resultsContainer.empty();
+    if (query.length > 0) {
+      const matches = Object.keys(creatorsMap).filter(name =>
+        name.toLowerCase().includes(query)
+      );
+      matches.forEach((name, index) => {
+        const item = $('<button>')
+          .addClass('list-group-item list-group-item-action')
+          .text(name.replace(/_/g, ' '))
+          .on('click', function () {
+            if (!selectedCreators.includes(name)) {
+              selectedCreators.push(name);
+              updateSelectedCreatorsDisplay();
+            }
+            $('#creatorPanelSearch').val('');
+            resultsContainer.empty();
+          });
+        if (index === 0) {
+          item.addClass('active');
+        }
+        resultsContainer.append(item);
+      });
+    }
+  });
+
+  $('#creatorPanelSearch').on('keydown', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const firstItem = $('#creatorPanelResults button').first();
+      if (firstItem.length) {
+        firstItem.click();
+      }
+    }
+  });
   // Trigger file upload dialog when upload button is clicked
   $('#uploadTrigger').on('click', function () {
     $('#imageUpload').click();
@@ -260,6 +385,7 @@ function fetchPresign() {
 
           // Show selected topics box using helper
           updateSelectedTopicsDisplay();
+          updateSelectedCreatorsDisplay();
 
           return fetch(`${API_BASE_URL}/runs`, {
             method: 'POST',
@@ -270,6 +396,7 @@ function fetchPresign() {
               runId: runId,
               s3Key: s3Key,
               topics: selectedTopics,
+              creators: selectedCreators,
               model: selectedModel
             })
           });
