@@ -34,6 +34,13 @@ def run_task(run_id: str, image_path: str, topics: list = None, creators: list =
         creators: List of creator names to filter by (optional)
         model: Model type to use ("clip" or "paintingclip")
     """
+    # Clear any cached images from patch inference
+    try:
+        from .patch_inference import _prepare_image
+        _prepare_image.cache_clear()
+    except ImportError:
+        pass  # patch_inference might not be imported yet
+    
     # Mark as processing (with a check to ensure the run exists)
     with runs_lock:
         if run_id not in runs:
