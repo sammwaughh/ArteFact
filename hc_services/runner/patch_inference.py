@@ -42,7 +42,7 @@ def _infer_patch_hw(num_patches: int) -> Tuple[int, int]:
 @lru_cache(maxsize=8)              # cache a few recent paintings × grid sizes
 def _prepare_image(
     image_path: str | Path,
-    grid_size: Tuple[int, int] = (8, 8),
+    grid_size: Tuple[int, int] = (7, 7),  # Changed default to 7x7
 ) -> torch.Tensor:
     """
     Convert *one* painting into a bank of L2‑normalised grid‑cell vectors.
@@ -80,7 +80,12 @@ def _prepare_image(
 
     # 3. Adaptive average‑pool down to UI grid resolution
     grid_h, grid_w = grid_size
-    cell_grid = F.adaptive_avg_pool2d(patch_grid, output_size=(grid_h, grid_w)).squeeze(0)
+    
+    # Special case: if grid size matches patch grid, no pooling needed
+    if (grid_h, grid_w) == (H, W):
+        cell_grid = patch_grid.squeeze(0)  # Just remove batch dimension
+    else:
+        cell_grid = F.adaptive_avg_pool2d(patch_grid, output_size=(grid_h, grid_w)).squeeze(0)
 
     # 4. Flatten → (cells, D) & L2‑normalise
     cell_vecs = cell_grid.permute(1, 2, 0).reshape(-1, dim)                # (g², 512)
@@ -94,7 +99,7 @@ def rank_sentences_for_cell(
     image_path: str | Path,
     cell_row: int,
     cell_col: int,
-    grid_size: Tuple[int, int] = (8, 8),
+    grid_size: Tuple[int, int] = (7, 7),  # Changed default to 7x7
     top_k: int = 10,
 ) -> List[Dict[str, Any]]:
     """
@@ -107,8 +112,8 @@ def rank_sentences_for_cell(
         Path (local or mounted) to the RGB image file.
     cell_row, cell_col : int
         Zero‑indexed row/column of the clicked grid cell.
-    grid_size : (int, int), default (8, 8)
-        Resolution of the UI grid.
+    grid_size : (int, int), default (7, 7)
+        Resolution of the UI grid (7x7 matches ViT-B/32 patch grid).
     top_k : int, default 10
         How many sentences to return.
 
@@ -161,7 +166,7 @@ def rank_sentences_for_cell(
 # Optional helper for debugging / heat‑map pre‑computation
 def list_grid_scores(
     image_path: str | Path,
-    grid_size: Tuple[int, int] = (8, 8),
+    grid_size: Tuple[int, int] = (7, 7),  # Changed default to 7x7
 ) -> torch.Tensor:
     """
     Return the full similarity matrix of shape (sentences, cells).
