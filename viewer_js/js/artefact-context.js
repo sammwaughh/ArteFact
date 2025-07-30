@@ -11,8 +11,8 @@ let upload;
 // --- Grid overlay state ---
 let viewGridEnabled = false;
 
-const GRID_ROWS = 8;
-const GRID_COLS = 8;
+const GRID_ROWS = 7;   // ViT-B/32 → 7×7 patch grid
+const GRID_COLS = 7;   // keep rows == cols
 const CELL_SIM_K = 10;
 
 // --- Available models list ---
@@ -388,7 +388,6 @@ function fetchPresign() {
           }
         })
         .then(() => {
-          $('#debugSessionId').text(runId);
           $('#debugStatus').text('Got ID');
           logWorkingMessage('Session ID: ' + runId, 'text-white');
           logWorkingMessage('Sending /runs request...', 'text-white');
@@ -761,7 +760,7 @@ function positionGridOverlayToImage() {
 }
 
 /**
- * Draws an 8×8 grid (i.e., 9 vertical + 9 horizontal lines) inside #gridOverlay.
+ * Draws a 7×7 grid (i.e., 8 vertical + 8 horizontal lines) inside #gridOverlay.
  */
 function drawGridOverlay() {
   const overlay = document.getElementById('gridOverlay');
@@ -773,8 +772,8 @@ function drawGridOverlay() {
   // Clear previous lines
   overlay.innerHTML = '';
 
-  const cols = 8;
-  const rows = 8;
+  const cols = GRID_COLS;   // 7
+  const rows = GRID_ROWS;   // 7
 
   // Helper to create line
   const makeLine = (styleObj) => {
