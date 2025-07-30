@@ -34,7 +34,7 @@ warnings.filterwarnings('ignore', message='.*scaled_dot_product_attention.*')
 IMAGE_PATH = "Test-Images/kiss_of_judas.jpg"
 # SENTENCE = "Judas is kissing Jesus in the centre of the painting"
 SENTENCE = "Fiery red torches are held in the sky"
-OUTPUT_PATH = "Test-Images/grad_eclip_output4.png"
+OUTPUT_PATH = "Test-Images/grad_eclip_output6.png"
 
 # Model configuration
 MODEL_NAME = "openai/clip-vit-base-patch32"
@@ -471,9 +471,32 @@ def main():
     # Print statistics
     print(f"\nSaliency map statistics:")
     print(f"  Shape: {saliency.shape}")
-    print(f"  Range: [{saliency.min():.4f}, {saliency.max():.4f}]")
-    print(f"  Mean: {saliency.mean():.4f}")
-    print(f"  Std: {saliency.std():.4f}")
+    
+    # Raw values with scientific notation if needed
+    min_val, max_val = saliency.min(), saliency.max()
+    if max_val < 0.01:
+        print(f"  Raw range: [{min_val:.2e}, {max_val:.2e}]")
+    else:
+        print(f"  Raw range: [{min_val:.4f}, {max_val:.4f}]")
+    
+    # Normalized statistics (what's actually visualized)
+    saliency_norm = saliency - min_val
+    if max_val > min_val:
+        saliency_norm = saliency_norm / (max_val - min_val)
+    print(f"  Normalized range: [0.0000, 1.0000]")
+    
+    # Distribution statistics
+    print(f"  Mean: {saliency.mean():.2e}")
+    print(f"  Std: {saliency.std():.2e}")
+    
+    # Additional helpful statistics
+    nonzero_count = np.count_nonzero(saliency)
+    total_count = saliency.size
+    print(f"  Non-zero pixels: {nonzero_count}/{total_count} ({100*nonzero_count/total_count:.1f}%)")
+    
+    # Peak location
+    peak_idx = np.unravel_index(np.argmax(saliency), saliency.shape)
+    print(f"  Peak location: {peak_idx}")
 
 
 if __name__ == "__main__":
