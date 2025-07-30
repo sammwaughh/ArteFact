@@ -722,7 +722,9 @@ function showWorkDetails(workData) {
     <div id="workDetailsBanner" class="position-fixed top-0 start-0 w-100 bg-info text-white p-3 border-bottom border-dark" style="z-index: 2000;">
       <div class="d-flex justify-content-between align-items-start">
         <div class="w-100">
-          <p class="mb-1"><strong>Artist:</strong> ${details.Artist}</p>
+          <h5 class="mb-2">${details.Work_Title || 'Unknown Title'}</h5>
+          <p class="mb-1"><strong>Author:</strong> ${details.Author_Name || 'Unknown Author'}</p>
+          <p class="mb-1"><strong>Year:</strong> ${details.Year || 'Unknown'}</p>
           <p class="mb-1"><strong>DOI:</strong> <a href="${details.DOI}" target="_blank" class="text-white text-decoration-underline">${details.DOI}</a></p>
           <p class="mb-1"><strong>Link:</strong> <a href="${details.Link}" target="_blank" class="text-white text-decoration-underline">${details.Link}</a></p>
           <iframe src="${details.DOI}" style="width: 100%; height: 50vh; border: none;" class="mt-2"></iframe>

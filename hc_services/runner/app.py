@@ -202,7 +202,7 @@ def get_output_file(filename: str):
 def get_work(id: str):
     # Get the work by id and return it as JSON
     work = works.get(id, {})
-    return work
+    return jsonify(work)
 
 @app.route("/topics", methods=["GET"])
 def get_topics():
