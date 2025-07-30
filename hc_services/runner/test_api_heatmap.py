@@ -4,8 +4,8 @@ import base64
 from pathlib import Path
 
 # Use one of your existing run IDs
-run_id = "004280f3e24b46ca8e2ec64410d05b09"  # Replace with your actual run ID
-sentence = "Fiery red torches are held in the sky"
+run_id = "ce00a2134d09467bb2f60ceca5ce4472"  # Replace with your actual run ID
+sentence = "The fingers almost touch in the centre of the painting"
 
 # Call the API
 response = requests.post(
@@ -26,8 +26,8 @@ if response.status_code == 200:
     
     # Decode and save
     image_data = base64.b64decode(base64_data)
-    Path("api_heatmap_test2.png").write_bytes(image_data)
-    print("✓ Heatmap saved to api_heatmap_test2.png")
+    Path("Test-Images/api_heatmap_test6.png").write_bytes(image_data)
+    print("✓ Heatmap saved to Test-Images/api_heatmap_test6.png")
 else:
     print(f"✗ Error: {response.status_code}")
     print(response.json())
