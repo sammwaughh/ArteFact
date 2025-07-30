@@ -131,15 +131,16 @@ def upload_file(run_id: str):
 @app.route("/runs", methods=["POST"])
 def create_run():
     """
-    Body: { "runId": "...", "s3Key": "artifacts/...jpg" }
+    Body: { "runId": "...", "s3Key": "artifacts/...jpg", "topics": [...], "creators": [...], "model": "..." }
     - Save initial run status in memory
     - Launch background thread for processing
     """
     payload = request.get_json(force=True)
     run_id = payload["runId"]
     s3_key = payload["s3Key"]
-    topics = payload["topics"]
-    model = payload["model"]
+    topics = payload.get("topics", [])
+    creators = payload.get("creators", [])
+    model = payload.get("model", "paintingclip")
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     
     # Store initial run info in the in-memory dictionary
@@ -148,14 +149,17 @@ def create_run():
             "runId": run_id,
             "status": "queued",
             "s3Key": s3_key,
+            "topics": topics,
+            "creators": creators,
+            "model": model,
             "createdAt": now,
             "updatedAt": now
         }
     
     # Submit the background inference task to the thread pool
-    # Pass the absolute path to the image
+    # Pass the absolute path to the image and filtering parameters
     image_path = os.path.join(BASE_DIR, s3_key)
-    executor.submit(tasks.run_task, run_id, image_path)
+    executor.submit(tasks.run_task, run_id, image_path, topics, creators, model)
     
     return jsonify({"status": "accepted"}), 202
 
@@ -229,8 +233,21 @@ def cell_similarity():
     col = int(request.args["col"])
     k   = int(request.args.get("k", 10))
 
+    # Get the run info to retrieve filtering parameters
+    run_info = tasks.runs.get(run_id, {})
+    topics = run_info.get("topics", [])
+    creators = run_info.get("creators", [])
+    model = run_info.get("model", "paintingclip")
+
     img_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
-    results = inference.run_inference(img_path, cell=(row, col), top_k=k)
+    results = inference.run_inference(
+        img_path, 
+        cell=(row, col), 
+        top_k=k,
+        filter_topics=topics,
+        filter_creators=creators,
+        model_type=model
+    )
     return jsonify(results)
  
 # --------------------------------------------------------------------------- #

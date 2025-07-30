@@ -23,20 +23,20 @@ BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__fil
 OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
 
 
-def run_task(run_id: str, image_path: str) -> None:
+def run_task(run_id: str, image_path: str, topics: list = None, creators: list = None, model: str = "paintingclip") -> None:
     """
     Process a single run: load image from disk, run ML inference, save output, update status.
     
     Args:
         run_id: The unique run identifier
         image_path: Full path to the image file
+        topics: List of topic codes to filter by (optional)
+        creators: List of creator names to filter by (optional)
+        model: Model type to use ("clip" or "paintingclip")
     """
     # Mark as processing (with a check to ensure the run exists)
     with runs_lock:
         if run_id not in runs:
-            # This shouldn't happen, but let's be defensive
-            # still warn, but with logging or silently return
-            # removed debug print
             return
         runs[run_id]["status"] = "processing"
         runs[run_id]["startedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -50,10 +50,13 @@ def run_task(run_id: str, image_path: str) -> None:
         if SLEEP_SECS:
             time.sleep(SLEEP_SECS)          # simulate slow inference if desired
 
-        # 2. Run the ML inference
-        labels = run_inference(image_path)
-
-        # removed verbose debug block
+        # 2. Run the ML inference with filtering
+        labels = run_inference(
+            image_path,
+            filter_topics=topics,
+            filter_creators=creators,
+            model_type=model
+        )
 
         # If FORCE_ERROR is enabled (for testing), raise an error to simulate a failure
         if FORCE_ERROR:
@@ -68,8 +71,6 @@ def run_task(run_id: str, image_path: str) -> None:
         with open(output_path, "w") as f:
             json.dump(labels, f)
 
-        # removed debug print
-        
         # Verify the file was created
         if not os.path.exists(output_path):
             raise RuntimeError(f"Failed to create output file: {output_path}")

@@ -15,7 +15,7 @@ from __future__ import annotations
 import math
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Tuple, Optional
 
 import torch
 import torch.nn.functional as F
@@ -99,8 +99,10 @@ def rank_sentences_for_cell(
     image_path: str | Path,
     cell_row: int,
     cell_col: int,
-    grid_size: Tuple[int, int] = (7, 7),  # Changed default to 7x7
+    grid_size: Tuple[int, int] = (7, 7),
     top_k: int = 10,
+    filter_topics: List[str] = None,
+    filter_creators: List[str] = None,
 ) -> List[Dict[str, Any]]:
     """
     Retrieve the *top‑k* sentences whose text embeddings align most strongly
@@ -116,6 +118,10 @@ def rank_sentences_for_cell(
         Resolution of the UI grid (7x7 matches ViT-B/32 patch grid).
     top_k : int, default 10
         How many sentences to return.
+    filter_topics : List[str], optional
+        List of topic codes to filter results by
+    filter_creators : List[str], optional
+        List of creator names to filter results by
 
     Returns
     -------
@@ -125,7 +131,25 @@ def rank_sentences_for_cell(
     """
     # Shared resources
     _proc, _model, sent_mat, sentence_ids, sent_meta, device = _initialize_pipeline()
-    sent_mat = F.normalize(sent_mat.to(device), dim=-1)                    # (S, 512)
+    sent_mat = F.normalize(sent_mat.to(device), dim=-1)
+
+    # Apply filtering if needed
+    if filter_topics or filter_creators:
+        from .filtering import get_filtered_sentence_ids
+        valid_sentence_ids = get_filtered_sentence_ids(filter_topics, filter_creators)
+        
+        # Create mask for valid sentences
+        valid_indices = [
+            i for i, sid in enumerate(sentence_ids) 
+            if sid in valid_sentence_ids
+        ]
+        
+        if not valid_indices:
+            return []
+        
+        # Filter embeddings and sentence_ids
+        sent_mat = sent_mat[valid_indices]
+        sentence_ids = [sentence_ids[i] for i in valid_indices]
 
     # Validate cell indices
     grid_h, grid_w = grid_size
@@ -134,11 +158,11 @@ def rank_sentences_for_cell(
 
     # Cell feature vector
     cell_idx = cell_row * grid_w + cell_col
-    cell_vecs = _prepare_image(image_path, grid_size)                      # (g², 512)
-    cell_vec = cell_vecs[cell_idx]                                         # (512,)
+    cell_vecs = _prepare_image(image_path, grid_size)
+    cell_vec = cell_vecs[cell_idx]
 
     # Cosine similarity and ranking
-    scores = torch.matmul(sent_mat, cell_vec)                              # (S,)
+    scores = torch.matmul(sent_mat, cell_vec)
     k = min(top_k, scores.size(0))
     top_scores, top_idx = torch.topk(scores, k)
 

@@ -27,6 +27,7 @@ from transformers import CLIPProcessor, CLIPModel
 from peft import PeftModel
 # on-demand Grad-ECLIP & region-aware ranking
 from .heatmap import generate_heatmap
+from .filtering import get_filtered_sentence_ids
 
 
 # ─── Configuration ───────────────────────────────────────────────────────────
@@ -256,8 +257,11 @@ def run_inference(
     image_path: str,
     *,
     cell: Optional[Tuple[int, int]] = None,
-    grid_size: Tuple[int, int] = (8, 8),
+    grid_size: Tuple[int, int] = (7, 7),
     top_k: int = TOP_K,
+    filter_topics: List[str] = None,
+    filter_creators: List[str] = None,
+    model_type: str = None
 ) -> List[Dict[str, Any]]:
     """
     Perform semantic similarity search.
@@ -270,116 +274,112 @@ def run_inference(
         If supplied (row, col) → return region-aware ranking using
         `patch_inference.rank_sentences_for_cell`.  If *None* (default)
         compute whole-painting similarity (legacy behaviour).
-    grid_size : (int, int), default (8, 8)
+    grid_size : (int, int), default (7, 7)
         UI grid resolution for region mode.
     top_k : int, default 10
         Number of sentences to return.
+    filter_topics : List[str], optional
+        List of topic codes to filter results by
+    filter_creators : List[str], optional
+        List of creator names to filter results by
+    model_type : str, optional
+        Model type to use ("clip" or "paintingclip")
     
     Returns:
-        List of dictionaries, each containing:
-        - sentence_id: Unique identifier (e.g., "W1982215463_s0001")
-        - score: Cosine similarity score [0, 1]
-        - sentence: Full sentence metadata including "English Original"
-        - rank: Result ranking (1-based)
-        
-    Example:
-        >>> results = run_inference("painting.jpg")
-        >>> print(results[0]["sentence"]["English Original"])
-        "The artist's use of light creates dramatic contrast..."
+        List of dictionaries with filtered results
     """
+    # Set model type if specified
+    if model_type:
+        set_model_type(model_type.lower())
+    
     # ---- Region-aware pathway --------------------------------------------
     if cell is not None:
-        # Lazy-import to avoid circular dependency at module load time
         from .patch_inference import rank_sentences_for_cell
-
+        
         row, col = cell
-        return rank_sentences_for_cell(
+        results = rank_sentences_for_cell(
             image_path=image_path,
             cell_row=row,
             cell_col=col,
             grid_size=grid_size,
-            top_k=top_k,
+            top_k=top_k * 3  # Get more results to filter from
         )
+        
+        # Apply filtering
+        if filter_topics or filter_creators:
+            from .filtering import apply_filters_to_results
+            results = apply_filters_to_results(results, filter_topics, filter_creators)
+            results = results[:top_k]  # Trim to requested top_k
+        
+        return results
 
     # ---- Whole-painting pathway (original implementation) ----------------
-    # DEBUG: Start timing the entire inference
     start_time = time.time()
     
     # Load cached pipeline components
-    init_start = time.time()
     processor, model, embeddings, sentence_ids, sentences_data, device = _initialize_pipeline()
-    init_end = time.time()
-    # debug logs removed
+    
+    # Get valid sentence IDs based on filters
+    if filter_topics or filter_creators:
+        valid_sentence_ids = get_filtered_sentence_ids(filter_topics, filter_creators)
+        
+        # Create mask for valid sentences
+        valid_indices = [
+            i for i, sid in enumerate(sentence_ids) 
+            if sid in valid_sentence_ids
+        ]
+        
+        if not valid_indices:
+            # No sentences match the filters
+            return []
+        
+        # Filter embeddings and sentence_ids
+        filtered_embeddings = embeddings[valid_indices]
+        filtered_sentence_ids = [sentence_ids[i] for i in valid_indices]
+    else:
+        # No filtering, use all
+        filtered_embeddings = embeddings
+        filtered_sentence_ids = sentence_ids
     
     # Load and preprocess the image
-    img_load_start = time.time()
     image = Image.open(image_path).convert("RGB")
-    
-    preprocess_start = time.time()
     inputs = processor(images=image, return_tensors="pt").to(device)
-    preprocess_end = time.time()
-    # debug log removed
     
     # Compute image embedding
-    embed_start = time.time()
     with torch.no_grad():
         image_features = model.get_image_features(**inputs)
-        print(f"[DEBUG] Raw image features shape: {image_features.shape}")
         image_embedding = F.normalize(image_features.squeeze(0), dim=-1)
-    embed_end = time.time()
-    # debug logs removed
     
     # Normalize sentence embeddings and compute similarities
-    sim_start = time.time()
-    sentence_embeddings = F.normalize(embeddings.to(device), dim=-1)
-    
+    sentence_embeddings = F.normalize(filtered_embeddings.to(device), dim=-1)
     similarities = torch.matmul(sentence_embeddings, image_embedding).cpu()
-    sim_end = time.time()
-    # debug logs removed
     
     # Get top-K results
-    topk_start = time.time()
-    k = min(TOP_K, len(similarities))
+    k = min(top_k, len(similarities))
     top_scores, top_indices = torch.topk(similarities, k=k)
-    topk_end = time.time()
-    # debug logs removed
     
     # Build results with full sentence metadata
-    build_start = time.time()
     results = []
     for rank, (idx, score) in enumerate(zip(top_indices.tolist(), top_scores.tolist()), start=1):
-        sentence_id = sentence_ids[idx]
+        sentence_id = filtered_sentence_ids[idx]
         
         # Get sentence metadata
         sentence_data = sentences_data.get(sentence_id, {
             "English Original": f"[Sentence data not found for {sentence_id}]",
             "Has PaintingCLIP Embedding": True
-        }).copy()                       # <- make editable copy
+        }).copy()
 
-        # ------------------------------------------------------------------
-        # Ensure the UI-required “Work” field exists.
-        work_id = sentence_id.split("_")[0]   # e.g. W1234567890
+        work_id = sentence_id.split("_")[0]
         sentence_data.setdefault("Work", work_id)
-        # ------------------------------------------------------------------
-
-        # DEBUG: Print first 50 chars of the sentence
-        sentence_text = sentence_data.get("English Original", "N/A")
-         
+        
         results.append({
             "sentence_id": sentence_id,
             "score": float(score),
-            "english_original": sentence_data.get("English Original", "N/A"),  # <- ADD
-            "work": work_id,  # <- ADD (already computed above)
+            "english_original": sentence_data.get("English Original", "N/A"),
+            "work": work_id,
             "rank": rank
         })
     
-    build_end = time.time()
-    # debug log removed
-
-    # DEBUG: Total time
-    total_time = time.time() - start_time
-    # debug logs removed
-     
     return results
 
 
