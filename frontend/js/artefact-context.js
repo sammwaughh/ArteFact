@@ -787,75 +787,94 @@ function lookupDOI(work_id) {
 }
 
 /**
- * Displays a banner with work/DOI details at the top of the page.
- * @param {Object} workData - Metadata object for the work.
+ * Displays work/DOI details in a centred, scrollable modal rectangle with a dimmed backdrop.
+ * @param {Object} workData
  */
 function showWorkDetails(workData) {
-  // Remove existing banner if present
-  $('#workDetailsBanner').remove();
+  // ――― Clean-up any prior overlay ―――
+  $('#workOverlayBackdrop, #workDetailsModal').remove();
 
-  const details = workData;
-  const banner = $(`
-    <div id="workDetailsBanner" class="position-fixed top-0 start-0 w-100 bg-white text-dark p-3 border-bottom border-primary" style="z-index: 2000;">
-      <div class="d-flex justify-content-between align-items-start">
-        <div class="w-100">
-          <h5 class="mb-2">${details.Work_Title || 'Unknown Title'}</h5>
-          <p class="mb-1"><strong>Author:</strong> ${details.Author_Name || 'Unknown Author'}</p>
-          <p class="mb-1"><strong>Year:</strong> ${details.Year || 'Unknown'}</p>
+  const d = workData;
 
-          <!-- Image gallery (now immediately under Year) -->
-          <div id="galleryWrapper" class="mb-2">
-            <div class="fw-bold">Images in this work</div>
-            <div id="galleryScroller" class="mt-1"></div>
-          </div>
-          
-          <p class="mb-1"><strong>DOI:</strong> <a href="${details.DOI}" target="_blank" class="text-decoration-underline text-primary">${details.DOI}</a></p>
-          <p class="mb-1"><strong>Link:</strong> <a href="${details.Link}" target="_blank" class="text-primary text-decoration-underline">${details.Link}</a></p>
-          
-          <details class="mt-2">
-            <summary class="cursor-pointer text-dark">BibTeX Citation</summary>
-            <div class="position-relative">
-              <button class="btn btn-sm btn-outline-secondary position-absolute top-0 end-0 mt-2 me-2" 
-                      onclick="copyBibTeX()" 
-                      title="Copy to clipboard">
-                <i class="bi bi-clipboard"></i>
-              </button>
-              <pre id="bibtexContent" class="p-2 mt-1 rounded" style="white-space: pre-wrap; word-break: break-word; font-size: 0.875rem; padding-right: 3rem;">
-${details.BibTeX || 'Citation not available'}
-              </pre>
-            </div>
-          </details>
-          
-          <iframe src="${details.DOI}" style="width: 100%; height: 50vh; border: none;" class="mt-3"></iframe>
-        </div>
-        <button class="btn btn-sm btn-outline-secondary ms-3" onclick="$('#workDetailsBanner').remove()">
-          <i class="bi bi-x-lg"></i>
-        </button>
+  /* ---------- backdrop (click to close) ---------- */
+  const backdrop = $('<div id="workOverlayBackdrop" class="position-fixed top-0 start-0 w-100 h-100" ' +
+                     'style="background:rgba(0,0,0,0.5); z-index:2000;"></div>');
+
+  /* ---------- centred rectangle ---------- */
+  const modal = $(`
+    <div id="workDetailsModal"
+         class="position-fixed bg-white border border-primary rounded shadow p-4"
+         style="top:50%; left:50%; transform:translate(-50%,-50%);
+                max-width:90vw; max-height:80vh; overflow:auto; z-index:2001;">
+
+      <!-- close button -->
+      <button type="button"
+              class="btn btn-sm btn-outline-secondary position-absolute top-0 end-0 m-2"
+              id="workDetailsClose">
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <h5 class="mb-2">${d.Work_Title || 'Unknown Title'}</h5>
+      <p class="mb-1"><strong>Author:</strong> ${d.Author_Name || 'Unknown Author'}</p>
+      <p class="mb-1"><strong>Year:</strong> ${d.Year || 'Unknown'}</p>
+
+      <!-- Image gallery -->
+      <div id="galleryWrapper" class="mb-2">
+        <div class="fw-bold">Images in this work</div>
+        <div id="galleryScroller" class="mt-1"></div>
       </div>
+
+      <p class="mb-1"><strong>DOI:</strong>
+        <a href="${d.DOI}" target="_blank" class="text-primary text-decoration-underline">${d.DOI}</a>
+      </p>
+      <p class="mb-1"><strong>Link:</strong>
+        <a href="${d.Link}" target="_blank" class="text-primary text-decoration-underline">${d.Link}</a>
+      </p>
+
+      <!-- BibTeX always visible -->
+      <div class="position-relative mt-3">
+        <span class="fw-bold">BibTeX Citation</span>
+        <button class="btn btn-sm btn-outline-secondary position-absolute top-0 end-0"
+                onclick="copyBibTeX()" title="Copy to clipboard">
+          <i class="bi bi-clipboard"></i>
+        </button>
+        <pre id="bibtexContent"
+             class="p-2 mt-1 rounded"
+             style="white-space:pre-wrap; word-break:break-word;
+                    font-size:.875rem; background:#fdfde7; color:#000; padding-right:3rem;">
+${d.BibTeX || 'Citation not available'}
+        </pre>
+      </div>
+
+      <iframe src="${d.DOI}"
+              style="width:100%; height:50vh; border:none;"
+              class="mt-3"></iframe>
     </div>
   `);
-  $('body').append(banner);
 
-  if (details.Work_ID) {
-  fetch(`${API_BASE_URL}/images/${details.Work_ID}`)
-    .then(r => r.json())
-    .then(urls => {
-      if (urls.length === 0) {
-        $('#galleryWrapper').hide();
-        return;
-      }
-      const scroller = $('#galleryScroller');
-      urls.forEach(u => {
-        const thumb = $('<img>')
+  // inject into DOM
+$('body').append(backdrop, modal);
+
+  /* ---------- gallery fetch ---------- */
+  if (d.Work_ID) {
+    fetch(`${API_BASE_URL}/images/${d.Work_ID}`)
+      .then(r => r.json())
+      .then(urls => {
+        if (!urls.length) { $('#galleryWrapper').hide(); return; }
+        const scroller = $('#galleryScroller');
+        urls.forEach(u => $('<img>')
           .attr('src', u)
           .addClass('img-thumbnail')
-          .css({height: '120px', cursor: 'pointer'});
-        thumb.on('click', () => window.open(u, '_blank'));
-        scroller.append(thumb);
-      });
-    })
-    .catch(console.error);
+          .css({height:'120px', cursor:'pointer'})
+          .on('click', () => window.open(u, '_blank'))
+          .appendTo(scroller));
+      })
+      .catch(console.error);
   }
+
+  /* ---------- close handlers ---------- */
+  backdrop.on('click', () => { backdrop.remove(); modal.remove(); });
+  modal.on('click', '#workDetailsClose', () => { backdrop.remove(); modal.remove(); });
 }
 
 // Add this helper function for copying BibTeX
