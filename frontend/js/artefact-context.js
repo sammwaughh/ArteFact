@@ -864,9 +864,10 @@ $('body').append(backdrop, modal);
         const scroller = $('#galleryScroller');
         urls.forEach(u => $('<img>')
           .attr('src', u)
+          .attr('crossorigin', 'anonymous')       // ensure CORS safe for canvas
           .addClass('img-thumbnail')
-          .css({height:'120px', cursor:'pointer'})
-          .on('click', () => window.open(u, '_blank'))
+          .css({ height: '120px', cursor: 'pointer' })
+          .on('click', () => loadImageAndRun(u))
           .appendTo(scroller));
       })
       .catch(console.error);
@@ -1128,4 +1129,29 @@ function showCellHighlight(row, col) {
       hi.style.display = 'none';
     }, 210);
   }, 600);
+}
+
+// ──────────────────────────────────────────────────────────────────────────────
+//  NEW helper : use a gallery image as the next run
+// ──────────────────────────────────────────────────────────────────────────────
+function loadImageAndRun(imgSrc) {
+  // close the modal/backdrop if still open
+  $('#workOverlayBackdrop, #workDetailsModal').remove();
+
+  // show the chosen artwork in the main image slot
+  const $img = $('#uploadedImage')
+                 .attr('src', imgSrc)
+                 .attr('crossorigin', 'anonymous')   // allow canvas use
+                 .removeClass('d-none');
+
+  // hide the upload card / example images just like other entry paths
+  $('#uploadTrigger').addClass('d-none');
+  $('.card:has(#uploadTrigger), #exampleContainer').remove();
+
+  // UI bits the normal flow expects
+  $('#workingOverlay').removeClass('d-none');
+  $('#imageTools').removeClass('d-none');
+
+  // make sure we fetch a presign only after the image data is ready
+  $img.one('load', () => fetchPresign());
 }
