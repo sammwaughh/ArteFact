@@ -38,7 +38,7 @@ source .venv/bin/activate
 # .venv\Scripts\activate
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -e backend/          # installs from backend/pyproject.toml
 ```
 
 ### 3. Verify Model Files
@@ -49,123 +49,118 @@ Ensure you have the following directories with their required files:
 
 ## Running the Application
 
-### Quick start (two terminals – fastest way)
+### Quick start (two terminals)
 
-1. Start the **backend**  
-   ```bash
-   # First time only
-   chmod +x run_hc.sh
-
-   # From the repo root
-   ./run_hc.sh          # → Flask on http://localhost:8000
-   ```
-
-2. Start the **frontend** in a second terminal  
-   ```bash
-   # First time only
-   chmod +x viewer_js/run.sh
-
-   # From the repo root
-   cd viewer_js && ./run.sh     # → static server on http://localhost:8080
-   ```
-
-3. Open your browser at `http://localhost:8080` and use the app.
-
-Both scripts are tiny wrappers:
-* `run_hc.sh` → `python -m hc_services.runner.app`
-* `viewer_js/run.sh` → `python3 -m http.server 8080`
-
-They simply save you from typing the full commands each time.
-
-### Alternative: mono-script run (old behaviour)
+1. **Backend**
 
 ```bash
-# Make the script executable (first time only)
-chmod +x run.sh
-
-# Run both frontend and backend
-./run.sh
+# First time only
+chmod +x backend/run_backend.sh
+./backend/run_backend.sh          # → http://localhost:8000
 ```
 
-This will:
-1. Start the Flask backend on `http://localhost:8000`
-2. Start a simple HTTP server for the frontend on `http://localhost:8080`
-3. Open your default browser to the application
-
-### Option 2: Manual Start
-
-#### Start the Backend
+2. **Frontend**
 
 ```bash
-# Activate virtual environment if not already active
-source .venv/bin/activate
-
-# Run the Flask application
-python -m hc_services.runner.app
-```
-
-The backend will start on `http://localhost:8000`
-
-#### Start the Frontend
-
-In a new terminal:
-
-```bash
-# Navigate to the viewer directory
-cd viewer_js
-
-# Start a simple HTTP server
-python -m http.server 8080
+# First time only
+chmod +x frontend/run_frontend.sh
+./frontend/run_frontend.sh        # → http://localhost:8080
 ```
 
 Then open `http://localhost:8080` in your browser.
 
+### Manual start
+
+```bash
+# Backend
+python -m backend.runner.app      # or: python backend/runner/app.py
+# Frontend (simple HTTP server)
+cd frontend && python -m http.server 8080
+```
+
 ## Usage
 
-1. **Upload an Image**: 
-   - Click "Upload an Image" or drag-drop an image
-   - Select from provided historical examples
-   
-2. **Process**: The system will:
-   - Upload the image to the backend
-   - Compute image embeddings using PaintingCLIP
-   - Find the most similar sentences from the corpus
-   
-3. **View Results**: 
-   - See the top 10 most relevant text passages
-   - Click the search icon next to any result to view source metadata
-   
-4. **Image Tools**:
-   - **Crop**: Select a region of interest
-   - **Undo**: Revert to previous image
-   - **Rerun**: Process the current image again
+1. **Choose or Upload an Artwork**
+
+   • Drag & drop an image, click “Upload Image”, or pick one of the example
+   thumbnails.  
+   • The chosen image appears in the centre panel and the working overlay
+   pops up.
+
+2. **Select Model (Optional)**
+
+   Use the “Model: …” dropdown in the navbar to switch between *CLIP* and
+   *PaintingCLIP* before you run the query.
+
+3. **Apply Filters (Optional)**
+
+   • Click topic pills to restrict retrieval to specific subject codes.  
+   • Search for creators in the right-hand panel or in the header search
+   box and add them as tags.  
+   • Selected topics/creators are shown under the image.
+
+4. **Process the Image**
+
+   The backend receives the upload, computes the embedding and returns the
+   most similar passages. Progress is streamed in the debug overlay; the
+   sidebar stays hidden until results arrive.
+
+5. **Explore the Results**
+
+   • Top 10 sentences appear in the left sidebar.  
+   • Click the magnifying-glass icon to fetch full metadata / DOI;
+     a banner with BibTeX and an iframe preview opens at the top.
+
+6. **Region-Specific Search (Optional)**
+
+   • Open *Settings → View Grid* to overlay a 7 × 7 grid.  
+   • Click any cell to rerank the corpus for that region only; sentences
+     refresh instantly and the clicked area flashes briefly.
+
+7. **Image Tools**
+
+   • **Crop** – draw a rectangle to analyse a sub-region.  
+   • **Undo** – revert to the previous image state.  
+   • **Rerun** – re-execute the pipeline with the current image (useful
+     after changing model or filters).  
+   • All previous versions are kept in the Image History strip; click any
+     thumbnail to restore it.
+
+8. **Debug Panel**
+
+   Click the circled “i” button to show/hide a real-time log of network
+   requests, run-IDs and backend status.
+
+Uploaded images are stored in `data/artifacts/`, JSON results in
+`data/outputs/`; both folders are auto-created at runtime.
 
 ## Project Structure
 
 ```
 artefact-context/
-├── hc_services/
-│   └── runner/
-│       ├── app.py           # Flask API server
-│       ├── tasks.py         # Background task processing
-│       ├── inference.py     # PaintingCLIP inference pipeline
-│       └── data/           # JSON data files
-│           ├── sentences.json
-│           ├── works.json
-│           ├── topics.json
-│           ├── topic_names.json
-│           └── creators.json
-├── viewer_js/              # Frontend application
-│   ├── index.html
-│   ├── js/
-│   │   └── artefact-context.js
-│   └── css/
-│       └── artefact-context.css
-├── PaintingCLIP/          # LoRA adapter files
-├── PaintingCLIP_Embeddings/ # Pre-computed embeddings
-├── artifacts/             # Uploaded images (created at runtime)
-├── outputs/               # Inference results (created at runtime)
-└── requirements.txt
+├── backend/
+│   ├── runner/                 # Flask backend source
+│   │   ├── app.py              # API server
+│   │   ├── tasks.py            # Background job runner
+│   │   ├── inference.py        # PaintingCLIP inference pipeline
+│   │   └── …                   # heatmap.py, patch_inference.py, …
+│   ├── run_backend.sh          # Helper script → starts the backend
+│   └── tests/                  # Unit tests
+├── data/
+│   ├── artifacts/              # Uploaded images  (created at runtime)
+│   ├── outputs/                # JSON results     (created at runtime)
+│   ├── embeddings/
+│   │   ├── CLIP_Embeddings/
+│   │   └── PaintingCLIP_Embeddings/
+│   ├── json_info/              # Metadata JSONs: sentences.json, works.json, …
+│   └── models/
+│       └── PaintingCLIP/       # LoRA adapter files
+├── frontend/
+│   ├── index.html              # Single-page UI
+│   ├── js/artefact-context.js  # Front-end logic
+│   ├── css/artefact-context.css
+│   └── run_frontend.sh         # Simple static-server wrapper
+└── README.md
 ```
 
 ## Data File Structures
@@ -185,21 +180,38 @@ Maps sentence IDs to their metadata. Currently contains minimal metadata:
 **Note**: The inference pipeline adds the "English Original" field dynamically from other sources if not present in this file.
 
 ### works.json
-Contains metadata about source works (papers, books, etc.):
+Contains rich metadata for every source work (book, article, catalogue …).
 
 ```json
 {
   "W4206160935": {
-    "Artist": "arthur_hughes",
-    "Link": "https://...",              // Direct PDF/document link
+    "Author_Name": "John Guille Millais",
+    "Work_Title": "The Life and Letters of Sir John Everett Millais",
+    "Year": "2012",
+    "Link": "https://archive.org/download/lifelettersofsir01milliala/lifelettersofsir01milliala_bw.pdf",
+    "DOI": "https://doi.org/10.1017/cbo9781139343862",
     "Number of Sentences": 4874,
-    "DOI": "https://doi.org/...",      // Digital Object Identifier
-    "ImageIDs": [],                     // Associated image IDs
-    "TopicIDs": ["C2778983918", ...],  // Related topic IDs
-    "Relevance": 3.7782803              // Relevance score
+    "ImageIDs": [],
+    "TopicIDs": [
+      "C2778983918", "C520712124", "C205783811", "C554144382",
+      "C142362112", "C52119013", "C2780586970", "C543847140",
+      "C95457728",  "C153349607", "C199539241", "C138885662",
+      "C27206212",  "C17744445"
+    ],
+    "Relevance": 3.7782803,
+    "BibTeX": "@misc{W4206160935,\\n  author = \"John Guille Millais\",\\n  title = \"{The Life and Letters of Sir John Everett Millais}\",\\n  year = \"2012\",\\n  publisher = \"{Cambridge University Press}\",\\n  doi = \"{10.1017/cbo9781139343862}\",\\n  url = \"{https://doi.org/10.1017/cbo9781139343862}\",\\n}"
   }
 }
 ```
+
+Key fields  
+• `Author_Name`, `Work_Title`, `Year` – human-readable bibliographic data  
+• `DOI` / `Link` – external identifiers for look-ups and previews  
+• `Number of Sentences` – total sentences extracted for the corpus  
+• `TopicIDs` – subject codes that reference this work  
+• `ImageIDs` – images associated with the work (can be empty)  
+• `Relevance` – pre-computed relevance score used for ranking  
+• `BibTeX` – ready-to-copy
 
 ### topics.json
 Maps topic IDs to lists of work IDs that cover that topic:
@@ -244,27 +256,29 @@ Maps artist/creator names to their associated works:
 
 ## Key Components
 
-### Backend (app.py)
-- Flask server handling HTTP requests
-- Manages file uploads and storage
-- Coordinates inference jobs via thread pool
+### backend/runner
 
-### Task Processing (tasks.py)
-- Handles background inference jobs
-- Updates job status in memory
-- Writes results to JSON files
+| File | Purpose |
+|------|---------|
+| **app.py** | Flask API gateway. Handles image upload, run creation, status queries, file serving and auxiliary routes (topics, creators, heatmap, etc.). |
+| **tasks.py** | Lightweight job runner executed via `ThreadPoolExecutor`. Pulls images from `data/artifacts`, calls `inference.run_inference`, stores JSON to `data/outputs`, and updates in-memory run status. |
+| **inference.py** | Core CLIP / PaintingCLIP retrieval pipeline. Loads the model (with optional LoRA adapter), reads pre-computed embeddings, performs similarity search and optional Grad-ECLIP heat-map generation. |
+| **patch_inference.py** | Region-aware extension that converts ViT patch tokens into a 2-D grid and re-ranks sentences for a user-clicked cell (7 × 7 by default). |
+| **heatmap.py** | Implements Grad-ECLIP for visualising which image regions contribute most to a given sentence match; returns PNG overlays. |
+| **filtering.py** | Utility layer that filters sentences by selected topic IDs or creator names using the metadata in `data/json_info/*.json`. |
+| **\_\_init\_\_.py** | Marks the folder as a Python package; no runtime logic. |
 
-### Inference Pipeline (inference.py)
-- Loads PaintingCLIP model with LoRA adapters
-- Computes image embeddings
-- Performs similarity search against sentence corpus
-- Returns top-K most similar passages
+### frontend
 
-### Frontend (artefact-context.js)
-- Handles image upload and display
-- Polls backend for job status
-- Displays results and metadata
-- Provides image manipulation tools
+*`frontend/js/artefact-context.js`* – jQuery/Bootstrap SPA that handles image input, filter selection, grid overlay, cropping/undo, polling, and result rendering.
+
+### Data folders
+
+* `data/artifacts/` – uploaded images  
+* `data/outputs/` – JSON results  
+* `data/embeddings/` – sentence vectors for CLIP / PaintingCLIP  
+* `data/json_info/` – metadata JSONs (`sentences.json`, `works.json`, …)  
+* `data/models/PaintingCLIP/` – LoRA adapter weights
 
 ## Troubleshooting
 
@@ -274,9 +288,9 @@ Maps artist/creator names to their associated works:
    - artefact-context.js (API_BASE_URL)
 
 2. **Missing Dependencies**: Ensure all packages are installed:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -e backend/
+```
 
 3. **Model Loading Errors**: Verify that:
    - PaintingCLIP directory contains LoRA adapter files
@@ -287,7 +301,7 @@ Maps artist/creator names to their associated works:
 ## Development Notes
 
 - The system uses an in-memory store for job tracking (resets on server restart)
-- Uploaded images are saved to artifacts
-- Inference results are saved to outputs
+- Uploaded images are saved to **data/artifacts**
+- Inference results are saved to **data/outputs**
 - The frontend uses jQuery and Bootstrap for UI components
 - Debug panel available via the (i) button in the bottom-right corner
