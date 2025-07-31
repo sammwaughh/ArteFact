@@ -611,6 +611,17 @@ function display_sentences(data) {
     });
     $('#sentenceList').append(li);
   });
+  adjustMainWidth();
+}
+
+// helper runs whenever the right-hand column is shown/hidden
+function adjustMainWidth(){
+  const $main = $('#uploadedImageContainer').closest('.col-md-9');
+  if ($('.col-md-3').hasClass('d-none')){
+    $main.addClass('fill');
+  } else{
+    $main.removeClass('fill');
+  }
 }
 
 // --- Begin Crop Tool Functionality ---

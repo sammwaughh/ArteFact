@@ -39,9 +39,17 @@
   overflow-y:auto;                  /* keep horizontal + vertical scroll */
 }
 #galleryScroller img{
+  /* existing size rules kept intact */
   width:120px;
   height:120px;
   object-fit:cover;
+
+  border:2px solid transparent;           /* make room for colour change   */
+  transition:border-color .15s ease;
+}
+
+#galleryScroller img:hover{
+  border-color:#0d6efd !important;         /* same blue used for sentences */
 }
 
 /* enlarge the image-tool buttons (≈ 2 × current size) */
@@ -60,4 +68,48 @@
 }
 #sentenceList .sentence-item:hover {
   border-color:#0d6efd !important; /* Bootstrap primary blue on all sides */
+}
+
+/* ---------- Home palette ------------------------------------------------- */
+.card:has(#uploadTrigger),
+#exampleContainer                    { background:#fff!important; color:#000!important; }
+.card:has(#uploadTrigger) *          { color:#000!important; }
+
+/* topic tags (initial screen) */
+#topicTags .btn-outline-primary      { border-color:#000!important; color:#000!important; }
+
+/* creator search result pills */
+/* creator suggestions under the search field */
+#creatorSearchResults .list-group-item,
+#creatorPanelResults  .list-group-item{
+  color:#fff !important;            /* white text */
+  background:#0d6efd!important; color:#fff!important; border-color:#0d6efd!important;
+}
+#creatorSearchResults .list-group-item.active,
+#creatorPanelResults  .list-group-item.active{
+  background:#0b5ed7!important;
+}
+
+/* upload button already given dark outline in HTML patch */
+/* ------------------------------------------------------------------------ */
+
+/* stretch main column if the sidebar is hidden */
+#mainColumn.fill { flex:0 0 100%!important; max-width:100%!important; }
+
+/* give the example-image Select button a solid black outline */
+#selectImageBtn{
+  border:2px solid #000 !important;
+}
+
+/* light-grey hover (same shade Bootstrap uses for .btn-light) */
+#uploadTrigger:hover{
+  background:#e9ecef !important;   /* light grey */
+  color:#000        !important;
+  border-color:#000 !important;
+}
+
+/* selected topic (btn-primary) ‑ ensure white label */
+#topicTags .btn-primary,
+#selectedTopicTags .btn-primary{
+  color:#fff !important;
 }
