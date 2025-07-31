@@ -113,3 +113,8 @@
 #selectedTopicTags .btn-primary{
   color:#fff !important;
 }
+
+/* navbar items (model dropdown + about) – always white */
+.navbar-dark .navbar-nav .nav-link{
+  color: #fff !important;
+}

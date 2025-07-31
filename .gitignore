@@ -119,7 +119,8 @@ Excel-Files/
 *.pt
 
 # Images
-*.png
+*.png                  # ignore all PNGs
+!data/dark_logo.png    #  ⟵ keep the
 
 # End of file
 
