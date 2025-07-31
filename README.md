@@ -9,6 +9,9 @@ This application consists of:
 - A vanilla JavaScript frontend for image upload and result display
 - A PaintingCLIP model for specialized art analysis
 - Pre-computed embeddings from art-historical texts
+- A reproducible **ArtContext** research pipeline (see `pipeline/`) that
+  harvests texts, converts PDFs to Markdown, extracts sentences and
+  generates CLIP / PaintingCLIP embeddings.
 
 ## Prerequisites
 
@@ -160,6 +163,10 @@ artefact-context/
 │   ├── js/artefact-context.js  # Front-end logic
 │   ├── css/artefact-context.css
 │   └── run_frontend.sh         # Simple static-server wrapper
+├── pipeline/                   # ArtContext data-collection pipeline
+│   ├── *.py                    # Batch scripts (Wikidata, OpenAlex, …)
+│   ├── README.md               # Detailed pipeline guide
+│   └── slurm/                  # HPC job scripts (optional)
 └── README.md
 ```
 
@@ -305,3 +312,37 @@ pip install -e backend/
 - Inference results are saved to **data/outputs**
 - The frontend uses jQuery and Bootstrap for UI components
 - Debug panel available via the (i) button in the bottom-right corner
+
+## Research Pipeline (ArtContext)
+
+The `pipeline/` folder contains a standalone workflow for building the
+text corpus that powers the viewer:
+
+1. **Wikidata Harvest** – scrape painter metadata  
+2. **OpenAlex Queries** – fetch scholarly works per painter  
+3. **PDF Download → Markdown** – convert works for NLP processing  
+4. **Sentence Extraction** – write sentences to `sentences.json`  
+5. **Embedding Generation** – CLIP & PaintingCLIP vectors  
+6. **Topic/Creator Indexes** – build `topics.json`, `creators.json`
+
+Run the stages locally:
+
+```bash
+cd pipeline
+python batch_harvest_wikidata.py
+python batch_query_open_alex.py
+python batch_download_works.py
+python batch_pdf_to_markdown.py
+python batch_markdown_file_to_english_sentences.py
+python batch_embed_sentences.py
+```
+
+For large-scale processing an HPC version is provided (see
+`pipeline/Using_Bede.md`) with Slurm job files in `pipeline/slurm/`.
+
+Key pipeline outputs (consumed by the Flask app):
+
+* `data/json_info/sentences.json` – sentences + flags  
+* `data/json_info/works.json`     – work-level metadata  
+* `data/json_info/topics.json`    – topic → work index  
+* `data/embeddings/{CLIP_,PaintingCLIP_}Embeddings/` – `.pt` files
