@@ -48,6 +48,10 @@ function updateCreatorTags() {
  */
 function logWorkingMessage(message, type = 'text-white') {
   const logContainer = $('#workingLog');
+  if (!logContainer.length) {                 // overlay now has no log box
+    console.log('[WORKING]', message);        // fallback for dev console
+    return;
+  }
   logContainer.append(`<div class="${type}">${message}</div>`);
   logContainer.scrollTop(logContainer[0].scrollHeight);
 }
@@ -595,12 +599,21 @@ function escapeHTML(str) {
 
 /**
  * Displays the list of output sentences in the sidebar.
- * @param {Array} data - Array of sentence objects.
+ * @param {Array|Object} data - Array of sentence objects or {sentences:[…]}
  */
 function display_sentences(data) {
+  // normalise payload
+  if (!Array.isArray(data)) {
+    data = (data && Array.isArray(data.sentences)) ? data.sentences : [];
+  }
+  if (!data.length) {                       // nothing to show ⇒ just hide overlay
+    $('#workingOverlay').addClass('d-none');
+    return;
+  }
+
   // Show the sentences panel
   $('.col-md-3').removeClass('d-none');
-   $('#sentenceList').empty();
+  $('#sentenceList').empty();
 
   data.forEach(item => {
     const li = $(`
@@ -608,7 +621,6 @@ function display_sentences(data) {
         ${escapeHTML(item["english_original"])}
       </li>
     `);
-    // click opens work-details
     li.on('click', function () {
       lookupDOI($(this).data('work'));
     });
