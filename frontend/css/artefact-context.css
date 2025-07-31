@@ -289,3 +289,18 @@ span.badge.bg-primary {
 span.badge.bg-primary * {
   color: #fff !important;
 }
+
+/* Ensure footer is always visible below content */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
