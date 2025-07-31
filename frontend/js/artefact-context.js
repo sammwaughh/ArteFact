@@ -455,9 +455,8 @@ function fetchPresign() {
         const formData = new FormData();
         formData.append('file', file);
 
-        // Hide only the landing page cards, not the image container
-        $('.w-100.p-4 .row').addClass('d-none');
-        $('.w-100.p-4 .card').addClass('d-none');
+        // Hide and remove the landing page content completely
+        $('.w-100.p-4').remove(); // Remove instead of just hiding
 
         fetch(`${API_BASE_URL}/upload/${runId}`, {
           method: 'POST',

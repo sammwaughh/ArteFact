@@ -301,6 +301,20 @@ body{ overflow-x:hidden; }
   background: #f8f9fa !important; /* very light grey instead of bg-secondary */
 }
 
+/* Ensure the image and tools are properly centered in the fixed container */
+#uploadedImageContainer:has(#uploadedImage:not(.d-none)) {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Make sure the image tools stay positioned correctly */
+#uploadedImageContainer:has(#uploadedImage:not(.d-none)) #imageTools {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
 /* force white text on all blue badges and buttons */
 .btn-primary *, 
 .badge.bg-primary *,
