@@ -75,19 +75,56 @@
 #exampleContainer                    { background:#fff!important; color:#000!important; }
 .card:has(#uploadTrigger) *          { color:#000!important; }
 
-/* topic tags (initial screen) */
-#topicTags .btn-outline-primary      { border-color:#000!important; color:#000!important; }
-
-/* creator search result pills */
-/* creator suggestions under the search field */
-#creatorSearchResults .list-group-item,
-#creatorPanelResults  .list-group-item{
-  color:#fff !important;            /* white text */
-  background:#0d6efd!important; color:#fff!important; border-color:#0d6efd!important;
+/* topic tags - fix text colors with higher specificity */
+#topicTags .btn-outline-primary {
+  border-color: #000 !important;
+  color: #000 !important;
+  background: #fff !important;
 }
+
+#topicTags .btn-outline-primary:hover {
+  background: #0d6efd !important;
+  color: #fff !important;
+  border-color: #0d6efd !important;
+}
+
+#topicTags .btn-primary,
+#topicTags .btn-primary:hover,
+#topicTags .btn-primary:focus,
+#topicTags .btn-primary:active,
+#topicTags .btn.btn-primary {
+  background: #0d6efd !important;
+  color: #fff !important;
+  border-color: #0d6efd !important;
+}
+
+/* override any card inheritance for topic buttons */
+.card:has(#topicTags) .btn-primary,
+.card:has(#topicTags) .btn-primary * {
+  color: #fff !important;
+}
+
+/* creator search result pills - fix colors */
+#creatorSearchResults .list-group-item,
+#creatorPanelResults .list-group-item {
+  color: #000 !important;
+  background: #fff !important;
+  border-color: #dee2e6 !important;
+  transition: all 0.2s ease;
+}
+
+#creatorSearchResults .list-group-item:hover,
+#creatorPanelResults .list-group-item:hover {
+  color: #fff !important;
+  background: #0d6efd !important;
+  border-color: #0d6efd !important;
+}
+
 #creatorSearchResults .list-group-item.active,
-#creatorPanelResults  .list-group-item.active{
-  background:#0b5ed7!important;
+#creatorPanelResults .list-group-item.active {
+  color: #fff !important;
+  background: #0d6efd !important;
+  border-color: #0d6efd !important;
 }
 
 /* upload button already given dark outline in HTML patch */
@@ -119,10 +156,23 @@
   color: #fff !important;
 }
 
-/* creator badges: force white label so they stay legible */
+/* creator badges - force white text with maximum specificity */
 #creatorTags .badge,
-#selectedCreatorTags .badge{
-  color:#fff !important;
+#selectedCreatorTags .badge,
+#creatorTags span.badge,
+#selectedCreatorTags span.badge,
+#creatorTags .badge.bg-primary,
+#selectedCreatorTags .badge.bg-primary {
+  color: #fff !important;
+  background: #0d6efd !important;
+}
+
+/* override card inheritance for creator badges */
+.card:has(#creatorSearch) .badge,
+.card:has(#creatorSearch) .badge *,
+.card:has(#creatorSearch) span.badge,
+.card:has(#creatorSearch) span.badge * {
+  color: #fff !important;
 }
 
 /* navbar custom dark blue */
@@ -184,4 +234,58 @@ body{ overflow-x:hidden; }
 #modelDropdownMenu .dropdown-item:hover {
   color: #fff !important;
   background: #0d6efd !important;
+}
+
+/* new layout: topic/creator cards need white backgrounds (but exclude buttons/badges) */
+.card:has(#topicTags),
+.card:has(#creatorSearch) {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.card:has(#topicTags) h5,
+.card:has(#topicTags) .card-title,
+.card:has(#creatorSearch) h5,
+.card:has(#creatorSearch) .card-title {
+  color: #000 !important;
+}
+
+/* override the bg-dark class on the new topic/creator cards */
+.card.bg-dark.bg-opacity-50:has(#topicTags),
+.card.bg-dark.bg-opacity-50:has(#creatorSearch) {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* creator search input in new layout */
+.card:has(#creatorSearch) .form-control {
+  color: #000 !important;
+  background: #fff !important;
+  border-color: #ced4da !important;
+}
+
+.card:has(#creatorSearch) .form-control:focus {
+  border-color: #86b7fe !important;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+
+/* light grey background for the main upload container */
+#uploadedImageContainer {
+  background: #f8f9fa !important; /* very light grey instead of bg-secondary */
+}
+
+/* force white text on all blue badges and buttons */
+.btn-primary *, 
+.badge.bg-primary *,
+.bg-primary * {
+  color: #fff !important;
+}
+
+/* specifically target the creator badge text */
+span.badge.bg-primary {
+  color: #fff !important;
+}
+
+span.badge.bg-primary * {
+  color: #fff !important;
 }

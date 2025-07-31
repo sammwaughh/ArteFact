@@ -463,6 +463,9 @@ function fetchPresign() {
         const formData = new FormData();
         formData.append('file', file);
 
+        // Hide the landing page topic/creator cards when processing starts
+        $('.w-100.p-4').addClass('d-none');
+
         fetch(`${API_BASE_URL}/upload/${runId}`, {
           method: 'POST',
           body: formData

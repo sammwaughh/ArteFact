@@ -40,27 +40,43 @@
   <div class="container-fluid py-4">
     <div class="row" style="height: 75vh;">
       <div class="col-md-9 d-flex justify-content-center align-items-center">
-        <div id="uploadedImageContainer" class="position-relative bg-secondary d-flex justify-content-center align-items-center text-white w-100 h-100">
+        <div id="uploadedImageContainer" class="position-relative d-flex justify-content-center align-items-center text-white w-100 h-100">
           <div id="gridOverlay"
             class="position-absolute"
             style="pointer-events:none; display:none; z-index:9;"></div>
           <div id="gridHighlightOverlay"
             class="position-absolute"
             style="pointer-events:none; display:none; z-index:11;"></div>
-          <div class="text-center w-100">
+          <div class="w-100 p-4">
+            <!-- Top row: Topics (left) and Creators (right) -->
+            <div class="row mb-4">
+              <!-- Topics section -->
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Select Topics</h5>
+                    <div id="topicTags" class="d-flex flex-wrap gap-2"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Creators section -->
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Search Creators</h5>
+                    <input type="text" id="creatorSearch" class="form-control mb-2" placeholder="Search creators..." />
+                    <div id="creatorSearchResults" class="list-group mb-2"></div>
+                    <div id="creatorTags" class="d-flex flex-wrap gap-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div
+            
+            <!-- Bottom section: Upload and Examples -->
             <div class="card bg-dark bg-opacity-50 text-white">
-              <div class="card-body">
-                <h2 class="card-title">Get Started</h2>
-                <hr />
-                <h5 class="mt-4">Select  Topics</h5>
-                <div id="topicTags" class="d-flex flex-wrap gap-2 mb-3"></div>
-                <hr />
-                <h5 class="mt-3">Search Creators</h5>
-                <input type="text" id="creatorSearch" class="form-control mb-2" placeholder="Search creators..." />
-                <div id="creatorSearchResults" class="list-group mb-2"></div>
-                <div id="creatorTags" class="d-flex flex-wrap gap-2"></div>
-                <hr />
-                <div class="text-center">
+              <div class="card-body text-center">
+                <div class="mb-4">
                   <button id="uploadTrigger"
                           class="btn btn-outline-dark border-2 mb-3"
                           style="font-size:1.2rem; color:#000;">
@@ -69,9 +85,9 @@
                   <input type="file" id="imageUpload" accept="image/*" class="d-none">
                 </div>
 
-                <h4>Or</h4>
+                <h4 class="mb-3">Or</h4>
                 
-                <h5>Select from one of the historical examples</h5>
+                <h5 class="mb-3">Select from one of the historical examples</h5>
                 <div id="exampleContainer">
                   <div class="example-scroll overflow-auto d-flex flex-row gap-3 px-2" style="max-width: 100%; white-space: nowrap;">
                     <img class="example-img rounded border" src="images/examples/_The_School_of_Athens__by_Raffaello_Sanzio_da_Urbino.jpg" alt="" height="300">
@@ -87,10 +103,8 @@
                     <button id="selectImageBtn" class="btn btn-light d-none">Select</button>
                   </div>
                 </div>
-                <hr />
               </div>
             </div>
-
           </div>
           <img id="uploadedImage" src="" alt="Uploaded Image" draggable="false" class="img-fluid d-none position-absolute" style="max-height: 100%; max-width: 100%;">
           <div id="imageTools" class="d-none position-absolute top-0 start-0 m-3 bg-white bg-opacity-75 p-2 rounded d-flex flex-column align-items-center">
