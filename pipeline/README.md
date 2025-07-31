@@ -1,6 +1,6 @@
 # ArtContext
 
-A computational pipeline for harvesting, processing, and analyzing academic literature about visual art using OpenAlex, Wikidata, and multimodal embeddings.
+A computational pipeline for harvesting, processing, and analysing academic literature about visual art using OpenAlex, Wikidata, and multimodal embeddings.
 
 ## Overview
 
@@ -86,7 +86,7 @@ python generate_painter_list.py
 
 ### Data Directories
 - `Artist-JSONs/` - OpenAlex query results per artist
-- `PDF_Bucket/` - Downloaded PDF files organized by artist
+- `PDF_Bucket/` - Downloaded PDF files organised by artist
 - `Marker_Output/` - Converted Markdown files from PDFs
 - `CLIP_Embeddings/` - Standard CLIP text embeddings
 - `PaintingCLIP_Embeddings/` - Fine-tuned CLIP embeddings
@@ -134,3 +134,10 @@ The pipeline produces structured JSON files that can be used for downstream anal
 - Sentence-level embeddings for semantic search
 - Work metadata for bibliometric analysis
 - Topic associations for thematic studies
+
+## Acknowledgements
+
+This work made use of the facilities of the N8 Centre of Excellence in Computationally Intensive Research (N8 CIR) provided and funded by the N8 research partnership and EPSRC (Grant No. EP/T022167/1). The Centre is co-ordinated by the Universities of Durham, Manchester and York.  
+I also gratefully acknowledge the supervision and guidance of **Dr Stuart James (Department of Computer Science, Durham University).**
+
+_Note: In line with N8 CIR policy, details of any publication or other public output arising from this project will be sent to **enquiries@n8cir.org.uk** on release._
