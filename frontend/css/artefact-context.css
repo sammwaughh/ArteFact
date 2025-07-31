@@ -118,3 +118,14 @@
 .navbar-dark .navbar-nav .nav-link{
   color: #fff !important;
 }
+
+/* creator badges: force white label so they stay legible */
+#creatorTags .badge,
+#selectedCreatorTags .badge{
+  color:#fff !important;
+}
+
+/* navbar custom dark blue */
+.navbar-dark{
+  background:#010e1d !important;
+}
