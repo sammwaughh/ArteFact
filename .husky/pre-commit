@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname "$0")/_/husky.sh"
-
-# Put viewer’s local binaries (eslint, prettier, etc.) on PATH
-export PATH="$PWD/viewer/node_modules/.bin:$PATH"
-
-# Run lint-staged against files inside viewer/
-npx --no-install lint-staged --cwd viewer

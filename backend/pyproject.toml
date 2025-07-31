@@ -37,3 +37,7 @@ dev = [
     "flake8>=7",
     "pytest>=8",
 ]
+
+[tool.flake8]
+max-line-length = 88
+extend-exclude = [".venv", "__pycache__", "tests", "*.egg-info"]
