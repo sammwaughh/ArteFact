@@ -42,8 +42,8 @@ executor = ThreadPoolExecutor(max_workers=4)
 
 # Get the base directory for file storage (project root)
 BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-ARTIFACTS_DIR = os.path.join(BASE_DIR, "data/artifacts")
-OUTPUTS_DIR = os.path.join(BASE_DIR, "data/outputs")
+ARTIFACTS_DIR = os.path.join(BASE_DIR, "data", "artifacts")
+OUTPUTS_DIR   = os.path.join(BASE_DIR, "data", "outputs")
 
 
 # --------------------------------------------------------------------------- #
@@ -52,33 +52,33 @@ OUTPUTS_DIR = os.path.join(BASE_DIR, "data/outputs")
 # Load data/sentences.json into a variable called sentences
 sentences = {}
 with open(
-    os.path.join(BASE_DIR, "hc_services", "runner", "data", "sentences.json"), "r"
+    os.path.join(BASE_DIR, "data", "json_info", "sentences.json"), "r"
 ) as f:
     sentences = json.load(f)
 
 
 works = {}
 with open(
-    os.path.join(BASE_DIR, "hc_services", "runner", "data", "works.json"), "r"
+    os.path.join(BASE_DIR, "data", "json_info", "works.json"), "r"
 ) as f:
     works = json.load(f)
 
 
 creators = {}
 with open(
-    os.path.join(BASE_DIR, "hc_services", "runner", "data", "creators.json"), "r"
+    os.path.join(BASE_DIR, "data", "json_info", "creators.json"), "r"
 ) as f:
     creators = json.load(f)
 
 topics = {}
 with open(
-    os.path.join(BASE_DIR, "hc_services", "runner", "data", "topics.json"), "r"
+    os.path.join(BASE_DIR, "data", "json_info", "topics.json"), "r"
 ) as f:
     topics = json.load(f)
 
 topic_names = {}
 with open(
-    os.path.join(BASE_DIR, "hc_services", "runner", "data", "topic_names.json"), "r"
+    os.path.join(BASE_DIR, "data", "json_info", "topic_names.json"), "r"
 ) as f:
     topic_names = json.load(f)
 
@@ -97,21 +97,21 @@ def presign_upload():
     Body:     { "fileName": "myfile.jpg" }
     Response: {
         "runId": "...",
-        "s3Key": "artifacts/<id>.jpg",
+        "imageKey": "artifacts/<id>.jpg",
         "upload": { "url": "...", "fields": { } }
     }
     """
     data = request.get_json(force=True)
     run_id = uuid.uuid4().hex
-    # We'll use a local file path as the "s3Key"
-    s3_key = f"artifacts/{run_id}.jpg"
+    # We'll use a local file path as the "imageKey"
+    image_key = f"artifacts/{run_id}.jpg"
     # Local upload endpoint URL (where the front-end will POST the file)
     upload_url = request.host_url + f"upload/{run_id}"
     # Return the run info and upload instructions (fields remain empty for compatibility)
     response = jsonify(
         {
             "runId": run_id,
-            "s3Key": s3_key,
+            "imageKey": image_key,
             "upload": {
                 "url": upload_url,
                 "fields": {},  # no fields needed for local upload
@@ -144,13 +144,13 @@ def upload_file(run_id: str):
 @app.route("/runs", methods=["POST"])
 def create_run():
     """
-    Body: { "runId": "...", "s3Key": "artifacts/...jpg", "topics": [...], "creators": [...], "model": "..." }
+    Body: { "runId": "...", "imageKey": "artifacts/...jpg", "topics": [...], "creators": [...], "model": "..." }
     - Save initial run status in memory
     - Launch background thread for processing
     """
     payload = request.get_json(force=True)
     run_id = payload["runId"]
-    s3_key = payload["s3Key"]
+    image_key = payload["imageKey"]
     topics = payload.get("topics", [])
     creators = payload.get("creators", [])
     model = payload.get("model", "paintingclip")
@@ -161,7 +161,7 @@ def create_run():
         tasks.runs[run_id] = {
             "runId": run_id,
             "status": "queued",
-            "s3Key": s3_key,
+            "imageKey": image_key,
             "topics": topics,
             "creators": creators,
             "model": model,
@@ -171,7 +171,7 @@ def create_run():
 
     # Submit the background inference task to the thread pool
     # Pass the absolute path to the image and filtering parameters
-    image_path = os.path.join(BASE_DIR, s3_key)
+    image_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
     executor.submit(tasks.run_task, run_id, image_path, topics, creators, model)
 
     return jsonify({"status": "accepted"}), 202

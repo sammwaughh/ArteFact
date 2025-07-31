@@ -5,7 +5,7 @@ const API_BASE_URL = 'http://127.0.0.1:8000';
 
 // Variables to store session/run state
 let runId;
-let s3Key;
+let imageKey;
 let upload;
 
 // --- Grid overlay state ---
@@ -116,7 +116,7 @@ $(document).ready(function () {
     
     // Clear all state variables
     runId = null;
-    s3Key = null;
+    imageKey = null;
     upload = null;
     viewGridEnabled = false;
     selectedTopics = [];
@@ -434,7 +434,7 @@ function fetchPresign() {
     .then(res => res.json())
     .then(data => {
       runId = data.runId;
-      s3Key = data.s3Key;
+      imageKey = data.imageKey;
       upload = data.upload;
 
       // --- Unified canvas-based image upload logic ---
@@ -480,7 +480,7 @@ function fetchPresign() {
             },
             body: JSON.stringify({
               runId: runId,
-              s3Key: s3Key,
+              imageKey: imageKey,
               topics: selectedTopics,
               creators: selectedCreators,
               model: selectedModel

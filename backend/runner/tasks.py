@@ -20,7 +20,7 @@ SLEEP_SECS = int(os.getenv("SLEEP_SECS", "0"))
 
 # Get the base directory for file storage (project root)
 BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+OUTPUTS_DIR = os.path.join(BASE_DIR, "data", "outputs")
 
 
 def run_task(

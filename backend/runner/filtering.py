@@ -8,7 +8,7 @@ from typing import List, Set, Dict, Any
 
 # Load data files
 ROOT = Path(__file__).resolve().parents[2]
-DATA_DIR = ROOT / "hc_services" / "runner" / "data"
+DATA_DIR = ROOT / "data" / "json_info"
 
 # Load all necessary data
 with open(DATA_DIR / "sentences.json", "r", encoding="utf-8") as f:

@@ -41,20 +41,20 @@ MODEL_TYPE: Literal["clip", "paintingclip"] = "paintingclip"
 MODEL_CONFIG = {
     "clip": {
         "model_id": "openai/clip-vit-base-patch32",
-        "embeddings_dir": ROOT / "CLIP_Embeddings",
+        "embeddings_dir": ROOT / "data" / "embeddings" / "CLIP_Embeddings",
         "use_lora": False,
         "lora_dir": None,
     },
     "paintingclip": {
         "model_id": "openai/clip-vit-base-patch32",
-        "embeddings_dir": ROOT / "PaintingCLIP_Embeddings",
+        "embeddings_dir": ROOT / "data" / "embeddings" / "PaintingCLIP_Embeddings",
         "use_lora": True,
-        "lora_dir": ROOT / "PaintingCLIP",
+        "lora_dir": ROOT / "data" / "models" / "PaintingCLIP",
     },
 }
 
 # Data paths
-SENTENCES_JSON = ROOT / "hc_services" / "runner" / "data" / "sentences.json"
+SENTENCES_JSON = ROOT / "data" / "json_info" / "sentences.json"
 
 # Inference settings
 TOP_K = 10  # Number of results to return
