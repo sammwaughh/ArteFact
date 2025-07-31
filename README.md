@@ -1,109 +1,293 @@
-# ArteFact v2 &nbsp;&nbsp;<img src="viewer/public/images/logo-16-9.JPEG" alt="ArteFact Logo" width="320">
+# Artefact Context Viewer
 
-Modern web application for analysing artwork with machine-learning models.  
-Upload paintings, then receive academic annotations, contextual labels and confidence scores – all in real-time (seconds, not minutes).
+A web-based application for analyzing artwork images using PaintingCLIP, a fine-tuned CLIP model specialized for art-historical content. The system matches uploaded artwork images against a corpus of pre-computed sentence embeddings from art history texts, returning the most semantically similar passages.
 
-🌐 **Live demo:** <https://artefactcontext.com>
+## Overview
 
----
+This application consists of:
+- A Flask backend API that handles image uploads and runs ML inference
+- A vanilla JavaScript frontend for image upload and result display
+- A PaintingCLIP model for specialized art analysis
+- Pre-computed embeddings from art-historical texts
 
-## Components at a Glance
+## Prerequisites
 
-| Layer          | Component / Resource                  | Runtime / Service           | Role in the system |
-|----------------|---------------------------------------|-----------------------------|--------------------|
-| **Front-end**  | React / Vite SPA                      | Browser (+ CloudFront)      | Upload UI, polling, deep-zoom viewer |
-| **Runner**     | Flask API `runner-svc`                | ECS Fargate task            | Presigned uploads, create runs, status endpoint |
-| **Worker**     | Celery worker `worker-svc`            | ECS Fargate task            | ML inference · label-file creation |
-| **Storage**    | `artefact-context-artifacts-eu2` (S3) | Amazon S3 (+ CF origin)     | Holds both *uploaded images* and *JSON outputs* |
-| **Queue**      | `hc-artifacts-queue` (SQS)            | Amazon SQS                  | Decouples “quick API” from “slow AI” |
-| **Metadata**   | `hc-runs` (DynamoDB)                  | Amazon DynamoDB             | Persistent run status & timing metrics |
-| **Delivery**   | `E2UQ55MZYMCNFO` (CloudFront dist.)   | Amazon CloudFront           | Serves SPA & artefacts privately (via OAI) |
-| **Ingress**    | Public ALB + ACM cert                 | Load Balancing              | TLS termination for `api.artefactcontext.com` |
+- Python 3.8+
+- pip
+- A modern web browser
 
----
+## Installation
 
-## 🛠 How the app works – request-by-request
-
-<details>
-<summary>Click to expand the sequence diagram ▶</summary>
-
-```text
-User selects image
-└─► (1) POST /presign …………………………… Runner API
-        ↳ returns presigned  <S3 POST URL + fields>
-
-Browser performs multipart/form-data POST directly to S3 (2)
-        S3 stores artifacts/<runId>.jpg   (private)
-
-Browser POSTs /runs  (3) ………………… Runner API
-        • putItem   hc-runs            status=queued
-        • publish   SQS message        {runId, s3Key}
-
-Celery worker (4) pulls SQS
-        • GET image from S3
-        • run_inference()
-        • PUT outputs/<runId>.json     to S3
-        • updateItem hc-runs           status=done
-
-Browser polls /runs/<id> every 3 s
-        As soon as status=done:
-        GET /outputs/<id>.json  (5) … CloudFront → S3
-        GET /artifacts/<id>.jpg (6) … CloudFront → S3
-        React renders image + overlays  ✅
-```
-</details>
-
-### Detailed walk-through
-
-| #                     | Actor / Service          | Action & headers                                                                                                                  | Result |
-|-----------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------|
-| **1 Presign**         | **Browser → Runner API** | `POST /presign {fileName}`                                                                                                        | Flask issues a *presigned POST* for the artifacts bucket, plus a fresh `runId`. |
-|                       | **API → Browser**        | JSON with `upload.url`, `upload.fields`, `runId`, `s3Key`.                                                                        | Browser can now upload without exposing AWS keys. |
-| **2 Upload**          | **Browser → S3**         | HTML `<form>` POST to `https://artefact-context-artifacts-eu2.s3…` with policy + sig.                                            | S3 stores the image, returns **204** and CORS headers. |
-| **3 Create run**      | **Browser → Runner API** | `POST /runs {runId, s3Key}`                                                                                                       | API writes a **queued** item in DynamoDB and publishes a Celery task to **hc-artifacts-queue** (SQS). |
-| **4 Process**         | **Worker Fargate task**  | Long-polls SQS, receives task, downloads image, runs the ML model, uploads `outputs/<id>.json`, updates DynamoDB (`status=done`). | Heavy lifting kept off the API path. |
-| **5 Poll**            | **Browser → Runner API** | Repeats `GET /runs/<id>` until `status===done`.                                                                                   | API simply reads DynamoDB; negligible latency. |
-| **6 Fetch artefacts** | **Browser → CloudFront** | `GET /outputs/<id>.json` then `GET /artifacts/<id>.jpg`.                                                                          | CloudFront presents its **Origin Access Identity (OAI)** to the bucket; S3 serves the objects even though **Block Public Access is ON**. First request is a *Miss*, subsequent hits are cached at the edge. |
-| **7 Render**          | **React SPA**            | Receives `{labels, imageUrl}` from hook state.                                                                                    | Shows the painting and (if enabled) bounding-box overlays. |
-
-**Round-trip time:** ≈ 3 – 5 s for a 400 KB JPEG and a small label file.
-
----
-
-## Local development
+### 1. Clone the Repository
 
 ```bash
-# 1. Run the stack (LocalStack + API + worker)
-docker compose up --build --detach
-
-# 2. Front-end (Vite dev-server hot-reloads on :5173)
-cd viewer
-npm ci && npm run dev
+git clone <repository-url>
+cd artefact-context
 ```
 
-The compose file points the Python code at `AWS_ENDPOINT_URL=http://localstack:4566`; Moto-style mocks for S3, SQS and DynamoDB are auto-bootstrapped on first run.
+### 2. Set Up Python Environment
 
----
+```bash
+# Create a virtual environment
+python -m venv .venv
 
-## Deployment workflow (CI/CD)
+# Activate the virtual environment
+# On macOS/Linux:
+source .venv/bin/activate
+# On Windows:
+# .venv\Scripts\activate
 
-1. **push → main** triggers **`.github/workflows/deploy.yml`**  
-   • Builds the SPA, uploads to *viewer-spa-prod* bucket.  
-   • Invalidates CloudFront (`aws cloudfront create-invalidation`).  
-   • Builds & pushes `viewer-backend` Docker image to ECR.  
-   • `aws ecs update-service --force-new-deployment` for both tasks.
+# Install dependencies
+pip install -r requirements.txt
+```
 
-2. **cdk synth / deploy** in `infra/cdk` manages:  
-   VPC, ALB, ECS services, IAM, SQS, DynamoDB and bucket policy (including the OAI grant).
+### 3. Verify Model Files
 
-Secrets required (`Settings → Secrets & variables`):
+Ensure you have the following directories with their required files:
+- PaintingCLIP - LoRA adapter files for the fine-tuned model
+- PaintingCLIP_Embeddings - Pre-computed sentence embeddings (`.pt` files)
 
-| Name                                          | Used for                                |
-|-----------------------------------------------|-----------------------------------------|
-| `CF_DIST_ID`                                  | CloudFront invalidation                 |
-| `CF_URL`                                      | Passed to Vite as `VITE_CLOUDFRONT_URL` |
-| `SPA_BUCKET`                                  | SPA origin bucket                       |
-| `ECR_REPO`                                    | Docker push target                      |
-| `CLUSTER`, `RUNNER_SERVICE`, `WORKER_SERVICE` | `aws ecs update-service`                |
+## Running the Application
 
----
+### Quick start (two terminals – fastest way)
+
+1. Start the **backend**  
+   ```bash
+   # First time only
+   chmod +x run_hc.sh
+
+   # From the repo root
+   ./run_hc.sh          # → Flask on http://localhost:8000
+   ```
+
+2. Start the **frontend** in a second terminal  
+   ```bash
+   # First time only
+   chmod +x viewer_js/run.sh
+
+   # From the repo root
+   cd viewer_js && ./run.sh     # → static server on http://localhost:8080
+   ```
+
+3. Open your browser at `http://localhost:8080` and use the app.
+
+Both scripts are tiny wrappers:
+* `run_hc.sh` → `python -m hc_services.runner.app`
+* `viewer_js/run.sh` → `python3 -m http.server 8080`
+
+They simply save you from typing the full commands each time.
+
+### Alternative: mono-script run (old behaviour)
+
+```bash
+# Make the script executable (first time only)
+chmod +x run.sh
+
+# Run both frontend and backend
+./run.sh
+```
+
+This will:
+1. Start the Flask backend on `http://localhost:8000`
+2. Start a simple HTTP server for the frontend on `http://localhost:8080`
+3. Open your default browser to the application
+
+### Option 2: Manual Start
+
+#### Start the Backend
+
+```bash
+# Activate virtual environment if not already active
+source .venv/bin/activate
+
+# Run the Flask application
+python -m hc_services.runner.app
+```
+
+The backend will start on `http://localhost:8000`
+
+#### Start the Frontend
+
+In a new terminal:
+
+```bash
+# Navigate to the viewer directory
+cd viewer_js
+
+# Start a simple HTTP server
+python -m http.server 8080
+```
+
+Then open `http://localhost:8080` in your browser.
+
+## Usage
+
+1. **Upload an Image**: 
+   - Click "Upload an Image" or drag-drop an image
+   - Select from provided historical examples
+   
+2. **Process**: The system will:
+   - Upload the image to the backend
+   - Compute image embeddings using PaintingCLIP
+   - Find the most similar sentences from the corpus
+   
+3. **View Results**: 
+   - See the top 10 most relevant text passages
+   - Click the search icon next to any result to view source metadata
+   
+4. **Image Tools**:
+   - **Crop**: Select a region of interest
+   - **Undo**: Revert to previous image
+   - **Rerun**: Process the current image again
+
+## Project Structure
+
+```
+artefact-context/
+├── hc_services/
+│   └── runner/
+│       ├── app.py           # Flask API server
+│       ├── tasks.py         # Background task processing
+│       ├── inference.py     # PaintingCLIP inference pipeline
+│       └── data/           # JSON data files
+│           ├── sentences.json
+│           ├── works.json
+│           ├── topics.json
+│           ├── topic_names.json
+│           └── creators.json
+├── viewer_js/              # Frontend application
+│   ├── index.html
+│   ├── js/
+│   │   └── artefact-context.js
+│   └── css/
+│       └── artefact-context.css
+├── PaintingCLIP/          # LoRA adapter files
+├── PaintingCLIP_Embeddings/ # Pre-computed embeddings
+├── artifacts/             # Uploaded images (created at runtime)
+├── outputs/               # Inference results (created at runtime)
+└── requirements.txt
+```
+
+## Data File Structures
+
+### sentences.json
+Maps sentence IDs to their metadata. Currently contains minimal metadata:
+
+```json
+{
+  "W1982215463_s0001": {
+    "English Original": "The actual sentence text...",
+    "Has PaintingCLIP Embedding": true
+  }
+}
+```
+
+**Note**: The inference pipeline adds the "English Original" field dynamically from other sources if not present in this file.
+
+### works.json
+Contains metadata about source works (papers, books, etc.):
+
+```json
+{
+  "W4206160935": {
+    "Artist": "arthur_hughes",
+    "Link": "https://...",              // Direct PDF/document link
+    "Number of Sentences": 4874,
+    "DOI": "https://doi.org/...",      // Digital Object Identifier
+    "ImageIDs": [],                     // Associated image IDs
+    "TopicIDs": ["C2778983918", ...],  // Related topic IDs
+    "Relevance": 3.7782803              // Relevance score
+  }
+}
+```
+
+### topics.json
+Maps topic IDs to lists of work IDs that cover that topic:
+
+```json
+{
+  "C2778983918": ["W4206160935"],
+  "C520712124": ["W4206160935", "W1234567890"]
+}
+```
+
+### topic_names.json
+Human-readable names for topic IDs:
+
+```json
+{
+  "C52119013": "Art History",
+  "C204034006": "Art Criticism",
+  "C501303744": "Iconography"
+}
+```
+
+### creators.json
+Maps artist/creator names to their associated works:
+
+```json
+{
+  "arthur_hughes": ["W4206160935", "W2029124454", ...],
+  "francesco_hayez": ["W1982215463", "W4388661114", ...],
+  "george_stubbs": ["W2020798572", "W2021094421", ...]
+}
+```
+
+## API Endpoints
+
+- `POST /presign` - Request upload credentials
+- `POST /upload/<runId>` - Upload image file
+- `POST /runs` - Start inference job
+- `GET /runs/<runId>` - Check job status
+- `GET /outputs/<filename>` - Retrieve inference results
+- `GET /work/<id>` - Get work metadata for DOI lookup
+
+## Key Components
+
+### Backend (app.py)
+- Flask server handling HTTP requests
+- Manages file uploads and storage
+- Coordinates inference jobs via thread pool
+
+### Task Processing (tasks.py)
+- Handles background inference jobs
+- Updates job status in memory
+- Writes results to JSON files
+
+### Inference Pipeline (inference.py)
+- Loads PaintingCLIP model with LoRA adapters
+- Computes image embeddings
+- Performs similarity search against sentence corpus
+- Returns top-K most similar passages
+
+### Frontend (artefact-context.js)
+- Handles image upload and display
+- Polls backend for job status
+- Displays results and metadata
+- Provides image manipulation tools
+
+## Troubleshooting
+
+1. **Port Already in Use**: If ports 8000 or 8080 are occupied, modify the port numbers in:
+   - app.py (line with `app.run()`)
+   - `run.sh` 
+   - artefact-context.js (API_BASE_URL)
+
+2. **Missing Dependencies**: Ensure all packages are installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Model Loading Errors**: Verify that:
+   - PaintingCLIP directory contains LoRA adapter files
+   - PaintingCLIP_Embeddings contains `.pt` files
+
+4. **CORS Issues**: The backend is configured to accept requests from any origin. For production, update CORS settings in app.py.
+
+## Development Notes
+
+- The system uses an in-memory store for job tracking (resets on server restart)
+- Uploaded images are saved to artifacts
+- Inference results are saved to outputs
+- The frontend uses jQuery and Bootstrap for UI components
+- Debug panel available via the (i) button in the bottom-right corner

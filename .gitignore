@@ -107,4 +107,22 @@ docker-compose.override.yml
 # Thumbnails
 ._*
 
+###############################################################################
+#  LOCAL STORAGE                                                               #
+###############################################################################
+# Local storage directories
+artifacts/
+outputs/
+Test-Images/
+Excel-Files/
+Grad-Eclip-main/
+Test-Images/
+
+# Sentence Embeddings
+*.pt
+
+# Images
+*.png
+
 # End of file
+

@@ -37,8 +37,9 @@ function usePollRun(
         if (run.status === 'done' && run.outputKey) {
           clearInterval(id);
 
-          // ── 1 ) fetch raw JSON from S3/CloudFront ──────────────────────
-          const base = import.meta.env.VITE_CLOUDFRONT_URL;
+          // ── 1 ) fetch raw JSON from local server ──────────────────────
+          // Use the CloudFront URL if provided, otherwise default to the local API URL
+          const base = import.meta.env.VITE_CLOUDFRONT_URL || import.meta.env.VITE_API_URL || 'http://localhost:8000';
           const labelsResp = await fetch(`${base}/${run.outputKey}`);
           const raw: { label: string; score: number; evidence?: Partial<Source> }[] =
             await labelsResp.json();

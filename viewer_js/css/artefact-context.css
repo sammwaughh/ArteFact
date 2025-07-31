@@ -1,0 +1,25 @@
+.selected-img {
+  border: 4px solid #ffc107 !important;
+}
+.example-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+.example-scroll::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 5px;
+}
+.example-scroll::-webkit-scrollbar-track {
+  background: #eee;
+}
+    .spin {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#topicTags .badge {
+  font-size: 1rem;
+  margin-bottom: 0.3em;
+  /* Add some spacing between tags */
+}

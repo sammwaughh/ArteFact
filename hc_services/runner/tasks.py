@@ -1,108 +1,104 @@
 """
-Celery configuration + asynchronous job definition (worker‑svc).
+Background task processing (no Celery, no AWS).
 """
 
 import json
 import os
-import time  # ← add
-from datetime import datetime
-from tempfile import NamedTemporaryFile
+import time
+import threading
+from datetime import datetime, timezone
 
-import boto3
-from celery import Celery
-
-from .constants import (
-    ARTIFACT_BUCKET,
-    RUNS_TABLE,
-    QUEUE_NAME,
-)
 from .inference import run_inference
 
-# ----------------------------------------------------------------------
-BROKER_URL = os.getenv("CELERY_BROKER_URL", "sqs://")  # dev default = SQS
+# In-memory runs store and lock for thread-safe updates
+runs: dict[str, dict] = {}
+runs_lock = threading.Lock()
 
-celery = Celery(__name__, broker=BROKER_URL)
-
-# NEW – default queue name so worker declares/consumes it
-celery.conf.task_default_queue = QUEUE_NAME
-
-# AWS clients (inside worker container)
-_s3 = boto3.client("s3", region_name="eu-west-2")
-_dynamodb = boto3.resource("dynamodb", region_name="eu-west-2")
-_table = _dynamodb.Table(RUNS_TABLE)
-
+# Optional dev flags for testing
 FORCE_ERROR = os.getenv("FORCE_ERROR") == "1"
+SLEEP_SECS = int(os.getenv("SLEEP_SECS", "0"))
 
-SLEEP_SECS = int(os.getenv("SLEEP_SECS", "0"))  # ← add
+# Get the base directory for file storage (project root)
+BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
 
 
-# ----------------------------------------------------------------------
-@celery.task(
-    name="run_task",
-    autoretry_for=(Exception,),
-    retry_backoff=True,
-    retry_kwargs={"max_retries": 2},
-)
-def run_task(run_id: str, s3_key: str) -> None:
+def run_task(run_id: str, image_path: str, topics: list = None, creators: list = None, model: str = "paintingclip") -> None:
     """
-    Receive message → run inference → upload labels → update DDB.
+    Process a single run: load image from disk, run ML inference, save output, update status.
+    
+    Args:
+        run_id: The unique run identifier
+        image_path: Full path to the image file
+        topics: List of topic codes to filter by (optional)
+        creators: List of creator names to filter by (optional)
+        model: Model type to use ("clip" or "paintingclip")
     """
-    # --- mark as processing ------------------------------------------
-    _table.update_item(
-        Key={"runId": run_id},
-        UpdateExpression="SET #s = :s, startedAt = :t",
-        ExpressionAttributeNames={"#s": "status"},
-        ExpressionAttributeValues={
-            ":s": "processing",
-            ":t": datetime.utcnow().isoformat(timespec="seconds"),
-        },
-    )
+    # Clear any cached images from patch inference
+    try:
+        from .patch_inference import _prepare_image
+        _prepare_image.cache_clear()
+    except ImportError:
+        pass  # patch_inference might not be imported yet
+    
+    # Mark as processing (with a check to ensure the run exists)
+    with runs_lock:
+        if run_id not in runs:
+            return
+        runs[run_id]["status"] = "processing"
+        runs[run_id]["startedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        runs[run_id]["updatedAt"] = runs[run_id]["startedAt"]
 
     try:
-        # 1. download image
-        with NamedTemporaryFile(suffix=".jpg") as tmp:
-            _s3.download_file(ARTIFACT_BUCKET, s3_key, tmp.name)
+        # 1. Check if the image file exists
+        if not os.path.exists(image_path):
+            raise FileNotFoundError(f"Image file not found: {image_path}")
 
-        if SLEEP_SECS:  # simulate slow inference
-            time.sleep(SLEEP_SECS)
+        if SLEEP_SECS:
+            time.sleep(SLEEP_SECS)          # simulate slow inference if desired
 
-        labels = run_inference(tmp.name)
-
-        # DEV-only toggle (kept for future manual tests)
-        # if FORCE_ERROR:
-        #     raise RuntimeError("forced-error test")
-
-        # 2. upload outputs
-        out_key = f"outputs/{run_id}.json"
-        with NamedTemporaryFile(suffix=".json", mode="w+") as jf:
-            json.dump(labels, jf)
-            jf.flush()
-            _s3.upload_file(jf.name, ARTIFACT_BUCKET, out_key)
-
-        # 3. mark done
-        _table.update_item(
-            Key={"runId": run_id},
-            UpdateExpression="""
-              SET #s = :s, outputKey = :k,
-                  finishedAt = :t, updatedAt = :t
-            """,
-            ExpressionAttributeNames={"#s": "status"},
-            ExpressionAttributeValues={
-                ":s": "done",
-                ":k": out_key,
-                ":t": datetime.utcnow().isoformat(timespec="seconds"),
-            },
+        # 2. Run the ML inference with filtering
+        labels = run_inference(
+            image_path,
+            filter_topics=topics,
+            filter_creators=creators,
+            model_type=model
         )
+
+        # If FORCE_ERROR is enabled (for testing), raise an error to simulate a failure
+        if FORCE_ERROR:
+            raise RuntimeError("Forced error for testing")
+
+        # 3. Save the labels to a JSON file in the outputs folder
+        os.makedirs(OUTPUTS_DIR, exist_ok=True)
+        output_filename = f"{run_id}.json"
+        output_path = os.path.join(OUTPUTS_DIR, output_filename)
+        output_key = f"outputs/{output_filename}"  # This is what the API expects
+        
+        with open(output_path, "w") as f:
+            json.dump(labels, f)
+
+        # Verify the file was created
+        if not os.path.exists(output_path):
+            raise RuntimeError(f"Failed to create output file: {output_path}")
+        
+        # 4. Mark the run as done and store the output path
+        with runs_lock:
+            runs[run_id]["status"] = "done"
+            runs[run_id]["outputKey"] = output_key  # Store the relative path for the API
+            runs[run_id]["finishedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            runs[run_id]["updatedAt"] = runs[run_id]["finishedAt"]
+            # Clear any previous error message if present
+            runs[run_id].pop("errorMessage", None)
 
     except Exception as exc:
-        _table.update_item(
-            Key={"runId": run_id},
-            UpdateExpression="SET #s = :s, errorMessage = :e, updatedAt = :t",
-            ExpressionAttributeNames={"#s": "status"},
-            ExpressionAttributeValues={
-                ":s": "error",
-                ":e": str(exc)[:500],  # keep concise
-                ":t": datetime.utcnow().isoformat(timespec="seconds"),
-            },
-        )
-        raise  # lets Celery retry up to max_retries
+        # On any error, mark the run as failed and record the error message
+        print(f"Error in run {run_id}: {exc}")  # This should already be there
+        import traceback
+        traceback.print_exc()  # Add full traceback
+        
+        with runs_lock:
+            if run_id in runs:  # Be defensive here too
+                runs[run_id]["status"] = "error"
+                runs[run_id]["errorMessage"] = str(exc)[:500]  # truncate to 500 chars
+                runs[run_id]["updatedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds")

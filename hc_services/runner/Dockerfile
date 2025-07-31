@@ -18,7 +18,7 @@ ENV PYTHONUNBUFFERED=1 \
 
 # ---------- Python dependencies ---------------------------------------
 # Copy only the requirements file first so Docker can cache the layer.
-COPY hc_services/runner/requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # ---------- Application code ------------------------------------------
