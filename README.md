@@ -1,6 +1,6 @@
 # ArteFact App
 
-A web-based application for analyzing artwork images using PaintingCLIP, a fine-tuned CLIP model specialized for art-historical content. The system matches uploaded artwork images against a corpus of pre-computed sentence embeddings from art history texts, returning the most semantically similar passages.
+A web-based application for analysing artwork images using PaintingCLIP, a fine-tuned CLIP model specialised for art-historical content. The system matches uploaded artwork images against a corpus of pre-computed sentence embeddings from art history texts, returning the most semantically similar passages.
 
 ## Overview
 
@@ -122,7 +122,7 @@ cd frontend && python -m http.server 8080
 
 7. **Image Tools**
 
-   • **Crop** – draw a rectangle to analyse a sub-region.  
+   • **Crop** – draw a rectangle to analyze a sub-region.  
    • **Undo** – revert to the previous image state.  
    • **Rerun** – re-execute the pipeline with the current image (useful
      after changing model or filters).  
@@ -346,3 +346,10 @@ Key pipeline outputs (consumed by the Flask app):
 * `data/json_info/works.json`     – work-level metadata  
 * `data/json_info/topics.json`    – topic → work index  
 * `data/embeddings/{CLIP_,PaintingCLIP_}Embeddings/` – `.pt` files
+
+## Acknowledgements
+
+This work made use of the facilities of the N8 Centre of Excellence in Computationally Intensive Research (N8 CIR) provided and funded by the N8 research partnership and EPSRC (Grant No. EP/T022167/1). The Centre is co-ordinated by the Universities of Durham, Manchester and York.  
+I also gratefully acknowledge the supervision and guidance of **Dr Stuart James (Department of Computer Science, Durham University).**
+
+_Note: In line with N8 CIR policy, details of any publication or other public output arising from this project will be sent to **enquiries@n8cir.org.uk** on release._
