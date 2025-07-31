@@ -156,6 +156,16 @@
   color: #fff !important;
 }
 
+/* Add hover effect for navbar links */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #adb5bd !important;
+}
+
+/* Ensure dropdown toggle also gets hover effect */
+.navbar-dark .navbar-nav .dropdown-toggle:hover {
+  color: #adb5bd !important;
+}
+
 /* creator badges - force white text with maximum specificity */
 #creatorTags .badge,
 #selectedCreatorTags .badge,
@@ -198,8 +208,25 @@ body{ overflow-x:hidden; }
 
 /* dark-blue footer (re-use navbar colour) */
 .bg-durham{ background:#010e1d !important; }
-.footer a{ color:#fff; text-decoration:underline; }
-.footer a:hover{ color:#adb5bd; }
+
+.footer a{ 
+  color:#fff !important; 
+  text-decoration:underline; 
+}
+
+.footer a:hover{ 
+  color:#adb5bd !important; 
+}
+
+/* Ensure all footer links have consistent styling */
+.footer .text-white {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.footer .text-white:hover {
+  color: #adb5bd !important;
+}
 
 /* About modal custom styling */
 #aboutModal .modal-header {

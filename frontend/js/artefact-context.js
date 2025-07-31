@@ -269,7 +269,7 @@ $(document).ready(function () {
       const matches = Object.keys(creatorsMap).filter(name =>
         name.toLowerCase().includes(query)
       );
-      matches.forEach((name, index) => {
+      matches.forEach((name) => {
         const item = $('<button>')
           .addClass('list-group-item list-group-item-action')
           .text(name.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()))
@@ -281,9 +281,6 @@ $(document).ready(function () {
             $('#creatorSearch').val('');
             resultsContainer.empty();
           });
-        if (index === 0) {
-          item.addClass('active');
-        }
         resultsContainer.append(item);
       });
     }
@@ -458,8 +455,9 @@ function fetchPresign() {
         const formData = new FormData();
         formData.append('file', file);
 
-        // Hide the landing page topic/creator cards when processing starts
-        $('.w-100.p-4').addClass('d-none');
+        // Hide only the landing page cards, not the image container
+        $('.w-100.p-4 .row').addClass('d-none');
+        $('.w-100.p-4 .card').addClass('d-none');
 
         fetch(`${API_BASE_URL}/upload/${runId}`, {
           method: 'POST',
