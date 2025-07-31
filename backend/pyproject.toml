@@ -1,0 +1,39 @@
+[project]
+name = "artefact-backend"
+version = "0.1.0"
+requires-python = ">=3.9"
+
+dependencies = [
+    # ── Core web framework ───────────────────────────
+    "flask>=2.3",
+    "flask-cors>=4.0",
+
+    # ── Deep learning and ML ─────────────────────────
+    "torch>=2.6",                 # CVE-2025-32434 fix
+    "torchvision>=0.18",          # Needed for CLIPImageProcessorFast
+    "transformers>=4.40",         # CLIP model support
+    "peft>=0.10",                 # LoRA adapter support
+    "accelerate>=0.25",           # Optimised model loading
+
+    # ── Model storage / serialization ───────────────
+    "huggingface-hub>=0.20",
+    "safetensors>=0.4",
+
+    # ── Image processing ────────────────────────────
+    "pillow>=10.0",
+    "opencv-python-headless>=4.10",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24",
+    "flake8>=7",
+    "pytest>=8",
+]
