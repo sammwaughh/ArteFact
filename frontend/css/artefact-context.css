@@ -301,13 +301,6 @@ body{ overflow-x:hidden; }
   background: #f8f9fa !important; /* very light grey instead of bg-secondary */
 }
 
-/* Ensure the image and tools are properly centered in the fixed container */
-#uploadedImageContainer:has(#uploadedImage:not(.d-none)) {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
 /* Make sure the image tools stay positioned correctly */
 #uploadedImageContainer:has(#uploadedImage:not(.d-none)) #imageTools {
   position: absolute;
@@ -344,4 +337,44 @@ body {
 
 .footer {
   margin-top: auto;
+}
+
+/* ── keep the image column flush to the top ─────────────────────────────── */
+.col-md-9.d-flex{
+  align-items:flex-start !important;          /* stop centring whole column  */
+}
+
+/* ── and also top-align the painting inside the grey rectangle ──────────── */
+#uploadedImageContainer:has(#uploadedImage:not(.d-none)){
+  align-items:flex-start !important;          /* stop centring inside box    */
+  padding-top:1rem;                           /* small gap under the navbar  */
+}
+
+/* ── shrink the grey “painting” box ─────────────────────────────────────── */
+#uploadedImageContainer{
+  height:auto !important;                 /* no more 100 % height           */
+}
+
+/* ── make the painting fill the card ─────────────────────────────────────── */
+#uploadedImage{
+  position:static !important;   /* was absolute → causes 0-height parent   */
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+  max-height:calc(100vh - 8rem);/* keep it inside viewport under navbar    */
+  object-fit:contain;           /* preserve aspect ratio                   */
+}
+
+/* ── make image card + sentence panel share the same height ─────────────── */
+.container-fluid > .row:first-child{
+  align-items:stretch !important;     /* columns grow to equal height   */
+}
+
+.row > .col-md-3.bg-light{
+  display:flex !important;            /* let inner content scroll       */
+  flex-direction:column;
+  height:100% !important;             /* equal the row (image) height   */
+  max-height:100% !important;
+  overflow-y:auto;                    /* internal scroll when needed    */
 }
