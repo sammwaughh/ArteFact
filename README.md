@@ -1,4 +1,4 @@
-# Artefact Context Viewer
+# ArteFact
 
 A web-based application for analyzing artwork images using PaintingCLIP, a fine-tuned CLIP model specialized for art-historical content. The system matches uploaded artwork images against a corpus of pre-computed sentence embeddings from art history texts, returning the most semantically similar passages.
 
