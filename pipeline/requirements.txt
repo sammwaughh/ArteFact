@@ -1,0 +1,28 @@
+# ---- core scientific stack ----
+numpy>=1.25
+pandas>=2.0
+scikit-learn>=1.4          # PR-curve interpolation
+matplotlib>=3.8            # loss / metric plots
+scipy>=1.11                # heat-map smoothing
+
+# ---- I/O & utilities ----
+requests>=2.25,<3          # leave room for marker-pdf’s range
+tqdm>=4.66
+openpyxl>=3.1
+psutil>=5.9
+httpx[http2]>=0.27            # async downloads + HTTP/2
+pypdfium2>=4.20               # quick PDF sanity check
+striprtf>=0.0.22           # RTF → plain text (rare use-case)
+Pillow>=10.3
+nltk>=3.8          # the script downloads punkt & punkt_tab
+marker-pdf[full]>=1.8.2,<2   # installs marker_single CLI
+PyYAML>=6.0                # explicit to avoid old 5.4.1 build
+PyPDF2>=3.0           # optional – enables full PDF integrity check
+# ---- deep-learning stack ----
+torch>=2.2                 # CPU, CUDA 12.1 and MPS wheels available
+torchvision>=0.17          # (transforms for image loading)
+transformers>=4.41
+sentence-transformers>=2.7
+peft>=0.10                 # LoRA utilities
+accelerate>=0.28           # backend launcher (used implicitly)
+safetensors>=0.4           # fast weight loading
