@@ -159,7 +159,7 @@ $(document).ready(function () {
     // Reset model selection to first available
     if (availableModels.length > 0) {
       selectedModel = availableModels[0];
-      $('#modelDropdown').text('Model: ' + selectedModel);
+      $('#modelDropdown').text('AI Model: ' + selectedModel);
       $('#modelDropdownMenu a').removeClass('active');
       $('#modelDropdownMenu a').first().addClass('active');
     }
@@ -231,7 +231,7 @@ $(document).ready(function () {
         availableModels.forEach((model, index) => {
           const item = $('<li><a class="dropdown-item" href="#">' + model + '</a></li>');
           if (index === 0) {
-            $('#modelDropdown').text('Model: ' + model);
+            $('#modelDropdown').text('AI Model: ' + model);
             item.find('a').addClass('active');
             selectedModel = model;
           }
@@ -239,7 +239,7 @@ $(document).ready(function () {
             selectedModel = model;
             $('#modelDropdownMenu a').removeClass('active');
             $(this).find('a').addClass('active');
-            $('#modelDropdown').text('Model: ' + model);
+            $('#modelDropdown').text('AI Model: ' + model);
           });
           dropdownMenu.append(item);
         });
