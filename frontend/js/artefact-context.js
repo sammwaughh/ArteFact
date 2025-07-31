@@ -414,7 +414,10 @@ $(document).ready(function () {
   $('#debugPanelToggle button').on('click', function () {
     $('#debugPanel').toggle();
   });
-});
+
+  // make sure main column spans full width on initial landing screen
+  adjustMainWidth();
+});   // ← existing closing bracket of document-ready
 
 /**
  * Initiates a new session by requesting a presigned upload URL
@@ -776,6 +779,13 @@ $('#rerunToolBtn').on('click', function () {
 });
 // --- End Rerun Tool Functionality ---
 
+// NEW: Grid toggle button handler
+$('#gridToolBtn').on('click', function () {
+  viewGridEnabled = !viewGridEnabled;
+  updateGridVisibility();
+  $(this).toggleClass('active');              // visual feedback
+});
+
 /**
  * Looks up metadata for a given work ID (e.g., DOI) and displays details.
  * @param {string} work_id - The identifier for the work to look up.
@@ -822,7 +832,7 @@ function showWorkDetails(workData) {
       </button>
 
       <h5 class="mb-2">${d.Work_Title || 'Unknown Title'}</h5>
-      <p class="mb-1"><strong>Author:</strong> ${d.Author_Name || 'Unknown Author'}</p>
+      <p class="mb-1"><strong>Author(s):</strong> ${d.Author_Name || 'Unknown Author'}</p>
       <p class="mb-1"><strong>Year:</strong> ${d.Year || 'Unknown'}</p>
 
       <!-- Image gallery -->
@@ -834,7 +844,7 @@ function showWorkDetails(workData) {
       <p class="mb-1"><strong>DOI:</strong>
         <a href="${d.DOI}" target="_blank" class="text-primary text-decoration-underline">${d.DOI}</a>
       </p>
-      <p class="mb-1"><strong>Link:</strong>
+      <p class="mb-1"><strong>Download Link:</strong>
         <a href="${d.Link}" target="_blank" class="text-primary text-decoration-underline">${d.Link}</a>
       </p>
 

@@ -94,7 +94,7 @@
 /* ------------------------------------------------------------------------ */
 
 /* stretch main column if the sidebar is hidden */
-#mainColumn.fill { flex:0 0 100%!important; max-width:100%!important; }
+.col-md-9.fill  { flex:0 0 100%!important; max-width:100%!important; }
 
 /* give the example-image Select button a solid black outline */
 #selectImageBtn{
@@ -129,3 +129,6 @@
 .navbar-dark{
   background:#010e1d !important;
 }
+
+/* prevent stray elements from creating a horizontal scrollbar */
+body{ overflow-x:hidden; }
