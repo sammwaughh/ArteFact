@@ -20,7 +20,10 @@ skipped_files = 0
 
 # Iterate over Excel files
 for excel_file in DATA_DIR.iterdir():
-    if excel_file.name.startswith("~") or excel_file.suffix.lower() not in (".xlsx", ".xls"):
+    if excel_file.name.startswith("~") or excel_file.suffix.lower() not in (
+        ".xlsx",
+        ".xls",
+    ):
         skipped_files += 1
         continue
     try:
@@ -44,10 +47,12 @@ percentages = [
     round(total_accessible / total_all * 100, 1),
     round(total_downloaded / total_all * 100, 1),
 ]
-summary_df = pd.DataFrame({
-    "Category": ["All", "Accessible", "Downloaded"],
-    "Percentage": [f"{p}%" for p in percentages]
-})
+summary_df = pd.DataFrame(
+    {
+        "Category": ["All", "Accessible", "Downloaded"],
+        "Percentage": [f"{p}%" for p in percentages],
+    }
+)
 
 # Plot and save as PNG
 fig, ax = plt.subplots(figsize=(3, 1.5))
@@ -56,7 +61,7 @@ tbl = ax.table(
     cellText=summary_df.values,
     colLabels=summary_df.columns,
     cellLoc="center",
-    loc="center"
+    loc="center",
 )
 
 # Style header row and first column

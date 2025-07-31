@@ -22,7 +22,7 @@ import torch.nn.functional as F
 from PIL import Image
 
 # Local import: reuse the heavyweight initialiser & sentence metadata
-from .inference import _initialize_pipeline   # same package, no circular import
+from .inference import _initialize_pipeline  # same package, no circular import
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -39,7 +39,7 @@ def _infer_patch_hw(num_patches: int) -> Tuple[int, int]:
     raise ValueError(f"Unexpected non‑square patch layout: {num_patches}")
 
 
-@lru_cache(maxsize=8)              # cache a few recent paintings × grid sizes
+@lru_cache(maxsize=8)  # cache a few recent paintings × grid sizes
 def _prepare_image(
     image_path: str | Path,
     grid_size: Tuple[int, int] = (7, 7),  # Changed default to 7x7
@@ -52,7 +52,7 @@ def _prepare_image(
     torch.Tensor
         Shape (cells, D) on the same device as sentence embeddings.
     """
-    processor, model, *_ , device = _initialize_pipeline()
+    processor, model, *_, device = _initialize_pipeline()
 
     # 1. Forward pass through the vision tower (one‑time per painting ↔ cache)
     image = Image.open(image_path).convert("RGB")
@@ -64,31 +64,33 @@ def _prepare_image(
             output_hidden_states=True,
         )
         # Exclude CLS (token‑0), keep patch tokens
-        patch_tokens = vision_out.last_hidden_state[:, 1:, :]               # (1, N, 768)
-        patch_tokens = model.vision_model.post_layernorm(patch_tokens)      # LayerNorm
-        patch_feats = model.visual_projection(patch_tokens)                 # (1, N, 512)
-        patch_feats = F.normalize(patch_feats.squeeze(0), dim=-1)           # (N, 512)
+        patch_tokens = vision_out.last_hidden_state[:, 1:, :]  # (1, N, 768)
+        patch_tokens = model.vision_model.post_layernorm(patch_tokens)  # LayerNorm
+        patch_feats = model.visual_projection(patch_tokens)  # (1, N, 512)
+        patch_feats = F.normalize(patch_feats.squeeze(0), dim=-1)  # (N, 512)
 
     # 2. Reshape → (D, H, W) to pool channel‑wise
     num_patches, dim = patch_feats.shape
     H, W = _infer_patch_hw(num_patches)
     patch_grid = (
         patch_feats.view(H, W, dim)
-        .permute(2, 0, 1)           # (D, H, W)
-        .unsqueeze(0)               # (1, D, H, W) for pooling
+        .permute(2, 0, 1)  # (D, H, W)
+        .unsqueeze(0)  # (1, D, H, W) for pooling
     )
 
     # 3. Adaptive average‑pool down to UI grid resolution
     grid_h, grid_w = grid_size
-    
+
     # Special case: if grid size matches patch grid, no pooling needed
     if (grid_h, grid_w) == (H, W):
         cell_grid = patch_grid.squeeze(0)  # Just remove batch dimension
     else:
-        cell_grid = F.adaptive_avg_pool2d(patch_grid, output_size=(grid_h, grid_w)).squeeze(0)
+        cell_grid = F.adaptive_avg_pool2d(
+            patch_grid, output_size=(grid_h, grid_w)
+        ).squeeze(0)
 
     # 4. Flatten → (cells, D) & L2‑normalise
-    cell_vecs = cell_grid.permute(1, 2, 0).reshape(-1, dim)                # (g², 512)
+    cell_vecs = cell_grid.permute(1, 2, 0).reshape(-1, dim)  # (g², 512)
     return F.normalize(cell_vecs, dim=-1).to(device)
 
 
@@ -136,17 +138,17 @@ def rank_sentences_for_cell(
     # Apply filtering if needed
     if filter_topics or filter_creators:
         from .filtering import get_filtered_sentence_ids
+
         valid_sentence_ids = get_filtered_sentence_ids(filter_topics, filter_creators)
-        
+
         # Create mask for valid sentences
         valid_indices = [
-            i for i, sid in enumerate(sentence_ids) 
-            if sid in valid_sentence_ids
+            i for i, sid in enumerate(sentence_ids) if sid in valid_sentence_ids
         ]
-        
+
         if not valid_indices:
             return []
-        
+
         # Filter embeddings and sentence_ids
         sent_mat = sent_mat[valid_indices]
         sentence_ids = [sentence_ids[i] for i in valid_indices]
@@ -196,7 +198,7 @@ def list_grid_scores(
     Return the full similarity matrix of shape (sentences, cells).
     Primarily for diagnostics or off‑line analysis.
     """
-    _p, _m, sent_mat, *_ , device = _initialize_pipeline()
+    _p, _m, sent_mat, *_, device = _initialize_pipeline()
     sent_mat = F.normalize(sent_mat.to(device), dim=-1)
     cell_vecs = _prepare_image(image_path, grid_size)
-    return sent_mat @ cell_vecs.T                                          # (S, g²)
+    return sent_mat @ cell_vecs.T  # (S, g²)

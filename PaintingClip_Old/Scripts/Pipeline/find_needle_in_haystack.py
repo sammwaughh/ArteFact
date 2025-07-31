@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 import argparse
@@ -12,12 +13,12 @@ from sentence_transformers import SentenceTransformer
 # ---------------------------
 # Configuration defaults
 # ---------------------------
-DEFAULT_INPUT_EXCEL   = "paintings_metadata.xlsx"
-DEFAULT_OUTPUT_EXCEL  = "paintings_with_labels.xlsx"
-PAINTERS_EXCEL        = "painters.xlsx"
-CACHE_DIR             = "cache"
-MODEL_NAME            = "paraphrase-MiniLM-L6-v2"
-COMBINE_THRESHOLD     = 0.5
+DEFAULT_INPUT_EXCEL = "paintings_metadata.xlsx"
+DEFAULT_OUTPUT_EXCEL = "paintings_with_labels.xlsx"
+PAINTERS_EXCEL = "painters.xlsx"
+CACHE_DIR = "cache"
+MODEL_NAME = "paraphrase-MiniLM-L6-v2"
+COMBINE_THRESHOLD = 0.5
 
 DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"
 
@@ -119,7 +120,9 @@ def main():
         raw_cache_key = None
         if norm_creator in painter_norm_to_norm_qs:
             qs_norm = painter_norm_to_norm_qs[norm_creator]
-            raw_cache_key = norm_file_map.get(qs_norm) or painter_norm_to_raw_qs[norm_creator]
+            raw_cache_key = (
+                norm_file_map.get(qs_norm) or painter_norm_to_raw_qs[norm_creator]
+            )
         if raw_cache_key is None and norm_creator in norm_file_map:
             raw_cache_key = norm_creator
         if raw_cache_key is None and "brueghel" in norm_creator:
@@ -140,13 +143,15 @@ def main():
         if raw_cache_key not in embeddings_cache:
             fn = file_map.get(raw_cache_key)
             if fn is None:
-                print(f"Warning: cache file missing for key '{raw_cache_key}'. Skipping.")
+                print(
+                    f"Warning: cache file missing for key '{raw_cache_key}'. Skipping."
+                )
                 labels.append("")
                 continue
 
             data = torch.load(os.path.join(CACHE_DIR, fn), map_location="cpu")
             sents = data["candidate_sentences"]
-            embs  = data["candidate_embeddings"]
+            embs = data["candidate_embeddings"]
             if isinstance(embs, np.ndarray):
                 embs = torch.tensor(embs, dtype=torch.float)
             embs = torch.nn.functional.normalize(embs, p=2, dim=1).to(DEVICE)
@@ -155,8 +160,9 @@ def main():
         sents, embs = embeddings_cache[raw_cache_key]
 
         # encode & select
-        title, year, depicts = [str(row.get(f, "")).strip()
-                                 for f in ("Title", "Year", "Depicts")]
+        title, year, depicts = [
+            str(row.get(f, "")).strip() for f in ("Title", "Year", "Depicts")
+        ]
         query = build_query(title, creator, year, depicts)
         q_emb = model.encode(query, convert_to_tensor=True)
         q_emb = torch.nn.functional.normalize(q_emb, p=2, dim=0).to(DEVICE)

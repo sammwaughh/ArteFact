@@ -9,12 +9,13 @@ end_row = 100
 
 # Read painters.xlsx to get the list of painter (folder) names from the "Query String" column.
 df = pd.read_excel("painters.xlsx")
-folder_names = df.loc[start_row - 1:end_row - 1, "Query String"].tolist()
+folder_names = df.loc[start_row - 1 : end_row - 1, "Query String"].tolist()
 
 # Define base directories.
-input_base = "All Works"                  # Where the input PDF folders are located.
-output_base = "Small Markdown"             # Where output directories will be created.
-excel_base = "Works Metadata"            # Directory containing the {painter}_works.xlsx files.
+input_base = "All Works"  # Where the input PDF folders are located.
+output_base = "Small Markdown"  # Where output directories will be created.
+excel_base = "Works Metadata"  # Directory containing the {painter}_works.xlsx files.
+
 
 def process_pdf(folder, pdf_file):
     """Process a single PDF file using marker_single with a one-hour timeout."""
@@ -31,6 +32,7 @@ def process_pdf(folder, pdf_file):
     except subprocess.CalledProcessError as e:
         print(f"Error processing file: {input_pdf}. Error: {e}")
     print(f"Finished processing file: {input_pdf}\n")
+
 
 # Collect tasks from each painter folder.
 tasks = []

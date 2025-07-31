@@ -25,6 +25,7 @@ import torch.nn.functional as F
 from PIL import Image
 from transformers import CLIPProcessor, CLIPModel
 from peft import PeftModel
+
 # on-demand Grad-ECLIP & region-aware ranking
 from .heatmap import generate_heatmap
 from .filtering import get_filtered_sentence_ids
@@ -49,7 +50,7 @@ MODEL_CONFIG = {
         "embeddings_dir": ROOT / "PaintingCLIP_Embeddings",
         "use_lora": True,
         "lora_dir": ROOT / "PaintingCLIP",
-    }
+    },
 }
 
 # Data paths
@@ -59,40 +60,41 @@ SENTENCES_JSON = ROOT / "hc_services" / "runner" / "data" / "sentences.json"
 TOP_K = 10  # Number of results to return
 # ─────────────────────────────────────────────────────────────────────────────
 
+
 def _load_embeddings(embeddings_dir: Path) -> Tuple[torch.Tensor, List[str]]:
     """
     Load pre-computed sentence embeddings from individual .pt files.
-    
+
     Each embedding file follows the naming convention:
     - CLIP: {sentence_id}_clip.pt (e.g., W1982215463_s0001_clip.pt)
     - PaintingCLIP: {sentence_id}_painting_clip.pt (e.g., W1982215463_s0001_painting_clip.pt)
-    
+
     Args:
         embeddings_dir: Directory containing individual embedding files
-        
+
     Returns:
         embeddings: Stacked tensor of shape (N, embedding_dim)
         sentence_ids: List of sentence IDs corresponding to each embedding
-        
+
     Raises:
         ValueError: If no embedding files are found in the directory
     """
     embeddings = []
     sentence_ids = []
-    
+
     # Glob all .pt files and sort for consistent ordering
     pt_files = sorted(embeddings_dir.glob("*.pt"))
-    
+
     if not pt_files:
         raise ValueError(
             f"No embedding files (*.pt) found in {embeddings_dir}. "
             f"Please ensure embeddings are generated and stored correctly."
         )
-    
+
     for pt_file in pt_files:
         # Extract sentence ID by removing the appropriate suffix based on model type
         stem = pt_file.stem
-        
+
         # Remove the suffix based on which embeddings we're loading
         if "_painting_clip" in stem:
             # PaintingCLIP embeddings: remove "_painting_clip"
@@ -103,10 +105,10 @@ def _load_embeddings(embeddings_dir: Path) -> Tuple[torch.Tensor, List[str]]:
         else:
             # Fallback: use the stem as-is
             sentence_id = stem
-        
+
         # Load the embedding tensor
         embedding = torch.load(pt_file, map_location="cpu", weights_only=True)
-        
+
         # Handle various storage formats (dict vs direct tensor)
         if isinstance(embedding, dict):
             # Try common dictionary keys
@@ -114,34 +116,34 @@ def _load_embeddings(embeddings_dir: Path) -> Tuple[torch.Tensor, List[str]]:
                 if key in embedding:
                     embedding = embedding[key]
                     break
-        
+
         # Ensure 1D tensor shape
         if embedding.ndim > 1:
             embedding = embedding.squeeze()
-        
+
         # Validate embedding dimension
         if embedding.ndim != 1:
             raise ValueError(
                 f"Invalid embedding shape {embedding.shape} in {pt_file}. "
                 f"Expected 1D tensor."
             )
-        
+
         embeddings.append(embedding)
         sentence_ids.append(sentence_id)
-    
+
     # Stack all embeddings into a single tensor
     embeddings_tensor = torch.stack(embeddings, dim=0)
-    
+
     return embeddings_tensor, sentence_ids
 
 
 def _load_sentences_metadata(sentences_path: Path) -> Dict[str, Dict[str, Any]]:
     """
     Load sentence metadata from sentences.json.
-    
+
     Args:
         sentences_path: Path to sentences.json file
-        
+
     Returns:
         Dictionary mapping sentence IDs to their metadata
     """
@@ -153,18 +155,18 @@ def _load_sentences_metadata(sentences_path: Path) -> Dict[str, Dict[str, Any]]:
 def _initialize_pipeline():
     """
     Initialize the inference pipeline components (cached).
-    
+
     This function loads all heavy resources once and caches them:
     - CLIP model (with optional LoRA adapter)
     - Pre-computed sentence embeddings
     - Sentence metadata
-    
+
     Returns:
         Tuple of (processor, model, embeddings, sentence_ids, sentences_data, device)
     """
     # Select configuration based on MODEL_TYPE
     config = MODEL_CONFIG[MODEL_TYPE]
-    
+
     # Determine compute device
     if torch.backends.mps.is_available():
         device = torch.device("mps")
@@ -172,26 +174,26 @@ def _initialize_pipeline():
         device = torch.device("cuda")
     else:
         device = torch.device("cpu")
-    
+
     # Load CLIP processor and base model
     processor = CLIPProcessor.from_pretrained(config["model_id"], use_fast=False)
     base_model = CLIPModel.from_pretrained(config["model_id"])
-    
+
     # Apply LoRA adapter if configured
     if config["use_lora"] and config["lora_dir"]:
         model = PeftModel.from_pretrained(base_model, str(config["lora_dir"]))
     else:
         model = base_model
-    
+
     # Move model to device and set to evaluation mode
     model = model.to(device).eval()
-    
+
     # Load pre-computed embeddings
     embeddings, sentence_ids = _load_embeddings(config["embeddings_dir"])
-    
+
     # Load sentence metadata
     sentences_data = _load_sentences_metadata(SENTENCES_JSON)
-    
+
     return processor, model, embeddings, sentence_ids, sentences_data, device
 
 
@@ -250,6 +252,7 @@ def compute_heatmap(
     b64 = base64.b64encode(buf.getvalue()).decode("utf-8")
     return f"data:image/png;base64,{b64}"
 
+
 # ========================================================================== #
 #  Main retrieval routine                                                    #
 # ========================================================================== #
@@ -261,11 +264,11 @@ def run_inference(
     top_k: int = TOP_K,
     filter_topics: List[str] = None,
     filter_creators: List[str] = None,
-    model_type: str = None
+    model_type: str = None,
 ) -> List[Dict[str, Any]]:
     """
     Perform semantic similarity search.
-    
+
     Parameters
     ----------
     image_path : str
@@ -284,55 +287,57 @@ def run_inference(
         List of creator names to filter results by
     model_type : str, optional
         Model type to use ("clip" or "paintingclip")
-    
+
     Returns:
         List of dictionaries with filtered results
     """
     # Set model type if specified
     if model_type:
         set_model_type(model_type.lower())
-    
+
     # ---- Region-aware pathway --------------------------------------------
     if cell is not None:
         from .patch_inference import rank_sentences_for_cell
-        
+
         row, col = cell
         results = rank_sentences_for_cell(
             image_path=image_path,
             cell_row=row,
             cell_col=col,
             grid_size=grid_size,
-            top_k=top_k * 3  # Get more results to filter from
+            top_k=top_k * 3,  # Get more results to filter from
         )
-        
+
         # Apply filtering
         if filter_topics or filter_creators:
             from .filtering import apply_filters_to_results
+
             results = apply_filters_to_results(results, filter_topics, filter_creators)
             results = results[:top_k]  # Trim to requested top_k
-        
+
         return results
 
     # ---- Whole-painting pathway (original implementation) ----------------
     start_time = time.time()
-    
+
     # Load cached pipeline components
-    processor, model, embeddings, sentence_ids, sentences_data, device = _initialize_pipeline()
-    
+    processor, model, embeddings, sentence_ids, sentences_data, device = (
+        _initialize_pipeline()
+    )
+
     # Get valid sentence IDs based on filters
     if filter_topics or filter_creators:
         valid_sentence_ids = get_filtered_sentence_ids(filter_topics, filter_creators)
-        
+
         # Create mask for valid sentences
         valid_indices = [
-            i for i, sid in enumerate(sentence_ids) 
-            if sid in valid_sentence_ids
+            i for i, sid in enumerate(sentence_ids) if sid in valid_sentence_ids
         ]
-        
+
         if not valid_indices:
             # No sentences match the filters
             return []
-        
+
         # Filter embeddings and sentence_ids
         filtered_embeddings = embeddings[valid_indices]
         filtered_sentence_ids = [sentence_ids[i] for i in valid_indices]
@@ -340,46 +345,53 @@ def run_inference(
         # No filtering, use all
         filtered_embeddings = embeddings
         filtered_sentence_ids = sentence_ids
-    
+
     # Load and preprocess the image
     image = Image.open(image_path).convert("RGB")
     inputs = processor(images=image, return_tensors="pt").to(device)
-    
+
     # Compute image embedding
     with torch.no_grad():
         image_features = model.get_image_features(**inputs)
         image_embedding = F.normalize(image_features.squeeze(0), dim=-1)
-    
+
     # Normalize sentence embeddings and compute similarities
     sentence_embeddings = F.normalize(filtered_embeddings.to(device), dim=-1)
     similarities = torch.matmul(sentence_embeddings, image_embedding).cpu()
-    
+
     # Get top-K results
     k = min(top_k, len(similarities))
     top_scores, top_indices = torch.topk(similarities, k=k)
-    
+
     # Build results with full sentence metadata
     results = []
-    for rank, (idx, score) in enumerate(zip(top_indices.tolist(), top_scores.tolist()), start=1):
+    for rank, (idx, score) in enumerate(
+        zip(top_indices.tolist(), top_scores.tolist()), start=1
+    ):
         sentence_id = filtered_sentence_ids[idx]
-        
+
         # Get sentence metadata
-        sentence_data = sentences_data.get(sentence_id, {
-            "English Original": f"[Sentence data not found for {sentence_id}]",
-            "Has PaintingCLIP Embedding": True
-        }).copy()
+        sentence_data = sentences_data.get(
+            sentence_id,
+            {
+                "English Original": f"[Sentence data not found for {sentence_id}]",
+                "Has PaintingCLIP Embedding": True,
+            },
+        ).copy()
 
         work_id = sentence_id.split("_")[0]
         sentence_data.setdefault("Work", work_id)
-        
-        results.append({
-            "sentence_id": sentence_id,
-            "score": float(score),
-            "english_original": sentence_data.get("English Original", "N/A"),
-            "work": work_id,
-            "rank": rank
-        })
-    
+
+        results.append(
+            {
+                "sentence_id": sentence_id,
+                "score": float(score),
+                "english_original": sentence_data.get("English Original", "N/A"),
+                "work": work_id,
+                "rank": rank,
+            }
+        )
+
     return results
 
 
@@ -392,10 +404,10 @@ def get_available_models() -> List[str]:
 def set_model_type(model_type: str) -> None:
     """
     Change the active model type.
-    
+
     Args:
         model_type: Either "clip" or "paintingclip"
-        
+
     Raises:
         ValueError: If model_type is not recognized
     """

@@ -10,20 +10,16 @@ sentence = "The fingers almost touch in the centre of the painting"
 # Call the API
 response = requests.post(
     "http://localhost:8000/heatmap",
-    json={
-        "runId": run_id,
-        "sentence": sentence,
-        "layerIdx": -1
-    }
+    json={"runId": run_id, "sentence": sentence, "layerIdx": -1},
 )
 
 if response.status_code == 200:
     data = response.json()
     data_url = data["dataUrl"]
-    
+
     # Extract base64 data
     _, base64_data = data_url.split(",", 1)
-    
+
     # Decode and save
     image_data = base64.b64decode(base64_data)
     Path("Test-Images/api_heatmap_test6.png").write_bytes(image_data)

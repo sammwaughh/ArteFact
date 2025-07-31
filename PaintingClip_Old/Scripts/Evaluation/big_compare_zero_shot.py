@@ -10,18 +10,19 @@ from openpyxl import load_workbook
 from PIL import Image
 
 # ──────────── PATH SETUP ────────────
-SCRIPT_DIR     = Path(__file__).resolve().parent
-PROJECT_ROOT   = SCRIPT_DIR.parent
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent
 
-CACHE_DIR      = PROJECT_ROOT / "Dataset" / "cache_clip_embeddings"
-PAINTERS_PATH  = PROJECT_ROOT / "Dataset" / "painters.xlsx"
-LABELS_PATH    = PROJECT_ROOT / "Dataset" / "paintings_with_labels.xlsx"
-FINETUNE_PATH  = PROJECT_ROOT / "FineTune" / "fine_tune_dataset.xlsx"
-IMAGES_DIR     = PROJECT_ROOT / "Dataset" / "Images"
+CACHE_DIR = PROJECT_ROOT / "Dataset" / "cache_clip_embeddings"
+PAINTERS_PATH = PROJECT_ROOT / "Dataset" / "painters.xlsx"
+LABELS_PATH = PROJECT_ROOT / "Dataset" / "paintings_with_labels.xlsx"
+FINETUNE_PATH = PROJECT_ROOT / "FineTune" / "fine_tune_dataset.xlsx"
+IMAGES_DIR = PROJECT_ROOT / "Dataset" / "Images"
 
-LORA_DIR       = SCRIPT_DIR / "clip_finetuned_lora_best"
-OUTPUT_PATH    = SCRIPT_DIR / "zero_shot_results.xlsx"
+LORA_DIR = SCRIPT_DIR / "clip_finetuned_lora_best"
+OUTPUT_PATH = SCRIPT_DIR / "zero_shot_results.xlsx"
 # ─────────────────────────────────────
+
 
 def load_text_cache(cache_path: Path):
     data = torch.load(cache_path, map_location="cpu", weights_only=True)
@@ -31,6 +32,7 @@ def load_text_cache(cache_path: Path):
         if key not in data:
             raise ValueError(f"{cache_path!r} missing key '{key}'")
     return data["candidate_embeddings"], data["candidate_sentences"]
+
 
 def evaluate_zero_shot(model, processor, img_path, text_embs, sentences, device):
     img = Image.open(img_path).convert("RGB")
@@ -43,11 +45,12 @@ def evaluate_zero_shot(model, processor, img_path, text_embs, sentences, device)
     best = sims.argmax().item()
     return sentences[best], sims[best].item()
 
+
 def main():
     device = torch.device(
-        "mps" if torch.backends.mps.is_available()
-        else "cuda" if torch.cuda.is_available()
-        else "cpu"
+        "mps"
+        if torch.backends.mps.is_available()
+        else "cuda" if torch.cuda.is_available() else "cpu"
     )
 
     # Load painters → query‐string map
@@ -61,7 +64,7 @@ def main():
     caches = {}
     for p in sorted(CACHE_DIR.glob("*_clip_embedding_cache.pt")):
         raw = p.stem.removesuffix("_clip_embedding_cache")
-        qs  = stem_to_qs.get(raw)
+        qs = stem_to_qs.get(raw)
         if qs:
             caches[qs] = load_text_cache(p)
     if not caches:
@@ -69,12 +72,14 @@ def main():
 
     # Read labels & fine‐tune sheets
     labels_df = pd.read_excel(LABELS_PATH)
-    ft_df     = pd.read_excel(FINETUNE_PATH)
+    ft_df = pd.read_excel(FINETUNE_PATH)
 
     title_col = "Title" if "Title" in ft_df.columns else "Name"
     merged = ft_df.merge(
         labels_df[["File Name", "Creator"]],
-        on="File Name", how="left", validate="many_to_one"
+        on="File Name",
+        how="left",
+        validate="many_to_one",
     )
 
     def find_qs(creator):
@@ -92,11 +97,11 @@ def main():
         raise RuntimeError("No fine-tune entries match any cached artist")
 
     # Prepare CLIP + LoRA
-    MODEL_ID  = "openai/clip-vit-base-patch32"
+    MODEL_ID = "openai/clip-vit-base-patch32"
     processor = CLIPProcessor.from_pretrained(MODEL_ID, use_fast=True)
-    vanilla   = CLIPModel.from_pretrained(MODEL_ID).to(device).eval()
+    vanilla = CLIPModel.from_pretrained(MODEL_ID).to(device).eval()
     base_clip = CLIPModel.from_pretrained(MODEL_ID)
-    mint      = PeftModel.from_pretrained(base_clip, LORA_DIR).to(device).eval()
+    mint = PeftModel.from_pretrained(base_clip, LORA_DIR).to(device).eval()
 
     total = len(subset)
     processed = 0
@@ -104,33 +109,37 @@ def main():
     records = []
 
     # Zero-shot eval with running counters
-    pbar = tqdm(subset.itertuples(index=False, name=None), total=total, desc="Zero-shot eval")
+    pbar = tqdm(
+        subset.itertuples(index=False, name=None), total=total, desc="Zero-shot eval"
+    )
     for title, fn, txt_lbl, creator, qs in pbar:
         img_p = IMAGES_DIR / fn
         if not img_p.exists():
             ignored += 1
         else:
             text_embs, sents = caches[qs]
-            v_sent, v_score = evaluate_zero_shot(vanilla, processor, img_p, text_embs, sents, device)
-            m_sent, m_score = evaluate_zero_shot(mint,    processor, img_p, text_embs, sents, device)
+            v_sent, v_score = evaluate_zero_shot(
+                vanilla, processor, img_p, text_embs, sents, device
+            )
+            m_sent, m_score = evaluate_zero_shot(
+                mint, processor, img_p, text_embs, sents, device
+            )
 
-            records.append({
-                title_col:          title,
-                "File Name":        fn,
-                "Creator":          creator,
-                "Vanilla Sentence": v_sent,
-                "Vanilla Score":    v_score,
-                "Mint Sentence":    m_sent,
-                "Mint Score":       m_score,
-            })
+            records.append(
+                {
+                    title_col: title,
+                    "File Name": fn,
+                    "Creator": creator,
+                    "Vanilla Sentence": v_sent,
+                    "Vanilla Score": v_score,
+                    "Mint Sentence": m_sent,
+                    "Mint Score": m_score,
+                }
+            )
             processed += 1
 
         left = total - processed - ignored
-        pbar.set_postfix({
-            "processed": processed,
-            "ignored":   ignored,
-            "left":      left
-        })
+        pbar.set_postfix({"processed": processed, "ignored": ignored, "left": left})
 
     # Save & auto‐format
     out_df = pd.DataFrame(records)
@@ -143,7 +152,10 @@ def main():
         ws.column_dimensions[col[0].column_letter].width = width
     wb.save(OUTPUT_PATH)
 
-    print(f"\n Done! Processed {processed}, ignored {ignored}, results in {OUTPUT_PATH.resolve()}")
+    print(
+        f"\n Done! Processed {processed}, ignored {ignored}, results in {OUTPUT_PATH.resolve()}"
+    )
+
 
 if __name__ == "__main__":
     main()

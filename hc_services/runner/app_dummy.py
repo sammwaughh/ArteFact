@@ -40,14 +40,19 @@ OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
 
 # Load data/sentences.json into a variable called sentences
 sentences = {}
-with open(os.path.join(BASE_DIR,"hc_services", "runner" , "data", "sentences.json"), "r") as f:
-    sentences = json.load(f)  
+with open(
+    os.path.join(BASE_DIR, "hc_services", "runner", "data", "sentences.json"), "r"
+) as f:
+    sentences = json.load(f)
     # Print the first sentence for debugging
     print(f"First sentence: {list(sentences.keys())[0]}")
 
 works = {}
-with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "works.json"), "r") as f:
-    works = json.load(f)  
+with open(
+    os.path.join(BASE_DIR, "hc_services", "runner", "data", "works.json"), "r"
+) as f:
+    works = json.load(f)
+
 
 # --------------------------------------------------------------------------- #
 #  Routes                                                                     #
@@ -67,16 +72,17 @@ def presign_upload():
         "upload": { "url": "...", "fields": { } }
     }
     """
- 
-    return jsonify({
-        "runId": "001",
-        "s3Key": "key",
-        "upload": {
-            "url": "/images/upload/001.jpg",  # Local URL for upload
-            "fields": {}  # no fields needed for local upload
-        }
-    })
 
+    return jsonify(
+        {
+            "runId": "001",
+            "s3Key": "key",
+            "upload": {
+                "url": "/images/upload/001.jpg",  # Local URL for upload
+                "fields": {},  # no fields needed for local upload
+            },
+        }
+    )
 
 
 @app.route("/runs", methods=["POST"])
@@ -90,7 +96,7 @@ def create_run():
     run_id = payload["runId"]
     s3_key = payload["s3Key"]
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    
+
     # # Store initial run info in the in-memory dictionary
     # with tasks.runs_lock:
     #     tasks.runs[run_id] = {
@@ -100,12 +106,12 @@ def create_run():
     #         "createdAt": now,
     #         "updatedAt": now
     #     }
-    
+
     # # Submit the background inference task to the thread pool
     # # Pass the absolute path to the image
     # image_path = os.path.join(BASE_DIR, s3_key)
     # executor.submit(tasks.run_task, run_id, image_path)
-    
+
     return "{}", 202  # Accepted
 
 
@@ -140,7 +146,14 @@ def get_output_file(filename: str):
     # In a real implementation, you would fetch the actual labels based on the filename or run_id
     # For example, you might query a database or perform some computation to generate these labels
     # Here we just return the static labels defined above
-    labels = [{"sentence": sentences[sentence_key], "score": random.uniform(0.1, 0.9), "evidence": {"rank": i + 1}} for i, sentence_key in enumerate(random.sample(list(sentences), 20))]
+    labels = [
+        {
+            "sentence": sentences[sentence_key],
+            "score": random.uniform(0.1, 0.9),
+            "evidence": {"rank": i + 1},
+        }
+        for i, sentence_key in enumerate(random.sample(list(sentences), 20))
+    ]
 
     return labels
 

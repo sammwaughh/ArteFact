@@ -29,7 +29,7 @@ from flask_cors import CORS
 # Import the tasks module (contains run_task, runs dict, etc.)
 from . import tasks
 from . import inference
-from .inference import compute_heatmap      #  ← reuse helper
+from .inference import compute_heatmap  #  ← reuse helper
 
 # --------------------------------------------------------------------------- #
 #  Flask application & thread pool setup                                      #
@@ -51,26 +51,37 @@ OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
 # --------------------------------------------------------------------------- #
 # Load data/sentences.json into a variable called sentences
 sentences = {}
-with open(os.path.join(BASE_DIR,"hc_services", "runner" , "data", "sentences.json"), "r") as f:
-    sentences = json.load(f)  
+with open(
+    os.path.join(BASE_DIR, "hc_services", "runner", "data", "sentences.json"), "r"
+) as f:
+    sentences = json.load(f)
 
 
 works = {}
-with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "works.json"), "r") as f:
-    works = json.load(f)  
+with open(
+    os.path.join(BASE_DIR, "hc_services", "runner", "data", "works.json"), "r"
+) as f:
+    works = json.load(f)
 
 
 creators = {}
-with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "creators.json"), "r") as f:
+with open(
+    os.path.join(BASE_DIR, "hc_services", "runner", "data", "creators.json"), "r"
+) as f:
     creators = json.load(f)
 
 topics = {}
-with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "topics.json"), "r") as f:
+with open(
+    os.path.join(BASE_DIR, "hc_services", "runner", "data", "topics.json"), "r"
+) as f:
     topics = json.load(f)
 
 topic_names = {}
-with open(os.path.join(BASE_DIR, "hc_services", "runner" , "data", "topic_names.json"), "r") as f:
+with open(
+    os.path.join(BASE_DIR, "hc_services", "runner", "data", "topic_names.json"), "r"
+) as f:
     topic_names = json.load(f)
+
 
 # --------------------------------------------------------------------------- #
 #  Routes                                                                     #
@@ -97,14 +108,16 @@ def presign_upload():
     # Local upload endpoint URL (where the front-end will POST the file)
     upload_url = request.host_url + f"upload/{run_id}"
     # Return the run info and upload instructions (fields remain empty for compatibility)
-    response = jsonify({
-        "runId": run_id,
-        "s3Key": s3_key,
-        "upload": {
-            "url": upload_url,
-            "fields": {}  # no fields needed for local upload
+    response = jsonify(
+        {
+            "runId": run_id,
+            "s3Key": s3_key,
+            "upload": {
+                "url": upload_url,
+                "fields": {},  # no fields needed for local upload
+            },
         }
-    })
+    )
     return response
 
 
@@ -113,9 +126,9 @@ def upload_file(run_id: str):
     """
     Receives the image file upload for the given runId and saves it to disk.
     """
-    if 'file' not in request.files:
+    if "file" not in request.files:
         return jsonify({"error": "no-file"}), 400
-    file = request.files['file']
+    file = request.files["file"]
     # Ensure artifacts directory exists
     os.makedirs(ARTIFACTS_DIR, exist_ok=True)
     # Save the file as artifacts/<runId>.jpg
@@ -142,7 +155,7 @@ def create_run():
     creators = payload.get("creators", [])
     model = payload.get("model", "paintingclip")
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    
+
     # Store initial run info in the in-memory dictionary
     with tasks.runs_lock:
         tasks.runs[run_id] = {
@@ -153,14 +166,14 @@ def create_run():
             "creators": creators,
             "model": model,
             "createdAt": now,
-            "updatedAt": now
+            "updatedAt": now,
         }
-    
+
     # Submit the background inference task to the thread pool
     # Pass the absolute path to the image and filtering parameters
     image_path = os.path.join(BASE_DIR, s3_key)
     executor.submit(tasks.run_task, run_id, image_path, topics, creators, model)
-    
+
     return jsonify({"status": "accepted"}), 202
 
 
@@ -184,18 +197,17 @@ def get_artifact_file(filename: str):
 @app.route("/outputs/<path:filename>", methods=["GET"])
 def get_output_file(filename: str):
     """Serve a JSON output file from the outputs directory."""
-    
+
     # If the filename doesn't end with .json, add it
-    if not filename.endswith('.json'):
-        filename = filename + '.json'
-    
+    if not filename.endswith(".json"):
+        filename = filename + ".json"
+
     # Check if file exists
     file_path = os.path.join(OUTPUTS_DIR, filename)
     if not os.path.exists(file_path):
         return jsonify({"error": "file-not-found"}), 404
-        
-    return send_from_directory(OUTPUTS_DIR, filename)
 
+    return send_from_directory(OUTPUTS_DIR, filename)
 
 
 @app.route("/work/<id>", methods=["GET"])
@@ -204,6 +216,7 @@ def get_work(id: str):
     work = works.get(id, {})
     return jsonify(work)
 
+
 @app.route("/topics", methods=["GET"])
 def get_topics():
     """
@@ -211,12 +224,14 @@ def get_topics():
     """
     return jsonify(topic_names)
 
+
 @app.route("/creators", methods=["GET"])
 def get_creators():
     """
     Return the list of creators.
     """
     return jsonify(creators)
+
 
 @app.route("/models", methods=["GET"])
 def get_models():
@@ -231,7 +246,7 @@ def cell_similarity():
     run_id = request.args["runId"]
     row = int(request.args["row"])
     col = int(request.args["col"])
-    k   = int(request.args.get("k", 10))
+    k = int(request.args.get("k", 10))
 
     # Get the run info to retrieve filtering parameters
     run_info = tasks.runs.get(run_id, {})
@@ -241,15 +256,16 @@ def cell_similarity():
 
     img_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
     results = inference.run_inference(
-        img_path, 
-        cell=(row, col), 
+        img_path,
+        cell=(row, col),
         top_k=k,
         filter_topics=topics,
         filter_creators=creators,
-        model_type=model
+        model_type=model,
     )
     return jsonify(results)
- 
+
+
 # --------------------------------------------------------------------------- #
 #  Accurate Grad-ECLIP heat-map                                              #
 # --------------------------------------------------------------------------- #
@@ -266,10 +282,10 @@ def heatmap():
     Response:
         { "dataUrl": "data:image/png;base64,..." }
     """
-    payload   = request.get_json(force=True)
-    run_id    = payload["runId"]
-    sentence  = payload["sentence"]
-    layer     = int(payload.get("layerIdx", -1))
+    payload = request.get_json(force=True)
+    run_id = payload["runId"]
+    sentence = payload["sentence"]
+    layer = int(payload.get("layerIdx", -1))
 
     # Path of the already-uploaded artefact
     img_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
@@ -281,6 +297,7 @@ def heatmap():
         return jsonify({"dataUrl": data_url})
     except Exception as exc:
         return jsonify({"error": str(exc)}), 500
+
 
 # --------------------------------------------------------------------------- #
 if __name__ == "__main__":  # invoked via  python -m …
