@@ -197,6 +197,146 @@
     </div>
   </div>
 </div>
+
+<!-- About Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-durham text-white">
+        <h4 class="modal-title" id="aboutModalLabel">
+          <i class="bi bi-info-circle me-2"></i>About ArteFact
+        </h4>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Purpose -->
+        <section class="mb-4">
+          <h5 class="text-primary mb-3"><i class="bi bi-magic me-2"></i>Purpose</h5>
+          <p class="lead">By automatically linking visual elements in artworks to scholarly descriptions, ArteFact's ambition is to empower researchers, students, and art enthusiasts to discover new connections and understand artworks in their broader academic context.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-upload text-success me-2"></i><strong>Upload or select artwork images</strong> and find scholarly passages that describe similar visual elements</li>
+            <li class="mb-2"><i class="bi bi-search text-info me-2"></i><strong>Search by region</strong> - crop specific areas of paintings to find text about those visual details</li>
+            <li class="mb-2"><i class="bi bi-filter text-warning me-2"></i><strong>Filter results</strong> by art historical topics or specific creators</li>
+            <li class="mb-2"><i class="bi bi-book text-primary me-2"></i><strong>Access scholarly sources</strong> with full citations, DOI links, and BibTeX references</li>
+          </ul>
+        </section>
+
+        <!-- What powers the app -->
+        <section class="mb-4">
+          <h5 class="text-primary mb-3"><i class="bi bi-cpu me-2"></i>What Powers ArteFact?</h5>
+          <p><strong>ArtContext Research Pipeline:</strong> A computational system that automatically harvests and processes thousands of art history texts.</p>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card border-light h-100">
+                <div class="card-body p-3">
+                  <h6 class="card-title text-info">Data Collection</h6>
+                  <small>Automatically gathers painter information from Wikidata and scholarly articles from OpenAlex database</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-light h-100">
+                <div class="card-body p-3">
+                  <h6 class="card-title text-success">Text Processing</h6>
+                  <small>Downloads academic PDFs, converts to text, and extracts meaningful sentences</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-light h-100">
+                <div class="card-body p-3">
+                  <h6 class="card-title text-warning">AI Analysis</h6>
+                  <small>Uses PaintingCLIP (a specialised art-focused AI model) to understand visual-textual connections</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-light h-100">
+                <div class="card-body p-3">
+                  <h6 class="card-title text-danger">Smart Matching</h6>
+                  <small>Tries to find the most relevant scholarly passages for any artwork image you provide</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- App features -->
+        <section class="mb-4">
+          <h5 class="text-primary mb-3"><i class="bi bi-gear me-2"></i>App Features</h5>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <h6 class="text-secondary"><i class="bi bi-images me-1"></i>Image Input</h6>
+              <ul class="small">
+                <li>Drag & drop upload</li>
+                <li>Choose from historical examples</li>
+                <li>Crop and edit images</li>
+                <li>Image history tracking</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-secondary"><i class="bi bi-grid-3x3 me-1"></i>Region Analysis</h6>
+              <ul class="small">
+                <li>7×7 grid overlay</li>
+                <li>Click-to-analyze specific areas</li>
+                <li>Visual feedback highlighting</li>
+                <li>Region-specific text retrieval</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-secondary"><i class="bi bi-funnel me-1"></i>Smart Filtering</h6>
+              <ul class="small">
+                <li>Topic-based filtering</li>
+                <li>Creator/artist selection</li>
+                <li>Model switching (CLIP vs PaintingCLIP)</li>
+                <li>Real-time result updating</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h6 class="text-secondary"><i class="bi bi-journal-text me-1"></i>Academic Tools</h6>
+              <ul class="small">
+                <li>Full citation information</li>
+                <li>Work image gallery</li>
+                <li>One-click BibTeX copying</li>
+                <li>DOI links to sources</li>
+                <li>Embedded document previews</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- About production -->
+        <section class="mb-4">
+          <h5 class="text-primary mb-3"><i class="bi bi-people me-2"></i>About This Project</h5>
+          <div class="bg-light p-3 rounded">
+            <p class="mb-2"><strong>Created by:</strong> <a href="https://www.linkedin.com/in/samuel-waugh-31903b1bb/" target="_blank">Samuel Waugh</a></p>
+            <p class="mb-2"><strong>Supervised by:</strong> <a href="https://stuart-james.com" target="_blank">Dr Stuart James</a>, Department of Computer Science, Durham University</p>
+            <p class="mb-2"><strong>Supported by:</strong> <a href="https://n8cir.org.uk/themes/internships/internships-2025/" target="_blank">N8 Centre of Excellence in Computationally Intensive Research (N8 CIR)</a></p>
+            <p class="mb-3"><strong>Purpose:</strong> This project was developed as part of the N8 CIR 2025 Internship programme to explore how AI can help bridge the gap between visual art and textual scholarship, making art historical research more accessible and discoverable.</p>
+            
+            <div class="alert alert-info mb-0">
+              <small><i class="bi bi-lightbulb me-1"></i><strong>Why it matters:</strong> By automatically linking visual elements in artworks to scholarly descriptions, ArteFact's ambition is to empower researchers, students, and art enthusiasts to discover new connections and understand artworks in their broader academic context.</small>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical note -->
+        <section>
+          <h6 class="text-muted mb-2"><i class="bi bi-code-square me-1"></i>Technical Details</h6>
+          <p class="small text-muted">ArteFact uses PaintingCLIP, a fine-tuned version of OpenAI's CLIP model specialised for art historical content. The system processes over thousands of scholarly articles to create a comprehensive knowledge base of art historical descriptions.</p>
+        </section>
+
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/sammwaughh/artefact-context" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="bi bi-github me-1"></i>View Source Code
+        </a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   <footer class="footer bg-durham text-white py-3 mt-4">
     <div class="container-lg d-flex flex-column flex-md-row
                 justify-content-between align-items-center gap-2">

@@ -421,6 +421,12 @@ $(document).ready(function () {
 
   // make sure main column spans full width on initial landing screen
   adjustMainWidth();
+
+  // About modal trigger
+  $('.nav-link[href="#"]:contains("About")').on('click', function(e) {
+    e.preventDefault();
+    $('#aboutModal').modal('show');
+  });
 });   // ← existing closing bracket of document-ready
 
 /**

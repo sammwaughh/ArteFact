@@ -150,3 +150,26 @@ body{ overflow-x:hidden; }
 .bg-durham{ background:#010e1d !important; }
 .footer a{ color:#fff; text-decoration:underline; }
 .footer a:hover{ color:#adb5bd; }
+
+/* About modal custom styling */
+#aboutModal .modal-header {
+  border-bottom: 2px solid #dee2e6;
+}
+
+#aboutModal .card {
+  transition: transform 0.2s ease;
+}
+
+#aboutModal .card:hover {
+  transform: translateY(-2px);
+}
+
+#aboutModal section {
+  border-bottom: 1px solid #f8f9fa;
+  padding-bottom: 1rem;
+}
+
+#aboutModal section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
