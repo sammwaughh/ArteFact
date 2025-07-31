@@ -23,3 +23,23 @@
   margin-bottom: 0.3em;
   /* Add some spacing between tags */
 }
+
+/* --- BibTeX panel: eggshell background, black text --- */
+#bibtexContent {
+  background:#fdfde7 !important;   /* eggshell */
+  color:#000 !important;
+}
+
+/* --- 2-row image gallery ----------------------------------------------- */
+#galleryScroller{
+  display:grid;                     /* grid instead of flex  */
+  grid-template-columns:repeat(auto-fill,120px);
+  grid-auto-rows:120px;             /* second row appears automatically */
+  gap:.5rem;
+  overflow-y:auto;                  /* keep horizontal + vertical scroll */
+}
+#galleryScroller img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+}

@@ -775,9 +775,10 @@ $('#rerunToolBtn').on('click', function () {
  */
 function lookupDOI(work_id) {
   fetch(`${API_BASE_URL}/work/${encodeURIComponent(work_id)}`)
-    .then(response => response.json())
+    .then(res => res.json())
     .then(data => {
-      showWorkDetails(data);
+      data.Work_ID = work_id;          // +ADD
+      showWorkDetails(data);           // unchanged call
     })
     .catch(error => {
       console.error("DOI Lookup error:", error);
@@ -795,24 +796,31 @@ function showWorkDetails(workData) {
 
   const details = workData;
   const banner = $(`
-    <div id="workDetailsBanner" class="position-fixed top-0 start-0 w-100 bg-info text-white p-3 border-bottom border-dark" style="z-index: 2000;">
+    <div id="workDetailsBanner" class="position-fixed top-0 start-0 w-100 bg-white text-dark p-3 border-bottom border-primary" style="z-index: 2000;">
       <div class="d-flex justify-content-between align-items-start">
         <div class="w-100">
           <h5 class="mb-2">${details.Work_Title || 'Unknown Title'}</h5>
           <p class="mb-1"><strong>Author:</strong> ${details.Author_Name || 'Unknown Author'}</p>
           <p class="mb-1"><strong>Year:</strong> ${details.Year || 'Unknown'}</p>
-          <p class="mb-1"><strong>DOI:</strong> <a href="${details.DOI}" target="_blank" class="text-white text-decoration-underline">${details.DOI}</a></p>
-          <p class="mb-1"><strong>Link:</strong> <a href="${details.Link}" target="_blank" class="text-white text-decoration-underline">${details.Link}</a></p>
+
+          <!-- Image gallery (now immediately under Year) -->
+          <div id="galleryWrapper" class="mb-2">
+            <div class="fw-bold">Images in this work</div>
+            <div id="galleryScroller" class="mt-1"></div>
+          </div>
+          
+          <p class="mb-1"><strong>DOI:</strong> <a href="${details.DOI}" target="_blank" class="text-decoration-underline text-primary">${details.DOI}</a></p>
+          <p class="mb-1"><strong>Link:</strong> <a href="${details.Link}" target="_blank" class="text-primary text-decoration-underline">${details.Link}</a></p>
           
           <details class="mt-2">
-            <summary class="cursor-pointer text-white">BibTeX Citation</summary>
+            <summary class="cursor-pointer text-dark">BibTeX Citation</summary>
             <div class="position-relative">
-              <button class="btn btn-sm btn-outline-light position-absolute top-0 end-0 mt-2 me-2" 
+              <button class="btn btn-sm btn-outline-secondary position-absolute top-0 end-0 mt-2 me-2" 
                       onclick="copyBibTeX()" 
                       title="Copy to clipboard">
                 <i class="bi bi-clipboard"></i>
               </button>
-              <pre id="bibtexContent" class="bg-dark p-2 mt-1 rounded text-light" style="white-space: pre-wrap; word-break: break-word; font-size: 0.875rem; padding-right: 3rem;">
+              <pre id="bibtexContent" class="p-2 mt-1 rounded" style="white-space: pre-wrap; word-break: break-word; font-size: 0.875rem; padding-right: 3rem;">
 ${details.BibTeX || 'Citation not available'}
               </pre>
             </div>
@@ -820,13 +828,34 @@ ${details.BibTeX || 'Citation not available'}
           
           <iframe src="${details.DOI}" style="width: 100%; height: 50vh; border: none;" class="mt-3"></iframe>
         </div>
-        <button class="btn btn-sm btn-outline-light ms-3" onclick="$('#workDetailsBanner').remove()">
+        <button class="btn btn-sm btn-outline-secondary ms-3" onclick="$('#workDetailsBanner').remove()">
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
     </div>
   `);
   $('body').append(banner);
+
+  if (details.Work_ID) {
+  fetch(`${API_BASE_URL}/images/${details.Work_ID}`)
+    .then(r => r.json())
+    .then(urls => {
+      if (urls.length === 0) {
+        $('#galleryWrapper').hide();
+        return;
+      }
+      const scroller = $('#galleryScroller');
+      urls.forEach(u => {
+        const thumb = $('<img>')
+          .attr('src', u)
+          .addClass('img-thumbnail')
+          .css({height: '120px', cursor: 'pointer'});
+        thumb.on('click', () => window.open(u, '_blank'));
+        scroller.append(thumb);
+      });
+    })
+    .catch(console.error);
+  }
 }
 
 // Add this helper function for copying BibTeX

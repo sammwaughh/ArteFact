@@ -22,6 +22,7 @@ import json
 import random
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor
+from mimetypes import guess_type
 
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
@@ -299,6 +300,37 @@ def heatmap():
         return jsonify({"error": str(exc)}), 500
 
 
+# --------------------------------------------------------------------------- #
+#  NEW:  marker-output image helpers                                          #
+# --------------------------------------------------------------------------- #
+@app.route("/images/<work_id>", methods=["GET"])
+def list_work_images(work_id: str):
+    """
+    Return absolute URLs for all JPEG / PNG images that belong to <work_id>.
+    """
+    img_dir = os.path.join(BASE_DIR, "data", "marker_output", work_id)
+    if not os.path.isdir(img_dir):
+        return jsonify([])
+
+    files = sorted(
+        f for f in os.listdir(img_dir)
+        if f.lower().endswith((".jpg", ".jpeg", ".png"))
+    )
+    host = request.host_url.rstrip("/")          # e.g. http://127.0.0.1:8000
+    urls = [f"{host}/marker/{work_id}/{fname}" for fname in files]
+    return jsonify(urls)
+
+
+@app.route("/marker/<work_id>/<path:filename>", methods=["GET"])
+def serve_marker_image(work_id: str, filename: str):
+    """
+    Static file server for data/marker_output/<work_id>/<filename>
+    """
+    img_dir = os.path.join(BASE_DIR, "data", "marker_output", work_id)
+    mime, _ = guess_type(filename)
+    if not os.path.exists(os.path.join(img_dir, filename)):
+        return jsonify({"error": "not-found"}), 404
+    return send_from_directory(img_dir, filename, mimetype=mime)
 # --------------------------------------------------------------------------- #
 if __name__ == "__main__":  # invoked via  python -m …
     app.run(host="0.0.0.0", port=8000, debug=True)
