@@ -414,11 +414,6 @@ $(document).ready(function () {
     }
   });
 
-  // Toggle debug panel visibility
-  $('#debugPanelToggle button').on('click', function () {
-    $('#debugPanel').toggle();
-  });
-
   // make sure main column spans full width on initial landing screen
   adjustMainWidth();
 
