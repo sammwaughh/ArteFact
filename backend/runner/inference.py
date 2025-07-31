@@ -186,7 +186,11 @@ def _initialize_pipeline():
         model = base_model
 
     # Move model to device and set to evaluation mode
-    model = model.to(device).eval()
+    # Move model to device only if we are not already on CPU.
+    # Avoid meta-tensor copy error on PyTorch 2.x when staying on CPU.
+    if device.type != "cpu":
+        model = model.to(device)
+    model = model.eval()
 
     # Load pre-computed embeddings
     embeddings, sentence_ids = _load_embeddings(config["embeddings_dir"])
