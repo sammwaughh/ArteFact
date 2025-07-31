@@ -34,7 +34,7 @@ warnings.filterwarnings("ignore", message=".*scaled_dot_product_attention.*")
 IMAGE_PATH = "Test-Images/kiss_of_judas.jpg"
 # SENTENCE = "Judas is kissing Jesus in the centre of the painting"
 SENTENCE = "Fiery red torches are held in the sky"
-OUTPUT_PATH = "Test-Images/grad_eclip_output6.png"
+OUTPUT_PATH = "test-outputs/grad_eclip_output6.png"
 
 # Model configuration
 MODEL_NAME = "openai/clip-vit-base-patch32"

@@ -42,8 +42,8 @@ executor = ThreadPoolExecutor(max_workers=4)
 
 # Get the base directory for file storage (project root)
 BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-ARTIFACTS_DIR = os.path.join(BASE_DIR, "artifacts")
-OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+ARTIFACTS_DIR = os.path.join(BASE_DIR, "data/artifacts")
+OUTPUTS_DIR = os.path.join(BASE_DIR, "data/outputs")
 
 
 # --------------------------------------------------------------------------- #

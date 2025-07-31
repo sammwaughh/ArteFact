@@ -20,10 +20,10 @@ from pathlib import Path
 from typing import List, Dict, Any
 import json
 
-# Add parent directory to path for imports
-sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+# Add parent directory to path for imports (backend/)
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
-from hc_services.runner.inference import run_inference
+from runner.inference import run_inference
 
 
 def print_results(results: List[Dict[str, Any]], title: str, max_display: int = 5):
@@ -58,8 +58,9 @@ def test_grid_visualization(grid_size=(7, 7)):
 def main():
     """Run comprehensive patch inference tests."""
 
-    # Configuration
-    IMAGE_PATH = "Test-Images/kiss_of_judas.jpg"  # Change this to your test image
+    # Configuration - Updated to use new directory structure
+    project_root = Path(__file__).resolve().parent.parent.parent
+    IMAGE_PATH = str(project_root / "frontend" / "images" / "examples" / "Giotto_-_Scrovegni_-_-31-_-_Kiss_of_Judas.jpg")
     GRID_SIZE = (7, 7)  # 7x7 grid matches ViT-B/32 patch grid
     TOP_K = 10  # Number of results to return
 
@@ -73,7 +74,6 @@ def main():
     if not Path(IMAGE_PATH).exists():
         print(f"\nError: Image not found at {IMAGE_PATH}")
         print("Please update IMAGE_PATH to point to a valid test image.")
-        return
 
     # Test 1: Whole-image inference (baseline)
     print("\n\nTest 1: Whole-Image Inference")
@@ -211,7 +211,11 @@ def main():
             },
         }
 
-        output_path = Path("patch_inference_test_results.json")
+        # Save to data/outputs directory
+        outputs_dir = project_root / "runner" / "tests" / "test-outputs"
+        outputs_dir.mkdir(exist_ok=True)
+        output_path = outputs_dir / "patch_inference_test_results.json"
+        
         with open(output_path, "w") as f:
             json.dump(results_data, f, indent=2)
         print(f"\nResults saved to: {output_path}")

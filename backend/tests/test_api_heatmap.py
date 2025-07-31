@@ -22,8 +22,8 @@ if response.status_code == 200:
 
     # Decode and save
     image_data = base64.b64decode(base64_data)
-    Path("Test-Images/api_heatmap_test6.png").write_bytes(image_data)
-    print("✓ Heatmap saved to Test-Images/api_heatmap_test6.png")
+    Path("test-outputs/api_heatmap_test.png").write_bytes(image_data)
+    print("✓ Heatmap saved to test-outputs/api_heatmap_test.png")
 else:
     print(f"✗ Error: {response.status_code}")
     print(response.json())

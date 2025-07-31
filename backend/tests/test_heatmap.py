@@ -56,10 +56,10 @@ from typing import Optional
 
 import cv2
 
-# Add parent directory to path for imports
-sys.path.append(str(Path(__file__).resolve().parent.parent.parent))
+# Add parent directory to path for imports (backend/)
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
-from hc_services.runner.inference import compute_heatmap
+from runner.inference import compute_heatmap
 
 
 # Colormap name to OpenCV constant mapping
@@ -78,7 +78,7 @@ def resolve_image_path(run_id: Optional[str], image_path: Optional[str]) -> Path
     Resolve the image path from either a run ID or direct path.
 
     Args:
-        run_id: Optional run ID that maps to artifacts/<id>.jpg
+        run_id: Optional run ID that maps to data/artifacts/<id>.jpg
         image_path: Optional direct path to image
 
     Returns:
@@ -88,8 +88,8 @@ def resolve_image_path(run_id: Optional[str], image_path: Optional[str]) -> Path
         FileNotFoundError: If the resolved path doesn't exist
     """
     if run_id:
-        # Get artifacts directory relative to this script
-        artifacts_dir = Path(__file__).resolve().parent / "artifacts"
+        # Get artifacts directory - go up to project root then into data/artifacts
+        artifacts_dir = Path(__file__).resolve().parent.parent.parent / "data" / "artifacts"
         resolved_path = artifacts_dir / f"{run_id}.jpg"
     else:
         resolved_path = Path(image_path).expanduser().resolve()
@@ -134,7 +134,7 @@ def main() -> None:
     image_group = parser.add_mutually_exclusive_group(required=True)
     image_group.add_argument(
         "--run-id",
-        help="Run ID from previous /presign call (looks in artifacts/<id>.jpg)",
+        help="Run ID from previous /presign call (looks in data/artifacts/<id>.jpg)",
     )
     image_group.add_argument("--image-path", help="Direct path to an RGB image file")
 
