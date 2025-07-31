@@ -599,21 +599,17 @@ function display_sentences(data) {
   $('.col-md-3').removeClass('d-none');
    $('#sentenceList').empty();
 
-  data.forEach((item, index) => {
-    const sentenceItem = $(`
-      <li class="list-group-item">
-        <div class="d-flex">
-          <div class="flex-grow-1">
-            <p class="mb-1">${escapeHTML(item["english_original"])}
-            <button class="btn btn-sm btn-outline-primary" onclick="lookupDOI('${item["work"]}')" title="Look Up DOI">
-              <i class="bi bi-search"></i>
-            </button>
-            </p>
-          </div>
-        </div>
+  data.forEach(item => {
+    const li = $(`
+      <li class="list-group-item sentence-item mb-1" data-work="${item["work"]}">
+        ${escapeHTML(item["english_original"])}
       </li>
     `);
-    $('#sentenceList').append(sentenceItem);
+    // click opens work-details
+    li.on('click', function () {
+      lookupDOI($(this).data('work'));
+    });
+    $('#sentenceList').append(li);
   });
 }
 

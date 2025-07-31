@@ -43,3 +43,21 @@
   height:120px;
   object-fit:cover;
 }
+
+/* enlarge the image-tool buttons (≈ 2 × current size) */
+#imageTools .btn {
+  width: 56px;            /* twice previous 28 px */
+  height: 56px;
+  font-size: 1.5rem;      /* icons scale up */
+  padding: 0;
+}
+
+/* ── Sentence list interactivity ─────────────────────────────────────────── */
+#sentenceList .sentence-item {
+  cursor: pointer;
+  border: 1px solid transparent;   /* make a full-box border we can tint */
+  transition: border-color .15s ease;
+}
+#sentenceList .sentence-item:hover {
+  border-color:#0d6efd !important; /* Bootstrap primary blue on all sides */
+}
