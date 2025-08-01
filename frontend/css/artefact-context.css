@@ -74,6 +74,39 @@
   border-color:#0d6efd !important; /* Bootstrap primary blue on all sides */
 }
 
+/* ── Heatmap button styling ──────────────────────────────────────────────── */
+.heatmap-btn {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heatmap-btn i {
+  font-size: 0.875rem;
+}
+
+/* Sentence text should still be clickable */
+.sentence-item span {
+  cursor: pointer;
+}
+
+/* Heatmap overlay image styling */
+.heatmap-image {
+  pointer-events: none;  /* Allow click-through to close button */
+}
+
+#closeHeatmapBtn {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+#closeHeatmapBtn:hover {
+  opacity: 1;
+}
+
 /* ---------- Home palette ------------------------------------------------- */
 .card:has(#uploadTrigger),
 #exampleContainer                    { background:#fff!important; color:#000!important; }

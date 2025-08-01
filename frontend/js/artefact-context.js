@@ -135,6 +135,7 @@ $(document).ready(function () {
     $('#workDetailsBanner').remove();
     $('#gridOverlay').hide().html('');
     $('#gridHighlightOverlay').hide();
+    $('#heatmapOverlay').remove();
     
     // Hide panels
     $('.col-md-3').addClass('d-none');
@@ -622,12 +623,23 @@ function display_sentences(data) {
       <li class="list-group-item sentence-item mb-1"
           data-work="${item.work}"
           data-sentence="${escapeHTML(item.english_original)}">
-        ${escapeHTML(item.english_original)}
+        <div class="d-flex align-items-center">
+          <span class="flex-grow-1">${escapeHTML(item.english_original)}</span>
+          <button class="btn btn-sm btn-outline-dark ms-2 heatmap-btn"
+                  title="View heatmap"
+                  data-sentence="${escapeHTML(item.english_original)}">
+            <i class="bi bi-thermometer-half"></i>
+          </button>
+        </div>
       </li>
     `);
-    li.on('click', function () {
+    li.find('span').on('click', function () {
       lookupDOI($(this).data('work'),
-                $(this).data('sentence'));
+                li.data('sentence'));
+    });
+    li.find('.heatmap-btn').on('click', function(e) {
+      e.stopPropagation();
+      requestHeatmap($(this).data('sentence'));
     });
     $('#sentenceList').append(li);
   });
@@ -1202,3 +1214,158 @@ function loadImageAndRun(imgSrc) {
   // make sure we fetch a presign only after the image data is ready
   $img.one('load', () => fetchPresign());
 }
+
+// ============================================================================
+// Heatmap functionality
+// ============================================================================
+
+/**
+ * Request heatmap generation for a sentence and display overlay
+ * @param {string} sentence - The sentence text to visualize
+ */
+function requestHeatmap(sentence) {
+  if (!runId) {
+    console.error('No active run for heatmap generation');
+    return;
+  }
+
+  // Warn if sentence is very long (might be truncated)
+  if (sentence.length > 300) {
+    console.warn('Long sentence will be truncated for heatmap generation');
+  }
+
+  // Show loading indicator
+  showHeatmapLoading();
+
+  fetch(`${API_BASE_URL}/heatmap`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      runId: runId,
+      sentence: sentence,
+      layerIdx: -1  // Use last layer by default
+    })
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (data.dataUrl) {
+        displayHeatmapOverlay(data.dataUrl);
+      } else {
+        console.error('No heatmap data received');
+        hideHeatmapOverlay();
+      }
+    })
+    .catch(err => {
+      console.error('Heatmap generation error:', err);
+      hideHeatmapOverlay();
+    });
+}
+
+/**
+ * Display heatmap overlay on top of current image
+ * @param {string} dataUrl - Base64 encoded image data URL
+ */
+function displayHeatmapOverlay(dataUrl) {
+  // Remove any existing heatmap overlay
+  $('#heatmapOverlay').remove();
+  
+  const container = $('#uploadedImageContainer');
+  const img = $('#uploadedImage');
+  
+  // Create heatmap overlay matching image position
+  const heatmapOverlay = $(`
+    <div id="heatmapOverlay" class="position-absolute" style="z-index: 20;">
+      <img src="${dataUrl}" 
+           style="width: 100%; height: 100%; object-fit: contain;"
+           class="heatmap-image" />
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+              id="closeHeatmapBtn"
+              title="Close heatmap">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+  `);
+  
+  // Position overlay to match visible image
+  const containerRect = container[0].getBoundingClientRect();
+  const imageRect = img[0].getBoundingClientRect();
+  
+  heatmapOverlay.css({
+    left: imageRect.left - containerRect.left,
+    top: imageRect.top - containerRect.top,
+    width: imageRect.width,
+    height: imageRect.height
+  });
+  
+  container.append(heatmapOverlay);
+  
+  // Close handlers
+  $('#closeHeatmapBtn, #heatmapOverlay').on('click', function(e) {
+    if (e.target === this || $(e.target).closest('#closeHeatmapBtn').length) {
+      hideHeatmapOverlay();
+    }
+  });
+}
+
+/**
+ * Show loading indicator while heatmap is being generated
+ */
+function showHeatmapLoading() {
+  $('#heatmapOverlay').remove();
+  
+  const container = $('#uploadedImageContainer');
+  const img = $('#uploadedImage');
+  
+  const loadingOverlay = $(`
+    <div id="heatmapOverlay" class="position-absolute d-flex align-items-center justify-content-center"
+         style="z-index: 20; background: rgba(0, 0, 0, 0.5);">
+      <div class="text-white text-center">
+        <i class="bi bi-arrow-repeat spin" style="font-size: 2rem;"></i>
+        <p class="mt-2">Generating heatmap...</p>
+      </div>
+    </div>
+  `);
+  
+  // Position to match image
+  const containerRect = container[0].getBoundingClientRect();
+  const imageRect = img[0].getBoundingClientRect();
+  
+  loadingOverlay.css({
+    left: imageRect.left - containerRect.left,
+    top: imageRect.top - containerRect.top,
+    width: imageRect.width,
+    height: imageRect.height
+  });
+  
+  container.append(loadingOverlay);
+}
+
+/**
+ * Remove heatmap overlay
+ */
+function hideHeatmapOverlay() {
+  $('#heatmapOverlay').fadeOut(200, function() {
+    $(this).remove();
+  });
+}
+
+// Update heatmap position when window resizes
+$(window).on('resize', function() {
+  const heatmapOverlay = $('#heatmapOverlay');
+  if (heatmapOverlay.length && !heatmapOverlay.find('.spin').length) {
+    // Reposition existing heatmap
+    const container = $('#uploadedImageContainer');
+    const img = $('#uploadedImage');
+    const containerRect = container[0].getBoundingClientRect();
+    const imageRect = img[0].getBoundingClientRect();
+    
+    heatmapOverlay.css({
+      left: imageRect.left - containerRect.left,
+      top: imageRect.top - containerRect.top,
+      width: imageRect.width,
+      height: imageRect.height
+    });
+  }
+});

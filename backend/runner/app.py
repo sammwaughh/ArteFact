@@ -338,6 +338,12 @@ def heatmap():
     sentence = payload["sentence"]
     layer = int(payload.get("layerIdx", -1))
 
+    # Truncate sentence if it's too long for CLIP (max 77 tokens)
+    # A rough estimate is ~4 characters per token, so limit to ~300 chars to be safe
+    MAX_SENTENCE_LENGTH = 300
+    if len(sentence) > MAX_SENTENCE_LENGTH:
+        sentence = sentence[:MAX_SENTENCE_LENGTH-3] + "..."
+
     # Path of the already-uploaded artefact
     img_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
     if not os.path.exists(img_path):
@@ -347,6 +353,7 @@ def heatmap():
         data_url = compute_heatmap(img_path, sentence, layer_idx=layer)
         return jsonify({"dataUrl": data_url})
     except Exception as exc:
+        print(f"Heatmap generation error: {exc}")
         return jsonify({"error": str(exc)}), 500
 
 
