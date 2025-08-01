@@ -91,13 +91,13 @@ def presign_upload():
         "upload": { "url": "...", "fields": { } }
     }
     """
-    data = request.get_json(force=True)
     run_id = uuid.uuid4().hex
     # We'll use a local file path as the "imageKey"
     image_key = f"artifacts/{run_id}.jpg"
     # Local upload endpoint URL (where the front-end will POST the file)
     upload_url = request.host_url + f"upload/{run_id}"
-    # Return the run info and upload instructions (fields remain empty for compatibility)
+    # Return the run info and upload instructions 
+    # (fields remain empty for compatibility)
     response = jsonify(
         {
             "runId": run_id,
@@ -134,7 +134,12 @@ def upload_file(run_id: str):
 @app.route("/runs", methods=["POST"])
 def create_run():
     """
-    Body: { "runId": "...", "imageKey": "artifacts/...jpg", "topics": [...], "creators": [...], "model": "..." }
+    Body: { 
+    "runId": "...", 
+    "imageKey": "artifacts/...jpg", 
+    "topics": [...], 
+    "creators": [...], 
+    "model": "..." }
     - Save initial run status in memory
     - Launch background thread for processing
     """

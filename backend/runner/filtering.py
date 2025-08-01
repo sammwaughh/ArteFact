@@ -32,7 +32,7 @@ def get_filtered_sentence_ids(
     Get the set of sentence IDs that match the given filters.
 
     Args:
-        filter_topics: List of topic codes to filter by (e.g., ["C2778983918", "C520712124"])
+        filter_topics: List of topic codes to filter by (e.g., ["C2778983918", ...])
         filter_creators: List of creator names to filter by
 
     Returns:
