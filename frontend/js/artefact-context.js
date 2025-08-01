@@ -346,7 +346,7 @@ $(document).ready(function () {
     if (file) {
       const reader = new FileReader();
       reader.onload = function (e) {
-        saveCurrentImageToHistory(); // Save current image before loading new one
+        // REMOVED: saveCurrentImageToHistory(); // Save current image before loading new one
         $('#uploadedImage').attr('src', e.target.result).removeClass('d-none');
         $('#uploadTrigger').addClass('d-none');
         $('.card:has(#uploadTrigger)').addClass('d-none');
@@ -380,7 +380,7 @@ $(document).ready(function () {
     if (file && file.type.startsWith('image/')) {
       const reader = new FileReader();
       reader.onload = function (e) {
-        saveCurrentImageToHistory(); // Save current image before loading new one
+        // REMOVED: saveCurrentImageToHistory(); // Save current image before loading new one
         $('#uploadedImage').attr('src', e.target.result).removeClass('d-none');
         $('#uploadTrigger').addClass('d-none');
         $('#workingOverlay').removeClass('d-none');
@@ -403,7 +403,7 @@ $(document).ready(function () {
   // Handle selection of an example image
   $('#selectImageBtn').on('click', function () {
     if (selectedSrc) {
-      saveCurrentImageToHistory(); // Save current image before loading new one
+      // REMOVED: saveCurrentImageToHistory(); // Save current image before loading new one
       $('#uploadedImage').attr('src', selectedSrc).removeClass('d-none');
       $('#uploadTrigger').addClass('d-none');
       $('.card:has(#uploadTrigger)').addClass('d-none');
@@ -431,6 +431,9 @@ $(document).ready(function () {
 function fetchPresign() {
   $('#debugStatus').text('Requesting ID...');
   logWorkingMessage('Requesting Session ID...', 'text-white');
+
+  // Save the current image to history immediately when backend processing starts
+  saveCurrentImageToHistory();
 
   fetch(`${API_BASE_URL}/presign`, {
     method: 'POST',
@@ -772,8 +775,8 @@ $('#uploadedImageContainer').on('mouseup', function (e) {
     return;
   }
 
-  // Save current image to history using the new helper
-  saveCurrentImageToHistory();
+  // REMOVED: Save current image to history using the new helper
+  // REMOVED: saveCurrentImageToHistory();
 
   // Draw the cropped region onto a canvas and update the image
   const canvas = document.createElement('canvas');
@@ -813,10 +816,10 @@ $('#imageHistory').on('click', 'img', function () {
   const currentImg = $('#uploadedImage')[0];
   const newSrc = $(this).attr('src');
   
-  // Only save to history if it's a different image
-  if (currentImg.src && currentImg.src !== newSrc) {
-    saveCurrentImageToHistory();
-  }
+  // REMOVED: Only save to history if it's a different image
+  // REMOVED: if (currentImg.src && currentImg.src !== newSrc) {
+  // REMOVED:   saveCurrentImageToHistory();
+  // REMOVED: }
 
   // Update to the selected history image
   $('#uploadedImage').attr('src', newSrc).removeClass('d-none');
@@ -1226,8 +1229,8 @@ function loadImageAndRun(imgSrc) {
   // close the modal/backdrop if still open
   $('#workOverlayBackdrop, #workDetailsModal').remove();
 
-  // Save current image to history before loading new one
-  saveCurrentImageToHistory();
+  // REMOVED: Save current image to history before loading new one
+  // REMOVED: saveCurrentImageToHistory();
 
   // show the chosen artwork in the main image slot
   const $img = $('#uploadedImage')
