@@ -634,8 +634,7 @@ function display_sentences(data) {
       </li>
     `);
     li.find('span').on('click', function () {
-      lookupDOI($(this).data('work'),
-                li.data('sentence'));
+      lookupDOI(li.data('work'), li.data('sentence'));
     });
     li.find('.heatmap-btn').on('click', function(e) {
       e.stopPropagation();
