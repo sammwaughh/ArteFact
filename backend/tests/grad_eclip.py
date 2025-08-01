@@ -14,7 +14,6 @@ Based on: "Gradient-based Visual Explanation for Transformer-based CLIP"
 by Zhao et al. (ICML 2024)
 """
 
-import json  # Add this for pretty printing
 import warnings
 from typing import Dict, Tuple
 
@@ -267,7 +266,7 @@ class GradECLIP:
         Returns:
             Saliency map as 2D numpy array
         """
-        self.debug_print(f"=== Starting compute_gradeclip_map ===")
+        self.debug_print("=== Starting compute_gradeclip_map ===")
         self.debug_print(f"Image: {image_path}")
         self.debug_print(f"Text: '{text}'")
         self.debug_print(
@@ -503,7 +502,7 @@ def main():
     print(f"✓ Saved to: {OUTPUT_PATH}")
 
     # Print statistics
-    print(f"\nSaliency map statistics:")
+    print("\nSaliency map statistics:")
     print(f"  Shape: {saliency.shape}")
 
     # Raw values with scientific notation if needed
@@ -517,7 +516,7 @@ def main():
     saliency_norm = saliency - min_val
     if max_val > min_val:
         saliency_norm = saliency_norm / (max_val - min_val)
-    print(f"  Normalized range: [0.0000, 1.0000]")
+    print("  Normalized range: [0.0000, 1.0000]")
 
     # Distribution statistics
     print(f"  Mean: {saliency.mean():.2e}")

@@ -187,7 +187,7 @@ def main() -> None:
             print(f"[DEBUG] Colormap: {args.colormap}")
 
         # Print info
-        print(f"[INFO] Computing heatmap for:")
+        print("[INFO] Computing heatmap for:")
         print(f"       Image:    {image_path}")
         print(f"       Sentence: '{args.sentence}'")
         print(f"       Output:   {args.out}")
