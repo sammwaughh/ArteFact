@@ -339,42 +339,20 @@ body {
   margin-top: auto;
 }
 
-/* ── keep the image column flush to the top ─────────────────────────────── */
-.col-md-9.d-flex{
-  align-items:flex-start !important;          /* stop centring whole column  */
+/* ── main painting + sentences row ───────────────────────────────────────── */
+.main-row{
+  height: calc(100vh - 220px);   /* navbar + bottom cards margin */
+  min-height: 420px;             /* don't shrink too small        */
 }
 
-/* ── and also top-align the painting inside the grey rectangle ──────────── */
-#uploadedImageContainer:has(#uploadedImage:not(.d-none)){
-  align-items:flex-start !important;          /* stop centring inside box    */
-  padding-top:1rem;                           /* small gap under the navbar  */
+/* image column : fill row height */
+.main-row .col-md-9 > #uploadedImageContainer{
+  height:100% !important;
 }
 
-/* ── shrink the grey “painting” box ─────────────────────────────────────── */
-#uploadedImageContainer{
-  height:auto !important;                 /* no more 100 % height           */
-}
-
-/* ── make the painting fill the card ─────────────────────────────────────── */
+/* picture fits inside its box */
 #uploadedImage{
-  position:static !important;   /* was absolute → causes 0-height parent   */
-  display:block;
-  width:100%;
-  height:auto;
-  max-width:100%;
-  max-height:calc(100vh - 8rem);/* keep it inside viewport under navbar    */
-  object-fit:contain;           /* preserve aspect ratio                   */
-}
-
-/* ── make image card + sentence panel share the same height ─────────────── */
-.container-fluid > .row:first-child{
-  align-items:stretch !important;     /* columns grow to equal height   */
-}
-
-.row > .col-md-3.bg-light{
-  display:flex !important;            /* let inner content scroll       */
-  flex-direction:column;
-  height:100% !important;             /* equal the row (image) height   */
   max-height:100% !important;
-  overflow-y:auto;                    /* internal scroll when needed    */
+  max-width:100%;
+  object-fit:contain;
 }
