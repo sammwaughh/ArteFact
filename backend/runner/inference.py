@@ -186,21 +186,15 @@ def _initialize_pipeline():
         model = base_model
 
     # Move model to device and set to evaluation mode
-    # Move model to device only if we are not already on CPU.
-    # Avoid meta-tensor copy error on PyTorch 2.x when staying on CPU.
-    if device.type != "cpu":
-        # If the model was sharded/off-loaded with Accelerate it may contain
-        # meta tensors.  A blanket `.to(device)` then raises
-        #   NotImplementedError: Cannot copy out of meta tensor
-        # Only move the model when all parameters already hold real data.
-        has_meta_tensors = any(p.device.type == "meta" for p in model.parameters())
-        if not has_meta_tensors:
-            model = model.to(device)
-        else:
-            print(
-                "[inference] Detected meta tensors – "
-                "skipping model.to(device) and using existing device_map."
-            )
+    has_meta_tensors = any(p.device.type == "meta" for p in model.parameters())
+
+    if has_meta_tensors:
+        # Keep everything on CPU to avoid meta ↔ GPU/MPS mismatch
+        print("[inference] meta tensors detected – falling back to CPU")
+        device = torch.device("cpu")
+    elif device.type != "cpu":
+        model = model.to(device)
+
     model = model.eval()
 
     # Load pre-computed embeddings
