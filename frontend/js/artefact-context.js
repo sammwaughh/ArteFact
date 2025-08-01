@@ -616,14 +616,18 @@ function display_sentences(data) {
   $('.col-md-3').removeClass('d-none');
   $('#sentenceList').empty();
 
+  /* ---------- sentence list construction ---------- */
   data.forEach(item => {
     const li = $(`
-      <li class="list-group-item sentence-item mb-1" data-work="${item["work"]}">
-        ${escapeHTML(item["english_original"])}
+      <li class="list-group-item sentence-item mb-1"
+          data-work="${item.work}"
+          data-sentence="${escapeHTML(item.english_original)}">
+        ${escapeHTML(item.english_original)}
       </li>
     `);
     li.on('click', function () {
-      lookupDOI($(this).data('work'));
+      lookupDOI($(this).data('work'),
+                $(this).data('sentence'));
     });
     $('#sentenceList').append(li);
   });
@@ -803,17 +807,16 @@ $('#gridToolBtn').on('click', function () {
  * Looks up metadata for a given work ID (e.g., DOI) and displays details.
  * @param {string} work_id - The identifier for the work to look up.
  */
-function lookupDOI(work_id) {
-  fetch(`${API_BASE_URL}/work/${encodeURIComponent(work_id)}`)
+function lookupDOI(work_id, sentence) {
+  const url = `${API_BASE_URL}/work/${encodeURIComponent(work_id)}`
+            + `?sentence=${encodeURIComponent(sentence)}`;
+  fetch(url)
     .then(res => res.json())
     .then(data => {
-      data.Work_ID = work_id;          // +ADD
-      showWorkDetails(data);           // unchanged call
+      data.Work_ID = work_id;
+      showWorkDetails(data);          // now contains .context
     })
-    .catch(error => {
-      console.error("DOI Lookup error:", error);
-      alert(`Error looking up DOI for "${work_id}"`);
-    });
+    .catch(console.error);
 }
 
 /**
@@ -825,15 +828,27 @@ function showWorkDetails(workData) {
   $('#workOverlayBackdrop, #workDetailsModal').remove();
 
   const d = workData;
+  const ctxHtml = d.context
+      ? `<section class="mb-3">
+           <p class="fw-bold mb-1">In&nbsp;Context</p>
+           <blockquote class="context-paragraph"
+                       style="white-space:pre-wrap;">
+             ${escapeHTML(d.context)}
+           </blockquote>
+         </section>`
+       : '';
 
-  /* ---------- backdrop (click to close) ---------- */
-  const backdrop = $('<div id="workOverlayBackdrop" class="position-fixed top-0 start-0 w-100 h-100" ' +
-                     'style="background:rgba(0,0,0,0.5); z-index:2000;"></div>');
+  /* ---------- backdrop + centred rectangle ---------- */
+  const backdrop = $(               // ← MISSING, caused ReferenceError
+    `<div id="workOverlayBackdrop"
+          class="position-fixed top-0 start-0 w-100 h-100
+                 bg-dark bg-opacity-50"
+          style="z-index:2000;"></div>`
+  );
 
-  /* ---------- centred rectangle ---------- */
   const modal = $(`
-    <div id="workDetailsModal"
-         class="position-fixed bg-white border border-primary rounded shadow p-4"
+     <div id="workDetailsModal"
+          class="position-fixed bg-white border border-primary rounded shadow p-4"
          style="top:50%; left:50%; transform:translate(-50%,-50%);
                 max-width:90vw; max-height:80vh; overflow:auto; z-index:2001;">
 
@@ -848,7 +863,9 @@ function showWorkDetails(workData) {
       <p class="mb-1"><strong>Author(s):</strong> ${d.Author_Name || 'Unknown Author'}</p>
       <p class="mb-1"><strong>Year:</strong> ${d.Year || 'Unknown'}</p>
 
-      <!-- Image gallery -->
+      ${ctxHtml}   <!-- ← NEW paragraph section -->
+
+      <!-- Image gallery (unchanged) -->
       <div id="galleryWrapper" class="mb-2">
         <div class="fw-bold">Images in this work</div>
         <div id="galleryScroller" class="mt-1"></div>
@@ -861,7 +878,7 @@ function showWorkDetails(workData) {
         <a href="${d.Link}" target="_blank" class="text-primary text-decoration-underline">${d.Link}</a>
       </p>
 
-      <!-- BibTeX always visible -->
+      <!-- BibTeX block (unchanged) -->
       <div class="position-relative mt-3">
         <span class="fw-bold">BibTeX Citation</span>
         <button class="btn btn-sm btn-outline-secondary position-absolute top-0 end-0"

@@ -23,6 +23,7 @@ import random
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor
 from mimetypes import guess_type
+from pathlib import Path
 
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
@@ -213,9 +214,58 @@ def get_output_file(filename: str):
 
 @app.route("/work/<id>", methods=["GET"])
 def get_work(id: str):
-    # Get the work by id and return it as JSON
-    work = works.get(id, {})
-    return jsonify(work)
+    """
+    Return metadata for a work plus (optionally) the paragraph that contains
+    a given sentence.
+
+    Query params
+    ------------
+    sentence : original-English sentence text (URL-encoded)
+    """
+    work = works.get(id)
+    if work is None:
+        return jsonify({}), 404
+
+    # ---------------- context lookup ----------------
+    sentence = request.args.get("sentence", "").strip()
+    context = ""
+    if sentence:
+        md_path = Path(BASE_DIR) / "data" / "marker_output" / id / f"{id}.md"
+        if md_path.is_file():
+            content = md_path.read_text(encoding="utf-8", errors="ignore")
+            import re
+            from difflib import SequenceMatcher
+
+            def normalise(txt: str) -> str:
+                """lower-case, remove punctuation, collapse whitespace"""
+                txt = re.sub(r"[^\w\s]", " ", txt.lower())
+                return re.sub(r"\s+", " ", txt).strip()
+
+            target_norm = normalise(sentence)
+            best_para = ""
+            best_ratio = 0.0
+
+            # split on blank lines → paragraphs
+            for para in (p.strip() for p in content.split("\n\n") if p.strip()):
+                para_norm = normalise(para)
+
+                # 1) quick exact-substring on normalised text
+                if target_norm in para_norm:
+                    context = para
+                    break
+
+                # 2) otherwise keep best fuzzy match
+                ratio = SequenceMatcher(None, target_norm, para_norm).ratio()
+                if ratio > best_ratio:
+                    best_ratio = ratio
+                    best_para = para
+
+            # accept fuzzy hit if fairly close
+            if not context and best_ratio >= 0.55:
+                context = best_para
+
+    payload = {**work, "context": context}
+    return jsonify(payload)
 
 
 @app.route("/topics", methods=["GET"])
