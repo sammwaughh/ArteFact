@@ -126,8 +126,14 @@ cd frontend && python -m http.server 8080
    • **Undo** – revert to the previous image state.  
    • **Rerun** – re-execute the pipeline with the current image (useful
      after changing model or filters).  
-   • All previous versions are kept in the Image History strip; click any
-     thumbnail to restore it.
+   • **Heatmap** – generate a Grad-ECLIP saliency map that shows which
+     areas of the painting most influenced the top-ranked sentence
+     (click the thermometer icon next to any sentence).  
+   • The **Image History** strip now adds every new image
+     automatically as soon as backend processing begins and keeps the
+     most recent thumbnail on the left. History is preserved when you
+     refresh the UI via the logo.
+
 
 8. **Debug Panel**
 
