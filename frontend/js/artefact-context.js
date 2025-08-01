@@ -481,6 +481,10 @@ function fetchPresign() {
           // Show selected topics box using helper
           updateSelectedTopicsDisplay();
           updateSelectedCreatorsDisplay();
+          
+          // ── NEW: keep all three lower-row cards visible during processing ──
+          showBottomCards();          // Image History + Topics + Creators
+          adjustMainWidth();          // recalc main column width
 
           return fetch(`${API_BASE_URL}/runs`, {
             method: 'POST',
@@ -642,6 +646,7 @@ function display_sentences(data) {
     });
     $('#sentenceList').append(li);
   });
+  showBottomCards();
   adjustMainWidth();
 }
 
@@ -653,6 +658,15 @@ function adjustMainWidth(){
   } else{
     $main.removeClass('fill');
   }
+}
+
+// ──────────────────────────────────────────────────────────────────────────────
+//  NEW helper : always reveal bottom-row cards
+// ──────────────────────────────────────────────────────────────────────────────
+function showBottomCards() {
+  $('#imageHistoryWrapper').removeClass('d-none');
+  $('#selectedTopicsWrapper').removeClass('d-none');
+  $('#selectedCreatorsWrapper').removeClass('d-none');
 }
 
 // --- Begin Crop Tool Functionality ---
