@@ -110,7 +110,7 @@ cd frontend && python -m http.server 8080
 
 5. **Explore the Results**
 
-   • Top 10 sentences appear in the left sidebar.  
+   • Top 25 sentences appear in the left sidebar.  
    • Click the magnifying-glass icon to fetch full metadata / DOI;
      a banner with BibTeX and an iframe preview opens at the top.
 

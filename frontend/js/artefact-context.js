@@ -13,7 +13,7 @@ let viewGridEnabled = false;
 
 const GRID_ROWS = 7;   // ViT-B/32 → 7×7 patch grid
 const GRID_COLS = 7;   // keep rows == cols
-const CELL_SIM_K = 10;
+const CELL_SIM_K = 25;
 
 // --- Available models list ---
 let availableModels = [];

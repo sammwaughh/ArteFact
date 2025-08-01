@@ -57,7 +57,7 @@ MODEL_CONFIG = {
 SENTENCES_JSON = ROOT / "data" / "json_info" / "sentences.json"
 
 # Inference settings
-TOP_K = 10  # Number of results to return
+TOP_K = 25  # Number of results to return
 # ─────────────────────────────────────────────────────────────────────────────
 
 
@@ -294,7 +294,7 @@ def run_inference(
         compute whole-painting similarity (legacy behaviour).
     grid_size : (int, int), default (7, 7)
         UI grid resolution for region mode.
-    top_k : int, default 10
+    top_k : int, default 25
         Number of sentences to return.
     filter_topics : List[str], optional
         List of topic codes to filter results by

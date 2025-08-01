@@ -102,7 +102,7 @@ def rank_sentences_for_cell(
     cell_row: int,
     cell_col: int,
     grid_size: Tuple[int, int] = (7, 7),
-    top_k: int = 10,
+    top_k: int = 25,
     filter_topics: List[str] = None,
     filter_creators: List[str] = None,
 ) -> List[Dict[str, Any]]:
@@ -118,7 +118,7 @@ def rank_sentences_for_cell(
         Zero‑indexed row/column of the clicked grid cell.
     grid_size : (int, int), default (7, 7)
         Resolution of the UI grid (7x7 matches ViT-B/32 patch grid).
-    top_k : int, default 10
+    top_k : int, default 25
         How many sentences to return.
     filter_topics : List[str], optional
         List of topic codes to filter results by

@@ -62,7 +62,7 @@ def main():
     project_root = Path(__file__).resolve().parent.parent.parent
     IMAGE_PATH = str(project_root / "frontend" / "images" / "examples" / "Giotto_-_Scrovegni_-_-31-_-_Kiss_of_Judas.jpg")
     GRID_SIZE = (7, 7)  # 7x7 grid matches ViT-B/32 patch grid
-    TOP_K = 10  # Number of results to return
+    TOP_K = 25  # Number of results to return
 
     print("Patch Inference Test Suite")
     print("=" * 60)

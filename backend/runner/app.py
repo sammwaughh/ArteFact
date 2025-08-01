@@ -297,7 +297,7 @@ def cell_similarity():
     run_id = request.args["runId"]
     row = int(request.args["row"])
     col = int(request.args["col"])
-    k = int(request.args.get("k", 10))
+    k = int(request.args.get("k", 25))
 
     # Get the run info to retrieve filtering parameters
     run_info = tasks.runs.get(run_id, {})
