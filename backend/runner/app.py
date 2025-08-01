@@ -16,12 +16,11 @@ GET  /cell-sim
 POST /heatmap
 """
 
+import json
 import os
 import uuid
-import json
-import random
-from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone
 from mimetypes import guess_type
 from pathlib import Path
 
@@ -29,9 +28,8 @@ from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 
 # Import the tasks module (contains run_task, runs dict, etc.)
-from . import tasks
-from . import inference
-from .inference import compute_heatmap  #  ← reuse helper
+from . import inference, tasks
+from .inference import compute_heatmap  # ← reuse helper
 
 # --------------------------------------------------------------------------- #
 #  Flask application & thread pool setup                                      #

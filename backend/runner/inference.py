@@ -11,25 +11,24 @@ The pipeline:
 3. Returns the top-K most similar sentences with their metadata
 """
 
-import json
-from pathlib import Path
-from typing import List, Dict, Any, Tuple, Literal, Optional
-from functools import lru_cache
-import time
 import base64
 import io
-import cv2
+import json
+import time
+from functools import lru_cache
+from pathlib import Path
+from typing import Any, Dict, List, Literal, Optional, Tuple
 
+import cv2
 import torch
 import torch.nn.functional as F
-from PIL import Image
-from transformers import CLIPProcessor, CLIPModel
 from peft import PeftModel
+from PIL import Image
+from transformers import CLIPModel, CLIPProcessor
 
+from .filtering import get_filtered_sentence_ids
 # on-demand Grad-ECLIP & region-aware ranking
 from .heatmap import generate_heatmap
-from .filtering import get_filtered_sentence_ids
-
 
 # ─── Configuration ───────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parents[2]  # artefact-context/
@@ -339,7 +338,7 @@ def run_inference(
         return results
 
     # ---- Whole-painting pathway (original implementation) ----------------
-    start_time = time.time()
+    time.time()
 
     # Load cached pipeline components
     processor, model, embeddings, sentence_ids, sentences_data, device = (

@@ -4,7 +4,7 @@ Filtering logic for sentence selection based on topics and creators.
 
 import json
 from pathlib import Path
-from typing import List, Set, Dict, Any
+from typing import Any, Dict, List, Set
 
 # Load data files
 ROOT = Path(__file__).resolve().parents[2]

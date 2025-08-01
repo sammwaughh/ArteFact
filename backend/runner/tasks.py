@@ -4,8 +4,8 @@ Background task processing (no Celery, no AWS).
 
 import json
 import os
-import time
 import threading
+import time
 from datetime import datetime, timezone
 
 from .inference import run_inference

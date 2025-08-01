@@ -15,10 +15,10 @@ This script demonstrates:
 3. Comparison between different regions
 """
 
+import json
 import sys
 from pathlib import Path
-from typing import List, Dict, Any
-import json
+from typing import Any, Dict, List
 
 # Add parent directory to path for imports (backend/)
 sys.path.append(str(Path(__file__).resolve().parent.parent))

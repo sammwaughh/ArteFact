@@ -26,8 +26,7 @@ generate_heatmap(
 
 from __future__ import annotations
 
-import contextlib
-from typing import Dict, Tuple, Union, Optional, Any
+from typing import Any, Dict, Optional, Tuple, Union
 
 import cv2
 import numpy as np
@@ -35,8 +34,6 @@ import torch
 import torch.nn.functional as F
 from PIL import Image
 from transformers import CLIPModel, CLIPProcessor
-from peft import PeftModel
-
 
 # ============================================================================ #
 # Core Grad-ECLIP Implementation                                               #

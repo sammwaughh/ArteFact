@@ -15,7 +15,7 @@ from __future__ import annotations
 import math
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Dict, List, Tuple, Optional
+from typing import Any, Dict, List, Tuple
 
 import torch
 import torch.nn.functional as F

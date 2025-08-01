@@ -14,15 +14,16 @@ Based on: "Gradient-based Visual Explanation for Transformer-based CLIP"
 by Zhao et al. (ICML 2024)
 """
 
+import json  # Add this for pretty printing
+import warnings
+from typing import Dict, Tuple
+
+import cv2
+import numpy as np
 import torch
 import torch.nn.functional as F
-import numpy as np
-import cv2
 from PIL import Image
-from transformers import CLIPProcessor, CLIPModel
-from typing import Tuple, Optional, Dict
-import warnings
-import json  # Add this for pretty printing
+from transformers import CLIPModel, CLIPProcessor
 
 # Suppress the scaled_dot_product_attention warning
 warnings.filterwarnings("ignore", message=".*scaled_dot_product_attention.*")

@@ -61,7 +61,6 @@ sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from runner.inference import compute_heatmap
 
-
 # Colormap name to OpenCV constant mapping
 COLORMAP_OPTIONS = {
     "jet": cv2.COLORMAP_JET,

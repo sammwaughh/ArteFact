@@ -1,7 +1,8 @@
 # test_api_heatmap.py
-import requests
 import base64
 from pathlib import Path
+
+import requests
 
 # Use one of your existing run IDs
 run_id = "ce00a2134d09467bb2f60ceca5ce4472"  # Replace with your actual run ID
