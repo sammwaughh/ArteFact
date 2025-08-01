@@ -60,7 +60,13 @@ def main():
 
     # Configuration - Updated to use new directory structure
     project_root = Path(__file__).resolve().parent.parent.parent
-    IMAGE_PATH = str(project_root / "frontend" / "images" / "examples" / "Giotto_-_Scrovegni_-_-31-_-_Kiss_of_Judas.jpg")
+    IMAGE_PATH = str(
+        project_root
+        / "frontend"
+        / "images"
+        / "examples"
+        / "Giotto_-_Scrovegni_-_-31-_-_Kiss_of_Judas.jpg"
+    )
     GRID_SIZE = (7, 7)  # 7x7 grid matches ViT-B/32 patch grid
     TOP_K = 25  # Number of results to return
 
@@ -215,7 +221,7 @@ def main():
         outputs_dir = project_root / "runner" / "tests" / "test-outputs"
         outputs_dir.mkdir(exist_ok=True)
         output_path = outputs_dir / "patch_inference_test_results.json"
-        
+
         with open(output_path, "w") as f:
             json.dump(results_data, f, indent=2)
         print(f"\nResults saved to: {output_path}")

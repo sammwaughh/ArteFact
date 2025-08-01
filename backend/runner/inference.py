@@ -192,11 +192,11 @@ def _initialize_pipeline():
         # Meta tensors mean the model needs to be materialized
         print("[inference] meta tensors detected – materializing model on CPU")
         device = torch.device("cpu")
-        
+
         # Materialize the model by moving it to CPU
         # This converts meta tensors to actual tensors with allocated memory
         model = model.to(device)
-        
+
         # Ensure all parameters are properly initialized
         for param in model.parameters():
             if param.device.type == "meta":
@@ -370,7 +370,7 @@ def run_inference(
     # Load and preprocess the image
     image = Image.open(image_path).convert("RGB")
     inputs = processor(images=image, return_tensors="pt")
-    
+
     # Ensure inputs are on the correct device
     inputs = {k: v.to(device) for k, v in inputs.items()}
 

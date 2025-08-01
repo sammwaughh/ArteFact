@@ -45,7 +45,7 @@ executor = ThreadPoolExecutor(max_workers=4)
 # Get the base directory for file storage (project root)
 BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 ARTIFACTS_DIR = os.path.join(BASE_DIR, "data", "artifacts")
-OUTPUTS_DIR   = os.path.join(BASE_DIR, "data", "outputs")
+OUTPUTS_DIR = os.path.join(BASE_DIR, "data", "outputs")
 
 
 # --------------------------------------------------------------------------- #
@@ -53,35 +53,25 @@ OUTPUTS_DIR   = os.path.join(BASE_DIR, "data", "outputs")
 # --------------------------------------------------------------------------- #
 # Load data/sentences.json into a variable called sentences
 sentences = {}
-with open(
-    os.path.join(BASE_DIR, "data", "json_info", "sentences.json"), "r"
-) as f:
+with open(os.path.join(BASE_DIR, "data", "json_info", "sentences.json"), "r") as f:
     sentences = json.load(f)
 
 
 works = {}
-with open(
-    os.path.join(BASE_DIR, "data", "json_info", "works.json"), "r"
-) as f:
+with open(os.path.join(BASE_DIR, "data", "json_info", "works.json"), "r") as f:
     works = json.load(f)
 
 
 creators = {}
-with open(
-    os.path.join(BASE_DIR, "data", "json_info", "creators.json"), "r"
-) as f:
+with open(os.path.join(BASE_DIR, "data", "json_info", "creators.json"), "r") as f:
     creators = json.load(f)
 
 topics = {}
-with open(
-    os.path.join(BASE_DIR, "data", "json_info", "topics.json"), "r"
-) as f:
+with open(os.path.join(BASE_DIR, "data", "json_info", "topics.json"), "r") as f:
     topics = json.load(f)
 
 topic_names = {}
-with open(
-    os.path.join(BASE_DIR, "data", "json_info", "topic_names.json"), "r"
-) as f:
+with open(os.path.join(BASE_DIR, "data", "json_info", "topic_names.json"), "r") as f:
     topic_names = json.load(f)
 
 
@@ -342,7 +332,7 @@ def heatmap():
     # A rough estimate is ~4 characters per token, so limit to ~300 chars to be safe
     MAX_SENTENCE_LENGTH = 300
     if len(sentence) > MAX_SENTENCE_LENGTH:
-        sentence = sentence[:MAX_SENTENCE_LENGTH-3] + "..."
+        sentence = sentence[: MAX_SENTENCE_LENGTH - 3] + "..."
 
     # Path of the already-uploaded artefact
     img_path = os.path.join(ARTIFACTS_DIR, f"{run_id}.jpg")
@@ -370,10 +360,9 @@ def list_work_images(work_id: str):
         return jsonify([])
 
     files = sorted(
-        f for f in os.listdir(img_dir)
-        if f.lower().endswith((".jpg", ".jpeg", ".png"))
+        f for f in os.listdir(img_dir) if f.lower().endswith((".jpg", ".jpeg", ".png"))
     )
-    host = request.host_url.rstrip("/")          # e.g. http://127.0.0.1:8000
+    host = request.host_url.rstrip("/")  # e.g. http://127.0.0.1:8000
     urls = [f"{host}/marker/{work_id}/{fname}" for fname in files]
     return jsonify(urls)
 
@@ -388,6 +377,8 @@ def serve_marker_image(work_id: str, filename: str):
     if not os.path.exists(os.path.join(img_dir, filename)):
         return jsonify({"error": "not-found"}), 404
     return send_from_directory(img_dir, filename, mimetype=mime)
+
+
 # --------------------------------------------------------------------------- #
 if __name__ == "__main__":  # invoked via  python -m …
     app.run(host="0.0.0.0", port=8000, debug=True)

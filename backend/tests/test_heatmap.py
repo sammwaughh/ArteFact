@@ -89,7 +89,9 @@ def resolve_image_path(run_id: Optional[str], image_path: Optional[str]) -> Path
     """
     if run_id:
         # Get artifacts directory - go up to project root then into data/artifacts
-        artifacts_dir = Path(__file__).resolve().parent.parent.parent / "data" / "artifacts"
+        artifacts_dir = (
+            Path(__file__).resolve().parent.parent.parent / "data" / "artifacts"
+        )
         resolved_path = artifacts_dir / f"{run_id}.jpg"
     else:
         resolved_path = Path(image_path).expanduser().resolve()

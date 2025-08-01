@@ -40,9 +40,7 @@ def _infer_patch_hw(num_patches: int) -> Tuple[int, int]:
 
 
 @lru_cache(maxsize=8)  # cache a few recent paintings × grid sizes
-def _prepare_image(
-    image_path: str, grid_size: Tuple[int, int]
-) -> torch.Tensor:
+def _prepare_image(image_path: str, grid_size: Tuple[int, int]) -> torch.Tensor:
     """
     Generate cell embeddings for the entire image.
 
@@ -54,7 +52,7 @@ def _prepare_image(
     # Load and process image
     image = Image.open(image_path).convert("RGB")
     inputs = processor(images=image, return_tensors="pt")
-    
+
     # Ensure inputs are on the correct device
     inputs = {k: v.to(device) for k, v in inputs.items()}
 
