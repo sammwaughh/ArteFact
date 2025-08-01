@@ -41,28 +41,26 @@ def _infer_patch_hw(num_patches: int) -> Tuple[int, int]:
 
 @lru_cache(maxsize=8)  # cache a few recent paintings × grid sizes
 def _prepare_image(
-    image_path: str | Path,
-    grid_size: Tuple[int, int] = (7, 7),  # Changed default to 7x7
+    image_path: str, grid_size: Tuple[int, int]
 ) -> torch.Tensor:
     """
-    Convert *one* painting into a bank of L2‑normalised grid‑cell vectors.
+    Generate cell embeddings for the entire image.
 
-    Returns
-    -------
-    torch.Tensor
-        Shape (cells, D) on the same device as sentence embeddings.
+    Uses ViT patch embeddings directly for efficiency.
     """
-    processor, model, *_, device = _initialize_pipeline()
+    # Load resources from main inference pipeline
+    processor, model, _, _, _, device = _initialize_pipeline()
 
-    # 1. Forward pass through the vision tower (one‑time per painting ↔ cache)
+    # Load and process image
     image = Image.open(image_path).convert("RGB")
-    pixel = processor(images=image, return_tensors="pt").to(device)
+    inputs = processor(images=image, return_tensors="pt")
+    
+    # Ensure inputs are on the correct device
+    inputs = {k: v.to(device) for k, v in inputs.items()}
 
     with torch.no_grad():
-        vision_out = model.vision_model(
-            pixel_values=pixel["pixel_values"],
-            output_hidden_states=True,
-        )
+        # Get patch embeddings from vision model
+        vision_out = model.vision_model(**inputs, output_hidden_states=True)
         # Exclude CLS (token‑0), keep patch tokens
         patch_tokens = vision_out.last_hidden_state[:, 1:, :]  # (1, N, 768)
         patch_tokens = model.vision_model.post_layernorm(patch_tokens)  # LayerNorm

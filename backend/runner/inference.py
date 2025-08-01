@@ -185,15 +185,27 @@ def _initialize_pipeline():
     else:
         model = base_model
 
-    # Move model to device and set to evaluation mode
+    # Check for meta tensors and handle them properly
     has_meta_tensors = any(p.device.type == "meta" for p in model.parameters())
 
     if has_meta_tensors:
-        # Keep everything on CPU to avoid meta ↔ GPU/MPS mismatch
-        print("[inference] meta tensors detected – falling back to CPU")
+        # Meta tensors mean the model needs to be materialized
+        print("[inference] meta tensors detected – materializing model on CPU")
         device = torch.device("cpu")
-    elif device.type != "cpu":
+        
+        # Materialize the model by moving it to CPU
+        # This converts meta tensors to actual tensors with allocated memory
         model = model.to(device)
+        
+        # Ensure all parameters are properly initialized
+        for param in model.parameters():
+            if param.device.type == "meta":
+                # This shouldn't happen after .to(device), but as a safety check
+                param.data = param.data.to(device)
+    else:
+        # Normal case: move model to selected device
+        if device.type != "cpu":
+            model = model.to(device)
 
     model = model.eval()
 
@@ -357,7 +369,10 @@ def run_inference(
 
     # Load and preprocess the image
     image = Image.open(image_path).convert("RGB")
-    inputs = processor(images=image, return_tensors="pt").to(device)
+    inputs = processor(images=image, return_tensors="pt")
+    
+    # Ensure inputs are on the correct device
+    inputs = {k: v.to(device) for k, v in inputs.items()}
 
     # Compute image embedding
     with torch.no_grad():

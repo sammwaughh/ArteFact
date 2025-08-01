@@ -681,8 +681,8 @@ function saveCurrentImageToHistory() {
   }
   
   // Check if this image is already the most recent in history
-  const lastHistoryImg = $('#imageHistory img').last();
-  if (lastHistoryImg.length && lastHistoryImg.attr('src') === currentImg.attr('src')) {
+  const firstHistoryImg = $('#imageHistory img').first();
+  if (firstHistoryImg.length && firstHistoryImg.attr('src') === currentImg.attr('src')) {
     return; // Don't duplicate the same image
   }
   
@@ -693,7 +693,7 @@ function saveCurrentImageToHistory() {
   historyImg.style.cursor = "pointer";
   historyImg.title = "Previous image";
   $('#imageHistoryWrapper').removeClass('d-none');
-  $('#imageHistory').append(historyImg);
+  $('#imageHistory').prepend(historyImg);
 }
 
 // --- Begin Crop Tool Functionality ---
@@ -798,10 +798,10 @@ $('#uploadedImageContainer').on('mouseup', function (e) {
 $('#undoToolBtn').on('click', function () {
   const historyImgs = $('#imageHistory img');
   if (historyImgs.length > 0) {
-    const lastImg = historyImgs.last();
-    const previousSrc = lastImg.attr('src');
+    const firstImg = historyImgs.first();
+    const previousSrc = firstImg.attr('src');
     $('#uploadedImage').attr('src', previousSrc).removeClass('d-none');
-    lastImg.remove();
+    firstImg.remove();
   }
 });
 
