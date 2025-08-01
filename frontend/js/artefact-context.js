@@ -115,9 +115,9 @@ function updateSelectedCreatorsDisplay() {
 // Main script entry point: sets up event handlers on document ready
 $(document).ready(function () {
   // Add click handler for Artefact Viewer logo/text to refresh the app
-  $('.navbar-brand').on('click', function(e) {
+  $('.navbar-brand').on('click', function (e) {
     e.preventDefault();
-    
+
     // Clear all state variables
     runId = null;
     imageKey = null;
@@ -126,7 +126,7 @@ $(document).ready(function () {
     selectedTopics = [];
     selectedCreators = [];
     selectedModel = '';
-    
+
     // Reset UI elements
     $('#uploadedImage').addClass('d-none').attr('src', '');
     $('#uploadTrigger').removeClass('d-none');
@@ -136,19 +136,19 @@ $(document).ready(function () {
     $('#gridOverlay').hide().html('');
     $('#gridHighlightOverlay').hide();
     $('#heatmapOverlay').remove();
-    
+
     // Hide panels
     $('.col-md-3').addClass('d-none');
     $('#sentenceList').empty();
     $('#imageHistoryWrapper').addClass('d-none');
-    $('#imageHistory').empty();
+    // $('#imageHistory').empty();  // <- REMOVE THIS LINE
     $('#selectedTopicsWrapper').addClass('d-none');
     $('#selectedCreatorsWrapper').addClass('d-none');
-    
+
     // Reset topic selections
     $('#topicTags button').removeClass('active btn-primary').addClass('btn-outline-primary');
     $('#selectedTopicTags').empty();
-    
+
     // Reset creator selections  
     $('#creatorTags').empty();
     $('#selectedCreatorTags').empty();
@@ -156,7 +156,7 @@ $(document).ready(function () {
     $('#creatorSearchResults').empty();
     $('#creatorPanelSearch').val('');
     $('#creatorPanelResults').empty();
-    
+
     // Reset model selection to first available
     if (availableModels.length > 0) {
       selectedModel = availableModels[0];
@@ -164,12 +164,12 @@ $(document).ready(function () {
       $('#modelDropdownMenu a').removeClass('active');
       $('#modelDropdownMenu a').first().addClass('active');
     }
-    
+
     // Reset debug panel
     $('#debugStatus').text('Idle');
     $('#debugSessionId').text('N/A');
     $('#workingLog').empty();
-    
+
     // Recreate the upload card if it was removed
     if ($('.card:has(#uploadTrigger)').length === 0 && $('#exampleContainer').length === 0) {
       const uploadCard = $(`
@@ -184,11 +184,10 @@ $(document).ready(function () {
       `);
       $('#uploadedImageContainer').prepend(uploadCard);
     }
-    
+
     // Show example container if it was hidden
-    if ($('#exampleContainer').length === 0) {
-      location.reload(); // Simplest way to restore the example images section
-    }
+    showLandingContent();               // ← NEW
+    adjustMainWidth();
   });
 
   // --- Load topic tags from /topics ---
@@ -347,10 +346,11 @@ $(document).ready(function () {
     if (file) {
       const reader = new FileReader();
       reader.onload = function (e) {
+        saveCurrentImageToHistory(); // Save current image before loading new one
         $('#uploadedImage').attr('src', e.target.result).removeClass('d-none');
         $('#uploadTrigger').addClass('d-none');
-        $('.card:has(#uploadTrigger)').remove();
-        $('#exampleContainer').remove();
+        $('.card:has(#uploadTrigger)').addClass('d-none');
+        $('#exampleContainer').addClass('d-none');
         $('#workingOverlay').removeClass('d-none');
         $('#imageTools').removeClass('d-none');
         fetchPresign();
@@ -380,6 +380,7 @@ $(document).ready(function () {
     if (file && file.type.startsWith('image/')) {
       const reader = new FileReader();
       reader.onload = function (e) {
+        saveCurrentImageToHistory(); // Save current image before loading new one
         $('#uploadedImage').attr('src', e.target.result).removeClass('d-none');
         $('#uploadTrigger').addClass('d-none');
         $('#workingOverlay').removeClass('d-none');
@@ -402,10 +403,11 @@ $(document).ready(function () {
   // Handle selection of an example image
   $('#selectImageBtn').on('click', function () {
     if (selectedSrc) {
+      saveCurrentImageToHistory(); // Save current image before loading new one
       $('#uploadedImage').attr('src', selectedSrc).removeClass('d-none');
       $('#uploadTrigger').addClass('d-none');
-      $('.card:has(#uploadTrigger)').remove();
-      $('#exampleContainer').remove();
+      $('.card:has(#uploadTrigger)').addClass('d-none');
+      $('#exampleContainer').addClass('d-none');
       $('#workingOverlay').removeClass('d-none');
       $('#imageTools').removeClass('d-none');
       fetchPresign();
@@ -456,8 +458,8 @@ function fetchPresign() {
         const formData = new FormData();
         formData.append('file', file);
 
-        // Hide and remove the landing page content completely
-        $('.w-100.p-4').remove(); // Remove instead of just hiding
+        // $('.w-100.p-4').remove(); // Remove instead of just hiding
+        hideLandingContent();               // just hide; keep DOM alive
 
         fetch(`${API_BASE_URL}/upload/${runId}`, {
           method: 'POST',
@@ -669,6 +671,31 @@ function showBottomCards() {
   $('#selectedCreatorsWrapper').removeClass('d-none');
 }
 
+// ──────────────────────────────────────────────────────────────────────────────
+//  NEW helper : save current image to history
+// ──────────────────────────────────────────────────────────────────────────────
+function saveCurrentImageToHistory() {
+  const currentImg = $('#uploadedImage');
+  if (!currentImg.attr('src') || currentImg.hasClass('d-none')) {
+    return; // No image to save
+  }
+  
+  // Check if this image is already the most recent in history
+  const lastHistoryImg = $('#imageHistory img').last();
+  if (lastHistoryImg.length && lastHistoryImg.attr('src') === currentImg.attr('src')) {
+    return; // Don't duplicate the same image
+  }
+  
+  const historyImg = new Image();
+  historyImg.src = currentImg.attr('src');
+  historyImg.className = "rounded border border-secondary shadow-sm";
+  historyImg.style.height = "100px";
+  historyImg.style.cursor = "pointer";
+  historyImg.title = "Previous image";
+  $('#imageHistoryWrapper').removeClass('d-none');
+  $('#imageHistory').append(historyImg);
+}
+
 // --- Begin Crop Tool Functionality ---
 // Variables for cropping state
 let isCropping = false;
@@ -745,15 +772,8 @@ $('#uploadedImageContainer').on('mouseup', function (e) {
     return;
   }
 
-  // Save current image to history for undo functionality
-  const historyImg = new Image();
-  historyImg.src = img.src;
-  historyImg.className = "rounded border border-secondary shadow-sm";
-  historyImg.style.height = "100px";
-  historyImg.style.cursor = "pointer";
-  historyImg.title = "Previous version";
-  $('#imageHistoryWrapper').removeClass('d-none');
-  $('#imageHistory').append(historyImg);
+  // Save current image to history using the new helper
+  saveCurrentImageToHistory();
 
   // Draw the cropped region onto a canvas and update the image
   const canvas = document.createElement('canvas');
@@ -791,18 +811,14 @@ $('#undoToolBtn').on('click', function () {
 // When a history image is clicked, make it the current image and rerun the API flow
 $('#imageHistory').on('click', 'img', function () {
   const currentImg = $('#uploadedImage')[0];
-
-  // Save the currently displayed image into history
-  const historyImg = new Image();
-  historyImg.src = currentImg.src;
-  historyImg.className = "rounded border border-secondary shadow-sm";
-  historyImg.style.height = "100px";
-  historyImg.style.cursor = "pointer";
-  historyImg.title = "Previous version";
-  $('#imageHistory').append(historyImg);
+  const newSrc = $(this).attr('src');
+  
+  // Only save to history if it's a different image
+  if (currentImg.src && currentImg.src !== newSrc) {
+    saveCurrentImageToHistory();
+  }
 
   // Update to the selected history image
-  const newSrc = $(this).attr('src');
   $('#uploadedImage').attr('src', newSrc).removeClass('d-none');
 
   // Rerun the API processing
@@ -1210,6 +1226,9 @@ function loadImageAndRun(imgSrc) {
   // close the modal/backdrop if still open
   $('#workOverlayBackdrop, #workDetailsModal').remove();
 
+  // Save current image to history before loading new one
+  saveCurrentImageToHistory();
+
   // show the chosen artwork in the main image slot
   const $img = $('#uploadedImage')
                  .attr('src', imgSrc)
@@ -1218,7 +1237,8 @@ function loadImageAndRun(imgSrc) {
 
   // hide the upload card / example images just like other entry paths
   $('#uploadTrigger').addClass('d-none');
-  $('.card:has(#uploadTrigger), #exampleContainer').remove();
+  $('.card:has(#uploadTrigger)').addClass('d-none');
+  $('#exampleContainer').addClass('d-none');
 
   // UI bits the normal flow expects
   $('#workingOverlay').removeClass('d-none');
@@ -1382,3 +1402,17 @@ $(window).on('resize', function() {
     });
   }
 });
+
+// --- Begin Landing Content Functionality ---
+// Hide landing content (upload card + example images)
+function hideLandingContent() {
+  $('#landingContent').addClass('d-none');
+}
+
+// Show landing content (upload card + example images)
+function showLandingContent() {
+  $('#landingContent').removeClass('d-none');
+  $('#exampleContainer').removeClass('d-none');
+  $('.card:has(#uploadTrigger)').removeClass('d-none');
+}
+// --- End Landing Content Functionality ---
