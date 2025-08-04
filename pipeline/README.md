@@ -82,6 +82,12 @@ python generate_painter_list.py
 ```
 - Generates/updates the painter list for processing
 
+### Enriching Works Metadata
+```bash
+python enrich_works_metadata.py
+```
+- Adds BibTeX, Author, Year, Work info to each work object
+
 ## Directory Structure
 
 ### Data Directories
