@@ -1,0 +1,29 @@
+# Core scientific stack (adjusted for ppc64le compatibility)
+numpy==1.26.4           # Latest 1.x with ppc64le wheel available:contentReference[oaicite:0]{index=0}
+pandas==2.2.3           # Pandas 2.2.x (IBM provides 2.2.3 wheel for Py3.11):contentReference[oaicite:1]{index=1}
+scikit-learn==1.4.2     # Remains in 1.4.x range (marker-pdf requires ≤1.4.2):contentReference[oaicite:2]{index=2}
+matplotlib==3.10.3      # Newer Matplotlib (IBM provides 3.10.3 for ppc64le):contentReference[oaicite:3]{index=3}:contentReference[oaicite:4]{index=4}
+scipy==1.15.3           # SciPy 1.15.x (available as ppc64le wheel on Bede):contentReference[oaicite:5]{index=5}
+
+# I/O & utilities
+requests==2.32.4        # Latest requests 2.x (Python HTTP library)
+tqdm==4.67.1            # Progress bar, latest 4.x release
+openpyxl==3.1.5         # Excel I/O, latest 3.1.x release
+psutil==5.9.8           # System utilities, stable 5.9.x (Py3 support):contentReference[oaicite:6]{index=6}
+httpx[http2]==0.27.2    # HTTP client with HTTP/2, last 0.27.x release:contentReference[oaicite:7]{index=7}
+pypdfium2==4.24.0       # PDFium binding with new portable build script (for ppc64le):contentReference[oaicite:8]{index=8}
+striprtf==0.0.29        # RTF→text converter, latest 0.0.x version
+Pillow==11.3.0          # Imaging library (PIL fork), supports latest formats
+nltk==3.8.1             # Natural Language Toolkit, latest 3.8.x release
+marker-pdf[full]==1.8.2 # PDF-to-Markdown converter (latest 1.x full edition)
+PyYAML==6.0.1           # YAML parser, latest 6.0.x (build fixes):contentReference[oaicite:9]{index=9}
+PyPDF2==3.0.1           # PDF library (last PyPDF2 release before pypdf merge)
+
+# Deep-learning stack (with GPU support on Bede)
+torch==2.6.0            # PyTorch 2.6.0 (CUDA 12.x support) – IBM provides ppc64le wheel:contentReference[oaicite:10]{index=10}:contentReference[oaicite:11]{index=11}
+torchvision==0.21.0     # TorchVision matching PyTorch 2.6 (for image transforms):contentReference[oaicite:12]{index=12}
+transformers==4.44.0    # HuggingFace Transformers (compatible with our Torch/PEFT versions)
+sentence-transformers==2.7.0  # Sentence transformers library (uses Transformers ≥4.40):contentReference[oaicite:13]{index=13}
+peft==0.10.0            # HF PEFT (Parameter-Efficient Fine-Tuning) library
+accelerate==0.30.0      # HF Accelerate for distributed training (Py3.11+ support):contentReference[oaicite:14]{index=14}
+safetensors==0.5.3      # Fast safe tensor storage (Rust-based, ppc64le wheel via IBM) 
