@@ -29,7 +29,7 @@ from tqdm import tqdm
 from urllib3.util import Retry
 
 # ─────────────────────────────────── constants ──────────────────────────────────
-LIMIT: int = 100
+LIMIT: int = 32_000
 INITIAL_CHUNK_SIZE: int = 400
 MIN_CHUNK_SIZE: int = 100
 CHUNK_GROW_BACK_FACTOR: float = 1.2
