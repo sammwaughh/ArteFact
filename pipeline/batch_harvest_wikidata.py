@@ -31,7 +31,7 @@ from tqdm import tqdm
 from urllib3.util import Retry
 
 # ─────────────────────────────────── constants ──────────────────────────────────
-LIMIT: int = 32000
+LIMIT: int = 1000
 INITIAL_CHUNK_SIZE: int = 400  # ↑ 60% - fewer pages, still fast
 MIN_CHUNK_SIZE: int = 100  # ↑ 100% - better fallback minimum
 CHUNK_GROW_BACK_FACTOR: float = 1.2
