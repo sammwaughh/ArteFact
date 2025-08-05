@@ -2,6 +2,7 @@
 # -------- Slurm Directives --------
 #SBATCH --job-name=wikidata_harvest          # appears in squeue
 #SBATCH --partition=cpu                      # Bede’s CPU queue
+#SBATCH --account=bddur51
 #SBATCH --time=01:00:00                      # hh:mm:ss (enough for 1k rows)
 #SBATCH --ntasks=1                           # one process
 #SBATCH --cpus-per-task=4                    # 4 threads for requests/pandas
