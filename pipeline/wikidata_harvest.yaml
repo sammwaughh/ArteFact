@@ -1,15 +1,17 @@
 # wikidata_harvest.yaml
-name: wikidata_harvest            # ← the conda env’s name
+name: wikidata_harvest
 channels:
-  - conda-forge                   # smaller, consistent builds
-channel_priority: strict          # ensures *all* deps come from conda-forge
+  - conda-forge            # consistent builds
+
 dependencies:
-  # core runtime
-  - python    = 3.11.4
-  - pandas    = 2.3.1
-  - requests  = 2.32.4
-  - urllib3   = 2.2.2             # pinned to a version compatible with requests
-  - tqdm      = 4.67.1
-  - openpyxl  = 3.1.5             # Excel writing/formatting
-  # optional, handy to have
-  - pip                           # lets you pip-install extras later
+  # ─ core runtime ─
+  - python    =3.11        # 3.11.x
+  - pandas    =2.3.1
+  - pyarrow   =16.1.0      # Parquet/Feather engine used by pandas
+  - requests  =2.32.4
+  - urllib3   =2.2.2       # compatible with this requests version
+  - tqdm      =4.67.1
+
+  # ─ optional but handy ─
+  - openpyxl  =3.1.5       # only needed if you ever export to Excel
+  - pip                       # lets you pip-install extras later
