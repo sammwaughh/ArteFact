@@ -10,6 +10,8 @@
 #SBATCH --mem=4G                              # adjust if necessary
 #SBATCH --output=logs/harvest_%j.out          # stdout  (%j = job-ID)
 #SBATCH --error=logs/harvest_%j.err           # stderr
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=samjmwaugh@gmail.com
 
 set -euo pipefail                             # fail fast on any error
 
