@@ -1,0 +1,12 @@
+# wikidata_harvest.yaml
+name: wikidata_harvest
+channels:
+  - conda-forge
+dependencies:
+  - python  = 3.11.4
+  - pandas  = 2.3.1        # needs pyarrow for parquet
+  - pyarrow = 16.1.0       # parquet backend preferred by pandas
+  - httpx   = 0.27.0       # async HTTP/2 client
+  - tqdm    = 4.67.1
+  - openpyxl = 3.1.5       # only if you ever export to Excel
+  - pip
