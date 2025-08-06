@@ -3,7 +3,6 @@
 #SBATCH --account=bddur51
 #SBATCH --partition=gpu          # policy: must request a GPU
 #SBATCH --gres=half:1
-#SBATCH --cpus-per-task=20
 #SBATCH --mem=8G
 #SBATCH --time=2-00:00:00
 #SBATCH --output=/projects/bddur51/artefact-context/pipeline/logs/oa_%j.out
