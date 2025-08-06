@@ -2,10 +2,14 @@ name: download_works_env
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
-  - requests          # HTTP + retry support
-  - urllib3           # explicit for matching Retry version
-  - pandas            # batch_download_works needs Excel order
-  - openpyxl          # pandas engine for .xlsx files
-  - pypdf2            # imported as “PyPDF2” for PDF validation
-  - pip               # allow future PyPI
+  # core
+  - python   = 3.11
+  - requests           # HTTP client
+  - urllib3            # pinned to match requests
+  - pandas             # reads painters.xlsx
+  - openpyxl           # pandas engine for .xlsx
+  - pypdf2             # imported as “PyPDF2”
+  - tqdm               # ⬅ progress bars (missing)
+  # optional but handy
+  - rich               # pretty logging / tracebacks
+  - pip
