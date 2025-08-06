@@ -97,7 +97,7 @@ def main() -> None:
         sys.exit("✅ All painters in the selected range already processed.")
 
     # ─── run several artists in parallel ────────────────────────────────
-    MAX_WORKERS = min(os.cpu_count() or 4, 16)   # avoid oversubscription
+    MAX_WORKERS = 8
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
         future_to_name = {pool.submit(process_artist, n): n for n in remaining}
