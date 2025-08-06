@@ -97,7 +97,7 @@ def main() -> None:
         sys.exit("✅ All painters in the selected range already processed.")
 
     # ─── run several artists in parallel ────────────────────────────────
-    MAX_WORKERS = 12
+    MAX_WORKERS = 32
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
         future_to_name = {pool.submit(process_artist, n): n for n in remaining}
