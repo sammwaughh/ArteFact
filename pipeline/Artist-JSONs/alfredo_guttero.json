@@ -1,0 +1,678 @@
+[
+  {
+    "id": "https://openalex.org/W2243210627",
+    "title": "Images for a Mythological Foundation. Notes on Horacio Coppola's Photographs of Buenos Aires",
+    "relevance_score": 1.9654272,
+    "doi": "https://doi.org/10.1080/13569325.2015.1040746",
+    "topic_ids": [
+      "C519517224",
+      "C2780966255",
+      "C142362112",
+      "C52119013",
+      "C95457728",
+      "C124952713",
+      "C166957645"
+    ],
+    "best_pdf": "https://ri.conicet.gov.ar/bitstream/11336/41741/2/CONICET_Digital_Nro.876ef09f-6530-4695-ad77-19f53eaab72a_A.pdf",
+    "backup_pdf": "https://hdl.handle.net/11336/41741",
+    "raw": {
+      "id": "https://openalex.org/W2243210627",
+      "display_name": "Images for a Mythological Foundation. Notes on Horacio Coppola's Photographs of Buenos Aires",
+      "relevance_score": 1.9654272,
+      "doi": "https://doi.org/10.1080/13569325.2015.1040746",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C519517224",
+          "wikidata": "https://www.wikidata.org/wiki/Q12827256",
+          "display_name": "Mythology",
+          "level": 2,
+          "score": 0.72764975
+        },
+        {
+          "id": "https://openalex.org/C2780966255",
+          "wikidata": "https://www.wikidata.org/wiki/Q5474306",
+          "display_name": "Foundation (evidence)",
+          "level": 2,
+          "score": 0.592848
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5639324
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.45516858
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.2118732
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.19324565
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.15749893
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/13569325.2015.1040746",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S195900089",
+          "display_name": "Journal of Latin American Cultural Studies",
+          "issn_l": "1356-9325",
+          "issn": [
+            "1356-9325",
+            "1469-9575"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://ri.conicet.gov.ar/bitstream/11336/41741/2/CONICET_Digital_Nro.876ef09f-6530-4695-ad77-19f53eaab72a_A.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/13569325.2015.1040746",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S195900089",
+            "display_name": "Journal of Latin American Cultural Studies",
+            "issn_l": "1356-9325",
+            "issn": [
+              "1356-9325",
+              "1469-9575"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/11336/41741",
+          "pdf_url": "https://ri.conicet.gov.ar/bitstream/11336/41741/2/CONICET_Digital_Nro.876ef09f-6530-4695-ad77-19f53eaab72a_A.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402455",
+            "display_name": "CONICET Digital (CONICET)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210148385",
+            "host_organization_name": "Biomedicine Research Institute of Buenos Aires - CONICET - Partner Institute of the Max Planck Society",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210148385"
+            ],
+            "host_organization_lineage_names": [
+              "Biomedicine Research Institute of Buenos Aires - CONICET - Partner Institute of the Max Planck Society"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/11336/41741",
+        "pdf_url": "https://ri.conicet.gov.ar/bitstream/11336/41741/2/CONICET_Digital_Nro.876ef09f-6530-4695-ad77-19f53eaab72a_A.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402455",
+          "display_name": "CONICET Digital (CONICET)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210148385",
+          "host_organization_name": "Biomedicine Research Institute of Buenos Aires - CONICET - Partner Institute of the Max Planck Society",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210148385"
+          ],
+          "host_organization_lineage_names": [
+            "Biomedicine Research Institute of Buenos Aires - CONICET - Partner Institute of the Max Planck Society"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2561746605",
+    "title": "Horacio Coppola: Towards an Aesthetic Genealogy",
+    "relevance_score": 1.9603912,
+    "doi": "https://doi.org/10.1080/03087298.2016.1236887",
+    "topic_ids": [
+      "C119657128",
+      "C2482559",
+      "C142362112",
+      "C52119013",
+      "C153349607",
+      "C138885662",
+      "C111472728"
+    ],
+    "best_pdf": "https://research-repository.st-andrews.ac.uk/bitstream/10023/13979/1/Kefala_History_of_Photography_AM.pdf",
+    "backup_pdf": "https://hdl.handle.net/10023/13979",
+    "raw": {
+      "id": "https://openalex.org/W2561746605",
+      "display_name": "Horacio Coppola: Towards an Aesthetic Genealogy",
+      "relevance_score": 1.9603912,
+      "doi": "https://doi.org/10.1080/03087298.2016.1236887",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C119657128",
+          "wikidata": "https://www.wikidata.org/wiki/Q11633",
+          "display_name": "Photography",
+          "level": 2,
+          "score": 0.85756695
+        },
+        {
+          "id": "https://openalex.org/C2482559",
+          "wikidata": "https://www.wikidata.org/wiki/Q206330",
+          "display_name": "Objectivity (philosophy)",
+          "level": 2,
+          "score": 0.7775271
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.57068604
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.45612043
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.40509477
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.22217742
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.10219914
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/03087298.2016.1236887",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S74450657",
+          "display_name": "History of Photography",
+          "issn_l": "0308-7298",
+          "issn": [
+            "0308-7298",
+            "2150-7295"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://research-repository.st-andrews.ac.uk/bitstream/10023/13979/1/Kefala_History_of_Photography_AM.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/03087298.2016.1236887",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S74450657",
+            "display_name": "History of Photography",
+            "issn_l": "0308-7298",
+            "issn": [
+              "0308-7298",
+              "2150-7295"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/10023/13979",
+          "pdf_url": "https://research-repository.st-andrews.ac.uk/bitstream/10023/13979/1/Kefala_History_of_Photography_AM.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400230",
+            "display_name": "St Andrews Research Repository (St Andrews Research Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I16835326",
+            "host_organization_name": "University of St Andrews",
+            "host_organization_lineage": [
+              "https://openalex.org/I16835326"
+            ],
+            "host_organization_lineage_names": [
+              "University of St Andrews"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/10023/13979",
+        "pdf_url": "https://research-repository.st-andrews.ac.uk/bitstream/10023/13979/1/Kefala_History_of_Photography_AM.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400230",
+          "display_name": "St Andrews Research Repository (St Andrews Research Repository)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I16835326",
+          "host_organization_name": "University of St Andrews",
+          "host_organization_lineage": [
+            "https://openalex.org/I16835326"
+          ],
+          "host_organization_lineage_names": [
+            "University of St Andrews"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3094228908",
+    "title": "Representations of Memories through Art: The Artistic Work of Zdravko Dučmelić in Argentina",
+    "relevance_score": 1.3345242,
+    "doi": "https://doi.org/10.3986/dd.2017.2.04",
+    "topic_ids": [
+      "C411171",
+      "C2779343474",
+      "C196187386",
+      "C107038049",
+      "C205783811",
+      "C144024400",
+      "C153349607",
+      "C142362112",
+      "C15744967",
+      "C95457728",
+      "C19165224",
+      "C179454799",
+      "C166957645"
+    ],
+    "best_pdf": "https://ri.conicet.gov.ar/bitstream/11336/74965/2/CONICET_Digital_Nro.17141941-b269-47b2-b50f-44af06019a7a_A.pdf",
+    "backup_pdf": "https://ojs.zrc-sazu.si/twohomelands/article/download/10652/9784",
+    "raw": {
+      "id": "https://openalex.org/W3094228908",
+      "display_name": "Representations of Memories through Art: The Artistic Work of Zdravko Dučmelić in Argentina",
+      "relevance_score": 1.3345242,
+      "doi": "https://doi.org/10.3986/dd.2017.2.04",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C411171",
+          "wikidata": "https://www.wikidata.org/wiki/Q13222181",
+          "display_name": "Habitus",
+          "level": 3,
+          "score": 0.67351764
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.61006534
+        },
+        {
+          "id": "https://openalex.org/C196187386",
+          "wikidata": "https://www.wikidata.org/wiki/Q1050187",
+          "display_name": "Sociocultural evolution",
+          "level": 2,
+          "score": 0.5614501
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.5209721
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.45109224
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.411064
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.40914795
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.40264097
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.32211727
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.19498757
+        },
+        {
+          "id": "https://openalex.org/C19165224",
+          "wikidata": "https://www.wikidata.org/wiki/Q23404",
+          "display_name": "Anthropology",
+          "level": 1,
+          "score": 0.1751926
+        },
+        {
+          "id": "https://openalex.org/C179454799",
+          "wikidata": "https://www.wikidata.org/wiki/Q132151",
+          "display_name": "Ethnography",
+          "level": 2,
+          "score": 0.06386107
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3986/dd.2017.2.04",
+        "pdf_url": "https://ojs.zrc-sazu.si/twohomelands/article/download/10652/9784",
+        "source": {
+          "id": "https://openalex.org/S4210190117",
+          "display_name": "Two Homelands",
+          "issn_l": "0353-6777",
+          "issn": [
+            "0353-6777",
+            "1581-1212"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://ojs.zrc-sazu.si/twohomelands/article/download/10652/9784",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3986/dd.2017.2.04",
+          "pdf_url": "https://ojs.zrc-sazu.si/twohomelands/article/download/10652/9784",
+          "source": {
+            "id": "https://openalex.org/S4210190117",
+            "display_name": "Two Homelands",
+            "issn_l": "0353-6777",
+            "issn": [
+              "0353-6777",
+              "1581-1212"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/8f03dea4df94472c8b1e5b1e18e55851",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/11336/74965",
+          "pdf_url": "https://ri.conicet.gov.ar/bitstream/11336/74965/2/CONICET_Digital_Nro.17141941-b269-47b2-b50f-44af06019a7a_A.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402641",
+            "display_name": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4383465926",
+            "host_organization_name": "LA Referencia",
+            "host_organization_lineage": [
+              "https://openalex.org/I4383465926"
+            ],
+            "host_organization_lineage_names": [
+              "LA Referencia"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3986/dd.2017.2.04",
+        "pdf_url": "https://ojs.zrc-sazu.si/twohomelands/article/download/10652/9784",
+        "source": {
+          "id": "https://openalex.org/S4210190117",
+          "display_name": "Two Homelands",
+          "issn_l": "0353-6777",
+          "issn": [
+            "0353-6777",
+            "1581-1212"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

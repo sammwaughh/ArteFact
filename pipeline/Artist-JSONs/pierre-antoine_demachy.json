@@ -1,0 +1,665 @@
+[
+  {
+    "id": "https://openalex.org/W2801720769",
+    "title": "Artists and the city: mapping the art worlds of eighteenth-century Paris",
+    "relevance_score": 12.557395,
+    "doi": "https://doi.org/10.1017/s0963926818000251",
+    "topic_ids": [
+      "C2781149807",
+      "C85363599",
+      "C142362112",
+      "C153349607",
+      "C52119013",
+      "C189135316",
+      "C554144382"
+    ],
+    "best_pdf": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36368",
+    "backup_pdf": "https://doi.org/10.1017/s0963926818000251",
+    "raw": {
+      "id": "https://openalex.org/W2801720769",
+      "display_name": "Artists and the city: mapping the art worlds of eighteenth-century Paris",
+      "relevance_score": 12.557395,
+      "doi": "https://doi.org/10.1017/s0963926818000251",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2781149807",
+          "wikidata": "https://www.wikidata.org/wiki/Q2493043",
+          "display_name": "Art world",
+          "level": 3,
+          "score": 0.59854066
+        },
+        {
+          "id": "https://openalex.org/C85363599",
+          "wikidata": "https://www.wikidata.org/wiki/Q186030",
+          "display_name": "Contemporary art",
+          "level": 3,
+          "score": 0.5282133
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5279918
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5101202
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.48208764
+        },
+        {
+          "id": "https://openalex.org/C189135316",
+          "wikidata": "https://www.wikidata.org/wiki/Q38166",
+          "display_name": "Modern art",
+          "level": 3,
+          "score": 0.4725499
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.19143453
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/s0963926818000251",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S1743546",
+          "display_name": "Urban History",
+          "issn_l": "0963-9268",
+          "issn": [
+            "0963-9268",
+            "1469-8706"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36368",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1017/s0963926818000251",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S1743546",
+            "display_name": "Urban History",
+            "issn_l": "0963-9268",
+            "issn": [
+              "0963-9268",
+              "1469-8706"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36368",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400530",
+            "display_name": "Queen Mary Research Online (Queen Mary University of London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I166337079",
+            "host_organization_name": "Queen Mary University of London",
+            "host_organization_lineage": [
+              "https://openalex.org/I166337079"
+            ],
+            "host_organization_lineage_names": [
+              "Queen Mary University of London"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36368",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400530",
+          "display_name": "Queen Mary Research Online (Queen Mary University of London)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I166337079",
+          "host_organization_name": "Queen Mary University of London",
+          "host_organization_lineage": [
+            "https://openalex.org/I166337079"
+          ],
+          "host_organization_lineage_names": [
+            "Queen Mary University of London"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2289097232",
+    "title": "Saint Geneviève’s miracles: art and religion in eighteenth-century Paris",
+    "relevance_score": 5.9896007,
+    "doi": "https://doi.org/10.1093/fh/crv076",
+    "topic_ids": [
+      "C9299846",
+      "C2780415144",
+      "C2778682666",
+      "C199033989",
+      "C95457728",
+      "C205783811",
+      "C2778360567",
+      "C52119013",
+      "C142362112",
+      "C24667770",
+      "C144024400",
+      "C124952713",
+      "C138885662",
+      "C199539241",
+      "C195244886",
+      "C17744445"
+    ],
+    "best_pdf": "https://academic.oup.com/fh/article-pdf/30/3/322/6747009/crv076.pdf",
+    "backup_pdf": "https://doi.org/10.1093/fh/crv076",
+    "raw": {
+      "id": "https://openalex.org/W2289097232",
+      "display_name": "Saint Geneviève’s miracles: art and religion in eighteenth-century Paris",
+      "relevance_score": 5.9896007,
+      "doi": "https://doi.org/10.1093/fh/crv076",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C9299846",
+          "wikidata": "https://www.wikidata.org/wiki/Q85502",
+          "display_name": "Secularization",
+          "level": 2,
+          "score": 0.85482454
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.75326943
+        },
+        {
+          "id": "https://openalex.org/C2778682666",
+          "wikidata": "https://www.wikidata.org/wiki/Q11084414",
+          "display_name": "Modernity",
+          "level": 2,
+          "score": 0.7140913
+        },
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.6058644
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.49049324
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.4757057
+        },
+        {
+          "id": "https://openalex.org/C2778360567",
+          "wikidata": "https://www.wikidata.org/wiki/Q898830",
+          "display_name": "Procession",
+          "level": 2,
+          "score": 0.42732158
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.37282717
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.3560189
+        },
+        {
+          "id": "https://openalex.org/C24667770",
+          "wikidata": "https://www.wikidata.org/wiki/Q34187",
+          "display_name": "Religious studies",
+          "level": 1,
+          "score": 0.33484942
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.32660985
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.31111038
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.24428552
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.18860108
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.18635985
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.17218977
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/fh/crv076",
+        "pdf_url": "https://academic.oup.com/fh/article-pdf/30/3/322/6747009/crv076.pdf",
+        "source": {
+          "id": "https://openalex.org/S11977755",
+          "display_name": "French History",
+          "issn_l": "0269-1191",
+          "issn": [
+            "0269-1191",
+            "1477-4542"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://academic.oup.com/fh/article-pdf/30/3/322/6747009/crv076.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1093/fh/crv076",
+          "pdf_url": "https://academic.oup.com/fh/article-pdf/30/3/322/6747009/crv076.pdf",
+          "source": {
+            "id": "https://openalex.org/S11977755",
+            "display_name": "French History",
+            "issn_l": "0269-1191",
+            "issn": [
+              "0269-1191",
+              "1477-4542"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647",
+              "https://openalex.org/P4310311648"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford",
+              "Oxford University Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/fh/crv076",
+        "pdf_url": "https://academic.oup.com/fh/article-pdf/30/3/322/6747009/crv076.pdf",
+        "source": {
+          "id": "https://openalex.org/S11977755",
+          "display_name": "French History",
+          "issn_l": "0269-1191",
+          "issn": [
+            "0269-1191",
+            "1477-4542"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2913438632",
+    "title": "Aprons Made from Canvas: The Legacies of Marie-Jacob Godefroid, Restauratrice to the French Royal Art Collections, 1741-1775",
+    "relevance_score": 2.119793,
+    "doi": "https://doi.org/10.32473/ufjur.v20i1.106279",
+    "topic_ids": [
+      "C205783811",
+      "C142362112",
+      "C153349607",
+      "C52119013",
+      "C182306322",
+      "C9652623",
+      "C10138342",
+      "C162324750",
+      "C33923547",
+      "C202444582"
+    ],
+    "best_pdf": "https://journals.flvc.org/UFJUR/article/download/106279/102970",
+    "backup_pdf": "https://doi.org/10.32473/ufjur.v20i1.106279",
+    "raw": {
+      "id": "https://openalex.org/W2913438632",
+      "display_name": "Aprons Made from Canvas: The Legacies of Marie-Jacob Godefroid, Restauratrice to the French Royal Art Collections, 1741-1775",
+      "relevance_score": 2.119793,
+      "doi": "https://doi.org/10.32473/ufjur.v20i1.106279",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.8112471
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6279289
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.6040611
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.54224885
+        },
+        {
+          "id": "https://openalex.org/C182306322",
+          "wikidata": "https://www.wikidata.org/wiki/Q1779371",
+          "display_name": "Order (exchange)",
+          "level": 2,
+          "score": 0.49376425
+        },
+        {
+          "id": "https://openalex.org/C9652623",
+          "wikidata": "https://www.wikidata.org/wiki/Q190109",
+          "display_name": "Field (mathematics)",
+          "level": 2,
+          "score": 0.42382595
+        },
+        {
+          "id": "https://openalex.org/C10138342",
+          "wikidata": "https://www.wikidata.org/wiki/Q43015",
+          "display_name": "Finance",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C202444582",
+          "wikidata": "https://www.wikidata.org/wiki/Q837863",
+          "display_name": "Pure mathematics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.32473/ufjur.v20i1.106279",
+        "pdf_url": "https://journals.flvc.org/UFJUR/article/download/106279/102970",
+        "source": {
+          "id": "https://openalex.org/S4210209185",
+          "display_name": "UF Journal of Undergraduate Research",
+          "issn_l": "2638-0668",
+          "issn": [
+            "2638-0668"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320363",
+          "host_organization_name": "George A. Smathers Libraries",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320363"
+          ],
+          "host_organization_lineage_names": [
+            "George A. Smathers Libraries"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://journals.flvc.org/UFJUR/article/download/106279/102970",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.32473/ufjur.v20i1.106279",
+          "pdf_url": "https://journals.flvc.org/UFJUR/article/download/106279/102970",
+          "source": {
+            "id": "https://openalex.org/S4210209185",
+            "display_name": "UF Journal of Undergraduate Research",
+            "issn_l": "2638-0668",
+            "issn": [
+              "2638-0668"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320363",
+            "host_organization_name": "George A. Smathers Libraries",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320363"
+            ],
+            "host_organization_lineage_names": [
+              "George A. Smathers Libraries"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.32473/ufjur.v20i1.106279",
+        "pdf_url": "https://journals.flvc.org/UFJUR/article/download/106279/102970",
+        "source": {
+          "id": "https://openalex.org/S4210209185",
+          "display_name": "UF Journal of Undergraduate Research",
+          "issn_l": "2638-0668",
+          "issn": [
+            "2638-0668"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320363",
+          "host_organization_name": "George A. Smathers Libraries",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320363"
+          ],
+          "host_organization_lineage_names": [
+            "George A. Smathers Libraries"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

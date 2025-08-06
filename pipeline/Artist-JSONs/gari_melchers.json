@@ -1,0 +1,77 @@
+[
+  {
+    "id": "https://openalex.org/W3006401612",
+    "title": "Some artists at the fair",
+    "relevance_score": 1.825693,
+    "doi": "https://doi.org/10.5479/sil.86501.39088006317705",
+    "topic_ids": [
+      "C142362112",
+      "C153349607"
+    ],
+    "best_pdf": "https://archive.org/download/someartistsfair00mitc/someartistsfair00mitc.pdf",
+    "backup_pdf": "https://doi.org/10.5479/sil.86501.39088006317705",
+    "raw": {
+      "id": "https://openalex.org/W3006401612",
+      "display_name": "Some artists at the fair",
+      "relevance_score": 1.825693,
+      "doi": "https://doi.org/10.5479/sil.86501.39088006317705",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.46726647
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.40676096
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5479/sil.86501.39088006317705",
+        "pdf_url": "https://archive.org/download/someartistsfair00mitc/someartistsfair00mitc.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://archive.org/download/someartistsfair00mitc/someartistsfair00mitc.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5479/sil.86501.39088006317705",
+          "pdf_url": "https://archive.org/download/someartistsfair00mitc/someartistsfair00mitc.pdf",
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5479/sil.86501.39088006317705",
+        "pdf_url": "https://archive.org/download/someartistsfair00mitc/someartistsfair00mitc.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

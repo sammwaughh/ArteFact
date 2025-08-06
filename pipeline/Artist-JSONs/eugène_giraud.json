@@ -1,0 +1,475 @@
+[
+  {
+    "id": "https://openalex.org/W4210429484",
+    "title": "Baroque Visions: Eugène Green's La Sapienza (2014)",
+    "relevance_score": 2.2042186,
+    "doi": "https://doi.org/10.1353/mlr.2021.0066",
+    "topic_ids": [
+      "C136410877",
+      "C519580073",
+      "C133979268",
+      "C2778757428",
+      "C521332185",
+      "C123657996",
+      "C142362112",
+      "C2776240099",
+      "C107038049",
+      "C52119013",
+      "C554936623",
+      "C138885662",
+      "C124952713",
+      "C153349607",
+      "C95457728",
+      "C111472728",
+      "C27206212",
+      "C166957645",
+      "C41895202"
+    ],
+    "best_pdf": "https://www.research.ed.ac.uk/files/178956361/Schmid_Baroque_Visions_Green_final_MS_LOM_9.11.20_clean_copy.pdf",
+    "backup_pdf": "https://www.research.ed.ac.uk/en/publications/e0e855cc-bf62-40db-886e-7b35011839ca",
+    "raw": {
+      "id": "https://openalex.org/W4210429484",
+      "display_name": "Baroque Visions: Eugène Green's La Sapienza (2014)",
+      "relevance_score": 2.2042186,
+      "doi": "https://doi.org/10.1353/mlr.2021.0066",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C136410877",
+          "wikidata": "https://www.wikidata.org/wiki/Q37853",
+          "display_name": "Baroque",
+          "level": 2,
+          "score": 0.94018435
+        },
+        {
+          "id": "https://openalex.org/C519580073",
+          "wikidata": "https://www.wikidata.org/wiki/Q41253",
+          "display_name": "Movie theater",
+          "level": 2,
+          "score": 0.8261119
+        },
+        {
+          "id": "https://openalex.org/C133979268",
+          "wikidata": "https://www.wikidata.org/wiki/Q1682108",
+          "display_name": "Vision",
+          "level": 2,
+          "score": 0.7086609
+        },
+        {
+          "id": "https://openalex.org/C2778757428",
+          "wikidata": "https://www.wikidata.org/wiki/Q1250464",
+          "display_name": "Realm",
+          "level": 2,
+          "score": 0.6782878
+        },
+        {
+          "id": "https://openalex.org/C521332185",
+          "wikidata": "https://www.wikidata.org/wiki/Q185816",
+          "display_name": "Analogy",
+          "level": 2,
+          "score": 0.6721926
+        },
+        {
+          "id": "https://openalex.org/C123657996",
+          "wikidata": "https://www.wikidata.org/wiki/Q12271",
+          "display_name": "Architecture",
+          "level": 2,
+          "score": 0.61715984
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.61103094
+        },
+        {
+          "id": "https://openalex.org/C2776240099",
+          "wikidata": "https://www.wikidata.org/wiki/Q327018",
+          "display_name": "Interrogation",
+          "level": 2,
+          "score": 0.44712055
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.4235947
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.41817546
+        },
+        {
+          "id": "https://openalex.org/C554936623",
+          "wikidata": "https://www.wikidata.org/wiki/Q199657",
+          "display_name": "Reading (process)",
+          "level": 2,
+          "score": 0.41408393
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.4086293
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.39459866
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.27120778
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.14253008
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.13615021
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.10250467
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1353/mlr.2021.0066",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S93676754",
+          "display_name": "The Modern Language Review",
+          "issn_l": "0026-7937",
+          "issn": [
+            "0026-7937",
+            "2222-4319"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321404",
+          "host_organization_name": "Modern Humanities Research Association",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321404"
+          ],
+          "host_organization_lineage_names": [
+            "Modern Humanities Research Association"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.research.ed.ac.uk/files/178956361/Schmid_Baroque_Visions_Green_final_MS_LOM_9.11.20_clean_copy.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1353/mlr.2021.0066",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S93676754",
+            "display_name": "The Modern Language Review",
+            "issn_l": "0026-7937",
+            "issn": [
+              "0026-7937",
+              "2222-4319"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321404",
+            "host_organization_name": "Modern Humanities Research Association",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321404"
+            ],
+            "host_organization_lineage_names": [
+              "Modern Humanities Research Association"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.research.ed.ac.uk/en/publications/e0e855cc-bf62-40db-886e-7b35011839ca",
+          "pdf_url": "https://www.research.ed.ac.uk/files/178956361/Schmid_Baroque_Visions_Green_final_MS_LOM_9.11.20_clean_copy.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400321",
+            "display_name": "Edinburgh Research Explorer (University of Edinburgh)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I98677209",
+            "host_organization_name": "University of Edinburgh",
+            "host_organization_lineage": [
+              "https://openalex.org/I98677209"
+            ],
+            "host_organization_lineage_names": [
+              "University of Edinburgh"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.pure.ed.ac.uk/ws/files/178956361/Schmid_Baroque_Visions_Green_final_MS_LOM_9.11.20_clean_copy.pdf",
+          "pdf_url": "https://www.pure.ed.ac.uk/ws/files/178956361/Schmid_Baroque_Visions_Green_final_MS_LOM_9.11.20_clean_copy.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400321",
+            "display_name": "Edinburgh Research Explorer (University of Edinburgh)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I98677209",
+            "host_organization_name": "University of Edinburgh",
+            "host_organization_lineage": [
+              "https://openalex.org/I98677209"
+            ],
+            "host_organization_lineage_names": [
+              "University of Edinburgh"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://www.research.ed.ac.uk/en/publications/e0e855cc-bf62-40db-886e-7b35011839ca",
+        "pdf_url": "https://www.research.ed.ac.uk/files/178956361/Schmid_Baroque_Visions_Green_final_MS_LOM_9.11.20_clean_copy.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400321",
+          "display_name": "Edinburgh Research Explorer (University of Edinburgh)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I98677209",
+          "host_organization_name": "University of Edinburgh",
+          "host_organization_lineage": [
+            "https://openalex.org/I98677209"
+          ],
+          "host_organization_lineage_names": [
+            "University of Edinburgh"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2969038088",
+    "title": "Studio Practice, Art, and Caricature",
+    "relevance_score": 1.3734972,
+    "doi": "https://doi.org/10.4000/books.inha.8260",
+    "topic_ids": [
+      "C45012715",
+      "C142362112",
+      "C153349607",
+      "C52119013"
+    ],
+    "best_pdf": "http://books.openedition.org/inha/pdf/7923",
+    "backup_pdf": "https://doi.org/10.4000/books.inha.8260",
+    "raw": {
+      "id": "https://openalex.org/W2969038088",
+      "display_name": "Studio Practice, Art, and Caricature",
+      "relevance_score": 1.3734972,
+      "doi": "https://doi.org/10.4000/books.inha.8260",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C45012715",
+          "wikidata": "https://www.wikidata.org/wiki/Q746628",
+          "display_name": "Studio",
+          "level": 2,
+          "score": 0.81373906
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5385699
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5302793
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3563758
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4000/books.inha.8260",
+        "pdf_url": "http://books.openedition.org/inha/pdf/7923",
+        "source": {
+          "id": "https://openalex.org/S4306489290",
+          "display_name": "Publications de l’Institut national d’histoire de l’art eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "http://books.openedition.org/inha/pdf/7923",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.4000/books.inha.8260",
+          "pdf_url": "http://books.openedition.org/inha/pdf/7923",
+          "source": {
+            "id": "https://openalex.org/S4306489290",
+            "display_name": "Publications de l’Institut national d’histoire de l’art eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "ebook platform"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://books.openedition.org/inha/8260",
+          "pdf_url": "https://books.openedition.org/inha/pdf/8260",
+          "source": null,
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4000/books.inha.8260",
+        "pdf_url": "http://books.openedition.org/inha/pdf/7923",
+        "source": {
+          "id": "https://openalex.org/S4306489290",
+          "display_name": "Publications de l’Institut national d’histoire de l’art eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

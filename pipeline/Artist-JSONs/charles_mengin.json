@@ -1,0 +1,212 @@
+[
+  {
+    "id": "https://openalex.org/W2912495994",
+    "title": "Art History at the Barricades",
+    "relevance_score": 5.455422,
+    "doi": "https://doi.org/10.1111/1467-8365.12440",
+    "topic_ids": [
+      "C142362112",
+      "C52119013",
+      "C153349607"
+    ],
+    "best_pdf": "https://research-information.bris.ac.uk/files/187396638/Art_History.pdf",
+    "backup_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-8365.12440",
+    "raw": {
+      "id": "https://openalex.org/W2912495994",
+      "display_name": "Art History at the Barricades",
+      "relevance_score": 5.455422,
+      "doi": "https://doi.org/10.1111/1467-8365.12440",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.58409303
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.46621734
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.36891425
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/1467-8365.12440",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-8365.12440",
+        "source": {
+          "id": "https://openalex.org/S56668943",
+          "display_name": "Art History",
+          "issn_l": "0141-6790",
+          "issn": [
+            "0141-6790",
+            "1467-8365"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-8365.12440",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1111/1467-8365.12440",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-8365.12440",
+          "source": {
+            "id": "https://openalex.org/S56668943",
+            "display_name": "Art History",
+            "issn_l": "0141-6790",
+            "issn": [
+              "0141-6790",
+              "1467-8365"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647",
+              "https://openalex.org/P4310311648"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford",
+              "Oxford University Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://research-information.bris.ac.uk/en/publications/bd750511-bf80-4e37-8e86-b54a21ab5057",
+          "pdf_url": "https://research-information.bris.ac.uk/files/187396638/Art_History.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400895",
+            "display_name": "Bristol Research (University of Bristol)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I36234482",
+            "host_organization_name": "University of Bristol",
+            "host_organization_lineage": [
+              "https://openalex.org/I36234482"
+            ],
+            "host_organization_lineage_names": [
+              "University of Bristol"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://research-information.bris.ac.uk/ws/files/187396638/Art_History.pdf",
+          "pdf_url": "https://research-information.bris.ac.uk/ws/files/187396638/Art_History.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400895",
+            "display_name": "Bristol Research (University of Bristol)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I36234482",
+            "host_organization_name": "University of Bristol",
+            "host_organization_lineage": [
+              "https://openalex.org/I36234482"
+            ],
+            "host_organization_lineage_names": [
+              "University of Bristol"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/1467-8365.12440",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-8365.12440",
+        "source": {
+          "id": "https://openalex.org/S56668943",
+          "display_name": "Art History",
+          "issn_l": "0141-6790",
+          "issn": [
+            "0141-6790",
+            "1467-8365"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

@@ -1,0 +1,1434 @@
+[
+  {
+    "id": "https://openalex.org/W2430757365",
+    "title": "The Fear of Art: How Censorship Becomes Iconoclasm",
+    "relevance_score": 12.975672,
+    "doi": "https://doi.org/10.1353/sor.2016.0019",
+    "topic_ids": [
+      "C2776951763",
+      "C52930066",
+      "C2776261394",
+      "C107038049",
+      "C142362112",
+      "C199539241",
+      "C17744445",
+      "C52119013"
+    ],
+    "best_pdf": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+    "backup_pdf": "https://doi.org/10.7916/2bap-c392",
+    "raw": {
+      "id": "https://openalex.org/W2430757365",
+      "display_name": "The Fear of Art: How Censorship Becomes Iconoclasm",
+      "relevance_score": 12.975672,
+      "doi": "https://doi.org/10.1353/sor.2016.0019",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776951763",
+          "wikidata": "https://www.wikidata.org/wiki/Q181543",
+          "display_name": "Iconoclasm",
+          "level": 2,
+          "score": 0.9732008
+        },
+        {
+          "id": "https://openalex.org/C52930066",
+          "wikidata": "https://www.wikidata.org/wiki/Q543",
+          "display_name": "Censorship",
+          "level": 2,
+          "score": 0.9159707
+        },
+        {
+          "id": "https://openalex.org/C2776261394",
+          "wikidata": "https://www.wikidata.org/wiki/Q315562",
+          "display_name": "Impossibility",
+          "level": 2,
+          "score": 0.49771145
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.44890162
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.4262913
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.23259991
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.23230812
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.13964263
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1353/sor.2016.0019",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4317411217",
+          "display_name": "Deleted Journal",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1353/sor.2016.0019",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4317411217",
+            "display_name": "Deleted Journal",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": true,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7916/2bap-c392",
+          "pdf_url": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+          "source": {
+            "id": "https://openalex.org/S4306402601",
+            "display_name": "Columbia Academic Commons (Columbia University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I78577930",
+            "host_organization_name": "Columbia University",
+            "host_organization_lineage": [
+              "https://openalex.org/I78577930"
+            ],
+            "host_organization_lineage_names": [
+              "Columbia University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7916/2bap-c392",
+        "pdf_url": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+        "source": {
+          "id": "https://openalex.org/S4306402601",
+          "display_name": "Columbia Academic Commons (Columbia University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I78577930",
+          "host_organization_name": "Columbia University",
+          "host_organization_lineage": [
+            "https://openalex.org/I78577930"
+          ],
+          "host_organization_lineage_names": [
+            "Columbia University"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2799730582",
+    "title": "Art and landscape history: British artists in nineteenth-century Val d’Aosta (north-west Italy)",
+    "relevance_score": 3.5654206,
+    "doi": "https://doi.org/10.1080/01433768.2018.1534460",
+    "topic_ids": [
+      "C2778044066",
+      "C533912065",
+      "C12429862",
+      "C18918823",
+      "C179399861",
+      "C166957645",
+      "C2781205358",
+      "C205649164",
+      "C60671577",
+      "C95457728",
+      "C108865711",
+      "C153349607",
+      "C142362112",
+      "C75545042",
+      "C107826830",
+      "C39432304"
+    ],
+    "best_pdf": "https://nottingham-repository.worktribe.com/preview/919476/Landscape%20History%20Aosta%20060318.pdf",
+    "backup_pdf": "https://nottingham-repository.worktribe.com/output/919464",
+    "raw": {
+      "id": "https://openalex.org/W2799730582",
+      "display_name": "Art and landscape history: British artists in nineteenth-century Val d’Aosta (north-west Italy)",
+      "relevance_score": 3.5654206,
+      "doi": "https://doi.org/10.1080/01433768.2018.1534460",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778044066",
+          "wikidata": "https://www.wikidata.org/wiki/Q455595",
+          "display_name": "Amateur",
+          "level": 2,
+          "score": 0.8552594
+        },
+        {
+          "id": "https://openalex.org/C533912065",
+          "wikidata": "https://www.wikidata.org/wiki/Q6485101",
+          "display_name": "Landscape history",
+          "level": 4,
+          "score": 0.6851777
+        },
+        {
+          "id": "https://openalex.org/C12429862",
+          "wikidata": "https://www.wikidata.org/wiki/Q1129474",
+          "display_name": "Cultural landscape",
+          "level": 2,
+          "score": 0.63493866
+        },
+        {
+          "id": "https://openalex.org/C18918823",
+          "wikidata": "https://www.wikidata.org/wiki/Q49389",
+          "display_name": "Tourism",
+          "level": 2,
+          "score": 0.60718447
+        },
+        {
+          "id": "https://openalex.org/C179399861",
+          "wikidata": "https://www.wikidata.org/wiki/Q3621486",
+          "display_name": "Landscape archaeology",
+          "level": 3,
+          "score": 0.58470845
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.49966764
+        },
+        {
+          "id": "https://openalex.org/C2781205358",
+          "wikidata": "https://www.wikidata.org/wiki/Q2559423",
+          "display_name": "Heritage tourism",
+          "level": 4,
+          "score": 0.49182463
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.47983074
+        },
+        {
+          "id": "https://openalex.org/C60671577",
+          "wikidata": "https://www.wikidata.org/wiki/Q210272",
+          "display_name": "Cultural heritage",
+          "level": 2,
+          "score": 0.43356407
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4229999
+        },
+        {
+          "id": "https://openalex.org/C108865711",
+          "wikidata": "https://www.wikidata.org/wiki/Q8071177",
+          "display_name": "Landscape design",
+          "level": 2,
+          "score": 0.34008613
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.32651886
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.22715428
+        },
+        {
+          "id": "https://openalex.org/C75545042",
+          "wikidata": "https://www.wikidata.org/wiki/Q1350203",
+          "display_name": "Tourism geography",
+          "level": 3,
+          "score": 0.17966247
+        },
+        {
+          "id": "https://openalex.org/C107826830",
+          "wikidata": "https://www.wikidata.org/wiki/Q929380",
+          "display_name": "Environmental resource management",
+          "level": 1,
+          "score": 0.161313
+        },
+        {
+          "id": "https://openalex.org/C39432304",
+          "wikidata": "https://www.wikidata.org/wiki/Q188847",
+          "display_name": "Environmental science",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/01433768.2018.1534460",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764703635",
+          "display_name": "Landscape History",
+          "issn_l": "0143-3768",
+          "issn": [
+            "0143-3768",
+            "2160-2506"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://nottingham-repository.worktribe.com/preview/919476/Landscape%20History%20Aosta%20060318.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/01433768.2018.1534460",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764703635",
+            "display_name": "Landscape History",
+            "issn_l": "0143-3768",
+            "issn": [
+              "0143-3768",
+              "2160-2506"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://nottingham-repository.worktribe.com/output/919464",
+          "pdf_url": "https://nottingham-repository.worktribe.com/preview/919476/Landscape%20History%20Aosta%20060318.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402481",
+            "display_name": "Repository@Nottingham (University of Nottingham)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I142263535",
+            "host_organization_name": "University of Nottingham",
+            "host_organization_lineage": [
+              "https://openalex.org/I142263535"
+            ],
+            "host_organization_lineage_names": [
+              "University of Nottingham"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://nottingham-repository.worktribe.com/output/919464",
+        "pdf_url": "https://nottingham-repository.worktribe.com/preview/919476/Landscape%20History%20Aosta%20060318.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402481",
+          "display_name": "Repository@Nottingham (University of Nottingham)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I142263535",
+          "host_organization_name": "University of Nottingham",
+          "host_organization_lineage": [
+            "https://openalex.org/I142263535"
+          ],
+          "host_organization_lineage_names": [
+            "University of Nottingham"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4399152805",
+    "title": "What can art history offer medical humanities?",
+    "relevance_score": 1.9797413,
+    "doi": "https://doi.org/10.1136/medhum-2023-012763",
+    "topic_ids": [
+      "C2778061430",
+      "C2776212401",
+      "C70789860",
+      "C15708023",
+      "C9652623",
+      "C144024400",
+      "C204457725",
+      "C153349607",
+      "C107038049",
+      "C142362112",
+      "C17744445",
+      "C71924100",
+      "C509550671",
+      "C123657996",
+      "C199539241",
+      "C33923547",
+      "C202444582"
+    ],
+    "best_pdf": "https://mh.bmj.com/content/medhum/early/2024/05/30/medhum-2023-012763.full.pdf",
+    "backup_pdf": "https://doi.org/10.1136/medhum-2023-012763",
+    "raw": {
+      "id": "https://openalex.org/W4399152805",
+      "display_name": "What can art history offer medical humanities?",
+      "relevance_score": 1.9797413,
+      "doi": "https://doi.org/10.1136/medhum-2023-012763",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778061430",
+          "wikidata": "https://www.wikidata.org/wiki/Q188823",
+          "display_name": "Scholarship",
+          "level": 2,
+          "score": 0.78963697
+        },
+        {
+          "id": "https://openalex.org/C2776212401",
+          "wikidata": "https://www.wikidata.org/wiki/Q769420",
+          "display_name": "Medical humanities",
+          "level": 2,
+          "score": 0.78868425
+        },
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.52453405
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.45858666
+        },
+        {
+          "id": "https://openalex.org/C9652623",
+          "wikidata": "https://www.wikidata.org/wiki/Q190109",
+          "display_name": "Field (mathematics)",
+          "level": 2,
+          "score": 0.4400742
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.43965384
+        },
+        {
+          "id": "https://openalex.org/C204457725",
+          "wikidata": "https://www.wikidata.org/wiki/Q50641",
+          "display_name": "History of art",
+          "level": 3,
+          "score": 0.43597868
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.35927153
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.3426478
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.2896581
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.23690894
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.23066446
+        },
+        {
+          "id": "https://openalex.org/C509550671",
+          "wikidata": "https://www.wikidata.org/wiki/Q126945",
+          "display_name": "Medical education",
+          "level": 1,
+          "score": 0.1671792
+        },
+        {
+          "id": "https://openalex.org/C123657996",
+          "wikidata": "https://www.wikidata.org/wiki/Q12271",
+          "display_name": "Architecture",
+          "level": 2,
+          "score": 0.10290596
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.100630194
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C202444582",
+          "wikidata": "https://www.wikidata.org/wiki/Q837863",
+          "display_name": "Pure mathematics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1136/medhum-2023-012763",
+        "pdf_url": "https://mh.bmj.com/content/medhum/early/2024/05/30/medhum-2023-012763.full.pdf",
+        "source": {
+          "id": "https://openalex.org/S159563226",
+          "display_name": "Medical Humanities",
+          "issn_l": "1468-215X",
+          "issn": [
+            "1468-215X",
+            "1473-4265"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319945",
+          "host_organization_name": "BMJ",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319945"
+          ],
+          "host_organization_lineage_names": [
+            "BMJ"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://mh.bmj.com/content/medhum/early/2024/05/30/medhum-2023-012763.full.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1136/medhum-2023-012763",
+          "pdf_url": "https://mh.bmj.com/content/medhum/early/2024/05/30/medhum-2023-012763.full.pdf",
+          "source": {
+            "id": "https://openalex.org/S159563226",
+            "display_name": "Medical Humanities",
+            "issn_l": "1468-215X",
+            "issn": [
+              "1468-215X",
+              "1473-4265"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319945",
+            "host_organization_name": "BMJ",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319945"
+            ],
+            "host_organization_lineage_names": [
+              "BMJ"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://durham-repository.worktribe.com/output/2471707",
+          "pdf_url": "https://durham-repository.worktribe.com/preview/2471713/2471707AOV.pdf",
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://durham-repository.worktribe.com/file/2471707/1/Published%20Journal%20Article%20%28Advance%20Online%20Version%29",
+          "pdf_url": "https://durham-repository.worktribe.com/file/2471707/1/Published%20Journal%20Article%20%28Advance%20Online%20Version%29",
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11503150",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://eprints.bbk.ac.uk/id/eprint/53396/1/53396.pdf",
+          "pdf_url": "https://eprints.bbk.ac.uk/id/eprint/53396/1/53396.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400466",
+            "display_name": "BIROn (Birkbeck, University of London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I98259816",
+            "host_organization_name": "Birkbeck, University of London",
+            "host_organization_lineage": [
+              "https://openalex.org/I98259816"
+            ],
+            "host_organization_lineage_names": [
+              "Birkbeck, University of London"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38816197",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1136/medhum-2023-012763",
+        "pdf_url": "https://mh.bmj.com/content/medhum/early/2024/05/30/medhum-2023-012763.full.pdf",
+        "source": {
+          "id": "https://openalex.org/S159563226",
+          "display_name": "Medical Humanities",
+          "issn_l": "1468-215X",
+          "issn": [
+            "1468-215X",
+            "1473-4265"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319945",
+          "host_organization_name": "BMJ",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319945"
+          ],
+          "host_organization_lineage_names": [
+            "BMJ"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2599191843",
+    "title": "‘The radicals in these Reform times’: Politics, Grand juries, and Ireland’s Unbuilt Assize Courthouses, 1800–50",
+    "relevance_score": 1.2294385,
+    "doi": "https://doi.org/10.1017/s0066622x00002604",
+    "topic_ids": [
+      "C2780623531",
+      "C94625758",
+      "C2775987171",
+      "C2781440851",
+      "C2779343474",
+      "C199539241",
+      "C2778137410",
+      "C139621336",
+      "C144024400",
+      "C48103436",
+      "C2780510313",
+      "C3116431",
+      "C17744445",
+      "C95457728",
+      "C166957645",
+      "C138885662",
+      "C41895202",
+      "C11413529",
+      "C41008148"
+    ],
+    "best_pdf": "https://dspace.mic.ul.ie/bitstream/10395/2990/2/Butler%20-%20Unbuilt%20Courthouses%20-%20as%20submitted%2011%20Feb%2015.pdf",
+    "backup_pdf": "https://dspace.mic.ul.ie/handle/10395/2990",
+    "raw": {
+      "id": "https://openalex.org/W2599191843",
+      "display_name": "‘The radicals in these Reform times’: Politics, Grand juries, and Ireland’s Unbuilt Assize Courthouses, 1800–50",
+      "relevance_score": 1.2294385,
+      "doi": "https://doi.org/10.1017/s0066622x00002604",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780623531",
+          "wikidata": "https://www.wikidata.org/wiki/Q9142",
+          "display_name": "Irish",
+          "level": 2,
+          "score": 0.82689035
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.7372782
+        },
+        {
+          "id": "https://openalex.org/C2775987171",
+          "wikidata": "https://www.wikidata.org/wiki/Q192797",
+          "display_name": "Elite",
+          "level": 3,
+          "score": 0.72873133
+        },
+        {
+          "id": "https://openalex.org/C2781440851",
+          "wikidata": "https://www.wikidata.org/wiki/Q35749",
+          "display_name": "Parliament",
+          "level": 3,
+          "score": 0.6094649
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.58578116
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.57697964
+        },
+        {
+          "id": "https://openalex.org/C2778137410",
+          "wikidata": "https://www.wikidata.org/wiki/Q2732820",
+          "display_name": "Government (linguistics)",
+          "level": 2,
+          "score": 0.5463822
+        },
+        {
+          "id": "https://openalex.org/C139621336",
+          "wikidata": "https://www.wikidata.org/wiki/Q3190382",
+          "display_name": "Economic Justice",
+          "level": 2,
+          "score": 0.5334891
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.4523689
+        },
+        {
+          "id": "https://openalex.org/C48103436",
+          "wikidata": "https://www.wikidata.org/wiki/Q599031",
+          "display_name": "State (computer science)",
+          "level": 2,
+          "score": 0.43241772
+        },
+        {
+          "id": "https://openalex.org/C2780510313",
+          "wikidata": "https://www.wikidata.org/wiki/Q178706",
+          "display_name": "Institution",
+          "level": 2,
+          "score": 0.43128124
+        },
+        {
+          "id": "https://openalex.org/C3116431",
+          "wikidata": "https://www.wikidata.org/wiki/Q31728",
+          "display_name": "Public administration",
+          "level": 1,
+          "score": 0.37260798
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.3277309
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.23131633
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.12147948
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C11413529",
+          "wikidata": "https://www.wikidata.org/wiki/Q8366",
+          "display_name": "Algorithm",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/s0066622x00002604",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S160091105",
+          "display_name": "Architectural History",
+          "issn_l": "0066-622X",
+          "issn": [
+            "0066-622X",
+            "2059-5670"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://dspace.mic.ul.ie/bitstream/10395/2990/2/Butler%20-%20Unbuilt%20Courthouses%20-%20as%20submitted%2011%20Feb%2015.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1017/s0066622x00002604",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S160091105",
+            "display_name": "Architectural History",
+            "issn_l": "0066-622X",
+            "issn": [
+              "0066-622X",
+              "2059-5670"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://dspace.mic.ul.ie/handle/10395/2990",
+          "pdf_url": "https://dspace.mic.ul.ie/bitstream/10395/2990/2/Butler%20-%20Unbuilt%20Courthouses%20-%20as%20submitted%2011%20Feb%2015.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402380",
+            "display_name": "Mary Immaculate Research Repository (Mary Immaculate College)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I98513023",
+            "host_organization_name": "Mary Immaculate College",
+            "host_organization_lineage": [
+              "https://openalex.org/I98513023"
+            ],
+            "host_organization_lineage_names": [
+              "Mary Immaculate College"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://dspace.mic.ul.ie/handle/10395/2990",
+        "pdf_url": "https://dspace.mic.ul.ie/bitstream/10395/2990/2/Butler%20-%20Unbuilt%20Courthouses%20-%20as%20submitted%2011%20Feb%2015.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402380",
+          "display_name": "Mary Immaculate Research Repository (Mary Immaculate College)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I98513023",
+          "host_organization_name": "Mary Immaculate College",
+          "host_organization_lineage": [
+            "https://openalex.org/I98513023"
+          ],
+          "host_organization_lineage_names": [
+            "Mary Immaculate College"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4296148705",
+    "title": "Between Pop and Expressionism",
+    "relevance_score": 1.0370042,
+    "doi": "https://doi.org/10.36615/thethinker.v91i2.1291",
+    "topic_ids": [
+      "C501303744",
+      "C2777239683",
+      "C163258240",
+      "C107038049",
+      "C10511252",
+      "C2777855551",
+      "C2778572836",
+      "C142362112",
+      "C2992860105",
+      "C124952713",
+      "C138885662",
+      "C52119013",
+      "C144024400",
+      "C111472728",
+      "C19417346",
+      "C41895202",
+      "C121332964",
+      "C62520636",
+      "C161191863",
+      "C41008148",
+      "C47177190"
+    ],
+    "best_pdf": "https://journals.uj.ac.za/index.php/The_Thinker/article/download/1291/792",
+    "backup_pdf": "https://doi.org/10.36615/thethinker.v91i2.1291",
+    "raw": {
+      "id": "https://openalex.org/W4296148705",
+      "display_name": "Between Pop and Expressionism",
+      "relevance_score": 1.0370042,
+      "doi": "https://doi.org/10.36615/thethinker.v91i2.1291",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C501303744",
+          "wikidata": "https://www.wikidata.org/wiki/Q208145",
+          "display_name": "Iconography",
+          "level": 2,
+          "score": 0.8737918
+        },
+        {
+          "id": "https://openalex.org/C2777239683",
+          "wikidata": "https://www.wikidata.org/wiki/Q157811",
+          "display_name": "Virtue",
+          "level": 2,
+          "score": 0.6268037
+        },
+        {
+          "id": "https://openalex.org/C163258240",
+          "wikidata": "https://www.wikidata.org/wiki/Q25342",
+          "display_name": "Power (physics)",
+          "level": 2,
+          "score": 0.6238382
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.5482616
+        },
+        {
+          "id": "https://openalex.org/C10511252",
+          "wikidata": "https://www.wikidata.org/wiki/Q112110",
+          "display_name": "Emblem",
+          "level": 2,
+          "score": 0.54198676
+        },
+        {
+          "id": "https://openalex.org/C2777855551",
+          "wikidata": "https://www.wikidata.org/wiki/Q12310021",
+          "display_name": "Subject (documents)",
+          "level": 2,
+          "score": 0.43922842
+        },
+        {
+          "id": "https://openalex.org/C2778572836",
+          "wikidata": "https://www.wikidata.org/wiki/Q380933",
+          "display_name": "Space (punctuation)",
+          "level": 2,
+          "score": 0.43554467
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.43162304
+        },
+        {
+          "id": "https://openalex.org/C2992860105",
+          "wikidata": "https://www.wikidata.org/wiki/Q7631392",
+          "display_name": "Subject matter",
+          "level": 3,
+          "score": 0.41750664
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.41280916
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.3844934
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3063244
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.25607586
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.23755074
+        },
+        {
+          "id": "https://openalex.org/C19417346",
+          "wikidata": "https://www.wikidata.org/wiki/Q7922",
+          "display_name": "Pedagogy",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C47177190",
+          "wikidata": "https://www.wikidata.org/wiki/Q207137",
+          "display_name": "Curriculum",
+          "level": 2,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36615/thethinker.v91i2.1291",
+        "pdf_url": "https://journals.uj.ac.za/index.php/The_Thinker/article/download/1291/792",
+        "source": {
+          "id": "https://openalex.org/S4387279410",
+          "display_name": "The Thinker",
+          "issn_l": "2075-2458",
+          "issn": [
+            "2075-2458"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315346",
+          "host_organization_name": "University of Johannesburg",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315346"
+          ],
+          "host_organization_lineage_names": [
+            "University of Johannesburg"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://journals.uj.ac.za/index.php/The_Thinker/article/download/1291/792",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.36615/thethinker.v91i2.1291",
+          "pdf_url": "https://journals.uj.ac.za/index.php/The_Thinker/article/download/1291/792",
+          "source": {
+            "id": "https://openalex.org/S4387279410",
+            "display_name": "The Thinker",
+            "issn_l": "2075-2458",
+            "issn": [
+              "2075-2458"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310315346",
+            "host_organization_name": "University of Johannesburg",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315346"
+            ],
+            "host_organization_lineage_names": [
+              "University of Johannesburg"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36615/thethinker.v91i2.1291",
+        "pdf_url": "https://journals.uj.ac.za/index.php/The_Thinker/article/download/1291/792",
+        "source": {
+          "id": "https://openalex.org/S4387279410",
+          "display_name": "The Thinker",
+          "issn_l": "2075-2458",
+          "issn": [
+            "2075-2458"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315346",
+          "host_organization_name": "University of Johannesburg",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315346"
+          ],
+          "host_organization_lineage_names": [
+            "University of Johannesburg"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

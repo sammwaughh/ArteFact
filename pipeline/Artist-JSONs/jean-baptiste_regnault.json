@@ -1,0 +1,981 @@
+[
+  {
+    "id": "https://openalex.org/W2810757823",
+    "title": "Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World",
+    "relevance_score": 7.78819,
+    "doi": "https://doi.org/10.30610/5.2018.1",
+    "topic_ids": [
+      "C45012715",
+      "C153349607",
+      "C142362112",
+      "C52119013"
+    ],
+    "best_pdf": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+    "backup_pdf": "https://doi.org/10.30610/5.2018.1",
+    "raw": {
+      "id": "https://openalex.org/W2810757823",
+      "display_name": "Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World",
+      "relevance_score": 7.78819,
+      "doi": "https://doi.org/10.30610/5.2018.1",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C45012715",
+          "wikidata": "https://www.wikidata.org/wiki/Q746628",
+          "display_name": "Studio",
+          "level": 2,
+          "score": 0.89716315
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5826666
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5631577
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.4242601
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30610/5.2018.1",
+        "pdf_url": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210174589",
+          "display_name": "Journal18",
+          "issn_l": "2470-5683",
+          "issn": [
+            "2470-5683"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.30610/5.2018.1",
+          "pdf_url": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210174589",
+            "display_name": "Journal18",
+            "issn_l": "2470-5683",
+            "issn": [
+              "2470-5683"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://www.journal18.org/2654",
+          "pdf_url": "https://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36272",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400530",
+            "display_name": "Queen Mary Research Online (Queen Mary University of London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I166337079",
+            "host_organization_name": "Queen Mary University of London",
+            "host_organization_lineage": [
+              "https://openalex.org/I166337079"
+            ],
+            "host_organization_lineage_names": [
+              "Queen Mary University of London"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30610/5.2018.1",
+        "pdf_url": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210174589",
+          "display_name": "Journal18",
+          "issn_l": "2470-5683",
+          "issn": [
+            "2470-5683"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W1964823529",
+    "title": "Um demônio alado e o arquiteto ausente: aspectos do entendimento da concepção e representação da arquitetura no início do século 19",
+    "relevance_score": 4.9782686,
+    "doi": "https://doi.org/10.11606/issn.2317-2762.v18i30p70-86",
+    "topic_ids": [
+      "C123657996",
+      "C142362112",
+      "C2776359362",
+      "C15708023",
+      "C52119013",
+      "C153349607",
+      "C17744445",
+      "C94625758",
+      "C199539241"
+    ],
+    "best_pdf": "https://www.revistas.usp.br/posfau/article/download/43746/47368",
+    "backup_pdf": "https://doi.org/10.11606/issn.2317-2762.v18i30p70-86",
+    "raw": {
+      "id": "https://openalex.org/W1964823529",
+      "display_name": "Um demônio alado e o arquiteto ausente: aspectos do entendimento da concepção e representação da arquitetura no início do século 19",
+      "relevance_score": 4.9782686,
+      "doi": "https://doi.org/10.11606/issn.2317-2762.v18i30p70-86",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C123657996",
+          "wikidata": "https://www.wikidata.org/wiki/Q12271",
+          "display_name": "Architecture",
+          "level": 2,
+          "score": 0.6490798
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6263137
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.62407786
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.46095186
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.4534129
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.29638553
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.051834255
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.11606/issn.2317-2762.v18i30p70-86",
+        "pdf_url": "https://www.revistas.usp.br/posfau/article/download/43746/47368",
+        "source": {
+          "id": "https://openalex.org/S2738887070",
+          "display_name": "Pós Revista do Programa de Pós-Graduação em Arquitetura e Urbanismo da FAUUSP",
+          "issn_l": "1518-9554",
+          "issn": [
+            "1518-9554",
+            "2317-2762"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310312331",
+          "host_organization_name": "University of São Paulo",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310312331"
+          ],
+          "host_organization_lineage_names": [
+            "University of São Paulo"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://www.revistas.usp.br/posfau/article/download/43746/47368",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.11606/issn.2317-2762.v18i30p70-86",
+          "pdf_url": "https://www.revistas.usp.br/posfau/article/download/43746/47368",
+          "source": {
+            "id": "https://openalex.org/S2738887070",
+            "display_name": "Pós Revista do Programa de Pós-Graduação em Arquitetura e Urbanismo da FAUUSP",
+            "issn_l": "1518-9554",
+            "issn": [
+              "1518-9554",
+              "2317-2762"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310312331",
+            "host_organization_name": "University of São Paulo",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310312331"
+            ],
+            "host_organization_lineage_names": [
+              "University of São Paulo"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/0f8868af61a0492c9539ac60a6292715",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/081d5969a25d47f295f6710de252594b",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://www.revistas.usp.br/posfau/article/view/43746",
+          "pdf_url": "https://revistas.usp.br/posfau/article/download/43746/47368",
+          "source": {
+            "id": "https://openalex.org/S4306400786",
+            "display_name": "Americanae (AECID Library)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.11606/issn.2317-2762.v18i30p70-86",
+        "pdf_url": "https://www.revistas.usp.br/posfau/article/download/43746/47368",
+        "source": {
+          "id": "https://openalex.org/S2738887070",
+          "display_name": "Pós Revista do Programa de Pós-Graduação em Arquitetura e Urbanismo da FAUUSP",
+          "issn_l": "1518-9554",
+          "issn": [
+            "1518-9554",
+            "2317-2762"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310312331",
+          "host_organization_name": "University of São Paulo",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310312331"
+          ],
+          "host_organization_lineage_names": [
+            "University of São Paulo"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2488673195",
+    "title": "‘I was born in this palace’: Emotional Bonds in the Artistic Community of the Louvre (1750–1800)",
+    "relevance_score": 2.1101773,
+    "doi": "https://doi.org/10.1057/9780230286092_14",
+    "topic_ids": [
+      "C2779265402",
+      "C107806365",
+      "C45012715",
+      "C142362112",
+      "C205783811",
+      "C153349607",
+      "C2908647359",
+      "C52119013",
+      "C95457728",
+      "C144024400",
+      "C166957645",
+      "C17744445",
+      "C199539241",
+      "C149923435"
+    ],
+    "best_pdf": "https://hal.archives-ouvertes.fr/hal-02873988/file/0230_543111_17_cha14.pdf",
+    "backup_pdf": "https://hal.science/hal-02873988/document",
+    "raw": {
+      "id": "https://openalex.org/W2488673195",
+      "display_name": "‘I was born in this palace’: Emotional Bonds in the Artistic Community of the Louvre (1750–1800)",
+      "relevance_score": 2.1101773,
+      "doi": "https://doi.org/10.1057/9780230286092_14",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779265402",
+          "wikidata": "https://www.wikidata.org/wiki/Q188507",
+          "display_name": "Apartment",
+          "level": 2,
+          "score": 0.6589842
+        },
+        {
+          "id": "https://openalex.org/C107806365",
+          "wikidata": "https://www.wikidata.org/wiki/Q253567",
+          "display_name": "Apprenticeship",
+          "level": 2,
+          "score": 0.635155
+        },
+        {
+          "id": "https://openalex.org/C45012715",
+          "wikidata": "https://www.wikidata.org/wiki/Q746628",
+          "display_name": "Studio",
+          "level": 2,
+          "score": 0.6313624
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5950202
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.57350063
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5144375
+        },
+        {
+          "id": "https://openalex.org/C2908647359",
+          "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+          "display_name": "Population",
+          "level": 2,
+          "score": 0.45424426
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.36370495
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.25842106
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.23469687
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.18051356
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.13102832
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.123940825
+        },
+        {
+          "id": "https://openalex.org/C149923435",
+          "wikidata": "https://www.wikidata.org/wiki/Q37732",
+          "display_name": "Demography",
+          "level": 1,
+          "score": 0.073788226
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1057/9780230286092_14",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306463716",
+          "display_name": "Palgrave Macmillan UK eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319703",
+          "host_organization_name": "Palgrave Macmillan",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319703",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Palgrave Macmillan",
+            "Springer Nature"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://hal.science/hal-02873988/document",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1057/9780230286092_14",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306463716",
+            "display_name": "Palgrave Macmillan UK eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310319703",
+            "host_organization_name": "Palgrave Macmillan",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319703",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Palgrave Macmillan",
+              "Springer Nature"
+            ],
+            "type": "ebook platform"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hal.science/hal-02873988",
+          "pdf_url": "https://hal.science/hal-02873988/document",
+          "source": {
+            "id": "https://openalex.org/S4306402512",
+            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1294671590",
+            "host_organization_name": "Centre National de la Recherche Scientifique",
+            "host_organization_lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "host_organization_lineage_names": [
+              "Centre National de la Recherche Scientifique"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hal.archives-ouvertes.fr/hal-02873988/file/0230_543111_17_cha14.pdf",
+          "pdf_url": "https://hal.archives-ouvertes.fr/hal-02873988/file/0230_543111_17_cha14.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402512",
+            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1294671590",
+            "host_organization_name": "Centre National de la Recherche Scientifique",
+            "host_organization_lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "host_organization_lineage_names": [
+              "Centre National de la Recherche Scientifique"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hal.science/hal-02873988/file/0230_543111_17_cha14.pdf",
+          "pdf_url": "https://hal.science/hal-02873988/file/0230_543111_17_cha14.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402512",
+            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1294671590",
+            "host_organization_name": "Centre National de la Recherche Scientifique",
+            "host_organization_lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "host_organization_lineage_names": [
+              "Centre National de la Recherche Scientifique"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hal.archives-ouvertes.fr/hal-02873988/document",
+          "pdf_url": "https://hal.archives-ouvertes.fr/hal-02873988/document",
+          "source": {
+            "id": "https://openalex.org/S4306402512",
+            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1294671590",
+            "host_organization_name": "Centre National de la Recherche Scientifique",
+            "host_organization_lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "host_organization_lineage_names": [
+              "Centre National de la Recherche Scientifique"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://hal.science/hal-02873988",
+        "pdf_url": "https://hal.science/hal-02873988/document",
+        "source": {
+          "id": "https://openalex.org/S4306402512",
+          "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I1294671590",
+          "host_organization_name": "Centre National de la Recherche Scientifique",
+          "host_organization_lineage": [
+            "https://openalex.org/I1294671590"
+          ],
+          "host_organization_lineage_names": [
+            "Centre National de la Recherche Scientifique"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4388234238",
+    "title": "Domesticating Robespierre: The Victorian Historical Imagination in William Henry Fisk’s French Revolution Paintings",
+    "relevance_score": 1.2083265,
+    "doi": "https://doi.org/10.29411/ncaw.2023.22.2.5",
+    "topic_ids": [
+      "C205783811",
+      "C52119013",
+      "C142362112",
+      "C124952713"
+    ],
+    "best_pdf": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_1168.pdf",
+    "backup_pdf": "https://doi.org/10.29411/ncaw.2023.22.2.5",
+    "raw": {
+      "id": "https://openalex.org/W4388234238",
+      "display_name": "Domesticating Robespierre: The Victorian Historical Imagination in William Henry Fisk’s French Revolution Paintings",
+      "relevance_score": 1.2083265,
+      "doi": "https://doi.org/10.29411/ncaw.2023.22.2.5",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.8213228
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.6170399
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.60789573
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.34383988
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.29411/ncaw.2023.22.2.5",
+        "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_1168.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210167961",
+          "display_name": "Nineteenth-Century Art Worldwide",
+          "issn_l": "1543-1002",
+          "issn": [
+            "1543-1002"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_1168.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.29411/ncaw.2023.22.2.5",
+          "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_1168.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210167961",
+            "display_name": "Nineteenth-Century Art Worldwide",
+            "issn_l": "1543-1002",
+            "issn": [
+              "1543-1002"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://www.19thc-artworldwide.org/autumn23/kwok-on-victorian-historical-imagination-in-fisks-french-revolution-paintings",
+          "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_1175.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.29411/ncaw.2023.22.2.5",
+        "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_1168.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210167961",
+          "display_name": "Nineteenth-Century Art Worldwide",
+          "issn_l": "1543-1002",
+          "issn": [
+            "1543-1002"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

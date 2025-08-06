@@ -1,0 +1,992 @@
+[
+  {
+    "id": "https://openalex.org/W2557842801",
+    "title": "Civic Piety and Patriotism: Patrician Humanists and Jews in Venice and Its Empire",
+    "relevance_score": 6.4738064,
+    "doi": "https://doi.org/10.1086/690313",
+    "topic_ids": [
+      "C153606108",
+      "C150152722",
+      "C2778897741",
+      "C2778495208",
+      "C2778197078",
+      "C94625758",
+      "C2781119825",
+      "C2776786559",
+      "C74916050",
+      "C48103436",
+      "C24667770",
+      "C124952713",
+      "C142362112",
+      "C95457728",
+      "C199539241",
+      "C195244886",
+      "C17744445",
+      "C138885662",
+      "C166957645",
+      "C11413529",
+      "C41008148"
+    ],
+    "best_pdf": "https://www.pure.ed.ac.uk/ws/files/25399896/Bowd_2016_RQ_Civic_Piety_and_Patriotism_Patrician_Humanists_and_Jews.pdf",
+    "backup_pdf": "https://doi.org/10.1086/690313",
+    "raw": {
+      "id": "https://openalex.org/W2557842801",
+      "display_name": "Civic Piety and Patriotism: Patrician Humanists and Jews in Venice and Its Empire",
+      "relevance_score": 6.4738064,
+      "doi": "https://doi.org/10.1086/690313",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C153606108",
+          "wikidata": "https://www.wikidata.org/wiki/Q46158",
+          "display_name": "Humanism",
+          "level": 2,
+          "score": 0.82413733
+        },
+        {
+          "id": "https://openalex.org/C150152722",
+          "wikidata": "https://www.wikidata.org/wiki/Q9268",
+          "display_name": "Judaism",
+          "level": 2,
+          "score": 0.72365135
+        },
+        {
+          "id": "https://openalex.org/C2778897741",
+          "wikidata": "https://www.wikidata.org/wiki/Q1411871",
+          "display_name": "Piety",
+          "level": 2,
+          "score": 0.67284894
+        },
+        {
+          "id": "https://openalex.org/C2778495208",
+          "wikidata": "https://www.wikidata.org/wiki/Q48349",
+          "display_name": "Empire",
+          "level": 2,
+          "score": 0.635494
+        },
+        {
+          "id": "https://openalex.org/C2778197078",
+          "wikidata": "https://www.wikidata.org/wiki/Q183225",
+          "display_name": "Toleration",
+          "level": 3,
+          "score": 0.56521505
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.5557081
+        },
+        {
+          "id": "https://openalex.org/C2781119825",
+          "wikidata": "https://www.wikidata.org/wiki/Q2163436",
+          "display_name": "Fifteenth",
+          "level": 2,
+          "score": 0.54646826
+        },
+        {
+          "id": "https://openalex.org/C2776786559",
+          "wikidata": "https://www.wikidata.org/wiki/Q6241",
+          "display_name": "Patriotism",
+          "level": 3,
+          "score": 0.49199483
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.43803617
+        },
+        {
+          "id": "https://openalex.org/C48103436",
+          "wikidata": "https://www.wikidata.org/wiki/Q599031",
+          "display_name": "State (computer science)",
+          "level": 2,
+          "score": 0.43135446
+        },
+        {
+          "id": "https://openalex.org/C24667770",
+          "wikidata": "https://www.wikidata.org/wiki/Q34187",
+          "display_name": "Religious studies",
+          "level": 1,
+          "score": 0.39993936
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.35030073
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.3322732
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.3275295
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.30408794
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.23230097
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.22864088
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.20086107
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0758529
+        },
+        {
+          "id": "https://openalex.org/C11413529",
+          "wikidata": "https://www.wikidata.org/wiki/Q8366",
+          "display_name": "Algorithm",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1086/690313",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S193779622",
+          "display_name": "Renaissance Quarterly",
+          "issn_l": "0034-4338",
+          "issn": [
+            "0034-4338",
+            "1935-0236"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.pure.ed.ac.uk/ws/files/25399896/Bowd_2016_RQ_Civic_Piety_and_Patriotism_Patrician_Humanists_and_Jews.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1086/690313",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S193779622",
+            "display_name": "Renaissance Quarterly",
+            "issn_l": "0034-4338",
+            "issn": [
+              "0034-4338",
+              "1935-0236"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.pure.ed.ac.uk/ws/files/25399896/Bowd_2016_RQ_Civic_Piety_and_Patriotism_Patrician_Humanists_and_Jews.pdf",
+          "pdf_url": "https://www.pure.ed.ac.uk/ws/files/25399896/Bowd_2016_RQ_Civic_Piety_and_Patriotism_Patrician_Humanists_and_Jews.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400321",
+            "display_name": "Edinburgh Research Explorer (University of Edinburgh)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I98677209",
+            "host_organization_name": "University of Edinburgh",
+            "host_organization_lineage": [
+              "https://openalex.org/I98677209"
+            ],
+            "host_organization_lineage_names": [
+              "University of Edinburgh"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/20.500.11820/019f8b27-30c8-4433-9410-2f556ccbf083",
+          "pdf_url": "https://www.research.ed.ac.uk/files/25399896/Bowd_2016_RQ_Civic_Piety_and_Patriotism_Patrician_Humanists_and_Jews.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400320",
+            "display_name": "Edinburgh Research Explorer (University of Edinburgh)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I98677209",
+            "host_organization_name": "University of Edinburgh",
+            "host_organization_lineage": [
+              "https://openalex.org/I98677209"
+            ],
+            "host_organization_lineage_names": [
+              "University of Edinburgh"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://www.pure.ed.ac.uk/ws/files/25399896/Bowd_2016_RQ_Civic_Piety_and_Patriotism_Patrician_Humanists_and_Jews.pdf",
+        "pdf_url": "https://www.pure.ed.ac.uk/ws/files/25399896/Bowd_2016_RQ_Civic_Piety_and_Patriotism_Patrician_Humanists_and_Jews.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400321",
+          "display_name": "Edinburgh Research Explorer (University of Edinburgh)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I98677209",
+          "host_organization_name": "University of Edinburgh",
+          "host_organization_lineage": [
+            "https://openalex.org/I98677209"
+          ],
+          "host_organization_lineage_names": [
+            "University of Edinburgh"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2560530214",
+    "title": "Vertical Readings in Dante's Comedy: Volume 2",
+    "relevance_score": 3.5488706,
+    "doi": "https://doi.org/10.11647/obp.0100",
+    "topic_ids": [
+      "C548253320",
+      "C20556612",
+      "C142362112",
+      "C124952713",
+      "C121332964",
+      "C62520636"
+    ],
+    "best_pdf": "https://www.openbookpublishers.com/10.11647/OBP.0100.pdf",
+    "backup_pdf": "https://doi.org/10.11647/obp.0100",
+    "raw": {
+      "id": "https://openalex.org/W2560530214",
+      "display_name": "Vertical Readings in Dante's Comedy: Volume 2",
+      "relevance_score": 3.5488706,
+      "doi": "https://doi.org/10.11647/obp.0100",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C548253320",
+          "wikidata": "https://www.wikidata.org/wiki/Q157443",
+          "display_name": "Comedy",
+          "level": 2,
+          "score": 0.8638233
+        },
+        {
+          "id": "https://openalex.org/C20556612",
+          "wikidata": "https://www.wikidata.org/wiki/Q4469374",
+          "display_name": "Volume (thermodynamics)",
+          "level": 2,
+          "score": 0.64307255
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5284065
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.3308733
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.102083236
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.11647/obp.0100",
+        "pdf_url": "https://www.openbookpublishers.com/10.11647/OBP.0100.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463697",
+          "display_name": "Open Book Publishers",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://www.openbookpublishers.com/10.11647/OBP.0100.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.11647/obp.0100",
+          "pdf_url": "https://www.openbookpublishers.com/10.11647/OBP.0100.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306463697",
+            "display_name": "Open Book Publishers",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "ebook platform"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.doabooks.org/doab?func=search&query=rid:23436",
+          "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/31238/1/633789.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400539",
+            "display_name": "Directory of Open access Books (OAPEN Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/10023/12284",
+          "pdf_url": "https://research-repository.st-andrews.ac.uk/bitstream/10023/12284/1/Vertical_Readings_vol2.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400230",
+            "display_name": "St Andrews Research Repository (St Andrews Research Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I16835326",
+            "host_organization_name": "University of St Andrews",
+            "host_organization_lineage": [
+              "https://openalex.org/I16835326"
+            ],
+            "host_organization_lineage_names": [
+              "University of St Andrews"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.openbookpublishers.com/product/623",
+          "pdf_url": "https://books.openbookpublishers.com/10.11647/obp.0119.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400230",
+            "display_name": "St Andrews Research Repository (St Andrews Research Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I16835326",
+            "host_organization_name": "University of St Andrews",
+            "host_organization_lineage": [
+              "https://openalex.org/I16835326"
+            ],
+            "host_organization_lineage_names": [
+              "University of St Andrews"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://discover.libraryhub.jisc.ac.uk/search?q=title%3A%20Vertical%20readings%20in%20Dante%27s%20Comedy%3A%20Volume%202&rn=1",
+          "pdf_url": "http://library.oapen.org/bitstream/20.500.12657/31238/1/633789.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400230",
+            "display_name": "St Andrews Research Repository (St Andrews Research Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I16835326",
+            "host_organization_name": "University of St Andrews",
+            "host_organization_lineage": [
+              "https://openalex.org/I16835326"
+            ],
+            "host_organization_lineage_names": [
+              "University of St Andrews"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.openbookpublishers.com/product/367",
+          "pdf_url": "https://books.openbookpublishers.com/10.11647/obp.0066.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400230",
+            "display_name": "St Andrews Research Repository (St Andrews Research Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I16835326",
+            "host_organization_name": "University of St Andrews",
+            "host_organization_lineage": [
+              "https://openalex.org/I16835326"
+            ],
+            "host_organization_lineage_names": [
+              "University of St Andrews"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.doabooks.org/doab?func=search&query=rid:23406",
+          "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/31249/1/633753.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400539",
+            "display_name": "Directory of Open access Books (OAPEN Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.11647/obp.0100",
+        "pdf_url": "https://www.openbookpublishers.com/10.11647/OBP.0100.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463697",
+          "display_name": "Open Book Publishers",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2786879663",
+    "title": "Reveries of Community: French Epic in the Age of Henri IV, 1572–1616",
+    "relevance_score": 2.6873841,
+    "doi": "https://doi.org/10.33137/rr.v41i4.32487",
+    "topic_ids": [
+      "C115519274",
+      "C95457728",
+      "C53553401",
+      "C124952713",
+      "C142362112"
+    ],
+    "best_pdf": "https://jps.library.utoronto.ca/index.php/renref/article/download/32487/24885",
+    "backup_pdf": "https://doi.org/10.33137/rr.v41i4.32487",
+    "raw": {
+      "id": "https://openalex.org/W2786879663",
+      "display_name": "Reveries of Community: French Epic in the Age of Henri IV, 1572–1616",
+      "relevance_score": 2.6873841,
+      "doi": "https://doi.org/10.33137/rr.v41i4.32487",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C115519274",
+          "wikidata": "https://www.wikidata.org/wiki/Q267903",
+          "display_name": "EPIC",
+          "level": 2,
+          "score": 0.91252095
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.48157144
+        },
+        {
+          "id": "https://openalex.org/C53553401",
+          "wikidata": "https://www.wikidata.org/wiki/Q47307",
+          "display_name": "Genealogy",
+          "level": 1,
+          "score": 0.3266921
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.28174224
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.16474298
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.33137/rr.v41i4.32487",
+        "pdf_url": "https://jps.library.utoronto.ca/index.php/renref/article/download/32487/24885",
+        "source": {
+          "id": "https://openalex.org/S44595396",
+          "display_name": "Renaissance and Reformation",
+          "issn_l": "0034-429X",
+          "issn": [
+            "0034-429X",
+            "2293-7374"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4324113769",
+          "host_organization_name": "Iter Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4324113769"
+          ],
+          "host_organization_lineage_names": [
+            "Iter Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://jps.library.utoronto.ca/index.php/renref/article/download/32487/24885",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.33137/rr.v41i4.32487",
+          "pdf_url": "https://jps.library.utoronto.ca/index.php/renref/article/download/32487/24885",
+          "source": {
+            "id": "https://openalex.org/S44595396",
+            "display_name": "Renaissance and Reformation",
+            "issn_l": "0034-429X",
+            "issn": [
+              "0034-429X",
+              "2293-7374"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4324113769",
+            "host_organization_name": "Iter Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4324113769"
+            ],
+            "host_organization_lineage_names": [
+              "Iter Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.33137/rr.v41i4.32487",
+        "pdf_url": "https://jps.library.utoronto.ca/index.php/renref/article/download/32487/24885",
+        "source": {
+          "id": "https://openalex.org/S44595396",
+          "display_name": "Renaissance and Reformation",
+          "issn_l": "0034-429X",
+          "issn": [
+            "0034-429X",
+            "2293-7374"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4324113769",
+          "host_organization_name": "Iter Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4324113769"
+          ],
+          "host_organization_lineage_names": [
+            "Iter Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2133516012",
+    "title": "Boccaccio's Hellenism and the Foundations of Modernity",
+    "relevance_score": 1.5738231,
+    "doi": "https://doi.org/10.1353/mdi.2012.0001",
+    "topic_ids": [
+      "C2778682666",
+      "C138885662",
+      "C95457728",
+      "C111472728"
+    ],
+    "best_pdf": "https://hcommons.org/deposits/download/hc:21958/CONTENT/33.lummus.pdf/",
+    "backup_pdf": "http://dx.doi.org/10.17613/adyd-0p51",
+    "raw": {
+      "id": "https://openalex.org/W2133516012",
+      "display_name": "Boccaccio's Hellenism and the Foundations of Modernity",
+      "relevance_score": 1.5738231,
+      "doi": "https://doi.org/10.1353/mdi.2012.0001",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778682666",
+          "wikidata": "https://www.wikidata.org/wiki/Q11084414",
+          "display_name": "Modernity",
+          "level": 2,
+          "score": 0.9306834
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.35308003
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.35073274
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.25675792
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1353/mdi.2012.0001",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210180730",
+          "display_name": "Mediaevalia",
+          "issn_l": "0361-946X",
+          "issn": [
+            "0361-946X",
+            "2161-8046"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://hcommons.org/deposits/download/hc:21958/CONTENT/33.lummus.pdf/",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1353/mdi.2012.0001",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210180730",
+            "display_name": "Mediaevalia",
+            "issn_l": "0361-946X",
+            "issn": [
+              "0361-946X",
+              "2161-8046"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://dx.doi.org/10.17613/adyd-0p51",
+          "pdf_url": "https://hcommons.org/deposits/download/hc:21958/CONTENT/33.lummus.pdf/",
+          "source": {
+            "id": "https://openalex.org/S4306402525",
+            "display_name": "Humanities Commons CORE (Modern Language Association / Columbia University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.17613/adyd-0p51",
+        "pdf_url": "https://hcommons.org/deposits/download/hc:21958/CONTENT/33.lummus.pdf/",
+        "source": {
+          "id": "https://openalex.org/S4306402525",
+          "display_name": "Humanities Commons CORE (Modern Language Association / Columbia University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]

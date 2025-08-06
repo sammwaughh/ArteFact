@@ -1,0 +1,195 @@
+[
+  {
+    "id": "https://openalex.org/W2069191369",
+    "title": "Photographic Art: An Ontology Fit to Print",
+    "relevance_score": 5.918088,
+    "doi": "https://doi.org/10.1111/j.1540-6245.2011.01496.x",
+    "topic_ids": [
+      "C142362112",
+      "C25810664",
+      "C153349607",
+      "C138885662",
+      "C111472728"
+    ],
+    "best_pdf": "https://academic.oup.com/jaac/article-pdf/70/1/31/34527804/jaac_v70_1_031.pdf",
+    "backup_pdf": "https://doi.org/10.1111/j.1540-6245.2011.01496.x",
+    "raw": {
+      "id": "https://openalex.org/W2069191369",
+      "display_name": "Photographic Art: An Ontology Fit to Print",
+      "relevance_score": 5.918088,
+      "doi": "https://doi.org/10.1111/j.1540-6245.2011.01496.x",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.49982738
+        },
+        {
+          "id": "https://openalex.org/C25810664",
+          "wikidata": "https://www.wikidata.org/wiki/Q44325",
+          "display_name": "Ontology",
+          "level": 2,
+          "score": 0.48540482
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.42952448
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.1436297
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.09501219
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/j.1540-6245.2011.01496.x",
+        "pdf_url": "https://academic.oup.com/jaac/article-pdf/70/1/31/34527804/jaac_v70_1_031.pdf",
+        "source": {
+          "id": "https://openalex.org/S26308392",
+          "display_name": "Journal of Aesthetics and Art Criticism",
+          "issn_l": "0021-8529",
+          "issn": [
+            "0021-8529",
+            "1540-6245"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://academic.oup.com/jaac/article-pdf/70/1/31/34527804/jaac_v70_1_031.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1111/j.1540-6245.2011.01496.x",
+          "pdf_url": "https://academic.oup.com/jaac/article-pdf/70/1/31/34527804/jaac_v70_1_031.pdf",
+          "source": {
+            "id": "https://openalex.org/S26308392",
+            "display_name": "Journal of Aesthetics and Art Criticism",
+            "issn_l": "0021-8529",
+            "issn": [
+              "0021-8529",
+              "1540-6245"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647",
+              "https://openalex.org/P4310311648"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford",
+              "Oxford University Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://philarchive.org/rec/UIDPAA",
+          "pdf_url": "https://philpapers.org/archive/UIDPAA.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402130",
+            "display_name": "PhilPapers (PhilPapers Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/j.1540-6245.2011.01496.x",
+        "pdf_url": "https://academic.oup.com/jaac/article-pdf/70/1/31/34527804/jaac_v70_1_031.pdf",
+        "source": {
+          "id": "https://openalex.org/S26308392",
+          "display_name": "Journal of Aesthetics and Art Criticism",
+          "issn_l": "0021-8529",
+          "issn": [
+            "0021-8529",
+            "1540-6245"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

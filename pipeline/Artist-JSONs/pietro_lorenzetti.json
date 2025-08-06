@@ -1,0 +1,4566 @@
+[
+  {
+    "id": "https://openalex.org/W3127343581",
+    "title": "Art in Science—Humility: As Portrayed by Pietro Lorenzetti",
+    "relevance_score": 75.76921,
+    "doi": "https://doi.org/10.1097/corr.0000000000001666",
+    "topic_ids": [
+      "C71924100",
+      "C2778456462",
+      "C74916050",
+      "C27206212",
+      "C142362112",
+      "C138885662"
+    ],
+    "best_pdf": "https://doi.org/10.1097/corr.0000000000001666",
+    "backup_pdf": "https://journals.lww.com/clinorthop/Fulltext/2021/03000/Art_in_Science_Humility__As_Portrayed_by_Pietro.6.aspx",
+    "raw": {
+      "id": "https://openalex.org/W3127343581",
+      "display_name": "Art in Science—Humility: As Portrayed by Pietro Lorenzetti",
+      "relevance_score": 75.76921,
+      "doi": "https://doi.org/10.1097/corr.0000000000001666",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.89817715
+        },
+        {
+          "id": "https://openalex.org/C2778456462",
+          "wikidata": "https://www.wikidata.org/wiki/Q1186677",
+          "display_name": "Humility",
+          "level": 2,
+          "score": 0.8618809
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.33832708
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.1094777
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.053672582
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1097/corr.0000000000001666",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S191421250",
+          "display_name": "Clinical Orthopaedics and Related Research",
+          "issn_l": "0009-921X",
+          "issn": [
+            "0009-921X",
+            "1528-1132"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310315671",
+          "host_organization_name": "Lippincott Williams & Wilkins",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315671",
+            "https://openalex.org/P4310318547"
+          ],
+          "host_organization_lineage_names": [
+            "Lippincott Williams & Wilkins",
+            "Wolters Kluwer"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://doi.org/10.1097/corr.0000000000001666",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1097/corr.0000000000001666",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S191421250",
+            "display_name": "Clinical Orthopaedics and Related Research",
+            "issn_l": "0009-921X",
+            "issn": [
+              "0009-921X",
+              "1528-1132"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310315671",
+            "host_organization_name": "Lippincott Williams & Wilkins",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315671",
+              "https://openalex.org/P4310318547"
+            ],
+            "host_organization_lineage_names": [
+              "Lippincott Williams & Wilkins",
+              "Wolters Kluwer"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://journals.lww.com/clinorthop/Fulltext/2021/03000/Art_in_Science_Humility__As_Portrayed_by_Pietro.6.aspx",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7899731",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33543878",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1097/corr.0000000000001666",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S191421250",
+          "display_name": "Clinical Orthopaedics and Related Research",
+          "issn_l": "0009-921X",
+          "issn": [
+            "0009-921X",
+            "1528-1132"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310315671",
+          "host_organization_name": "Lippincott Williams & Wilkins",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315671",
+            "https://openalex.org/P4310318547"
+          ],
+          "host_organization_lineage_names": [
+            "Lippincott Williams & Wilkins",
+            "Wolters Kluwer"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2059204859",
+    "title": "Normative Criticism and the Objective Value of Artworks",
+    "relevance_score": 10.5105715,
+    "doi": "https://doi.org/10.1111/1540-6245.00062",
+    "topic_ids": [
+      "C7991579",
+      "C44725695",
+      "C142362112",
+      "C162462552",
+      "C2776291640",
+      "C2779175135",
+      "C2780861071",
+      "C204034006",
+      "C205783811",
+      "C16277566",
+      "C107038049",
+      "C138885662",
+      "C52119013",
+      "C124952713",
+      "C11171543",
+      "C554144382",
+      "C15744967",
+      "C111472728",
+      "C33923547",
+      "C2524010",
+      "C119857082",
+      "C41008148"
+    ],
+    "best_pdf": "https://academic.oup.com/jaac/article-pdf/60/2/151/34523349/jaac_v60_2_151.pdf",
+    "backup_pdf": "https://doi.org/10.1111/1540-6245.00062",
+    "raw": {
+      "id": "https://openalex.org/W2059204859",
+      "display_name": "Normative Criticism and the Objective Value of Artworks",
+      "relevance_score": 10.5105715,
+      "doi": "https://doi.org/10.1111/1540-6245.00062",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C7991579",
+          "wikidata": "https://www.wikidata.org/wiki/Q17955",
+          "display_name": "Criticism",
+          "level": 2,
+          "score": 0.6694471
+        },
+        {
+          "id": "https://openalex.org/C44725695",
+          "wikidata": "https://www.wikidata.org/wiki/Q288156",
+          "display_name": "Normative",
+          "level": 2,
+          "score": 0.6692908
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5783968
+        },
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.56325996
+        },
+        {
+          "id": "https://openalex.org/C2776291640",
+          "wikidata": "https://www.wikidata.org/wiki/Q2912517",
+          "display_name": "Value (mathematics)",
+          "level": 2,
+          "score": 0.53081155
+        },
+        {
+          "id": "https://openalex.org/C2779175135",
+          "wikidata": "https://www.wikidata.org/wiki/Q5123445",
+          "display_name": "Pollock",
+          "level": 2,
+          "score": 0.51788974
+        },
+        {
+          "id": "https://openalex.org/C2780861071",
+          "wikidata": "https://www.wikidata.org/wiki/Q1062934",
+          "display_name": "Character (mathematics)",
+          "level": 2,
+          "score": 0.5134462
+        },
+        {
+          "id": "https://openalex.org/C204034006",
+          "wikidata": "https://www.wikidata.org/wiki/Q1143847",
+          "display_name": "Art criticism",
+          "level": 3,
+          "score": 0.51335496
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.452492
+        },
+        {
+          "id": "https://openalex.org/C16277566",
+          "wikidata": "https://www.wikidata.org/wiki/Q9734",
+          "display_name": "Symphony",
+          "level": 2,
+          "score": 0.43665022
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.4009894
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.3871001
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3540129
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.35113811
+        },
+        {
+          "id": "https://openalex.org/C11171543",
+          "wikidata": "https://www.wikidata.org/wiki/Q41630",
+          "display_name": "Psychoanalysis",
+          "level": 1,
+          "score": 0.33725512
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.2623322
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.24571267
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.1509718
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C2524010",
+          "wikidata": "https://www.wikidata.org/wiki/Q8087",
+          "display_name": "Geometry",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/1540-6245.00062",
+        "pdf_url": "https://academic.oup.com/jaac/article-pdf/60/2/151/34523349/jaac_v60_2_151.pdf",
+        "source": {
+          "id": "https://openalex.org/S26308392",
+          "display_name": "Journal of Aesthetics and Art Criticism",
+          "issn_l": "0021-8529",
+          "issn": [
+            "0021-8529",
+            "1540-6245"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://academic.oup.com/jaac/article-pdf/60/2/151/34523349/jaac_v60_2_151.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1111/1540-6245.00062",
+          "pdf_url": "https://academic.oup.com/jaac/article-pdf/60/2/151/34523349/jaac_v60_2_151.pdf",
+          "source": {
+            "id": "https://openalex.org/S26308392",
+            "display_name": "Journal of Aesthetics and Art Criticism",
+            "issn_l": "0021-8529",
+            "issn": [
+              "0021-8529",
+              "1540-6245"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647",
+              "https://openalex.org/P4310311648"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford",
+              "Oxford University Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/1540-6245.00062",
+        "pdf_url": "https://academic.oup.com/jaac/article-pdf/60/2/151/34523349/jaac_v60_2_151.pdf",
+        "source": {
+          "id": "https://openalex.org/S26308392",
+          "display_name": "Journal of Aesthetics and Art Criticism",
+          "issn_l": "0021-8529",
+          "issn": [
+            "0021-8529",
+            "1540-6245"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4389575424",
+    "title": "Framing the Golgotha in Renaissance Painting",
+    "relevance_score": 9.628832,
+    "doi": "https://doi.org/10.4000/sillagescritiques.14888",
+    "topic_ids": [
+      "C205783811",
+      "C169087156",
+      "C199033989",
+      "C501303744",
+      "C142362112",
+      "C32276052",
+      "C126042441",
+      "C52119013",
+      "C153349607",
+      "C107038049",
+      "C95457728",
+      "C124952713",
+      "C41008148",
+      "C76155785",
+      "C166957645"
+    ],
+    "best_pdf": "https://doi.org/10.4000/sillagescritiques.14888",
+    "backup_pdf": "",
+    "raw": {
+      "id": "https://openalex.org/W4389575424",
+      "display_name": "Framing the Golgotha in Renaissance Painting",
+      "relevance_score": 9.628832,
+      "doi": "https://doi.org/10.4000/sillagescritiques.14888",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.84739935
+        },
+        {
+          "id": "https://openalex.org/C169087156",
+          "wikidata": "https://www.wikidata.org/wiki/Q2131593",
+          "display_name": "Framing (construction)",
+          "level": 2,
+          "score": 0.64782345
+        },
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.57297015
+        },
+        {
+          "id": "https://openalex.org/C501303744",
+          "wikidata": "https://www.wikidata.org/wiki/Q208145",
+          "display_name": "Iconography",
+          "level": 2,
+          "score": 0.56825274
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.51895165
+        },
+        {
+          "id": "https://openalex.org/C32276052",
+          "wikidata": "https://www.wikidata.org/wiki/Q908349",
+          "display_name": "Motif (music)",
+          "level": 2,
+          "score": 0.4537308
+        },
+        {
+          "id": "https://openalex.org/C126042441",
+          "wikidata": "https://www.wikidata.org/wiki/Q1324888",
+          "display_name": "Frame (networking)",
+          "level": 2,
+          "score": 0.41537932
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.41204304
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.38135928
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.28009728
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.25542727
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.24740648
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.17818692
+        },
+        {
+          "id": "https://openalex.org/C76155785",
+          "wikidata": "https://www.wikidata.org/wiki/Q418",
+          "display_name": "Telecommunications",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4000/sillagescritiques.14888",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210173441",
+          "display_name": "Sillages critiques",
+          "issn_l": "1272-3819",
+          "issn": [
+            "1272-3819",
+            "1969-6302"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311461",
+          "host_organization_name": "Centre de Recherche \"Texte et Critique de Texte\"",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311461"
+          ],
+          "host_organization_lineage_names": [
+            "Centre de Recherche \"Texte et Critique de Texte\""
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://doi.org/10.4000/sillagescritiques.14888",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.4000/sillagescritiques.14888",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210173441",
+            "display_name": "Sillages critiques",
+            "issn_l": "1272-3819",
+            "issn": [
+              "1272-3819",
+              "1969-6302"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311461",
+            "host_organization_name": "Centre de Recherche \"Texte et Critique de Texte\"",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311461"
+            ],
+            "host_organization_lineage_names": [
+              "Centre de Recherche \"Texte et Critique de Texte\""
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4000/sillagescritiques.14888",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210173441",
+          "display_name": "Sillages critiques",
+          "issn_l": "1272-3819",
+          "issn": [
+            "1272-3819",
+            "1969-6302"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311461",
+          "host_organization_name": "Centre de Recherche \"Texte et Critique de Texte\"",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311461"
+          ],
+          "host_organization_lineage_names": [
+            "Centre de Recherche \"Texte et Critique de Texte\""
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2795584114",
+    "title": "Matter and Materiality in an Italian Reliquary Triptych",
+    "relevance_score": 7.2655644,
+    "doi": "https://doi.org/10.1086/695772",
+    "topic_ids": [
+      "C123307717",
+      "C142362112",
+      "C2780493273",
+      "C52119013",
+      "C2780415144",
+      "C205783811",
+      "C153349607",
+      "C95457728",
+      "C195244886",
+      "C107038049"
+    ],
+    "best_pdf": "https://research-information.bris.ac.uk/ws/files/153745977/695772.pdf",
+    "backup_pdf": "https://doi.org/10.1086/695772",
+    "raw": {
+      "id": "https://openalex.org/W2795584114",
+      "display_name": "Matter and Materiality in an Italian Reliquary Triptych",
+      "relevance_score": 7.2655644,
+      "doi": "https://doi.org/10.1086/695772",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C123307717",
+          "wikidata": "https://www.wikidata.org/wiki/Q1003682",
+          "display_name": "Materiality (auditing)",
+          "level": 2,
+          "score": 0.8745347
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6830731
+        },
+        {
+          "id": "https://openalex.org/C2780493273",
+          "wikidata": "https://www.wikidata.org/wiki/Q11038979",
+          "display_name": "Cult",
+          "level": 2,
+          "score": 0.61815417
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.51764756
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.50208426
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.49653774
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.4241185
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.2825719
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.21676496
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.21258622
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1086/695772",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S21591069",
+          "display_name": "Gesta",
+          "issn_l": "0016-920X",
+          "issn": [
+            "0016-920X",
+            "2169-3099"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315672",
+          "host_organization_name": "University of Chicago Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315690",
+            "https://openalex.org/P4310315672"
+          ],
+          "host_organization_lineage_names": [
+            "University of Chicago",
+            "University of Chicago Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://research-information.bris.ac.uk/ws/files/153745977/695772.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1086/695772",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S21591069",
+            "display_name": "Gesta",
+            "issn_l": "0016-920X",
+            "issn": [
+              "0016-920X",
+              "2169-3099"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310315672",
+            "host_organization_name": "University of Chicago Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315690",
+              "https://openalex.org/P4310315672"
+            ],
+            "host_organization_lineage_names": [
+              "University of Chicago",
+              "University of Chicago Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://research-information.bris.ac.uk/ws/files/153745977/695772.pdf",
+          "pdf_url": "https://research-information.bris.ac.uk/ws/files/153745977/695772.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400895",
+            "display_name": "Bristol Research (University of Bristol)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I36234482",
+            "host_organization_name": "University of Bristol",
+            "host_organization_lineage": [
+              "https://openalex.org/I36234482"
+            ],
+            "host_organization_lineage_names": [
+              "University of Bristol"
+            ],
+            "type": "repository"
+          },
+          "license": "mit",
+          "license_id": "https://openalex.org/licenses/mit",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://research-information.bris.ac.uk/en/publications/738f88ee-cbf1-4b6e-bdba-cd79f0552f6e",
+          "pdf_url": "https://research-information.bris.ac.uk/files/153745977/695772.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400895",
+            "display_name": "Bristol Research (University of Bristol)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I36234482",
+            "host_organization_name": "University of Bristol",
+            "host_organization_lineage": [
+              "https://openalex.org/I36234482"
+            ],
+            "host_organization_lineage_names": [
+              "University of Bristol"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://research-information.bris.ac.uk/ws/files/153745977/695772.pdf",
+        "pdf_url": "https://research-information.bris.ac.uk/ws/files/153745977/695772.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400895",
+          "display_name": "Bristol Research (University of Bristol)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I36234482",
+          "host_organization_name": "University of Bristol",
+          "host_organization_lineage": [
+            "https://openalex.org/I36234482"
+          ],
+          "host_organization_lineage_names": [
+            "University of Bristol"
+          ],
+          "type": "repository"
+        },
+        "license": "mit",
+        "license_id": "https://openalex.org/licenses/mit",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W1979724596",
+    "title": "Painting in Renaissance Siena: 1420-1500",
+    "relevance_score": 4.7888956,
+    "doi": "https://doi.org/10.2307/777021",
+    "topic_ids": [
+      "C37531588",
+      "C205783811",
+      "C52069626",
+      "C52119013",
+      "C142362112",
+      "C48103436",
+      "C153349607",
+      "C189135316",
+      "C554144382",
+      "C95457728",
+      "C41008148",
+      "C11413529"
+    ],
+    "best_pdf": "https://cdn.sanity.io/files/cctd4ker/production/f4cccfb776840039e69aaa130da69aca8595537c.pdf",
+    "backup_pdf": "http://www.metmuseum.org/art/metpublications/Painting_in_Renaissance_Siena_1420_1500",
+    "raw": {
+      "id": "https://openalex.org/W1979724596",
+      "display_name": "Painting in Renaissance Siena: 1420-1500",
+      "relevance_score": 4.7888956,
+      "doi": "https://doi.org/10.2307/777021",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.879341
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.8664949
+        },
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.7938454
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.65385854
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5915866
+        },
+        {
+          "id": "https://openalex.org/C48103436",
+          "wikidata": "https://www.wikidata.org/wiki/Q599031",
+          "display_name": "State (computer science)",
+          "level": 2,
+          "score": 0.5500235
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.49641114
+        },
+        {
+          "id": "https://openalex.org/C189135316",
+          "wikidata": "https://www.wikidata.org/wiki/Q38166",
+          "display_name": "Modern art",
+          "level": 3,
+          "score": 0.4296049
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.35154217
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.33916962
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.10004735
+        },
+        {
+          "id": "https://openalex.org/C11413529",
+          "wikidata": "https://www.wikidata.org/wiki/Q8366",
+          "display_name": "Algorithm",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.2307/777021",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S184725536",
+          "display_name": "Art Journal",
+          "issn_l": "0004-3249",
+          "issn": [
+            "0004-3249",
+            "2325-5307"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320307",
+          "host_organization_name": "College Art Association",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320307"
+          ],
+          "host_organization_lineage_names": [
+            "College Art Association"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://cdn.sanity.io/files/cctd4ker/production/f4cccfb776840039e69aaa130da69aca8595537c.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.2307/777021",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S184725536",
+            "display_name": "Art Journal",
+            "issn_l": "0004-3249",
+            "issn": [
+              "0004-3249",
+              "2325-5307"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320307",
+            "host_organization_name": "College Art Association",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320307"
+            ],
+            "host_organization_lineage_names": [
+              "College Art Association"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://www.metmuseum.org/art/metpublications/Painting_in_Renaissance_Siena_1420_1500",
+          "pdf_url": "https://cdn.sanity.io/files/cctd4ker/production/f4cccfb776840039e69aaa130da69aca8595537c.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://www.metmuseum.org/art/metpublications/Painting_in_Renaissance_Siena_1420_1500",
+        "pdf_url": "https://cdn.sanity.io/files/cctd4ker/production/f4cccfb776840039e69aaa130da69aca8595537c.pdf",
+        "source": {
+          "id": "https://openalex.org/S4308707206",
+          "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I157725225",
+          "host_organization_name": "University of Illinois Urbana-Champaign",
+          "host_organization_lineage": [
+            "https://openalex.org/I157725225"
+          ],
+          "host_organization_lineage_names": [
+            "University of Illinois Urbana-Champaign"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2141603438",
+    "title": "War and peace: the description of Ambrogio Lorenzetti's Frescoes in Saint Bernardino's 1425 Siena Sermons",
+    "relevance_score": 4.0257964,
+    "doi": "https://doi.org/10.1111/1477-4658.00370",
+    "topic_ids": [
+      "C75947009",
+      "C2780415144",
+      "C36082774",
+      "C2779343474",
+      "C142362112",
+      "C192562157",
+      "C52119013",
+      "C182306322",
+      "C205783811",
+      "C153349607",
+      "C95457728",
+      "C124952713",
+      "C166957645",
+      "C10138342",
+      "C162324750"
+    ],
+    "best_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1477-4658.00370",
+    "backup_pdf": "https://doi.org/10.1111/1477-4658.00370",
+    "raw": {
+      "id": "https://openalex.org/W2141603438",
+      "display_name": "War and peace: the description of Ambrogio Lorenzetti's Frescoes in Saint Bernardino's 1425 Siena Sermons",
+      "relevance_score": 4.0257964,
+      "doi": "https://doi.org/10.1111/1477-4658.00370",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C75947009",
+          "wikidata": "https://www.wikidata.org/wiki/Q134194",
+          "display_name": "Fresco",
+          "level": 3,
+          "score": 0.9850799
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.83352757
+        },
+        {
+          "id": "https://openalex.org/C36082774",
+          "wikidata": "https://www.wikidata.org/wiki/Q4731385",
+          "display_name": "Allegory",
+          "level": 2,
+          "score": 0.66323984
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.6576965
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.54618174
+        },
+        {
+          "id": "https://openalex.org/C192562157",
+          "wikidata": "https://www.wikidata.org/wiki/Q316694",
+          "display_name": "Rhetorical question",
+          "level": 2,
+          "score": 0.4785091
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.47112605
+        },
+        {
+          "id": "https://openalex.org/C182306322",
+          "wikidata": "https://www.wikidata.org/wiki/Q1779371",
+          "display_name": "Order (exchange)",
+          "level": 2,
+          "score": 0.43912223
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.41909504
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3605792
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.35420877
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.23280218
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.19635266
+        },
+        {
+          "id": "https://openalex.org/C10138342",
+          "wikidata": "https://www.wikidata.org/wiki/Q43015",
+          "display_name": "Finance",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/1477-4658.00370",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1477-4658.00370",
+        "source": {
+          "id": "https://openalex.org/S37879103",
+          "display_name": "Renaissance Studies",
+          "issn_l": "0269-1213",
+          "issn": [
+            "0269-1213",
+            "1477-4658"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1477-4658.00370",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1111/1477-4658.00370",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1477-4658.00370",
+          "source": {
+            "id": "https://openalex.org/S37879103",
+            "display_name": "Renaissance Studies",
+            "issn_l": "0269-1213",
+            "issn": [
+              "0269-1213",
+              "1477-4658"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_name": "Wiley",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/1477-4658.00370",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1477-4658.00370",
+        "source": {
+          "id": "https://openalex.org/S37879103",
+          "display_name": "Renaissance Studies",
+          "issn_l": "0269-1213",
+          "issn": [
+            "0269-1213",
+            "1477-4658"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2072201211",
+    "title": "Occlusion Issues in Early Renaissance Art",
+    "relevance_score": 3.769093,
+    "doi": "https://doi.org/10.1068/i0468aap",
+    "topic_ids": [
+      "C205783811",
+      "C52069626",
+      "C2776268601",
+      "C26760741",
+      "C142362112",
+      "C12713177",
+      "C107038049",
+      "C104319648",
+      "C180747234",
+      "C153349607",
+      "C15744967",
+      "C71924100",
+      "C52119013",
+      "C141071460",
+      "C169760540"
+    ],
+    "best_pdf": "https://journals.sagepub.com/doi/pdf/10.1068/i0468aap",
+    "backup_pdf": "https://doi.org/10.1068/i0468aap",
+    "raw": {
+      "id": "https://openalex.org/W2072201211",
+      "display_name": "Occlusion Issues in Early Renaissance Art",
+      "relevance_score": 3.769093,
+      "doi": "https://doi.org/10.1068/i0468aap",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.7485918
+        },
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.69964737
+        },
+        {
+          "id": "https://openalex.org/C2776268601",
+          "wikidata": "https://www.wikidata.org/wiki/Q968808",
+          "display_name": "Occlusion",
+          "level": 2,
+          "score": 0.6724235
+        },
+        {
+          "id": "https://openalex.org/C26760741",
+          "wikidata": "https://www.wikidata.org/wiki/Q160402",
+          "display_name": "Perception",
+          "level": 2,
+          "score": 0.62610364
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.51569945
+        },
+        {
+          "id": "https://openalex.org/C12713177",
+          "wikidata": "https://www.wikidata.org/wiki/Q1900281",
+          "display_name": "Perspective (graphical)",
+          "level": 2,
+          "score": 0.48136884
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.42038625
+        },
+        {
+          "id": "https://openalex.org/C104319648",
+          "wikidata": "https://www.wikidata.org/wiki/Q1412040",
+          "display_name": "Figure–ground",
+          "level": 3,
+          "score": 0.41739696
+        },
+        {
+          "id": "https://openalex.org/C180747234",
+          "wikidata": "https://www.wikidata.org/wiki/Q23373",
+          "display_name": "Cognitive psychology",
+          "level": 1,
+          "score": 0.41385812
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.37127578
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.36748594
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.17217106
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.16320488
+        },
+        {
+          "id": "https://openalex.org/C141071460",
+          "wikidata": "https://www.wikidata.org/wiki/Q40821",
+          "display_name": "Surgery",
+          "level": 1,
+          "score": 0.07328862
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.06743884
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1068/i0468aap",
+        "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1068/i0468aap",
+        "source": {
+          "id": "https://openalex.org/S135407459",
+          "display_name": "i-Perception",
+          "issn_l": "2041-6695",
+          "issn": [
+            "2041-6695"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://journals.sagepub.com/doi/pdf/10.1068/i0468aap",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1068/i0468aap",
+          "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1068/i0468aap",
+          "source": {
+            "id": "https://openalex.org/S135407459",
+            "display_name": "i-Perception",
+            "issn_l": "2041-6695",
+            "issn": [
+              "2041-6695"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320017",
+            "host_organization_name": "SAGE Publishing",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320017"
+            ],
+            "host_organization_lineage_names": [
+              "SAGE Publishing"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/baf7e715033e468eacd4849f87d9f563",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://europepmc.org/articles/pmc3485794",
+          "pdf_url": "https://europepmc.org/articles/pmc3485794?pdf=render",
+          "source": {
+            "id": "https://openalex.org/S4306400806",
+            "display_name": "Europe PMC (PubMed Central)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_name": "European Bioinformatics Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [
+              "European Bioinformatics Institute"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485794",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/23145262",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1068/i0468aap",
+        "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1068/i0468aap",
+        "source": {
+          "id": "https://openalex.org/S135407459",
+          "display_name": "i-Perception",
+          "issn_l": "2041-6695",
+          "issn": [
+            "2041-6695"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4285732223",
+    "title": "City governance and visual impression management: Visual semiotics and the Biccherna panels of Siena",
+    "relevance_score": 3.1612968,
+    "doi": "https://doi.org/10.1177/00187267221116035",
+    "topic_ids": [
+      "C139997677",
+      "C39389867",
+      "C4994750",
+      "C144024400",
+      "C2775977372",
+      "C107038049",
+      "C94625758",
+      "C153349607",
+      "C17744445",
+      "C111472728",
+      "C36289849",
+      "C142362112",
+      "C187736073",
+      "C199539241",
+      "C162324750",
+      "C138885662"
+    ],
+    "best_pdf": "https://doi.org/10.1177/00187267221116035",
+    "backup_pdf": "",
+    "raw": {
+      "id": "https://openalex.org/W4285732223",
+      "display_name": "City governance and visual impression management: Visual semiotics and the Biccherna panels of Siena",
+      "relevance_score": 3.1612968,
+      "doi": "https://doi.org/10.1177/00187267221116035",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C139997677",
+          "wikidata": "https://www.wikidata.org/wiki/Q60195",
+          "display_name": "Semiotics",
+          "level": 2,
+          "score": 0.729182
+        },
+        {
+          "id": "https://openalex.org/C39389867",
+          "wikidata": "https://www.wikidata.org/wiki/Q380767",
+          "display_name": "Corporate governance",
+          "level": 2,
+          "score": 0.6983274
+        },
+        {
+          "id": "https://openalex.org/C4994750",
+          "wikidata": "https://www.wikidata.org/wiki/Q1210504",
+          "display_name": "Impression management",
+          "level": 2,
+          "score": 0.55264086
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.5142686
+        },
+        {
+          "id": "https://openalex.org/C2775977372",
+          "wikidata": "https://www.wikidata.org/wiki/Q17147499",
+          "display_name": "Visual research",
+          "level": 2,
+          "score": 0.50945216
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.46687979
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.44477767
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.30843452
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.2884855
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.24354947
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.23996645
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.2267597
+        },
+        {
+          "id": "https://openalex.org/C187736073",
+          "wikidata": "https://www.wikidata.org/wiki/Q2920921",
+          "display_name": "Management",
+          "level": 1,
+          "score": 0.19744882
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.16021597
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.11115345
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.089962184
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1177/00187267221116035",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S61446109",
+          "display_name": "Human Relations",
+          "issn_l": "0018-7267",
+          "issn": [
+            "0018-7267",
+            "1741-282X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://doi.org/10.1177/00187267221116035",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1177/00187267221116035",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S61446109",
+            "display_name": "Human Relations",
+            "issn_l": "0018-7267",
+            "issn": [
+              "0018-7267",
+              "1741-282X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320017",
+            "host_organization_name": "SAGE Publishing",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320017"
+            ],
+            "host_organization_lineage_names": [
+              "SAGE Publishing"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1177/00187267221116035",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S61446109",
+          "display_name": "Human Relations",
+          "issn_l": "0018-7267",
+          "issn": [
+            "0018-7267",
+            "1741-282X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3116927859",
+    "title": "“And the Word Dwelt amongst Us”: Experiencing the Nativity in the Italian Renaissance Home",
+    "relevance_score": 1.9895281,
+    "doi": "https://doi.org/10.1163/9789004375871_009",
+    "topic_ids": [
+      "C52069626",
+      "C15744967",
+      "C90805587",
+      "C95457728",
+      "C41895202",
+      "C52119013",
+      "C138885662"
+    ],
+    "best_pdf": "https://brill.com/downloadpdf/book/edcoll/9789004375871/BP000019.pdf",
+    "backup_pdf": "https://doi.org/10.1163/9789004375871_009",
+    "raw": {
+      "id": "https://openalex.org/W3116927859",
+      "display_name": "“And the Word Dwelt amongst Us”: Experiencing the Nativity in the Italian Renaissance Home",
+      "relevance_score": 1.9895281,
+      "doi": "https://doi.org/10.1163/9789004375871_009",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.7771927
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.44905922
+        },
+        {
+          "id": "https://openalex.org/C90805587",
+          "wikidata": "https://www.wikidata.org/wiki/Q10944557",
+          "display_name": "Word (group theory)",
+          "level": 2,
+          "score": 0.42076254
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.37180042
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.3628186
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.14795268
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.08570245
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1163/9789004375871_009",
+        "pdf_url": "https://brill.com/downloadpdf/book/edcoll/9789004375871/BP000019.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306462964",
+          "display_name": "BRILL eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://brill.com/downloadpdf/book/edcoll/9789004375871/BP000019.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1163/9789004375871_009",
+          "pdf_url": "https://brill.com/downloadpdf/book/edcoll/9789004375871/BP000019.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306462964",
+            "display_name": "BRILL eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320561",
+            "host_organization_name": "Brill",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320561"
+            ],
+            "host_organization_lineage_names": [
+              "Brill"
+            ],
+            "type": "ebook platform"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1163/9789004375871_009",
+        "pdf_url": "https://brill.com/downloadpdf/book/edcoll/9789004375871/BP000019.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306462964",
+          "display_name": "BRILL eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2319398061",
+    "title": "JUDITH B. STEINHOFF. Sienese Painting after the Black Death: Artistic Pluralism, Politics, and the New Art Market. New York: Cambridge University Press. 2006. Pp. xiv, 264. $85.00",
+    "relevance_score": 1.5877473,
+    "doi": "https://doi.org/10.1086/ahr.112.4.1250",
+    "topic_ids": [
+      "C205783811",
+      "C49831778",
+      "C94625758",
+      "C52119013",
+      "C142362112",
+      "C95457728",
+      "C29595303",
+      "C144024400",
+      "C17744445",
+      "C199539241",
+      "C138885662",
+      "C111472728"
+    ],
+    "best_pdf": "https://academic.oup.com/ahr/article-pdf/112/4/1250/37236/112-4-1250.pdf",
+    "backup_pdf": "https://doi.org/10.1086/ahr.112.4.1250",
+    "raw": {
+      "id": "https://openalex.org/W2319398061",
+      "display_name": "JUDITH B. STEINHOFF. Sienese Painting after the Black Death: Artistic Pluralism, Politics, and the New Art Market. New York: Cambridge University Press. 2006. Pp. xiv, 264. $85.00",
+      "relevance_score": 1.5877473,
+      "doi": "https://doi.org/10.1086/ahr.112.4.1250",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.7057187
+        },
+        {
+          "id": "https://openalex.org/C49831778",
+          "wikidata": "https://www.wikidata.org/wiki/Q879021",
+          "display_name": "Pluralism (philosophy)",
+          "level": 2,
+          "score": 0.69752276
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.50901985
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.49536264
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.38262185
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.35807043
+        },
+        {
+          "id": "https://openalex.org/C29595303",
+          "wikidata": "https://www.wikidata.org/wiki/Q165650",
+          "display_name": "Media studies",
+          "level": 1,
+          "score": 0.34029913
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.33211833
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.25673717
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.17444724
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.16489258
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.06223902
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1086/ahr.112.4.1250",
+        "pdf_url": "https://academic.oup.com/ahr/article-pdf/112/4/1250/37236/112-4-1250.pdf",
+        "source": {
+          "id": "https://openalex.org/S197437610",
+          "display_name": "The American Historical Review",
+          "issn_l": "0002-8762",
+          "issn": [
+            "0002-8762",
+            "1937-5239"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://academic.oup.com/ahr/article-pdf/112/4/1250/37236/112-4-1250.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1086/ahr.112.4.1250",
+          "pdf_url": "https://academic.oup.com/ahr/article-pdf/112/4/1250/37236/112-4-1250.pdf",
+          "source": {
+            "id": "https://openalex.org/S197437610",
+            "display_name": "The American Historical Review",
+            "issn_l": "0002-8762",
+            "issn": [
+              "0002-8762",
+              "1937-5239"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647",
+              "https://openalex.org/P4310311648"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford",
+              "Oxford University Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1086/ahr.112.4.1250",
+        "pdf_url": "https://academic.oup.com/ahr/article-pdf/112/4/1250/37236/112-4-1250.pdf",
+        "source": {
+          "id": "https://openalex.org/S197437610",
+          "display_name": "The American Historical Review",
+          "issn_l": "0002-8762",
+          "issn": [
+            "0002-8762",
+            "1937-5239"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2799810284",
+    "title": "From the <i>Vite</i> or the <i>Ritratti</i>? Previously Unknown Portraits from Vasari’s <i>Libro de’ Disegni</i>",
+    "relevance_score": 1.579907,
+    "doi": "https://doi.org/10.1086/697035",
+    "topic_ids": [
+      "C162462552",
+      "C52069626",
+      "C142362112",
+      "C2777826127",
+      "C52119013",
+      "C70789860",
+      "C554144382",
+      "C2779463800",
+      "C135590562",
+      "C15708023",
+      "C74916050",
+      "C153349607",
+      "C95457728",
+      "C166957645",
+      "C185592680",
+      "C8010536"
+    ],
+    "best_pdf": "https://research-repository.st-andrews.ac.uk/bitstream/10023/17615/1/Moretti_2018_ITS_ViteRitratti_AAM_w_cover.pdf",
+    "backup_pdf": "https://hdl.handle.net/10023/17615",
+    "raw": {
+      "id": "https://openalex.org/W2799810284",
+      "display_name": "From the <i>Vite</i> or the <i>Ritratti</i>? Previously Unknown Portraits from Vasari’s <i>Libro de’ Disegni</i>",
+      "relevance_score": 1.579907,
+      "doi": "https://doi.org/10.1086/697035",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.8238729
+        },
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.7557671
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6931842
+        },
+        {
+          "id": "https://openalex.org/C2777826127",
+          "wikidata": "https://www.wikidata.org/wiki/Q2578692",
+          "display_name": "Commonwealth",
+          "level": 2,
+          "score": 0.67298794
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.53880167
+        },
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.47402838
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.47130546
+        },
+        {
+          "id": "https://openalex.org/C2779463800",
+          "wikidata": "https://www.wikidata.org/wiki/Q5062222",
+          "display_name": "Center (category theory)",
+          "level": 2,
+          "score": 0.4687645
+        },
+        {
+          "id": "https://openalex.org/C135590562",
+          "wikidata": "https://www.wikidata.org/wiki/Q1404472",
+          "display_name": "Italian Renaissance",
+          "level": 3,
+          "score": 0.46505246
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.41517785
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.33284724
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.30825552
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.21411747
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.07303521
+        },
+        {
+          "id": "https://openalex.org/C185592680",
+          "wikidata": "https://www.wikidata.org/wiki/Q2329",
+          "display_name": "Chemistry",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C8010536",
+          "wikidata": "https://www.wikidata.org/wiki/Q160398",
+          "display_name": "Crystallography",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1086/697035",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2735850824",
+          "display_name": "I Tatti Studies",
+          "issn_l": "0393-5949",
+          "issn": [
+            "0393-5949",
+            "2037-6731"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315672",
+          "host_organization_name": "University of Chicago Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315690",
+            "https://openalex.org/P4310315672"
+          ],
+          "host_organization_lineage_names": [
+            "University of Chicago",
+            "University of Chicago Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://research-repository.st-andrews.ac.uk/bitstream/10023/17615/1/Moretti_2018_ITS_ViteRitratti_AAM_w_cover.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1086/697035",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2735850824",
+            "display_name": "I Tatti Studies",
+            "issn_l": "0393-5949",
+            "issn": [
+              "0393-5949",
+              "2037-6731"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310315672",
+            "host_organization_name": "University of Chicago Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315690",
+              "https://openalex.org/P4310315672"
+            ],
+            "host_organization_lineage_names": [
+              "University of Chicago",
+              "University of Chicago Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/10023/17615",
+          "pdf_url": "https://research-repository.st-andrews.ac.uk/bitstream/10023/17615/1/Moretti_2018_ITS_ViteRitratti_AAM_w_cover.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400230",
+            "display_name": "St Andrews Research Repository (St Andrews Research Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I16835326",
+            "host_organization_name": "University of St Andrews",
+            "host_organization_lineage": [
+              "https://openalex.org/I16835326"
+            ],
+            "host_organization_lineage_names": [
+              "University of St Andrews"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/10023/17615",
+        "pdf_url": "https://research-repository.st-andrews.ac.uk/bitstream/10023/17615/1/Moretti_2018_ITS_ViteRitratti_AAM_w_cover.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400230",
+          "display_name": "St Andrews Research Repository (St Andrews Research Repository)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I16835326",
+          "host_organization_name": "University of St Andrews",
+          "host_organization_lineage": [
+            "https://openalex.org/I16835326"
+          ],
+          "host_organization_lineage_names": [
+            "University of St Andrews"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3138172356",
+    "title": "Early Franciscan painted panels as a response to the Italian Cathars",
+    "relevance_score": 1.428,
+    "doi": "https://doi.org/10.32469/10355/79490",
+    "topic_ids": [
+      "C205783811",
+      "C2780415144",
+      "C2779343474",
+      "C142362112",
+      "C182306322",
+      "C2776445246",
+      "C52119013",
+      "C556447560",
+      "C124952713",
+      "C95457728",
+      "C153349607",
+      "C166957645",
+      "C10138342",
+      "C162324750"
+    ],
+    "best_pdf": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+    "backup_pdf": "https://doi.org/10.32469/10355/79490",
+    "raw": {
+      "id": "https://openalex.org/W3138172356",
+      "display_name": "Early Franciscan painted panels as a response to the Italian Cathars",
+      "relevance_score": 1.428,
+      "doi": "https://doi.org/10.32469/10355/79490",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.7164275
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.7091716
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.6584428
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6114769
+        },
+        {
+          "id": "https://openalex.org/C182306322",
+          "wikidata": "https://www.wikidata.org/wiki/Q1779371",
+          "display_name": "Order (exchange)",
+          "level": 2,
+          "score": 0.6006386
+        },
+        {
+          "id": "https://openalex.org/C2776445246",
+          "wikidata": "https://www.wikidata.org/wiki/Q1792644",
+          "display_name": "Style (visual arts)",
+          "level": 2,
+          "score": 0.55309564
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.42814702
+        },
+        {
+          "id": "https://openalex.org/C556447560",
+          "wikidata": "https://www.wikidata.org/wiki/Q179807",
+          "display_name": "Asceticism",
+          "level": 2,
+          "score": 0.41620472
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.34904116
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.32985303
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.32640314
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.17320025
+        },
+        {
+          "id": "https://openalex.org/C10138342",
+          "wikidata": "https://www.wikidata.org/wiki/Q43015",
+          "display_name": "Finance",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.32469/10355/79490",
+        "pdf_url": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+        "source": null,
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.32469/10355/79490",
+          "pdf_url": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+          "source": null,
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.32469/10355/79490",
+        "pdf_url": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+        "source": null,
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4285734147",
+    "title": "“E sotto essa la città nostra”. Simone Martini, the cathedral of Siena, and civic identity",
+    "relevance_score": 1.3718858,
+    "doi": "https://doi.org/10.1344/materia2022.20.2",
+    "topic_ids": [
+      "C2778355321",
+      "C142362112",
+      "C205783811",
+      "C52119013",
+      "C48103436",
+      "C15708023",
+      "C107038049",
+      "C11413529",
+      "C41008148"
+    ],
+    "best_pdf": "https://usiena-air.unisi.it/bitstream/11365/1213055/1/%22E%20sotto%20essa%20la%20citta%cc%80%20nostra%22.pdf",
+    "backup_pdf": "https://revistes.ub.edu/index.php/materia/article/download/34550/38010",
+    "raw": {
+      "id": "https://openalex.org/W4285734147",
+      "display_name": "“E sotto essa la città nostra”. Simone Martini, the cathedral of Siena, and civic identity",
+      "relevance_score": 1.3718858,
+      "doi": "https://doi.org/10.1344/materia2022.20.2",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778355321",
+          "wikidata": "https://www.wikidata.org/wiki/Q17079427",
+          "display_name": "Identity (music)",
+          "level": 2,
+          "score": 0.61800396
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.61109936
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.5911077
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.57539463
+        },
+        {
+          "id": "https://openalex.org/C48103436",
+          "wikidata": "https://www.wikidata.org/wiki/Q599031",
+          "display_name": "State (computer science)",
+          "level": 2,
+          "score": 0.53511363
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.5007136
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.09835097
+        },
+        {
+          "id": "https://openalex.org/C11413529",
+          "wikidata": "https://www.wikidata.org/wiki/Q8366",
+          "display_name": "Algorithm",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1344/materia2022.20.2",
+        "pdf_url": "https://revistes.ub.edu/index.php/materia/article/download/34550/38010",
+        "source": {
+          "id": "https://openalex.org/S4210176008",
+          "display_name": "Materia",
+          "issn_l": "1579-2641",
+          "issn": [
+            "1579-2641",
+            "2385-3387"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321022",
+          "host_organization_name": "University of Barcelona",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321022"
+          ],
+          "host_organization_lineage_names": [
+            "University of Barcelona"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://revistes.ub.edu/index.php/materia/article/download/34550/38010",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1344/materia2022.20.2",
+          "pdf_url": "https://revistes.ub.edu/index.php/materia/article/download/34550/38010",
+          "source": {
+            "id": "https://openalex.org/S4210176008",
+            "display_name": "Materia",
+            "issn_l": "1579-2641",
+            "issn": [
+              "1579-2641",
+              "2385-3387"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321022",
+            "host_organization_name": "University of Barcelona",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321022"
+            ],
+            "host_organization_lineage_names": [
+              "University of Barcelona"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/11365/1213055",
+          "pdf_url": "https://usiena-air.unisi.it/bitstream/11365/1213055/1/%22E%20sotto%20essa%20la%20citta%cc%80%20nostra%22.pdf",
+          "source": {
+            "id": "https://openalex.org/S4377196319",
+            "display_name": "Use Siena air (University of Siena)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I102064193",
+            "host_organization_name": "University of Siena",
+            "host_organization_lineage": [
+              "https://openalex.org/I102064193"
+            ],
+            "host_organization_lineage_names": [
+              "University of Siena"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1344/materia2022.20.2",
+        "pdf_url": "https://revistes.ub.edu/index.php/materia/article/download/34550/38010",
+        "source": {
+          "id": "https://openalex.org/S4210176008",
+          "display_name": "Materia",
+          "issn_l": "1579-2641",
+          "issn": [
+            "1579-2641",
+            "2385-3387"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321022",
+          "host_organization_name": "University of Barcelona",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321022"
+          ],
+          "host_organization_lineage_names": [
+            "University of Barcelona"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2044765030",
+    "title": "Dead Infants, Cruel Mothers, and Heroic Popes: The Visual Rhetoric of Foundling Care at the Hospital of Santo Spirito, Rome<sup>*</sup>",
+    "relevance_score": 1.3015504,
+    "doi": "https://doi.org/10.1086/662849",
+    "topic_ids": [
+      "C1370556",
+      "C142362112",
+      "C95457728",
+      "C71924100",
+      "C195244886",
+      "C27206212",
+      "C138885662"
+    ],
+    "best_pdf": "http://repository.essex.ac.uk/16201/1/Dead_Infants_Cruel_Mothers_and_Heroic_Po.pdf",
+    "backup_pdf": "https://doi.org/10.1086/662849",
+    "raw": {
+      "id": "https://openalex.org/W2044765030",
+      "display_name": "Dead Infants, Cruel Mothers, and Heroic Popes: The Visual Rhetoric of Foundling Care at the Hospital of Santo Spirito, Rome<sup>*</sup>",
+      "relevance_score": 1.3015504,
+      "doi": "https://doi.org/10.1086/662849",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C1370556",
+          "wikidata": "https://www.wikidata.org/wiki/Q81009",
+          "display_name": "Rhetoric",
+          "level": 2,
+          "score": 0.71531564
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.42255628
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.38033497
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.3764438
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.328195
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.18846148
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.18444008
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1086/662849",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S193779622",
+          "display_name": "Renaissance Quarterly",
+          "issn_l": "0034-4338",
+          "issn": [
+            "0034-4338",
+            "1935-0236"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "http://repository.essex.ac.uk/16201/1/Dead_Infants_Cruel_Mothers_and_Heroic_Po.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1086/662849",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S193779622",
+            "display_name": "Renaissance Quarterly",
+            "issn_l": "0034-4338",
+            "issn": [
+              "0034-4338",
+              "1935-0236"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://repository.essex.ac.uk/16201/1/Dead_Infants_Cruel_Mothers_and_Heroic_Po.pdf",
+          "pdf_url": "http://repository.essex.ac.uk/16201/1/Dead_Infants_Cruel_Mothers_and_Heroic_Po.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401237",
+            "display_name": "Open Access at Essex (University of Essex)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I110002522",
+            "host_organization_name": "University of Essex",
+            "host_organization_lineage": [
+              "https://openalex.org/I110002522"
+            ],
+            "host_organization_lineage_names": [
+              "University of Essex"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/22165440",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://repository.essex.ac.uk/16201/1/Dead_Infants_Cruel_Mothers_and_Heroic_Po.pdf",
+        "pdf_url": "http://repository.essex.ac.uk/16201/1/Dead_Infants_Cruel_Mothers_and_Heroic_Po.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401237",
+          "display_name": "Open Access at Essex (University of Essex)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I110002522",
+          "host_organization_name": "University of Essex",
+          "host_organization_lineage": [
+            "https://openalex.org/I110002522"
+          ],
+          "host_organization_lineage_names": [
+            "University of Essex"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2782316582",
+    "title": "Influence of Dante on the Iconographic Concept of the Last Judgement",
+    "relevance_score": 1.2694657,
+    "doi": "https://doi.org/10.2991/icelaic-17.2017.122",
+    "topic_ids": [
+      "C2776548248",
+      "C41008148",
+      "C138885662",
+      "C111472728"
+    ],
+    "best_pdf": "https://download.atlantis-press.com/article/25886323.pdf",
+    "backup_pdf": "https://doi.org/10.2991/icelaic-17.2017.122",
+    "raw": {
+      "id": "https://openalex.org/W2782316582",
+      "display_name": "Influence of Dante on the Iconographic Concept of the Last Judgement",
+      "relevance_score": 1.2694657,
+      "doi": "https://doi.org/10.2991/icelaic-17.2017.122",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776548248",
+          "wikidata": "https://www.wikidata.org/wiki/Q12621536",
+          "display_name": "Judgement",
+          "level": 2,
+          "score": 0.8464617
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.5177557
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.216187
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.21027943
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2991/icelaic-17.2017.122",
+        "pdf_url": "https://download.atlantis-press.com/article/25886323.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306523892",
+          "display_name": "Proceedings of the 6th International Conference on Education, Language, Art and Inter-cultural Communication (ICELAIC 2019)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "conference"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://download.atlantis-press.com/article/25886323.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2991/icelaic-17.2017.122",
+          "pdf_url": "https://download.atlantis-press.com/article/25886323.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306523892",
+            "display_name": "Proceedings of the 6th International Conference on Education, Language, Art and Inter-cultural Communication (ICELAIC 2019)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "conference"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2991/icelaic-17.2017.122",
+        "pdf_url": "https://download.atlantis-press.com/article/25886323.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306523892",
+          "display_name": "Proceedings of the 6th International Conference on Education, Language, Art and Inter-cultural Communication (ICELAIC 2019)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "conference"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4391681295",
+    "title": "2. From Images of Italy to Early Russian Art",
+    "relevance_score": 1.2459364,
+    "doi": "https://doi.org/10.11647/obp.0378.02",
+    "topic_ids": [
+      "C142362112",
+      "C52119013",
+      "C153349607"
+    ],
+    "best_pdf": "https://books.openbookpublishers.com/10.11647/obp.0378.02.pdf",
+    "backup_pdf": "https://doi.org/10.11647/obp.0378.02",
+    "raw": {
+      "id": "https://openalex.org/W4391681295",
+      "display_name": "2. From Images of Italy to Early Russian Art",
+      "relevance_score": 1.2459364,
+      "doi": "https://doi.org/10.11647/obp.0378.02",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6036348
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.4153791
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.36560512
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.11647/obp.0378.02",
+        "pdf_url": "https://books.openbookpublishers.com/10.11647/obp.0378.02.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463697",
+          "display_name": "Open Book Publishers",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://books.openbookpublishers.com/10.11647/obp.0378.02.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.11647/obp.0378.02",
+          "pdf_url": "https://books.openbookpublishers.com/10.11647/obp.0378.02.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306463697",
+            "display_name": "Open Book Publishers",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "ebook platform"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.11647/obp.0378.02",
+        "pdf_url": "https://books.openbookpublishers.com/10.11647/obp.0378.02.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463697",
+          "display_name": "Open Book Publishers",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4237260226",
+    "title": "San Girolamo ‘gesuato’",
+    "relevance_score": 1.136628,
+    "doi": "https://doi.org/10.36253/978-88-5518-228-7.13",
+    "topic_ids": [
+      "C501303744",
+      "C2780415144",
+      "C33566652",
+      "C2781095916",
+      "C142362112",
+      "C74916050",
+      "C52119013",
+      "C95457728",
+      "C15744967",
+      "C169760540",
+      "C41008148",
+      "C111919701"
+    ],
+    "best_pdf": "https://fupress.com/redir.ashx?RetUrl=19334.pdf",
+    "backup_pdf": "https://doi.org/10.36253/978-88-5518-228-7.13",
+    "raw": {
+      "id": "https://openalex.org/W4237260226",
+      "display_name": "San Girolamo ‘gesuato’",
+      "relevance_score": 1.136628,
+      "doi": "https://doi.org/10.36253/978-88-5518-228-7.13",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C501303744",
+          "wikidata": "https://www.wikidata.org/wiki/Q208145",
+          "display_name": "Iconography",
+          "level": 2,
+          "score": 0.987627
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.94361436
+        },
+        {
+          "id": "https://openalex.org/C33566652",
+          "wikidata": "https://www.wikidata.org/wiki/Q1065927",
+          "display_name": "Theme (computing)",
+          "level": 2,
+          "score": 0.6810539
+        },
+        {
+          "id": "https://openalex.org/C2781095916",
+          "wikidata": "https://www.wikidata.org/wiki/Q36348",
+          "display_name": "Dream",
+          "level": 2,
+          "score": 0.5906134
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.49189854
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.45929876
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.40876877
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.39084634
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.07016787
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-5518-228-7.13",
+        "pdf_url": "https://fupress.com/redir.ashx?RetUrl=19334.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463283",
+          "display_name": "Firenze University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://fupress.com/redir.ashx?RetUrl=19334.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.36253/978-88-5518-228-7.13",
+          "pdf_url": "https://fupress.com/redir.ashx?RetUrl=19334.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306463283",
+            "display_name": "Firenze University Press eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320196",
+            "host_organization_name": "Firenze University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320196"
+            ],
+            "host_organization_lineage_names": [
+              "Firenze University Press"
+            ],
+            "type": "ebook platform"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://fupress.com/capitoli/san-girolamo-%E2%80%98gesuato%E2%80%99/7216",
+          "pdf_url": "https://media.fupress.com/files/pdf/24/7216/19334",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://media.fupress.com/files/pdf/24/4349/19357",
+          "pdf_url": "https://media.fupress.com/files/pdf/24/4349/19357",
+          "source": {
+            "id": "https://openalex.org/S4377196319",
+            "display_name": "Use Siena air (University of Siena)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I102064193",
+            "host_organization_name": "University of Siena",
+            "host_organization_lineage": [
+              "https://openalex.org/I102064193"
+            ],
+            "host_organization_lineage_names": [
+              "University of Siena"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/11365/1208508",
+          "pdf_url": "https://usiena-air.unisi.it/bitstream/11365/1208508/1/19%202020%20gesuati%20pdf.pdf",
+          "source": {
+            "id": "https://openalex.org/S4377196319",
+            "display_name": "Use Siena air (University of Siena)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I102064193",
+            "host_organization_name": "University of Siena",
+            "host_organization_lineage": [
+              "https://openalex.org/I102064193"
+            ],
+            "host_organization_lineage_names": [
+              "University of Siena"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-5518-228-7.13",
+        "pdf_url": "https://fupress.com/redir.ashx?RetUrl=19334.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463283",
+          "display_name": "Firenze University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3036102808",
+    "title": "GIOTTO’S STIGMATIZATION OF SAINT FRANCIS: AN APPROACH FOR THE RECONSTRUCTION OF THE IMAGE",
+    "relevance_score": 1.1312146,
+    "doi": "https://doi.org/10.35784/odk.1078",
+    "topic_ids": [
+      "C2780415144",
+      "C2779343474",
+      "C142362112",
+      "C98045186",
+      "C41008148",
+      "C107038049",
+      "C153349607",
+      "C144024400",
+      "C52119013",
+      "C95457728",
+      "C166957645",
+      "C111919701"
+    ],
+    "best_pdf": "https://www.openaccessrepository.it/record/172650/files/fulltext.pdf",
+    "backup_pdf": "https://ph.pollub.pl/index.php/odk/article/download/1078/846",
+    "raw": {
+      "id": "https://openalex.org/W3036102808",
+      "display_name": "GIOTTO’S STIGMATIZATION OF SAINT FRANCIS: AN APPROACH FOR THE RECONSTRUCTION OF THE IMAGE",
+      "relevance_score": 1.1312146,
+      "doi": "https://doi.org/10.35784/odk.1078",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.7009084
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.6853994
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5774728
+        },
+        {
+          "id": "https://openalex.org/C98045186",
+          "wikidata": "https://www.wikidata.org/wiki/Q205663",
+          "display_name": "Process (computing)",
+          "level": 2,
+          "score": 0.5104557
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.43994355
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.41965678
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.41780123
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.33609504
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.333144
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.16356438
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.13578907
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.35784/odk.1078",
+        "pdf_url": "https://ph.pollub.pl/index.php/odk/article/download/1078/846",
+        "source": {
+          "id": "https://openalex.org/S4210238808",
+          "display_name": "Protection of cultural heritage",
+          "issn_l": "2543-6422",
+          "issn": [
+            "2543-6422",
+            "2657-9278"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310317259",
+          "host_organization_name": "Lublin University of Technology",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317259"
+          ],
+          "host_organization_lineage_names": [
+            "Lublin University of Technology"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://ph.pollub.pl/index.php/odk/article/download/1078/846",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.35784/odk.1078",
+          "pdf_url": "https://ph.pollub.pl/index.php/odk/article/download/1078/846",
+          "source": {
+            "id": "https://openalex.org/S4210238808",
+            "display_name": "Protection of cultural heritage",
+            "issn_l": "2543-6422",
+            "issn": [
+              "2543-6422",
+              "2657-9278"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310317259",
+            "host_organization_name": "Lublin University of Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310317259"
+            ],
+            "host_organization_lineage_names": [
+              "Lublin University of Technology"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/697d38a9d7644a6c84288430cb599863",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.openaccessrepository.it/record/172650",
+          "pdf_url": "https://www.openaccessrepository.it/record/172650/files/fulltext.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402478",
+            "display_name": "INFM-OAR (INFN Catania)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210116497",
+            "host_organization_name": "Istituto Nazionale di Fisica Nucleare, Sezione di Catania",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210116497"
+            ],
+            "host_organization_lineage_names": [
+              "Istituto Nazionale di Fisica Nucleare, Sezione di Catania"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.35784/odk.1078",
+        "pdf_url": "https://ph.pollub.pl/index.php/odk/article/download/1078/846",
+        "source": {
+          "id": "https://openalex.org/S4210238808",
+          "display_name": "Protection of cultural heritage",
+          "issn_l": "2543-6422",
+          "issn": [
+            "2543-6422",
+            "2657-9278"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310317259",
+          "host_organization_name": "Lublin University of Technology",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317259"
+          ],
+          "host_organization_lineage_names": [
+            "Lublin University of Technology"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4387779759",
+    "title": "Giovanni Pontano hears the street soundscape of Naples",
+    "relevance_score": 1.0864431,
+    "doi": "https://doi.org/10.1111/rest.12913",
+    "topic_ids": [
+      "C142795923",
+      "C530479602",
+      "C2779343474",
+      "C142362112",
+      "C95457728",
+      "C2779610281",
+      "C153349607",
+      "C29595303",
+      "C107038049",
+      "C52119013",
+      "C144024400",
+      "C203718221",
+      "C199539241",
+      "C94625758",
+      "C166957645",
+      "C24890656",
+      "C17744445",
+      "C121332964"
+    ],
+    "best_pdf": "https://eprints.whiterose.ac.uk/204517/1/Renaissance%20Studies%20-%202023%20-%20Shephard%20-%20Giovanni%20Pontano%20hears%20the%20street%20soundscape%20of%20Naples.pdf",
+    "backup_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/rest.12913",
+    "raw": {
+      "id": "https://openalex.org/W4387779759",
+      "display_name": "Giovanni Pontano hears the street soundscape of Naples",
+      "relevance_score": 1.0864431,
+      "doi": "https://doi.org/10.1111/rest.12913",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142795923",
+          "wikidata": "https://www.wikidata.org/wiki/Q1358257",
+          "display_name": "Soundscape",
+          "level": 3,
+          "score": 0.98022807
+        },
+        {
+          "id": "https://openalex.org/C530479602",
+          "wikidata": "https://www.wikidata.org/wiki/Q1344",
+          "display_name": "Opera",
+          "level": 2,
+          "score": 0.70338595
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.66154397
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.42180043
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.42161694
+        },
+        {
+          "id": "https://openalex.org/C2779610281",
+          "wikidata": "https://www.wikidata.org/wiki/Q17945",
+          "display_name": "Public sphere",
+          "level": 3,
+          "score": 0.41252416
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.4095909
+        },
+        {
+          "id": "https://openalex.org/C29595303",
+          "wikidata": "https://www.wikidata.org/wiki/Q165650",
+          "display_name": "Media studies",
+          "level": 1,
+          "score": 0.36087722
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.3280092
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3258326
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.320076
+        },
+        {
+          "id": "https://openalex.org/C203718221",
+          "wikidata": "https://www.wikidata.org/wiki/Q491713",
+          "display_name": "Sound (geography)",
+          "level": 2,
+          "score": 0.2845407
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.17346996
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.12529188
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.116946906
+        },
+        {
+          "id": "https://openalex.org/C24890656",
+          "wikidata": "https://www.wikidata.org/wiki/Q82811",
+          "display_name": "Acoustics",
+          "level": 1,
+          "score": 0.11459911
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.112250835
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/rest.12913",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/rest.12913",
+        "source": {
+          "id": "https://openalex.org/S37879103",
+          "display_name": "Renaissance Studies",
+          "issn_l": "0269-1213",
+          "issn": [
+            "0269-1213",
+            "1477-4658"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/rest.12913",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1111/rest.12913",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/rest.12913",
+          "source": {
+            "id": "https://openalex.org/S37879103",
+            "display_name": "Renaissance Studies",
+            "issn_l": "0269-1213",
+            "issn": [
+              "0269-1213",
+              "1477-4658"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_name": "Wiley",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://eprints.whiterose.ac.uk/204517/1/Renaissance%20Studies%20-%202023%20-%20Shephard%20-%20Giovanni%20Pontano%20hears%20the%20street%20soundscape%20of%20Naples.pdf",
+          "pdf_url": "https://eprints.whiterose.ac.uk/204517/1/Renaissance%20Studies%20-%202023%20-%20Shephard%20-%20Giovanni%20Pontano%20hears%20the%20street%20soundscape%20of%20Naples.pdf",
+          "source": {
+            "id": "https://openalex.org/S4377196101",
+            "display_name": "White Rose Research Online (University of Leeds)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I130828816",
+            "host_organization_name": "University of Leeds",
+            "host_organization_lineage": [
+              "https://openalex.org/I130828816"
+            ],
+            "host_organization_lineage_names": [
+              "University of Leeds"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1111/rest.12913",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/rest.12913",
+        "source": {
+          "id": "https://openalex.org/S37879103",
+          "display_name": "Renaissance Studies",
+          "issn_l": "0269-1213",
+          "issn": [
+            "0269-1213",
+            "1477-4658"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

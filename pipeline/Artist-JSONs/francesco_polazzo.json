@@ -1,0 +1,202 @@
+[
+  {
+    "id": "https://openalex.org/W3117479530",
+    "title": "I ritratti di uomini illustri degli Uffizi dipinti da Carlo Ventura Sacconi, Giovanni Pietro Pollini e Giovanni Berti",
+    "relevance_score": 2.068839,
+    "doi": "https://doi.org/10.36253/978-88-5518-181-5.13",
+    "topic_ids": [
+      "C162462552",
+      "C142362112",
+      "C205783811",
+      "C15708023",
+      "C52119013",
+      "C58640448",
+      "C205649164"
+    ],
+    "best_pdf": "https://fupress.com/redir.ashx?RetUrl=15266.pdf",
+    "backup_pdf": "https://doi.org/10.36253/978-88-5518-181-5.13",
+    "raw": {
+      "id": "https://openalex.org/W3117479530",
+      "display_name": "I ritratti di uomini illustri degli Uffizi dipinti da Carlo Ventura Sacconi, Giovanni Pietro Pollini e Giovanni Berti",
+      "relevance_score": 2.068839,
+      "doi": "https://doi.org/10.36253/978-88-5518-181-5.13",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.8393177
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.7723461
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.6695556
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.546576
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.51473427
+        },
+        {
+          "id": "https://openalex.org/C58640448",
+          "wikidata": "https://www.wikidata.org/wiki/Q42515",
+          "display_name": "Cartography",
+          "level": 1,
+          "score": 0.4397236
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.17228004
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-5518-181-5.13",
+        "pdf_url": "https://fupress.com/redir.ashx?RetUrl=15266.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210200620",
+          "display_name": "Studi e saggi",
+          "issn_l": "2704-6478",
+          "issn": [
+            "2704-6478"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "book series"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://fupress.com/redir.ashx?RetUrl=15266.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.36253/978-88-5518-181-5.13",
+          "pdf_url": "https://fupress.com/redir.ashx?RetUrl=15266.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210200620",
+            "display_name": "Studi e saggi",
+            "issn_l": "2704-6478",
+            "issn": [
+              "2704-6478"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320196",
+            "host_organization_name": "Firenze University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320196"
+            ],
+            "host_organization_lineage_names": [
+              "Firenze University Press"
+            ],
+            "type": "book series"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.fupress.com/doi/capitoli/978-88-5518-181-5_13",
+          "pdf_url": "https://media.fupress.com/files/pdf/24/4777/15266",
+          "source": {
+            "id": "https://openalex.org/S4306400539",
+            "display_name": "Directory of Open access Books (OAPEN Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-5518-181-5.13",
+        "pdf_url": "https://fupress.com/redir.ashx?RetUrl=15266.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210200620",
+          "display_name": "Studi e saggi",
+          "issn_l": "2704-6478",
+          "issn": [
+            "2704-6478"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "book series"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

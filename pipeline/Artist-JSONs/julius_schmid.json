@@ -1,0 +1,779 @@
+[
+  {
+    "id": "https://openalex.org/W2922201196",
+    "title": "The Holbein exhibition of 1871 – an iconic turning point for art history",
+    "relevance_score": 1.5164775,
+    "doi": "https://doi.org/10.4324/9781315200156-10",
+    "topic_ids": [
+      "C37531588",
+      "C3018122192",
+      "C52119013",
+      "C95457728",
+      "C142362112",
+      "C153349607",
+      "C107038049",
+      "C2781291010"
+    ],
+    "best_pdf": "https://archiv.ub.uni-heidelberg.de/artdok/7096/1/Bader_The_Holbein_exhibition_of_1871_2018.pdf",
+    "backup_pdf": "http://archiv.ub.uni-heidelberg.de/artdok/volltexte/2020/7096",
+    "raw": {
+      "id": "https://openalex.org/W2922201196",
+      "display_name": "The Holbein exhibition of 1871 – an iconic turning point for art history",
+      "relevance_score": 1.5164775,
+      "doi": "https://doi.org/10.4324/9781315200156-10",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.8908416
+        },
+        {
+          "id": "https://openalex.org/C3018122192",
+          "wikidata": "https://www.wikidata.org/wiki/Q569250",
+          "display_name": "Turning point",
+          "level": 3,
+          "score": 0.4740367
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.42573488
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4028642
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.384718
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3694737
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.13697109
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.06104976
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.4324/9781315200156-10",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306463855",
+          "display_name": "Routledge eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320449",
+          "host_organization_name": "Informa",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320449"
+          ],
+          "host_organization_lineage_names": [
+            "Informa"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://archiv.ub.uni-heidelberg.de/artdok/7096/1/Bader_The_Holbein_exhibition_of_1871_2018.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.4324/9781315200156-10",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306463855",
+            "display_name": "Routledge eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320449",
+            "host_organization_name": "Informa",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320449"
+            ],
+            "host_organization_lineage_names": [
+              "Informa"
+            ],
+            "type": "ebook platform"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://archiv.ub.uni-heidelberg.de/artdok/volltexte/2020/7096",
+          "pdf_url": "https://archiv.ub.uni-heidelberg.de/artdok/7096/1/Bader_The_Holbein_exhibition_of_1871_2018.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://archiv.ub.uni-heidelberg.de/artdok/7096/1/Bader_The_Holbein_exhibition_of_1871_2018.pdf",
+          "pdf_url": "http://archiv.ub.uni-heidelberg.de/artdok/7096/1/Bader_The_Holbein_exhibition_of_1871_2018.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402124",
+            "display_name": "heiDOK – The Heidelberg Document Repository (Heidelberg University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I223822909",
+            "host_organization_name": "Heidelberg University",
+            "host_organization_lineage": [
+              "https://openalex.org/I223822909"
+            ],
+            "host_organization_lineage_names": [
+              "Heidelberg University"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://archiv.ub.uni-heidelberg.de/artdok/volltexte/2020/7096",
+        "pdf_url": "https://archiv.ub.uni-heidelberg.de/artdok/7096/1/Bader_The_Holbein_exhibition_of_1871_2018.pdf",
+        "source": {
+          "id": "https://openalex.org/S4308707206",
+          "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I157725225",
+          "host_organization_name": "University of Illinois Urbana-Champaign",
+          "host_organization_lineage": [
+            "https://openalex.org/I157725225"
+          ],
+          "host_organization_lineage_names": [
+            "University of Illinois Urbana-Champaign"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2964581941",
+    "title": "Designing the Latina landscape: graphic images of Italian Fascism",
+    "relevance_score": 1.4132129,
+    "doi": "https://doi.org/10.1080/13574809.2019.1638237",
+    "topic_ids": [
+      "C15724806",
+      "C519517224",
+      "C2780861071",
+      "C207141826",
+      "C2994309752",
+      "C108865711",
+      "C153349607",
+      "C95457728",
+      "C107038049",
+      "C123657996",
+      "C142362112",
+      "C147176958",
+      "C205649164",
+      "C124952713",
+      "C127413603",
+      "C91375879",
+      "C2524010",
+      "C33923547"
+    ],
+    "best_pdf": "https://figshare.com/articles/journal_contribution/Designing_the_Latina_landscape_Graphic_images_of_Italian_Fascism/9334256/1/files/16942220.pdf",
+    "backup_pdf": "https://figshare.com/articles/Designing_the_Latina_landscape_Graphic_images_of_Italian_Fascism/9334256",
+    "raw": {
+      "id": "https://openalex.org/W2964581941",
+      "display_name": "Designing the Latina landscape: graphic images of Italian Fascism",
+      "relevance_score": 1.4132129,
+      "doi": "https://doi.org/10.1080/13574809.2019.1638237",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C15724806",
+          "wikidata": "https://www.wikidata.org/wiki/Q185925",
+          "display_name": "Graphic design",
+          "level": 2,
+          "score": 0.7474158
+        },
+        {
+          "id": "https://openalex.org/C519517224",
+          "wikidata": "https://www.wikidata.org/wiki/Q12827256",
+          "display_name": "Mythology",
+          "level": 2,
+          "score": 0.62103647
+        },
+        {
+          "id": "https://openalex.org/C2780861071",
+          "wikidata": "https://www.wikidata.org/wiki/Q1062934",
+          "display_name": "Character (mathematics)",
+          "level": 2,
+          "score": 0.5904006
+        },
+        {
+          "id": "https://openalex.org/C207141826",
+          "wikidata": "https://www.wikidata.org/wiki/Q59950",
+          "display_name": "Urbanism",
+          "level": 3,
+          "score": 0.5660717
+        },
+        {
+          "id": "https://openalex.org/C2994309752",
+          "wikidata": "https://www.wikidata.org/wiki/Q1935974",
+          "display_name": "Urban landscape",
+          "level": 2,
+          "score": 0.54497075
+        },
+        {
+          "id": "https://openalex.org/C108865711",
+          "wikidata": "https://www.wikidata.org/wiki/Q8071177",
+          "display_name": "Landscape design",
+          "level": 2,
+          "score": 0.44118154
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.40798467
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.40159866
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.39703077
+        },
+        {
+          "id": "https://openalex.org/C123657996",
+          "wikidata": "https://www.wikidata.org/wiki/Q12271",
+          "display_name": "Architecture",
+          "level": 2,
+          "score": 0.31125572
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.2842775
+        },
+        {
+          "id": "https://openalex.org/C147176958",
+          "wikidata": "https://www.wikidata.org/wiki/Q77590",
+          "display_name": "Civil engineering",
+          "level": 1,
+          "score": 0.283082
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.2746378
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.21774757
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.19425258
+        },
+        {
+          "id": "https://openalex.org/C91375879",
+          "wikidata": "https://www.wikidata.org/wiki/Q15473274",
+          "display_name": "Environmental planning",
+          "level": 1,
+          "score": 0.07755995
+        },
+        {
+          "id": "https://openalex.org/C2524010",
+          "wikidata": "https://www.wikidata.org/wiki/Q8087",
+          "display_name": "Geometry",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/13574809.2019.1638237",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S35062419",
+          "display_name": "Journal of Urban Design",
+          "issn_l": "1357-4809",
+          "issn": [
+            "1357-4809",
+            "1469-9664"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://figshare.com/articles/journal_contribution/Designing_the_Latina_landscape_Graphic_images_of_Italian_Fascism/9334256/1/files/16942220.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/13574809.2019.1638237",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S35062419",
+            "display_name": "Journal of Urban Design",
+            "issn_l": "1357-4809",
+            "issn": [
+              "1357-4809",
+              "1469-9664"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://figshare.com/articles/Designing_the_Latina_landscape_Graphic_images_of_Italian_Fascism/9334256",
+          "pdf_url": "https://figshare.com/articles/journal_contribution/Designing_the_Latina_landscape_Graphic_images_of_Italian_Fascism/9334256/1/files/16942220.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402585",
+            "display_name": "Loughborough University Research Repository (Loughborough University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I143804889",
+            "host_organization_name": "Loughborough University",
+            "host_organization_lineage": [
+              "https://openalex.org/I143804889"
+            ],
+            "host_organization_lineage_names": [
+              "Loughborough University"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://dspace.lboro.ac.uk/2134/38198",
+          "pdf_url": "https://repository.lboro.ac.uk/articles/journal_contribution/Designing_the_Latina_landscape_Graphic_images_of_Italian_Fascism/9334256/1/files/16942220.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401023",
+            "display_name": "Loughborough University Institutional Repository (Loughborough University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I143804889",
+            "host_organization_name": "Loughborough University",
+            "host_organization_lineage": [
+              "https://openalex.org/I143804889"
+            ],
+            "host_organization_lineage_names": [
+              "Loughborough University"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://figshare.com/articles/Designing_the_Latina_landscape_Graphic_images_of_Italian_Fascism/9334256",
+        "pdf_url": "https://figshare.com/articles/journal_contribution/Designing_the_Latina_landscape_Graphic_images_of_Italian_Fascism/9334256/1/files/16942220.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402585",
+          "display_name": "Loughborough University Research Repository (Loughborough University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I143804889",
+          "host_organization_name": "Loughborough University",
+          "host_organization_lineage": [
+            "https://openalex.org/I143804889"
+          ],
+          "host_organization_lineage_names": [
+            "Loughborough University"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4365136986",
+    "title": "Reclaiming History in the British Museum entranceway: imperialism, patronage and female, queer and black legacies",
+    "relevance_score": 1.1413187,
+    "doi": "https://doi.org/10.1080/13642529.2023.2184966",
+    "topic_ids": [
+      "C2778584255",
+      "C94625758",
+      "C95457728",
+      "C2778495208",
+      "C2780495726",
+      "C52119013",
+      "C144024400",
+      "C107993555",
+      "C199539241",
+      "C195244886",
+      "C17744445"
+    ],
+    "best_pdf": "https://kar.kent.ac.uk/100883/1/Reclaiming%20History%20in%20the%20British%20Museum%20Entranceway%20Imperialism%20Patronage%20and%20Female%20Queer%20and%20Black%20Legacies.pdf",
+    "backup_pdf": "https://doi.org/10.1080/13642529.2023.2184966",
+    "raw": {
+      "id": "https://openalex.org/W4365136986",
+      "display_name": "Reclaiming History in the British Museum entranceway: imperialism, patronage and female, queer and black legacies",
+      "relevance_score": 1.1413187,
+      "doi": "https://doi.org/10.1080/13642529.2023.2184966",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778584255",
+          "wikidata": "https://www.wikidata.org/wiki/Q51415",
+          "display_name": "Queer",
+          "level": 2,
+          "score": 0.8554602
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.54830766
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.51059943
+        },
+        {
+          "id": "https://openalex.org/C2778495208",
+          "wikidata": "https://www.wikidata.org/wiki/Q48349",
+          "display_name": "Empire",
+          "level": 2,
+          "score": 0.45141107
+        },
+        {
+          "id": "https://openalex.org/C2780495726",
+          "wikidata": "https://www.wikidata.org/wiki/Q2186896",
+          "display_name": "Estate",
+          "level": 2,
+          "score": 0.43030795
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3677715
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.3400613
+        },
+        {
+          "id": "https://openalex.org/C107993555",
+          "wikidata": "https://www.wikidata.org/wiki/Q1662673",
+          "display_name": "Gender studies",
+          "level": 1,
+          "score": 0.33858183
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.24630827
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.21056804
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.14150417
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/13642529.2023.2184966",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S38956679",
+          "display_name": "Rethinking History",
+          "issn_l": "1364-2529",
+          "issn": [
+            "1364-2529",
+            "1470-1154"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://doi.org/10.1080/13642529.2023.2184966",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1080/13642529.2023.2184966",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S38956679",
+            "display_name": "Rethinking History",
+            "issn_l": "1364-2529",
+            "issn": [
+              "1364-2529",
+              "1470-1154"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://kar.kent.ac.uk/100883/1/Reclaiming%20History%20in%20the%20British%20Museum%20Entranceway%20Imperialism%20Patronage%20and%20Female%20Queer%20and%20Black%20Legacies.pdf",
+          "pdf_url": "https://kar.kent.ac.uk/100883/1/Reclaiming%20History%20in%20the%20British%20Museum%20Entranceway%20Imperialism%20Patronage%20and%20Female%20Queer%20and%20Black%20Legacies.pdf",
+          "source": null,
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/13642529.2023.2184966",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S38956679",
+          "display_name": "Rethinking History",
+          "issn_l": "1364-2529",
+          "issn": [
+            "1364-2529",
+            "1470-1154"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

@@ -1,0 +1,536 @@
+[
+  {
+    "id": "https://openalex.org/W2599908739",
+    "title": "Imágenes e historia de la educación popular: representaciones fotográficas de las Misiones Pedagógicas en la Región de Murcia",
+    "relevance_score": 1.5394808,
+    "doi": "https://doi.org/10.5944/hme.5.2017.16799",
+    "topic_ids": [
+      "C2779343474",
+      "C75795011",
+      "C29598333",
+      "C152212766",
+      "C119657128",
+      "C58640448",
+      "C2983413640",
+      "C2778012447",
+      "C15708023",
+      "C161191863",
+      "C205649164",
+      "C153349607",
+      "C142362112",
+      "C166957645",
+      "C41008148",
+      "C138885662",
+      "C27206212",
+      "C199360897"
+    ],
+    "best_pdf": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+    "backup_pdf": "https://doi.org/10.5944/hme.5.2017.16799",
+    "raw": {
+      "id": "https://openalex.org/W2599908739",
+      "display_name": "Imágenes e historia de la educación popular: representaciones fotográficas de las Misiones Pedagógicas en la Región de Murcia",
+      "relevance_score": 1.5394808,
+      "doi": "https://doi.org/10.5944/hme.5.2017.16799",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.6849654
+        },
+        {
+          "id": "https://openalex.org/C75795011",
+          "wikidata": "https://www.wikidata.org/wiki/Q917904",
+          "display_name": "Typology",
+          "level": 2,
+          "score": 0.6488369
+        },
+        {
+          "id": "https://openalex.org/C29598333",
+          "wikidata": "https://www.wikidata.org/wiki/Q50675",
+          "display_name": "Historiography",
+          "level": 2,
+          "score": 0.5060815
+        },
+        {
+          "id": "https://openalex.org/C152212766",
+          "wikidata": "https://www.wikidata.org/wiki/Q3625645",
+          "display_name": "The Republic",
+          "level": 2,
+          "score": 0.4804844
+        },
+        {
+          "id": "https://openalex.org/C119657128",
+          "wikidata": "https://www.wikidata.org/wiki/Q11633",
+          "display_name": "Photography",
+          "level": 2,
+          "score": 0.4560996
+        },
+        {
+          "id": "https://openalex.org/C58640448",
+          "wikidata": "https://www.wikidata.org/wiki/Q42515",
+          "display_name": "Cartography",
+          "level": 1,
+          "score": 0.43348116
+        },
+        {
+          "id": "https://openalex.org/C2983413640",
+          "wikidata": "https://www.wikidata.org/wiki/Q1080794",
+          "display_name": "Public education",
+          "level": 2,
+          "score": 0.41572583
+        },
+        {
+          "id": "https://openalex.org/C2778012447",
+          "wikidata": "https://www.wikidata.org/wiki/Q1034415",
+          "display_name": "Scope (computer science)",
+          "level": 2,
+          "score": 0.41031918
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.40643927
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.3677773
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.35253564
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.34792173
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.33274707
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.1719163
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.095105916
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5944/hme.5.2017.16799",
+        "pdf_url": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+        "source": {
+          "id": "https://openalex.org/S2739302436",
+          "display_name": "Historia y Memoria de la Educación",
+          "issn_l": "2444-0043",
+          "issn": [
+            "2444-0043"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321040",
+          "host_organization_name": "National University of Distance Education",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321040"
+          ],
+          "host_organization_lineage_names": [
+            "National University of Distance Education"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5944/hme.5.2017.16799",
+          "pdf_url": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+          "source": {
+            "id": "https://openalex.org/S2739302436",
+            "display_name": "Historia y Memoria de la Educación",
+            "issn_l": "2444-0043",
+            "issn": [
+              "2444-0043"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321040",
+            "host_organization_name": "National University of Distance Education",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321040"
+            ],
+            "host_organization_lineage_names": [
+              "National University of Distance Education"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5944/hme.5.2017.16799",
+        "pdf_url": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+        "source": {
+          "id": "https://openalex.org/S2739302436",
+          "display_name": "Historia y Memoria de la Educación",
+          "issn_l": "2444-0043",
+          "issn": [
+            "2444-0043"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321040",
+          "host_organization_name": "National University of Distance Education",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321040"
+          ],
+          "host_organization_lineage_names": [
+            "National University of Distance Education"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4213451290",
+    "title": "Cuadros de fusilamientos, ss. xx-xxi. De la mímesis al fantasma",
+    "relevance_score": 1.4060817,
+    "doi": "https://doi.org/10.25145/j.bbaa.2021.15.01",
+    "topic_ids": [
+      "C2779151265",
+      "C142362112",
+      "C126388530",
+      "C33566652",
+      "C523419034",
+      "C205783811",
+      "C52119013",
+      "C138885662",
+      "C124952713",
+      "C15744967",
+      "C199539241",
+      "C41008148",
+      "C77805123",
+      "C17744445",
+      "C111919701"
+    ],
+    "best_pdf": "https://riull.ull.es/xmlui/bitstream/915/26525/1/BBAA_15_%282021%29_01.pdf",
+    "backup_pdf": "https://doi.org/10.25145/j.bbaa.2021.15.01",
+    "raw": {
+      "id": "https://openalex.org/W4213451290",
+      "display_name": "Cuadros de fusilamientos, ss. xx-xxi. De la mímesis al fantasma",
+      "relevance_score": 1.4060817,
+      "doi": "https://doi.org/10.25145/j.bbaa.2021.15.01",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779151265",
+          "wikidata": "https://www.wikidata.org/wiki/Q1156791",
+          "display_name": "Copying",
+          "level": 2,
+          "score": 0.6926142
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6238409
+        },
+        {
+          "id": "https://openalex.org/C126388530",
+          "wikidata": "https://www.wikidata.org/wiki/Q1131737",
+          "display_name": "Imitation",
+          "level": 2,
+          "score": 0.5730789
+        },
+        {
+          "id": "https://openalex.org/C33566652",
+          "wikidata": "https://www.wikidata.org/wiki/Q1065927",
+          "display_name": "Theme (computing)",
+          "level": 2,
+          "score": 0.5463198
+        },
+        {
+          "id": "https://openalex.org/C523419034",
+          "wikidata": "https://www.wikidata.org/wiki/Q25372",
+          "display_name": "Drama",
+          "level": 2,
+          "score": 0.5258751
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.47882894
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.4776648
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.36382237
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.33235654
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.09047848
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.08613679
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.07864955
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.25145/j.bbaa.2021.15.01",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210176793",
+          "display_name": "Bellas Artes Revista de Artes plásticas Estética Diseño e Imagen",
+          "issn_l": "1695-761X",
+          "issn": [
+            "1695-761X",
+            "2530-8432"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321416",
+          "host_organization_name": "University of La Laguna",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321416"
+          ],
+          "host_organization_lineage_names": [
+            "University of La Laguna"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://doi.org/10.25145/j.bbaa.2021.15.01",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.25145/j.bbaa.2021.15.01",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210176793",
+            "display_name": "Bellas Artes Revista de Artes plásticas Estética Diseño e Imagen",
+            "issn_l": "1695-761X",
+            "issn": [
+              "1695-761X",
+              "2530-8432"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321416",
+            "host_organization_name": "University of La Laguna",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321416"
+            ],
+            "host_organization_lineage_names": [
+              "University of La Laguna"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://riull.ull.es/xmlui/handle/915/26525",
+          "pdf_url": "https://riull.ull.es/xmlui/bitstream/915/26525/1/BBAA_15_%282021%29_01.pdf",
+          "source": {
+            "id": "https://openalex.org/S4377196342",
+            "display_name": "RIULL - Institutional Repository (University of La Laguna)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I158438070",
+            "host_organization_name": "Universidad de La Laguna",
+            "host_organization_lineage": [
+              "https://openalex.org/I158438070"
+            ],
+            "host_organization_lineage_names": [
+              "Universidad de La Laguna"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.25145/j.bbaa.2021.15.01",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210176793",
+          "display_name": "Bellas Artes Revista de Artes plásticas Estética Diseño e Imagen",
+          "issn_l": "1695-761X",
+          "issn": [
+            "1695-761X",
+            "2530-8432"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321416",
+          "host_organization_name": "University of La Laguna",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321416"
+          ],
+          "host_organization_lineage_names": [
+            "University of La Laguna"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

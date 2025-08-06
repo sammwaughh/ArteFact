@@ -1,0 +1,677 @@
+[
+  {
+    "id": "https://openalex.org/W2801720769",
+    "title": "Artists and the city: mapping the art worlds of eighteenth-century Paris",
+    "relevance_score": 9.255659,
+    "doi": "https://doi.org/10.1017/s0963926818000251",
+    "topic_ids": [
+      "C2781149807",
+      "C85363599",
+      "C142362112",
+      "C153349607",
+      "C52119013",
+      "C189135316",
+      "C554144382"
+    ],
+    "best_pdf": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36368",
+    "backup_pdf": "https://doi.org/10.1017/s0963926818000251",
+    "raw": {
+      "id": "https://openalex.org/W2801720769",
+      "display_name": "Artists and the city: mapping the art worlds of eighteenth-century Paris",
+      "relevance_score": 9.255659,
+      "doi": "https://doi.org/10.1017/s0963926818000251",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2781149807",
+          "wikidata": "https://www.wikidata.org/wiki/Q2493043",
+          "display_name": "Art world",
+          "level": 3,
+          "score": 0.59854066
+        },
+        {
+          "id": "https://openalex.org/C85363599",
+          "wikidata": "https://www.wikidata.org/wiki/Q186030",
+          "display_name": "Contemporary art",
+          "level": 3,
+          "score": 0.5282133
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5279918
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5101202
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.48208764
+        },
+        {
+          "id": "https://openalex.org/C189135316",
+          "wikidata": "https://www.wikidata.org/wiki/Q38166",
+          "display_name": "Modern art",
+          "level": 3,
+          "score": 0.4725499
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.19143453
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/s0963926818000251",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S1743546",
+          "display_name": "Urban History",
+          "issn_l": "0963-9268",
+          "issn": [
+            "0963-9268",
+            "1469-8706"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36368",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1017/s0963926818000251",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S1743546",
+            "display_name": "Urban History",
+            "issn_l": "0963-9268",
+            "issn": [
+              "0963-9268",
+              "1469-8706"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36368",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400530",
+            "display_name": "Queen Mary Research Online (Queen Mary University of London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I166337079",
+            "host_organization_name": "Queen Mary University of London",
+            "host_organization_lineage": [
+              "https://openalex.org/I166337079"
+            ],
+            "host_organization_lineage_names": [
+              "Queen Mary University of London"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36368",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400530",
+          "display_name": "Queen Mary Research Online (Queen Mary University of London)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I166337079",
+          "host_organization_name": "Queen Mary University of London",
+          "host_organization_lineage": [
+            "https://openalex.org/I166337079"
+          ],
+          "host_organization_lineage_names": [
+            "Queen Mary University of London"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2810757823",
+    "title": "Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World",
+    "relevance_score": 5.860412,
+    "doi": "https://doi.org/10.30610/5.2018.1",
+    "topic_ids": [
+      "C45012715",
+      "C153349607",
+      "C142362112",
+      "C52119013"
+    ],
+    "best_pdf": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+    "backup_pdf": "https://doi.org/10.30610/5.2018.1",
+    "raw": {
+      "id": "https://openalex.org/W2810757823",
+      "display_name": "Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World",
+      "relevance_score": 5.860412,
+      "doi": "https://doi.org/10.30610/5.2018.1",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C45012715",
+          "wikidata": "https://www.wikidata.org/wiki/Q746628",
+          "display_name": "Studio",
+          "level": 2,
+          "score": 0.89716315
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5826666
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5631577
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.4242601
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30610/5.2018.1",
+        "pdf_url": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210174589",
+          "display_name": "Journal18",
+          "issn_l": "2470-5683",
+          "issn": [
+            "2470-5683"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.30610/5.2018.1",
+          "pdf_url": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210174589",
+            "display_name": "Journal18",
+            "issn_l": "2470-5683",
+            "issn": [
+              "2470-5683"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://www.journal18.org/2654",
+          "pdf_url": "https://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://qmro.qmul.ac.uk/xmlui/handle/123456789/36272",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400530",
+            "display_name": "Queen Mary Research Online (Queen Mary University of London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I166337079",
+            "host_organization_name": "Queen Mary University of London",
+            "host_organization_lineage": [
+              "https://openalex.org/I166337079"
+            ],
+            "host_organization_lineage_names": [
+              "Queen Mary University of London"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30610/5.2018.1",
+        "pdf_url": "http://www.journal18.org/issue5_williams/downloads/artists-studios.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210174589",
+          "display_name": "Journal18",
+          "issn_l": "2470-5683",
+          "issn": [
+            "2470-5683"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3173736129",
+    "title": "Vincent Van Gogh’s Magical Concept of Portraiture and Paul Gauguin’s Bonjour M. Gauguin",
+    "relevance_score": 1.497288,
+    "doi": "https://doi.org/10.7202/1077382ar",
+    "topic_ids": [
+      "C142362112",
+      "C52119013"
+    ],
+    "best_pdf": "https://www.erudit.org/fr/revues/racar/1976-v3-n1-racar06045/1077382ar.pdf",
+    "backup_pdf": "https://doi.org/10.7202/1077382ar",
+    "raw": {
+      "id": "https://openalex.org/W3173736129",
+      "display_name": "Vincent Van Gogh’s Magical Concept of Portraiture and Paul Gauguin’s Bonjour M. Gauguin",
+      "relevance_score": 1.497288,
+      "doi": "https://doi.org/10.7202/1077382ar",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.7186852
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.6204707
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7202/1077382ar",
+        "pdf_url": "https://www.erudit.org/fr/revues/racar/1976-v3-n1-racar06045/1077382ar.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210170860",
+          "display_name": "RACAR Revue d art canadienne",
+          "issn_l": "0315-9906",
+          "issn": [
+            "0315-9906",
+            "1918-4778"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.erudit.org/fr/revues/racar/1976-v3-n1-racar06045/1077382ar.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7202/1077382ar",
+          "pdf_url": "https://www.erudit.org/fr/revues/racar/1976-v3-n1-racar06045/1077382ar.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210170860",
+            "display_name": "RACAR Revue d art canadienne",
+            "issn_l": "0315-9906",
+            "issn": [
+              "0315-9906",
+              "1918-4778"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7202/1077382ar",
+        "pdf_url": "https://www.erudit.org/fr/revues/racar/1976-v3-n1-racar06045/1077382ar.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210170860",
+          "display_name": "RACAR Revue d art canadienne",
+          "issn_l": "0315-9906",
+          "issn": [
+            "0315-9906",
+            "1918-4778"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2969038088",
+    "title": "Studio Practice, Art, and Caricature",
+    "relevance_score": 1.3843309,
+    "doi": "https://doi.org/10.4000/books.inha.8260",
+    "topic_ids": [
+      "C45012715",
+      "C142362112",
+      "C153349607",
+      "C52119013"
+    ],
+    "best_pdf": "http://books.openedition.org/inha/pdf/7923",
+    "backup_pdf": "https://doi.org/10.4000/books.inha.8260",
+    "raw": {
+      "id": "https://openalex.org/W2969038088",
+      "display_name": "Studio Practice, Art, and Caricature",
+      "relevance_score": 1.3843309,
+      "doi": "https://doi.org/10.4000/books.inha.8260",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C45012715",
+          "wikidata": "https://www.wikidata.org/wiki/Q746628",
+          "display_name": "Studio",
+          "level": 2,
+          "score": 0.81373906
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5385699
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5302793
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3563758
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4000/books.inha.8260",
+        "pdf_url": "http://books.openedition.org/inha/pdf/7923",
+        "source": {
+          "id": "https://openalex.org/S4306489290",
+          "display_name": "Publications de l’Institut national d’histoire de l’art eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "http://books.openedition.org/inha/pdf/7923",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.4000/books.inha.8260",
+          "pdf_url": "http://books.openedition.org/inha/pdf/7923",
+          "source": {
+            "id": "https://openalex.org/S4306489290",
+            "display_name": "Publications de l’Institut national d’histoire de l’art eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "ebook platform"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://books.openedition.org/inha/8260",
+          "pdf_url": "https://books.openedition.org/inha/pdf/8260",
+          "source": null,
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4000/books.inha.8260",
+        "pdf_url": "http://books.openedition.org/inha/pdf/7923",
+        "source": {
+          "id": "https://openalex.org/S4306489290",
+          "display_name": "Publications de l’Institut national d’histoire de l’art eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

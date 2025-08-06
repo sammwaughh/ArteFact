@@ -1,0 +1,176 @@
+[
+  {
+    "id": "https://openalex.org/W4318063731",
+    "title": "Painters on the Move in Seventeenth-Century Europe",
+    "relevance_score": 1.3731709,
+    "doi": "https://doi.org/10.1163/9789004513259_013",
+    "topic_ids": [
+      "C205783811",
+      "C142362112",
+      "C52119013",
+      "C95457728"
+    ],
+    "best_pdf": "https://dspace.library.uu.nl/bitstream/handle/1874/425593/9789004513259_BP000021.pdf?sequence=1&isAllowed=y",
+    "backup_pdf": "https://dspace.library.uu.nl/handle/1874/425593",
+    "raw": {
+      "id": "https://openalex.org/W4318063731",
+      "display_name": "Painters on the Move in Seventeenth-Century Europe",
+      "relevance_score": 1.3731709,
+      "doi": "https://doi.org/10.1163/9789004513259_013",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.77842635
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.50686914
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.5060386
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.33954698
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1163/9789004513259_013",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306462964",
+          "display_name": "BRILL eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://dspace.library.uu.nl/bitstream/handle/1874/425593/9789004513259_BP000021.pdf?sequence=1&isAllowed=y",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1163/9789004513259_013",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306462964",
+            "display_name": "BRILL eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320561",
+            "host_organization_name": "Brill",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320561"
+            ],
+            "host_organization_lineage_names": [
+              "Brill"
+            ],
+            "type": "ebook platform"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://dspace.library.uu.nl/handle/1874/425593",
+          "pdf_url": "https://dspace.library.uu.nl/bitstream/handle/1874/425593/9789004513259_BP000021.pdf?sequence=1&isAllowed=y",
+          "source": {
+            "id": "https://openalex.org/S4306401843",
+            "display_name": "Data Archiving and Networked Services (DANS)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1322597698",
+            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/I1322597698"
+            ],
+            "host_organization_lineage_names": [
+              "Royal Netherlands Academy of Arts and Sciences"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/425593",
+        "pdf_url": "https://dspace.library.uu.nl/bitstream/handle/1874/425593/9789004513259_BP000021.pdf?sequence=1&isAllowed=y",
+        "source": {
+          "id": "https://openalex.org/S4306401843",
+          "display_name": "Data Archiving and Networked Services (DANS)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I1322597698",
+          "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+          "host_organization_lineage": [
+            "https://openalex.org/I1322597698"
+          ],
+          "host_organization_lineage_names": [
+            "Royal Netherlands Academy of Arts and Sciences"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]

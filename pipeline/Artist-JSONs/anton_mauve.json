@@ -1,0 +1,559 @@
+[
+  {
+    "id": "https://openalex.org/W4389923371",
+    "title": "A Curious Case of Neglect",
+    "relevance_score": 1.2145765,
+    "doi": "https://doi.org/10.52476/trb.18495",
+    "topic_ids": [
+      "C205783811",
+      "C37531588",
+      "C2776269092",
+      "C52119013",
+      "C142362112",
+      "C144024400",
+      "C149923435"
+    ],
+    "best_pdf": "https://bulletin.rijksmuseum.nl/article/download/18495/20257",
+    "backup_pdf": "https://doi.org/10.52476/trb.18495",
+    "raw": {
+      "id": "https://openalex.org/W4389923371",
+      "display_name": "A Curious Case of Neglect",
+      "relevance_score": 1.2145765,
+      "doi": "https://doi.org/10.52476/trb.18495",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.8640653
+        },
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.7221858
+        },
+        {
+          "id": "https://openalex.org/C2776269092",
+          "wikidata": "https://www.wikidata.org/wiki/Q1611074",
+          "display_name": "Residence",
+          "level": 2,
+          "score": 0.69424295
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.5704276
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.46872035
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.2476516
+        },
+        {
+          "id": "https://openalex.org/C149923435",
+          "wikidata": "https://www.wikidata.org/wiki/Q37732",
+          "display_name": "Demography",
+          "level": 1,
+          "score": 0.08608928
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52476/trb.18495",
+        "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/18495/20257",
+        "source": {
+          "id": "https://openalex.org/S4210227217",
+          "display_name": "The Rijksmuseum Bulletin",
+          "issn_l": "1877-8127",
+          "issn": [
+            "1877-8127",
+            "2772-6126"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318572",
+          "host_organization_name": "Rijksmuseum",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318572"
+          ],
+          "host_organization_lineage_names": [
+            "Rijksmuseum"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://bulletin.rijksmuseum.nl/article/download/18495/20257",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.52476/trb.18495",
+          "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/18495/20257",
+          "source": {
+            "id": "https://openalex.org/S4210227217",
+            "display_name": "The Rijksmuseum Bulletin",
+            "issn_l": "1877-8127",
+            "issn": [
+              "1877-8127",
+              "2772-6126"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310318572",
+            "host_organization_name": "Rijksmuseum",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318572"
+            ],
+            "host_organization_lineage_names": [
+              "Rijksmuseum"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52476/trb.18495",
+        "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/18495/20257",
+        "source": {
+          "id": "https://openalex.org/S4210227217",
+          "display_name": "The Rijksmuseum Bulletin",
+          "issn_l": "1877-8127",
+          "issn": [
+            "1877-8127",
+            "2772-6126"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318572",
+          "host_organization_name": "Rijksmuseum",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318572"
+          ],
+          "host_organization_lineage_names": [
+            "Rijksmuseum"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4243265384",
+    "title": "'True direction': Aspects of aestheticism in New Zealand (1880-1913)",
+    "relevance_score": 1.1744057,
+    "doi": "https://doi.org/10.26686/wgtn.17020034.v1",
+    "topic_ids": [
+      "C205310680",
+      "C37531588",
+      "C205783811",
+      "C531593650",
+      "C142362112",
+      "C153349607",
+      "C95457728",
+      "C107038049",
+      "C166957645"
+    ],
+    "best_pdf": "https://openaccess.wgtn.ac.nz/articles/thesis/_True_direction_Aspects_of_aestheticism_in_New_Zealand_1880-1913_/17020034/1/files/31476350.pdf",
+    "backup_pdf": "https://doi.org/10.26686/wgtn.17020034.v1",
+    "raw": {
+      "id": "https://openalex.org/W4243265384",
+      "display_name": "'True direction': Aspects of aestheticism in New Zealand (1880-1913)",
+      "relevance_score": 1.1744057,
+      "doi": "https://doi.org/10.26686/wgtn.17020034.v1",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205310680",
+          "wikidata": "https://www.wikidata.org/wiki/Q256922",
+          "display_name": "Aestheticism",
+          "level": 2,
+          "score": 0.9829084
+        },
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.6058334
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.52754945
+        },
+        {
+          "id": "https://openalex.org/C531593650",
+          "wikidata": "https://www.wikidata.org/wiki/Q7167",
+          "display_name": "Colonialism",
+          "level": 2,
+          "score": 0.44110867
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.43830383
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.43319896
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4144167
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.35034215
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.1619302
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26686/wgtn.17020034.v1",
+        "pdf_url": "https://openaccess.wgtn.ac.nz/articles/thesis/_True_direction_Aspects_of_aestheticism_in_New_Zealand_1880-1913_/17020034/1/files/31476350.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://openaccess.wgtn.ac.nz/articles/thesis/_True_direction_Aspects_of_aestheticism_in_New_Zealand_1880-1913_/17020034/1/files/31476350.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.26686/wgtn.17020034.v1",
+          "pdf_url": "https://openaccess.wgtn.ac.nz/articles/thesis/_True_direction_Aspects_of_aestheticism_in_New_Zealand_1880-1913_/17020034/1/files/31476350.pdf",
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://figshare.com/articles/thesis/_True_direction_Aspects_of_aestheticism_in_New_Zealand_1880-1913_/17020034",
+          "pdf_url": "https://figshare.com/articles/thesis/_True_direction_Aspects_of_aestheticism_in_New_Zealand_1880-1913_/17020034/1/files/31476350.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400572",
+            "display_name": "OPAL (Open@LaTrobe) (La Trobe University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I196829312",
+            "host_organization_name": "La Trobe University",
+            "host_organization_lineage": [
+              "https://openalex.org/I196829312"
+            ],
+            "host_organization_lineage_names": [
+              "La Trobe University"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26686/wgtn.17020034.v1",
+        "pdf_url": "https://openaccess.wgtn.ac.nz/articles/thesis/_True_direction_Aspects_of_aestheticism_in_New_Zealand_1880-1913_/17020034/1/files/31476350.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3136105828",
+    "title": "Mirror of Reality: Nineteenth-Century Painting in the Netherlands and Spiegel van de werkelijkheid. 19de-eeuwse schilderkunst in Nederland by Jenny Reynaerts",
+    "relevance_score": 1.075815,
+    "doi": "https://doi.org/10.29411/ncaw.2021.20.1.13",
+    "topic_ids": [
+      "C205783811",
+      "C67805463",
+      "C142362112",
+      "C2775899829",
+      "C70789860",
+      "C153349607",
+      "C205484029",
+      "C52119013",
+      "C123657996",
+      "C119657128",
+      "C81939152",
+      "C3305159",
+      "C15744967",
+      "C169760540"
+    ],
+    "best_pdf": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_992.pdf",
+    "backup_pdf": "https://doi.org/10.29411/ncaw.2021.20.1.13",
+    "raw": {
+      "id": "https://openalex.org/W3136105828",
+      "display_name": "Mirror of Reality: Nineteenth-Century Painting in the Netherlands and Spiegel van de werkelijkheid. 19de-eeuwse schilderkunst in Nederland by Jenny Reynaerts",
+      "relevance_score": 1.075815,
+      "doi": "https://doi.org/10.29411/ncaw.2021.20.1.13",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.8937336
+        },
+        {
+          "id": "https://openalex.org/C67805463",
+          "wikidata": "https://www.wikidata.org/wiki/Q11634",
+          "display_name": "Sculpture",
+          "level": 2,
+          "score": 0.8647428
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.7384919
+        },
+        {
+          "id": "https://openalex.org/C2775899829",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109007",
+          "display_name": "Globe",
+          "level": 2,
+          "score": 0.73661804
+        },
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.67414767
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.64225215
+        },
+        {
+          "id": "https://openalex.org/C205484029",
+          "wikidata": "https://www.wikidata.org/wiki/Q631931",
+          "display_name": "Decorative arts",
+          "level": 4,
+          "score": 0.631516
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.626305
+        },
+        {
+          "id": "https://openalex.org/C123657996",
+          "wikidata": "https://www.wikidata.org/wiki/Q12271",
+          "display_name": "Architecture",
+          "level": 2,
+          "score": 0.5881598
+        },
+        {
+          "id": "https://openalex.org/C119657128",
+          "wikidata": "https://www.wikidata.org/wiki/Q11633",
+          "display_name": "Photography",
+          "level": 2,
+          "score": 0.571076
+        },
+        {
+          "id": "https://openalex.org/C81939152",
+          "wikidata": "https://www.wikidata.org/wiki/Q219625",
+          "display_name": "Fine art",
+          "level": 2,
+          "score": 0.55233264
+        },
+        {
+          "id": "https://openalex.org/C3305159",
+          "wikidata": "https://www.wikidata.org/wiki/Q1757598",
+          "display_name": "Visual arts education",
+          "level": 3,
+          "score": 0.118824154
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.041244686
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.29411/ncaw.2021.20.1.13",
+        "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_992.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210167961",
+          "display_name": "Nineteenth-Century Art Worldwide",
+          "issn_l": "1543-1002",
+          "issn": [
+            "1543-1002"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_992.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.29411/ncaw.2021.20.1.13",
+          "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_992.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210167961",
+            "display_name": "Nineteenth-Century Art Worldwide",
+            "issn_l": "1543-1002",
+            "issn": [
+              "1543-1002"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.29411/ncaw.2021.20.1.13",
+        "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_992.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210167961",
+          "display_name": "Nineteenth-Century Art Worldwide",
+          "issn_l": "1543-1002",
+          "issn": [
+            "1543-1002"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

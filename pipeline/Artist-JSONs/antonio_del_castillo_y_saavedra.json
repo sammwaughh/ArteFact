@@ -1,0 +1,206 @@
+[
+  {
+    "id": "https://openalex.org/W2582266143",
+    "title": "Spanish Drama before Lope de Vega",
+    "relevance_score": 1.5453296,
+    "doi": "https://doi.org/10.2307/316634",
+    "topic_ids": [
+      "C2778538500",
+      "C523419034",
+      "C142362112",
+      "C15708023",
+      "C124952713",
+      "C1276947",
+      "C121332964"
+    ],
+    "best_pdf": "https://archive.org/download/spanishdramabefo00crawiala/spanishdramabefo00crawiala_bw.pdf",
+    "backup_pdf": "http://archive.org/details/spanishdramabefo00crawiala",
+    "raw": {
+      "id": "https://openalex.org/W2582266143",
+      "display_name": "Spanish Drama before Lope de Vega",
+      "relevance_score": 1.5453296,
+      "doi": "https://doi.org/10.2307/316634",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778538500",
+          "wikidata": "https://www.wikidata.org/wiki/Q3427",
+          "display_name": "Vega",
+          "level": 2,
+          "score": 0.94978344
+        },
+        {
+          "id": "https://openalex.org/C523419034",
+          "wikidata": "https://www.wikidata.org/wiki/Q25372",
+          "display_name": "Drama",
+          "level": 2,
+          "score": 0.728792
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.7060687
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.43306223
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.32036662
+        },
+        {
+          "id": "https://openalex.org/C1276947",
+          "wikidata": "https://www.wikidata.org/wiki/Q333",
+          "display_name": "Astronomy",
+          "level": 1,
+          "score": 0.16319773
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.08477706
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.2307/316634",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S72851247",
+          "display_name": "Modern Language Journal",
+          "issn_l": "0026-7902",
+          "issn": [
+            "0026-7902",
+            "1540-4781"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://archive.org/download/spanishdramabefo00crawiala/spanishdramabefo00crawiala_bw.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.2307/316634",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S72851247",
+            "display_name": "Modern Language Journal",
+            "issn_l": "0026-7902",
+            "issn": [
+              "0026-7902",
+              "1540-4781"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_name": "Wiley",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://archive.org/details/spanishdramabefo00crawiala",
+          "pdf_url": "https://archive.org/download/spanishdramabefo00crawiala/spanishdramabefo00crawiala_bw.pdf",
+          "source": {
+            "id": "https://openalex.org/S4377196106",
+            "display_name": "Internet Archive (Internet Archive)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210124753",
+            "host_organization_name": "Internet Archive",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210124753"
+            ],
+            "host_organization_lineage_names": [
+              "Internet Archive"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://archive.org/details/spanishdramabefo00crawiala",
+        "pdf_url": "https://archive.org/download/spanishdramabefo00crawiala/spanishdramabefo00crawiala_bw.pdf",
+        "source": {
+          "id": "https://openalex.org/S4377196106",
+          "display_name": "Internet Archive (Internet Archive)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210124753",
+          "host_organization_name": "Internet Archive",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210124753"
+          ],
+          "host_organization_lineage_names": [
+            "Internet Archive"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "id": "https://openalex.org/W4390614649",
+    "title": "Fakta og fantasi, historiebrug og museernes troværdighed",
+    "relevance_score": 2.0783625,
+    "doi": "https://doi.org/10.5617/nm.10817",
+    "topic_ids": [
+      "C37531588",
+      "C2776538412",
+      "C153349607",
+      "C52119013",
+      "C142362112",
+      "C144024400",
+      "C199033989",
+      "C95457728",
+      "C124952713"
+    ],
+    "best_pdf": "https://journals.uio.no/museolog/article/download/10817/8919",
+    "backup_pdf": "https://doi.org/10.5617/nm.10817",
+    "raw": {
+      "id": "https://openalex.org/W4390614649",
+      "display_name": "Fakta og fantasi, historiebrug og museernes troværdighed",
+      "relevance_score": 2.0783625,
+      "doi": "https://doi.org/10.5617/nm.10817",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.99244857
+        },
+        {
+          "id": "https://openalex.org/C2776538412",
+          "wikidata": "https://www.wikidata.org/wiki/Q989963",
+          "display_name": "Storytelling",
+          "level": 3,
+          "score": 0.59753793
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.52413183
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.48673987
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.41909367
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.388413
+        },
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.37889192
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.33076036
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.22399527
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5617/nm.10817",
+        "pdf_url": "https://journals.uio.no/museolog/article/download/10817/8919",
+        "source": {
+          "id": "https://openalex.org/S4210228559",
+          "display_name": "Nordisk Museologi",
+          "issn_l": "1103-8152",
+          "issn": [
+            "1103-8152",
+            "2002-0503"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314071",
+          "host_organization_name": "University of Oslo Library",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314071"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oslo Library"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://journals.uio.no/museolog/article/download/10817/8919",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5617/nm.10817",
+          "pdf_url": "https://journals.uio.no/museolog/article/download/10817/8919",
+          "source": {
+            "id": "https://openalex.org/S4210228559",
+            "display_name": "Nordisk Museologi",
+            "issn_l": "1103-8152",
+            "issn": [
+              "1103-8152",
+              "2002-0503"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310314071",
+            "host_organization_name": "University of Oslo Library",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310314071"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oslo Library"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://local.forskningsportal.dk/local/dki-cgi/ws/cris-link?src=kum&id=kum-eb936c45-7045-4e0b-b084-f7d1d9c9756b&ti=Fakta%20og%20fantasi%2C%20historiebrug%20og%20museernes%20trov%E6rdighed",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4412200483",
+            "display_name": "Research Portal Denmark",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I96673099",
+            "host_organization_name": "Technical University of Denmark",
+            "host_organization_lineage": [
+              "https://openalex.org/I96673099"
+            ],
+            "host_organization_lineage_names": [
+              "Technical University of Denmark"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5617/nm.10817",
+        "pdf_url": "https://journals.uio.no/museolog/article/download/10817/8919",
+        "source": {
+          "id": "https://openalex.org/S4210228559",
+          "display_name": "Nordisk Museologi",
+          "issn_l": "1103-8152",
+          "issn": [
+            "1103-8152",
+            "2002-0503"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314071",
+          "host_organization_name": "University of Oslo Library",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314071"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oslo Library"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3082039995",
+    "title": "A Woman of No Importance?: Elizabeth Workman’s Collection of Impressionist and Post-Impressionist Art in Context",
+    "relevance_score": 1.176921,
+    "doi": "https://doi.org/10.16995/ntn.3001",
+    "topic_ids": [
+      "C32916116",
+      "C2779343474",
+      "C205783811",
+      "C52119013",
+      "C142362112",
+      "C153349607",
+      "C95457728",
+      "C554144382",
+      "C166957645"
+    ],
+    "best_pdf": "https://www.research.ed.ac.uk/files/244670921/FowleF2021ISLNCPostImpressionistArtInContext.pdf",
+    "backup_pdf": "https://19.bbk.ac.uk/article/3001/galley/3868/download/",
+    "raw": {
+      "id": "https://openalex.org/W3082039995",
+      "display_name": "A Woman of No Importance?: Elizabeth Workman’s Collection of Impressionist and Post-Impressionist Art in Context",
+      "relevance_score": 1.176921,
+      "doi": "https://doi.org/10.16995/ntn.3001",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C32916116",
+          "wikidata": "https://www.wikidata.org/wiki/Q13217498",
+          "display_name": "PICASSO",
+          "level": 3,
+          "score": 0.82381666
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.6615384
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.6594816
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.6109101
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.54833907
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.49913287
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4351454
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.4236811
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.08364037
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ntn.3001",
+        "pdf_url": "https://19.bbk.ac.uk/article/3001/galley/3868/download/",
+        "source": {
+          "id": "https://openalex.org/S4210213405",
+          "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+          "issn_l": "1755-1560",
+          "issn": [
+            "1755-1560"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319895",
+          "host_organization_name": "Open Library of Humanities",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319895"
+          ],
+          "host_organization_lineage_names": [
+            "Open Library of Humanities"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://19.bbk.ac.uk/article/3001/galley/3868/download/",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.16995/ntn.3001",
+          "pdf_url": "https://19.bbk.ac.uk/article/3001/galley/3868/download/",
+          "source": {
+            "id": "https://openalex.org/S4210213405",
+            "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+            "issn_l": "1755-1560",
+            "issn": [
+              "1755-1560"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310319895",
+            "host_organization_name": "Open Library of Humanities",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319895"
+            ],
+            "host_organization_lineage_names": [
+              "Open Library of Humanities"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/8e9d7a74d4be4be696a32a78b5e0838b",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.research.ed.ac.uk/en/publications/cd37f751-e9d5-4229-a383-b4967624d85a",
+          "pdf_url": "https://www.research.ed.ac.uk/files/244670921/FowleF2021ISLNCPostImpressionistArtInContext.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400320",
+            "display_name": "Edinburgh Research Explorer (University of Edinburgh)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I98677209",
+            "host_organization_name": "University of Edinburgh",
+            "host_organization_lineage": [
+              "https://openalex.org/I98677209"
+            ],
+            "host_organization_lineage_names": [
+              "University of Edinburgh"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.pure.ed.ac.uk/ws/files/244670921/FowleF2021ISLNCPostImpressionistArtInContext.pdf",
+          "pdf_url": "https://www.pure.ed.ac.uk/ws/files/244670921/FowleF2021ISLNCPostImpressionistArtInContext.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400320",
+            "display_name": "Edinburgh Research Explorer (University of Edinburgh)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I98677209",
+            "host_organization_name": "University of Edinburgh",
+            "host_organization_lineage": [
+              "https://openalex.org/I98677209"
+            ],
+            "host_organization_lineage_names": [
+              "University of Edinburgh"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ntn.3001",
+        "pdf_url": "https://19.bbk.ac.uk/article/3001/galley/3868/download/",
+        "source": {
+          "id": "https://openalex.org/S4210213405",
+          "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+          "issn_l": "1755-1560",
+          "issn": [
+            "1755-1560"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319895",
+          "host_organization_name": "Open Library of Humanities",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319895"
+          ],
+          "host_organization_lineage_names": [
+            "Open Library of Humanities"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

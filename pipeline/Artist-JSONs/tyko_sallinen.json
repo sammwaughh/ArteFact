@@ -1,0 +1,181 @@
+[
+  {
+    "id": "https://openalex.org/W4387899197",
+    "title": "Werner von Hausen and Emile Bernard",
+    "relevance_score": 2.2055578,
+    "doi": "https://doi.org/10.23995/tht.137442",
+    "topic_ids": [
+      "C205783811",
+      "C2778896172",
+      "C177897776",
+      "C162462552",
+      "C52119013",
+      "C142362112",
+      "C138885662",
+      "C199539241",
+      "C17744445"
+    ],
+    "best_pdf": "https://tahiti.journal.fi/article/download/137442/86045",
+    "backup_pdf": "https://doi.org/10.23995/tht.137442",
+    "raw": {
+      "id": "https://openalex.org/W4387899197",
+      "display_name": "Werner von Hausen and Emile Bernard",
+      "relevance_score": 2.2055578,
+      "doi": "https://doi.org/10.23995/tht.137442",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.7729013
+        },
+        {
+          "id": "https://openalex.org/C2778896172",
+          "wikidata": "https://www.wikidata.org/wiki/Q46337",
+          "display_name": "Manifesto",
+          "level": 2,
+          "score": 0.7662178
+        },
+        {
+          "id": "https://openalex.org/C177897776",
+          "wikidata": "https://www.wikidata.org/wiki/Q112983",
+          "display_name": "Memoir",
+          "level": 2,
+          "score": 0.6883342
+        },
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.6615683
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.6017504
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.50574493
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.43174985
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.062395304
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.23995/tht.137442",
+        "pdf_url": "https://tahiti.journal.fi/article/download/137442/86045",
+        "source": {
+          "id": "https://openalex.org/S4210173732",
+          "display_name": "Tahiti",
+          "issn_l": "2242-0665",
+          "issn": [
+            "2242-0665"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://tahiti.journal.fi/article/download/137442/86045",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.23995/tht.137442",
+          "pdf_url": "https://tahiti.journal.fi/article/download/137442/86045",
+          "source": {
+            "id": "https://openalex.org/S4210173732",
+            "display_name": "Tahiti",
+            "issn_l": "2242-0665",
+            "issn": [
+              "2242-0665"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.23995/tht.137442",
+        "pdf_url": "https://tahiti.journal.fi/article/download/137442/86045",
+        "source": {
+          "id": "https://openalex.org/S4210173732",
+          "display_name": "Tahiti",
+          "issn_l": "2242-0665",
+          "issn": [
+            "2242-0665"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

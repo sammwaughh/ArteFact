@@ -1,0 +1,162 @@
+[
+  {
+    "id": "https://openalex.org/W2799760133",
+    "title": "‘Renowned and unknown’",
+    "relevance_score": 1.1381359,
+    "doi": "https://doi.org/10.1093/jhc/fhx037",
+    "topic_ids": [
+      "C142362112"
+    ],
+    "best_pdf": "https://eprints.soton.ac.uk/414980/1/CSGCollectorRevised.doc",
+    "backup_pdf": "https://doi.org/10.1093/jhc/fhx037",
+    "raw": {
+      "id": "https://openalex.org/W2799760133",
+      "display_name": "‘Renowned and unknown’",
+      "relevance_score": 1.1381359,
+      "doi": "https://doi.org/10.1093/jhc/fhx037",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.49726942
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1093/jhc/fhx037",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S146592948",
+          "display_name": "Journal of the History of Collections",
+          "issn_l": "0954-6650",
+          "issn": [
+            "0954-6650",
+            "1477-8564"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://eprints.soton.ac.uk/414980/1/CSGCollectorRevised.doc",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1093/jhc/fhx037",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S146592948",
+            "display_name": "Journal of the History of Collections",
+            "issn_l": "0954-6650",
+            "issn": [
+              "0954-6650",
+              "1477-8564"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647",
+              "https://openalex.org/P4310311648"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford",
+              "Oxford University Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://eprints.soton.ac.uk/414980/1/CSGCollectorRevised.doc",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401020",
+            "display_name": "ePrints Soton (University of Southampton)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I43439940",
+            "host_organization_name": "University of Southampton",
+            "host_organization_lineage": [
+              "https://openalex.org/I43439940"
+            ],
+            "host_organization_lineage_names": [
+              "University of Southampton"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://eprints.soton.ac.uk/414980/1/CSGCollectorRevised.doc",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306401020",
+          "display_name": "ePrints Soton (University of Southampton)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I43439940",
+          "host_organization_name": "University of Southampton",
+          "host_organization_lineage": [
+            "https://openalex.org/I43439940"
+          ],
+          "host_organization_lineage_names": [
+            "University of Southampton"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  }
+]

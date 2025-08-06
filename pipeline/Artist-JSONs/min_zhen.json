@@ -1,0 +1,949 @@
+[
+  {
+    "id": "https://openalex.org/W3179455893",
+    "title": "Artificial intelligence in the creative industries: a review",
+    "relevance_score": 3.9067967,
+    "doi": "https://doi.org/10.1007/s10462-021-10039-7",
+    "topic_ids": [
+      "C41008148",
+      "C154945302"
+    ],
+    "best_pdf": "https://link.springer.com/content/pdf/10.1007/s10462-021-10039-7.pdf",
+    "backup_pdf": "https://doi.org/10.1007/s10462-021-10039-7",
+    "raw": {
+      "id": "https://openalex.org/W3179455893",
+      "display_name": "Artificial intelligence in the creative industries: a review",
+      "relevance_score": 3.9067967,
+      "doi": "https://doi.org/10.1007/s10462-021-10039-7",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.61993873
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.42756525
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s10462-021-10039-7",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10462-021-10039-7.pdf",
+        "source": {
+          "id": "https://openalex.org/S122814990",
+          "display_name": "Artificial Intelligence Review",
+          "issn_l": "0269-2821",
+          "issn": [
+            "0269-2821",
+            "1573-7462"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://link.springer.com/content/pdf/10.1007/s10462-021-10039-7.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1007/s10462-021-10039-7",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10462-021-10039-7.pdf",
+          "source": {
+            "id": "https://openalex.org/S122814990",
+            "display_name": "Artificial Intelligence Review",
+            "issn_l": "0269-2821",
+            "issn": [
+              "0269-2821",
+              "1573-7462"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319965",
+              "https://openalex.org/P4310319900"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Nature",
+              "Springer Science+Business Media"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/2007.12391",
+          "pdf_url": "http://arxiv.org/pdf/2007.12391",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [
+              "Cornell University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://arxiv.org/abs/2007.12391",
+          "pdf_url": "https://arxiv.org/pdf/2007.12391",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [
+              "Cornell University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://research-information.bris.ac.uk/ws/files/283323017/main_1_.pdf",
+          "pdf_url": "https://research-information.bris.ac.uk/ws/files/283323017/main_1_.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400895",
+            "display_name": "Bristol Research (University of Bristol)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I36234482",
+            "host_organization_name": "University of Bristol",
+            "host_organization_lineage": [
+              "https://openalex.org/I36234482"
+            ],
+            "host_organization_lineage_names": [
+              "University of Bristol"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/1983/d0c0ba5d-9f6f-44d1-8156-720e0ccd9376",
+          "pdf_url": "https://research-information.bris.ac.uk/files/283323017/main_1_.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400895",
+            "display_name": "Bristol Research (University of Bristol)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I36234482",
+            "host_organization_name": "University of Bristol",
+            "host_organization_lineage": [
+              "https://openalex.org/I36234482"
+            ],
+            "host_organization_lineage_names": [
+              "University of Bristol"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://api.datacite.org/dois/10.48550/arxiv.2007.12391",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4393179698",
+            "display_name": "DataCite API",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210145204",
+            "host_organization_name": "DataCite",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210145204"
+            ],
+            "host_organization_lineage_names": [
+              "DataCite"
+            ],
+            "type": "metadata"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s10462-021-10039-7",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10462-021-10039-7.pdf",
+        "source": {
+          "id": "https://openalex.org/S122814990",
+          "display_name": "Artificial Intelligence Review",
+          "issn_l": "0269-2821",
+          "issn": [
+            "0269-2821",
+            "1573-7462"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3111483541",
+    "title": "Finding Distributed Needles in Neural Haystacks",
+    "relevance_score": 2.2098134,
+    "doi": "https://doi.org/10.1523/jneurosci.0904-20.2020",
+    "topic_ids": [
+      "C41008148",
+      "C37616216",
+      "C57273362",
+      "C154945302",
+      "C97256817",
+      "C97820695",
+      "C2779226451",
+      "C2779345533",
+      "C199163554",
+      "C2776502983",
+      "C40743351",
+      "C153180895",
+      "C50644808",
+      "C77637269",
+      "C161584116",
+      "C119857082",
+      "C15744967",
+      "C3018011982",
+      "C11413529",
+      "C169760540",
+      "C136764020"
+    ],
+    "best_pdf": "https://www.jneurosci.org/content/jneuro/41/5/1019.full.pdf",
+    "backup_pdf": "https://doi.org/10.1523/jneurosci.0904-20.2020",
+    "raw": {
+      "id": "https://openalex.org/W3111483541",
+      "display_name": "Finding Distributed Needles in Neural Haystacks",
+      "relevance_score": 2.2098134,
+      "doi": "https://doi.org/10.1523/jneurosci.0904-20.2020",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6997071
+        },
+        {
+          "id": "https://openalex.org/C37616216",
+          "wikidata": "https://www.wikidata.org/wiki/Q3218363",
+          "display_name": "Lasso (programming language)",
+          "level": 2,
+          "score": 0.6084609
+        },
+        {
+          "id": "https://openalex.org/C57273362",
+          "wikidata": "https://www.wikidata.org/wiki/Q576722",
+          "display_name": "Decoding methods",
+          "level": 2,
+          "score": 0.57799
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.5599317
+        },
+        {
+          "id": "https://openalex.org/C97256817",
+          "wikidata": "https://www.wikidata.org/wiki/Q1462316",
+          "display_name": "Spurious relationship",
+          "level": 2,
+          "score": 0.5529768
+        },
+        {
+          "id": "https://openalex.org/C97820695",
+          "wikidata": "https://www.wikidata.org/wiki/Q387749",
+          "display_name": "Human Connectome Project",
+          "level": 3,
+          "score": 0.5525166
+        },
+        {
+          "id": "https://openalex.org/C2779226451",
+          "wikidata": "https://www.wikidata.org/wiki/Q903809",
+          "display_name": "Functional magnetic resonance imaging",
+          "level": 2,
+          "score": 0.5404644
+        },
+        {
+          "id": "https://openalex.org/C2779345533",
+          "wikidata": "https://www.wikidata.org/wiki/Q75785",
+          "display_name": "Visual cortex",
+          "level": 2,
+          "score": 0.50845945
+        },
+        {
+          "id": "https://openalex.org/C199163554",
+          "wikidata": "https://www.wikidata.org/wiki/Q1681619",
+          "display_name": "Univariate",
+          "level": 3,
+          "score": 0.49872112
+        },
+        {
+          "id": "https://openalex.org/C2776502983",
+          "wikidata": "https://www.wikidata.org/wiki/Q690182",
+          "display_name": "Contrast (vision)",
+          "level": 2,
+          "score": 0.47235072
+        },
+        {
+          "id": "https://openalex.org/C40743351",
+          "wikidata": "https://www.wikidata.org/wiki/Q7002049",
+          "display_name": "Neural decoding",
+          "level": 3,
+          "score": 0.45825022
+        },
+        {
+          "id": "https://openalex.org/C153180895",
+          "wikidata": "https://www.wikidata.org/wiki/Q7148389",
+          "display_name": "Pattern recognition (psychology)",
+          "level": 2,
+          "score": 0.45622003
+        },
+        {
+          "id": "https://openalex.org/C50644808",
+          "wikidata": "https://www.wikidata.org/wiki/Q192776",
+          "display_name": "Artificial neural network",
+          "level": 2,
+          "score": 0.41706997
+        },
+        {
+          "id": "https://openalex.org/C77637269",
+          "wikidata": "https://www.wikidata.org/wiki/Q7002051",
+          "display_name": "Neural coding",
+          "level": 2,
+          "score": 0.41015005
+        },
+        {
+          "id": "https://openalex.org/C161584116",
+          "wikidata": "https://www.wikidata.org/wiki/Q1952580",
+          "display_name": "Multivariate statistics",
+          "level": 2,
+          "score": 0.3280285
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.30494145
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.20331937
+        },
+        {
+          "id": "https://openalex.org/C3018011982",
+          "wikidata": "https://www.wikidata.org/wiki/Q7316120",
+          "display_name": "Functional connectivity",
+          "level": 2,
+          "score": 0.19699422
+        },
+        {
+          "id": "https://openalex.org/C11413529",
+          "wikidata": "https://www.wikidata.org/wiki/Q8366",
+          "display_name": "Algorithm",
+          "level": 1,
+          "score": 0.19173852
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.19147262
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1523/jneurosci.0904-20.2020",
+        "pdf_url": "https://www.jneurosci.org/content/jneuro/41/5/1019.full.pdf",
+        "source": {
+          "id": "https://openalex.org/S5555990",
+          "display_name": "Journal of Neuroscience",
+          "issn_l": "0270-6474",
+          "issn": [
+            "0270-6474",
+            "1529-2401"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319739",
+          "host_organization_name": "Society for Neuroscience",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319739"
+          ],
+          "host_organization_lineage_names": [
+            "Society for Neuroscience"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://www.jneurosci.org/content/jneuro/41/5/1019.full.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1523/jneurosci.0904-20.2020",
+          "pdf_url": "https://www.jneurosci.org/content/jneuro/41/5/1019.full.pdf",
+          "source": {
+            "id": "https://openalex.org/S5555990",
+            "display_name": "Journal of Neuroscience",
+            "issn_l": "0270-6474",
+            "issn": [
+              "0270-6474",
+              "1529-2401"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319739",
+            "host_organization_name": "Society for Neuroscience",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319739"
+            ],
+            "host_organization_lineage_names": [
+              "Society for Neuroscience"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7880292",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33334868",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1523/jneurosci.0904-20.2020",
+        "pdf_url": "https://www.jneurosci.org/content/jneuro/41/5/1019.full.pdf",
+        "source": {
+          "id": "https://openalex.org/S5555990",
+          "display_name": "Journal of Neuroscience",
+          "issn_l": "0270-6474",
+          "issn": [
+            "0270-6474",
+            "1529-2401"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319739",
+          "host_organization_name": "Society for Neuroscience",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319739"
+          ],
+          "host_organization_lineage_names": [
+            "Society for Neuroscience"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2883177059",
+    "title": "OVERGROWN COURTYARDS AND TILLED FIELDS: IMAGE-BASED DEBATES ON GOVERNANCE AND BODY POLITICS IN THE<i>MENGZI</i>,<i>ZHUANGZI</i>, AND<i>HUAINANZI</i>",
+    "relevance_score": 1.1371943,
+    "doi": "https://doi.org/10.1017/eac.2018.5",
+    "topic_ids": [
+      "C165743212",
+      "C2778061430",
+      "C2778677346",
+      "C192562157",
+      "C94625758",
+      "C39389867",
+      "C2781059922",
+      "C2908647359",
+      "C107038049",
+      "C17744445",
+      "C95457728",
+      "C124952713",
+      "C144024400",
+      "C199539241",
+      "C138885662",
+      "C142362112",
+      "C187736073",
+      "C18903297",
+      "C86803240",
+      "C121332964",
+      "C149923435",
+      "C62520636",
+      "C162324750"
+    ],
+    "best_pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7707E3E4646E0737E33CD1918C7B1D00/S0362502818000056a.pdf/div-class-title-overgrown-courtyards-and-tilled-fields-image-based-debates-on-governance-and-body-politics-in-the-span-class-italic-mengzi-span-span-class-italic-zhuangzi-span-and-span-class-italic-huainanzi-span-div.pdf",
+    "backup_pdf": "https://doi.org/10.1017/eac.2018.5",
+    "raw": {
+      "id": "https://openalex.org/W2883177059",
+      "display_name": "OVERGROWN COURTYARDS AND TILLED FIELDS: IMAGE-BASED DEBATES ON GOVERNANCE AND BODY POLITICS IN THE<i>MENGZI</i>,<i>ZHUANGZI</i>, AND<i>HUAINANZI</i>",
+      "relevance_score": 1.1371943,
+      "doi": "https://doi.org/10.1017/eac.2018.5",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C165743212",
+          "wikidata": "https://www.wikidata.org/wiki/Q104555",
+          "display_name": "Ruler",
+          "level": 2,
+          "score": 0.85498786
+        },
+        {
+          "id": "https://openalex.org/C2778061430",
+          "wikidata": "https://www.wikidata.org/wiki/Q188823",
+          "display_name": "Scholarship",
+          "level": 2,
+          "score": 0.61352736
+        },
+        {
+          "id": "https://openalex.org/C2778677346",
+          "wikidata": "https://www.wikidata.org/wiki/Q911871",
+          "display_name": "Wilderness",
+          "level": 2,
+          "score": 0.60944563
+        },
+        {
+          "id": "https://openalex.org/C192562157",
+          "wikidata": "https://www.wikidata.org/wiki/Q316694",
+          "display_name": "Rhetorical question",
+          "level": 2,
+          "score": 0.56078523
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.54070175
+        },
+        {
+          "id": "https://openalex.org/C39389867",
+          "wikidata": "https://www.wikidata.org/wiki/Q380767",
+          "display_name": "Corporate governance",
+          "level": 2,
+          "score": 0.539196
+        },
+        {
+          "id": "https://openalex.org/C2781059922",
+          "wikidata": "https://www.wikidata.org/wiki/Q2312129",
+          "display_name": "Delicacy",
+          "level": 2,
+          "score": 0.46996662
+        },
+        {
+          "id": "https://openalex.org/C2908647359",
+          "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+          "display_name": "Population",
+          "level": 2,
+          "score": 0.432877
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.41572118
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.3684039
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.36413985
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.3539128
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.35038406
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.24591881
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.2072191
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.17821261
+        },
+        {
+          "id": "https://openalex.org/C187736073",
+          "wikidata": "https://www.wikidata.org/wiki/Q2920921",
+          "display_name": "Management",
+          "level": 1,
+          "score": 0.124717325
+        },
+        {
+          "id": "https://openalex.org/C18903297",
+          "wikidata": "https://www.wikidata.org/wiki/Q7150",
+          "display_name": "Ecology",
+          "level": 1,
+          "score": 0.115523726
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.09488469
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C149923435",
+          "wikidata": "https://www.wikidata.org/wiki/Q37732",
+          "display_name": "Demography",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/eac.2018.5",
+        "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7707E3E4646E0737E33CD1918C7B1D00/S0362502818000056a.pdf/div-class-title-overgrown-courtyards-and-tilled-fields-image-based-debates-on-governance-and-body-politics-in-the-span-class-italic-mengzi-span-span-class-italic-zhuangzi-span-and-span-class-italic-huainanzi-span-div.pdf",
+        "source": {
+          "id": "https://openalex.org/S2764752770",
+          "display_name": "Early China",
+          "issn_l": "0362-5028",
+          "issn": [
+            "0362-5028",
+            "2325-2324"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7707E3E4646E0737E33CD1918C7B1D00/S0362502818000056a.pdf/div-class-title-overgrown-courtyards-and-tilled-fields-image-based-debates-on-governance-and-body-politics-in-the-span-class-italic-mengzi-span-span-class-italic-zhuangzi-span-and-span-class-italic-huainanzi-span-div.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1017/eac.2018.5",
+          "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7707E3E4646E0737E33CD1918C7B1D00/S0362502818000056a.pdf/div-class-title-overgrown-courtyards-and-tilled-fields-image-based-debates-on-governance-and-body-politics-in-the-span-class-italic-mengzi-span-span-class-italic-zhuangzi-span-and-span-class-italic-huainanzi-span-div.pdf",
+          "source": {
+            "id": "https://openalex.org/S2764752770",
+            "display_name": "Early China",
+            "issn_l": "0362-5028",
+            "issn": [
+              "0362-5028",
+              "2325-2324"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/eac.2018.5",
+        "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7707E3E4646E0737E33CD1918C7B1D00/S0362502818000056a.pdf/div-class-title-overgrown-courtyards-and-tilled-fields-image-based-debates-on-governance-and-body-politics-in-the-span-class-italic-mengzi-span-span-class-italic-zhuangzi-span-and-span-class-italic-huainanzi-span-div.pdf",
+        "source": {
+          "id": "https://openalex.org/S2764752770",
+          "display_name": "Early China",
+          "issn_l": "0362-5028",
+          "issn": [
+            "0362-5028",
+            "2325-2324"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

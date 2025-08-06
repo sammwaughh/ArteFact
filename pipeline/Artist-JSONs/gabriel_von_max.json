@@ -1,0 +1,2519 @@
+[
+  {
+    "id": "https://openalex.org/W2768187589",
+    "title": "Disease, Morbidity, and the Dark Feminine",
+    "relevance_score": 10.883222,
+    "doi": "https://doi.org/10.5070/b3291029997",
+    "topic_ids": [
+      "C205783811",
+      "C154775046",
+      "C83645499",
+      "C44725695",
+      "C2777855551",
+      "C2992860105",
+      "C520017518",
+      "C52119013",
+      "C142362112",
+      "C75291252",
+      "C11171543",
+      "C107038049",
+      "C138885662",
+      "C15744967",
+      "C111472728",
+      "C71924100",
+      "C41895202",
+      "C199539241",
+      "C41008148",
+      "C19417346",
+      "C204787440",
+      "C142724271",
+      "C161191863",
+      "C17744445",
+      "C47177190"
+    ],
+    "best_pdf": "https://escholarship.org/content/qt5zd775z5/qt5zd775z5.pdf?t=q8vp3s",
+    "backup_pdf": "https://doi.org/10.5070/b3291029997",
+    "raw": {
+      "id": "https://openalex.org/W2768187589",
+      "display_name": "Disease, Morbidity, and the Dark Feminine",
+      "relevance_score": 10.883222,
+      "doi": "https://doi.org/10.5070/b3291029997",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.7731097
+        },
+        {
+          "id": "https://openalex.org/C154775046",
+          "wikidata": "https://www.wikidata.org/wiki/Q188",
+          "display_name": "German",
+          "level": 2,
+          "score": 0.6649118
+        },
+        {
+          "id": "https://openalex.org/C83645499",
+          "wikidata": "https://www.wikidata.org/wiki/Q285466",
+          "display_name": "Punitive damages",
+          "level": 2,
+          "score": 0.5824437
+        },
+        {
+          "id": "https://openalex.org/C44725695",
+          "wikidata": "https://www.wikidata.org/wiki/Q288156",
+          "display_name": "Normative",
+          "level": 2,
+          "score": 0.56595737
+        },
+        {
+          "id": "https://openalex.org/C2777855551",
+          "wikidata": "https://www.wikidata.org/wiki/Q12310021",
+          "display_name": "Subject (documents)",
+          "level": 2,
+          "score": 0.5484491
+        },
+        {
+          "id": "https://openalex.org/C2992860105",
+          "wikidata": "https://www.wikidata.org/wiki/Q7631392",
+          "display_name": "Subject matter",
+          "level": 3,
+          "score": 0.51908827
+        },
+        {
+          "id": "https://openalex.org/C520017518",
+          "wikidata": "https://www.wikidata.org/wiki/Q178934",
+          "display_name": "Occult",
+          "level": 3,
+          "score": 0.4908858
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.47112346
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.46611506
+        },
+        {
+          "id": "https://openalex.org/C75291252",
+          "wikidata": "https://www.wikidata.org/wiki/Q1315756",
+          "display_name": "TRACE (psycholinguistics)",
+          "level": 2,
+          "score": 0.42325014
+        },
+        {
+          "id": "https://openalex.org/C11171543",
+          "wikidata": "https://www.wikidata.org/wiki/Q41630",
+          "display_name": "Psychoanalysis",
+          "level": 1,
+          "score": 0.38277686
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.3284939
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.29587227
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.24037841
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.1555256
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.14563268
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.07702401
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.07534674
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.06873563
+        },
+        {
+          "id": "https://openalex.org/C19417346",
+          "wikidata": "https://www.wikidata.org/wiki/Q7922",
+          "display_name": "Pedagogy",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C204787440",
+          "wikidata": "https://www.wikidata.org/wiki/Q188504",
+          "display_name": "Alternative medicine",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C142724271",
+          "wikidata": "https://www.wikidata.org/wiki/Q7208",
+          "display_name": "Pathology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C47177190",
+          "wikidata": "https://www.wikidata.org/wiki/Q207137",
+          "display_name": "Curriculum",
+          "level": 2,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5070/b3291029997",
+        "pdf_url": "https://escholarship.org/content/qt5zd775z5/qt5zd775z5.pdf?t=q8vp3s",
+        "source": {
+          "id": "https://openalex.org/S2764867305",
+          "display_name": "Berkeley Undergraduate Journal",
+          "issn_l": "1099-5331",
+          "issn": [
+            "1099-5331"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://escholarship.org/content/qt5zd775z5/qt5zd775z5.pdf?t=q8vp3s",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5070/b3291029997",
+          "pdf_url": "https://escholarship.org/content/qt5zd775z5/qt5zd775z5.pdf?t=q8vp3s",
+          "source": {
+            "id": "https://openalex.org/S2764867305",
+            "display_name": "Berkeley Undergraduate Journal",
+            "issn_l": "1099-5331",
+            "issn": [
+              "1099-5331"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": true,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5070/b3291029997",
+        "pdf_url": "https://escholarship.org/content/qt5zd775z5/qt5zd775z5.pdf?t=q8vp3s",
+        "source": {
+          "id": "https://openalex.org/S2764867305",
+          "display_name": "Berkeley Undergraduate Journal",
+          "issn_l": "1099-5331",
+          "issn": [
+            "1099-5331"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2161850155",
+    "title": "Aesthetic Function, Norm and Value as Social Facts (Excerpts)",
+    "relevance_score": 5.695284,
+    "doi": "https://doi.org/10.1080/17561310.2015.1049476",
+    "topic_ids": [
+      "C107038049",
+      "C2991907460",
+      "C2776291640",
+      "C191795146",
+      "C14036430",
+      "C3017941357",
+      "C144024400",
+      "C142362112",
+      "C111472728",
+      "C138885662",
+      "C36289849",
+      "C33923547",
+      "C105795698",
+      "C78458016",
+      "C86803240"
+    ],
+    "best_pdf": "https://www.tandfonline.com/doi/pdf/10.1080/17561310.2015.1049476?needAccess=true",
+    "backup_pdf": "https://doi.org/10.1080/17561310.2015.1049476",
+    "raw": {
+      "id": "https://openalex.org/W2161850155",
+      "display_name": "Aesthetic Function, Norm and Value as Social Facts (Excerpts)",
+      "relevance_score": 5.695284,
+      "doi": "https://doi.org/10.1080/17561310.2015.1049476",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.77873063
+        },
+        {
+          "id": "https://openalex.org/C2991907460",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetic value",
+          "level": 2,
+          "score": 0.77125126
+        },
+        {
+          "id": "https://openalex.org/C2776291640",
+          "wikidata": "https://www.wikidata.org/wiki/Q2912517",
+          "display_name": "Value (mathematics)",
+          "level": 2,
+          "score": 0.537453
+        },
+        {
+          "id": "https://openalex.org/C191795146",
+          "wikidata": "https://www.wikidata.org/wiki/Q3878446",
+          "display_name": "Norm (philosophy)",
+          "level": 2,
+          "score": 0.503514
+        },
+        {
+          "id": "https://openalex.org/C14036430",
+          "wikidata": "https://www.wikidata.org/wiki/Q3736076",
+          "display_name": "Function (biology)",
+          "level": 2,
+          "score": 0.47821996
+        },
+        {
+          "id": "https://openalex.org/C3017941357",
+          "wikidata": "https://www.wikidata.org/wiki/Q831725",
+          "display_name": "Social function",
+          "level": 2,
+          "score": 0.46433815
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.40566438
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.35063547
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.25086457
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.17366466
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.14327636
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.12627724
+        },
+        {
+          "id": "https://openalex.org/C105795698",
+          "wikidata": "https://www.wikidata.org/wiki/Q12483",
+          "display_name": "Statistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C78458016",
+          "wikidata": "https://www.wikidata.org/wiki/Q840400",
+          "display_name": "Evolutionary biology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/17561310.2015.1049476",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/17561310.2015.1049476?needAccess=true",
+        "source": {
+          "id": "https://openalex.org/S177376365",
+          "display_name": "Art In Translation",
+          "issn_l": "1756-1310",
+          "issn": [
+            "1756-1310",
+            "2380-5722"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/17561310.2015.1049476?needAccess=true",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1080/17561310.2015.1049476",
+          "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/17561310.2015.1049476?needAccess=true",
+          "source": {
+            "id": "https://openalex.org/S177376365",
+            "display_name": "Art In Translation",
+            "issn_l": "1756-1310",
+            "issn": [
+              "1756-1310",
+              "2380-5722"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/17561310.2015.1049476",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/17561310.2015.1049476?needAccess=true",
+        "source": {
+          "id": "https://openalex.org/S177376365",
+          "display_name": "Art In Translation",
+          "issn_l": "1756-1310",
+          "issn": [
+            "1756-1310",
+            "2380-5722"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2158952026",
+    "title": "Cities in late medieval Europe: the promise and the curse of modernity",
+    "relevance_score": 3.9024837,
+    "doi": "https://doi.org/10.1017/s0963926812000089",
+    "topic_ids": [
+      "C2778682666",
+      "C29598333",
+      "C2778451013",
+      "C9992130",
+      "C11012388",
+      "C90559484",
+      "C2780273121",
+      "C2991833021",
+      "C107038049",
+      "C144024400",
+      "C95457728",
+      "C6303427",
+      "C17744445",
+      "C136264566",
+      "C111472728",
+      "C138885662",
+      "C195244886",
+      "C199539241",
+      "C19165224",
+      "C162324750",
+      "C41008148",
+      "C199360897"
+    ],
+    "best_pdf": "https://biblio.ugent.be/publication/2094979/file/6769883.pdf",
+    "backup_pdf": "https://biblio.ugent.be/publication/2094979",
+    "raw": {
+      "id": "https://openalex.org/W2158952026",
+      "display_name": "Cities in late medieval Europe: the promise and the curse of modernity",
+      "relevance_score": 3.9024837,
+      "doi": "https://doi.org/10.1017/s0963926812000089",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778682666",
+          "wikidata": "https://www.wikidata.org/wiki/Q11084414",
+          "display_name": "Modernity",
+          "level": 2,
+          "score": 0.87906206
+        },
+        {
+          "id": "https://openalex.org/C29598333",
+          "wikidata": "https://www.wikidata.org/wiki/Q50675",
+          "display_name": "Historiography",
+          "level": 2,
+          "score": 0.78891814
+        },
+        {
+          "id": "https://openalex.org/C2778451013",
+          "wikidata": "https://www.wikidata.org/wiki/Q381532",
+          "display_name": "Urbanity",
+          "level": 2,
+          "score": 0.71275747
+        },
+        {
+          "id": "https://openalex.org/C9992130",
+          "wikidata": "https://www.wikidata.org/wiki/Q484954",
+          "display_name": "Pessimism",
+          "level": 2,
+          "score": 0.68482584
+        },
+        {
+          "id": "https://openalex.org/C11012388",
+          "wikidata": "https://www.wikidata.org/wiki/Q170658",
+          "display_name": "Creativity",
+          "level": 2,
+          "score": 0.5496267
+        },
+        {
+          "id": "https://openalex.org/C90559484",
+          "wikidata": "https://www.wikidata.org/wiki/Q778379",
+          "display_name": "Expression (computer science)",
+          "level": 2,
+          "score": 0.4631834
+        },
+        {
+          "id": "https://openalex.org/C2780273121",
+          "wikidata": "https://www.wikidata.org/wiki/Q109411",
+          "display_name": "Curse",
+          "level": 2,
+          "score": 0.45252106
+        },
+        {
+          "id": "https://openalex.org/C2991833021",
+          "wikidata": "https://www.wikidata.org/wiki/Q361",
+          "display_name": "First world war",
+          "level": 2,
+          "score": 0.4482751
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.4064655
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.40558898
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.39778855
+        },
+        {
+          "id": "https://openalex.org/C6303427",
+          "wikidata": "https://www.wikidata.org/wiki/Q47398",
+          "display_name": "Economic history",
+          "level": 1,
+          "score": 0.39149094
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.34302104
+        },
+        {
+          "id": "https://openalex.org/C136264566",
+          "wikidata": "https://www.wikidata.org/wiki/Q159810",
+          "display_name": "Economy",
+          "level": 1,
+          "score": 0.24983239
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.23001271
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.21004954
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.209225
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.1850892
+        },
+        {
+          "id": "https://openalex.org/C19165224",
+          "wikidata": "https://www.wikidata.org/wiki/Q23404",
+          "display_name": "Anthropology",
+          "level": 1,
+          "score": 0.16452247
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.09491998
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/s0963926812000089",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S1743546",
+          "display_name": "Urban History",
+          "issn_l": "0963-9268",
+          "issn": [
+            "0963-9268",
+            "1469-8706"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://biblio.ugent.be/publication/2094979/file/6769883.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1017/s0963926812000089",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S1743546",
+            "display_name": "Urban History",
+            "issn_l": "0963-9268",
+            "issn": [
+              "0963-9268",
+              "1469-8706"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://biblio.ugent.be/publication/2094979",
+          "pdf_url": "https://biblio.ugent.be/publication/2094979/file/6769883.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400478",
+            "display_name": "Ghent University Academic Bibliography (Ghent University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I32597200",
+            "host_organization_name": "Ghent University",
+            "host_organization_lineage": [
+              "https://openalex.org/I32597200"
+            ],
+            "host_organization_lineage_names": [
+              "Ghent University"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://biblio.ugent.be/publication/2094979",
+        "pdf_url": "https://biblio.ugent.be/publication/2094979/file/6769883.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400478",
+          "display_name": "Ghent University Academic Bibliography (Ghent University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I32597200",
+          "host_organization_name": "Ghent University",
+          "host_organization_lineage": [
+            "https://openalex.org/I32597200"
+          ],
+          "host_organization_lineage_names": [
+            "Ghent University"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W1529684027",
+    "title": "Princes of Darkness: The Night at Court, 1650–1750",
+    "relevance_score": 2.0924022,
+    "doi": "https://doi.org/10.1086/519314",
+    "topic_ids": [
+      "C117797892",
+      "C95457728",
+      "C52119013",
+      "C142362112",
+      "C29595303",
+      "C144024400",
+      "C15744967",
+      "C11171543"
+    ],
+    "best_pdf": "https://www.ideals.illinois.edu/items/2454/bitstreams/8845/data.pdf",
+    "backup_pdf": "https://hdl.handle.net/2142/2296",
+    "raw": {
+      "id": "https://openalex.org/W1529684027",
+      "display_name": "Princes of Darkness: The Night at Court, 1650–1750",
+      "relevance_score": 2.0924022,
+      "doi": "https://doi.org/10.1086/519314",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C117797892",
+          "wikidata": "https://www.wikidata.org/wiki/Q286363",
+          "display_name": "Shadow (psychology)",
+          "level": 2,
+          "score": 0.5731463
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.43954977
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.41014683
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.39266703
+        },
+        {
+          "id": "https://openalex.org/C29595303",
+          "wikidata": "https://www.wikidata.org/wiki/Q165650",
+          "display_name": "Media studies",
+          "level": 1,
+          "score": 0.32814375
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.23006591
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.11363682
+        },
+        {
+          "id": "https://openalex.org/C11171543",
+          "wikidata": "https://www.wikidata.org/wiki/Q41630",
+          "display_name": "Psychoanalysis",
+          "level": 1,
+          "score": 0.08911747
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1086/519314",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S125270255",
+          "display_name": "The Journal of Modern History",
+          "issn_l": "0022-2801",
+          "issn": [
+            "0022-2801",
+            "1537-5358"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315672",
+          "host_organization_name": "University of Chicago Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315690",
+            "https://openalex.org/P4310315672"
+          ],
+          "host_organization_lineage_names": [
+            "University of Chicago",
+            "University of Chicago Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.ideals.illinois.edu/items/2454/bitstreams/8845/data.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1086/519314",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S125270255",
+            "display_name": "The Journal of Modern History",
+            "issn_l": "0022-2801",
+            "issn": [
+              "0022-2801",
+              "1537-5358"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310315672",
+            "host_organization_name": "University of Chicago Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315690",
+              "https://openalex.org/P4310315672"
+            ],
+            "host_organization_lineage_names": [
+              "University of Chicago",
+              "University of Chicago Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/2142/2296",
+          "pdf_url": "https://www.ideals.illinois.edu/items/2454/bitstreams/8845/data.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401358",
+            "display_name": "Illinois Digital Environment for Access to Learning and Scholarship (University of Illinois at Urbana-Champaign)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2801919071",
+            "host_organization_name": "University of Illinois System",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801919071"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois System"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/2142/2296",
+        "pdf_url": "https://www.ideals.illinois.edu/items/2454/bitstreams/8845/data.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401358",
+          "display_name": "Illinois Digital Environment for Access to Learning and Scholarship (University of Illinois at Urbana-Champaign)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I2801919071",
+          "host_organization_name": "University of Illinois System",
+          "host_organization_lineage": [
+            "https://openalex.org/I2801919071"
+          ],
+          "host_organization_lineage_names": [
+            "University of Illinois System"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2199272636",
+    "title": "A Genius and His Myth: The Known and Unknown Michel Sittow",
+    "relevance_score": 1.6560056,
+    "doi": "https://doi.org/10.12697/bjah.2015.9.07",
+    "topic_ids": [
+      "C519517224",
+      "C118563197",
+      "C2779343474",
+      "C199033989",
+      "C2777038452",
+      "C518914266",
+      "C2779867537",
+      "C142362112",
+      "C96851999",
+      "C124952713",
+      "C52119013",
+      "C107038049",
+      "C144024400",
+      "C95457728",
+      "C71924100",
+      "C204787440",
+      "C166957645",
+      "C142724271"
+    ],
+    "best_pdf": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2015.9.07/7382",
+    "backup_pdf": "https://doi.org/10.12697/bjah.2015.9.07",
+    "raw": {
+      "id": "https://openalex.org/W2199272636",
+      "display_name": "A Genius and His Myth: The Known and Unknown Michel Sittow",
+      "relevance_score": 1.6560056,
+      "doi": "https://doi.org/10.12697/bjah.2015.9.07",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C519517224",
+          "wikidata": "https://www.wikidata.org/wiki/Q12827256",
+          "display_name": "Mythology",
+          "level": 2,
+          "score": 0.8635317
+        },
+        {
+          "id": "https://openalex.org/C118563197",
+          "wikidata": "https://www.wikidata.org/wiki/Q185030",
+          "display_name": "Genius",
+          "level": 2,
+          "score": 0.85240495
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.5900006
+        },
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.5750565
+        },
+        {
+          "id": "https://openalex.org/C2777038452",
+          "wikidata": "https://www.wikidata.org/wiki/Q748289",
+          "display_name": "Tribute",
+          "level": 2,
+          "score": 0.5316675
+        },
+        {
+          "id": "https://openalex.org/C518914266",
+          "wikidata": "https://www.wikidata.org/wiki/Q1054574",
+          "display_name": "Romance",
+          "level": 2,
+          "score": 0.5129359
+        },
+        {
+          "id": "https://openalex.org/C2779867537",
+          "wikidata": "https://www.wikidata.org/wiki/Q838948",
+          "display_name": "Work of art",
+          "level": 2,
+          "score": 0.4985497
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.42378914
+        },
+        {
+          "id": "https://openalex.org/C96851999",
+          "wikidata": "https://www.wikidata.org/wiki/Q848369",
+          "display_name": "Subconscious",
+          "level": 3,
+          "score": 0.4212091
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.41389212
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.39844897
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.38447353
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.3203174
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.24877527
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C204787440",
+          "wikidata": "https://www.wikidata.org/wiki/Q188504",
+          "display_name": "Alternative medicine",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C142724271",
+          "wikidata": "https://www.wikidata.org/wiki/Q7208",
+          "display_name": "Pathology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.12697/bjah.2015.9.07",
+        "pdf_url": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2015.9.07/7382",
+        "source": {
+          "id": "https://openalex.org/S2764693166",
+          "display_name": "Baltic Journal of Art History",
+          "issn_l": "1736-8812",
+          "issn": [
+            "1736-8812",
+            "2346-5581"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314067",
+          "host_organization_name": "University of Tartu Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314067"
+          ],
+          "host_organization_lineage_names": [
+            "University of Tartu Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2015.9.07/7382",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.12697/bjah.2015.9.07",
+          "pdf_url": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2015.9.07/7382",
+          "source": {
+            "id": "https://openalex.org/S2764693166",
+            "display_name": "Baltic Journal of Art History",
+            "issn_l": "1736-8812",
+            "issn": [
+              "1736-8812",
+              "2346-5581"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310314067",
+            "host_organization_name": "University of Tartu Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310314067"
+            ],
+            "host_organization_lineage_names": [
+              "University of Tartu Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.12697/bjah.2015.9.07",
+        "pdf_url": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2015.9.07/7382",
+        "source": {
+          "id": "https://openalex.org/S2764693166",
+          "display_name": "Baltic Journal of Art History",
+          "issn_l": "1736-8812",
+          "issn": [
+            "1736-8812",
+            "2346-5581"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314067",
+          "host_organization_name": "University of Tartu Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314067"
+          ],
+          "host_organization_lineage_names": [
+            "University of Tartu Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2910596586",
+    "title": "Art and Shamanism: From Cave Painting to the White Cube",
+    "relevance_score": 1.6252625,
+    "doi": "https://doi.org/10.3390/rel10010054",
+    "topic_ids": [
+      "C512209198",
+      "C132829578",
+      "C527412718",
+      "C56273599",
+      "C205783811",
+      "C2776857291",
+      "C142362112",
+      "C171878925",
+      "C52119013",
+      "C95457728",
+      "C124952713",
+      "C19165224",
+      "C166957645",
+      "C138885662",
+      "C144024400",
+      "C41895202",
+      "C55493867",
+      "C185592680",
+      "C154945302",
+      "C41008148",
+      "C104317684"
+    ],
+    "best_pdf": "https://www.mdpi.com/2077-1444/10/1/54/pdf?version=1547620872",
+    "backup_pdf": "https://doi.org/10.3390/rel10010054",
+    "raw": {
+      "id": "https://openalex.org/W2910596586",
+      "display_name": "Art and Shamanism: From Cave Painting to the White Cube",
+      "relevance_score": 1.6252625,
+      "doi": "https://doi.org/10.3390/rel10010054",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C512209198",
+          "wikidata": "https://www.wikidata.org/wiki/Q42042",
+          "display_name": "Shamanism",
+          "level": 2,
+          "score": 0.97305477
+        },
+        {
+          "id": "https://openalex.org/C132829578",
+          "wikidata": "https://www.wikidata.org/wiki/Q581151",
+          "display_name": "Situated",
+          "level": 2,
+          "score": 0.619056
+        },
+        {
+          "id": "https://openalex.org/C527412718",
+          "wikidata": "https://www.wikidata.org/wiki/Q855395",
+          "display_name": "Interpretation (philosophy)",
+          "level": 2,
+          "score": 0.61769575
+        },
+        {
+          "id": "https://openalex.org/C56273599",
+          "wikidata": "https://www.wikidata.org/wiki/Q3122841",
+          "display_name": "White (mutation)",
+          "level": 3,
+          "score": 0.6026895
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.59085387
+        },
+        {
+          "id": "https://openalex.org/C2776857291",
+          "wikidata": "https://www.wikidata.org/wiki/Q466475",
+          "display_name": "Trance",
+          "level": 2,
+          "score": 0.5712715
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.53765875
+        },
+        {
+          "id": "https://openalex.org/C171878925",
+          "wikidata": "https://www.wikidata.org/wiki/Q35509",
+          "display_name": "Cave",
+          "level": 2,
+          "score": 0.4650131
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.4565399
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.35348597
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.3250653
+        },
+        {
+          "id": "https://openalex.org/C19165224",
+          "wikidata": "https://www.wikidata.org/wiki/Q23404",
+          "display_name": "Anthropology",
+          "level": 1,
+          "score": 0.25633392
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.21569741
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.16754884
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.15645495
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C55493867",
+          "wikidata": "https://www.wikidata.org/wiki/Q7094",
+          "display_name": "Biochemistry",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C185592680",
+          "wikidata": "https://www.wikidata.org/wiki/Q2329",
+          "display_name": "Chemistry",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C104317684",
+          "wikidata": "https://www.wikidata.org/wiki/Q7187",
+          "display_name": "Gene",
+          "level": 2,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/rel10010054",
+        "pdf_url": "https://www.mdpi.com/2077-1444/10/1/54/pdf?version=1547620872",
+        "source": {
+          "id": "https://openalex.org/S4210184657",
+          "display_name": "Religions",
+          "issn_l": "2077-1444",
+          "issn": [
+            "2077-1444"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.mdpi.com/2077-1444/10/1/54/pdf?version=1547620872",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3390/rel10010054",
+          "pdf_url": "https://www.mdpi.com/2077-1444/10/1/54/pdf?version=1547620872",
+          "source": {
+            "id": "https://openalex.org/S4210184657",
+            "display_name": "Religions",
+            "issn_l": "2077-1444",
+            "issn": [
+              "2077-1444"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/2b78a9e49398446aa2ce4930e12ffc65",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/rel10010054",
+        "pdf_url": "https://www.mdpi.com/2077-1444/10/1/54/pdf?version=1547620872",
+        "source": {
+          "id": "https://openalex.org/S4210184657",
+          "display_name": "Religions",
+          "issn_l": "2077-1444",
+          "issn": [
+            "2077-1444"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4224884129",
+    "title": "Choices and Intentions in the Mérode Altarpiece",
+    "relevance_score": 1.5743483,
+    "doi": "https://doi.org/10.5092/jhna.2022.14.1.2",
+    "topic_ids": [
+      "C2780475561",
+      "C205783811",
+      "C142362112",
+      "C153349607",
+      "C52119013",
+      "C2779463800",
+      "C2781145905",
+      "C185592680",
+      "C8010536"
+    ],
+    "best_pdf": "https://jhna.org/wp-content/uploads/2022/03/JHNA_14.1_Ridderbos.pdf",
+    "backup_pdf": "https://doi.org/10.5092/jhna.2022.14.1.2",
+    "raw": {
+      "id": "https://openalex.org/W4224884129",
+      "display_name": "Choices and Intentions in the Mérode Altarpiece",
+      "relevance_score": 1.5743483,
+      "doi": "https://doi.org/10.5092/jhna.2022.14.1.2",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780475561",
+          "wikidata": "https://www.wikidata.org/wiki/Q15711026",
+          "display_name": "Altarpiece",
+          "level": 3,
+          "score": 0.99299645
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.8336402
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.60310006
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.52394605
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.5218274
+        },
+        {
+          "id": "https://openalex.org/C2779463800",
+          "wikidata": "https://www.wikidata.org/wiki/Q5062222",
+          "display_name": "Center (category theory)",
+          "level": 2,
+          "score": 0.4615934
+        },
+        {
+          "id": "https://openalex.org/C2781145905",
+          "wikidata": "https://www.wikidata.org/wiki/Q183127",
+          "display_name": "Polychrome",
+          "level": 2,
+          "score": 0.41402423
+        },
+        {
+          "id": "https://openalex.org/C185592680",
+          "wikidata": "https://www.wikidata.org/wiki/Q2329",
+          "display_name": "Chemistry",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C8010536",
+          "wikidata": "https://www.wikidata.org/wiki/Q160398",
+          "display_name": "Crystallography",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2022.14.1.2",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2022/03/JHNA_14.1_Ridderbos.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://jhna.org/wp-content/uploads/2022/03/JHNA_14.1_Ridderbos.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5092/jhna.2022.14.1.2",
+          "pdf_url": "https://jhna.org/wp-content/uploads/2022/03/JHNA_14.1_Ridderbos.pdf",
+          "source": {
+            "id": "https://openalex.org/S137142838",
+            "display_name": "Journal of Historians of Netherlandish Art",
+            "issn_l": "1949-9833",
+            "issn": [
+              "1949-9833",
+              "2473-1404"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2022.14.1.2",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2022/03/JHNA_14.1_Ridderbos.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2325138682",
+    "title": "Image as Document: The Pictorial Collection of the National Library of Australia",
+    "relevance_score": 1.4181961,
+    "doi": "https://doi.org/10.1080/00048623.1991.10754741",
+    "topic_ids": [
+      "C2994543612",
+      "C115961682",
+      "C41008148",
+      "C23123220",
+      "C161191863",
+      "C31972630"
+    ],
+    "best_pdf": "https://www.tandfonline.com/doi/pdf/10.1080/00048623.1991.10754741?needAccess=true",
+    "backup_pdf": "https://doi.org/10.1080/00048623.1991.10754741",
+    "raw": {
+      "id": "https://openalex.org/W2325138682",
+      "display_name": "Image as Document: The Pictorial Collection of the National Library of Australia",
+      "relevance_score": 1.4181961,
+      "doi": "https://doi.org/10.1080/00048623.1991.10754741",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2994543612",
+          "wikidata": "https://www.wikidata.org/wiki/Q22806",
+          "display_name": "National library",
+          "level": 2,
+          "score": 0.6268992
+        },
+        {
+          "id": "https://openalex.org/C115961682",
+          "wikidata": "https://www.wikidata.org/wiki/Q860623",
+          "display_name": "Image (mathematics)",
+          "level": 2,
+          "score": 0.46655673
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.46149075
+        },
+        {
+          "id": "https://openalex.org/C23123220",
+          "wikidata": "https://www.wikidata.org/wiki/Q816826",
+          "display_name": "Information retrieval",
+          "level": 1,
+          "score": 0.41534573
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.36662143
+        },
+        {
+          "id": "https://openalex.org/C31972630",
+          "wikidata": "https://www.wikidata.org/wiki/Q844240",
+          "display_name": "Computer vision",
+          "level": 1,
+          "score": 0.16358656
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/00048623.1991.10754741",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/00048623.1991.10754741?needAccess=true",
+        "source": {
+          "id": "https://openalex.org/S95927495",
+          "display_name": "Australian Academic & Research Libraries",
+          "issn_l": "0004-8623",
+          "issn": [
+            "0004-8623",
+            "1839-471X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319847",
+          "host_organization_name": "Routledge",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319847"
+          ],
+          "host_organization_lineage_names": [
+            "Routledge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/00048623.1991.10754741?needAccess=true",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1080/00048623.1991.10754741",
+          "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/00048623.1991.10754741?needAccess=true",
+          "source": {
+            "id": "https://openalex.org/S95927495",
+            "display_name": "Australian Academic & Research Libraries",
+            "issn_l": "0004-8623",
+            "issn": [
+              "0004-8623",
+              "1839-471X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319847",
+            "host_organization_name": "Routledge",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319847"
+            ],
+            "host_organization_lineage_names": [
+              "Routledge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/00048623.1991.10754741",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/00048623.1991.10754741?needAccess=true",
+        "source": {
+          "id": "https://openalex.org/S95927495",
+          "display_name": "Australian Academic & Research Libraries",
+          "issn_l": "0004-8623",
+          "issn": [
+            "0004-8623",
+            "1839-471X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319847",
+          "host_organization_name": "Routledge",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319847"
+          ],
+          "host_organization_lineage_names": [
+            "Routledge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3024676754",
+    "title": "Capricious Texture of Time in Awareness and Art",
+    "relevance_score": 1.3321058,
+    "doi": "https://doi.org/10.1163/22134913-bja10008",
+    "topic_ids": [
+      "C2780865100",
+      "C199033989",
+      "C2780876879",
+      "C205783811",
+      "C2781195486",
+      "C67805463",
+      "C70789860",
+      "C153349607",
+      "C107038049",
+      "C142362112",
+      "C41008148",
+      "C15744967",
+      "C111472728",
+      "C138885662",
+      "C154945302",
+      "C124952713",
+      "C115961682"
+    ],
+    "best_pdf": "https://dspace.library.uu.nl/bitstream/handle/1874/410707/_22134913_Art_Perception_Capricious_Texture_of_Time_in_Awareness_and_Art.pdf?sequence=1&isAllowed=y",
+    "backup_pdf": "https://dspace.library.uu.nl/handle/1874/410707",
+    "raw": {
+      "id": "https://openalex.org/W3024676754",
+      "display_name": "Capricious Texture of Time in Awareness and Art",
+      "relevance_score": 1.3321058,
+      "doi": "https://doi.org/10.1163/22134913-bja10008",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780865100",
+          "wikidata": "https://www.wikidata.org/wiki/Q2488994",
+          "display_name": "Sentience",
+          "level": 2,
+          "score": 0.8964968
+        },
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.60814506
+        },
+        {
+          "id": "https://openalex.org/C2780876879",
+          "wikidata": "https://www.wikidata.org/wiki/Q3054749",
+          "display_name": "Meaning (existential)",
+          "level": 2,
+          "score": 0.5748011
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.52125007
+        },
+        {
+          "id": "https://openalex.org/C2781195486",
+          "wikidata": "https://www.wikidata.org/wiki/Q289436",
+          "display_name": "Texture (cosmology)",
+          "level": 3,
+          "score": 0.51715034
+        },
+        {
+          "id": "https://openalex.org/C67805463",
+          "wikidata": "https://www.wikidata.org/wiki/Q11634",
+          "display_name": "Sculpture",
+          "level": 2,
+          "score": 0.51064163
+        },
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.5084735
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.40912765
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.40168023
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.36957458
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.3384044
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.3279398
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.28051898
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.2064889
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.20078424
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.16594458
+        },
+        {
+          "id": "https://openalex.org/C115961682",
+          "wikidata": "https://www.wikidata.org/wiki/Q860623",
+          "display_name": "Image (mathematics)",
+          "level": 2,
+          "score": 0.13217399
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1163/22134913-bja10008",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210228896",
+          "display_name": "Art & Perception",
+          "issn_l": "2213-4905",
+          "issn": [
+            "2213-4905",
+            "2213-4913"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://dspace.library.uu.nl/bitstream/handle/1874/410707/_22134913_Art_Perception_Capricious_Texture_of_Time_in_Awareness_and_Art.pdf?sequence=1&isAllowed=y",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1163/22134913-bja10008",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210228896",
+            "display_name": "Art & Perception",
+            "issn_l": "2213-4905",
+            "issn": [
+              "2213-4905",
+              "2213-4913"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320561",
+            "host_organization_name": "Brill",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320561"
+            ],
+            "host_organization_lineage_names": [
+              "Brill"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://dspace.library.uu.nl/handle/1874/410707",
+          "pdf_url": "https://dspace.library.uu.nl/bitstream/handle/1874/410707/_22134913_Art_Perception_Capricious_Texture_of_Time_in_Awareness_and_Art.pdf?sequence=1&isAllowed=y",
+          "source": {
+            "id": "https://openalex.org/S4306401843",
+            "display_name": "Data Archiving and Networked Services (DANS)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1322597698",
+            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/I1322597698"
+            ],
+            "host_organization_lineage_names": [
+              "Royal Netherlands Academy of Arts and Sciences"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/410707",
+        "pdf_url": "https://dspace.library.uu.nl/bitstream/handle/1874/410707/_22134913_Art_Perception_Capricious_Texture_of_Time_in_Awareness_and_Art.pdf?sequence=1&isAllowed=y",
+        "source": {
+          "id": "https://openalex.org/S4306401843",
+          "display_name": "Data Archiving and Networked Services (DANS)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I1322597698",
+          "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+          "host_organization_lineage": [
+            "https://openalex.org/I1322597698"
+          ],
+          "host_organization_lineage_names": [
+            "Royal Netherlands Academy of Arts and Sciences"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3025453626",
+    "title": "&amp;lt;i&amp;gt;Requiem&amp;lt;/i&amp;gt;: Psychological, Philosophical, and Aesthetic Notes on the Music of the Mass for the Dead&amp;lt;br/&amp;gt;—Dedicated to the Victims of COVID-19 Worldwide",
+    "relevance_score": 1.1755502,
+    "doi": "https://doi.org/10.4236/adr.2020.82008",
+    "topic_ids": [
+      "C558565934",
+      "C15744967",
+      "C163258240",
+      "C142362112",
+      "C107038049",
+      "C138885662",
+      "C27206212",
+      "C144024400",
+      "C124952713",
+      "C121332964",
+      "C62520636"
+    ],
+    "best_pdf": "http://www.scirp.org/journal/PaperDownload.aspx?paperID=100113",
+    "backup_pdf": "https://doi.org/10.4236/adr.2020.82008",
+    "raw": {
+      "id": "https://openalex.org/W3025453626",
+      "display_name": "&amp;lt;i&amp;gt;Requiem&amp;lt;/i&amp;gt;: Psychological, Philosophical, and Aesthetic Notes on the Music of the Mass for the Dead&amp;lt;br/&amp;gt;—Dedicated to the Victims of COVID-19 Worldwide",
+      "relevance_score": 1.1755502,
+      "doi": "https://doi.org/10.4236/adr.2020.82008",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C558565934",
+          "wikidata": "https://www.wikidata.org/wiki/Q2743",
+          "display_name": "Musical",
+          "level": 2,
+          "score": 0.5918115
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.4567666
+        },
+        {
+          "id": "https://openalex.org/C163258240",
+          "wikidata": "https://www.wikidata.org/wiki/Q25342",
+          "display_name": "Power (physics)",
+          "level": 2,
+          "score": 0.4235903
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.38708922
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.37796503
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.36715108
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.32889813
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.32353872
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.29380286
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.14106345
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.07469621
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4236/adr.2020.82008",
+        "pdf_url": "http://www.scirp.org/journal/PaperDownload.aspx?paperID=100113",
+        "source": {
+          "id": "https://openalex.org/S4210216624",
+          "display_name": "Art and Design Review",
+          "issn_l": "2332-1997",
+          "issn": [
+            "2332-1997",
+            "2332-2004"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320480",
+          "host_organization_name": "Scientific Research Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320480"
+          ],
+          "host_organization_lineage_names": [
+            "Scientific Research Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "http://www.scirp.org/journal/PaperDownload.aspx?paperID=100113",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.4236/adr.2020.82008",
+          "pdf_url": "http://www.scirp.org/journal/PaperDownload.aspx?paperID=100113",
+          "source": {
+            "id": "https://openalex.org/S4210216624",
+            "display_name": "Art and Design Review",
+            "issn_l": "2332-1997",
+            "issn": [
+              "2332-1997",
+              "2332-2004"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320480",
+            "host_organization_name": "Scientific Research Publishing",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320480"
+            ],
+            "host_organization_lineage_names": [
+              "Scientific Research Publishing"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4236/adr.2020.82008",
+        "pdf_url": "http://www.scirp.org/journal/PaperDownload.aspx?paperID=100113",
+        "source": {
+          "id": "https://openalex.org/S4210216624",
+          "display_name": "Art and Design Review",
+          "issn_l": "2332-1997",
+          "issn": [
+            "2332-1997",
+            "2332-2004"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320480",
+          "host_organization_name": "Scientific Research Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320480"
+          ],
+          "host_organization_lineage_names": [
+            "Scientific Research Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

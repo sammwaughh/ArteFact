@@ -1,0 +1,1409 @@
+[
+  {
+    "id": "https://openalex.org/W2430757365",
+    "title": "The Fear of Art: How Censorship Becomes Iconoclasm",
+    "relevance_score": 19.730843,
+    "doi": "https://doi.org/10.1353/sor.2016.0019",
+    "topic_ids": [
+      "C2776951763",
+      "C52930066",
+      "C2776261394",
+      "C107038049",
+      "C142362112",
+      "C199539241",
+      "C17744445",
+      "C52119013"
+    ],
+    "best_pdf": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+    "backup_pdf": "https://doi.org/10.7916/2bap-c392",
+    "raw": {
+      "id": "https://openalex.org/W2430757365",
+      "display_name": "The Fear of Art: How Censorship Becomes Iconoclasm",
+      "relevance_score": 19.730843,
+      "doi": "https://doi.org/10.1353/sor.2016.0019",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776951763",
+          "wikidata": "https://www.wikidata.org/wiki/Q181543",
+          "display_name": "Iconoclasm",
+          "level": 2,
+          "score": 0.9732008
+        },
+        {
+          "id": "https://openalex.org/C52930066",
+          "wikidata": "https://www.wikidata.org/wiki/Q543",
+          "display_name": "Censorship",
+          "level": 2,
+          "score": 0.9159707
+        },
+        {
+          "id": "https://openalex.org/C2776261394",
+          "wikidata": "https://www.wikidata.org/wiki/Q315562",
+          "display_name": "Impossibility",
+          "level": 2,
+          "score": 0.49771145
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.44890162
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.4262913
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.23259991
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.23230812
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.13964263
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1353/sor.2016.0019",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4317411217",
+          "display_name": "Deleted Journal",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1353/sor.2016.0019",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4317411217",
+            "display_name": "Deleted Journal",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": true,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7916/2bap-c392",
+          "pdf_url": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+          "source": {
+            "id": "https://openalex.org/S4306402601",
+            "display_name": "Columbia Academic Commons (Columbia University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I78577930",
+            "host_organization_name": "Columbia University",
+            "host_organization_lineage": [
+              "https://openalex.org/I78577930"
+            ],
+            "host_organization_lineage_names": [
+              "Columbia University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7916/2bap-c392",
+        "pdf_url": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+        "source": {
+          "id": "https://openalex.org/S4306402601",
+          "display_name": "Columbia Academic Commons (Columbia University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I78577930",
+          "host_organization_name": "Columbia University",
+          "host_organization_lineage": [
+            "https://openalex.org/I78577930"
+          ],
+          "host_organization_lineage_names": [
+            "Columbia University"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W1680027057",
+    "title": "In His Milieu : Essays on Netherlandish Art in Memory of John Michael Montias",
+    "relevance_score": 3.3838692,
+    "doi": "https://doi.org/10.26530/oapen_444102",
+    "topic_ids": [
+      "C142362112",
+      "C52119013",
+      "C554144382"
+    ],
+    "best_pdf": "https://library.oapen.org/bitstream/20.500.12657/33911/1/444102.pdf",
+    "backup_pdf": "https://doi.org/10.26530/oapen_444102",
+    "raw": {
+      "id": "https://openalex.org/W1680027057",
+      "display_name": "In His Milieu : Essays on Netherlandish Art in Memory of John Michael Montias",
+      "relevance_score": 3.3838692,
+      "doi": "https://doi.org/10.26530/oapen_444102",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.56738144
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.5458144
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.48357838
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26530/oapen_444102",
+        "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/33911/1/444102.pdf",
+        "source": null,
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://library.oapen.org/bitstream/20.500.12657/33911/1/444102.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.26530/oapen_444102",
+          "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/33911/1/444102.pdf",
+          "source": null,
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://library.oapen.org/bitstream/20.500.12657/33911/1/444102.pdf",
+          "pdf_url": "http://library.oapen.org/bitstream/20.500.12657/33911/1/444102.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400539",
+            "display_name": "Directory of Open access Books (OAPEN Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://openresearchlibrary.org/ext/api/media/33a374d4-20ef-4645-ae45-f1673e0608d5/assets/external_content.pdf",
+          "pdf_url": "https://openresearchlibrary.org/ext/api/media/33a374d4-20ef-4645-ae45-f1673e0608d5/assets/external_content.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401131",
+            "display_name": "BiblioBoard Library Catalog (Open Research Library)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26530/oapen_444102",
+        "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/33911/1/444102.pdf",
+        "source": null,
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2580611988",
+    "title": "Painting and Publishing as Cultural Industries. The Fabric of Creativity in the Dutch Republic, 1580-1800",
+    "relevance_score": 2.801933,
+    "doi": "https://doi.org/10.5117/9789089647023",
+    "topic_ids": [
+      "C11012388",
+      "C205783811",
+      "C151719136",
+      "C153349607",
+      "C142362112",
+      "C52119013",
+      "C17744445",
+      "C199539241",
+      "C124952713"
+    ],
+    "best_pdf": "http://library.oapen.org/bitstream/20.500.12657/32037/1/619592.pdf",
+    "backup_pdf": "http://oapen.org/download?type=document&docid=619592",
+    "raw": {
+      "id": "https://openalex.org/W2580611988",
+      "display_name": "Painting and Publishing as Cultural Industries. The Fabric of Creativity in the Dutch Republic, 1580-1800",
+      "relevance_score": 2.801933,
+      "doi": "https://doi.org/10.5117/9789089647023",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C11012388",
+          "wikidata": "https://www.wikidata.org/wiki/Q170658",
+          "display_name": "Creativity",
+          "level": 2,
+          "score": 0.8367645
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.7538693
+        },
+        {
+          "id": "https://openalex.org/C151719136",
+          "wikidata": "https://www.wikidata.org/wiki/Q3972943",
+          "display_name": "Publishing",
+          "level": 2,
+          "score": 0.71282506
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.44978416
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.41303986
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.40265405
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.33013326
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.18730089
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.18083614
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5117/9789089647023",
+        "pdf_url": "http://oapen.org/download?type=document&docid=619592",
+        "source": {
+          "id": "https://openalex.org/S4306462833",
+          "display_name": "Amsterdam University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318533",
+          "host_organization_name": "Amsterdam University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318533"
+          ],
+          "host_organization_lineage_names": [
+            "Amsterdam University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "http://oapen.org/download?type=document&docid=619592",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5117/9789089647023",
+          "pdf_url": "http://oapen.org/download?type=document&docid=619592",
+          "source": {
+            "id": "https://openalex.org/S4306462833",
+            "display_name": "Amsterdam University Press eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310318533",
+            "host_organization_name": "Amsterdam University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318533"
+            ],
+            "host_organization_lineage_names": [
+              "Amsterdam University Press"
+            ],
+            "type": "ebook platform"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1515/9789048524112",
+          "pdf_url": "https://www.degruyter.com/document/doi/10.1515/9789048524112/pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://library.oapen.org/bitstream/20.500.12657/32037/1/619592.pdf",
+          "pdf_url": "http://library.oapen.org/bitstream/20.500.12657/32037/1/619592.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400539",
+            "display_name": "Directory of Open access Books (OAPEN Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://muse.jhu.edu/pub/315/oa_monograph/book/66537",
+          "pdf_url": "https://muse.jhu.edu/book/66537/pdf",
+          "source": {
+            "id": "https://openalex.org/S4377196299",
+            "display_name": "Project Muse (Johns Hopkins University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I145311948",
+            "host_organization_name": "Johns Hopkins University",
+            "host_organization_lineage": [
+              "https://openalex.org/I145311948"
+            ],
+            "host_organization_lineage_names": [
+              "Johns Hopkins University"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.doabooks.org/doab?func=search&query=rid:19962",
+          "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/32037/1/619592.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400539",
+            "display_name": "Directory of Open access Books (OAPEN Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5117/9789089647023",
+        "pdf_url": "http://oapen.org/download?type=document&docid=619592",
+        "source": {
+          "id": "https://openalex.org/S4306462833",
+          "display_name": "Amsterdam University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318533",
+          "host_organization_name": "Amsterdam University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318533"
+          ],
+          "host_organization_lineage_names": [
+            "Amsterdam University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4365449597",
+    "title": "Collaboration and Competition: Master Masons and Painters in the Production of Architectural Designs in the Low Countries in the 16th Century",
+    "relevance_score": 2.1102445,
+    "doi": "https://doi.org/10.16995/ah.9179",
+    "topic_ids": [
+      "C169085036",
+      "C2781291010",
+      "C123657996",
+      "C205783811",
+      "C2778348673",
+      "C2984241579",
+      "C111226992",
+      "C153349607",
+      "C91306197",
+      "C70789860",
+      "C170154142",
+      "C107038049",
+      "C127413603",
+      "C142362112",
+      "C199539241",
+      "C17744445",
+      "C18903297",
+      "C86803240",
+      "C162324750",
+      "C139719470"
+    ],
+    "best_pdf": "https://lirias.kuleuven.be/bitstream/20.500.12942/729569/2/ah-9179-hurx.pdf",
+    "backup_pdf": "https://doi.org/10.16995/ah.9179",
+    "raw": {
+      "id": "https://openalex.org/W4365449597",
+      "display_name": "Collaboration and Competition: Master Masons and Painters in the Production of Architectural Designs in the Low Countries in the 16th Century",
+      "relevance_score": 2.1102445,
+      "doi": "https://doi.org/10.16995/ah.9179",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C169085036",
+          "wikidata": "https://www.wikidata.org/wiki/Q8180985",
+          "display_name": "History of architecture",
+          "level": 3,
+          "score": 0.58037317
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.575994
+        },
+        {
+          "id": "https://openalex.org/C123657996",
+          "wikidata": "https://www.wikidata.org/wiki/Q12271",
+          "display_name": "Architecture",
+          "level": 2,
+          "score": 0.565832
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.55774087
+        },
+        {
+          "id": "https://openalex.org/C2778348673",
+          "wikidata": "https://www.wikidata.org/wiki/Q739302",
+          "display_name": "Production (economics)",
+          "level": 2,
+          "score": 0.5143453
+        },
+        {
+          "id": "https://openalex.org/C2984241579",
+          "wikidata": "https://www.wikidata.org/wiki/Q323611",
+          "display_name": "Architectural design",
+          "level": 3,
+          "score": 0.513445
+        },
+        {
+          "id": "https://openalex.org/C111226992",
+          "wikidata": "https://www.wikidata.org/wiki/Q626225",
+          "display_name": "Teamwork",
+          "level": 2,
+          "score": 0.50876004
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.49418023
+        },
+        {
+          "id": "https://openalex.org/C91306197",
+          "wikidata": "https://www.wikidata.org/wiki/Q45767",
+          "display_name": "Competition (biology)",
+          "level": 2,
+          "score": 0.48069364
+        },
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.47001198
+        },
+        {
+          "id": "https://openalex.org/C170154142",
+          "wikidata": "https://www.wikidata.org/wiki/Q150737",
+          "display_name": "Architectural engineering",
+          "level": 1,
+          "score": 0.3690104
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.2778037
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.25190732
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.22872737
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.17074335
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.12526387
+        },
+        {
+          "id": "https://openalex.org/C18903297",
+          "wikidata": "https://www.wikidata.org/wiki/Q7150",
+          "display_name": "Ecology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C139719470",
+          "wikidata": "https://www.wikidata.org/wiki/Q39680",
+          "display_name": "Macroeconomics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ah.9179",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764571057",
+          "display_name": "Architectural Histories",
+          "issn_l": "2050-5833",
+          "issn": [
+            "2050-5833"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320511",
+          "host_organization_name": "Ubiquity Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320511"
+          ],
+          "host_organization_lineage_names": [
+            "Ubiquity Press"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://doi.org/10.16995/ah.9179",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.16995/ah.9179",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764571057",
+            "display_name": "Architectural Histories",
+            "issn_l": "2050-5833",
+            "issn": [
+              "2050-5833"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320511",
+            "host_organization_name": "Ubiquity Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320511"
+            ],
+            "host_organization_lineage_names": [
+              "Ubiquity Press"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://lirias.kuleuven.be/handle/20.500.12942/729569",
+          "pdf_url": "https://lirias.kuleuven.be/bitstream/20.500.12942/729569/2/ah-9179-hurx.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401954",
+            "display_name": "Lirias (KU Leuven)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I99464096",
+            "host_organization_name": "KU Leuven",
+            "host_organization_lineage": [
+              "https://openalex.org/I99464096"
+            ],
+            "host_organization_lineage_names": [
+              "KU Leuven"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ah.9179",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764571057",
+          "display_name": "Architectural Histories",
+          "issn_l": "2050-5833",
+          "issn": [
+            "2050-5833"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320511",
+          "host_organization_name": "Ubiquity Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320511"
+          ],
+          "host_organization_lineage_names": [
+            "Ubiquity Press"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2566230192",
+    "title": "Thomas de Keyser’s Equestrian Portrait of Pieter Schout, 1660",
+    "relevance_score": 1.7642426,
+    "doi": "https://doi.org/10.5092/jhna.2017.9.1.9",
+    "topic_ids": [
+      "C162462552",
+      "C142362112",
+      "C94625758",
+      "C52119013",
+      "C153349607",
+      "C199539241",
+      "C17744445"
+    ],
+    "best_pdf": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.1Adams.pdf",
+    "backup_pdf": "https://doi.org/10.5092/jhna.2017.9.1.9",
+    "raw": {
+      "id": "https://openalex.org/W2566230192",
+      "display_name": "Thomas de Keyser’s Equestrian Portrait of Pieter Schout, 1660",
+      "relevance_score": 1.7642426,
+      "doi": "https://doi.org/10.5092/jhna.2017.9.1.9",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.92824584
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.59553254
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.56844366
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.45670816
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.36842722
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.13236511
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.11726844
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2017.9.1.9",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.1Adams.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.1Adams.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5092/jhna.2017.9.1.9",
+          "pdf_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.1Adams.pdf",
+          "source": {
+            "id": "https://openalex.org/S137142838",
+            "display_name": "Journal of Historians of Netherlandish Art",
+            "issn_l": "1949-9833",
+            "issn": [
+              "1949-9833",
+              "2473-1404"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2017.9.1.9",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.1Adams.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4206714977",
+    "title": "Renaissance Fun",
+    "relevance_score": 1.2094944,
+    "doi": "https://doi.org/10.2307/j.ctv18msqmt",
+    "topic_ids": [
+      "C52069626",
+      "C142362112",
+      "C153349607",
+      "C52119013"
+    ],
+    "best_pdf": "https://library.oapen.org/bitstream/20.500.12657/51825/1/9781787359154.pdf",
+    "backup_pdf": "https://directory.doabooks.org/handle/20.500.12854/74729",
+    "raw": {
+      "id": "https://openalex.org/W4206714977",
+      "display_name": "Renaissance Fun",
+      "relevance_score": 1.2094944,
+      "doi": "https://doi.org/10.2307/j.ctv18msqmt",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.8437569
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.49981976
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3944629
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.31865638
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.2307/j.ctv18msqmt",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://library.oapen.org/bitstream/20.500.12657/51825/1/9781787359154.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.2307/j.ctv18msqmt",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://directory.doabooks.org/handle/20.500.12854/74729",
+          "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/51825/1/9781787359154.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://directory.doabooks.org/handle/20.500.12854/74729",
+        "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/51825/1/9781787359154.pdf",
+        "source": {
+          "id": "https://openalex.org/S4308707206",
+          "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I157725225",
+          "host_organization_name": "University of Illinois Urbana-Champaign",
+          "host_organization_lineage": [
+            "https://openalex.org/I157725225"
+          ],
+          "host_organization_lineage_names": [
+            "University of Illinois Urbana-Champaign"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2745319367",
+    "title": "Pieter de Molijn (1597–1661): A Dutch Painter and the Art Market in the Seventeenth Century",
+    "relevance_score": 1.041028,
+    "doi": "https://doi.org/10.5092/jhna.2017.9.2.5",
+    "topic_ids": [
+      "C205783811",
+      "C142362112",
+      "C2994170677",
+      "C52119013"
+    ],
+    "best_pdf": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.2_Boers.pdf",
+    "backup_pdf": "https://doi.org/10.5092/jhna.2017.9.2.5",
+    "raw": {
+      "id": "https://openalex.org/W2745319367",
+      "display_name": "Pieter de Molijn (1597–1661): A Dutch Painter and the Art Market in the Seventeenth Century",
+      "relevance_score": 1.041028,
+      "doi": "https://doi.org/10.5092/jhna.2017.9.2.5",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.8482497
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.81075954
+        },
+        {
+          "id": "https://openalex.org/C2994170677",
+          "wikidata": "https://www.wikidata.org/wiki/Q1239532",
+          "display_name": "Art market",
+          "level": 2,
+          "score": 0.606121
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.53801954
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2017.9.2.5",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.2_Boers.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.2_Boers.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5092/jhna.2017.9.2.5",
+          "pdf_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.2_Boers.pdf",
+          "source": {
+            "id": "https://openalex.org/S137142838",
+            "display_name": "Journal of Historians of Netherlandish Art",
+            "issn_l": "1949-9833",
+            "issn": [
+              "1949-9833",
+              "2473-1404"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/1887/58095",
+          "pdf_url": "https://scholarlypublications.universiteitleiden.nl/access/item%3A2943941/view",
+          "source": {
+            "id": "https://openalex.org/S4306400850",
+            "display_name": "Leiden Repository (Leiden University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I121797337",
+            "host_organization_name": "Leiden University",
+            "host_organization_lineage": [
+              "https://openalex.org/I121797337"
+            ],
+            "host_organization_lineage_names": [
+              "Leiden University"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2017.9.2.5",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_9.2_Boers.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

@@ -1,0 +1,634 @@
+[
+  {
+    "id": "https://openalex.org/W2973959833",
+    "title": "How Style Became Famous and Irrelevant at the Same Time",
+    "relevance_score": 5.9201355,
+    "doi": "https://doi.org/10.4312/ars.9.2.215-230",
+    "topic_ids": [
+      "C2776445246",
+      "C2778653666",
+      "C32685002",
+      "C204457725",
+      "C85363599",
+      "C107038049",
+      "C189135316",
+      "C2779148493",
+      "C1370556",
+      "C142362112",
+      "C124952713",
+      "C95457728",
+      "C52119013",
+      "C153349607",
+      "C138885662",
+      "C94625758",
+      "C123657996",
+      "C41895202",
+      "C199539241",
+      "C15744967",
+      "C11171543",
+      "C554144382",
+      "C17744445"
+    ],
+    "best_pdf": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+    "backup_pdf": "https://doi.org/10.4312/ars.9.2.215-230",
+    "raw": {
+      "id": "https://openalex.org/W2973959833",
+      "display_name": "How Style Became Famous and Irrelevant at the Same Time",
+      "relevance_score": 5.9201355,
+      "doi": "https://doi.org/10.4312/ars.9.2.215-230",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776445246",
+          "wikidata": "https://www.wikidata.org/wiki/Q1792644",
+          "display_name": "Style (visual arts)",
+          "level": 2,
+          "score": 0.6056373
+        },
+        {
+          "id": "https://openalex.org/C2778653666",
+          "wikidata": "https://www.wikidata.org/wiki/Q41521",
+          "display_name": "Schism",
+          "level": 3,
+          "score": 0.52656054
+        },
+        {
+          "id": "https://openalex.org/C32685002",
+          "wikidata": "https://www.wikidata.org/wiki/Q37068",
+          "display_name": "Romanticism",
+          "level": 2,
+          "score": 0.48803845
+        },
+        {
+          "id": "https://openalex.org/C204457725",
+          "wikidata": "https://www.wikidata.org/wiki/Q50641",
+          "display_name": "History of art",
+          "level": 3,
+          "score": 0.48567545
+        },
+        {
+          "id": "https://openalex.org/C85363599",
+          "wikidata": "https://www.wikidata.org/wiki/Q186030",
+          "display_name": "Contemporary art",
+          "level": 3,
+          "score": 0.47677377
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.47648972
+        },
+        {
+          "id": "https://openalex.org/C189135316",
+          "wikidata": "https://www.wikidata.org/wiki/Q38166",
+          "display_name": "Modern art",
+          "level": 3,
+          "score": 0.4537036
+        },
+        {
+          "id": "https://openalex.org/C2779148493",
+          "wikidata": "https://www.wikidata.org/wiki/Q681449",
+          "display_name": "Individuation",
+          "level": 2,
+          "score": 0.44463754
+        },
+        {
+          "id": "https://openalex.org/C1370556",
+          "wikidata": "https://www.wikidata.org/wiki/Q81009",
+          "display_name": "Rhetoric",
+          "level": 2,
+          "score": 0.43760732
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.42698902
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.39707118
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.3780563
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.29272798
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.24238303
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.21343961
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.17094183
+        },
+        {
+          "id": "https://openalex.org/C123657996",
+          "wikidata": "https://www.wikidata.org/wiki/Q12271",
+          "display_name": "Architecture",
+          "level": 2,
+          "score": 0.16537264
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.13837498
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.111080736
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.106939435
+        },
+        {
+          "id": "https://openalex.org/C11171543",
+          "wikidata": "https://www.wikidata.org/wiki/Q41630",
+          "display_name": "Psychoanalysis",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4312/ars.9.2.215-230",
+        "pdf_url": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+        "source": {
+          "id": "https://openalex.org/S2736595216",
+          "display_name": "Ars & Humanitas",
+          "issn_l": "1854-9632",
+          "issn": [
+            "1854-9632",
+            "2350-4218"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314509",
+          "host_organization_name": "Ljubljana University Press, Faculty of Arts",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314477",
+            "https://openalex.org/P4310314509"
+          ],
+          "host_organization_lineage_names": [
+            "University of Ljubljana",
+            "Ljubljana University Press, Faculty of Arts"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.4312/ars.9.2.215-230",
+          "pdf_url": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+          "source": {
+            "id": "https://openalex.org/S2736595216",
+            "display_name": "Ars & Humanitas",
+            "issn_l": "1854-9632",
+            "issn": [
+              "1854-9632",
+              "2350-4218"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310314509",
+            "host_organization_name": "Ljubljana University Press, Faculty of Arts",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310314477",
+              "https://openalex.org/P4310314509"
+            ],
+            "host_organization_lineage_names": [
+              "University of Ljubljana",
+              "Ljubljana University Press, Faculty of Arts"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4312/ars.9.2.215-230",
+        "pdf_url": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+        "source": {
+          "id": "https://openalex.org/S2736595216",
+          "display_name": "Ars & Humanitas",
+          "issn_l": "1854-9632",
+          "issn": [
+            "1854-9632",
+            "2350-4218"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314509",
+          "host_organization_name": "Ljubljana University Press, Faculty of Arts",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314477",
+            "https://openalex.org/P4310314509"
+          ],
+          "host_organization_lineage_names": [
+            "University of Ljubljana",
+            "Ljubljana University Press, Faculty of Arts"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2187254212",
+    "title": "How Style Became Famous and Irrelevant at the Same Time",
+    "relevance_score": 1.2261002,
+    "doi": "https://doi.org/10.4312/ah.9.2.215-230",
+    "topic_ids": [
+      "C2776445246",
+      "C2778653666",
+      "C32685002",
+      "C204457725",
+      "C85363599",
+      "C107038049",
+      "C189135316",
+      "C1370556",
+      "C2779148493",
+      "C142362112",
+      "C124952713",
+      "C95457728",
+      "C144024400",
+      "C52119013",
+      "C153349607",
+      "C138885662",
+      "C94625758",
+      "C123657996",
+      "C41895202",
+      "C15744967",
+      "C199539241",
+      "C554144382",
+      "C17744445",
+      "C11171543"
+    ],
+    "best_pdf": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+    "backup_pdf": "https://doi.org/10.4312/ah.9.2.215-230",
+    "raw": {
+      "id": "https://openalex.org/W2187254212",
+      "display_name": "How Style Became Famous and Irrelevant at the Same Time",
+      "relevance_score": 1.2261002,
+      "doi": "https://doi.org/10.4312/ah.9.2.215-230",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776445246",
+          "wikidata": "https://www.wikidata.org/wiki/Q1792644",
+          "display_name": "Style (visual arts)",
+          "level": 2,
+          "score": 0.6167866
+        },
+        {
+          "id": "https://openalex.org/C2778653666",
+          "wikidata": "https://www.wikidata.org/wiki/Q41521",
+          "display_name": "Schism",
+          "level": 3,
+          "score": 0.53335166
+        },
+        {
+          "id": "https://openalex.org/C32685002",
+          "wikidata": "https://www.wikidata.org/wiki/Q37068",
+          "display_name": "Romanticism",
+          "level": 2,
+          "score": 0.5029537
+        },
+        {
+          "id": "https://openalex.org/C204457725",
+          "wikidata": "https://www.wikidata.org/wiki/Q50641",
+          "display_name": "History of art",
+          "level": 3,
+          "score": 0.4815274
+        },
+        {
+          "id": "https://openalex.org/C85363599",
+          "wikidata": "https://www.wikidata.org/wiki/Q186030",
+          "display_name": "Contemporary art",
+          "level": 3,
+          "score": 0.4758886
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.4589461
+        },
+        {
+          "id": "https://openalex.org/C189135316",
+          "wikidata": "https://www.wikidata.org/wiki/Q38166",
+          "display_name": "Modern art",
+          "level": 3,
+          "score": 0.45392463
+        },
+        {
+          "id": "https://openalex.org/C1370556",
+          "wikidata": "https://www.wikidata.org/wiki/Q81009",
+          "display_name": "Rhetoric",
+          "level": 2,
+          "score": 0.4433832
+        },
+        {
+          "id": "https://openalex.org/C2779148493",
+          "wikidata": "https://www.wikidata.org/wiki/Q681449",
+          "display_name": "Individuation",
+          "level": 2,
+          "score": 0.422426
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.42242575
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.3944736
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.3771443
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.32340452
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.29179257
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.2391055
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.20495832
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.16821855
+        },
+        {
+          "id": "https://openalex.org/C123657996",
+          "wikidata": "https://www.wikidata.org/wiki/Q12271",
+          "display_name": "Architecture",
+          "level": 2,
+          "score": 0.16513914
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.13648534
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.11069727
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.106539786
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.09304851
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C11171543",
+          "wikidata": "https://www.wikidata.org/wiki/Q41630",
+          "display_name": "Psychoanalysis",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4312/ah.9.2.215-230",
+        "pdf_url": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+        "source": {
+          "id": "https://openalex.org/S2736595216",
+          "display_name": "Ars & Humanitas",
+          "issn_l": "1854-9632",
+          "issn": [
+            "1854-9632",
+            "2350-4218"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314509",
+          "host_organization_name": "Ljubljana University Press, Faculty of Arts",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314477",
+            "https://openalex.org/P4310314509"
+          ],
+          "host_organization_lineage_names": [
+            "University of Ljubljana",
+            "Ljubljana University Press, Faculty of Arts"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.4312/ah.9.2.215-230",
+          "pdf_url": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+          "source": {
+            "id": "https://openalex.org/S2736595216",
+            "display_name": "Ars & Humanitas",
+            "issn_l": "1854-9632",
+            "issn": [
+              "1854-9632",
+              "2350-4218"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310314509",
+            "host_organization_name": "Ljubljana University Press, Faculty of Arts",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310314477",
+              "https://openalex.org/P4310314509"
+            ],
+            "host_organization_lineage_names": [
+              "University of Ljubljana",
+              "Ljubljana University Press, Faculty of Arts"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.4312/ah.9.2.215-230",
+        "pdf_url": "https://revije.ff.uni-lj.si/arshumanitas/article/download/5248/4934",
+        "source": {
+          "id": "https://openalex.org/S2736595216",
+          "display_name": "Ars & Humanitas",
+          "issn_l": "1854-9632",
+          "issn": [
+            "1854-9632",
+            "2350-4218"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314509",
+          "host_organization_name": "Ljubljana University Press, Faculty of Arts",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314477",
+            "https://openalex.org/P4310314509"
+          ],
+          "host_organization_lineage_names": [
+            "University of Ljubljana",
+            "Ljubljana University Press, Faculty of Arts"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

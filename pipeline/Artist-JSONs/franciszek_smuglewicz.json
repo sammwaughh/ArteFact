@@ -1,0 +1,340 @@
+[
+  {
+    "id": "https://openalex.org/W3174237800",
+    "title": "Acquisitions Prints and Drawings c. 1800",
+    "relevance_score": 2.36595,
+    "doi": "https://doi.org/10.52476/trb.9771",
+    "topic_ids": [
+      "C153349607",
+      "C142362112"
+    ],
+    "best_pdf": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+    "backup_pdf": "https://doi.org/10.52476/trb.9771",
+    "raw": {
+      "id": "https://openalex.org/W3174237800",
+      "display_name": "Acquisitions Prints and Drawings c. 1800",
+      "relevance_score": 2.36595,
+      "doi": "https://doi.org/10.52476/trb.9771",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.49888945
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.3747545
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52476/trb.9771",
+        "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+        "source": {
+          "id": "https://openalex.org/S4210227217",
+          "display_name": "The Rijksmuseum Bulletin",
+          "issn_l": "1877-8127",
+          "issn": [
+            "1877-8127",
+            "2772-6126"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318572",
+          "host_organization_name": "Rijksmuseum",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318572"
+          ],
+          "host_organization_lineage_names": [
+            "Rijksmuseum"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.52476/trb.9771",
+          "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+          "source": {
+            "id": "https://openalex.org/S4210227217",
+            "display_name": "The Rijksmuseum Bulletin",
+            "issn_l": "1877-8127",
+            "issn": [
+              "1877-8127",
+              "2772-6126"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310318572",
+            "host_organization_name": "Rijksmuseum",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318572"
+            ],
+            "host_organization_lineage_names": [
+              "Rijksmuseum"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/ce3cdd470c1047febbdd39c78b26f9ae",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52476/trb.9771",
+        "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+        "source": {
+          "id": "https://openalex.org/S4210227217",
+          "display_name": "The Rijksmuseum Bulletin",
+          "issn_l": "1877-8127",
+          "issn": [
+            "1877-8127",
+            "2772-6126"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318572",
+          "host_organization_name": "Rijksmuseum",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318572"
+          ],
+          "host_organization_lineage_names": [
+            "Rijksmuseum"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4388262473",
+    "title": "COUNT MICHAŁ JAN BORCH AS PATRON AND COLLECTOR: ART BETWEEN ITALY AND THE INFLANTY VOIVODESHIP IN THE AGE OF PARTITION",
+    "relevance_score": 1.2587862,
+    "doi": "https://doi.org/10.12697/bjah.2021.22.02",
+    "topic_ids": [
+      "C162462552",
+      "C142362112",
+      "C52119013"
+    ],
+    "best_pdf": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2021.22.02/13446",
+    "backup_pdf": "https://doi.org/10.12697/bjah.2021.22.02",
+    "raw": {
+      "id": "https://openalex.org/W4388262473",
+      "display_name": "COUNT MICHAŁ JAN BORCH AS PATRON AND COLLECTOR: ART BETWEEN ITALY AND THE INFLANTY VOIVODESHIP IN THE AGE OF PARTITION",
+      "relevance_score": 1.2587862,
+      "doi": "https://doi.org/10.12697/bjah.2021.22.02",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.4949252
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.35306937
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.33326775
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.12697/bjah.2021.22.02",
+        "pdf_url": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2021.22.02/13446",
+        "source": {
+          "id": "https://openalex.org/S2764693166",
+          "display_name": "Baltic Journal of Art History",
+          "issn_l": "1736-8812",
+          "issn": [
+            "1736-8812",
+            "2346-5581"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314067",
+          "host_organization_name": "University of Tartu Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314067"
+          ],
+          "host_organization_lineage_names": [
+            "University of Tartu Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2021.22.02/13446",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.12697/bjah.2021.22.02",
+          "pdf_url": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2021.22.02/13446",
+          "source": {
+            "id": "https://openalex.org/S2764693166",
+            "display_name": "Baltic Journal of Art History",
+            "issn_l": "1736-8812",
+            "issn": [
+              "1736-8812",
+              "2346-5581"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310314067",
+            "host_organization_name": "University of Tartu Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310314067"
+            ],
+            "host_organization_lineage_names": [
+              "University of Tartu Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://local.forskningsportal.dk/local/dki-cgi/ws/cris-link?src=kum&id=kum-9394fb83-6e25-415e-9c4c-566b0031d63e&ti=Count%20Micha%142%20Jan%20Borch%20as%20patron%20and%20collector%20%3A%20art%20between%20Italy%20and%20the%20Inflanty%20Voivodeship%20in%20the%20Age%20of%20Partition.",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4412200483",
+            "display_name": "Research Portal Denmark",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I96673099",
+            "host_organization_name": "Technical University of Denmark",
+            "host_organization_lineage": [
+              "https://openalex.org/I96673099"
+            ],
+            "host_organization_lineage_names": [
+              "Technical University of Denmark"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.12697/bjah.2021.22.02",
+        "pdf_url": "https://ojs.utlib.ee/index.php/bjah/article/download/BJAH.2021.22.02/13446",
+        "source": {
+          "id": "https://openalex.org/S2764693166",
+          "display_name": "Baltic Journal of Art History",
+          "issn_l": "1736-8812",
+          "issn": [
+            "1736-8812",
+            "2346-5581"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314067",
+          "host_organization_name": "University of Tartu Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314067"
+          ],
+          "host_organization_lineage_names": [
+            "University of Tartu Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

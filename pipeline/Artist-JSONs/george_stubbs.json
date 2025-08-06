@@ -2,7 +2,7 @@
   {
     "id": "https://openalex.org/W2803408804",
     "title": "Equine Nobility: George Stubbs and Horse Portraiture in Eighteen-Century England",
-    "relevance_score": 50.01114,
+    "relevance_score": 49.250324,
     "doi": "https://doi.org/10.15819/rah.2016..46.65",
     "topic_ids": [
       "C2779105800",
@@ -23,7 +23,7 @@
     "raw": {
       "id": "https://openalex.org/W2803408804",
       "display_name": "Equine Nobility: George Stubbs and Horse Portraiture in Eighteen-Century England",
-      "relevance_score": 50.01114,
+      "relevance_score": 49.250324,
       "doi": "https://doi.org/10.15819/rah.2016..46.65",
       "concepts": [
         {
@@ -203,9 +203,168 @@
     }
   },
   {
+    "id": "https://openalex.org/W2020798572",
+    "title": "COUNSEL, PUBLIC DEBATE, AND QUEENSHIP: JOHN STUBBS'S <i>THE DISCOVERIE OF A GAPING GULF</i>, 1579",
+    "relevance_score": 6.321456,
+    "doi": "https://doi.org/10.1017/s0018246x01001947",
+    "topic_ids": [
+      "C199539241",
+      "C95457728",
+      "C17744445",
+      "C74916050"
+    ],
+    "best_pdf": "https://durham-repository.worktribe.com/preview/1629689/399.pdf",
+    "backup_pdf": "https://durham-repository.worktribe.com/output/1629671",
+    "raw": {
+      "id": "https://openalex.org/W2020798572",
+      "display_name": "COUNSEL, PUBLIC DEBATE, AND QUEENSHIP: JOHN STUBBS'S <i>THE DISCOVERIE OF A GAPING GULF</i>, 1579",
+      "relevance_score": 6.321456,
+      "doi": "https://doi.org/10.1017/s0018246x01001947",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.5333901
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.42815027
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.36551464
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.33373308
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/s0018246x01001947",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S205284143",
+          "display_name": "The Historical Journal",
+          "issn_l": "0018-246X",
+          "issn": [
+            "0018-246X",
+            "1469-5103"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://durham-repository.worktribe.com/preview/1629689/399.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1017/s0018246x01001947",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S205284143",
+            "display_name": "The Historical Journal",
+            "issn_l": "0018-246X",
+            "issn": [
+              "0018-246X",
+              "1469-5103"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://durham-repository.worktribe.com/output/1629671",
+          "pdf_url": "https://durham-repository.worktribe.com/preview/1629689/399.pdf",
+          "source": null,
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://durham-repository.worktribe.com/file/1629671/1/Published%20Journal%20Article",
+          "pdf_url": "https://durham-repository.worktribe.com/file/1629671/1/Published%20Journal%20Article",
+          "source": null,
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://durham-repository.worktribe.com/output/1629671",
+        "pdf_url": "https://durham-repository.worktribe.com/preview/1629689/399.pdf",
+        "source": null,
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
     "id": "https://openalex.org/W2808306068",
     "title": "Gericault’s Fake-Gallop Horse Judged Speedy but Unrealistic",
-    "relevance_score": 6.3542223,
+    "relevance_score": 6.3124795,
     "doi": "https://doi.org/10.1163/22134913-20181094",
     "topic_ids": [
       "C2777096784",
@@ -234,7 +393,7 @@
     "raw": {
       "id": "https://openalex.org/W2808306068",
       "display_name": "Gericault’s Fake-Gallop Horse Judged Speedy but Unrealistic",
-      "relevance_score": 6.3542223,
+      "relevance_score": 6.3124795,
       "doi": "https://doi.org/10.1163/22134913-20181094",
       "concepts": [
         {
@@ -485,168 +644,9 @@
     }
   },
   {
-    "id": "https://openalex.org/W2020798572",
-    "title": "COUNSEL, PUBLIC DEBATE, AND QUEENSHIP: JOHN STUBBS'S <i>THE DISCOVERIE OF A GAPING GULF</i>, 1579",
-    "relevance_score": 6.321027,
-    "doi": "https://doi.org/10.1017/s0018246x01001947",
-    "topic_ids": [
-      "C199539241",
-      "C95457728",
-      "C17744445",
-      "C74916050"
-    ],
-    "best_pdf": "https://durham-repository.worktribe.com/preview/1629689/399.pdf",
-    "backup_pdf": "https://durham-repository.worktribe.com/output/1629671",
-    "raw": {
-      "id": "https://openalex.org/W2020798572",
-      "display_name": "COUNSEL, PUBLIC DEBATE, AND QUEENSHIP: JOHN STUBBS'S <i>THE DISCOVERIE OF A GAPING GULF</i>, 1579",
-      "relevance_score": 6.321027,
-      "doi": "https://doi.org/10.1017/s0018246x01001947",
-      "concepts": [
-        {
-          "id": "https://openalex.org/C199539241",
-          "wikidata": "https://www.wikidata.org/wiki/Q7748",
-          "display_name": "Law",
-          "level": 1,
-          "score": 0.5333901
-        },
-        {
-          "id": "https://openalex.org/C95457728",
-          "wikidata": "https://www.wikidata.org/wiki/Q309",
-          "display_name": "History",
-          "level": 0,
-          "score": 0.42815027
-        },
-        {
-          "id": "https://openalex.org/C17744445",
-          "wikidata": "https://www.wikidata.org/wiki/Q36442",
-          "display_name": "Political science",
-          "level": 0,
-          "score": 0.36551464
-        },
-        {
-          "id": "https://openalex.org/C74916050",
-          "wikidata": "https://www.wikidata.org/wiki/Q841090",
-          "display_name": "Classics",
-          "level": 1,
-          "score": 0.33373308
-        }
-      ],
-      "primary_location": {
-        "is_oa": false,
-        "landing_page_url": "https://doi.org/10.1017/s0018246x01001947",
-        "pdf_url": null,
-        "source": {
-          "id": "https://openalex.org/S205284143",
-          "display_name": "The Historical Journal",
-          "issn_l": "0018-246X",
-          "issn": [
-            "0018-246X",
-            "1469-5103"
-          ],
-          "is_oa": false,
-          "is_in_doaj": false,
-          "is_indexed_in_scopus": true,
-          "is_core": false,
-          "host_organization": "https://openalex.org/P4310311721",
-          "host_organization_name": "Cambridge University Press",
-          "host_organization_lineage": [
-            "https://openalex.org/P4310311721",
-            "https://openalex.org/P4310311702"
-          ],
-          "host_organization_lineage_names": [
-            "Cambridge University Press",
-            "University of Cambridge"
-          ],
-          "type": "journal"
-        },
-        "license": null,
-        "license_id": null,
-        "version": null,
-        "is_accepted": false,
-        "is_published": false
-      },
-      "open_access": {
-        "is_oa": true,
-        "oa_status": "green",
-        "oa_url": "https://durham-repository.worktribe.com/preview/1629689/399.pdf",
-        "any_repository_has_fulltext": true
-      },
-      "locations": [
-        {
-          "is_oa": false,
-          "landing_page_url": "https://doi.org/10.1017/s0018246x01001947",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S205284143",
-            "display_name": "The Historical Journal",
-            "issn_l": "0018-246X",
-            "issn": [
-              "0018-246X",
-              "1469-5103"
-            ],
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_indexed_in_scopus": true,
-            "is_core": false,
-            "host_organization": "https://openalex.org/P4310311721",
-            "host_organization_name": "Cambridge University Press",
-            "host_organization_lineage": [
-              "https://openalex.org/P4310311721",
-              "https://openalex.org/P4310311702"
-            ],
-            "host_organization_lineage_names": [
-              "Cambridge University Press",
-              "University of Cambridge"
-            ],
-            "type": "journal"
-          },
-          "license": null,
-          "license_id": null,
-          "version": null,
-          "is_accepted": false,
-          "is_published": false
-        },
-        {
-          "is_oa": true,
-          "landing_page_url": "https://durham-repository.worktribe.com/output/1629671",
-          "pdf_url": "https://durham-repository.worktribe.com/preview/1629689/399.pdf",
-          "source": null,
-          "license": "other-oa",
-          "license_id": "https://openalex.org/licenses/other-oa",
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true
-        },
-        {
-          "is_oa": true,
-          "landing_page_url": "https://durham-repository.worktribe.com/file/1629671/1/Published%20Journal%20Article",
-          "pdf_url": "https://durham-repository.worktribe.com/file/1629671/1/Published%20Journal%20Article",
-          "source": null,
-          "license": "other-oa",
-          "license_id": "https://openalex.org/licenses/other-oa",
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true
-        }
-      ],
-      "best_oa_location": {
-        "is_oa": true,
-        "landing_page_url": "https://durham-repository.worktribe.com/output/1629671",
-        "pdf_url": "https://durham-repository.worktribe.com/preview/1629689/399.pdf",
-        "source": null,
-        "license": "other-oa",
-        "license_id": "https://openalex.org/licenses/other-oa",
-        "version": "publishedVersion",
-        "is_accepted": true,
-        "is_published": true
-      }
-    }
-  },
-  {
     "id": "https://openalex.org/W2021094421",
     "title": "Family Galleries: Women and Art in the Seventeenth and Eighteenth Centuries",
-    "relevance_score": 3.938768,
+    "relevance_score": 3.9661121,
     "doi": "https://doi.org/10.1525/hlq.2008.71.2.323",
     "topic_ids": [
       "C142362112",
@@ -658,7 +658,7 @@
     "raw": {
       "id": "https://openalex.org/W2021094421",
       "display_name": "Family Galleries: Women and Art in the Seventeenth and Eighteenth Centuries",
-      "relevance_score": 3.938768,
+      "relevance_score": 3.9661121,
       "doi": "https://doi.org/10.1525/hlq.2008.71.2.323",
       "concepts": [
         {
@@ -822,7 +822,7 @@
   {
     "id": "https://openalex.org/W3115281151",
     "title": "Translating the “Dead Indian”: Kent Monkman, Miss Chief Eagle Testickle, and the Painting of the American West",
-    "relevance_score": 3.5467317,
+    "relevance_score": 3.581225,
     "doi": "https://doi.org/10.17742/image.vt.11.3.4",
     "topic_ids": [
       "C55958113",
@@ -847,7 +847,7 @@
     "raw": {
       "id": "https://openalex.org/W3115281151",
       "display_name": "Translating the “Dead Indian”: Kent Monkman, Miss Chief Eagle Testickle, and the Painting of the American West",
-      "relevance_score": 3.5467317,
+      "relevance_score": 3.581225,
       "doi": "https://doi.org/10.17742/image.vt.11.3.4",
       "concepts": [
         {
@@ -1123,7 +1123,7 @@
   {
     "id": "https://openalex.org/W2401519288",
     "title": "Making the Bed in Later Stuart and Georgian England",
-    "relevance_score": 3.1366847,
+    "relevance_score": 3.1578648,
     "doi": "https://doi.org/10.1057/9781137295217_3",
     "topic_ids": [
       "C2780964034",
@@ -1142,7 +1142,7 @@
     "raw": {
       "id": "https://openalex.org/W2401519288",
       "display_name": "Making the Bed in Later Stuart and Georgian England",
-      "relevance_score": 3.1366847,
+      "relevance_score": 3.1578648,
       "doi": "https://doi.org/10.1057/9781137295217_3",
       "concepts": [
         {
@@ -1349,7 +1349,7 @@
   {
     "id": "https://openalex.org/W4317425469",
     "title": "‘Normans’ vs. ‘Saxons’: Cinematic Imaginaries of Race and Nation in Angevin England, 1938–1964",
-    "relevance_score": 1.7591189,
+    "relevance_score": 1.7470471,
     "doi": "https://doi.org/10.16995/olh.9397",
     "topic_ids": [
       "C42133412",
@@ -1371,7 +1371,7 @@
     "raw": {
       "id": "https://openalex.org/W4317425469",
       "display_name": "‘Normans’ vs. ‘Saxons’: Cinematic Imaginaries of Race and Nation in Angevin England, 1938–1964",
-      "relevance_score": 1.7591189,
+      "relevance_score": 1.7470471,
       "doi": "https://doi.org/10.16995/olh.9397",
       "concepts": [
         {
@@ -1572,7 +1572,7 @@
   {
     "id": "https://openalex.org/W2608926771",
     "title": "The Floating Face: Garbo, Photography and Death Masks",
-    "relevance_score": 1.7081711,
+    "relevance_score": 1.7227399,
     "doi": "https://doi.org/10.1080/17540763.2016.1266691",
     "topic_ids": [
       "C119657128",
@@ -1602,7 +1602,7 @@
     "raw": {
       "id": "https://openalex.org/W2608926771",
       "display_name": "The Floating Face: Garbo, Photography and Death Masks",
-      "relevance_score": 1.7081711,
+      "relevance_score": 1.7227399,
       "doi": "https://doi.org/10.1080/17540763.2016.1266691",
       "concepts": [
         {
@@ -1888,7 +1888,7 @@
   {
     "id": "https://openalex.org/W2124297491",
     "title": "HISTORY AS FORM: ARCHITECTURE AND LIBERAL ANGLICAN THOUGHT IN THE WRITINGS OF E. A. FREEMAN",
-    "relevance_score": 1.5558132,
+    "relevance_score": 1.5729517,
     "doi": "https://doi.org/10.1017/s1479244311000205",
     "topic_ids": [
       "C123657996",
@@ -1915,7 +1915,7 @@
     "raw": {
       "id": "https://openalex.org/W2124297491",
       "display_name": "HISTORY AS FORM: ARCHITECTURE AND LIBERAL ANGLICAN THOUGHT IN THE WRITINGS OF E. A. FREEMAN",
-      "relevance_score": 1.5558132,
+      "relevance_score": 1.5729517,
       "doi": "https://doi.org/10.1017/s1479244311000205",
       "concepts": [
         {
@@ -2242,7 +2242,7 @@
   {
     "id": "https://openalex.org/W4306966659",
     "title": "The Lord Mayor's Show and the Politics of London's Clothworkers’ Company in the Mid-Seventeenth Century",
-    "relevance_score": 1.5369563,
+    "relevance_score": 1.5075973,
     "doi": "https://doi.org/10.1080/03058034.2022.2106679",
     "topic_ids": [
       "C2780668109",
@@ -2258,7 +2258,7 @@
     "raw": {
       "id": "https://openalex.org/W4306966659",
       "display_name": "The Lord Mayor's Show and the Politics of London's Clothworkers’ Company in the Mid-Seventeenth Century",
-      "relevance_score": 1.5369563,
+      "relevance_score": 1.5075973,
       "doi": "https://doi.org/10.1080/03058034.2022.2106679",
       "concepts": [
         {
@@ -2420,7 +2420,7 @@
   {
     "id": "https://openalex.org/W2887919011",
     "title": "Genealogy and Royal Representation: Edmund Brudenell’s Pedigree Roll for Elizabeth I (1558–60)",
-    "relevance_score": 1.3617069,
+    "relevance_score": 1.3586807,
     "doi": "https://doi.org/10.1353/hlq.2018.0011",
     "topic_ids": [
       "C2778044066",
@@ -2444,7 +2444,7 @@
     "raw": {
       "id": "https://openalex.org/W2887919011",
       "display_name": "Genealogy and Royal Representation: Edmund Brudenell’s Pedigree Roll for Elizabeth I (1558–60)",
-      "relevance_score": 1.3617069,
+      "relevance_score": 1.3586807,
       "doi": "https://doi.org/10.1353/hlq.2018.0011",
       "concepts": [
         {
@@ -2692,7 +2692,7 @@
   {
     "id": "https://openalex.org/W2024149543",
     "title": "Picturing Animals in Britain 1750–1850",
-    "relevance_score": 1.2917933,
+    "relevance_score": 1.2919197,
     "doi": "https://doi.org/10.1080/00033790902898383",
     "topic_ids": [
       "C142362112"
@@ -2702,7 +2702,7 @@
     "raw": {
       "id": "https://openalex.org/W2024149543",
       "display_name": "Picturing Animals in Britain 1750–1850",
-      "relevance_score": 1.2917933,
+      "relevance_score": 1.2919197,
       "doi": "https://doi.org/10.1080/00033790902898383",
       "concepts": [
         {
@@ -2848,7 +2848,7 @@
   {
     "id": "https://openalex.org/W4240877757",
     "title": "Beastly creations",
-    "relevance_score": 1.1670301,
+    "relevance_score": 1.1590741,
     "doi": "https://doi.org/10.1038/324310a0",
     "topic_ids": [
       "C2777591057",
@@ -2862,7 +2862,7 @@
     "raw": {
       "id": "https://openalex.org/W4240877757",
       "display_name": "Beastly creations",
-      "relevance_score": 1.1670301,
+      "relevance_score": 1.1590741,
       "doi": "https://doi.org/10.1038/324310a0",
       "concepts": [
         {
@@ -3016,7 +3016,7 @@
   {
     "id": "https://openalex.org/W4393037755",
     "title": "Uhuru Torch Images in Selected Sukuma Praise Songs",
-    "relevance_score": 1.0238991,
+    "relevance_score": 1.0195563,
     "doi": "https://doi.org/10.56279/ummaj.v10i2.6",
     "topic_ids": [
       "C2775868214",
@@ -3037,7 +3037,7 @@
     "raw": {
       "id": "https://openalex.org/W4393037755",
       "display_name": "Uhuru Torch Images in Selected Sukuma Praise Songs",
-      "relevance_score": 1.0238991,
+      "relevance_score": 1.0195563,
       "doi": "https://doi.org/10.56279/ummaj.v10i2.6",
       "concepts": [
         {

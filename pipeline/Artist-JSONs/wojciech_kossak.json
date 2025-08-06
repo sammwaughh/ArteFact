@@ -1,0 +1,1399 @@
+[
+  {
+    "id": "https://openalex.org/W2030480131",
+    "title": "An Application of Hedonic Regression to Evaluate Prices of Polish Paintings",
+    "relevance_score": 6.050207,
+    "doi": "https://doi.org/10.1007/s11294-014-9468-x",
+    "topic_ids": [
+      "C2778479189",
+      "C2994170677",
+      "C205783811",
+      "C162324750",
+      "C134221152",
+      "C182306322",
+      "C27548731",
+      "C106159729",
+      "C163239763",
+      "C204036174",
+      "C193156294",
+      "C152877465",
+      "C83546350",
+      "C2778300220",
+      "C149782125",
+      "C10138342",
+      "C139719470",
+      "C178131030",
+      "C175444787",
+      "C142362112",
+      "C52119013",
+      "C33923547",
+      "C105795698",
+      "C205649164",
+      "C17744445",
+      "C166957645",
+      "C94625758",
+      "C98965940",
+      "C199539241"
+    ],
+    "best_pdf": "https://link.springer.com/content/pdf/10.1007/s11294-014-9468-x.pdf",
+    "backup_pdf": "https://doi.org/10.1007/s11294-014-9468-x",
+    "raw": {
+      "id": "https://openalex.org/W2030480131",
+      "display_name": "An Application of Hedonic Regression to Evaluate Prices of Polish Paintings",
+      "relevance_score": 6.050207,
+      "doi": "https://doi.org/10.1007/s11294-014-9468-x",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778479189",
+          "wikidata": "https://www.wikidata.org/wiki/Q388056",
+          "display_name": "Hedonic regression",
+          "level": 2,
+          "score": 0.84083426
+        },
+        {
+          "id": "https://openalex.org/C2994170677",
+          "wikidata": "https://www.wikidata.org/wiki/Q1239532",
+          "display_name": "Art market",
+          "level": 2,
+          "score": 0.6832263
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.65685755
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.6162103
+        },
+        {
+          "id": "https://openalex.org/C134221152",
+          "wikidata": "https://www.wikidata.org/wiki/Q4736525",
+          "display_name": "Alternative investment",
+          "level": 3,
+          "score": 0.5379885
+        },
+        {
+          "id": "https://openalex.org/C182306322",
+          "wikidata": "https://www.wikidata.org/wiki/Q1779371",
+          "display_name": "Order (exchange)",
+          "level": 2,
+          "score": 0.53656924
+        },
+        {
+          "id": "https://openalex.org/C27548731",
+          "wikidata": "https://www.wikidata.org/wiki/Q88272",
+          "display_name": "Investment (military)",
+          "level": 3,
+          "score": 0.5052181
+        },
+        {
+          "id": "https://openalex.org/C106159729",
+          "wikidata": "https://www.wikidata.org/wiki/Q2294553",
+          "display_name": "Financial economics",
+          "level": 1,
+          "score": 0.50368446
+        },
+        {
+          "id": "https://openalex.org/C163239763",
+          "wikidata": "https://www.wikidata.org/wiki/Q5153637",
+          "display_name": "Common value auction",
+          "level": 2,
+          "score": 0.49925494
+        },
+        {
+          "id": "https://openalex.org/C204036174",
+          "wikidata": "https://www.wikidata.org/wiki/Q909380",
+          "display_name": "Stock (firearms)",
+          "level": 2,
+          "score": 0.4604417
+        },
+        {
+          "id": "https://openalex.org/C193156294",
+          "wikidata": "https://www.wikidata.org/wiki/Q1593293",
+          "display_name": "Hedonic index",
+          "level": 3,
+          "score": 0.45331007
+        },
+        {
+          "id": "https://openalex.org/C152877465",
+          "wikidata": "https://www.wikidata.org/wiki/Q208042",
+          "display_name": "Regression analysis",
+          "level": 2,
+          "score": 0.45295864
+        },
+        {
+          "id": "https://openalex.org/C83546350",
+          "wikidata": "https://www.wikidata.org/wiki/Q1139051",
+          "display_name": "Regression",
+          "level": 2,
+          "score": 0.4490892
+        },
+        {
+          "id": "https://openalex.org/C2778300220",
+          "wikidata": "https://www.wikidata.org/wiki/Q114380",
+          "display_name": "Financial crisis",
+          "level": 2,
+          "score": 0.43169087
+        },
+        {
+          "id": "https://openalex.org/C149782125",
+          "wikidata": "https://www.wikidata.org/wiki/Q160039",
+          "display_name": "Econometrics",
+          "level": 1,
+          "score": 0.38831174
+        },
+        {
+          "id": "https://openalex.org/C10138342",
+          "wikidata": "https://www.wikidata.org/wiki/Q43015",
+          "display_name": "Finance",
+          "level": 1,
+          "score": 0.2832783
+        },
+        {
+          "id": "https://openalex.org/C139719470",
+          "wikidata": "https://www.wikidata.org/wiki/Q39680",
+          "display_name": "Macroeconomics",
+          "level": 1,
+          "score": 0.2036002
+        },
+        {
+          "id": "https://openalex.org/C178131030",
+          "wikidata": "https://www.wikidata.org/wiki/Q631360",
+          "display_name": "Price index",
+          "level": 2,
+          "score": 0.19140899
+        },
+        {
+          "id": "https://openalex.org/C175444787",
+          "wikidata": "https://www.wikidata.org/wiki/Q39072",
+          "display_name": "Microeconomics",
+          "level": 1,
+          "score": 0.15778884
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.14113277
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.12944353
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.10043937
+        },
+        {
+          "id": "https://openalex.org/C105795698",
+          "wikidata": "https://www.wikidata.org/wiki/Q12483",
+          "display_name": "Statistics",
+          "level": 1,
+          "score": 0.09705314
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.08706576
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.06328124
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C98965940",
+          "wikidata": "https://www.wikidata.org/wiki/Q877496",
+          "display_name": "Transaction cost",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s11294-014-9468-x",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11294-014-9468-x.pdf",
+        "source": {
+          "id": "https://openalex.org/S25359449",
+          "display_name": "International Advances in Economic Research",
+          "issn_l": "1083-0898",
+          "issn": [
+            "1083-0898",
+            "1573-966X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://link.springer.com/content/pdf/10.1007/s11294-014-9468-x.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1007/s11294-014-9468-x",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11294-014-9468-x.pdf",
+          "source": {
+            "id": "https://openalex.org/S25359449",
+            "display_name": "International Advances in Economic Research",
+            "issn_l": "1083-0898",
+            "issn": [
+              "1083-0898",
+              "1573-966X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319965",
+              "https://openalex.org/P4310319900"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Nature",
+              "Springer Science+Business Media"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s11294-014-9468-x",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11294-014-9468-x.pdf",
+        "source": {
+          "id": "https://openalex.org/S25359449",
+          "display_name": "International Advances in Economic Research",
+          "issn_l": "1083-0898",
+          "issn": [
+            "1083-0898",
+            "1573-966X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W1999533636",
+    "title": "The Art Market in the European Union",
+    "relevance_score": 5.5385766,
+    "doi": "https://doi.org/10.1007/s11294-014-9503-y",
+    "topic_ids": [
+      "C2994170677",
+      "C2910001868",
+      "C2777382242",
+      "C162324750",
+      "C205783811",
+      "C27548731",
+      "C2985089533",
+      "C86637286",
+      "C178131030",
+      "C106159729",
+      "C149782125",
+      "C18547055",
+      "C142362112",
+      "C10138342",
+      "C52119013",
+      "C17744445",
+      "C94625758",
+      "C136764020",
+      "C41008148",
+      "C199539241"
+    ],
+    "best_pdf": "https://link.springer.com/content/pdf/10.1007/s11294-014-9503-y.pdf",
+    "backup_pdf": "https://doi.org/10.1007/s11294-014-9503-y",
+    "raw": {
+      "id": "https://openalex.org/W1999533636",
+      "display_name": "The Art Market in the European Union",
+      "relevance_score": 5.5385766,
+      "doi": "https://doi.org/10.1007/s11294-014-9503-y",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2994170677",
+          "wikidata": "https://www.wikidata.org/wiki/Q1239532",
+          "display_name": "Art market",
+          "level": 2,
+          "score": 0.71430683
+        },
+        {
+          "id": "https://openalex.org/C2910001868",
+          "wikidata": "https://www.wikidata.org/wiki/Q458",
+          "display_name": "European union",
+          "level": 2,
+          "score": 0.6793399
+        },
+        {
+          "id": "https://openalex.org/C2777382242",
+          "wikidata": "https://www.wikidata.org/wiki/Q6017816",
+          "display_name": "Index (typography)",
+          "level": 2,
+          "score": 0.6689396
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.52480686
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.50469005
+        },
+        {
+          "id": "https://openalex.org/C27548731",
+          "wikidata": "https://www.wikidata.org/wiki/Q88272",
+          "display_name": "Investment (military)",
+          "level": 3,
+          "score": 0.5042461
+        },
+        {
+          "id": "https://openalex.org/C2985089533",
+          "wikidata": "https://www.wikidata.org/wiki/Q8932",
+          "display_name": "European market",
+          "level": 2,
+          "score": 0.49178746
+        },
+        {
+          "id": "https://openalex.org/C86637286",
+          "wikidata": "https://www.wikidata.org/wiki/Q7317264",
+          "display_name": "Rate of return",
+          "level": 2,
+          "score": 0.47940466
+        },
+        {
+          "id": "https://openalex.org/C178131030",
+          "wikidata": "https://www.wikidata.org/wiki/Q631360",
+          "display_name": "Price index",
+          "level": 2,
+          "score": 0.4568719
+        },
+        {
+          "id": "https://openalex.org/C106159729",
+          "wikidata": "https://www.wikidata.org/wiki/Q2294553",
+          "display_name": "Financial economics",
+          "level": 1,
+          "score": 0.44786802
+        },
+        {
+          "id": "https://openalex.org/C149782125",
+          "wikidata": "https://www.wikidata.org/wiki/Q160039",
+          "display_name": "Econometrics",
+          "level": 1,
+          "score": 0.225553
+        },
+        {
+          "id": "https://openalex.org/C18547055",
+          "wikidata": "https://www.wikidata.org/wiki/Q47417",
+          "display_name": "International economics",
+          "level": 1,
+          "score": 0.20842412
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.17488754
+        },
+        {
+          "id": "https://openalex.org/C10138342",
+          "wikidata": "https://www.wikidata.org/wiki/Q43015",
+          "display_name": "Finance",
+          "level": 1,
+          "score": 0.16352749
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.15869007
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.09553504
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s11294-014-9503-y",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11294-014-9503-y.pdf",
+        "source": {
+          "id": "https://openalex.org/S25359449",
+          "display_name": "International Advances in Economic Research",
+          "issn_l": "1083-0898",
+          "issn": [
+            "1083-0898",
+            "1573-966X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://link.springer.com/content/pdf/10.1007/s11294-014-9503-y.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1007/s11294-014-9503-y",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11294-014-9503-y.pdf",
+          "source": {
+            "id": "https://openalex.org/S25359449",
+            "display_name": "International Advances in Economic Research",
+            "issn_l": "1083-0898",
+            "issn": [
+              "1083-0898",
+              "1573-966X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319965",
+              "https://openalex.org/P4310319900"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Nature",
+              "Springer Science+Business Media"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s11294-014-9503-y",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11294-014-9503-y.pdf",
+        "source": {
+          "id": "https://openalex.org/S25359449",
+          "display_name": "International Advances in Economic Research",
+          "issn_l": "1083-0898",
+          "issn": [
+            "1083-0898",
+            "1573-966X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2312731311",
+    "title": "Constructing hedonic art price indexes for the Polish painting market using direct and indirect approaches",
+    "relevance_score": 3.730913,
+    "doi": "https://doi.org/10.5605/ieb.10.5",
+    "topic_ids": [
+      "C205783811",
+      "C2994170677",
+      "C162324750",
+      "C149782125",
+      "C142362112",
+      "C107038049",
+      "C52119013"
+    ],
+    "best_pdf": "https://dialnet.unirioja.es/descarga/articulo/5903906.pdf",
+    "backup_pdf": "https://doi.org/10.5605/ieb.10.5",
+    "raw": {
+      "id": "https://openalex.org/W2312731311",
+      "display_name": "Constructing hedonic art price indexes for the Polish painting market using direct and indirect approaches",
+      "relevance_score": 3.730913,
+      "doi": "https://doi.org/10.5605/ieb.10.5",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.615098
+        },
+        {
+          "id": "https://openalex.org/C2994170677",
+          "wikidata": "https://www.wikidata.org/wiki/Q1239532",
+          "display_name": "Art market",
+          "level": 2,
+          "score": 0.5685973
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.5320718
+        },
+        {
+          "id": "https://openalex.org/C149782125",
+          "wikidata": "https://www.wikidata.org/wiki/Q160039",
+          "display_name": "Econometrics",
+          "level": 1,
+          "score": 0.4870839
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.26521707
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.1569264
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.13375574
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5605/ieb.10.5",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2737226017",
+          "display_name": "Aestimatio The IEB International Journal of Finance",
+          "issn_l": "2173-0164",
+          "issn": [
+            "2173-0164",
+            "2173-1926"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321099",
+          "host_organization_name": "Instituto Estudios Bursátiles",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321099"
+          ],
+          "host_organization_lineage_names": [
+            "Instituto Estudios Bursátiles"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://doi.org/10.5605/ieb.10.5",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5605/ieb.10.5",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2737226017",
+            "display_name": "Aestimatio The IEB International Journal of Finance",
+            "issn_l": "2173-0164",
+            "issn": [
+              "2173-0164",
+              "2173-1926"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321099",
+            "host_organization_name": "Instituto Estudios Bursátiles",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321099"
+            ],
+            "host_organization_lineage_names": [
+              "Instituto Estudios Bursátiles"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://dialnet.unirioja.es/servlet/oaiart?codigo=5903906",
+          "pdf_url": "https://dialnet.unirioja.es/descarga/articulo/5903906.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401293",
+            "display_name": "Dialnet (Universidad de la Rioja)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I3032752892",
+            "host_organization_name": "Universidad Internacional de La Rioja",
+            "host_organization_lineage": [
+              "https://openalex.org/I3032752892"
+            ],
+            "host_organization_lineage_names": [
+              "Universidad Internacional de La Rioja"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5605/ieb.10.5",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2737226017",
+          "display_name": "Aestimatio The IEB International Journal of Finance",
+          "issn_l": "2173-0164",
+          "issn": [
+            "2173-0164",
+            "2173-1926"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321099",
+          "host_organization_name": "Instituto Estudios Bursátiles",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321099"
+          ],
+          "host_organization_lineage_names": [
+            "Instituto Estudios Bursátiles"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3111994962",
+    "title": "Applying the war historical re-enactment method in teaching historical painting",
+    "relevance_score": 1.5180194,
+    "doi": "https://doi.org/10.1051/e3sconf/202021018111",
+    "topic_ids": [
+      "C2778627824",
+      "C205783811",
+      "C21883318",
+      "C47177190",
+      "C100521375",
+      "C153349607",
+      "C70789860",
+      "C190177333",
+      "C81939152",
+      "C144024400",
+      "C19417346",
+      "C142362112",
+      "C95457728",
+      "C127413603",
+      "C187736073",
+      "C166957645",
+      "C201995342",
+      "C162324750"
+    ],
+    "best_pdf": "https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/70/e3sconf_itse2020_18111.pdf",
+    "backup_pdf": "https://doi.org/10.1051/e3sconf/202021018111",
+    "raw": {
+      "id": "https://openalex.org/W3111994962",
+      "display_name": "Applying the war historical re-enactment method in teaching historical painting",
+      "relevance_score": 1.5180194,
+      "doi": "https://doi.org/10.1051/e3sconf/202021018111",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778627824",
+          "wikidata": "https://www.wikidata.org/wiki/Q178561",
+          "display_name": "Battle",
+          "level": 2,
+          "score": 0.8269582
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.7280842
+        },
+        {
+          "id": "https://openalex.org/C21883318",
+          "wikidata": "https://www.wikidata.org/wiki/Q2297847",
+          "display_name": "Deliverable",
+          "level": 2,
+          "score": 0.6843581
+        },
+        {
+          "id": "https://openalex.org/C47177190",
+          "wikidata": "https://www.wikidata.org/wiki/Q207137",
+          "display_name": "Curriculum",
+          "level": 2,
+          "score": 0.59470093
+        },
+        {
+          "id": "https://openalex.org/C100521375",
+          "wikidata": "https://www.wikidata.org/wiki/Q2015382",
+          "display_name": "Competence (human resources)",
+          "level": 2,
+          "score": 0.5778739
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5707571
+        },
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.5677405
+        },
+        {
+          "id": "https://openalex.org/C190177333",
+          "wikidata": "https://www.wikidata.org/wiki/Q207241",
+          "display_name": "Applied arts",
+          "level": 3,
+          "score": 0.4970167
+        },
+        {
+          "id": "https://openalex.org/C81939152",
+          "wikidata": "https://www.wikidata.org/wiki/Q219625",
+          "display_name": "Fine art",
+          "level": 2,
+          "score": 0.41594476
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.38136312
+        },
+        {
+          "id": "https://openalex.org/C19417346",
+          "wikidata": "https://www.wikidata.org/wiki/Q7922",
+          "display_name": "Pedagogy",
+          "level": 1,
+          "score": 0.2900753
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.2551334
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.24552554
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.20202747
+        },
+        {
+          "id": "https://openalex.org/C187736073",
+          "wikidata": "https://www.wikidata.org/wiki/Q2920921",
+          "display_name": "Management",
+          "level": 1,
+          "score": 0.1919581
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.09946507
+        },
+        {
+          "id": "https://openalex.org/C201995342",
+          "wikidata": "https://www.wikidata.org/wiki/Q682496",
+          "display_name": "Systems engineering",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1051/e3sconf/202021018111",
+        "pdf_url": "https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/70/e3sconf_itse2020_18111.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210186093",
+          "display_name": "E3S Web of Conferences",
+          "issn_l": "2267-1242",
+          "issn": [
+            "2267-1242",
+            "2555-0403"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319748",
+          "host_organization_name": "EDP Sciences",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319748"
+          ],
+          "host_organization_lineage_names": [
+            "EDP Sciences"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/70/e3sconf_itse2020_18111.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1051/e3sconf/202021018111",
+          "pdf_url": "https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/70/e3sconf_itse2020_18111.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210186093",
+            "display_name": "E3S Web of Conferences",
+            "issn_l": "2267-1242",
+            "issn": [
+              "2267-1242",
+              "2555-0403"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310319748",
+            "host_organization_name": "EDP Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319748"
+            ],
+            "host_organization_lineage_names": [
+              "EDP Sciences"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.e3s-conferences.org/10.1051/e3sconf/202021018111/pdf",
+          "pdf_url": "https://www.e3s-conferences.org/10.1051/e3sconf/202021018111/pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400744",
+            "display_name": "Springer Link (Chiba Institute of Technology)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I8488066",
+            "host_organization_name": "Chiba Institute of Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/I8488066"
+            ],
+            "host_organization_lineage_names": [
+              "Chiba Institute of Technology"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1051/e3sconf/202021018111",
+        "pdf_url": "https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/70/e3sconf_itse2020_18111.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210186093",
+          "display_name": "E3S Web of Conferences",
+          "issn_l": "2267-1242",
+          "issn": [
+            "2267-1242",
+            "2555-0403"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319748",
+          "host_organization_name": "EDP Sciences",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319748"
+          ],
+          "host_organization_lineage_names": [
+            "EDP Sciences"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4311974706",
+    "title": "Senses in Visual Arts as a Prism for Philosophy and Through the Prism of Philosophy",
+    "relevance_score": 1.0632577,
+    "doi": "https://doi.org/10.18778/0208-6107.41.01",
+    "topic_ids": [
+      "C205783811",
+      "C107038049",
+      "C144218379",
+      "C2777855551",
+      "C142362112",
+      "C138885662",
+      "C517673595",
+      "C4320435",
+      "C153349607",
+      "C111472728",
+      "C41008148",
+      "C161191863"
+    ],
+    "best_pdf": "http://dspace.uni.lodz.pl:8080/xmlui/bitstream/11089/46838/1/11-32_Heusghem.pdf",
+    "backup_pdf": "https://czasopisma.uni.lodz.pl/philosophica/article/download/13812/15193",
+    "raw": {
+      "id": "https://openalex.org/W4311974706",
+      "display_name": "Senses in Visual Arts as a Prism for Philosophy and Through the Prism of Philosophy",
+      "relevance_score": 1.0632577,
+      "doi": "https://doi.org/10.18778/0208-6107.41.01",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.6995778
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.6523316
+        },
+        {
+          "id": "https://openalex.org/C144218379",
+          "wikidata": "https://www.wikidata.org/wiki/Q7081",
+          "display_name": "Materialism",
+          "level": 2,
+          "score": 0.6283274
+        },
+        {
+          "id": "https://openalex.org/C2777855551",
+          "wikidata": "https://www.wikidata.org/wiki/Q12310021",
+          "display_name": "Subject (documents)",
+          "level": 2,
+          "score": 0.5196668
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.48511636
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.4571997
+        },
+        {
+          "id": "https://openalex.org/C517673595",
+          "wikidata": "https://www.wikidata.org/wiki/Q33442",
+          "display_name": "Idealism",
+          "level": 2,
+          "score": 0.4523278
+        },
+        {
+          "id": "https://openalex.org/C4320435",
+          "wikidata": "https://www.wikidata.org/wiki/Q128115",
+          "display_name": "Abstract art",
+          "level": 3,
+          "score": 0.43318656
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.39490902
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.35847017
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.13674703
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.18778/0208-6107.41.01",
+        "pdf_url": "https://czasopisma.uni.lodz.pl/philosophica/article/download/13812/15193",
+        "source": {
+          "id": "https://openalex.org/S4210182969",
+          "display_name": "Acta Universitatis Lodziensis Folia Philosophica Ethica-Aesthetica-Practica",
+          "issn_l": "0208-6107",
+          "issn": [
+            "0208-6107",
+            "2353-9631"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320290",
+          "host_organization_name": "University of Lodz Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320290"
+          ],
+          "host_organization_lineage_names": [
+            "University of Lodz Press"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://czasopisma.uni.lodz.pl/philosophica/article/download/13812/15193",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.18778/0208-6107.41.01",
+          "pdf_url": "https://czasopisma.uni.lodz.pl/philosophica/article/download/13812/15193",
+          "source": {
+            "id": "https://openalex.org/S4210182969",
+            "display_name": "Acta Universitatis Lodziensis Folia Philosophica Ethica-Aesthetica-Practica",
+            "issn_l": "0208-6107",
+            "issn": [
+              "0208-6107",
+              "2353-9631"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320290",
+            "host_organization_name": "University of Lodz Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320290"
+            ],
+            "host_organization_lineage_names": [
+              "University of Lodz Press"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/11089/46838",
+          "pdf_url": "http://dspace.uni.lodz.pl:8080/xmlui/bitstream/11089/46838/1/11-32_Heusghem.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401347",
+            "display_name": "University of Lodz Repository (University of Łódź)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I34250744",
+            "host_organization_name": "University of Łódź",
+            "host_organization_lineage": [
+              "https://openalex.org/I34250744"
+            ],
+            "host_organization_lineage_names": [
+              "University of Łódź"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.18778/0208-6107.41.01",
+        "pdf_url": "https://czasopisma.uni.lodz.pl/philosophica/article/download/13812/15193",
+        "source": {
+          "id": "https://openalex.org/S4210182969",
+          "display_name": "Acta Universitatis Lodziensis Folia Philosophica Ethica-Aesthetica-Practica",
+          "issn_l": "0208-6107",
+          "issn": [
+            "0208-6107",
+            "2353-9631"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320290",
+          "host_organization_name": "University of Lodz Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320290"
+          ],
+          "host_organization_lineage_names": [
+            "University of Lodz Press"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

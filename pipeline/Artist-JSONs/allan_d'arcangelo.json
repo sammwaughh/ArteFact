@@ -1,0 +1,554 @@
+[
+  {
+    "id": "https://openalex.org/W4224230157",
+    "title": "Residual variance and asset pricing in the art market",
+    "relevance_score": 4.774041,
+    "doi": "https://doi.org/10.1007/s10824-022-09449-4",
+    "topic_ids": [
+      "C155512373",
+      "C196083921",
+      "C47664361",
+      "C36200757",
+      "C91602232",
+      "C162324750",
+      "C76178495",
+      "C149782125",
+      "C2780148112",
+      "C2777402642",
+      "C106159729",
+      "C142362112",
+      "C70789860",
+      "C33923547",
+      "C105795698",
+      "C153349607",
+      "C41008148",
+      "C138885662",
+      "C121955636",
+      "C111472728",
+      "C11413529",
+      "C38652104"
+    ],
+    "best_pdf": "https://link.springer.com/content/pdf/10.1007/s10824-022-09449-4.pdf",
+    "backup_pdf": "https://doi.org/10.1007/s10824-022-09449-4",
+    "raw": {
+      "id": "https://openalex.org/W4224230157",
+      "display_name": "Residual variance and asset pricing in the art market",
+      "relevance_score": 4.774041,
+      "doi": "https://doi.org/10.1007/s10824-022-09449-4",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C155512373",
+          "wikidata": "https://www.wikidata.org/wiki/Q287450",
+          "display_name": "Residual",
+          "level": 2,
+          "score": 0.70841134
+        },
+        {
+          "id": "https://openalex.org/C196083921",
+          "wikidata": "https://www.wikidata.org/wiki/Q7915758",
+          "display_name": "Variance (accounting)",
+          "level": 2,
+          "score": 0.66212237
+        },
+        {
+          "id": "https://openalex.org/C47664361",
+          "wikidata": "https://www.wikidata.org/wiki/Q7242636",
+          "display_name": "Price variance",
+          "level": 3,
+          "score": 0.62078166
+        },
+        {
+          "id": "https://openalex.org/C36200757",
+          "wikidata": "https://www.wikidata.org/wiki/Q1041282",
+          "display_name": "Cultural economics",
+          "level": 3,
+          "score": 0.5440097
+        },
+        {
+          "id": "https://openalex.org/C91602232",
+          "wikidata": "https://www.wikidata.org/wiki/Q756115",
+          "display_name": "Volatility (finance)",
+          "level": 2,
+          "score": 0.54088503
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.537131
+        },
+        {
+          "id": "https://openalex.org/C76178495",
+          "wikidata": "https://www.wikidata.org/wiki/Q4808784",
+          "display_name": "Asset (computer security)",
+          "level": 2,
+          "score": 0.48341286
+        },
+        {
+          "id": "https://openalex.org/C149782125",
+          "wikidata": "https://www.wikidata.org/wiki/Q160039",
+          "display_name": "Econometrics",
+          "level": 1,
+          "score": 0.48274463
+        },
+        {
+          "id": "https://openalex.org/C2780148112",
+          "wikidata": "https://www.wikidata.org/wiki/Q1432581",
+          "display_name": "Proxy (statistics)",
+          "level": 2,
+          "score": 0.46638393
+        },
+        {
+          "id": "https://openalex.org/C2777402642",
+          "wikidata": "https://www.wikidata.org/wiki/Q2557224",
+          "display_name": "Explanatory power",
+          "level": 2,
+          "score": 0.46415174
+        },
+        {
+          "id": "https://openalex.org/C106159729",
+          "wikidata": "https://www.wikidata.org/wiki/Q2294553",
+          "display_name": "Financial economics",
+          "level": 1,
+          "score": 0.3453006
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.28886992
+        },
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.2846193
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.19684607
+        },
+        {
+          "id": "https://openalex.org/C105795698",
+          "wikidata": "https://www.wikidata.org/wiki/Q12483",
+          "display_name": "Statistics",
+          "level": 1,
+          "score": 0.180596
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.15419957
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0989964
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.08259064
+        },
+        {
+          "id": "https://openalex.org/C121955636",
+          "wikidata": "https://www.wikidata.org/wiki/Q4116214",
+          "display_name": "Accounting",
+          "level": 1,
+          "score": 0.07908821
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C11413529",
+          "wikidata": "https://www.wikidata.org/wiki/Q8366",
+          "display_name": "Algorithm",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C38652104",
+          "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+          "display_name": "Computer security",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s10824-022-09449-4",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10824-022-09449-4.pdf",
+        "source": {
+          "id": "https://openalex.org/S31225034",
+          "display_name": "Journal of Cultural Economics",
+          "issn_l": "0885-2545",
+          "issn": [
+            "0885-2545",
+            "1573-6997"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://link.springer.com/content/pdf/10.1007/s10824-022-09449-4.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1007/s10824-022-09449-4",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10824-022-09449-4.pdf",
+          "source": {
+            "id": "https://openalex.org/S31225034",
+            "display_name": "Journal of Cultural Economics",
+            "issn_l": "0885-2545",
+            "issn": [
+              "0885-2545",
+              "1573-6997"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319965",
+              "https://openalex.org/P4310319900"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Nature",
+              "Springer Science+Business Media"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s10824-022-09449-4",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10824-022-09449-4.pdf",
+        "source": {
+          "id": "https://openalex.org/S31225034",
+          "display_name": "Journal of Cultural Economics",
+          "issn_l": "0885-2545",
+          "issn": [
+            "0885-2545",
+            "1573-6997"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4394923542",
+    "title": "ALTERNATIVE FORMS OF ARTISTIC RESEARCH IN THE ACADEMIC CONTEXT",
+    "relevance_score": 1.5330558,
+    "doi": "https://doi.org/10.35218/rae-2024-0026",
+    "topic_ids": [
+      "C2779343474",
+      "C2777855551",
+      "C70789860",
+      "C144024400",
+      "C206345919",
+      "C55587333",
+      "C153349607",
+      "C41008148",
+      "C107038049",
+      "C142362112",
+      "C127413603",
+      "C136764020",
+      "C95457728",
+      "C166957645",
+      "C31258907"
+    ],
+    "best_pdf": "https://doi.org/10.35218/rae-2024-0026",
+    "backup_pdf": "",
+    "raw": {
+      "id": "https://openalex.org/W4394923542",
+      "display_name": "ALTERNATIVE FORMS OF ARTISTIC RESEARCH IN THE ACADEMIC CONTEXT",
+      "relevance_score": 1.5330558,
+      "doi": "https://doi.org/10.35218/rae-2024-0026",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.690258
+        },
+        {
+          "id": "https://openalex.org/C2777855551",
+          "wikidata": "https://www.wikidata.org/wiki/Q12310021",
+          "display_name": "Subject (documents)",
+          "level": 2,
+          "score": 0.63872325
+        },
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.5969764
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.48788786
+        },
+        {
+          "id": "https://openalex.org/C206345919",
+          "wikidata": "https://www.wikidata.org/wiki/Q20380951",
+          "display_name": "Resource (disambiguation)",
+          "level": 2,
+          "score": 0.48482764
+        },
+        {
+          "id": "https://openalex.org/C55587333",
+          "wikidata": "https://www.wikidata.org/wiki/Q1133029",
+          "display_name": "Engineering ethics",
+          "level": 1,
+          "score": 0.43650076
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.38833803
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.36028552
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.32812798
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.19416657
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.16399568
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.12506372
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.11985695
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C31258907",
+          "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+          "display_name": "Computer network",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.35218/rae-2024-0026",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764510822",
+          "display_name": "Review of Artistic Education",
+          "issn_l": "2069-7554",
+          "issn": [
+            "2069-7554",
+            "2501-238X"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320322",
+          "host_organization_name": "De Gruyter Open",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320322",
+            "https://openalex.org/P4310313990"
+          ],
+          "host_organization_lineage_names": [
+            "De Gruyter Open",
+            "De Gruyter"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://doi.org/10.35218/rae-2024-0026",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.35218/rae-2024-0026",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764510822",
+            "display_name": "Review of Artistic Education",
+            "issn_l": "2069-7554",
+            "issn": [
+              "2069-7554",
+              "2501-238X"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320322",
+            "host_organization_name": "De Gruyter Open",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320322",
+              "https://openalex.org/P4310313990"
+            ],
+            "host_organization_lineage_names": [
+              "De Gruyter Open",
+              "De Gruyter"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.35218/rae-2024-0026",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764510822",
+          "display_name": "Review of Artistic Education",
+          "issn_l": "2069-7554",
+          "issn": [
+            "2069-7554",
+            "2501-238X"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320322",
+          "host_organization_name": "De Gruyter Open",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320322",
+            "https://openalex.org/P4310313990"
+          ],
+          "host_organization_lineage_names": [
+            "De Gruyter Open",
+            "De Gruyter"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

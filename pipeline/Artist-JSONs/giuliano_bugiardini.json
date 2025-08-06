@@ -1,0 +1,376 @@
+[
+  {
+    "id": "https://openalex.org/W2328701521",
+    "title": "On the Original Portrait of Michel Angelo, by Leo Leone, “Il Cavaliére Aretino.”",
+    "relevance_score": 1.3910112,
+    "doi": "https://doi.org/10.1080/00665983.1875.10851671",
+    "topic_ids": [
+      "C162462552",
+      "C3018567284",
+      "C142362112",
+      "C95457728",
+      "C52119013",
+      "C2549261"
+    ],
+    "best_pdf": "https://zenodo.org/records/1579888/files/article.pdf",
+    "backup_pdf": "https://zenodo.org/record/1579888",
+    "raw": {
+      "id": "https://openalex.org/W2328701521",
+      "display_name": "On the Original Portrait of Michel Angelo, by Leo Leone, “Il Cavaliére Aretino.”",
+      "relevance_score": 1.3910112,
+      "doi": "https://doi.org/10.1080/00665983.1875.10851671",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.8983962
+        },
+        {
+          "id": "https://openalex.org/C3018567284",
+          "wikidata": "https://www.wikidata.org/wiki/Q1044",
+          "display_name": "Sierra leone",
+          "level": 2,
+          "score": 0.5098983
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.50042796
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.33538443
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3222962
+        },
+        {
+          "id": "https://openalex.org/C2549261",
+          "wikidata": "https://www.wikidata.org/wiki/Q43455",
+          "display_name": "Ethnology",
+          "level": 1,
+          "score": 0.11331388
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/00665983.1875.10851671",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S127326301",
+          "display_name": "Archaeological Journal",
+          "issn_l": "0066-5983",
+          "issn": [
+            "0066-5983",
+            "2373-2288"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://zenodo.org/records/1579888/files/article.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/00665983.1875.10851671",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S127326301",
+            "display_name": "Archaeological Journal",
+            "issn_l": "0066-5983",
+            "issn": [
+              "0066-5983",
+              "2373-2288"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://zenodo.org/record/1579888",
+          "pdf_url": "https://zenodo.org/records/1579888/files/article.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [
+              "European Organization for Nuclear Research"
+            ],
+            "type": "repository"
+          },
+          "license": "public-domain",
+          "license_id": "https://openalex.org/licenses/public-domain",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://zenodo.org/record/1579888",
+        "pdf_url": "https://zenodo.org/records/1579888/files/article.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [
+            "European Organization for Nuclear Research"
+          ],
+          "type": "repository"
+        },
+        "license": "public-domain",
+        "license_id": "https://openalex.org/licenses/public-domain",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2621129495",
+    "title": "FROM THE BYZANTINE ICONS TO TODAY THE MADONNA AND CHILD MOTIF IN ART",
+    "relevance_score": 1.0844923,
+    "doi": "https://doi.org/10.7816/idil-06-32-12",
+    "topic_ids": [
+      "C32276052",
+      "C104562893",
+      "C142362112",
+      "C52119013",
+      "C153349607",
+      "C74916050",
+      "C107038049"
+    ],
+    "best_pdf": "https://doi.org/10.7816/idil-06-32-12",
+    "backup_pdf": "",
+    "raw": {
+      "id": "https://openalex.org/W2621129495",
+      "display_name": "FROM THE BYZANTINE ICONS TO TODAY THE MADONNA AND CHILD MOTIF IN ART",
+      "relevance_score": 1.0844923,
+      "doi": "https://doi.org/10.7816/idil-06-32-12",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C32276052",
+          "wikidata": "https://www.wikidata.org/wiki/Q908349",
+          "display_name": "Motif (music)",
+          "level": 2,
+          "score": 0.9233976
+        },
+        {
+          "id": "https://openalex.org/C104562893",
+          "wikidata": "https://www.wikidata.org/wiki/Q47591",
+          "display_name": "Byzantine architecture",
+          "level": 2,
+          "score": 0.7337569
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6404589
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.39326602
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.39245826
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.2261104
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.21559337
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7816/idil-06-32-12",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2737796858",
+          "display_name": "Idil Journal of Art and Language",
+          "issn_l": "2146-9903",
+          "issn": [
+            "2146-9903",
+            "2147-3056"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318397",
+          "host_organization_name": "Sada Institute of Art and Language Studies",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318397"
+          ],
+          "host_organization_lineage_names": [
+            "Sada Institute of Art and Language Studies"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://doi.org/10.7816/idil-06-32-12",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7816/idil-06-32-12",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2737796858",
+            "display_name": "Idil Journal of Art and Language",
+            "issn_l": "2146-9903",
+            "issn": [
+              "2146-9903",
+              "2147-3056"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310318397",
+            "host_organization_name": "Sada Institute of Art and Language Studies",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318397"
+            ],
+            "host_organization_lineage_names": [
+              "Sada Institute of Art and Language Studies"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7816/idil-06-32-12",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2737796858",
+          "display_name": "Idil Journal of Art and Language",
+          "issn_l": "2146-9903",
+          "issn": [
+            "2146-9903",
+            "2147-3056"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318397",
+          "host_organization_name": "Sada Institute of Art and Language Studies",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318397"
+          ],
+          "host_organization_lineage_names": [
+            "Sada Institute of Art and Language Studies"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

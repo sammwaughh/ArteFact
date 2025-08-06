@@ -1,0 +1,629 @@
+[
+  {
+    "id": "https://openalex.org/W2948914897",
+    "title": "Review of ‘Annie Swynnerton: Painting Light and Hope’, Manchester Art Gallery",
+    "relevance_score": 72.86844,
+    "doi": "https://doi.org/10.16995/ntn.851",
+    "topic_ids": [
+      "C205783811",
+      "C142362112",
+      "C52119013",
+      "C2984832160",
+      "C153349607",
+      "C85363599",
+      "C554144382",
+      "C37531588"
+    ],
+    "best_pdf": "https://doi.org/10.16995/ntn.851",
+    "backup_pdf": "https://doaj.org/article/abd435924d4247d6a5a9e1af4071102e",
+    "raw": {
+      "id": "https://openalex.org/W2948914897",
+      "display_name": "Review of ‘Annie Swynnerton: Painting Light and Hope’, Manchester Art Gallery",
+      "relevance_score": 72.86844,
+      "doi": "https://doi.org/10.16995/ntn.851",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.87706715
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.7101609
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.6381824
+        },
+        {
+          "id": "https://openalex.org/C2984832160",
+          "wikidata": "https://www.wikidata.org/wiki/Q1007870",
+          "display_name": "Art gallery",
+          "level": 3,
+          "score": 0.590005
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5705606
+        },
+        {
+          "id": "https://openalex.org/C85363599",
+          "wikidata": "https://www.wikidata.org/wiki/Q186030",
+          "display_name": "Contemporary art",
+          "level": 3,
+          "score": 0.42359984
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.34539092
+        },
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.12666285
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ntn.851",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210213405",
+          "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+          "issn_l": "1755-1560",
+          "issn": [
+            "1755-1560"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319895",
+          "host_organization_name": "Open Library of Humanities",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319895"
+          ],
+          "host_organization_lineage_names": [
+            "Open Library of Humanities"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://doi.org/10.16995/ntn.851",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.16995/ntn.851",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210213405",
+            "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+            "issn_l": "1755-1560",
+            "issn": [
+              "1755-1560"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310319895",
+            "host_organization_name": "Open Library of Humanities",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319895"
+            ],
+            "host_organization_lineage_names": [
+              "Open Library of Humanities"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/abd435924d4247d6a5a9e1af4071102e",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ntn.851",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210213405",
+          "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+          "issn_l": "1755-1560",
+          "issn": [
+            "1755-1560"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319895",
+          "host_organization_name": "Open Library of Humanities",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319895"
+          ],
+          "host_organization_lineage_names": [
+            "Open Library of Humanities"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3087909546",
+    "title": "Women Collectors and Cultural Philanthropy, <i>c</i>. 1850–1920",
+    "relevance_score": 5.865987,
+    "doi": "https://doi.org/10.16995/ntn.3347",
+    "topic_ids": [
+      "C2778061430",
+      "C2781115785",
+      "C8868529",
+      "C2781291010",
+      "C2991802969",
+      "C30772137",
+      "C60671577",
+      "C17744445",
+      "C107993555",
+      "C95457728",
+      "C144024400",
+      "C29595303",
+      "C36289849",
+      "C107038049",
+      "C2549261",
+      "C199539241",
+      "C142362112",
+      "C15744967",
+      "C169760540"
+    ],
+    "best_pdf": "https://19.bbk.ac.uk/article/id/3347/download/pdf/",
+    "backup_pdf": "https://doi.org/10.16995/ntn.3347",
+    "raw": {
+      "id": "https://openalex.org/W3087909546",
+      "display_name": "Women Collectors and Cultural Philanthropy, <i>c</i>. 1850–1920",
+      "relevance_score": 5.865987,
+      "doi": "https://doi.org/10.16995/ntn.3347",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778061430",
+          "wikidata": "https://www.wikidata.org/wiki/Q188823",
+          "display_name": "Scholarship",
+          "level": 2,
+          "score": 0.7698209
+        },
+        {
+          "id": "https://openalex.org/C2781115785",
+          "wikidata": "https://www.wikidata.org/wiki/Q502261",
+          "display_name": "Silence",
+          "level": 2,
+          "score": 0.70620465
+        },
+        {
+          "id": "https://openalex.org/C8868529",
+          "wikidata": "https://www.wikidata.org/wiki/Q124794",
+          "display_name": "Taste",
+          "level": 2,
+          "score": 0.6017373
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.6001696
+        },
+        {
+          "id": "https://openalex.org/C2991802969",
+          "wikidata": "https://www.wikidata.org/wiki/Q16877819",
+          "display_name": "National heritage",
+          "level": 2,
+          "score": 0.57896155
+        },
+        {
+          "id": "https://openalex.org/C30772137",
+          "wikidata": "https://www.wikidata.org/wiki/Q5164762",
+          "display_name": "Consumption (sociology)",
+          "level": 2,
+          "score": 0.5751847
+        },
+        {
+          "id": "https://openalex.org/C60671577",
+          "wikidata": "https://www.wikidata.org/wiki/Q210272",
+          "display_name": "Cultural heritage",
+          "level": 2,
+          "score": 0.45489353
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.44563204
+        },
+        {
+          "id": "https://openalex.org/C107993555",
+          "wikidata": "https://www.wikidata.org/wiki/Q1662673",
+          "display_name": "Gender studies",
+          "level": 1,
+          "score": 0.39910084
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.38377956
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.37987724
+        },
+        {
+          "id": "https://openalex.org/C29595303",
+          "wikidata": "https://www.wikidata.org/wiki/Q165650",
+          "display_name": "Media studies",
+          "level": 1,
+          "score": 0.324347
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.2948685
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.2426025
+        },
+        {
+          "id": "https://openalex.org/C2549261",
+          "wikidata": "https://www.wikidata.org/wiki/Q43455",
+          "display_name": "Ethnology",
+          "level": 1,
+          "score": 0.15675184
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.1561167
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.13144484
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.09564477
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ntn.3347",
+        "pdf_url": "https://19.bbk.ac.uk/article/id/3347/download/pdf/",
+        "source": {
+          "id": "https://openalex.org/S4210213405",
+          "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+          "issn_l": "1755-1560",
+          "issn": [
+            "1755-1560"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319895",
+          "host_organization_name": "Open Library of Humanities",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319895"
+          ],
+          "host_organization_lineage_names": [
+            "Open Library of Humanities"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://19.bbk.ac.uk/article/id/3347/download/pdf/",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.16995/ntn.3347",
+          "pdf_url": "https://19.bbk.ac.uk/article/id/3347/download/pdf/",
+          "source": {
+            "id": "https://openalex.org/S4210213405",
+            "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+            "issn_l": "1755-1560",
+            "issn": [
+              "1755-1560"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310319895",
+            "host_organization_name": "Open Library of Humanities",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319895"
+            ],
+            "host_organization_lineage_names": [
+              "Open Library of Humanities"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/f26ed39684d446818dd79dd2f711c935",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ntn.3347",
+        "pdf_url": "https://19.bbk.ac.uk/article/id/3347/download/pdf/",
+        "source": {
+          "id": "https://openalex.org/S4210213405",
+          "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+          "issn_l": "1755-1560",
+          "issn": [
+            "1755-1560"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319895",
+          "host_organization_name": "Open Library of Humanities",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319895"
+          ],
+          "host_organization_lineage_names": [
+            "Open Library of Humanities"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2896313680",
+    "title": "Women Artists in Paris, 1850–1900 by Laurence Madeline, with Bridget Alsdorf, Richard Kendall, Jane R. Becker, Vibeke Waallann Hansen, and Joëlle Bolloch",
+    "relevance_score": 1.4762129,
+    "doi": "https://doi.org/10.29411/ncaw.2018.17.2.12",
+    "topic_ids": [
+      "C142362112",
+      "C52119013"
+    ],
+    "best_pdf": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_876.pdf",
+    "backup_pdf": "https://doi.org/10.29411/ncaw.2018.17.2.12",
+    "raw": {
+      "id": "https://openalex.org/W2896313680",
+      "display_name": "Women Artists in Paris, 1850–1900 by Laurence Madeline, with Bridget Alsdorf, Richard Kendall, Jane R. Becker, Vibeke Waallann Hansen, and Joëlle Bolloch",
+      "relevance_score": 1.4762129,
+      "doi": "https://doi.org/10.29411/ncaw.2018.17.2.12",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5273018
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.45874152
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.29411/ncaw.2018.17.2.12",
+        "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_876.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210167961",
+          "display_name": "Nineteenth-Century Art Worldwide",
+          "issn_l": "1543-1002",
+          "issn": [
+            "1543-1002"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_876.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.29411/ncaw.2018.17.2.12",
+          "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_876.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210167961",
+            "display_name": "Nineteenth-Century Art Worldwide",
+            "issn_l": "1543-1002",
+            "issn": [
+              "1543-1002"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.29411/ncaw.2018.17.2.12",
+        "pdf_url": "http://19thc-artworldwide.org/pdf/python/article_PDFs/NCAW_876.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210167961",
+          "display_name": "Nineteenth-Century Art Worldwide",
+          "issn_l": "1543-1002",
+          "issn": [
+            "1543-1002"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

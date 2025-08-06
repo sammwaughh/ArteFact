@@ -1,0 +1,1866 @@
+[
+  {
+    "id": "https://openalex.org/W2306000458",
+    "title": "Presence Through Absence",
+    "relevance_score": 8.954655,
+    "doi": "https://doi.org/10.1525/rep.2015.130.1.1",
+    "topic_ids": [
+      "C2779271205",
+      "C2776359362",
+      "C205783811",
+      "C554936623",
+      "C26760741",
+      "C2780415144",
+      "C2779662365",
+      "C2777798969",
+      "C196083921",
+      "C41008148",
+      "C142362112",
+      "C107038049",
+      "C153349607",
+      "C95457728",
+      "C15744967",
+      "C41895202",
+      "C111472728",
+      "C52119013",
+      "C94625758",
+      "C138885662",
+      "C77805123",
+      "C121332964",
+      "C121955636",
+      "C166957645",
+      "C62520636",
+      "C17744445",
+      "C199539241",
+      "C144133560"
+    ],
+    "best_pdf": "https://boris.unibe.ch/98403/1/1.full.pdf",
+    "backup_pdf": "https://boris.unibe.ch/98403/",
+    "raw": {
+      "id": "https://openalex.org/W2306000458",
+      "display_name": "Presence Through Absence",
+      "relevance_score": 8.954655,
+      "doi": "https://doi.org/10.1525/rep.2015.130.1.1",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779271205",
+          "wikidata": "https://www.wikidata.org/wiki/Q1053973",
+          "display_name": "Temptation",
+          "level": 2,
+          "score": 0.79060733
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.70502675
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.5961705
+        },
+        {
+          "id": "https://openalex.org/C554936623",
+          "wikidata": "https://www.wikidata.org/wiki/Q199657",
+          "display_name": "Reading (process)",
+          "level": 2,
+          "score": 0.58021593
+        },
+        {
+          "id": "https://openalex.org/C26760741",
+          "wikidata": "https://www.wikidata.org/wiki/Q160402",
+          "display_name": "Perception",
+          "level": 2,
+          "score": 0.571481
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.5502557
+        },
+        {
+          "id": "https://openalex.org/C2779662365",
+          "wikidata": "https://www.wikidata.org/wiki/Q5416694",
+          "display_name": "Event (particle physics)",
+          "level": 2,
+          "score": 0.55014765
+        },
+        {
+          "id": "https://openalex.org/C2777798969",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Assemblage (archaeology)",
+          "level": 2,
+          "score": 0.53501916
+        },
+        {
+          "id": "https://openalex.org/C196083921",
+          "wikidata": "https://www.wikidata.org/wiki/Q7915758",
+          "display_name": "Variance (accounting)",
+          "level": 2,
+          "score": 0.44978982
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.4260044
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.34544832
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.33193725
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3295405
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.28663704
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.23960504
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.21038854
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.17932162
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.148823
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.11877012
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.107076645
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.08115131
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C121955636",
+          "wikidata": "https://www.wikidata.org/wiki/Q4116214",
+          "display_name": "Accounting",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C144133560",
+          "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+          "display_name": "Business",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1525/rep.2015.130.1.1",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S94236332",
+          "display_name": "Representations",
+          "issn_l": "0734-6018",
+          "issn": [
+            "0734-6018",
+            "1533-855X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315693",
+          "host_organization_name": "University of California Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315693"
+          ],
+          "host_organization_lineage_names": [
+            "University of California Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://boris.unibe.ch/98403/1/1.full.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1525/rep.2015.130.1.1",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S94236332",
+            "display_name": "Representations",
+            "issn_l": "0734-6018",
+            "issn": [
+              "0734-6018",
+              "1533-855X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310315693",
+            "host_organization_name": "University of California Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315693"
+            ],
+            "host_organization_lineage_names": [
+              "University of California Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://boris.unibe.ch/98403/",
+          "pdf_url": "https://boris.unibe.ch/98403/1/1.full.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401086",
+            "display_name": "Bern Open Repository and Information System (University of Bern)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I118564535",
+            "host_organization_name": "University of Bern",
+            "host_organization_lineage": [
+              "https://openalex.org/I118564535"
+            ],
+            "host_organization_lineage_names": [
+              "University of Bern"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://escholarship.org/uc/item/7559299j",
+          "pdf_url": "https://escholarship.org/content/qt7559299j/qt7559299j.pdf?t=nxyf9t",
+          "source": {
+            "id": "https://openalex.org/S4306400115",
+            "display_name": "eScholarship (California Digital Library)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2801248553",
+            "host_organization_name": "California Digital Library",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801248553"
+            ],
+            "host_organization_lineage_names": [
+              "California Digital Library"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://boris.unibe.ch/98403/",
+        "pdf_url": "https://boris.unibe.ch/98403/1/1.full.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401086",
+          "display_name": "Bern Open Repository and Information System (University of Bern)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I118564535",
+          "host_organization_name": "University of Bern",
+          "host_organization_lineage": [
+            "https://openalex.org/I118564535"
+          ],
+          "host_organization_lineage_names": [
+            "University of Bern"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2790512288",
+    "title": "Satirizing the Sacred: Humor in Saint Joseph's Veneration and Early Modern Art",
+    "relevance_score": 6.8916154,
+    "doi": "https://doi.org/10.5092/jhna.2018.10.1.3",
+    "topic_ids": [
+      "C2777783167",
+      "C2780415144",
+      "C142362112",
+      "C52119013",
+      "C107038049",
+      "C138885662",
+      "C27206212"
+    ],
+    "best_pdf": "https://jhna.org/wp-content/uploads/2018/02/JHNA_10.1_Williams.pdf",
+    "backup_pdf": "https://doi.org/10.5092/jhna.2018.10.1.3",
+    "raw": {
+      "id": "https://openalex.org/W2790512288",
+      "display_name": "Satirizing the Sacred: Humor in Saint Joseph's Veneration and Early Modern Art",
+      "relevance_score": 6.8916154,
+      "doi": "https://doi.org/10.5092/jhna.2018.10.1.3",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2777783167",
+          "wikidata": "https://www.wikidata.org/wiki/Q1579384",
+          "display_name": "Veneration",
+          "level": 2,
+          "score": 0.9917525
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.8134514
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.76703423
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.36938417
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.32228452
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.19184864
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.079755545
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2018.10.1.3",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2018/02/JHNA_10.1_Williams.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://jhna.org/wp-content/uploads/2018/02/JHNA_10.1_Williams.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5092/jhna.2018.10.1.3",
+          "pdf_url": "https://jhna.org/wp-content/uploads/2018/02/JHNA_10.1_Williams.pdf",
+          "source": {
+            "id": "https://openalex.org/S137142838",
+            "display_name": "Journal of Historians of Netherlandish Art",
+            "issn_l": "1949-9833",
+            "issn": [
+              "1949-9833",
+              "2473-1404"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2018.10.1.3",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2018/02/JHNA_10.1_Williams.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3138172356",
+    "title": "Early Franciscan painted panels as a response to the Italian Cathars",
+    "relevance_score": 6.479688,
+    "doi": "https://doi.org/10.32469/10355/79490",
+    "topic_ids": [
+      "C205783811",
+      "C2780415144",
+      "C2779343474",
+      "C142362112",
+      "C182306322",
+      "C2776445246",
+      "C52119013",
+      "C556447560",
+      "C124952713",
+      "C95457728",
+      "C153349607",
+      "C166957645",
+      "C10138342",
+      "C162324750"
+    ],
+    "best_pdf": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+    "backup_pdf": "https://doi.org/10.32469/10355/79490",
+    "raw": {
+      "id": "https://openalex.org/W3138172356",
+      "display_name": "Early Franciscan painted panels as a response to the Italian Cathars",
+      "relevance_score": 6.479688,
+      "doi": "https://doi.org/10.32469/10355/79490",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.7164275
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.7091716
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.6584428
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6114769
+        },
+        {
+          "id": "https://openalex.org/C182306322",
+          "wikidata": "https://www.wikidata.org/wiki/Q1779371",
+          "display_name": "Order (exchange)",
+          "level": 2,
+          "score": 0.6006386
+        },
+        {
+          "id": "https://openalex.org/C2776445246",
+          "wikidata": "https://www.wikidata.org/wiki/Q1792644",
+          "display_name": "Style (visual arts)",
+          "level": 2,
+          "score": 0.55309564
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.42814702
+        },
+        {
+          "id": "https://openalex.org/C556447560",
+          "wikidata": "https://www.wikidata.org/wiki/Q179807",
+          "display_name": "Asceticism",
+          "level": 2,
+          "score": 0.41620472
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.34904116
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.32985303
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.32640314
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.17320025
+        },
+        {
+          "id": "https://openalex.org/C10138342",
+          "wikidata": "https://www.wikidata.org/wiki/Q43015",
+          "display_name": "Finance",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.32469/10355/79490",
+        "pdf_url": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+        "source": null,
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.32469/10355/79490",
+          "pdf_url": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+          "source": null,
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.32469/10355/79490",
+        "pdf_url": "https://mospace.umsystem.edu/xmlui/bitstream/10355/79490/1/RupparRebecca.pdf",
+        "source": null,
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2782931418",
+    "title": "Naples in Flesh and Bone: Ribera's Drunken Silenus and Saint Jerome",
+    "relevance_score": 2.9290395,
+    "doi": "https://doi.org/10.5456/issn.2050-3679/2018w05",
+    "topic_ids": [
+      "C2776327621",
+      "C2780415144",
+      "C142362112",
+      "C86803240",
+      "C144027150",
+      "C52119013"
+    ],
+    "best_pdf": "https://durham-repository.worktribe.com/preview/1309697/28706.pdf",
+    "backup_pdf": "https://doi.org/10.5456/issn.2050-3679/2018w05",
+    "raw": {
+      "id": "https://openalex.org/W2782931418",
+      "display_name": "Naples in Flesh and Bone: Ribera's Drunken Silenus and Saint Jerome",
+      "relevance_score": 2.9290395,
+      "doi": "https://doi.org/10.5456/issn.2050-3679/2018w05",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776327621",
+          "wikidata": "https://www.wikidata.org/wiki/Q13119823",
+          "display_name": "Flesh",
+          "level": 2,
+          "score": 0.8684324
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.7616234
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.382066
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.2689467
+        },
+        {
+          "id": "https://openalex.org/C144027150",
+          "wikidata": "https://www.wikidata.org/wiki/Q48803",
+          "display_name": "Horticulture",
+          "level": 1,
+          "score": 0.15597227
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.1390827
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5456/issn.2050-3679/2018w05",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210218897",
+          "display_name": "Open Arts Journal",
+          "issn_l": "2050-3679",
+          "issn": [
+            "2050-3679"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311580",
+          "host_organization_name": "The Open University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311580"
+          ],
+          "host_organization_lineage_names": [
+            "The Open University"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://doi.org/10.5456/issn.2050-3679/2018w05",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5456/issn.2050-3679/2018w05",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210218897",
+            "display_name": "Open Arts Journal",
+            "issn_l": "2050-3679",
+            "issn": [
+              "2050-3679"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311580",
+            "host_organization_name": "The Open University",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311580"
+            ],
+            "host_organization_lineage_names": [
+              "The Open University"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://durham-repository.worktribe.com/file/1309680/1/Published%20Journal%20Article",
+          "pdf_url": "https://durham-repository.worktribe.com/file/1309680/1/Published%20Journal%20Article",
+          "source": null,
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://dro.dur.ac.uk/28706/1/28706.pdf",
+          "pdf_url": "https://durham-repository.worktribe.com/preview/1309697/28706.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400188",
+            "display_name": "Durham Research Online (Durham University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I190082696",
+            "host_organization_name": "Durham University",
+            "host_organization_lineage": [
+              "https://openalex.org/I190082696"
+            ],
+            "host_organization_lineage_names": [
+              "Durham University"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5456/issn.2050-3679/2018w05",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210218897",
+          "display_name": "Open Arts Journal",
+          "issn_l": "2050-3679",
+          "issn": [
+            "2050-3679"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311580",
+          "host_organization_name": "The Open University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311580"
+          ],
+          "host_organization_lineage_names": [
+            "The Open University"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2953990215",
+    "title": "Albrecht Dürer’s Large Passion: Art, History, and Theology",
+    "relevance_score": 2.647331,
+    "doi": "https://doi.org/10.31014/aior.1991.02.03.88",
+    "topic_ids": [
+      "C2780310893",
+      "C77658299",
+      "C501303744",
+      "C153606108",
+      "C142362112",
+      "C154775046",
+      "C2776211767",
+      "C523496792",
+      "C52119013",
+      "C124952713",
+      "C138885662",
+      "C27206212",
+      "C15744967",
+      "C41895202",
+      "C542102704"
+    ],
+    "best_pdf": "https://zenodo.org/records/3469642/files/1.pdf",
+    "backup_pdf": "https://zenodo.org/record/3469642",
+    "raw": {
+      "id": "https://openalex.org/W2953990215",
+      "display_name": "Albrecht Dürer’s Large Passion: Art, History, and Theology",
+      "relevance_score": 2.647331,
+      "doi": "https://doi.org/10.31014/aior.1991.02.03.88",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780310893",
+          "wikidata": "https://www.wikidata.org/wiki/Q335046",
+          "display_name": "Passion",
+          "level": 2,
+          "score": 0.96426725
+        },
+        {
+          "id": "https://openalex.org/C77658299",
+          "wikidata": "https://www.wikidata.org/wiki/Q173242",
+          "display_name": "Woodcut",
+          "level": 2,
+          "score": 0.9097483
+        },
+        {
+          "id": "https://openalex.org/C501303744",
+          "wikidata": "https://www.wikidata.org/wiki/Q208145",
+          "display_name": "Iconography",
+          "level": 2,
+          "score": 0.78202116
+        },
+        {
+          "id": "https://openalex.org/C153606108",
+          "wikidata": "https://www.wikidata.org/wiki/Q46158",
+          "display_name": "Humanism",
+          "level": 2,
+          "score": 0.6432334
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.58903897
+        },
+        {
+          "id": "https://openalex.org/C154775046",
+          "wikidata": "https://www.wikidata.org/wiki/Q188",
+          "display_name": "German",
+          "level": 2,
+          "score": 0.4693533
+        },
+        {
+          "id": "https://openalex.org/C2776211767",
+          "wikidata": "https://www.wikidata.org/wiki/Q117850",
+          "display_name": "Doctrine",
+          "level": 2,
+          "score": 0.46514216
+        },
+        {
+          "id": "https://openalex.org/C523496792",
+          "wikidata": "https://www.wikidata.org/wiki/Q66086",
+          "display_name": "Eucharist",
+          "level": 2,
+          "score": 0.4485777
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.43531725
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.36820138
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.3361708
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.27363676
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C542102704",
+          "wikidata": "https://www.wikidata.org/wiki/Q183257",
+          "display_name": "Psychotherapist",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.31014/aior.1991.02.03.88",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210234067",
+          "display_name": "Journal of Social and Political Sciences",
+          "issn_l": "2615-3718",
+          "issn": [
+            "2615-3718",
+            "2621-5675"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://zenodo.org/records/3469642/files/1.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.31014/aior.1991.02.03.88",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210234067",
+            "display_name": "Journal of Social and Political Sciences",
+            "issn_l": "2615-3718",
+            "issn": [
+              "2615-3718",
+              "2621-5675"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://zenodo.org/record/3469642",
+          "pdf_url": "https://zenodo.org/records/3469642/files/1.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [
+              "European Organization for Nuclear Research"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://figshare.com/articles/journal_contribution/Albrecht_D_rer_s_Large_Passion_Art_History_and_Theology/9929468",
+          "pdf_url": "https://figshare.com/articles/journal_contribution/Albrecht_D_rer_s_Large_Passion_Art_History_and_Theology/9929468/1/files/17868467.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402621",
+            "display_name": "INDIGO (University of Illinois at Chicago)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I39422238",
+            "host_organization_name": "University of Illinois Chicago",
+            "host_organization_lineage": [
+              "https://openalex.org/I39422238"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Chicago"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://zenodo.org/record/3469642",
+        "pdf_url": "https://zenodo.org/records/3469642/files/1.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [
+            "European Organization for Nuclear Research"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4392771861",
+    "title": "Senses of Space in the Early Modern World",
+    "relevance_score": 2.568459,
+    "doi": "https://doi.org/10.1017/9781009435437",
+    "topic_ids": [
+      "C2778572836",
+      "C41008148",
+      "C111919701"
+    ],
+    "best_pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BC3DC42753932160BA8E1B7AFF457A4C/9781009462624AR.pdf/senses-of-space-in-the-early-modern-world.pdf",
+    "backup_pdf": "https://doi.org/10.1017/9781009435437",
+    "raw": {
+      "id": "https://openalex.org/W4392771861",
+      "display_name": "Senses of Space in the Early Modern World",
+      "relevance_score": 2.568459,
+      "doi": "https://doi.org/10.1017/9781009435437",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778572836",
+          "wikidata": "https://www.wikidata.org/wiki/Q380933",
+          "display_name": "Space (punctuation)",
+          "level": 2,
+          "score": 0.63222647
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.33846888
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/9781009435437",
+        "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BC3DC42753932160BA8E1B7AFF457A4C/9781009462624AR.pdf/senses-of-space-in-the-early-modern-world.pdf",
+        "source": null,
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BC3DC42753932160BA8E1B7AFF457A4C/9781009462624AR.pdf/senses-of-space-in-the-early-modern-world.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1017/9781009435437",
+          "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BC3DC42753932160BA8E1B7AFF457A4C/9781009462624AR.pdf/senses-of-space-in-the-early-modern-world.pdf",
+          "source": null,
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/9781009435437",
+        "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BC3DC42753932160BA8E1B7AFF457A4C/9781009462624AR.pdf/senses-of-space-in-the-early-modern-world.pdf",
+        "source": null,
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4249003940",
+    "title": "Fifteenth and Sixteenth-Century Northern European Prints at the Museum of New Zealand Te Papa Tongarewa",
+    "relevance_score": 1.4462454,
+    "doi": "https://doi.org/10.26686/wgtn.16999384.v1",
+    "topic_ids": [
+      "C2776802314",
+      "C2781119825",
+      "C2779861158",
+      "C154775046",
+      "C142362112",
+      "C52119013",
+      "C153349607",
+      "C74916050",
+      "C95457728",
+      "C166957645",
+      "C199539241",
+      "C17744445"
+    ],
+    "best_pdf": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+    "backup_pdf": "https://doi.org/10.26686/wgtn.16999384.v1",
+    "raw": {
+      "id": "https://openalex.org/W4249003940",
+      "display_name": "Fifteenth and Sixteenth-Century Northern European Prints at the Museum of New Zealand Te Papa Tongarewa",
+      "relevance_score": 1.4462454,
+      "doi": "https://doi.org/10.26686/wgtn.16999384.v1",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776802314",
+          "wikidata": "https://www.wikidata.org/wiki/Q34147",
+          "display_name": "Flemish",
+          "level": 2,
+          "score": 0.8422836
+        },
+        {
+          "id": "https://openalex.org/C2781119825",
+          "wikidata": "https://www.wikidata.org/wiki/Q2163436",
+          "display_name": "Fifteenth",
+          "level": 2,
+          "score": 0.77615047
+        },
+        {
+          "id": "https://openalex.org/C2779861158",
+          "wikidata": "https://www.wikidata.org/wiki/Q1549811",
+          "display_name": "Generosity",
+          "level": 2,
+          "score": 0.6192073
+        },
+        {
+          "id": "https://openalex.org/C154775046",
+          "wikidata": "https://www.wikidata.org/wiki/Q188",
+          "display_name": "German",
+          "level": 2,
+          "score": 0.5389934
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5230176
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.47148773
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.4344756
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.32631862
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.3184628
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.2590471
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.17776251
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.1293303
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26686/wgtn.16999384.v1",
+        "pdf_url": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.26686/wgtn.16999384.v1",
+          "pdf_url": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://figshare.com/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384",
+          "pdf_url": "https://figshare.com/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400572",
+            "display_name": "OPAL (Open@LaTrobe) (La Trobe University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I196829312",
+            "host_organization_name": "La Trobe University",
+            "host_organization_lineage": [
+              "https://openalex.org/I196829312"
+            ],
+            "host_organization_lineage_names": [
+              "La Trobe University"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26686/wgtn.16999384.v1",
+        "pdf_url": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W1588376797",
+    "title": "Fifteenth and Sixteenth-Century Northern European Prints at the Museum of New Zealand Te Papa Tongarewa",
+    "relevance_score": 1.4276116,
+    "doi": "https://doi.org/10.26686/wgtn.16999384",
+    "topic_ids": [
+      "C2776802314",
+      "C2781119825",
+      "C2779861158",
+      "C154775046",
+      "C142362112",
+      "C52119013",
+      "C153349607",
+      "C74916050",
+      "C95457728",
+      "C166957645",
+      "C199539241",
+      "C17744445"
+    ],
+    "best_pdf": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+    "backup_pdf": "https://doi.org/10.26686/wgtn.16999384",
+    "raw": {
+      "id": "https://openalex.org/W1588376797",
+      "display_name": "Fifteenth and Sixteenth-Century Northern European Prints at the Museum of New Zealand Te Papa Tongarewa",
+      "relevance_score": 1.4276116,
+      "doi": "https://doi.org/10.26686/wgtn.16999384",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776802314",
+          "wikidata": "https://www.wikidata.org/wiki/Q34147",
+          "display_name": "Flemish",
+          "level": 2,
+          "score": 0.84742194
+        },
+        {
+          "id": "https://openalex.org/C2781119825",
+          "wikidata": "https://www.wikidata.org/wiki/Q2163436",
+          "display_name": "Fifteenth",
+          "level": 2,
+          "score": 0.77697325
+        },
+        {
+          "id": "https://openalex.org/C2779861158",
+          "wikidata": "https://www.wikidata.org/wiki/Q1549811",
+          "display_name": "Generosity",
+          "level": 2,
+          "score": 0.63100874
+        },
+        {
+          "id": "https://openalex.org/C154775046",
+          "wikidata": "https://www.wikidata.org/wiki/Q188",
+          "display_name": "German",
+          "level": 2,
+          "score": 0.5416674
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5346372
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.46764207
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.4290011
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.31710836
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.3112688
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.2777182
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.1810548
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.13445884
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26686/wgtn.16999384",
+        "pdf_url": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.26686/wgtn.16999384",
+          "pdf_url": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://figshare.com/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384",
+          "pdf_url": "https://figshare.com/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402649",
+            "display_name": "Open Access Victoria University of Wellington | Te Herenga Waka (Figshare)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210132348",
+            "host_organization_name": "Figshare (United Kingdom)",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210132348"
+            ],
+            "host_organization_lineage_names": [
+              "Figshare (United Kingdom)"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26686/wgtn.16999384",
+        "pdf_url": "https://openaccess.wgtn.ac.nz/articles/thesis/Fifteenth_and_Sixteenth-Century_Northern_European_Prints_at_the_Museum_of_New_Zealand_Te_Papa_Tongarewa/16999384/1/files/31448941.pdf",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2606586057",
+    "title": "A Controversial Painting by Bartolomeo Montagna: A New Hypothesis for a Notable Piece in the Early Production of the Head Painter of Vicenza.",
+    "relevance_score": 1.14244,
+    "doi": "https://doi.org/10.18688/aa166-5-40",
+    "topic_ids": [
+      "C205783811",
+      "C2780415144",
+      "C142362112",
+      "C52119013",
+      "C52069626",
+      "C153349607",
+      "C2777855551",
+      "C41008148",
+      "C161191863"
+    ],
+    "best_pdf": "http://actual-art.org/files/sb/06/Zuani.pdf",
+    "backup_pdf": "https://doi.org/10.18688/aa166-5-40",
+    "raw": {
+      "id": "https://openalex.org/W2606586057",
+      "display_name": "A Controversial Painting by Bartolomeo Montagna: A New Hypothesis for a Notable Piece in the Early Production of the Head Painter of Vicenza.",
+      "relevance_score": 1.14244,
+      "doi": "https://doi.org/10.18688/aa166-5-40",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.91355896
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.7689966
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.65538573
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.6231126
+        },
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.51217675
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.45844507
+        },
+        {
+          "id": "https://openalex.org/C2777855551",
+          "wikidata": "https://www.wikidata.org/wiki/Q12310021",
+          "display_name": "Subject (documents)",
+          "level": 2,
+          "score": 0.4292455
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.12100011
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.07378611
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.18688/aa166-5-40",
+        "pdf_url": "http://actual-art.org/files/sb/06/Zuani.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210182967",
+          "display_name": "Actual Problems of Theory and History of Art",
+          "issn_l": "2312-2129",
+          "issn": [
+            "2312-2129"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "http://actual-art.org/files/sb/06/Zuani.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.18688/aa166-5-40",
+          "pdf_url": "http://actual-art.org/files/sb/06/Zuani.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210182967",
+            "display_name": "Actual Problems of Theory and History of Art",
+            "issn_l": "2312-2129",
+            "issn": [
+              "2312-2129"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.18688/aa166-5-40",
+        "pdf_url": "http://actual-art.org/files/sb/06/Zuani.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210182967",
+          "display_name": "Actual Problems of Theory and History of Art",
+          "issn_l": "2312-2129",
+          "issn": [
+            "2312-2129"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

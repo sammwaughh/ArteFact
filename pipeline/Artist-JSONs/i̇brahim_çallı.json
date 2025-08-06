@@ -1,0 +1,571 @@
+[
+  {
+    "id": "https://openalex.org/W2935022984",
+    "title": "Periods in the Art History of Turkey",
+    "relevance_score": 15.729863,
+    "doi": "https://doi.org/10.1080/17561310.2018.1496604",
+    "topic_ids": [
+      "C2781121862",
+      "C120958224",
+      "C37531588",
+      "C2781291010",
+      "C29598333",
+      "C199033989",
+      "C2780386941",
+      "C85363599",
+      "C204457725",
+      "C95457728",
+      "C141145911",
+      "C206619068",
+      "C124952713",
+      "C153349607",
+      "C142362112",
+      "C107038049",
+      "C52119013",
+      "C195244886",
+      "C41895202",
+      "C554144382",
+      "C166957645",
+      "C138885662",
+      "C123657996"
+    ],
+    "best_pdf": "https://research.brighton.ac.uk/files/5046807/Ozpinar_Periods_CH_June.pdf",
+    "backup_pdf": "https://research.brighton.ac.uk/en/publications/99dcf932-1a0e-491a-9458-c45a436f743d",
+    "raw": {
+      "id": "https://openalex.org/W2935022984",
+      "display_name": "Periods in the Art History of Turkey",
+      "relevance_score": 15.729863,
+      "doi": "https://doi.org/10.1080/17561310.2018.1496604",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2781121862",
+          "wikidata": "https://www.wikidata.org/wiki/Q256",
+          "display_name": "Turkish",
+          "level": 2,
+          "score": 0.8400114
+        },
+        {
+          "id": "https://openalex.org/C120958224",
+          "wikidata": "https://www.wikidata.org/wiki/Q816829",
+          "display_name": "Periodization",
+          "level": 2,
+          "score": 0.82672065
+        },
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.7152393
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.68172014
+        },
+        {
+          "id": "https://openalex.org/C29598333",
+          "wikidata": "https://www.wikidata.org/wiki/Q50675",
+          "display_name": "Historiography",
+          "level": 2,
+          "score": 0.6593443
+        },
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.63180107
+        },
+        {
+          "id": "https://openalex.org/C2780386941",
+          "wikidata": "https://www.wikidata.org/wiki/Q1036511",
+          "display_name": "Vernacular",
+          "level": 2,
+          "score": 0.5965495
+        },
+        {
+          "id": "https://openalex.org/C85363599",
+          "wikidata": "https://www.wikidata.org/wiki/Q186030",
+          "display_name": "Contemporary art",
+          "level": 3,
+          "score": 0.56877416
+        },
+        {
+          "id": "https://openalex.org/C204457725",
+          "wikidata": "https://www.wikidata.org/wiki/Q50641",
+          "display_name": "History of art",
+          "level": 3,
+          "score": 0.47613958
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4587522
+        },
+        {
+          "id": "https://openalex.org/C141145911",
+          "wikidata": "https://www.wikidata.org/wiki/Q3870443",
+          "display_name": "Narrative art",
+          "level": 4,
+          "score": 0.4278045
+        },
+        {
+          "id": "https://openalex.org/C206619068",
+          "wikidata": "https://www.wikidata.org/wiki/Q6457238",
+          "display_name": "World history",
+          "level": 2,
+          "score": 0.41569826
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.3969543
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3551275
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.35084394
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.2732972
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.2352851
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.13121638
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.09290469
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.07736182
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.075145334
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C123657996",
+          "wikidata": "https://www.wikidata.org/wiki/Q12271",
+          "display_name": "Architecture",
+          "level": 2,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/17561310.2018.1496604",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S177376365",
+          "display_name": "Art In Translation",
+          "issn_l": "1756-1310",
+          "issn": [
+            "1756-1310",
+            "2380-5722"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://research.brighton.ac.uk/files/5046807/Ozpinar_Periods_CH_June.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/17561310.2018.1496604",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S177376365",
+            "display_name": "Art In Translation",
+            "issn_l": "1756-1310",
+            "issn": [
+              "1756-1310",
+              "2380-5722"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://research.brighton.ac.uk/en/publications/99dcf932-1a0e-491a-9458-c45a436f743d",
+          "pdf_url": "https://research.brighton.ac.uk/files/5046807/Ozpinar_Periods_CH_June.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401758",
+            "display_name": "University of Brighton Repository (University of Brighton)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I71637028",
+            "host_organization_name": "University of Brighton",
+            "host_organization_lineage": [
+              "https://openalex.org/I71637028"
+            ],
+            "host_organization_lineage_names": [
+              "University of Brighton"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://cris.brighton.ac.uk/ws/files/5046807/Ozpinar_Periods_CH_June.pdf",
+          "pdf_url": "https://cris.brighton.ac.uk/ws/files/5046807/Ozpinar_Periods_CH_June.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401758",
+            "display_name": "University of Brighton Repository (University of Brighton)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I71637028",
+            "host_organization_name": "University of Brighton",
+            "host_organization_lineage": [
+              "https://openalex.org/I71637028"
+            ],
+            "host_organization_lineage_names": [
+              "University of Brighton"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://research.brighton.ac.uk/en/publications/99dcf932-1a0e-491a-9458-c45a436f743d",
+        "pdf_url": "https://research.brighton.ac.uk/files/5046807/Ozpinar_Periods_CH_June.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401758",
+          "display_name": "University of Brighton Repository (University of Brighton)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I71637028",
+          "host_organization_name": "University of Brighton",
+          "host_organization_lineage": [
+            "https://openalex.org/I71637028"
+          ],
+          "host_organization_lineage_names": [
+            "University of Brighton"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2312797468",
+    "title": "Türk Resim Sanatında Resimlerarası Yöntemlere Örnekler- Examples of Interpictural Methods in Turkish Painting Art",
+    "relevance_score": 10.234975,
+    "doi": "https://doi.org/10.20875/sb.92461",
+    "topic_ids": [
+      "C2781121862",
+      "C142362112",
+      "C205783811",
+      "C15708023",
+      "C52119013",
+      "C195244886",
+      "C138885662",
+      "C95457728",
+      "C41895202"
+    ],
+    "best_pdf": "https://doi.org/10.20875/sb.92461",
+    "backup_pdf": "https://dergipark.org.tr/tr/download/article-file/181914",
+    "raw": {
+      "id": "https://openalex.org/W2312797468",
+      "display_name": "Türk Resim Sanatında Resimlerarası Yöntemlere Örnekler- Examples of Interpictural Methods in Turkish Painting Art",
+      "relevance_score": 10.234975,
+      "doi": "https://doi.org/10.20875/sb.92461",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2781121862",
+          "wikidata": "https://www.wikidata.org/wiki/Q256",
+          "display_name": "Turkish",
+          "level": 2,
+          "score": 0.75949955
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.7017131
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.67696595
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.39058048
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.367466
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.34708163
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.1966958
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.18746296
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.20875/sb.92461",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306519658",
+          "display_name": "Mehmet Akif Ersoy Üniversitesi Sosyal Bilimler Enstitüsü Dergisi",
+          "issn_l": "1309-1387",
+          "issn": [
+            "1309-1387"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://doi.org/10.20875/sb.92461",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.20875/sb.92461",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306519658",
+            "display_name": "Mehmet Akif Ersoy Üniversitesi Sosyal Bilimler Enstitüsü Dergisi",
+            "issn_l": "1309-1387",
+            "issn": [
+              "1309-1387"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://dergipark.org.tr/tr/pub/makusobed/issue/19446/206951",
+          "pdf_url": "https://dergipark.org.tr/tr/download/article-file/181914",
+          "source": {
+            "id": "https://openalex.org/S4306401840",
+            "display_name": "DergiPark (Istanbul University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67581229",
+            "host_organization_name": "Istanbul University",
+            "host_organization_lineage": [
+              "https://openalex.org/I67581229"
+            ],
+            "host_organization_lineage_names": [
+              "Istanbul University"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.20875/sb.92461",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306519658",
+          "display_name": "Mehmet Akif Ersoy Üniversitesi Sosyal Bilimler Enstitüsü Dergisi",
+          "issn_l": "1309-1387",
+          "issn": [
+            "1309-1387"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

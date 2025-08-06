@@ -1,0 +1,744 @@
+[
+  {
+    "id": "https://openalex.org/W3213976472",
+    "title": "In Search of Missing Collection: The Case of Artist Albert Rappaport",
+    "relevance_score": 4.27805,
+    "doi": "https://doi.org/10.2478/mik-2021-0003",
+    "topic_ids": [
+      "C2776265386",
+      "C37531588",
+      "C52119013",
+      "C162462552",
+      "C142362112",
+      "C27206212",
+      "C138885662"
+    ],
+    "best_pdf": "https://www.sciendo.com/pdf/10.2478/mik-2021-0003",
+    "backup_pdf": "https://doi.org/10.2478/mik-2021-0003",
+    "raw": {
+      "id": "https://openalex.org/W3213976472",
+      "display_name": "In Search of Missing Collection: The Case of Artist Albert Rappaport",
+      "relevance_score": 4.27805,
+      "doi": "https://doi.org/10.2478/mik-2021-0003",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776265386",
+          "wikidata": "https://www.wikidata.org/wiki/Q56546795",
+          "display_name": "Rappaport",
+          "level": 2,
+          "score": 0.97902316
+        },
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.94875145
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.64275926
+        },
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.60512334
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.4406037
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.0777491
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2478/mik-2021-0003",
+        "pdf_url": "https://www.sciendo.com/pdf/10.2478/mik-2021-0003",
+        "source": {
+          "id": "https://openalex.org/S4210187664",
+          "display_name": "Art History & Criticism",
+          "issn_l": "1822-4555",
+          "issn": [
+            "1822-4555",
+            "1822-4547"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310313990",
+          "host_organization_name": "De Gruyter",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310313990"
+          ],
+          "host_organization_lineage_names": [
+            "De Gruyter"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://www.sciendo.com/pdf/10.2478/mik-2021-0003",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2478/mik-2021-0003",
+          "pdf_url": "https://www.sciendo.com/pdf/10.2478/mik-2021-0003",
+          "source": {
+            "id": "https://openalex.org/S4210187664",
+            "display_name": "Art History & Criticism",
+            "issn_l": "1822-4555",
+            "issn": [
+              "1822-4555",
+              "1822-4547"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310313990",
+            "host_organization_name": "De Gruyter",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310313990"
+            ],
+            "host_organization_lineage_names": [
+              "De Gruyter"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/85b96da0612b44cba4286e95c56c2ddb",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2478/mik-2021-0003",
+        "pdf_url": "https://www.sciendo.com/pdf/10.2478/mik-2021-0003",
+        "source": {
+          "id": "https://openalex.org/S4210187664",
+          "display_name": "Art History & Criticism",
+          "issn_l": "1822-4555",
+          "issn": [
+            "1822-4555",
+            "1822-4547"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310313990",
+          "host_organization_name": "De Gruyter",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310313990"
+          ],
+          "host_organization_lineage_names": [
+            "De Gruyter"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4385898837",
+    "title": "Crossing the textual frame and its transmedial effects",
+    "relevance_score": 1.7201879,
+    "doi": "https://doi.org/10.26565/2218-2926-2022-24-01",
+    "topic_ids": [
+      "C126042441",
+      "C41895202",
+      "C139997677",
+      "C25343380",
+      "C41008148",
+      "C111472728",
+      "C188147891",
+      "C107038049",
+      "C142362112",
+      "C138885662",
+      "C15744967",
+      "C76155785",
+      "C77088390"
+    ],
+    "best_pdf": "https://periodicals.karazin.ua/cognitiondiscourse/article/download/20877/19591",
+    "backup_pdf": "https://doi.org/10.26565/2218-2926-2022-24-01",
+    "raw": {
+      "id": "https://openalex.org/W4385898837",
+      "display_name": "Crossing the textual frame and its transmedial effects",
+      "relevance_score": 1.7201879,
+      "doi": "https://doi.org/10.26565/2218-2926-2022-24-01",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C126042441",
+          "wikidata": "https://www.wikidata.org/wiki/Q1324888",
+          "display_name": "Frame (networking)",
+          "level": 2,
+          "score": 0.6716901
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.5219226
+        },
+        {
+          "id": "https://openalex.org/C139997677",
+          "wikidata": "https://www.wikidata.org/wiki/Q60195",
+          "display_name": "Semiotics",
+          "level": 2,
+          "score": 0.5033211
+        },
+        {
+          "id": "https://openalex.org/C25343380",
+          "wikidata": "https://www.wikidata.org/wiki/Q277521",
+          "display_name": "Relation (database)",
+          "level": 2,
+          "score": 0.50221276
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.4818843
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.4072954
+        },
+        {
+          "id": "https://openalex.org/C188147891",
+          "wikidata": "https://www.wikidata.org/wiki/Q147638",
+          "display_name": "Cognitive science",
+          "level": 1,
+          "score": 0.38431376
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.33094466
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.2565689
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.24363223
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.21800405
+        },
+        {
+          "id": "https://openalex.org/C76155785",
+          "wikidata": "https://www.wikidata.org/wiki/Q418",
+          "display_name": "Telecommunications",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C77088390",
+          "wikidata": "https://www.wikidata.org/wiki/Q8513",
+          "display_name": "Database",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26565/2218-2926-2022-24-01",
+        "pdf_url": "https://periodicals.karazin.ua/cognitiondiscourse/article/download/20877/19591",
+        "source": {
+          "id": "https://openalex.org/S4210239220",
+          "display_name": "Cognition communication discourse",
+          "issn_l": "2218-2926",
+          "issn": [
+            "2218-2926"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321661",
+          "host_organization_name": "National University of Kharkiv",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321661"
+          ],
+          "host_organization_lineage_names": [
+            "National University of Kharkiv"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://periodicals.karazin.ua/cognitiondiscourse/article/download/20877/19591",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.26565/2218-2926-2022-24-01",
+          "pdf_url": "https://periodicals.karazin.ua/cognitiondiscourse/article/download/20877/19591",
+          "source": {
+            "id": "https://openalex.org/S4210239220",
+            "display_name": "Cognition communication discourse",
+            "issn_l": "2218-2926",
+            "issn": [
+              "2218-2926"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321661",
+            "host_organization_name": "National University of Kharkiv",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321661"
+            ],
+            "host_organization_lineage_names": [
+              "National University of Kharkiv"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26565/2218-2926-2022-24-01",
+        "pdf_url": "https://periodicals.karazin.ua/cognitiondiscourse/article/download/20877/19591",
+        "source": {
+          "id": "https://openalex.org/S4210239220",
+          "display_name": "Cognition communication discourse",
+          "issn_l": "2218-2926",
+          "issn": [
+            "2218-2926"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321661",
+          "host_organization_name": "National University of Kharkiv",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321661"
+          ],
+          "host_organization_lineage_names": [
+            "National University of Kharkiv"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2885693937",
+    "title": "Art as document: on conceptual art and documentation",
+    "relevance_score": 1.3776821,
+    "doi": "https://doi.org/10.1108/jd-01-2018-0010",
+    "topic_ids": [
+      "C37531588",
+      "C56666940",
+      "C2776950860",
+      "C12713177",
+      "C83392588",
+      "C2776291640",
+      "C8795937",
+      "C85363599",
+      "C144024400",
+      "C41008148",
+      "C153349607",
+      "C95457728",
+      "C111472728",
+      "C142362112",
+      "C52119013",
+      "C36289849",
+      "C190248442",
+      "C138885662",
+      "C554144382",
+      "C119857082",
+      "C199360897"
+    ],
+    "best_pdf": "http://minerva-access.unimelb.edu.au/bitstreams/b0db170a-a5f3-56a5-9c25-72a267658f20/download",
+    "backup_pdf": "https://hdl.handle.net/11343/216281",
+    "raw": {
+      "id": "https://openalex.org/W2885693937",
+      "display_name": "Art as document: on conceptual art and documentation",
+      "relevance_score": 1.3776821,
+      "doi": "https://doi.org/10.1108/jd-01-2018-0010",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.88996327
+        },
+        {
+          "id": "https://openalex.org/C56666940",
+          "wikidata": "https://www.wikidata.org/wiki/Q788790",
+          "display_name": "Documentation",
+          "level": 2,
+          "score": 0.7601948
+        },
+        {
+          "id": "https://openalex.org/C2776950860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2914681",
+          "display_name": "Originality",
+          "level": 3,
+          "score": 0.70148027
+        },
+        {
+          "id": "https://openalex.org/C12713177",
+          "wikidata": "https://www.wikidata.org/wiki/Q1900281",
+          "display_name": "Perspective (graphical)",
+          "level": 2,
+          "score": 0.5423866
+        },
+        {
+          "id": "https://openalex.org/C83392588",
+          "wikidata": "https://www.wikidata.org/wiki/Q4797224",
+          "display_name": "Art methodology",
+          "level": 4,
+          "score": 0.4982698
+        },
+        {
+          "id": "https://openalex.org/C2776291640",
+          "wikidata": "https://www.wikidata.org/wiki/Q2912517",
+          "display_name": "Value (mathematics)",
+          "level": 2,
+          "score": 0.4428624
+        },
+        {
+          "id": "https://openalex.org/C8795937",
+          "wikidata": "https://www.wikidata.org/wiki/Q11862829",
+          "display_name": "Discipline",
+          "level": 2,
+          "score": 0.43047443
+        },
+        {
+          "id": "https://openalex.org/C85363599",
+          "wikidata": "https://www.wikidata.org/wiki/Q186030",
+          "display_name": "Contemporary art",
+          "level": 3,
+          "score": 0.42536163
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.3893003
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.36525568
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.34414184
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.33290422
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.320399
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.2514813
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.24203572
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.16976902
+        },
+        {
+          "id": "https://openalex.org/C190248442",
+          "wikidata": "https://www.wikidata.org/wiki/Q839486",
+          "display_name": "Qualitative research",
+          "level": 2,
+          "score": 0.12516627
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.102408946
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.082745284
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1108/jd-01-2018-0010",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S10082577",
+          "display_name": "Journal of Documentation",
+          "issn_l": "0022-0418",
+          "issn": [
+            "0022-0418",
+            "1758-7379"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319811",
+          "host_organization_name": "Emerald Publishing Limited",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319811"
+          ],
+          "host_organization_lineage_names": [
+            "Emerald Publishing Limited"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "http://minerva-access.unimelb.edu.au/bitstreams/b0db170a-a5f3-56a5-9c25-72a267658f20/download",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1108/jd-01-2018-0010",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S10082577",
+            "display_name": "Journal of Documentation",
+            "issn_l": "0022-0418",
+            "issn": [
+              "0022-0418",
+              "1758-7379"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319811",
+            "host_organization_name": "Emerald Publishing Limited",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319811"
+            ],
+            "host_organization_lineage_names": [
+              "Emerald Publishing Limited"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/11343/216281",
+          "pdf_url": "http://minerva-access.unimelb.edu.au/bitstreams/b0db170a-a5f3-56a5-9c25-72a267658f20/download",
+          "source": {
+            "id": "https://openalex.org/S4306402500",
+            "display_name": "Minerva Access (University of Melbourne)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I165779595",
+            "host_organization_name": "The University of Melbourne",
+            "host_organization_lineage": [
+              "https://openalex.org/I165779595"
+            ],
+            "host_organization_lineage_names": [
+              "The University of Melbourne"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/11343/216281",
+        "pdf_url": "http://minerva-access.unimelb.edu.au/bitstreams/b0db170a-a5f3-56a5-9c25-72a267658f20/download",
+        "source": {
+          "id": "https://openalex.org/S4306402500",
+          "display_name": "Minerva Access (University of Melbourne)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I165779595",
+          "host_organization_name": "The University of Melbourne",
+          "host_organization_lineage": [
+            "https://openalex.org/I165779595"
+          ],
+          "host_organization_lineage_names": [
+            "The University of Melbourne"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]

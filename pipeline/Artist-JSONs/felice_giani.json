@@ -1,0 +1,376 @@
+[
+  {
+    "id": "https://openalex.org/W3174237800",
+    "title": "Acquisitions Prints and Drawings c. 1800",
+    "relevance_score": 1.905816,
+    "doi": "https://doi.org/10.52476/trb.9771",
+    "topic_ids": [
+      "C153349607",
+      "C142362112"
+    ],
+    "best_pdf": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+    "backup_pdf": "https://doi.org/10.52476/trb.9771",
+    "raw": {
+      "id": "https://openalex.org/W3174237800",
+      "display_name": "Acquisitions Prints and Drawings c. 1800",
+      "relevance_score": 1.905816,
+      "doi": "https://doi.org/10.52476/trb.9771",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.49888945
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.3747545
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52476/trb.9771",
+        "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+        "source": {
+          "id": "https://openalex.org/S4210227217",
+          "display_name": "The Rijksmuseum Bulletin",
+          "issn_l": "1877-8127",
+          "issn": [
+            "1877-8127",
+            "2772-6126"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318572",
+          "host_organization_name": "Rijksmuseum",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318572"
+          ],
+          "host_organization_lineage_names": [
+            "Rijksmuseum"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.52476/trb.9771",
+          "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+          "source": {
+            "id": "https://openalex.org/S4210227217",
+            "display_name": "The Rijksmuseum Bulletin",
+            "issn_l": "1877-8127",
+            "issn": [
+              "1877-8127",
+              "2772-6126"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310318572",
+            "host_organization_name": "Rijksmuseum",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318572"
+            ],
+            "host_organization_lineage_names": [
+              "Rijksmuseum"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/ce3cdd470c1047febbdd39c78b26f9ae",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52476/trb.9771",
+        "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/9771/10268",
+        "source": {
+          "id": "https://openalex.org/S4210227217",
+          "display_name": "The Rijksmuseum Bulletin",
+          "issn_l": "1877-8127",
+          "issn": [
+            "1877-8127",
+            "2772-6126"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318572",
+          "host_organization_name": "Rijksmuseum",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318572"
+          ],
+          "host_organization_lineage_names": [
+            "Rijksmuseum"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4388867635",
+    "title": "Hypnerotomachia Poliphili",
+    "relevance_score": 1.2567977,
+    "doi": "https://doi.org/10.47749/t/unicamp.2020.1162074",
+    "topic_ids": [
+      "C2780573756",
+      "C192562157",
+      "C554936623",
+      "C199033989",
+      "C26517878",
+      "C2780876879",
+      "C33566652",
+      "C142362112",
+      "C144024400",
+      "C107038049",
+      "C95457728",
+      "C153349607",
+      "C111472728",
+      "C41895202",
+      "C124952713",
+      "C41008148",
+      "C138885662",
+      "C136764020",
+      "C38652104"
+    ],
+    "best_pdf": "https://doi.org/10.47749/t/unicamp.2020.1162074",
+    "backup_pdf": "",
+    "raw": {
+      "id": "https://openalex.org/W4388867635",
+      "display_name": "Hypnerotomachia Poliphili",
+      "relevance_score": 1.2567977,
+      "doi": "https://doi.org/10.47749/t/unicamp.2020.1162074",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780573756",
+          "wikidata": "https://www.wikidata.org/wiki/Q977433",
+          "display_name": "Wonder",
+          "level": 2,
+          "score": 0.88322294
+        },
+        {
+          "id": "https://openalex.org/C192562157",
+          "wikidata": "https://www.wikidata.org/wiki/Q316694",
+          "display_name": "Rhetorical question",
+          "level": 2,
+          "score": 0.6120674
+        },
+        {
+          "id": "https://openalex.org/C554936623",
+          "wikidata": "https://www.wikidata.org/wiki/Q199657",
+          "display_name": "Reading (process)",
+          "level": 2,
+          "score": 0.6014603
+        },
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.54562336
+        },
+        {
+          "id": "https://openalex.org/C26517878",
+          "wikidata": "https://www.wikidata.org/wiki/Q228039",
+          "display_name": "Key (lock)",
+          "level": 2,
+          "score": 0.45455563
+        },
+        {
+          "id": "https://openalex.org/C2780876879",
+          "wikidata": "https://www.wikidata.org/wiki/Q3054749",
+          "display_name": "Meaning (existential)",
+          "level": 2,
+          "score": 0.45320347
+        },
+        {
+          "id": "https://openalex.org/C33566652",
+          "wikidata": "https://www.wikidata.org/wiki/Q1065927",
+          "display_name": "Theme (computing)",
+          "level": 2,
+          "score": 0.41232425
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.37217224
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.34593233
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.3346107
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.33235717
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3312032
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.31356364
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.29181188
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.2863908
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.22935697
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.16852221
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.15407208
+        },
+        {
+          "id": "https://openalex.org/C38652104",
+          "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+          "display_name": "Computer security",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.47749/t/unicamp.2020.1162074",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://doi.org/10.47749/t/unicamp.2020.1162074",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.47749/t/unicamp.2020.1162074",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.47749/t/unicamp.2020.1162074",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

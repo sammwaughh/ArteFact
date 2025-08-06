@@ -1,0 +1,754 @@
+[
+  {
+    "id": "https://openalex.org/W2982173667",
+    "title": "Art history and the global: deconstructing the latest canonical narrative",
+    "relevance_score": 3.7792668,
+    "doi": "https://doi.org/10.1017/s1740022819000196",
+    "topic_ids": [
+      "C199033989",
+      "C2119116",
+      "C2779343474",
+      "C84976871",
+      "C206619068",
+      "C144024400",
+      "C12713177",
+      "C2778120072",
+      "C107038049",
+      "C111472728",
+      "C95457728",
+      "C36289849",
+      "C124952713",
+      "C17744445",
+      "C153349607",
+      "C142362112",
+      "C138885662",
+      "C199539241",
+      "C15744967",
+      "C77805123",
+      "C195244886",
+      "C166957645"
+    ],
+    "best_pdf": "https://doi.org/10.1017/s1740022819000196",
+    "backup_pdf": "https://access.archive-ouverte.unige.ch/access/metadata/b2180e22-845a-4288-bb39-d9e3517ba8b6/download",
+    "raw": {
+      "id": "https://openalex.org/W2982173667",
+      "display_name": "Art history and the global: deconstructing the latest canonical narrative",
+      "relevance_score": 3.7792668,
+      "doi": "https://doi.org/10.1017/s1740022819000196",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.69473386
+        },
+        {
+          "id": "https://openalex.org/C2119116",
+          "wikidata": "https://www.wikidata.org/wiki/Q7181",
+          "display_name": "Globalization",
+          "level": 2,
+          "score": 0.6207139
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.5752639
+        },
+        {
+          "id": "https://openalex.org/C84976871",
+          "wikidata": "https://www.wikidata.org/wiki/Q2015673",
+          "display_name": "Openness to experience",
+          "level": 2,
+          "score": 0.5510323
+        },
+        {
+          "id": "https://openalex.org/C206619068",
+          "wikidata": "https://www.wikidata.org/wiki/Q6457238",
+          "display_name": "World history",
+          "level": 2,
+          "score": 0.5145925
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.49964976
+        },
+        {
+          "id": "https://openalex.org/C12713177",
+          "wikidata": "https://www.wikidata.org/wiki/Q1900281",
+          "display_name": "Perspective (graphical)",
+          "level": 2,
+          "score": 0.48122215
+        },
+        {
+          "id": "https://openalex.org/C2778120072",
+          "wikidata": "https://www.wikidata.org/wiki/Q2858150",
+          "display_name": "Aside",
+          "level": 2,
+          "score": 0.45407757
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.4338182
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.42010698
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.40262148
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.38535592
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.222042
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.19318232
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.18979663
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.1605874
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.13536751
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.12204361
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.09687251
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.073990434
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/s1740022819000196",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S171627239",
+          "display_name": "Journal of Global History",
+          "issn_l": "1740-0228",
+          "issn": [
+            "1740-0228",
+            "1740-0236"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://doi.org/10.1017/s1740022819000196",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1017/s1740022819000196",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S171627239",
+            "display_name": "Journal of Global History",
+            "issn_l": "1740-0228",
+            "issn": [
+              "1740-0228",
+              "1740-0236"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://archive-ouverte.unige.ch/unige:127996",
+          "pdf_url": "https://access.archive-ouverte.unige.ch/access/metadata/b2180e22-845a-4288-bb39-d9e3517ba8b6/download",
+          "source": null,
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/s1740022819000196",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S171627239",
+          "display_name": "Journal of Global History",
+          "issn_l": "1740-0228",
+          "issn": [
+            "1740-0228",
+            "1740-0236"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3152998963",
+    "title": "Scholars and Literati at the University of Padua (1222–1800)",
+    "relevance_score": 2.3598678,
+    "doi": "https://doi.org/10.14428/rete.v3i0/padua",
+    "topic_ids": [
+      "C95457728",
+      "C74916050",
+      "C52119013",
+      "C195244886",
+      "C142362112",
+      "C144024400"
+    ],
+    "best_pdf": "https://ojs.uclouvain.be/index.php/RETE/article/download/61523/57683",
+    "backup_pdf": "https://doi.org/10.14428/rete.v3i0/padua",
+    "raw": {
+      "id": "https://openalex.org/W3152998963",
+      "display_name": "Scholars and Literati at the University of Padua (1222–1800)",
+      "relevance_score": 2.3598678,
+      "doi": "https://doi.org/10.14428/rete.v3i0/padua",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.38430542
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.37467986
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.34591356
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.34507382
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.3240643
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.32094166
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.14428/rete.v3i0/padua",
+        "pdf_url": "https://ojs.uclouvain.be/index.php/RETE/article/download/61523/57683",
+        "source": {
+          "id": "https://openalex.org/S4210234923",
+          "display_name": "Repertorium eruditorum totius Europae",
+          "issn_l": "2736-4119",
+          "issn": [
+            "2736-4119"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321106",
+          "host_organization_name": "Université catholique de Louvain",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321106"
+          ],
+          "host_organization_lineage_names": [
+            "Université catholique de Louvain"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://ojs.uclouvain.be/index.php/RETE/article/download/61523/57683",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.14428/rete.v3i0/padua",
+          "pdf_url": "https://ojs.uclouvain.be/index.php/RETE/article/download/61523/57683",
+          "source": {
+            "id": "https://openalex.org/S4210234923",
+            "display_name": "Repertorium eruditorum totius Europae",
+            "issn_l": "2736-4119",
+            "issn": [
+              "2736-4119"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321106",
+            "host_organization_name": "Université catholique de Louvain",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321106"
+            ],
+            "host_organization_lineage_names": [
+              "Université catholique de Louvain"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.14428/rete.v3i0/padua",
+        "pdf_url": "https://ojs.uclouvain.be/index.php/RETE/article/download/61523/57683",
+        "source": {
+          "id": "https://openalex.org/S4210234923",
+          "display_name": "Repertorium eruditorum totius Europae",
+          "issn_l": "2736-4119",
+          "issn": [
+            "2736-4119"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321106",
+          "host_organization_name": "Université catholique de Louvain",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321106"
+          ],
+          "host_organization_lineage_names": [
+            "Université catholique de Louvain"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2341742223",
+    "title": "The Canon of the Classics: Italian Writers and Romantic-Period Anthologies of Italian Literature in Britain",
+    "relevance_score": 1.1344736,
+    "doi": "https://doi.org/10.1163/9789401202312_003",
+    "topic_ids": [
+      "C2781291010",
+      "C164913051",
+      "C124952713",
+      "C518914266",
+      "C32685002",
+      "C95457728",
+      "C2781017355",
+      "C74916050",
+      "C2778880830",
+      "C142362112",
+      "C15744967",
+      "C199539241",
+      "C94625758",
+      "C17744445",
+      "C542102704",
+      "C107038049"
+    ],
+    "best_pdf": "https://air.unimi.it/bitstream/2434/7346/2/the%20canon%20of%20the%20classics.pdf",
+    "backup_pdf": "https://hdl.handle.net/2434/7346",
+    "raw": {
+      "id": "https://openalex.org/W2341742223",
+      "display_name": "The Canon of the Classics: Italian Writers and Romantic-Period Anthologies of Italian Literature in Britain",
+      "relevance_score": 1.1344736,
+      "doi": "https://doi.org/10.1163/9789401202312_003",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.6542003
+        },
+        {
+          "id": "https://openalex.org/C164913051",
+          "wikidata": "https://www.wikidata.org/wiki/Q482",
+          "display_name": "Poetry",
+          "level": 2,
+          "score": 0.63329446
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.59481585
+        },
+        {
+          "id": "https://openalex.org/C518914266",
+          "wikidata": "https://www.wikidata.org/wiki/Q1054574",
+          "display_name": "Romance",
+          "level": 2,
+          "score": 0.5797218
+        },
+        {
+          "id": "https://openalex.org/C32685002",
+          "wikidata": "https://www.wikidata.org/wiki/Q37068",
+          "display_name": "Romanticism",
+          "level": 2,
+          "score": 0.51642996
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.49383646
+        },
+        {
+          "id": "https://openalex.org/C2781017355",
+          "wikidata": "https://www.wikidata.org/wiki/Q5462027",
+          "display_name": "Flourishing",
+          "level": 2,
+          "score": 0.45937857
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.4482449
+        },
+        {
+          "id": "https://openalex.org/C2778880830",
+          "wikidata": "https://www.wikidata.org/wiki/Q16513600",
+          "display_name": "Homeland",
+          "level": 3,
+          "score": 0.4413579
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.43597257
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.08562598
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.06845009
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C542102704",
+          "wikidata": "https://www.wikidata.org/wiki/Q183257",
+          "display_name": "Psychotherapist",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1163/9789401202312_003",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306462964",
+          "display_name": "BRILL eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://air.unimi.it/bitstream/2434/7346/2/the%20canon%20of%20the%20classics.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1163/9789401202312_003",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306462964",
+            "display_name": "BRILL eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320561",
+            "host_organization_name": "Brill",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320561"
+            ],
+            "host_organization_lineage_names": [
+              "Brill"
+            ],
+            "type": "ebook platform"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/2434/7346",
+          "pdf_url": "https://air.unimi.it/bitstream/2434/7346/2/the%20canon%20of%20the%20classics.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400516",
+            "display_name": "Archivio Istituzionale della Ricerca (Universita Degli Studi Di Milano)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I189158943",
+            "host_organization_name": "University of Milan",
+            "host_organization_lineage": [
+              "https://openalex.org/I189158943"
+            ],
+            "host_organization_lineage_names": [
+              "University of Milan"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/2434/7346",
+        "pdf_url": "https://air.unimi.it/bitstream/2434/7346/2/the%20canon%20of%20the%20classics.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400516",
+          "display_name": "Archivio Istituzionale della Ricerca (Universita Degli Studi Di Milano)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I189158943",
+          "host_organization_name": "University of Milan",
+          "host_organization_lineage": [
+            "https://openalex.org/I189158943"
+          ],
+          "host_organization_lineage_names": [
+            "University of Milan"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]

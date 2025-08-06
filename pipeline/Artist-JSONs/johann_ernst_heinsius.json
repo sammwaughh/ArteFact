@@ -1,0 +1,691 @@
+[
+  {
+    "id": "https://openalex.org/W2736389750",
+    "title": "Ancient History and the Antiquarian",
+    "relevance_score": 9.212727,
+    "doi": "https://doi.org/10.2307/750215",
+    "topic_ids": [
+      "C52119013",
+      "C142362112",
+      "C2779744715",
+      "C95457728",
+      "C74916050",
+      "C138885662",
+      "C24667770"
+    ],
+    "best_pdf": "https://seer.ufrgs.br/index.php/anos90/article/download/43194/30796",
+    "backup_pdf": "https://seer.ufrgs.br/index.php/anos90/article/view/43194",
+    "raw": {
+      "id": "https://openalex.org/W2736389750",
+      "display_name": "Ancient History and the Antiquarian",
+      "relevance_score": 9.212727,
+      "doi": "https://doi.org/10.2307/750215",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.5873547
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.576226
+        },
+        {
+          "id": "https://openalex.org/C2779744715",
+          "wikidata": "https://www.wikidata.org/wiki/Q840665",
+          "display_name": "Idolatry",
+          "level": 2,
+          "score": 0.5661122
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.35090262
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.33780146
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.20088953
+        },
+        {
+          "id": "https://openalex.org/C24667770",
+          "wikidata": "https://www.wikidata.org/wiki/Q34187",
+          "display_name": "Religious studies",
+          "level": 1,
+          "score": 0.16916046
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.2307/750215",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S99631028",
+          "display_name": "Journal of the Warburg and Courtauld Institutes",
+          "issn_l": "0075-4390",
+          "issn": [
+            "0075-4390",
+            "2044-0014"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315672",
+          "host_organization_name": "University of Chicago Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315690",
+            "https://openalex.org/P4310315672"
+          ],
+          "host_organization_lineage_names": [
+            "University of Chicago",
+            "University of Chicago Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://seer.ufrgs.br/index.php/anos90/article/download/43194/30796",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.2307/750215",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S99631028",
+            "display_name": "Journal of the Warburg and Courtauld Institutes",
+            "issn_l": "0075-4390",
+            "issn": [
+              "0075-4390",
+              "2044-0014"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310315672",
+            "host_organization_name": "University of Chicago Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315690",
+              "https://openalex.org/P4310315672"
+            ],
+            "host_organization_lineage_names": [
+              "University of Chicago",
+              "University of Chicago Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://seer.ufrgs.br/index.php/anos90/article/view/43194",
+          "pdf_url": "https://seer.ufrgs.br/index.php/anos90/article/download/43194/30796",
+          "source": {
+            "id": "https://openalex.org/S4306402641",
+            "display_name": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4383465926",
+            "host_organization_name": "LA Referencia",
+            "host_organization_lineage": [
+              "https://openalex.org/I4383465926"
+            ],
+            "host_organization_lineage_names": [
+              "LA Referencia"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://seer.ufrgs.br/index.php/anos90/article/view/43194",
+        "pdf_url": "https://seer.ufrgs.br/index.php/anos90/article/download/43194/30796",
+        "source": {
+          "id": "https://openalex.org/S4306402641",
+          "display_name": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4383465926",
+          "host_organization_name": "LA Referencia",
+          "host_organization_lineage": [
+            "https://openalex.org/I4383465926"
+          ],
+          "host_organization_lineage_names": [
+            "LA Referencia"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4220959787",
+    "title": "Tracing the Sites of Learned Men: Places and Objects of Knowledge on the Dutch and Polish Grand Tour",
+    "relevance_score": 5.1612763,
+    "doi": "https://doi.org/10.1163/9789004507159_009",
+    "topic_ids": [
+      "C138673069",
+      "C205649164",
+      "C58640448",
+      "C95457728",
+      "C41008148",
+      "C111919701"
+    ],
+    "best_pdf": "https://brill.com/downloadpdf/book/edcoll/9789004507159/BP000017.pdf",
+    "backup_pdf": "https://doi.org/10.1163/9789004507159_009",
+    "raw": {
+      "id": "https://openalex.org/W4220959787",
+      "display_name": "Tracing the Sites of Learned Men: Places and Objects of Knowledge on the Dutch and Polish Grand Tour",
+      "relevance_score": 5.1612763,
+      "doi": "https://doi.org/10.1163/9789004507159_009",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C138673069",
+          "wikidata": "https://www.wikidata.org/wiki/Q322229",
+          "display_name": "Tracing",
+          "level": 2,
+          "score": 0.70584655
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.4069476
+        },
+        {
+          "id": "https://openalex.org/C58640448",
+          "wikidata": "https://www.wikidata.org/wiki/Q42515",
+          "display_name": "Cartography",
+          "level": 1,
+          "score": 0.39814293
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.38782302
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.1911569
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1163/9789004507159_009",
+        "pdf_url": "https://brill.com/downloadpdf/book/edcoll/9789004507159/BP000017.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306462964",
+          "display_name": "BRILL eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://brill.com/downloadpdf/book/edcoll/9789004507159/BP000017.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1163/9789004507159_009",
+          "pdf_url": "https://brill.com/downloadpdf/book/edcoll/9789004507159/BP000017.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306462964",
+            "display_name": "BRILL eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320561",
+            "host_organization_name": "Brill",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320561"
+            ],
+            "host_organization_lineage_names": [
+              "Brill"
+            ],
+            "type": "ebook platform"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://repository.ubn.ru.nl/handle/2066/296121",
+          "pdf_url": "https://repository.ubn.ru.nl/bitstream/handle/2066/296121/1/296121.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401067",
+            "display_name": "Radboud Repository (Radboud University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I145872427",
+            "host_organization_name": "Radboud University Nijmegen",
+            "host_organization_lineage": [
+              "https://openalex.org/I145872427"
+            ],
+            "host_organization_lineage_names": [
+              "Radboud University Nijmegen"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://repository.ubn.ru.nl//bitstream/handle/2066/296121/296121.pdf",
+          "pdf_url": "https://repository.ubn.ru.nl//bitstream/handle/2066/296121/296121.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401067",
+            "display_name": "Radboud Repository (Radboud University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I145872427",
+            "host_organization_name": "Radboud University Nijmegen",
+            "host_organization_lineage": [
+              "https://openalex.org/I145872427"
+            ],
+            "host_organization_lineage_names": [
+              "Radboud University Nijmegen"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1163/9789004507159_009",
+        "pdf_url": "https://brill.com/downloadpdf/book/edcoll/9789004507159/BP000017.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306462964",
+          "display_name": "BRILL eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W377308540",
+    "title": "Rembrandt and his Circle",
+    "relevance_score": 2.5421824,
+    "doi": "https://doi.org/10.5117/9789462984004",
+    "topic_ids": [
+      "C105162683",
+      "C45012715",
+      "C205783811",
+      "C153349607",
+      "C2777601897",
+      "C48798503",
+      "C142362112",
+      "C52119013",
+      "C48103436",
+      "C144024400",
+      "C41008148",
+      "C36289849",
+      "C71924100",
+      "C11413529",
+      "C126838900"
+    ],
+    "best_pdf": "https://dspace.library.uu.nl/bitstream/handle/1874/361260/rembrandt_and_his_circle.pdf?sequence=1&isAllowed=y",
+    "backup_pdf": "https://dspace.library.uu.nl/handle/1874/361260",
+    "raw": {
+      "id": "https://openalex.org/W377308540",
+      "display_name": "Rembrandt and his Circle",
+      "relevance_score": 2.5421824,
+      "doi": "https://doi.org/10.5117/9789462984004",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C105162683",
+          "wikidata": "https://www.wikidata.org/wiki/Q271588",
+          "display_name": "Printmaking",
+          "level": 3,
+          "score": 0.9391876
+        },
+        {
+          "id": "https://openalex.org/C45012715",
+          "wikidata": "https://www.wikidata.org/wiki/Q746628",
+          "display_name": "Studio",
+          "level": 2,
+          "score": 0.7690141
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.6762477
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.63246197
+        },
+        {
+          "id": "https://openalex.org/C2777601897",
+          "wikidata": "https://www.wikidata.org/wiki/Q3409113",
+          "display_name": "Presentation (obstetrics)",
+          "level": 2,
+          "score": 0.617471
+        },
+        {
+          "id": "https://openalex.org/C48798503",
+          "wikidata": "https://www.wikidata.org/wiki/Q877546",
+          "display_name": "Reputation",
+          "level": 2,
+          "score": 0.59893566
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5769738
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.535357
+        },
+        {
+          "id": "https://openalex.org/C48103436",
+          "wikidata": "https://www.wikidata.org/wiki/Q599031",
+          "display_name": "State (computer science)",
+          "level": 2,
+          "score": 0.4759093
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.20159626
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.07034698
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.062232792
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.040667385
+        },
+        {
+          "id": "https://openalex.org/C11413529",
+          "wikidata": "https://www.wikidata.org/wiki/Q8366",
+          "display_name": "Algorithm",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C126838900",
+          "wikidata": "https://www.wikidata.org/wiki/Q77604",
+          "display_name": "Radiology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.5117/9789462984004",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306462833",
+          "display_name": "Amsterdam University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318533",
+          "host_organization_name": "Amsterdam University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318533"
+          ],
+          "host_organization_lineage_names": [
+            "Amsterdam University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://dspace.library.uu.nl/bitstream/handle/1874/361260/rembrandt_and_his_circle.pdf?sequence=1&isAllowed=y",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.5117/9789462984004",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306462833",
+            "display_name": "Amsterdam University Press eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310318533",
+            "host_organization_name": "Amsterdam University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318533"
+            ],
+            "host_organization_lineage_names": [
+              "Amsterdam University Press"
+            ],
+            "type": "ebook platform"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://dspace.library.uu.nl/handle/1874/361260",
+          "pdf_url": "https://dspace.library.uu.nl/bitstream/handle/1874/361260/rembrandt_and_his_circle.pdf?sequence=1&isAllowed=y",
+          "source": {
+            "id": "https://openalex.org/S4306401843",
+            "display_name": "Data Archiving and Networked Services (DANS)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1322597698",
+            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/I1322597698"
+            ],
+            "host_organization_lineage_names": [
+              "Royal Netherlands Academy of Arts and Sciences"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/361260",
+        "pdf_url": "https://dspace.library.uu.nl/bitstream/handle/1874/361260/rembrandt_and_his_circle.pdf?sequence=1&isAllowed=y",
+        "source": {
+          "id": "https://openalex.org/S4306401843",
+          "display_name": "Data Archiving and Networked Services (DANS)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I1322597698",
+          "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+          "host_organization_lineage": [
+            "https://openalex.org/I1322597698"
+          ],
+          "host_organization_lineage_names": [
+            "Royal Netherlands Academy of Arts and Sciences"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]

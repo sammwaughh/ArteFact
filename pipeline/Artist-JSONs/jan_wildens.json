@@ -1,0 +1,766 @@
+[
+  {
+    "id": "https://openalex.org/W1557582702",
+    "title": "‘Une page est une image.’ Tekst als beeld in Arts et Métiers Graphiques",
+    "relevance_score": 1.9699119,
+    "doi": "https://doi.org/10.18352/ts.300",
+    "topic_ids": [
+      "C70789860",
+      "C142362112",
+      "C153349607"
+    ],
+    "best_pdf": "https://lirias.kuleuven.be/bitstream/123456789/458337/1/300-1163-1-PB.pdf",
+    "backup_pdf": "https://lirias.kuleuven.be/handle/123456789/458337",
+    "raw": {
+      "id": "https://openalex.org/W1557582702",
+      "display_name": "‘Une page est une image.’ Tekst als beeld in Arts et Métiers Graphiques",
+      "relevance_score": 1.9699119,
+      "doi": "https://doi.org/10.18352/ts.300",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.3658511
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.31199405
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.066761136
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.18352/ts.300",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210222068",
+          "display_name": "Tijdschrift voor Tijdschriftstudies",
+          "issn_l": "1386-5870",
+          "issn": [
+            "1386-5870",
+            "2214-8965"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318591",
+          "host_organization_name": "Utrecht University Library Open Access Journals (Publishing Services)",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318591"
+          ],
+          "host_organization_lineage_names": [
+            "Utrecht University Library Open Access Journals (Publishing Services)"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://lirias.kuleuven.be/bitstream/123456789/458337/1/300-1163-1-PB.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.18352/ts.300",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210222068",
+            "display_name": "Tijdschrift voor Tijdschriftstudies",
+            "issn_l": "1386-5870",
+            "issn": [
+              "1386-5870",
+              "2214-8965"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310318591",
+            "host_organization_name": "Utrecht University Library Open Access Journals (Publishing Services)",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318591"
+            ],
+            "host_organization_lineage_names": [
+              "Utrecht University Library Open Access Journals (Publishing Services)"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://lirias.kuleuven.be/handle/123456789/458337",
+          "pdf_url": "https://lirias.kuleuven.be/bitstream/123456789/458337/1/300-1163-1-PB.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401954",
+            "display_name": "Lirias (KU Leuven)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I99464096",
+            "host_organization_name": "KU Leuven",
+            "host_organization_lineage": [
+              "https://openalex.org/I99464096"
+            ],
+            "host_organization_lineage_names": [
+              "KU Leuven"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://lirias.kuleuven.be/handle/123456789/458337",
+        "pdf_url": "https://lirias.kuleuven.be/bitstream/123456789/458337/1/300-1163-1-PB.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401954",
+          "display_name": "Lirias (KU Leuven)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I99464096",
+          "host_organization_name": "KU Leuven",
+          "host_organization_lineage": [
+            "https://openalex.org/I99464096"
+          ],
+          "host_organization_lineage_names": [
+            "KU Leuven"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2115354010",
+    "title": "The gender of colors in Dutch art theory",
+    "relevance_score": 1.8483886,
+    "doi": "https://doi.org/10.1163/22145966-06201008",
+    "topic_ids": [
+      "C205783811",
+      "C2776445246",
+      "C142362112",
+      "C2779732396",
+      "C2779343474",
+      "C2780668109",
+      "C144024400",
+      "C52119013",
+      "C124952713",
+      "C153349607",
+      "C95457728",
+      "C94625758",
+      "C199539241",
+      "C166957645",
+      "C17744445"
+    ],
+    "best_pdf": "https://pure.uva.nl/ws/files/2049511/137268_gender_of_colors_FINAL.pdf",
+    "backup_pdf": "https://dare.uva.nl/personal/pure/en/publications/the-gender-of-colors-in-dutch-art-theory(9c4cd707-8af1-4f42-adc8-f737c4e9c8b3).html",
+    "raw": {
+      "id": "https://openalex.org/W2115354010",
+      "display_name": "The gender of colors in Dutch art theory",
+      "relevance_score": 1.8483886,
+      "doi": "https://doi.org/10.1163/22145966-06201008",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.60587806
+        },
+        {
+          "id": "https://openalex.org/C2776445246",
+          "wikidata": "https://www.wikidata.org/wiki/Q1792644",
+          "display_name": "Style (visual arts)",
+          "level": 2,
+          "score": 0.5436948
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5433619
+        },
+        {
+          "id": "https://openalex.org/C2779732396",
+          "wikidata": "https://www.wikidata.org/wiki/Q2207288",
+          "display_name": "Craft",
+          "level": 2,
+          "score": 0.5066079
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.46781135
+        },
+        {
+          "id": "https://openalex.org/C2780668109",
+          "wikidata": "https://www.wikidata.org/wiki/Q192852",
+          "display_name": "Opposition (politics)",
+          "level": 3,
+          "score": 0.42658824
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.3620885
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3234467
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.31849492
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.26005897
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.20440751
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.16271588
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.14668265
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1163/22145966-06201008",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210196869",
+          "display_name": "Netherlands Yearbook for History of Art / Nederlands Kunsthistorisch Jaarboek Online",
+          "issn_l": "0169-6726",
+          "issn": [
+            "0169-6726",
+            "2214-5966"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://pure.uva.nl/ws/files/2049511/137268_gender_of_colors_FINAL.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1163/22145966-06201008",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210196869",
+            "display_name": "Netherlands Yearbook for History of Art / Nederlands Kunsthistorisch Jaarboek Online",
+            "issn_l": "0169-6726",
+            "issn": [
+              "0169-6726",
+              "2214-5966"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320561",
+            "host_organization_name": "Brill",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320561"
+            ],
+            "host_organization_lineage_names": [
+              "Brill"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://dare.uva.nl/personal/pure/en/publications/the-gender-of-colors-in-dutch-art-theory(9c4cd707-8af1-4f42-adc8-f737c4e9c8b3).html",
+          "pdf_url": "https://pure.uva.nl/ws/files/2049511/137268_gender_of_colors_FINAL.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401843",
+            "display_name": "Data Archiving and Networked Services (DANS)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1322597698",
+            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/I1322597698"
+            ],
+            "host_organization_lineage_names": [
+              "Royal Netherlands Academy of Arts and Sciences"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://dare.uva.nl/personal/pure/en/publications/the-gender-of-colors-in-dutch-art-theory(9c4cd707-8af1-4f42-adc8-f737c4e9c8b3).html",
+        "pdf_url": "https://pure.uva.nl/ws/files/2049511/137268_gender_of_colors_FINAL.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401843",
+          "display_name": "Data Archiving and Networked Services (DANS)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I1322597698",
+          "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+          "host_organization_lineage": [
+            "https://openalex.org/I1322597698"
+          ],
+          "host_organization_lineage_names": [
+            "Royal Netherlands Academy of Arts and Sciences"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2316551888",
+    "title": "Stadsgroen onder spanning",
+    "relevance_score": 1.0202894,
+    "doi": "https://doi.org/10.5117/tvgesch2015.1.styn",
+    "topic_ids": [
+      "C199776023",
+      "C163258240",
+      "C182306322",
+      "C110269972",
+      "C2778572836",
+      "C17744445",
+      "C12713177",
+      "C3018445945",
+      "C2992807609",
+      "C144024400",
+      "C199539241",
+      "C94625758",
+      "C205649164",
+      "C144133560",
+      "C142362112",
+      "C91375879",
+      "C153349607",
+      "C41895202",
+      "C138885662",
+      "C121332964",
+      "C10138342",
+      "C62520636"
+    ],
+    "best_pdf": "https://repository.uantwerpen.be/docman/irua/b49f5d/132579.pdf",
+    "backup_pdf": "https://doi.org/10.5117/tvgesch2015.1.styn",
+    "raw": {
+      "id": "https://openalex.org/W2316551888",
+      "display_name": "Stadsgroen onder spanning",
+      "relevance_score": 1.0202894,
+      "doi": "https://doi.org/10.5117/tvgesch2015.1.styn",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C199776023",
+          "wikidata": "https://www.wikidata.org/wiki/Q202875",
+          "display_name": "Negotiation",
+          "level": 2,
+          "score": 0.70351183
+        },
+        {
+          "id": "https://openalex.org/C163258240",
+          "wikidata": "https://www.wikidata.org/wiki/Q25342",
+          "display_name": "Power (physics)",
+          "level": 2,
+          "score": 0.57638294
+        },
+        {
+          "id": "https://openalex.org/C182306322",
+          "wikidata": "https://www.wikidata.org/wiki/Q1779371",
+          "display_name": "Order (exchange)",
+          "level": 2,
+          "score": 0.5622171
+        },
+        {
+          "id": "https://openalex.org/C110269972",
+          "wikidata": "https://www.wikidata.org/wiki/Q184872",
+          "display_name": "Recreation",
+          "level": 2,
+          "score": 0.5256708
+        },
+        {
+          "id": "https://openalex.org/C2778572836",
+          "wikidata": "https://www.wikidata.org/wiki/Q380933",
+          "display_name": "Space (punctuation)",
+          "level": 2,
+          "score": 0.5181138
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.46273622
+        },
+        {
+          "id": "https://openalex.org/C12713177",
+          "wikidata": "https://www.wikidata.org/wiki/Q1900281",
+          "display_name": "Perspective (graphical)",
+          "level": 2,
+          "score": 0.43006742
+        },
+        {
+          "id": "https://openalex.org/C3018445945",
+          "wikidata": "https://www.wikidata.org/wiki/Q11771944",
+          "display_name": "Civil servants",
+          "level": 3,
+          "score": 0.42916185
+        },
+        {
+          "id": "https://openalex.org/C2992807609",
+          "wikidata": "https://www.wikidata.org/wiki/Q22746",
+          "display_name": "Public park",
+          "level": 2,
+          "score": 0.41575918
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.3519231
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.31454897
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.28109157
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.27181044
+        },
+        {
+          "id": "https://openalex.org/C144133560",
+          "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+          "display_name": "Business",
+          "level": 0,
+          "score": 0.15244913
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.10570118
+        },
+        {
+          "id": "https://openalex.org/C91375879",
+          "wikidata": "https://www.wikidata.org/wiki/Q15473274",
+          "display_name": "Environmental planning",
+          "level": 1,
+          "score": 0.09828922
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.07223332
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C10138342",
+          "wikidata": "https://www.wikidata.org/wiki/Q43015",
+          "display_name": "Finance",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.5117/tvgesch2015.1.styn",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S129808133",
+          "display_name": "Tijdschrift voor Geschiedenis",
+          "issn_l": "0040-7518",
+          "issn": [
+            "0040-7518",
+            "2352-1163"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318533",
+          "host_organization_name": "Amsterdam University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318533"
+          ],
+          "host_organization_lineage_names": [
+            "Amsterdam University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://repository.uantwerpen.be/docman/irua/b49f5d/132579.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.5117/tvgesch2015.1.styn",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S129808133",
+            "display_name": "Tijdschrift voor Geschiedenis",
+            "issn_l": "0040-7518",
+            "issn": [
+              "0040-7518",
+              "2352-1163"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310318533",
+            "host_organization_name": "Amsterdam University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318533"
+            ],
+            "host_organization_lineage_names": [
+              "Amsterdam University Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://repository.uantwerpen.be/docman/irua/b49f5d/132579.pdf",
+          "pdf_url": "https://repository.uantwerpen.be/docman/irua/b49f5d/132579.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401849",
+            "display_name": "Institutional Repository University of Antwerp (University of Antwerp)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I149213910",
+            "host_organization_name": "University of Antwerp",
+            "host_organization_lineage": [
+              "https://openalex.org/I149213910"
+            ],
+            "host_organization_lineage_names": [
+              "University of Antwerp"
+            ],
+            "type": "repository"
+          },
+          "license": "public-domain",
+          "license_id": "https://openalex.org/licenses/public-domain",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://repository.uantwerpen.be/docman/irua/b49f5d/132579.pdf",
+        "pdf_url": "https://repository.uantwerpen.be/docman/irua/b49f5d/132579.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401849",
+          "display_name": "Institutional Repository University of Antwerp (University of Antwerp)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I149213910",
+          "host_organization_name": "University of Antwerp",
+          "host_organization_lineage": [
+            "https://openalex.org/I149213910"
+          ],
+          "host_organization_lineage_names": [
+            "University of Antwerp"
+          ],
+          "type": "repository"
+        },
+        "license": "public-domain",
+        "license_id": "https://openalex.org/licenses/public-domain",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]

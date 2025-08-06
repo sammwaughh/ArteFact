@@ -1,0 +1,229 @@
+[
+  {
+    "id": "https://openalex.org/W4230675369",
+    "title": "Il complesso architettonico dei gesuati a Venezia",
+    "relevance_score": 1.3032875,
+    "doi": "https://doi.org/10.36253/978-88-5518-228-7.18",
+    "topic_ids": [
+      "C2780493273",
+      "C142362112",
+      "C15708023",
+      "C144024400",
+      "C153349607",
+      "C138885662",
+      "C27206212"
+    ],
+    "best_pdf": "https://fupress.com/redir.ashx?RetUrl=19339.pdf",
+    "backup_pdf": "https://doi.org/10.36253/978-88-5518-228-7.18",
+    "raw": {
+      "id": "https://openalex.org/W4230675369",
+      "display_name": "Il complesso architettonico dei gesuati a Venezia",
+      "relevance_score": 1.3032875,
+      "doi": "https://doi.org/10.36253/978-88-5518-228-7.18",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780493273",
+          "wikidata": "https://www.wikidata.org/wiki/Q11038979",
+          "display_name": "Cult",
+          "level": 2,
+          "score": 0.8425189
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.44383818
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.38555586
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.37689814
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.32486615
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.22057617
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.19416347
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-5518-228-7.18",
+        "pdf_url": "https://fupress.com/redir.ashx?RetUrl=19339.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463283",
+          "display_name": "Firenze University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://fupress.com/redir.ashx?RetUrl=19339.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.36253/978-88-5518-228-7.18",
+          "pdf_url": "https://fupress.com/redir.ashx?RetUrl=19339.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306463283",
+            "display_name": "Firenze University Press eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320196",
+            "host_organization_name": "Firenze University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320196"
+            ],
+            "host_organization_lineage_names": [
+              "Firenze University Press"
+            ],
+            "type": "ebook platform"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/11578/306200",
+          "pdf_url": "https://air.iuav.it/bitstream/11578/306200/1/Il_complesso_architettonico_dei_gesuati.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400547",
+            "display_name": "AirIuav (Università Iuav di Venezia)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I11986463",
+            "host_organization_name": "Università Iuav di Venezia",
+            "host_organization_lineage": [
+              "https://openalex.org/I11986463"
+            ],
+            "host_organization_lineage_names": [
+              "Università Iuav di Venezia"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://fupress.com/capitoli/il-complesso-architettonico-dei-gesuati-a-venezia/7221",
+          "pdf_url": "https://media.fupress.com/files/pdf/24/7221/19339",
+          "source": {
+            "id": "https://openalex.org/S4306400547",
+            "display_name": "AirIuav (Università Iuav di Venezia)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I11986463",
+            "host_organization_name": "Università Iuav di Venezia",
+            "host_organization_lineage": [
+              "https://openalex.org/I11986463"
+            ],
+            "host_organization_lineage_names": [
+              "Università Iuav di Venezia"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-5518-228-7.18",
+        "pdf_url": "https://fupress.com/redir.ashx?RetUrl=19339.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463283",
+          "display_name": "Firenze University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

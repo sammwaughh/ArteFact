@@ -1,0 +1,647 @@
+[
+  {
+    "id": "https://openalex.org/W2964436607",
+    "title": "Representation and Immersion. The Embodied Meaning of Literature",
+    "relevance_score": 2.0103643,
+    "doi": "https://doi.org/10.2478/gth-2019-0019",
+    "topic_ids": [
+      "C100609095",
+      "C554936623",
+      "C2776359362",
+      "C186720457",
+      "C2780876879",
+      "C15744967",
+      "C169900460",
+      "C188147891",
+      "C199068039",
+      "C96199812",
+      "C107038049",
+      "C142362112",
+      "C111472728",
+      "C41895202",
+      "C138885662",
+      "C33923547",
+      "C169760540",
+      "C94625758",
+      "C17744445",
+      "C202444582",
+      "C199539241",
+      "C542102704"
+    ],
+    "best_pdf": "https://content.sciendo.com/downloadpdf/journals/gth/41/2/article-p201.pdf",
+    "backup_pdf": "https://doi.org/10.2478/gth-2019-0019",
+    "raw": {
+      "id": "https://openalex.org/W2964436607",
+      "display_name": "Representation and Immersion. The Embodied Meaning of Literature",
+      "relevance_score": 2.0103643,
+      "doi": "https://doi.org/10.2478/gth-2019-0019",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C100609095",
+          "wikidata": "https://www.wikidata.org/wiki/Q1335050",
+          "display_name": "Embodied cognition",
+          "level": 2,
+          "score": 0.96646726
+        },
+        {
+          "id": "https://openalex.org/C554936623",
+          "wikidata": "https://www.wikidata.org/wiki/Q199657",
+          "display_name": "Reading (process)",
+          "level": 2,
+          "score": 0.60497725
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.56130636
+        },
+        {
+          "id": "https://openalex.org/C186720457",
+          "wikidata": "https://www.wikidata.org/wiki/Q7087",
+          "display_name": "Consciousness",
+          "level": 2,
+          "score": 0.52562755
+        },
+        {
+          "id": "https://openalex.org/C2780876879",
+          "wikidata": "https://www.wikidata.org/wiki/Q3054749",
+          "display_name": "Meaning (existential)",
+          "level": 2,
+          "score": 0.4970763
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.48086125
+        },
+        {
+          "id": "https://openalex.org/C169900460",
+          "wikidata": "https://www.wikidata.org/wiki/Q2200417",
+          "display_name": "Cognition",
+          "level": 2,
+          "score": 0.47786826
+        },
+        {
+          "id": "https://openalex.org/C188147891",
+          "wikidata": "https://www.wikidata.org/wiki/Q147638",
+          "display_name": "Cognitive science",
+          "level": 1,
+          "score": 0.45247948
+        },
+        {
+          "id": "https://openalex.org/C199068039",
+          "wikidata": "https://www.wikidata.org/wiki/Q574523",
+          "display_name": "Immersion (mathematics)",
+          "level": 2,
+          "score": 0.4296757
+        },
+        {
+          "id": "https://openalex.org/C96199812",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145290",
+          "display_name": "Mental representation",
+          "level": 3,
+          "score": 0.42446464
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.39476568
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.2593524
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.23854691
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.23710743
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.102613896
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C202444582",
+          "wikidata": "https://www.wikidata.org/wiki/Q837863",
+          "display_name": "Pure mathematics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C542102704",
+          "wikidata": "https://www.wikidata.org/wiki/Q183257",
+          "display_name": "Psychotherapist",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2478/gth-2019-0019",
+        "pdf_url": "https://content.sciendo.com/downloadpdf/journals/gth/41/2/article-p201.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210231163",
+          "display_name": "Gestalt theory",
+          "issn_l": "0170-057X",
+          "issn": [
+            "0170-057X",
+            "2519-5808"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310313990",
+          "host_organization_name": "De Gruyter",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310313990"
+          ],
+          "host_organization_lineage_names": [
+            "De Gruyter"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://content.sciendo.com/downloadpdf/journals/gth/41/2/article-p201.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2478/gth-2019-0019",
+          "pdf_url": "https://content.sciendo.com/downloadpdf/journals/gth/41/2/article-p201.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210231163",
+            "display_name": "Gestalt theory",
+            "issn_l": "0170-057X",
+            "issn": [
+              "0170-057X",
+              "2519-5808"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310313990",
+            "host_organization_name": "De Gruyter",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310313990"
+            ],
+            "host_organization_lineage_names": [
+              "De Gruyter"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://hal.archives-ouvertes.fr/hal-02306549",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402512",
+            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1294671590",
+            "host_organization_name": "Centre National de la Recherche Scientifique",
+            "host_organization_lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "host_organization_lineage_names": [
+              "Centre National de la Recherche Scientifique"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2478/gth-2019-0019",
+        "pdf_url": "https://content.sciendo.com/downloadpdf/journals/gth/41/2/article-p201.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210231163",
+          "display_name": "Gestalt theory",
+          "issn_l": "0170-057X",
+          "issn": [
+            "0170-057X",
+            "2519-5808"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310313990",
+          "host_organization_name": "De Gruyter",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310313990"
+          ],
+          "host_organization_lineage_names": [
+            "De Gruyter"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2008330713",
+    "title": "Visual consumption, collective memory and the representation of war",
+    "relevance_score": 1.6229796,
+    "doi": "https://doi.org/10.1080/10253860903204428",
+    "topic_ids": [
+      "C2776786559",
+      "C67448173",
+      "C94625758",
+      "C199033989",
+      "C144024400",
+      "C107038049",
+      "C94389720",
+      "C81631423",
+      "C29595303",
+      "C138921699",
+      "C199539241",
+      "C17744445",
+      "C124952713",
+      "C142362112"
+    ],
+    "best_pdf": "https://oro.open.ac.uk/62352/1/62352.pdf",
+    "backup_pdf": "https://doi.org/10.1080/10253860903204428",
+    "raw": {
+      "id": "https://openalex.org/W2008330713",
+      "display_name": "Visual consumption, collective memory and the representation of war",
+      "relevance_score": 1.6229796,
+      "doi": "https://doi.org/10.1080/10253860903204428",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776786559",
+          "wikidata": "https://www.wikidata.org/wiki/Q6241",
+          "display_name": "Patriotism",
+          "level": 3,
+          "score": 0.63524234
+        },
+        {
+          "id": "https://openalex.org/C67448173",
+          "wikidata": "https://www.wikidata.org/wiki/Q254217",
+          "display_name": "Collective memory",
+          "level": 2,
+          "score": 0.5884053
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.57146347
+        },
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.49763086
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.49606118
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.47336814
+        },
+        {
+          "id": "https://openalex.org/C94389720",
+          "wikidata": "https://www.wikidata.org/wiki/Q42298454",
+          "display_name": "Greatness",
+          "level": 2,
+          "score": 0.46415576
+        },
+        {
+          "id": "https://openalex.org/C81631423",
+          "wikidata": "https://www.wikidata.org/wiki/Q10859",
+          "display_name": "Spanish Civil War",
+          "level": 2,
+          "score": 0.46186477
+        },
+        {
+          "id": "https://openalex.org/C29595303",
+          "wikidata": "https://www.wikidata.org/wiki/Q165650",
+          "display_name": "Media studies",
+          "level": 1,
+          "score": 0.35798323
+        },
+        {
+          "id": "https://openalex.org/C138921699",
+          "wikidata": "https://www.wikidata.org/wiki/Q47555",
+          "display_name": "Political economy",
+          "level": 1,
+          "score": 0.3479905
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.34045565
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.29865915
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.25423422
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.16718072
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/10253860903204428",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S189738091",
+          "display_name": "Consumption Markets & Culture",
+          "issn_l": "1025-3866",
+          "issn": [
+            "1025-3866",
+            "1477-223X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://oro.open.ac.uk/62352/1/62352.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/10253860903204428",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S189738091",
+            "display_name": "Consumption Markets & Culture",
+            "issn_l": "1025-3866",
+            "issn": [
+              "1025-3866",
+              "1477-223X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://oro.open.ac.uk/62352/1/62352.pdf",
+          "pdf_url": "https://oro.open.ac.uk/62352/1/62352.pdf",
+          "source": {
+            "id": "https://openalex.org/S4377196284",
+            "display_name": "Open Research Online - ORO (The Open University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I204136569",
+            "host_organization_name": "The Open University",
+            "host_organization_lineage": [
+              "https://openalex.org/I204136569"
+            ],
+            "host_organization_lineage_names": [
+              "The Open University"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://figshare.com/articles/journal_contribution/Visual_consumption_collective_memory_and_the_representation_of_war/10100969",
+          "pdf_url": "https://figshare.com/articles/journal_contribution/Visual_consumption_collective_memory_and_the_representation_of_war/10100969/1/files/18208316.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400572",
+            "display_name": "OPAL (Open@LaTrobe) (La Trobe University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I196829312",
+            "host_organization_name": "La Trobe University",
+            "host_organization_lineage": [
+              "https://openalex.org/I196829312"
+            ],
+            "host_organization_lineage_names": [
+              "La Trobe University"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/2381/9205",
+          "pdf_url": "https://figshare.le.ac.uk/articles/journal_contribution/Visual_consumption_collective_memory_and_the_representation_of_war/10100969/1/files/18208316.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402365",
+            "display_name": "Leicester Research Archive (University of Leicester)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I153648349",
+            "host_organization_name": "University of Leicester",
+            "host_organization_lineage": [
+              "https://openalex.org/I153648349"
+            ],
+            "host_organization_lineage_names": [
+              "University of Leicester"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://oro.open.ac.uk/62352/1/62352.pdf",
+        "pdf_url": "https://oro.open.ac.uk/62352/1/62352.pdf",
+        "source": {
+          "id": "https://openalex.org/S4377196284",
+          "display_name": "Open Research Online - ORO (The Open University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I204136569",
+          "host_organization_name": "The Open University",
+          "host_organization_lineage": [
+            "https://openalex.org/I204136569"
+          ],
+          "host_organization_lineage_names": [
+            "The Open University"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  }
+]

@@ -1,0 +1,710 @@
+[
+  {
+    "id": "https://openalex.org/W2090621143",
+    "title": "Style compatibility for 3D furniture models",
+    "relevance_score": 5.7135067,
+    "doi": "https://doi.org/10.1145/2766898",
+    "topic_ids": [
+      "C2778648169",
+      "C41008148",
+      "C198043062",
+      "C129782007",
+      "C154945302",
+      "C121684516",
+      "C33923547",
+      "C2524010",
+      "C118615104",
+      "C17409809",
+      "C127313418"
+    ],
+    "best_pdf": "http://www.cs.princeton.edu/%7Efunk/sig15.pdf",
+    "backup_pdf": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.696.5061",
+    "raw": {
+      "id": "https://openalex.org/W2090621143",
+      "display_name": "Style compatibility for 3D furniture models",
+      "relevance_score": 5.7135067,
+      "doi": "https://doi.org/10.1145/2766898",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778648169",
+          "wikidata": "https://www.wikidata.org/wiki/Q967768",
+          "display_name": "Compatibility (geochemistry)",
+          "level": 2,
+          "score": 0.8758143
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.67910385
+        },
+        {
+          "id": "https://openalex.org/C198043062",
+          "wikidata": "https://www.wikidata.org/wiki/Q180953",
+          "display_name": "Metric space",
+          "level": 2,
+          "score": 0.44866455
+        },
+        {
+          "id": "https://openalex.org/C129782007",
+          "wikidata": "https://www.wikidata.org/wiki/Q162886",
+          "display_name": "Euclidean geometry",
+          "level": 2,
+          "score": 0.43433335
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.40196496
+        },
+        {
+          "id": "https://openalex.org/C121684516",
+          "wikidata": "https://www.wikidata.org/wiki/Q7600677",
+          "display_name": "Computer graphics (images)",
+          "level": 1,
+          "score": 0.33707613
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.24073541
+        },
+        {
+          "id": "https://openalex.org/C2524010",
+          "wikidata": "https://www.wikidata.org/wiki/Q8087",
+          "display_name": "Geometry",
+          "level": 1,
+          "score": 0.15045801
+        },
+        {
+          "id": "https://openalex.org/C118615104",
+          "wikidata": "https://www.wikidata.org/wiki/Q121416",
+          "display_name": "Discrete mathematics",
+          "level": 1,
+          "score": 0.078377634
+        },
+        {
+          "id": "https://openalex.org/C17409809",
+          "wikidata": "https://www.wikidata.org/wiki/Q161764",
+          "display_name": "Geochemistry",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C127313418",
+          "wikidata": "https://www.wikidata.org/wiki/Q1069",
+          "display_name": "Geology",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1145/2766898",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S185367456",
+          "display_name": "ACM Transactions on Graphics",
+          "issn_l": "0730-0301",
+          "issn": [
+            "0730-0301",
+            "1557-7368"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319798",
+          "host_organization_name": "Association for Computing Machinery",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319798"
+          ],
+          "host_organization_lineage_names": [
+            "Association for Computing Machinery"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "http://www.cs.princeton.edu/%7Efunk/sig15.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1145/2766898",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S185367456",
+            "display_name": "ACM Transactions on Graphics",
+            "issn_l": "0730-0301",
+            "issn": [
+              "0730-0301",
+              "1557-7368"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319798",
+            "host_organization_name": "Association for Computing Machinery",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319798"
+            ],
+            "host_organization_lineage_names": [
+              "Association for Computing Machinery"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.696.5061",
+          "pdf_url": "http://www.cs.princeton.edu/%7Efunk/sig15.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400349",
+            "display_name": "CiteSeer X (The Pennsylvania State University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I130769515",
+            "host_organization_name": "Pennsylvania State University",
+            "host_organization_lineage": [
+              "https://openalex.org/I130769515"
+            ],
+            "host_organization_lineage_names": [
+              "Pennsylvania State University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.696.5061",
+        "pdf_url": "http://www.cs.princeton.edu/%7Efunk/sig15.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400349",
+          "display_name": "CiteSeer X (The Pennsylvania State University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I130769515",
+          "host_organization_name": "Pennsylvania State University",
+          "host_organization_lineage": [
+            "https://openalex.org/I130769515"
+          ],
+          "host_organization_lineage_names": [
+            "Pennsylvania State University"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3194799030",
+    "title": "Visual diplomacy in virtual summitry: Status signalling during the coronavirus crisis",
+    "relevance_score": 2.3950899,
+    "doi": "https://doi.org/10.1017/s0260210521000607",
+    "topic_ids": [
+      "C557252395",
+      "C2779343474",
+      "C2778848561",
+      "C17744445",
+      "C144024400",
+      "C199539241",
+      "C205649164",
+      "C94625758",
+      "C166957645",
+      "C100970517"
+    ],
+    "best_pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/056C9B68210FCA30B46EAE23469799EE/S0260210521000607a.pdf/div-class-title-visual-diplomacy-in-virtual-summitry-status-signalling-during-the-coronavirus-crisis-div.pdf",
+    "backup_pdf": "https://doi.org/10.1017/s0260210521000607",
+    "raw": {
+      "id": "https://openalex.org/W3194799030",
+      "display_name": "Visual diplomacy in virtual summitry: Status signalling during the coronavirus crisis",
+      "relevance_score": 2.3950899,
+      "doi": "https://doi.org/10.1017/s0260210521000607",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C557252395",
+          "wikidata": "https://www.wikidata.org/wiki/Q1889",
+          "display_name": "Diplomacy",
+          "level": 3,
+          "score": 0.9000242
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.60446095
+        },
+        {
+          "id": "https://openalex.org/C2778848561",
+          "wikidata": "https://www.wikidata.org/wiki/Q207326",
+          "display_name": "Summit",
+          "level": 2,
+          "score": 0.5523836
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.46142653
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.34411168
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.25625032
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.13987795
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.13347596
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C100970517",
+          "wikidata": "https://www.wikidata.org/wiki/Q52107",
+          "display_name": "Physical geography",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/s0260210521000607",
+        "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/056C9B68210FCA30B46EAE23469799EE/S0260210521000607a.pdf/div-class-title-visual-diplomacy-in-virtual-summitry-status-signalling-during-the-coronavirus-crisis-div.pdf",
+        "source": {
+          "id": "https://openalex.org/S131264395",
+          "display_name": "Review of International Studies",
+          "issn_l": "0260-2105",
+          "issn": [
+            "0260-2105",
+            "1469-9044"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/056C9B68210FCA30B46EAE23469799EE/S0260210521000607a.pdf/div-class-title-visual-diplomacy-in-virtual-summitry-status-signalling-during-the-coronavirus-crisis-div.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1017/s0260210521000607",
+          "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/056C9B68210FCA30B46EAE23469799EE/S0260210521000607a.pdf/div-class-title-visual-diplomacy-in-virtual-summitry-status-signalling-during-the-coronavirus-crisis-div.pdf",
+          "source": {
+            "id": "https://openalex.org/S131264395",
+            "display_name": "Review of International Studies",
+            "issn_l": "0260-2105",
+            "issn": [
+              "0260-2105",
+              "1469-9044"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-470297",
+          "pdf_url": "https://uu.diva-portal.org/smash/get/diva2:1646348/FULLTEXT01",
+          "source": {
+            "id": "https://openalex.org/S4306402042",
+            "display_name": "Uppsala University Publications (Uppsala University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I123387679",
+            "host_organization_name": "Uppsala University",
+            "host_organization_lineage": [
+              "https://openalex.org/I123387679"
+            ],
+            "host_organization_lineage_names": [
+              "Uppsala University"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8593405",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/s0260210521000607",
+        "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/056C9B68210FCA30B46EAE23469799EE/S0260210521000607a.pdf/div-class-title-visual-diplomacy-in-virtual-summitry-status-signalling-during-the-coronavirus-crisis-div.pdf",
+        "source": {
+          "id": "https://openalex.org/S131264395",
+          "display_name": "Review of International Studies",
+          "issn_l": "0260-2105",
+          "issn": [
+            "0260-2105",
+            "1469-9044"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2093811110",
+    "title": "Perception and Cognition in Translating Chinese Landscape Poetry : A Case Study of Liu Zongyuan’s poem River Snow",
+    "relevance_score": 1.385731,
+    "doi": "https://doi.org/10.7202/037358ar",
+    "topic_ids": [
+      "C164913051",
+      "C26760741",
+      "C177264268",
+      "C124952713",
+      "C169900460",
+      "C138885662",
+      "C142362112",
+      "C15744967",
+      "C111472728",
+      "C41008148",
+      "C169760540",
+      "C199360897"
+    ],
+    "best_pdf": "https://www.erudit.org/fr/revues/ttr/1999-v12-n1-ttr1490/037358ar.pdf",
+    "backup_pdf": "https://doi.org/10.7202/037358ar",
+    "raw": {
+      "id": "https://openalex.org/W2093811110",
+      "display_name": "Perception and Cognition in Translating Chinese Landscape Poetry : A Case Study of Liu Zongyuan’s poem River Snow",
+      "relevance_score": 1.385731,
+      "doi": "https://doi.org/10.7202/037358ar",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C164913051",
+          "wikidata": "https://www.wikidata.org/wiki/Q482",
+          "display_name": "Poetry",
+          "level": 2,
+          "score": 0.9598217
+        },
+        {
+          "id": "https://openalex.org/C26760741",
+          "wikidata": "https://www.wikidata.org/wiki/Q160402",
+          "display_name": "Perception",
+          "level": 2,
+          "score": 0.6445177
+        },
+        {
+          "id": "https://openalex.org/C177264268",
+          "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+          "display_name": "Set (abstract data type)",
+          "level": 2,
+          "score": 0.5747272
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.5231651
+        },
+        {
+          "id": "https://openalex.org/C169900460",
+          "wikidata": "https://www.wikidata.org/wiki/Q2200417",
+          "display_name": "Cognition",
+          "level": 2,
+          "score": 0.48501703
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.40686384
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.36050445
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.34632903
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.3001611
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.270801
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7202/037358ar",
+        "pdf_url": "https://www.erudit.org/fr/revues/ttr/1999-v12-n1-ttr1490/037358ar.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210186492",
+          "display_name": "TTR traduction terminologie rédaction",
+          "issn_l": "0835-8443",
+          "issn": [
+            "0835-8443",
+            "1708-2188"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.erudit.org/fr/revues/ttr/1999-v12-n1-ttr1490/037358ar.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7202/037358ar",
+          "pdf_url": "https://www.erudit.org/fr/revues/ttr/1999-v12-n1-ttr1490/037358ar.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210186492",
+            "display_name": "TTR traduction terminologie rédaction",
+            "issn_l": "0835-8443",
+            "issn": [
+              "0835-8443",
+              "1708-2188"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7202/037358ar",
+        "pdf_url": "https://www.erudit.org/fr/revues/ttr/1999-v12-n1-ttr1490/037358ar.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210186492",
+          "display_name": "TTR traduction terminologie rédaction",
+          "issn_l": "0835-8443",
+          "issn": [
+            "0835-8443",
+            "1708-2188"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

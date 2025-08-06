@@ -1,0 +1,775 @@
+[
+  {
+    "id": "https://openalex.org/W3191419264",
+    "title": "The Bessarion Chapel",
+    "relevance_score": 13.9344635,
+    "doi": "https://doi.org/10.1163/24761168-00201006",
+    "topic_ids": [
+      "C2779446402",
+      "C75947009",
+      "C2780415144",
+      "C142362112",
+      "C205783811",
+      "C52069626",
+      "C2776034101",
+      "C52119013",
+      "C74916050",
+      "C199539241",
+      "C17744445"
+    ],
+    "best_pdf": "https://brill.com/downloadpdf/journals/para/2/1/article-p120_7.pdf",
+    "backup_pdf": "https://doi.org/10.1163/24761168-00201006",
+    "raw": {
+      "id": "https://openalex.org/W3191419264",
+      "display_name": "The Bessarion Chapel",
+      "relevance_score": 13.9344635,
+      "doi": "https://doi.org/10.1163/24761168-00201006",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779446402",
+          "wikidata": "https://www.wikidata.org/wiki/Q4036051",
+          "display_name": "Chapel",
+          "level": 2,
+          "score": 0.96496606
+        },
+        {
+          "id": "https://openalex.org/C75947009",
+          "wikidata": "https://www.wikidata.org/wiki/Q134194",
+          "display_name": "Fresco",
+          "level": 3,
+          "score": 0.93848026
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.75074375
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.70989645
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.65766877
+        },
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.64376765
+        },
+        {
+          "id": "https://openalex.org/C2776034101",
+          "wikidata": "https://www.wikidata.org/wiki/Q1509347",
+          "display_name": "Commission",
+          "level": 2,
+          "score": 0.44222245
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.4040559
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.3347432
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.08926478
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.05961314
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1163/24761168-00201006",
+        "pdf_url": "https://brill.com/downloadpdf/journals/para/2/1/article-p120_7.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210184802",
+          "display_name": "Paragone Past and Present",
+          "issn_l": "2476-115X",
+          "issn": [
+            "2476-115X",
+            "2476-1168"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://brill.com/downloadpdf/journals/para/2/1/article-p120_7.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1163/24761168-00201006",
+          "pdf_url": "https://brill.com/downloadpdf/journals/para/2/1/article-p120_7.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210184802",
+            "display_name": "Paragone Past and Present",
+            "issn_l": "2476-115X",
+            "issn": [
+              "2476-115X",
+              "2476-1168"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320561",
+            "host_organization_name": "Brill",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320561"
+            ],
+            "host_organization_lineage_names": [
+              "Brill"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1163/24761168-00201006",
+        "pdf_url": "https://brill.com/downloadpdf/journals/para/2/1/article-p120_7.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210184802",
+          "display_name": "Paragone Past and Present",
+          "issn_l": "2476-115X",
+          "issn": [
+            "2476-115X",
+            "2476-1168"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320561",
+          "host_organization_name": "Brill",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320561"
+          ],
+          "host_organization_lineage_names": [
+            "Brill"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2999083341",
+    "title": "PATRONS AND ARTISTS ON THE MOVE: NEW LIGHT ON MATTEO GIOVANNETTI BETWEEN AVIGNON AND ROME",
+    "relevance_score": 9.704344,
+    "doi": "https://doi.org/10.1017/s0068246219000370",
+    "topic_ids": [
+      "C2780712339",
+      "C52069626",
+      "C2781291010",
+      "C205783811",
+      "C153349607",
+      "C142362112",
+      "C52119013",
+      "C95457728",
+      "C107038049",
+      "C138885662",
+      "C41895202",
+      "C527412718"
+    ],
+    "best_pdf": "https://air.uniud.it/bitstream/11390/1174028/2/artists_on_the_move_new_light_on_matteo_giovannetti_between_avignon_and_rome.pdf",
+    "backup_pdf": "https://hdl.handle.net/11390/1174028",
+    "raw": {
+      "id": "https://openalex.org/W2999083341",
+      "display_name": "PATRONS AND ARTISTS ON THE MOVE: NEW LIGHT ON MATTEO GIOVANNETTI BETWEEN AVIGNON AND ROME",
+      "relevance_score": 9.704344,
+      "doi": "https://doi.org/10.1017/s0068246219000370",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780712339",
+          "wikidata": "https://www.wikidata.org/wiki/Q5165204",
+          "display_name": "Contextualization",
+          "level": 3,
+          "score": 0.722974
+        },
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.67431796
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.604393
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.5683779
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5566453
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.55425274
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.4783349
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.35224792
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.22122234
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.10669631
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C527412718",
+          "wikidata": "https://www.wikidata.org/wiki/Q855395",
+          "display_name": "Interpretation (philosophy)",
+          "level": 2,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/s0068246219000370",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210193438",
+          "display_name": "Papers of the British School at Rome",
+          "issn_l": "0068-2462",
+          "issn": [
+            "0068-2462",
+            "2045-239X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://air.uniud.it/bitstream/11390/1174028/2/artists_on_the_move_new_light_on_matteo_giovannetti_between_avignon_and_rome.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1017/s0068246219000370",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210193438",
+            "display_name": "Papers of the British School at Rome",
+            "issn_l": "0068-2462",
+            "issn": [
+              "0068-2462",
+              "2045-239X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/11390/1174028",
+          "pdf_url": "https://air.uniud.it/bitstream/11390/1174028/2/artists_on_the_move_new_light_on_matteo_giovannetti_between_avignon_and_rome.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401163",
+            "display_name": "Institutional Research Information System (University of Udine)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I129043915",
+            "host_organization_name": "University of Udine",
+            "host_organization_lineage": [
+              "https://openalex.org/I129043915"
+            ],
+            "host_organization_lineage_names": [
+              "University of Udine"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/11390/1174028",
+        "pdf_url": "https://air.uniud.it/bitstream/11390/1174028/2/artists_on_the_move_new_light_on_matteo_giovannetti_between_avignon_and_rome.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401163",
+          "display_name": "Institutional Research Information System (University of Udine)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I129043915",
+          "host_organization_name": "University of Udine",
+          "host_organization_lineage": [
+            "https://openalex.org/I129043915"
+          ],
+          "host_organization_lineage_names": [
+            "University of Udine"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W1976414258",
+    "title": "Costantino Continuato. Ideologia e iconografia del carisma imperiale bizantino agli albori dell’ età moderna",
+    "relevance_score": 1.1903578,
+    "doi": "https://doi.org/10.2298/zrvi1350873r",
+    "topic_ids": [
+      "C104562893",
+      "C2776900844",
+      "C2781291010",
+      "C2780175911",
+      "C195244886",
+      "C153606108",
+      "C551968917",
+      "C95457728",
+      "C74916050",
+      "C94625758",
+      "C112813540",
+      "C142362112",
+      "C15708023",
+      "C138885662",
+      "C124952713",
+      "C199539241",
+      "C166957645",
+      "C27206212",
+      "C41895202",
+      "C17744445",
+      "C107038049"
+    ],
+    "best_pdf": "http://www.doiserbia.nb.rs/ft.aspx?id=0584-98881302873R",
+    "backup_pdf": "https://doi.org/10.2298/zrvi1350873r",
+    "raw": {
+      "id": "https://openalex.org/W1976414258",
+      "display_name": "Costantino Continuato. Ideologia e iconografia del carisma imperiale bizantino agli albori dell’ età moderna",
+      "relevance_score": 1.1903578,
+      "doi": "https://doi.org/10.2298/zrvi1350873r",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C104562893",
+          "wikidata": "https://www.wikidata.org/wiki/Q47591",
+          "display_name": "Byzantine architecture",
+          "level": 2,
+          "score": 0.7731861
+        },
+        {
+          "id": "https://openalex.org/C2776900844",
+          "wikidata": "https://www.wikidata.org/wiki/Q8028383",
+          "display_name": "Witness",
+          "level": 2,
+          "score": 0.5888226
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.5551022
+        },
+        {
+          "id": "https://openalex.org/C2780175911",
+          "wikidata": "https://www.wikidata.org/wiki/Q5013404",
+          "display_name": "CONQUEST",
+          "level": 2,
+          "score": 0.55472726
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.51559633
+        },
+        {
+          "id": "https://openalex.org/C153606108",
+          "wikidata": "https://www.wikidata.org/wiki/Q46158",
+          "display_name": "Humanism",
+          "level": 2,
+          "score": 0.50626004
+        },
+        {
+          "id": "https://openalex.org/C551968917",
+          "wikidata": "https://www.wikidata.org/wiki/Q5043",
+          "display_name": "Christianity",
+          "level": 2,
+          "score": 0.49668175
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4686111
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.4569649
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.4320517
+        },
+        {
+          "id": "https://openalex.org/C112813540",
+          "wikidata": "https://www.wikidata.org/wiki/Q17723",
+          "display_name": "Classical period",
+          "level": 2,
+          "score": 0.42352554
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.4169165
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.33293515
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.2674665
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.23127973
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.1702407
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.15408576
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.14846134
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2298/zrvi1350873r",
+        "pdf_url": "http://www.doiserbia.nb.rs/ft.aspx?id=0584-98881302873R",
+        "source": {
+          "id": "https://openalex.org/S170510236",
+          "display_name": "Zbornik radova Vizantoloskog instituta",
+          "issn_l": "0584-9888",
+          "issn": [
+            "0584-9888",
+            "2406-0917"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321122",
+          "host_organization_name": "Institute for Byzantine Studies of the Serbian Academy of Sciences and Arts",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321122"
+          ],
+          "host_organization_lineage_names": [
+            "Institute for Byzantine Studies of the Serbian Academy of Sciences and Arts"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "http://www.doiserbia.nb.rs/ft.aspx?id=0584-98881302873R",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2298/zrvi1350873r",
+          "pdf_url": "http://www.doiserbia.nb.rs/ft.aspx?id=0584-98881302873R",
+          "source": {
+            "id": "https://openalex.org/S170510236",
+            "display_name": "Zbornik radova Vizantoloskog instituta",
+            "issn_l": "0584-9888",
+            "issn": [
+              "0584-9888",
+              "2406-0917"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321122",
+            "host_organization_name": "Institute for Byzantine Studies of the Serbian Academy of Sciences and Arts",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321122"
+            ],
+            "host_organization_lineage_names": [
+              "Institute for Byzantine Studies of the Serbian Academy of Sciences and Arts"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/7b70eb990c9748b79da4b842ef4e2518",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2298/zrvi1350873r",
+        "pdf_url": "http://www.doiserbia.nb.rs/ft.aspx?id=0584-98881302873R",
+        "source": {
+          "id": "https://openalex.org/S170510236",
+          "display_name": "Zbornik radova Vizantoloskog instituta",
+          "issn_l": "0584-9888",
+          "issn": [
+            "0584-9888",
+            "2406-0917"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321122",
+          "host_organization_name": "Institute for Byzantine Studies of the Serbian Academy of Sciences and Arts",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321122"
+          ],
+          "host_organization_lineage_names": [
+            "Institute for Byzantine Studies of the Serbian Academy of Sciences and Arts"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

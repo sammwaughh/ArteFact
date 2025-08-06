@@ -1,0 +1,442 @@
+[
+  {
+    "id": "https://openalex.org/W2736389750",
+    "title": "Ancient History and the Antiquarian",
+    "relevance_score": 8.063585,
+    "doi": "https://doi.org/10.2307/750215",
+    "topic_ids": [
+      "C52119013",
+      "C142362112",
+      "C2779744715",
+      "C95457728",
+      "C74916050",
+      "C138885662",
+      "C24667770"
+    ],
+    "best_pdf": "https://seer.ufrgs.br/index.php/anos90/article/download/43194/30796",
+    "backup_pdf": "https://seer.ufrgs.br/index.php/anos90/article/view/43194",
+    "raw": {
+      "id": "https://openalex.org/W2736389750",
+      "display_name": "Ancient History and the Antiquarian",
+      "relevance_score": 8.063585,
+      "doi": "https://doi.org/10.2307/750215",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.5873547
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.576226
+        },
+        {
+          "id": "https://openalex.org/C2779744715",
+          "wikidata": "https://www.wikidata.org/wiki/Q840665",
+          "display_name": "Idolatry",
+          "level": 2,
+          "score": 0.5661122
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.35090262
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.33780146
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.20088953
+        },
+        {
+          "id": "https://openalex.org/C24667770",
+          "wikidata": "https://www.wikidata.org/wiki/Q34187",
+          "display_name": "Religious studies",
+          "level": 1,
+          "score": 0.16916046
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.2307/750215",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S99631028",
+          "display_name": "Journal of the Warburg and Courtauld Institutes",
+          "issn_l": "0075-4390",
+          "issn": [
+            "0075-4390",
+            "2044-0014"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315672",
+          "host_organization_name": "University of Chicago Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315690",
+            "https://openalex.org/P4310315672"
+          ],
+          "host_organization_lineage_names": [
+            "University of Chicago",
+            "University of Chicago Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://seer.ufrgs.br/index.php/anos90/article/download/43194/30796",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.2307/750215",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S99631028",
+            "display_name": "Journal of the Warburg and Courtauld Institutes",
+            "issn_l": "0075-4390",
+            "issn": [
+              "0075-4390",
+              "2044-0014"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310315672",
+            "host_organization_name": "University of Chicago Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315690",
+              "https://openalex.org/P4310315672"
+            ],
+            "host_organization_lineage_names": [
+              "University of Chicago",
+              "University of Chicago Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://seer.ufrgs.br/index.php/anos90/article/view/43194",
+          "pdf_url": "https://seer.ufrgs.br/index.php/anos90/article/download/43194/30796",
+          "source": {
+            "id": "https://openalex.org/S4306402641",
+            "display_name": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4383465926",
+            "host_organization_name": "LA Referencia",
+            "host_organization_lineage": [
+              "https://openalex.org/I4383465926"
+            ],
+            "host_organization_lineage_names": [
+              "LA Referencia"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://seer.ufrgs.br/index.php/anos90/article/view/43194",
+        "pdf_url": "https://seer.ufrgs.br/index.php/anos90/article/download/43194/30796",
+        "source": {
+          "id": "https://openalex.org/S4306402641",
+          "display_name": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4383465926",
+          "host_organization_name": "LA Referencia",
+          "host_organization_lineage": [
+            "https://openalex.org/I4383465926"
+          ],
+          "host_organization_lineage_names": [
+            "LA Referencia"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4383227288",
+    "title": "THE FIRST DIPLOMATIC HEADQUARTERS OF KING JOHN V IN ROME: THE BURATTI PALACE AND THE CONSTITUTION OF THE MELO E CASTRO HOUSEHOLD",
+    "relevance_score": 1.0808634,
+    "doi": "https://doi.org/10.1017/s0068246223000065",
+    "topic_ids": [
+      "C2776269092",
+      "C29598333",
+      "C35219183",
+      "C2776154427",
+      "C142362112",
+      "C95457728",
+      "C199539241",
+      "C17744445",
+      "C166957645",
+      "C144024400",
+      "C138885662",
+      "C149923435",
+      "C41895202"
+    ],
+    "best_pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D08E3A9CAD543C29737BABC9E11CF4E3/S0068246223000065a.pdf/div-class-title-the-first-diplomatic-headquarters-of-king-john-v-in-rome-the-buratti-palace-and-the-constitution-of-the-melo-e-castro-household-div.pdf",
+    "backup_pdf": "https://doi.org/10.1017/s0068246223000065",
+    "raw": {
+      "id": "https://openalex.org/W4383227288",
+      "display_name": "THE FIRST DIPLOMATIC HEADQUARTERS OF KING JOHN V IN ROME: THE BURATTI PALACE AND THE CONSTITUTION OF THE MELO E CASTRO HOUSEHOLD",
+      "relevance_score": 1.0808634,
+      "doi": "https://doi.org/10.1017/s0068246223000065",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776269092",
+          "wikidata": "https://www.wikidata.org/wiki/Q1611074",
+          "display_name": "Residence",
+          "level": 2,
+          "score": 0.778083
+        },
+        {
+          "id": "https://openalex.org/C29598333",
+          "wikidata": "https://www.wikidata.org/wiki/Q50675",
+          "display_name": "Historiography",
+          "level": 2,
+          "score": 0.6400641
+        },
+        {
+          "id": "https://openalex.org/C35219183",
+          "wikidata": "https://www.wikidata.org/wiki/Q5146",
+          "display_name": "Portuguese",
+          "level": 2,
+          "score": 0.60052353
+        },
+        {
+          "id": "https://openalex.org/C2776154427",
+          "wikidata": "https://www.wikidata.org/wiki/Q7755",
+          "display_name": "Constitution",
+          "level": 2,
+          "score": 0.59075475
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.40765256
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.36733854
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.30138034
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.2794182
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.23732123
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.22492778
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.07144222
+        },
+        {
+          "id": "https://openalex.org/C149923435",
+          "wikidata": "https://www.wikidata.org/wiki/Q37732",
+          "display_name": "Demography",
+          "level": 1,
+          "score": 0.05112943
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/s0068246223000065",
+        "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D08E3A9CAD543C29737BABC9E11CF4E3/S0068246223000065a.pdf/div-class-title-the-first-diplomatic-headquarters-of-king-john-v-in-rome-the-buratti-palace-and-the-constitution-of-the-melo-e-castro-household-div.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210193438",
+          "display_name": "Papers of the British School at Rome",
+          "issn_l": "0068-2462",
+          "issn": [
+            "0068-2462",
+            "2045-239X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D08E3A9CAD543C29737BABC9E11CF4E3/S0068246223000065a.pdf/div-class-title-the-first-diplomatic-headquarters-of-king-john-v-in-rome-the-buratti-palace-and-the-constitution-of-the-melo-e-castro-household-div.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1017/s0068246223000065",
+          "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D08E3A9CAD543C29737BABC9E11CF4E3/S0068246223000065a.pdf/div-class-title-the-first-diplomatic-headquarters-of-king-john-v-in-rome-the-buratti-palace-and-the-constitution-of-the-melo-e-castro-household-div.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210193438",
+            "display_name": "Papers of the British School at Rome",
+            "issn_l": "0068-2462",
+            "issn": [
+              "0068-2462",
+              "2045-239X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1017/s0068246223000065",
+        "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D08E3A9CAD543C29737BABC9E11CF4E3/S0068246223000065a.pdf/div-class-title-the-first-diplomatic-headquarters-of-king-john-v-in-rome-the-buratti-palace-and-the-constitution-of-the-melo-e-castro-household-div.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210193438",
+          "display_name": "Papers of the British School at Rome",
+          "issn_l": "0068-2462",
+          "issn": [
+            "0068-2462",
+            "2045-239X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

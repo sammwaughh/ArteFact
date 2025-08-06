@@ -1,0 +1,825 @@
+[
+  {
+    "id": "https://openalex.org/W3099711449",
+    "title": "Enlarged paintings: a proposal for classification",
+    "relevance_score": 5.7894664,
+    "doi": "https://doi.org/10.14568/cp2019032",
+    "topic_ids": [
+      "C205783811",
+      "C501303744",
+      "C126042441",
+      "C2778572836",
+      "C142362112",
+      "C26517878",
+      "C153349607",
+      "C139807058",
+      "C2777798969",
+      "C41008148",
+      "C95457728",
+      "C15744967",
+      "C166957645",
+      "C76155785",
+      "C38652104",
+      "C169760540",
+      "C111919701"
+    ],
+    "best_pdf": "https://conservarpatrimonio.pt/article/download/21401/15709",
+    "backup_pdf": "https://doi.org/10.14568/cp2019032",
+    "raw": {
+      "id": "https://openalex.org/W3099711449",
+      "display_name": "Enlarged paintings: a proposal for classification",
+      "relevance_score": 5.7894664,
+      "doi": "https://doi.org/10.14568/cp2019032",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.93992305
+        },
+        {
+          "id": "https://openalex.org/C501303744",
+          "wikidata": "https://www.wikidata.org/wiki/Q208145",
+          "display_name": "Iconography",
+          "level": 2,
+          "score": 0.63082284
+        },
+        {
+          "id": "https://openalex.org/C126042441",
+          "wikidata": "https://www.wikidata.org/wiki/Q1324888",
+          "display_name": "Frame (networking)",
+          "level": 2,
+          "score": 0.5018878
+        },
+        {
+          "id": "https://openalex.org/C2778572836",
+          "wikidata": "https://www.wikidata.org/wiki/Q380933",
+          "display_name": "Space (punctuation)",
+          "level": 2,
+          "score": 0.4821441
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.45358992
+        },
+        {
+          "id": "https://openalex.org/C26517878",
+          "wikidata": "https://www.wikidata.org/wiki/Q228039",
+          "display_name": "Key (lock)",
+          "level": 2,
+          "score": 0.44654045
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.44581792
+        },
+        {
+          "id": "https://openalex.org/C139807058",
+          "wikidata": "https://www.wikidata.org/wiki/Q352374",
+          "display_name": "Adaptation (eye)",
+          "level": 2,
+          "score": 0.43636447
+        },
+        {
+          "id": "https://openalex.org/C2777798969",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Assemblage (archaeology)",
+          "level": 2,
+          "score": 0.4151547
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.40383938
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.14463192
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.12930092
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.07984474
+        },
+        {
+          "id": "https://openalex.org/C76155785",
+          "wikidata": "https://www.wikidata.org/wiki/Q418",
+          "display_name": "Telecommunications",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C38652104",
+          "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+          "display_name": "Computer security",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.14568/cp2019032",
+        "pdf_url": "https://conservarpatrimonio.pt/article/download/21401/15709",
+        "source": {
+          "id": "https://openalex.org/S2737646854",
+          "display_name": "Conservar Património",
+          "issn_l": "1646-043X",
+          "issn": [
+            "1646-043X",
+            "2182-9942"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310318468",
+          "host_organization_name": "Associação Profissional de Conservadores - Restauradores de Portugal",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318468"
+          ],
+          "host_organization_lineage_names": [
+            "Associação Profissional de Conservadores - Restauradores de Portugal"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://conservarpatrimonio.pt/article/download/21401/15709",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.14568/cp2019032",
+          "pdf_url": "https://conservarpatrimonio.pt/article/download/21401/15709",
+          "source": {
+            "id": "https://openalex.org/S2737646854",
+            "display_name": "Conservar Património",
+            "issn_l": "1646-043X",
+            "issn": [
+              "1646-043X",
+              "2182-9942"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310318468",
+            "host_organization_name": "Associação Profissional de Conservadores - Restauradores de Portugal",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318468"
+            ],
+            "host_organization_lineage_names": [
+              "Associação Profissional de Conservadores - Restauradores de Portugal"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.14568/cp2019032",
+        "pdf_url": "https://conservarpatrimonio.pt/article/download/21401/15709",
+        "source": {
+          "id": "https://openalex.org/S2737646854",
+          "display_name": "Conservar Património",
+          "issn_l": "1646-043X",
+          "issn": [
+            "1646-043X",
+            "2182-9942"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310318468",
+          "host_organization_name": "Associação Profissional de Conservadores - Restauradores de Portugal",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318468"
+          ],
+          "host_organization_lineage_names": [
+            "Associação Profissional de Conservadores - Restauradores de Portugal"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4234082629",
+    "title": "Scholars and Literati at the University of Bologna (1088–1800)",
+    "relevance_score": 2.6951227,
+    "doi": "https://doi.org/10.14428/rete.v1i0.58873",
+    "topic_ids": [
+      "C95457728",
+      "C17744445",
+      "C74916050",
+      "C52119013",
+      "C161191863",
+      "C41008148"
+    ],
+    "best_pdf": "https://ojs.uclouvain.be/index.php/RETE/article/download/58873/55223",
+    "backup_pdf": "https://doi.org/10.14428/rete.v1i0.58873",
+    "raw": {
+      "id": "https://openalex.org/W4234082629",
+      "display_name": "Scholars and Literati at the University of Bologna (1088–1800)",
+      "relevance_score": 2.6951227,
+      "doi": "https://doi.org/10.14428/rete.v1i0.58873",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4692547
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.380723
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.3591082
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.34743637
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.34705052
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.08835819
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.14428/rete.v1i0.58873",
+        "pdf_url": "https://ojs.uclouvain.be/index.php/RETE/article/download/58873/55223",
+        "source": {
+          "id": "https://openalex.org/S4210234923",
+          "display_name": "Repertorium eruditorum totius Europae",
+          "issn_l": "2736-4119",
+          "issn": [
+            "2736-4119"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321106",
+          "host_organization_name": "Université catholique de Louvain",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321106"
+          ],
+          "host_organization_lineage_names": [
+            "Université catholique de Louvain"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://ojs.uclouvain.be/index.php/RETE/article/download/58873/55223",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.14428/rete.v1i0.58873",
+          "pdf_url": "https://ojs.uclouvain.be/index.php/RETE/article/download/58873/55223",
+          "source": {
+            "id": "https://openalex.org/S4210234923",
+            "display_name": "Repertorium eruditorum totius Europae",
+            "issn_l": "2736-4119",
+            "issn": [
+              "2736-4119"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321106",
+            "host_organization_name": "Université catholique de Louvain",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321106"
+            ],
+            "host_organization_lineage_names": [
+              "Université catholique de Louvain"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.14428/rete.v1i0.58873",
+        "pdf_url": "https://ojs.uclouvain.be/index.php/RETE/article/download/58873/55223",
+        "source": {
+          "id": "https://openalex.org/S4210234923",
+          "display_name": "Repertorium eruditorum totius Europae",
+          "issn_l": "2736-4119",
+          "issn": [
+            "2736-4119"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321106",
+          "host_organization_name": "Université catholique de Louvain",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321106"
+          ],
+          "host_organization_lineage_names": [
+            "Université catholique de Louvain"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4200514305",
+    "title": "La figura di Daniele Farsetti collezionista negli epistolari",
+    "relevance_score": 1.7388724,
+    "doi": "https://doi.org/10.30687/va/2385-2720/2021/07/010",
+    "topic_ids": [
+      "C142362112",
+      "C205783811",
+      "C52119013",
+      "C153349607"
+    ],
+    "best_pdf": "https://edizionicafoscari.unive.it/media/pdf/article/venezia-arti/2021/1/art-10.30687-VA-2385-2720-2021-07-010.pdf",
+    "backup_pdf": "https://doi.org/10.30687/va/2385-2720/2021/07/010",
+    "raw": {
+      "id": "https://openalex.org/W4200514305",
+      "display_name": "La figura di Daniele Farsetti collezionista negli epistolari",
+      "relevance_score": 1.7388724,
+      "doi": "https://doi.org/10.30687/va/2385-2720/2021/07/010",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.68900466
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.5708115
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.47499052
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3409974
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30687/va/2385-2720/2021/07/010",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210179422",
+          "display_name": "Venezia Arti",
+          "issn_l": "0394-4298",
+          "issn": [
+            "0394-4298",
+            "2385-2720"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310317606",
+          "host_organization_name": "Edizioni Ca’ Foscari",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317606"
+          ],
+          "host_organization_lineage_names": [
+            "Edizioni Ca’ Foscari"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://doi.org/10.30687/va/2385-2720/2021/07/010",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.30687/va/2385-2720/2021/07/010",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210179422",
+            "display_name": "Venezia Arti",
+            "issn_l": "0394-4298",
+            "issn": [
+              "0394-4298",
+              "2385-2720"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310317606",
+            "host_organization_name": "Edizioni Ca’ Foscari",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310317606"
+            ],
+            "host_organization_lineage_names": [
+              "Edizioni Ca’ Foscari"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/a480cd93be0d4566a11c7a7285f82b62",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://edizionicafoscari.unive.it/media/pdf/article/venezia-arti/2021/1/art-10.30687-VA-2385-2720-2021-07-010.pdf",
+          "pdf_url": "https://edizionicafoscari.unive.it/media/pdf/article/venezia-arti/2021/1/art-10.30687-VA-2385-2720-2021-07-010.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30687/va/2385-2720/2021/07/010",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210179422",
+          "display_name": "Venezia Arti",
+          "issn_l": "0394-4298",
+          "issn": [
+            "0394-4298",
+            "2385-2720"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310317606",
+          "host_organization_name": "Edizioni Ca’ Foscari",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317606"
+          ],
+          "host_organization_lineage_names": [
+            "Edizioni Ca’ Foscari"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3175068485",
+    "title": "Bolognese Drawings at the National Gallery. Bolognese Drawings in North American Collections, 1500-1800. An exhibition held at the National Gallery of Canada, Ottawa, 10 September – 8 November 1981",
+    "relevance_score": 1.3968742,
+    "doi": "https://doi.org/10.7202/1074642ar",
+    "topic_ids": [
+      "C37531588",
+      "C3018603336",
+      "C153349607",
+      "C2984832160",
+      "C52119013",
+      "C142362112",
+      "C161191863",
+      "C95457728",
+      "C166957645",
+      "C41008148"
+    ],
+    "best_pdf": "https://www.erudit.org/fr/revues/racar/1983-v10-n1-racar05780/1074642ar.pdf",
+    "backup_pdf": "https://doi.org/10.7202/1074642ar",
+    "raw": {
+      "id": "https://openalex.org/W3175068485",
+      "display_name": "Bolognese Drawings at the National Gallery. Bolognese Drawings in North American Collections, 1500-1800. An exhibition held at the National Gallery of Canada, Ottawa, 10 September – 8 November 1981",
+      "relevance_score": 1.3968742,
+      "doi": "https://doi.org/10.7202/1074642ar",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.91608286
+        },
+        {
+          "id": "https://openalex.org/C3018603336",
+          "wikidata": "https://www.wikidata.org/wiki/Q1847499",
+          "display_name": "National museum",
+          "level": 2,
+          "score": 0.53526473
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.47618476
+        },
+        {
+          "id": "https://openalex.org/C2984832160",
+          "wikidata": "https://www.wikidata.org/wiki/Q1007870",
+          "display_name": "Art gallery",
+          "level": 3,
+          "score": 0.44769776
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.42269942
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.4068063
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.3788026
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.3441442
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.34148064
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.05692175
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7202/1074642ar",
+        "pdf_url": "https://www.erudit.org/fr/revues/racar/1983-v10-n1-racar05780/1074642ar.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210170860",
+          "display_name": "RACAR Revue d art canadienne",
+          "issn_l": "0315-9906",
+          "issn": [
+            "0315-9906",
+            "1918-4778"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.erudit.org/fr/revues/racar/1983-v10-n1-racar05780/1074642ar.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7202/1074642ar",
+          "pdf_url": "https://www.erudit.org/fr/revues/racar/1983-v10-n1-racar05780/1074642ar.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210170860",
+            "display_name": "RACAR Revue d art canadienne",
+            "issn_l": "0315-9906",
+            "issn": [
+              "0315-9906",
+              "1918-4778"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7202/1074642ar",
+        "pdf_url": "https://www.erudit.org/fr/revues/racar/1983-v10-n1-racar05780/1074642ar.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210170860",
+          "display_name": "RACAR Revue d art canadienne",
+          "issn_l": "0315-9906",
+          "issn": [
+            "0315-9906",
+            "1918-4778"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

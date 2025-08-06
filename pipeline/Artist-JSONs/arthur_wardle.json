@@ -1,0 +1,124 @@
+[
+  {
+    "id": "https://openalex.org/W2998016642",
+    "title": "Henry VII's London in the Great Chronicle",
+    "relevance_score": 1.2426103,
+    "doi": "https://doi.org/10.2307/j.ctvrs910q",
+    "topic_ids": [
+      "C95457728",
+      "C52119013"
+    ],
+    "best_pdf": "https://scholarworks.wmich.edu/cgi/viewcontent.cgi?article=1007&context=mip_teamsdp",
+    "backup_pdf": "https://doi.org/10.2307/j.ctvrs910q",
+    "raw": {
+      "id": "https://openalex.org/W2998016642",
+      "display_name": "Henry VII's London in the Great Chronicle",
+      "relevance_score": 1.2426103,
+      "doi": "https://doi.org/10.2307/j.ctvrs910q",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4439069
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.33056045
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.2307/j.ctvrs910q",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://scholarworks.wmich.edu/cgi/viewcontent.cgi?article=1007&context=mip_teamsdp",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.2307/j.ctvrs910q",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://scholarworks.wmich.edu/cgi/viewcontent.cgi?article=1007&context=mip_teamsdp",
+          "pdf_url": "https://scholarworks.wmich.edu/cgi/viewcontent.cgi?article=1007&context=mip_teamsdp",
+          "source": {
+            "id": "https://openalex.org/S4377196527",
+            "display_name": "ScholarWorks - WMU (Western Michigan University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I141649380",
+            "host_organization_name": "Western Michigan University",
+            "host_organization_lineage": [
+              "https://openalex.org/I141649380"
+            ],
+            "host_organization_lineage_names": [
+              "Western Michigan University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://scholarworks.wmich.edu/cgi/viewcontent.cgi?article=1007&context=mip_teamsdp",
+        "pdf_url": "https://scholarworks.wmich.edu/cgi/viewcontent.cgi?article=1007&context=mip_teamsdp",
+        "source": {
+          "id": "https://openalex.org/S4377196527",
+          "display_name": "ScholarWorks - WMU (Western Michigan University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I141649380",
+          "host_organization_name": "Western Michigan University",
+          "host_organization_lineage": [
+            "https://openalex.org/I141649380"
+          ],
+          "host_organization_lineage_names": [
+            "Western Michigan University"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

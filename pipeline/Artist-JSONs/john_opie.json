@@ -1,0 +1,1774 @@
+[
+  {
+    "id": "https://openalex.org/W3038816193",
+    "title": "The Social Economics of Artistic Labour: A Technical Case Study of Henry Monro’s Disgrace of Wolsey (1814)",
+    "relevance_score": 2.9991546,
+    "doi": "https://doi.org/10.17658/issn.2058-5462/issue-16/coopermyrone",
+    "topic_ids": [
+      "C56666940",
+      "C205783811",
+      "C520712124",
+      "C2781291010",
+      "C18762648",
+      "C12713177",
+      "C40231798",
+      "C144024400",
+      "C95457728",
+      "C153349607",
+      "C52119013",
+      "C142362112",
+      "C124952713",
+      "C107038049",
+      "C127413603",
+      "C41008148",
+      "C78519656",
+      "C199360897"
+    ],
+    "best_pdf": "http://pdf.britishartstudies.ac.uk/articles/issue-16-Social-Economics-of-Artistic-Labour.pdf",
+    "backup_pdf": "https://doi.org/10.17658/issn.2058-5462/issue-16/coopermyrone",
+    "raw": {
+      "id": "https://openalex.org/W3038816193",
+      "display_name": "The Social Economics of Artistic Labour: A Technical Case Study of Henry Monro’s Disgrace of Wolsey (1814)",
+      "relevance_score": 2.9991546,
+      "doi": "https://doi.org/10.17658/issn.2058-5462/issue-16/coopermyrone",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C56666940",
+          "wikidata": "https://www.wikidata.org/wiki/Q788790",
+          "display_name": "Documentation",
+          "level": 2,
+          "score": 0.75749475
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.73564404
+        },
+        {
+          "id": "https://openalex.org/C520712124",
+          "wikidata": "https://www.wikidata.org/wiki/Q36279",
+          "display_name": "Biography",
+          "level": 2,
+          "score": 0.6653857
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.5446304
+        },
+        {
+          "id": "https://openalex.org/C18762648",
+          "wikidata": "https://www.wikidata.org/wiki/Q42213",
+          "display_name": "Work (physics)",
+          "level": 2,
+          "score": 0.486393
+        },
+        {
+          "id": "https://openalex.org/C12713177",
+          "wikidata": "https://www.wikidata.org/wiki/Q1900281",
+          "display_name": "Perspective (graphical)",
+          "level": 2,
+          "score": 0.48395732
+        },
+        {
+          "id": "https://openalex.org/C40231798",
+          "wikidata": "https://www.wikidata.org/wiki/Q1333743",
+          "display_name": "Composition (language)",
+          "level": 2,
+          "score": 0.43444958
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.420064
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.37412724
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3681856
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.33324212
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.2994706
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.22063765
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.18838215
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.13119426
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.11052024
+        },
+        {
+          "id": "https://openalex.org/C78519656",
+          "wikidata": "https://www.wikidata.org/wiki/Q101333",
+          "display_name": "Mechanical engineering",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.17658/issn.2058-5462/issue-16/coopermyrone",
+        "pdf_url": "http://pdf.britishartstudies.ac.uk/articles/issue-16-Social-Economics-of-Artistic-Labour.pdf",
+        "source": {
+          "id": "https://openalex.org/S2738754793",
+          "display_name": "British Art Studies",
+          "issn_l": "2058-5462",
+          "issn": [
+            "2058-5462"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315589",
+          "host_organization_name": "Yale University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315589"
+          ],
+          "host_organization_lineage_names": [
+            "Yale University"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "http://pdf.britishartstudies.ac.uk/articles/issue-16-Social-Economics-of-Artistic-Labour.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.17658/issn.2058-5462/issue-16/coopermyrone",
+          "pdf_url": "http://pdf.britishartstudies.ac.uk/articles/issue-16-Social-Economics-of-Artistic-Labour.pdf",
+          "source": {
+            "id": "https://openalex.org/S2738754793",
+            "display_name": "British Art Studies",
+            "issn_l": "2058-5462",
+            "issn": [
+              "2058-5462"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310315589",
+            "host_organization_name": "Yale University",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315589"
+            ],
+            "host_organization_lineage_names": [
+              "Yale University"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/5b6f4677f6ce4720a042d67172cfa42f",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.17658/issn.2058-5462/issue-16/coopermyrone",
+        "pdf_url": "http://pdf.britishartstudies.ac.uk/articles/issue-16-Social-Economics-of-Artistic-Labour.pdf",
+        "source": {
+          "id": "https://openalex.org/S2738754793",
+          "display_name": "British Art Studies",
+          "issn_l": "2058-5462",
+          "issn": [
+            "2058-5462"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310315589",
+          "host_organization_name": "Yale University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315589"
+          ],
+          "host_organization_lineage_names": [
+            "Yale University"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2316932987",
+    "title": "Transnational Affinities and Invented Traditions: The Napoleonic Wars in British and Hanoverian Memory, 1815–1915",
+    "relevance_score": 2.0761826,
+    "doi": "https://doi.org/10.1093/ehr/ces248",
+    "topic_ids": [
+      "C2780283098",
+      "C95457728",
+      "C53553401",
+      "C74916050",
+      "C86803240",
+      "C55493867"
+    ],
+    "best_pdf": "https://boris.unibe.ch/41349/1/ces248.pdf",
+    "backup_pdf": "https://boris.unibe.ch/41349/",
+    "raw": {
+      "id": "https://openalex.org/W2316932987",
+      "display_name": "Transnational Affinities and Invented Traditions: The Napoleonic Wars in British and Hanoverian Memory, 1815–1915",
+      "relevance_score": 2.0761826,
+      "doi": "https://doi.org/10.1093/ehr/ces248",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780283098",
+          "wikidata": "https://www.wikidata.org/wiki/Q4688960",
+          "display_name": "Affinities",
+          "level": 2,
+          "score": 0.7968236
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.5623328
+        },
+        {
+          "id": "https://openalex.org/C53553401",
+          "wikidata": "https://www.wikidata.org/wiki/Q47307",
+          "display_name": "Genealogy",
+          "level": 1,
+          "score": 0.3627322
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.33917323
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.050465375
+        },
+        {
+          "id": "https://openalex.org/C55493867",
+          "wikidata": "https://www.wikidata.org/wiki/Q7094",
+          "display_name": "Biochemistry",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1093/ehr/ces248",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S56601287",
+          "display_name": "The English Historical Review",
+          "issn_l": "0013-8266",
+          "issn": [
+            "0013-8266",
+            "1477-4534"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://boris.unibe.ch/41349/1/ces248.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1093/ehr/ces248",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S56601287",
+            "display_name": "The English Historical Review",
+            "issn_l": "0013-8266",
+            "issn": [
+              "0013-8266",
+              "1477-4534"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647",
+              "https://openalex.org/P4310311648"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford",
+              "Oxford University Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://boris.unibe.ch/41349/",
+          "pdf_url": "https://boris.unibe.ch/41349/1/ces248.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401747",
+            "display_name": "BORIS (University Library Bern)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210103840",
+            "host_organization_name": "Nakuru County Council",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210103840"
+            ],
+            "host_organization_lineage_names": [
+              "Nakuru County Council"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://doc.rero.ch/record/304157/files/ces248.pdf",
+          "pdf_url": "http://doc.rero.ch/record/304157/files/ces248.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400148",
+            "display_name": "reroDoc Digital Library",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [
+              "European Organization for Nuclear Research"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://boris.unibe.ch/41349/",
+        "pdf_url": "https://boris.unibe.ch/41349/1/ces248.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401747",
+          "display_name": "BORIS (University Library Bern)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210103840",
+          "host_organization_name": "Nakuru County Council",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210103840"
+          ],
+          "host_organization_lineage_names": [
+            "Nakuru County Council"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W1981906276",
+    "title": "Mrs Birkbeck's Album: The Hand-written and the Printed in Early Nineteenth-Century Feminine Culture",
+    "relevance_score": 1.9057233,
+    "doi": "https://doi.org/10.16995/ntn.435",
+    "topic_ids": [
+      "C94625758",
+      "C2987052865",
+      "C187412358",
+      "C52119013",
+      "C142362112",
+      "C8868529",
+      "C48798503",
+      "C57481673",
+      "C153349607",
+      "C144024400",
+      "C124952713",
+      "C15744967",
+      "C199539241",
+      "C36289849",
+      "C169760540",
+      "C17744445",
+      "C162324750",
+      "C34447519"
+    ],
+    "best_pdf": "https://19.bbk.ac.uk/article/id/1722/download/pdf/",
+    "backup_pdf": "https://doi.org/10.16995/ntn.435",
+    "raw": {
+      "id": "https://openalex.org/W1981906276",
+      "display_name": "Mrs Birkbeck's Album: The Hand-written and the Printed in Early Nineteenth-Century Feminine Culture",
+      "relevance_score": 1.9057233,
+      "doi": "https://doi.org/10.16995/ntn.435",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.5188224
+        },
+        {
+          "id": "https://openalex.org/C2987052865",
+          "wikidata": "https://www.wikidata.org/wiki/Q11033",
+          "display_name": "Visual media",
+          "level": 2,
+          "score": 0.511362
+        },
+        {
+          "id": "https://openalex.org/C187412358",
+          "wikidata": "https://www.wikidata.org/wiki/Q861716",
+          "display_name": "Visual culture",
+          "level": 2,
+          "score": 0.5047785
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.5024848
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.47174963
+        },
+        {
+          "id": "https://openalex.org/C8868529",
+          "wikidata": "https://www.wikidata.org/wiki/Q124794",
+          "display_name": "Taste",
+          "level": 2,
+          "score": 0.44233182
+        },
+        {
+          "id": "https://openalex.org/C48798503",
+          "wikidata": "https://www.wikidata.org/wiki/Q877546",
+          "display_name": "Reputation",
+          "level": 2,
+          "score": 0.43651766
+        },
+        {
+          "id": "https://openalex.org/C57481673",
+          "wikidata": "https://www.wikidata.org/wiki/Q1780322",
+          "display_name": "Commodification",
+          "level": 2,
+          "score": 0.41519406
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3905453
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.36688232
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.33416682
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.13915607
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.11168131
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.110204935
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C34447519",
+          "wikidata": "https://www.wikidata.org/wiki/Q179522",
+          "display_name": "Market economy",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ntn.435",
+        "pdf_url": "https://19.bbk.ac.uk/article/id/1722/download/pdf/",
+        "source": {
+          "id": "https://openalex.org/S4210213405",
+          "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+          "issn_l": "1755-1560",
+          "issn": [
+            "1755-1560"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319895",
+          "host_organization_name": "Open Library of Humanities",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319895"
+          ],
+          "host_organization_lineage_names": [
+            "Open Library of Humanities"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://19.bbk.ac.uk/article/id/1722/download/pdf/",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.16995/ntn.435",
+          "pdf_url": "https://19.bbk.ac.uk/article/id/1722/download/pdf/",
+          "source": {
+            "id": "https://openalex.org/S4210213405",
+            "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+            "issn_l": "1755-1560",
+            "issn": [
+              "1755-1560"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310319895",
+            "host_organization_name": "Open Library of Humanities",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319895"
+            ],
+            "host_organization_lineage_names": [
+              "Open Library of Humanities"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/83c798f9c4be44739970119425b67324",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.16995/ntn.435",
+        "pdf_url": "https://19.bbk.ac.uk/article/id/1722/download/pdf/",
+        "source": {
+          "id": "https://openalex.org/S4210213405",
+          "display_name": "19 Interdisciplinary Studies in the Long Nineteenth Century",
+          "issn_l": "1755-1560",
+          "issn": [
+            "1755-1560"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310319895",
+          "host_organization_name": "Open Library of Humanities",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319895"
+          ],
+          "host_organization_lineage_names": [
+            "Open Library of Humanities"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2023814241",
+    "title": "Sins of omission and commission",
+    "relevance_score": 1.7922918,
+    "doi": "https://doi.org/10.1017/s0140525x0149011x",
+    "topic_ids": [
+      "C84269361",
+      "C15744967",
+      "C26760741",
+      "C4051589",
+      "C2776034101",
+      "C180747234",
+      "C11171543",
+      "C77805123",
+      "C111472728",
+      "C138885662",
+      "C169900460",
+      "C169760540",
+      "C199539241",
+      "C17744445"
+    ],
+    "best_pdf": "https://digital.library.adelaide.edu.au/dspace/bitstream/2440/37346/1/O%27Brien_37346.pdf",
+    "backup_pdf": "http://hdl.handle.net/2440/37346",
+    "raw": {
+      "id": "https://openalex.org/W2023814241",
+      "display_name": "Sins of omission and commission",
+      "relevance_score": 1.7922918,
+      "doi": "https://doi.org/10.1017/s0140525x0149011x",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C84269361",
+          "wikidata": "https://www.wikidata.org/wiki/Q179235",
+          "display_name": "Phenomenology (philosophy)",
+          "level": 2,
+          "score": 0.737942
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.6852067
+        },
+        {
+          "id": "https://openalex.org/C26760741",
+          "wikidata": "https://www.wikidata.org/wiki/Q160402",
+          "display_name": "Perception",
+          "level": 2,
+          "score": 0.62199014
+        },
+        {
+          "id": "https://openalex.org/C4051589",
+          "wikidata": "https://www.wikidata.org/wiki/Q860959",
+          "display_name": "Mental image",
+          "level": 3,
+          "score": 0.5589245
+        },
+        {
+          "id": "https://openalex.org/C2776034101",
+          "wikidata": "https://www.wikidata.org/wiki/Q1509347",
+          "display_name": "Commission",
+          "level": 2,
+          "score": 0.5333403
+        },
+        {
+          "id": "https://openalex.org/C180747234",
+          "wikidata": "https://www.wikidata.org/wiki/Q23373",
+          "display_name": "Cognitive psychology",
+          "level": 1,
+          "score": 0.48336715
+        },
+        {
+          "id": "https://openalex.org/C11171543",
+          "wikidata": "https://www.wikidata.org/wiki/Q41630",
+          "display_name": "Psychoanalysis",
+          "level": 1,
+          "score": 0.4191264
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.3277217
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.29680872
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.26982397
+        },
+        {
+          "id": "https://openalex.org/C169900460",
+          "wikidata": "https://www.wikidata.org/wiki/Q2200417",
+          "display_name": "Cognition",
+          "level": 2,
+          "score": 0.15970889
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.11226168
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.10226759
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0750722
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/s0140525x0149011x",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S59628311",
+          "display_name": "Behavioral and Brain Sciences",
+          "issn_l": "0140-525X",
+          "issn": [
+            "0140-525X",
+            "1469-1825"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://digital.library.adelaide.edu.au/dspace/bitstream/2440/37346/1/O%27Brien_37346.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1017/s0140525x0149011x",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S59628311",
+            "display_name": "Behavioral and Brain Sciences",
+            "issn_l": "0140-525X",
+            "issn": [
+              "0140-525X",
+              "1469-1825"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/2440/37346",
+          "pdf_url": "https://digital.library.adelaide.edu.au/dspace/bitstream/2440/37346/1/O%27Brien_37346.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401835",
+            "display_name": "Adelaide Research & Scholarship (AR&S) (University of Adelaide)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I5681781",
+            "host_organization_name": "The University of Adelaide",
+            "host_organization_lineage": [
+              "https://openalex.org/I5681781"
+            ],
+            "host_organization_lineage_names": [
+              "The University of Adelaide"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://hdl.handle.net/2440/37346",
+        "pdf_url": "https://digital.library.adelaide.edu.au/dspace/bitstream/2440/37346/1/O%27Brien_37346.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306401835",
+          "display_name": "Adelaide Research & Scholarship (AR&S) (University of Adelaide)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I5681781",
+          "host_organization_name": "The University of Adelaide",
+          "host_organization_lineage": [
+            "https://openalex.org/I5681781"
+          ],
+          "host_organization_lineage_names": [
+            "The University of Adelaide"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4386089790",
+    "title": "“Eyes are eyes &amp; can’t be neglected”: A New Insight into Frances Hodgkins?",
+    "relevance_score": 1.5875093,
+    "doi": "https://doi.org/10.26686/jnzs.ins36.8325",
+    "topic_ids": [
+      "C2780225610",
+      "C205783811",
+      "C52119013",
+      "C2781291010",
+      "C151719136",
+      "C95457728",
+      "C71924100",
+      "C142362112",
+      "C118487528",
+      "C124952713",
+      "C107038049"
+    ],
+    "best_pdf": "https://ojs.victoria.ac.nz/jnzs/article/download/8325/7390",
+    "backup_pdf": "https://doi.org/10.26686/jnzs.ins36.8325",
+    "raw": {
+      "id": "https://openalex.org/W4386089790",
+      "display_name": "“Eyes are eyes &amp; can’t be neglected”: A New Insight into Frances Hodgkins?",
+      "relevance_score": 1.5875093,
+      "doi": "https://doi.org/10.26686/jnzs.ins36.8325",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780225610",
+          "wikidata": "https://www.wikidata.org/wiki/Q127724",
+          "display_name": "Cataracts",
+          "level": 2,
+          "score": 0.5819178
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.55171645
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.5242536
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.5145747
+        },
+        {
+          "id": "https://openalex.org/C151719136",
+          "wikidata": "https://www.wikidata.org/wiki/Q3972943",
+          "display_name": "Publishing",
+          "level": 2,
+          "score": 0.5040668
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.39830247
+        },
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.37702468
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.3715238
+        },
+        {
+          "id": "https://openalex.org/C118487528",
+          "wikidata": "https://www.wikidata.org/wiki/Q161437",
+          "display_name": "Ophthalmology",
+          "level": 1,
+          "score": 0.30210912
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.18059403
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.1260204
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26686/jnzs.ins36.8325",
+        "pdf_url": "https://ojs.victoria.ac.nz/jnzs/article/download/8325/7390",
+        "source": {
+          "id": "https://openalex.org/S2765070212",
+          "display_name": "Journal of New Zealand studies",
+          "issn_l": "1176-306X",
+          "issn": [
+            "1176-306X",
+            "2324-3740"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://ojs.victoria.ac.nz/jnzs/article/download/8325/7390",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.26686/jnzs.ins36.8325",
+          "pdf_url": "https://ojs.victoria.ac.nz/jnzs/article/download/8325/7390",
+          "source": {
+            "id": "https://openalex.org/S2765070212",
+            "display_name": "Journal of New Zealand studies",
+            "issn_l": "1176-306X",
+            "issn": [
+              "1176-306X",
+              "2324-3740"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://ojs.victoria.ac.nz/jnzs/article/view/8325",
+          "pdf_url": "https://ojs.victoria.ac.nz/jnzs/article/download/8325/7414",
+          "source": {
+            "id": "https://openalex.org/S4306400325",
+            "display_name": "Journal of New Zealand Studies (The Stout Research Centre for New Zealand Studies)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I41156924",
+            "host_organization_name": "Victoria University of Wellington",
+            "host_organization_lineage": [
+              "https://openalex.org/I41156924"
+            ],
+            "host_organization_lineage_names": [
+              "Victoria University of Wellington"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.26686/jnzs.ins36.8325",
+        "pdf_url": "https://ojs.victoria.ac.nz/jnzs/article/download/8325/7390",
+        "source": {
+          "id": "https://openalex.org/S2765070212",
+          "display_name": "Journal of New Zealand studies",
+          "issn_l": "1176-306X",
+          "issn": [
+            "1176-306X",
+            "2324-3740"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4235770167",
+    "title": "List of figures",
+    "relevance_score": 1.4948398,
+    "doi": "https://doi.org/10.7765/9781526129130.00003",
+    "topic_ids": [
+      "C10511252",
+      "C512170562",
+      "C94625758",
+      "C163258240",
+      "C2781291010",
+      "C153349607",
+      "C142362112",
+      "C554144382",
+      "C2778572836",
+      "C29595303",
+      "C95457728",
+      "C52119013",
+      "C144024400",
+      "C199539241",
+      "C107038049",
+      "C17744445",
+      "C121332964",
+      "C62520636",
+      "C41895202",
+      "C138885662"
+    ],
+    "best_pdf": "https://www.manchesterhive.com/downloadpdf/9781526129130/9781526129130.00003.pdf",
+    "backup_pdf": "https://doi.org/10.7765/9781526129130.00003",
+    "raw": {
+      "id": "https://openalex.org/W4235770167",
+      "display_name": "List of figures",
+      "relevance_score": 1.4948398,
+      "doi": "https://doi.org/10.7765/9781526129130.00003",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C10511252",
+          "wikidata": "https://www.wikidata.org/wiki/Q112110",
+          "display_name": "Emblem",
+          "level": 2,
+          "score": 0.80886495
+        },
+        {
+          "id": "https://openalex.org/C512170562",
+          "wikidata": "https://www.wikidata.org/wiki/Q173799",
+          "display_name": "Entertainment",
+          "level": 2,
+          "score": 0.7638289
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.5727568
+        },
+        {
+          "id": "https://openalex.org/C163258240",
+          "wikidata": "https://www.wikidata.org/wiki/Q25342",
+          "display_name": "Power (physics)",
+          "level": 2,
+          "score": 0.5414453
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.51799524
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.4699388
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.46615422
+        },
+        {
+          "id": "https://openalex.org/C554144382",
+          "wikidata": "https://www.wikidata.org/wiki/Q213156",
+          "display_name": "Performance art",
+          "level": 2,
+          "score": 0.4402286
+        },
+        {
+          "id": "https://openalex.org/C2778572836",
+          "wikidata": "https://www.wikidata.org/wiki/Q380933",
+          "display_name": "Space (punctuation)",
+          "level": 2,
+          "score": 0.41287988
+        },
+        {
+          "id": "https://openalex.org/C29595303",
+          "wikidata": "https://www.wikidata.org/wiki/Q165650",
+          "display_name": "Media studies",
+          "level": 1,
+          "score": 0.40518692
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.3988717
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.2953657
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.27457643
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.24576902
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.20607916
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.19577312
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7765/9781526129130.00003",
+        "pdf_url": "https://www.manchesterhive.com/downloadpdf/9781526129130/9781526129130.00003.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463591",
+          "display_name": "Manchester University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311844",
+          "host_organization_name": "Winchester University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311844"
+          ],
+          "host_organization_lineage_names": [
+            "Winchester University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.manchesterhive.com/downloadpdf/9781526129130/9781526129130.00003.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7765/9781526129130.00003",
+          "pdf_url": "https://www.manchesterhive.com/downloadpdf/9781526129130/9781526129130.00003.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306463591",
+            "display_name": "Manchester University Press eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311844",
+            "host_organization_name": "Winchester University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311844"
+            ],
+            "host_organization_lineage_names": [
+              "Winchester University Press"
+            ],
+            "type": "ebook platform"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7765/9781526129130.00003",
+        "pdf_url": "https://www.manchesterhive.com/downloadpdf/9781526129130/9781526129130.00003.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306463591",
+          "display_name": "Manchester University Press eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311844",
+          "host_organization_name": "Winchester University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311844"
+          ],
+          "host_organization_lineage_names": [
+            "Winchester University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3177194583",
+    "title": "The Discovery of an Artist’s Portrait: The Landscape Painter Hendrik Voogd Portrayed by Charles Howard Hodges",
+    "relevance_score": 1.1918766,
+    "doi": "https://doi.org/10.52476/trb.10074",
+    "topic_ids": [
+      "C162462552",
+      "C205783811",
+      "C52119013",
+      "C142362112",
+      "C95457728",
+      "C153349607",
+      "C144024400"
+    ],
+    "best_pdf": "https://bulletin.rijksmuseum.nl/article/download/10074/10517",
+    "backup_pdf": "https://doi.org/10.52476/trb.10074",
+    "raw": {
+      "id": "https://openalex.org/W3177194583",
+      "display_name": "The Discovery of an Artist’s Portrait: The Landscape Painter Hendrik Voogd Portrayed by Charles Howard Hodges",
+      "relevance_score": 1.1918766,
+      "doi": "https://doi.org/10.52476/trb.10074",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.8810501
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.6937214
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.5800624
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.49713734
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.33260185
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3323341
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.33133882
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52476/trb.10074",
+        "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/10074/10517",
+        "source": {
+          "id": "https://openalex.org/S4210227217",
+          "display_name": "The Rijksmuseum Bulletin",
+          "issn_l": "1877-8127",
+          "issn": [
+            "1877-8127",
+            "2772-6126"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318572",
+          "host_organization_name": "Rijksmuseum",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318572"
+          ],
+          "host_organization_lineage_names": [
+            "Rijksmuseum"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://bulletin.rijksmuseum.nl/article/download/10074/10517",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.52476/trb.10074",
+          "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/10074/10517",
+          "source": {
+            "id": "https://openalex.org/S4210227217",
+            "display_name": "The Rijksmuseum Bulletin",
+            "issn_l": "1877-8127",
+            "issn": [
+              "1877-8127",
+              "2772-6126"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310318572",
+            "host_organization_name": "Rijksmuseum",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310318572"
+            ],
+            "host_organization_lineage_names": [
+              "Rijksmuseum"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/bbcbcfcdb77a48709be90ceb1a0a3c0d",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.52476/trb.10074",
+        "pdf_url": "https://bulletin.rijksmuseum.nl/article/download/10074/10517",
+        "source": {
+          "id": "https://openalex.org/S4210227217",
+          "display_name": "The Rijksmuseum Bulletin",
+          "issn_l": "1877-8127",
+          "issn": [
+            "1877-8127",
+            "2772-6126"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310318572",
+          "host_organization_name": "Rijksmuseum",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310318572"
+          ],
+          "host_organization_lineage_names": [
+            "Rijksmuseum"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

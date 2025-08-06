@@ -1,0 +1,965 @@
+[
+  {
+    "id": "https://openalex.org/W4300641223",
+    "title": "Queer Livability",
+    "relevance_score": 2.796158,
+    "doi": "https://doi.org/10.3998/mpub.11464019",
+    "topic_ids": [
+      "C2778584255",
+      "C144024400",
+      "C107993555"
+    ],
+    "best_pdf": "https://library.oapen.org/bitstream/20.500.12657/62539/1/9780472902668.pdf",
+    "backup_pdf": "https://directory.doabooks.org/handle/20.500.12854/99572",
+    "raw": {
+      "id": "https://openalex.org/W4300641223",
+      "display_name": "Queer Livability",
+      "relevance_score": 2.796158,
+      "doi": "https://doi.org/10.3998/mpub.11464019",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778584255",
+          "wikidata": "https://www.wikidata.org/wiki/Q51415",
+          "display_name": "Queer",
+          "level": 2,
+          "score": 0.554923
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.3910707
+        },
+        {
+          "id": "https://openalex.org/C107993555",
+          "wikidata": "https://www.wikidata.org/wiki/Q1662673",
+          "display_name": "Gender studies",
+          "level": 1,
+          "score": 0.17067361
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.3998/mpub.11464019",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://library.oapen.org/bitstream/20.500.12657/62539/1/9780472902668.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.3998/mpub.11464019",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://directory.doabooks.org/handle/20.500.12854/99572",
+          "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/62539/1/9780472902668.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/10871/134048",
+          "pdf_url": "https://ore.exeter.ac.uk/repository/bitstream/10871/134048/1/Linge_Queer%20Livability.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401998",
+            "display_name": "Open Research Exeter (University of Exeter)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I23923803",
+            "host_organization_name": "University of Exeter",
+            "host_organization_lineage": [
+              "https://openalex.org/I23923803"
+            ],
+            "host_organization_lineage_names": [
+              "University of Exeter"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://directory.doabooks.org/handle/20.500.12854/99572",
+        "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/62539/1/9780472902668.pdf",
+        "source": {
+          "id": "https://openalex.org/S4308707206",
+          "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I157725225",
+          "host_organization_name": "University of Illinois Urbana-Champaign",
+          "host_organization_lineage": [
+            "https://openalex.org/I157725225"
+          ],
+          "host_organization_lineage_names": [
+            "University of Illinois Urbana-Champaign"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2911310934",
+    "title": "Sex in the Secret Museum: Photographs from the British Museum’s Witt Scrapbooks",
+    "relevance_score": 2.1913354,
+    "doi": "https://doi.org/10.1080/17514517.2018.1545887",
+    "topic_ids": [
+      "C142362112",
+      "C52119013",
+      "C166957645",
+      "C153349607",
+      "C95457728"
+    ],
+    "best_pdf": "https://eprints.kingston.ac.uk/id/eprint/42307/6/Wickstead-H-42307-AAM.pdf",
+    "backup_pdf": "https://doi.org/10.1080/17514517.2018.1545887",
+    "raw": {
+      "id": "https://openalex.org/W2911310934",
+      "display_name": "Sex in the Secret Museum: Photographs from the British Museum’s Witt Scrapbooks",
+      "relevance_score": 2.1913354,
+      "doi": "https://doi.org/10.1080/17514517.2018.1545887",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5376135
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.44019192
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.39295703
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.3442008
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.19530329
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/17514517.2018.1545887",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S20903574",
+          "display_name": "Photography and Culture",
+          "issn_l": "1751-4517",
+          "issn": [
+            "1751-4517",
+            "1751-4525"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://eprints.kingston.ac.uk/id/eprint/42307/6/Wickstead-H-42307-AAM.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/17514517.2018.1545887",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S20903574",
+            "display_name": "Photography and Culture",
+            "issn_l": "1751-4517",
+            "issn": [
+              "1751-4517",
+              "1751-4525"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://eprints.kingston.ac.uk/id/eprint/42307/6/Wickstead-H-42307-AAM.pdf",
+          "pdf_url": "https://eprints.kingston.ac.uk/id/eprint/42307/6/Wickstead-H-42307-AAM.pdf",
+          "source": {
+            "id": "https://openalex.org/S4377196345",
+            "display_name": "Kingston University Research Repository (Kingston University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210154901",
+            "host_organization_name": "Kingston University",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210154901"
+            ],
+            "host_organization_lineage_names": [
+              "Kingston University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://eprints.kingston.ac.uk/id/eprint/42307/6/Wickstead-H-42307-AAM.pdf",
+        "pdf_url": "https://eprints.kingston.ac.uk/id/eprint/42307/6/Wickstead-H-42307-AAM.pdf",
+        "source": {
+          "id": "https://openalex.org/S4377196345",
+          "display_name": "Kingston University Research Repository (Kingston University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I4210154901",
+          "host_organization_name": "Kingston University",
+          "host_organization_lineage": [
+            "https://openalex.org/I4210154901"
+          ],
+          "host_organization_lineage_names": [
+            "Kingston University"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4315702395",
+    "title": "Monarchs in National Dress – Sartorial Expressions of National Image in the Representational Practices of 19th-century European Courts",
+    "relevance_score": 1.4536862,
+    "doi": "https://doi.org/10.1556/022.2021.00038",
+    "topic_ids": [
+      "C2778329345",
+      "C2778407155",
+      "C2776445246",
+      "C2779547678",
+      "C2776359362",
+      "C163258240",
+      "C2778355321",
+      "C2777571088",
+      "C519517224",
+      "C137403100",
+      "C199539241",
+      "C2777026412",
+      "C134400042",
+      "C95457728",
+      "C2776760102",
+      "C144024400",
+      "C17744445",
+      "C107038049",
+      "C142362112",
+      "C74916050",
+      "C41895202",
+      "C138885662",
+      "C121332964",
+      "C166957645",
+      "C177264268",
+      "C62520636",
+      "C94625758",
+      "C41008148",
+      "C199360897"
+    ],
+    "best_pdf": "https://akjournals.com/downloadpdf/journals/022/66/2/article-p439.pdf",
+    "backup_pdf": "https://doi.org/10.1556/022.2021.00038",
+    "raw": {
+      "id": "https://openalex.org/W4315702395",
+      "display_name": "Monarchs in National Dress – Sartorial Expressions of National Image in the Representational Practices of 19th-century European Courts",
+      "relevance_score": 1.4536862,
+      "doi": "https://doi.org/10.1556/022.2021.00038",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778329345",
+          "wikidata": "https://www.wikidata.org/wiki/Q919978",
+          "display_name": "Prestige",
+          "level": 2,
+          "score": 0.8693491
+        },
+        {
+          "id": "https://openalex.org/C2778407155",
+          "wikidata": "https://www.wikidata.org/wiki/Q1880695",
+          "display_name": "National identity",
+          "level": 3,
+          "score": 0.73072505
+        },
+        {
+          "id": "https://openalex.org/C2776445246",
+          "wikidata": "https://www.wikidata.org/wiki/Q1792644",
+          "display_name": "Style (visual arts)",
+          "level": 2,
+          "score": 0.71173525
+        },
+        {
+          "id": "https://openalex.org/C2779547678",
+          "wikidata": "https://www.wikidata.org/wiki/Q1880695",
+          "display_name": "National consciousness",
+          "level": 3,
+          "score": 0.68206954
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.5999396
+        },
+        {
+          "id": "https://openalex.org/C163258240",
+          "wikidata": "https://www.wikidata.org/wiki/Q25342",
+          "display_name": "Power (physics)",
+          "level": 2,
+          "score": 0.5892283
+        },
+        {
+          "id": "https://openalex.org/C2778355321",
+          "wikidata": "https://www.wikidata.org/wiki/Q17079427",
+          "display_name": "Identity (music)",
+          "level": 2,
+          "score": 0.53517646
+        },
+        {
+          "id": "https://openalex.org/C2777571088",
+          "wikidata": "https://www.wikidata.org/wiki/Q15767665",
+          "display_name": "National Identities",
+          "level": 4,
+          "score": 0.5348538
+        },
+        {
+          "id": "https://openalex.org/C519517224",
+          "wikidata": "https://www.wikidata.org/wiki/Q12827256",
+          "display_name": "Mythology",
+          "level": 2,
+          "score": 0.5040056
+        },
+        {
+          "id": "https://openalex.org/C137403100",
+          "wikidata": "https://www.wikidata.org/wiki/Q41710",
+          "display_name": "Ethnic group",
+          "level": 2,
+          "score": 0.4841917
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.468007
+        },
+        {
+          "id": "https://openalex.org/C2777026412",
+          "wikidata": "https://www.wikidata.org/wiki/Q2684591",
+          "display_name": "Statement (logic)",
+          "level": 2,
+          "score": 0.4385931
+        },
+        {
+          "id": "https://openalex.org/C134400042",
+          "wikidata": "https://www.wikidata.org/wiki/Q2372244",
+          "display_name": "Symbol (formal)",
+          "level": 2,
+          "score": 0.42289096
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.41736588
+        },
+        {
+          "id": "https://openalex.org/C2776760102",
+          "wikidata": "https://www.wikidata.org/wiki/Q5139990",
+          "display_name": "Code (set theory)",
+          "level": 3,
+          "score": 0.41359374
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.4020773
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.32158113
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.30539846
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.1653046
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.13991946
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.095174134
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C177264268",
+          "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+          "display_name": "Set (abstract data type)",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1556/022.2021.00038",
+        "pdf_url": "https://akjournals.com/downloadpdf/journals/022/66/2/article-p439.pdf",
+        "source": {
+          "id": "https://openalex.org/S199750970",
+          "display_name": "Acta Ethnographica Hungarica",
+          "issn_l": "1216-9803",
+          "issn": [
+            "1216-9803",
+            "1588-2586"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320364",
+          "host_organization_name": "Akadémiai Kiadó",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320364"
+          ],
+          "host_organization_lineage_names": [
+            "Akadémiai Kiadó"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://akjournals.com/downloadpdf/journals/022/66/2/article-p439.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1556/022.2021.00038",
+          "pdf_url": "https://akjournals.com/downloadpdf/journals/022/66/2/article-p439.pdf",
+          "source": {
+            "id": "https://openalex.org/S199750970",
+            "display_name": "Acta Ethnographica Hungarica",
+            "issn_l": "1216-9803",
+            "issn": [
+              "1216-9803",
+              "1588-2586"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320364",
+            "host_organization_name": "Akadémiai Kiadó",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320364"
+            ],
+            "host_organization_lineage_names": [
+              "Akadémiai Kiadó"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://real.mtak.hu/158114/1/1588-2586-article-p439.pdf",
+          "pdf_url": "http://real.mtak.hu/158114/1/1588-2586-article-p439.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400081",
+            "display_name": "Repository of the Academy's Library (Library of the Hungarian Academy of Sciences)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210140733",
+            "host_organization_name": "Library and Information Centre of the Hungarian Academy of Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210140733"
+            ],
+            "host_organization_lineage_names": [
+              "Library and Information Centre of the Hungarian Academy of Sciences"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1556/022.2021.00038",
+        "pdf_url": "https://akjournals.com/downloadpdf/journals/022/66/2/article-p439.pdf",
+        "source": {
+          "id": "https://openalex.org/S199750970",
+          "display_name": "Acta Ethnographica Hungarica",
+          "issn_l": "1216-9803",
+          "issn": [
+            "1216-9803",
+            "1588-2586"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320364",
+          "host_organization_name": "Akadémiai Kiadó",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320364"
+          ],
+          "host_organization_lineage_names": [
+            "Akadémiai Kiadó"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2997275162",
+    "title": "SOPHIE VON LA ROCHES ZEITSCHRIFT <i>POMONA FÜR TEUTSCHLANDS TÖCHTER</i> UND DER LITERARISCHE MARKT DER 1780ER JAHRE IM LICHTE UNVERÖFFENTLICHTER BRIEFE",
+    "relevance_score": 1.2181884,
+    "doi": "https://doi.org/10.1111/glal.12259",
+    "topic_ids": [
+      "C15708023",
+      "C2776911728",
+      "C2781291010",
+      "C142362112",
+      "C17744445",
+      "C199539241",
+      "C107038049"
+    ],
+    "best_pdf": "http://pure-oai.bham.ac.uk/ws/files/81308200/GLL_Griffiths_article_for_revsion_31.10.19_Author_accepted_version.pdf",
+    "backup_pdf": "https://doi.org/10.1111/glal.12259",
+    "raw": {
+      "id": "https://openalex.org/W2997275162",
+      "display_name": "SOPHIE VON LA ROCHES ZEITSCHRIFT <i>POMONA FÜR TEUTSCHLANDS TÖCHTER</i> UND DER LITERARISCHE MARKT DER 1780ER JAHRE IM LICHTE UNVERÖFFENTLICHTER BRIEFE",
+      "relevance_score": 1.2181884,
+      "doi": "https://doi.org/10.1111/glal.12259",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.57486564
+        },
+        {
+          "id": "https://openalex.org/C2776911728",
+          "wikidata": "https://www.wikidata.org/wiki/Q208160",
+          "display_name": "Courage",
+          "level": 2,
+          "score": 0.46680287
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.42598575
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.29291284
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.281363
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.15088162
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.07026601
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1111/glal.12259",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S77117680",
+          "display_name": "German Life and Letters",
+          "issn_l": "0016-8777",
+          "issn": [
+            "0016-8777",
+            "1468-0483"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "http://pure-oai.bham.ac.uk/ws/files/81308200/GLL_Griffiths_article_for_revsion_31.10.19_Author_accepted_version.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1111/glal.12259",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S77117680",
+            "display_name": "German Life and Letters",
+            "issn_l": "0016-8777",
+            "issn": [
+              "0016-8777",
+              "1468-0483"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_name": "Wiley",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://pure-oai.bham.ac.uk/ws/files/81308200/GLL_Griffiths_article_for_revsion_31.10.19_Author_accepted_version.pdf",
+          "pdf_url": "http://pure-oai.bham.ac.uk/ws/files/81308200/GLL_Griffiths_article_for_revsion_31.10.19_Author_accepted_version.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402634",
+            "display_name": "University of Birmingham Research Portal (University of Birmingham)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I79619799",
+            "host_organization_name": "University of Birmingham",
+            "host_organization_lineage": [
+              "https://openalex.org/I79619799"
+            ],
+            "host_organization_lineage_names": [
+              "University of Birmingham"
+            ],
+            "type": "repository"
+          },
+          "license": "mit",
+          "license_id": "https://openalex.org/licenses/mit",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://birmingham.elsevierpure.com/en/publications/591b47a1-b403-4626-b8f9-3e55ed224d24",
+          "pdf_url": "https://birmingham.elsevierpure.com/files/81308200/GLL_Griffiths_article_for_revsion_31.10.19_Author_accepted_version.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402634",
+            "display_name": "University of Birmingham Research Portal (University of Birmingham)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I79619799",
+            "host_organization_name": "University of Birmingham",
+            "host_organization_lineage": [
+              "https://openalex.org/I79619799"
+            ],
+            "host_organization_lineage_names": [
+              "University of Birmingham"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "http://pure-oai.bham.ac.uk/ws/files/81308200/GLL_Griffiths_article_for_revsion_31.10.19_Author_accepted_version.pdf",
+        "pdf_url": "http://pure-oai.bham.ac.uk/ws/files/81308200/GLL_Griffiths_article_for_revsion_31.10.19_Author_accepted_version.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306402634",
+          "display_name": "University of Birmingham Research Portal (University of Birmingham)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I79619799",
+          "host_organization_name": "University of Birmingham",
+          "host_organization_lineage": [
+            "https://openalex.org/I79619799"
+          ],
+          "host_organization_lineage_names": [
+            "University of Birmingham"
+          ],
+          "type": "repository"
+        },
+        "license": "mit",
+        "license_id": "https://openalex.org/licenses/mit",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false
+      }
+    }
+  }
+]

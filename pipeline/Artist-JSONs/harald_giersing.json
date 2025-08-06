@@ -1,0 +1,764 @@
+[
+  {
+    "id": "https://openalex.org/W2777633403",
+    "title": "The Performance of Pictorialist Dance Photography",
+    "relevance_score": 2.5301766,
+    "doi": "https://doi.org/10.7146/nts.v29i1.103314",
+    "topic_ids": [
+      "C147446459",
+      "C119657128",
+      "C142362112",
+      "C153349607"
+    ],
+    "best_pdf": "https://curis.ku.dk/ws/files/218473316/The_Performance_of_Pictorialist_Dance.pdf",
+    "backup_pdf": "https://tidsskrift.dk/nts/article/download/103314/152356",
+    "raw": {
+      "id": "https://openalex.org/W2777633403",
+      "display_name": "The Performance of Pictorialist Dance Photography",
+      "relevance_score": 2.5301766,
+      "doi": "https://doi.org/10.7146/nts.v29i1.103314",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C147446459",
+          "wikidata": "https://www.wikidata.org/wiki/Q11639",
+          "display_name": "Dance",
+          "level": 2,
+          "score": 0.8052674
+        },
+        {
+          "id": "https://openalex.org/C119657128",
+          "wikidata": "https://www.wikidata.org/wiki/Q11633",
+          "display_name": "Photography",
+          "level": 2,
+          "score": 0.7385081
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.60293454
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.5932966
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7146/nts.v29i1.103314",
+        "pdf_url": "https://tidsskrift.dk/nts/article/download/103314/152356",
+        "source": {
+          "id": "https://openalex.org/S205065893",
+          "display_name": "Nordic Theatre Studies",
+          "issn_l": "0904-6380",
+          "issn": [
+            "0904-6380",
+            "2002-3898"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://tidsskrift.dk/nts/article/download/103314/152356",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7146/nts.v29i1.103314",
+          "pdf_url": "https://tidsskrift.dk/nts/article/download/103314/152356",
+          "source": {
+            "id": "https://openalex.org/S205065893",
+            "display_name": "Nordic Theatre Studies",
+            "issn_l": "0904-6380",
+            "issn": [
+              "0904-6380",
+              "2002-3898"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://local.forskningsportal.dk/local/dki-cgi/ws/cris-link?src=ku&id=ku-58f0b7f6-8f8c-4075-b496-e51b90429879&ti=The%20Performance%20of%20Pictorialist%20Dance%20Photography",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4412200483",
+            "display_name": "Research Portal Denmark",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I96673099",
+            "host_organization_name": "Technical University of Denmark",
+            "host_organization_lineage": [
+              "https://openalex.org/I96673099"
+            ],
+            "host_organization_lineage_names": [
+              "Technical University of Denmark"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://curis.ku.dk/ws/files/218473316/The_Performance_of_Pictorialist_Dance.pdf",
+          "pdf_url": "https://curis.ku.dk/ws/files/218473316/The_Performance_of_Pictorialist_Dance.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401983",
+            "display_name": "Research at the University of Copenhagen (University of Copenhagen)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I124055696",
+            "host_organization_name": "University of Copenhagen",
+            "host_organization_lineage": [
+              "https://openalex.org/I124055696"
+            ],
+            "host_organization_lineage_names": [
+              "University of Copenhagen"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://tidsskrift.dk/nts/article/view/103314/152356",
+          "pdf_url": "https://tidsskrift.dk/nts/article/download/103314/152356/212141",
+          "source": {
+            "id": "https://openalex.org/S4306401983",
+            "display_name": "Research at the University of Copenhagen (University of Copenhagen)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I124055696",
+            "host_organization_name": "University of Copenhagen",
+            "host_organization_lineage": [
+              "https://openalex.org/I124055696"
+            ],
+            "host_organization_lineage_names": [
+              "University of Copenhagen"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7146/nts.v29i1.103314",
+        "pdf_url": "https://tidsskrift.dk/nts/article/download/103314/152356",
+        "source": {
+          "id": "https://openalex.org/S205065893",
+          "display_name": "Nordic Theatre Studies",
+          "issn_l": "0904-6380",
+          "issn": [
+            "0904-6380",
+            "2002-3898"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4230257146",
+    "title": "The Performance of Pictorialist Dance Photography",
+    "relevance_score": 2.4677896,
+    "doi": "https://doi.org/10.7146/nts.v29i1.102972",
+    "topic_ids": [
+      "C45012715",
+      "C119657128",
+      "C147446459",
+      "C142362112",
+      "C153349607",
+      "C205783811",
+      "C2780876879",
+      "C2776327626",
+      "C52119013",
+      "C144024400",
+      "C138885662",
+      "C107993555",
+      "C111472728"
+    ],
+    "best_pdf": "https://curis.ku.dk/ws/files/218473316/The_Performance_of_Pictorialist_Dance.pdf",
+    "backup_pdf": "https://tidsskrift.dk/nts/article/download/103314/152356/212141",
+    "raw": {
+      "id": "https://openalex.org/W4230257146",
+      "display_name": "The Performance of Pictorialist Dance Photography",
+      "relevance_score": 2.4677896,
+      "doi": "https://doi.org/10.7146/nts.v29i1.102972",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C45012715",
+          "wikidata": "https://www.wikidata.org/wiki/Q746628",
+          "display_name": "Studio",
+          "level": 2,
+          "score": 0.77586496
+        },
+        {
+          "id": "https://openalex.org/C119657128",
+          "wikidata": "https://www.wikidata.org/wiki/Q11633",
+          "display_name": "Photography",
+          "level": 2,
+          "score": 0.7615059
+        },
+        {
+          "id": "https://openalex.org/C147446459",
+          "wikidata": "https://www.wikidata.org/wiki/Q11639",
+          "display_name": "Dance",
+          "level": 2,
+          "score": 0.73261
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.7017979
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.6163014
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.5631567
+        },
+        {
+          "id": "https://openalex.org/C2780876879",
+          "wikidata": "https://www.wikidata.org/wiki/Q3054749",
+          "display_name": "Meaning (existential)",
+          "level": 2,
+          "score": 0.5385986
+        },
+        {
+          "id": "https://openalex.org/C2776327626",
+          "wikidata": "https://www.wikidata.org/wiki/Q3627138",
+          "display_name": "Performativity",
+          "level": 2,
+          "score": 0.48475215
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.47926044
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.21999237
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.12856016
+        },
+        {
+          "id": "https://openalex.org/C107993555",
+          "wikidata": "https://www.wikidata.org/wiki/Q1662673",
+          "display_name": "Gender studies",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.7146/nts.v29i1.102972",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S205065893",
+          "display_name": "Nordic Theatre Studies",
+          "issn_l": "0904-6380",
+          "issn": [
+            "0904-6380",
+            "2002-3898"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://tidsskrift.dk/nts/article/download/103314/152356/212141",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.7146/nts.v29i1.102972",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S205065893",
+            "display_name": "Nordic Theatre Studies",
+            "issn_l": "0904-6380",
+            "issn": [
+              "0904-6380",
+              "2002-3898"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://tidsskrift.dk/nts/article/view/103314/152356",
+          "pdf_url": "https://tidsskrift.dk/nts/article/download/103314/152356/212141",
+          "source": {
+            "id": "https://openalex.org/S4306401983",
+            "display_name": "Research at the University of Copenhagen (University of Copenhagen)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I124055696",
+            "host_organization_name": "University of Copenhagen",
+            "host_organization_lineage": [
+              "https://openalex.org/I124055696"
+            ],
+            "host_organization_lineage_names": [
+              "University of Copenhagen"
+            ],
+            "type": "repository"
+          },
+          "license": "mit",
+          "license_id": "https://openalex.org/licenses/mit",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://curis.ku.dk/ws/files/218473316/The_Performance_of_Pictorialist_Dance.pdf",
+          "pdf_url": "https://curis.ku.dk/ws/files/218473316/The_Performance_of_Pictorialist_Dance.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401983",
+            "display_name": "Research at the University of Copenhagen (University of Copenhagen)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I124055696",
+            "host_organization_name": "University of Copenhagen",
+            "host_organization_lineage": [
+              "https://openalex.org/I124055696"
+            ],
+            "host_organization_lineage_names": [
+              "University of Copenhagen"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://tidsskrift.dk/nts/article/view/103314/152356",
+        "pdf_url": "https://tidsskrift.dk/nts/article/download/103314/152356/212141",
+        "source": {
+          "id": "https://openalex.org/S4306401983",
+          "display_name": "Research at the University of Copenhagen (University of Copenhagen)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I124055696",
+          "host_organization_name": "University of Copenhagen",
+          "host_organization_lineage": [
+            "https://openalex.org/I124055696"
+          ],
+          "host_organization_lineage_names": [
+            "University of Copenhagen"
+          ],
+          "type": "repository"
+        },
+        "license": "mit",
+        "license_id": "https://openalex.org/licenses/mit",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2738169430",
+    "title": "Thirteen Artists in a Tent: Danish Avant-garde Exhibition Practice during World War II",
+    "relevance_score": 1.1531885,
+    "doi": "https://doi.org/10.17077/0084-9537.1330",
+    "topic_ids": [
+      "C37531588",
+      "C164622146",
+      "C52119013",
+      "C2776951054",
+      "C142362112",
+      "C153349607",
+      "C95457728",
+      "C166957645",
+      "C41895202",
+      "C138885662"
+    ],
+    "best_pdf": "https://ir.uiowa.edu/cgi/viewcontent.cgi?article=1330&context=dadasur",
+    "backup_pdf": "https://doi.org/10.17077/0084-9537.1330",
+    "raw": {
+      "id": "https://openalex.org/W2738169430",
+      "display_name": "Thirteen Artists in a Tent: Danish Avant-garde Exhibition Practice during World War II",
+      "relevance_score": 1.1531885,
+      "doi": "https://doi.org/10.17077/0084-9537.1330",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.96816486
+        },
+        {
+          "id": "https://openalex.org/C164622146",
+          "wikidata": "https://www.wikidata.org/wiki/Q9035",
+          "display_name": "Danish",
+          "level": 2,
+          "score": 0.6814561
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.52155066
+        },
+        {
+          "id": "https://openalex.org/C2776951054",
+          "wikidata": "https://www.wikidata.org/wiki/Q276173",
+          "display_name": "Pavilion",
+          "level": 2,
+          "score": 0.47797605
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.47562197
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.4461002
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.39086565
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.18025926
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.17077/0084-9537.1330",
+        "pdf_url": "https://ir.uiowa.edu/cgi/viewcontent.cgi?article=1330&context=dadasur",
+        "source": {
+          "id": "https://openalex.org/S4306507506",
+          "display_name": "Dada/Surrealism",
+          "issn_l": "0084-9537",
+          "issn": [
+            "0084-9537",
+            "2372-6725"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310316443",
+          "host_organization_name": "University of Iowa",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310316443"
+          ],
+          "host_organization_lineage_names": [
+            "University of Iowa"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://ir.uiowa.edu/cgi/viewcontent.cgi?article=1330&context=dadasur",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.17077/0084-9537.1330",
+          "pdf_url": "https://ir.uiowa.edu/cgi/viewcontent.cgi?article=1330&context=dadasur",
+          "source": {
+            "id": "https://openalex.org/S4306507506",
+            "display_name": "Dada/Surrealism",
+            "issn_l": "0084-9537",
+            "issn": [
+              "0084-9537",
+              "2372-6725"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310316443",
+            "host_organization_name": "University of Iowa",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310316443"
+            ],
+            "host_organization_lineage_names": [
+              "University of Iowa"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://local.forskningsportal.dk/local/dki-cgi/ws/cris-link?src=ku&id=ku-1a79f642-0a8e-4168-a5d7-918336b5bced&ti=Thirteen%20Artists%20in%20a%20Tent%20%3A%20Danish%20Avant-garde%20Exhibition%20Practice%20during%20World%20War%20II",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4412200483",
+            "display_name": "Research Portal Denmark",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I96673099",
+            "host_organization_name": "Technical University of Denmark",
+            "host_organization_lineage": [
+              "https://openalex.org/I96673099"
+            ],
+            "host_organization_lineage_names": [
+              "Technical University of Denmark"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://pubs.lib.uiowa.edu/dadasur/article/29359/galley/137790/view/",
+          "pdf_url": "https://pubs.lib.uiowa.edu/dadasur/article/29359/galley/137790/view/",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.17077/0084-9537.1330",
+        "pdf_url": "https://ir.uiowa.edu/cgi/viewcontent.cgi?article=1330&context=dadasur",
+        "source": {
+          "id": "https://openalex.org/S4306507506",
+          "display_name": "Dada/Surrealism",
+          "issn_l": "0084-9537",
+          "issn": [
+            "0084-9537",
+            "2372-6725"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310316443",
+          "host_organization_name": "University of Iowa",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310316443"
+          ],
+          "host_organization_lineage_names": [
+            "University of Iowa"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

@@ -1,0 +1,634 @@
+[
+  {
+    "id": "https://openalex.org/W3177430595",
+    "title": "Portraits of Grand Duke Ludwig of Hesse: Return after Neglect",
+    "relevance_score": 4.346435,
+    "doi": "https://doi.org/10.21638/spbu15.2021.201",
+    "topic_ids": [
+      "C162462552",
+      "C2781321516",
+      "C52119013",
+      "C142362112",
+      "C86803240",
+      "C2780653484",
+      "C59822182"
+    ],
+    "best_pdf": "https://dspace.spbu.ru/bitstream/11701/33402/1/172-185.pdf",
+    "backup_pdf": "https://artsjournal.spbu.ru/article/download/10973/7673",
+    "raw": {
+      "id": "https://openalex.org/W3177430595",
+      "display_name": "Portraits of Grand Duke Ludwig of Hesse: Return after Neglect",
+      "relevance_score": 4.346435,
+      "doi": "https://doi.org/10.21638/spbu15.2021.201",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C162462552",
+          "wikidata": "https://www.wikidata.org/wiki/Q134307",
+          "display_name": "Portrait",
+          "level": 2,
+          "score": 0.96868074
+        },
+        {
+          "id": "https://openalex.org/C2781321516",
+          "wikidata": "https://www.wikidata.org/wiki/Q310836",
+          "display_name": "Queen (butterfly)",
+          "level": 3,
+          "score": 0.6400714
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.59449565
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5408071
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C2780653484",
+          "wikidata": "https://www.wikidata.org/wiki/Q22651",
+          "display_name": "Hymenoptera",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C59822182",
+          "wikidata": "https://www.wikidata.org/wiki/Q441",
+          "display_name": "Botany",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.21638/spbu15.2021.201",
+        "pdf_url": "https://artsjournal.spbu.ru/article/download/10973/7673",
+        "source": {
+          "id": "https://openalex.org/S4210233661",
+          "display_name": "Vestnik of Saint Petersburg University Arts",
+          "issn_l": "2221-3007",
+          "issn": [
+            "2221-3007",
+            "2542-2243"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310312746",
+          "host_organization_name": "Saint Petersburg State University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310312746"
+          ],
+          "host_organization_lineage_names": [
+            "Saint Petersburg State University"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://artsjournal.spbu.ru/article/download/10973/7673",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.21638/spbu15.2021.201",
+          "pdf_url": "https://artsjournal.spbu.ru/article/download/10973/7673",
+          "source": {
+            "id": "https://openalex.org/S4210233661",
+            "display_name": "Vestnik of Saint Petersburg University Arts",
+            "issn_l": "2221-3007",
+            "issn": [
+              "2221-3007",
+              "2542-2243"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310312746",
+            "host_organization_name": "Saint Petersburg State University",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310312746"
+            ],
+            "host_organization_lineage_names": [
+              "Saint Petersburg State University"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/11701/33402",
+          "pdf_url": "https://dspace.spbu.ru/bitstream/11701/33402/1/172-185.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402062",
+            "display_name": "Research Repository Saint Petersburg State University (Saint Petersburg State University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I172901346",
+            "host_organization_name": "St Petersburg University",
+            "host_organization_lineage": [
+              "https://openalex.org/I172901346"
+            ],
+            "host_organization_lineage_names": [
+              "St Petersburg University"
+            ],
+            "type": "repository"
+          },
+          "license": "mit",
+          "license_id": "https://openalex.org/licenses/mit",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.21638/spbu15.2021.201",
+        "pdf_url": "https://artsjournal.spbu.ru/article/download/10973/7673",
+        "source": {
+          "id": "https://openalex.org/S4210233661",
+          "display_name": "Vestnik of Saint Petersburg University Arts",
+          "issn_l": "2221-3007",
+          "issn": [
+            "2221-3007",
+            "2542-2243"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310312746",
+          "host_organization_name": "Saint Petersburg State University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310312746"
+          ],
+          "host_organization_lineage_names": [
+            "Saint Petersburg State University"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2110342106",
+    "title": "\"Enlivening and - Dividing\": An Aporia of Illumination",
+    "relevance_score": 2.385672,
+    "doi": "https://doi.org/10.5195/contemp.2015.73",
+    "topic_ids": [
+      "C67805463",
+      "C36597679",
+      "C2780376419",
+      "C2780620123",
+      "C142362112",
+      "C107038049",
+      "C52119013",
+      "C153349607",
+      "C94625758",
+      "C17744445",
+      "C199539241"
+    ],
+    "best_pdf": "https://contemporaneity.pitt.edu/ojs/contemporaneity/article/download/73/144",
+    "backup_pdf": "https://doi.org/10.5195/contemp.2015.73",
+    "raw": {
+      "id": "https://openalex.org/W2110342106",
+      "display_name": "\"Enlivening and - Dividing\": An Aporia of Illumination",
+      "relevance_score": 2.385672,
+      "doi": "https://doi.org/10.5195/contemp.2015.73",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C67805463",
+          "wikidata": "https://www.wikidata.org/wiki/Q11634",
+          "display_name": "Sculpture",
+          "level": 2,
+          "score": 0.96143335
+        },
+        {
+          "id": "https://openalex.org/C36597679",
+          "wikidata": "https://www.wikidata.org/wiki/Q189203",
+          "display_name": "Anachronism",
+          "level": 3,
+          "score": 0.7735824
+        },
+        {
+          "id": "https://openalex.org/C2780376419",
+          "wikidata": "https://www.wikidata.org/wiki/Q472760",
+          "display_name": "Antique",
+          "level": 2,
+          "score": 0.73836815
+        },
+        {
+          "id": "https://openalex.org/C2780620123",
+          "wikidata": "https://www.wikidata.org/wiki/Q7242",
+          "display_name": "Beauty",
+          "level": 2,
+          "score": 0.70291114
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.6186956
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.41580388
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.41153693
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.376256
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.11098114
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5195/contemp.2015.73",
+        "pdf_url": "https://contemporaneity.pitt.edu/ojs/contemporaneity/article/download/73/144",
+        "source": {
+          "id": "https://openalex.org/S4210184903",
+          "display_name": "Contemporaneity Historical Presence in Visual Culture",
+          "issn_l": "2153-5914",
+          "issn": [
+            "2153-5914"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320335",
+          "host_organization_name": "University Library System, University of Pittsburgh",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320335",
+            "https://openalex.org/P4310316479"
+          ],
+          "host_organization_lineage_names": [
+            "University Library System, University of Pittsburgh",
+            "University of Pittsburgh"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://contemporaneity.pitt.edu/ojs/contemporaneity/article/download/73/144",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5195/contemp.2015.73",
+          "pdf_url": "https://contemporaneity.pitt.edu/ojs/contemporaneity/article/download/73/144",
+          "source": {
+            "id": "https://openalex.org/S4210184903",
+            "display_name": "Contemporaneity Historical Presence in Visual Culture",
+            "issn_l": "2153-5914",
+            "issn": [
+              "2153-5914"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320335",
+            "host_organization_name": "University Library System, University of Pittsburgh",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320335",
+              "https://openalex.org/P4310316479"
+            ],
+            "host_organization_lineage_names": [
+              "University Library System, University of Pittsburgh",
+              "University of Pittsburgh"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/2b1b5c13819c4762ae2ad58fc5ac413d",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5195/contemp.2015.73",
+        "pdf_url": "https://contemporaneity.pitt.edu/ojs/contemporaneity/article/download/73/144",
+        "source": {
+          "id": "https://openalex.org/S4210184903",
+          "display_name": "Contemporaneity Historical Presence in Visual Culture",
+          "issn_l": "2153-5914",
+          "issn": [
+            "2153-5914"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320335",
+          "host_organization_name": "University Library System, University of Pittsburgh",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320335",
+            "https://openalex.org/P4310316479"
+          ],
+          "host_organization_lineage_names": [
+            "University Library System, University of Pittsburgh",
+            "University of Pittsburgh"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2602079204",
+    "title": "Image Battles under Louis XIV: Some Reflections",
+    "relevance_score": 1.9415431,
+    "doi": "https://doi.org/10.4324/9781315593036-6",
+    "topic_ids": [
+      "C95457728",
+      "C52119013"
+    ],
+    "best_pdf": "https://archiv.ub.uni-heidelberg.de/artdok/4865/1/Ziegler_Image_battles_under_Louis_XIV_2015.pdf",
+    "backup_pdf": "https://nbn-resolving.org/urn:nbn:de:bsz:16-artdok-48655",
+    "raw": {
+      "id": "https://openalex.org/W2602079204",
+      "display_name": "Image Battles under Louis XIV: Some Reflections",
+      "relevance_score": 1.9415431,
+      "doi": "https://doi.org/10.4324/9781315593036-6",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.40699664
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3628323
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.4324/9781315593036-6",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306463855",
+          "display_name": "Routledge eBooks",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320449",
+          "host_organization_name": "Informa",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320449"
+          ],
+          "host_organization_lineage_names": [
+            "Informa"
+          ],
+          "type": "ebook platform"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://archiv.ub.uni-heidelberg.de/artdok/4865/1/Ziegler_Image_battles_under_Louis_XIV_2015.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.4324/9781315593036-6",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306463855",
+            "display_name": "Routledge eBooks",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320449",
+            "host_organization_name": "Informa",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320449"
+            ],
+            "host_organization_lineage_names": [
+              "Informa"
+            ],
+            "type": "ebook platform"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://nbn-resolving.org/urn:nbn:de:bsz:16-artdok-48655",
+          "pdf_url": "https://archiv.ub.uni-heidelberg.de/artdok/4865/1/Ziegler_Image_battles_under_Louis_XIV_2015.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://archiv.ub.uni-heidelberg.de/artdok/4865/1/Ziegler_Image_battles_under_Louis_XIV_2015.pdf",
+          "pdf_url": "http://archiv.ub.uni-heidelberg.de/artdok/4865/1/Ziegler_Image_battles_under_Louis_XIV_2015.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306402124",
+            "display_name": "heiDOK – The Heidelberg Document Repository (Heidelberg University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I223822909",
+            "host_organization_name": "Heidelberg University",
+            "host_organization_lineage": [
+              "https://openalex.org/I223822909"
+            ],
+            "host_organization_lineage_names": [
+              "Heidelberg University"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://nbn-resolving.org/urn:nbn:de:bsz:16-artdok-48655",
+        "pdf_url": "https://archiv.ub.uni-heidelberg.de/artdok/4865/1/Ziegler_Image_battles_under_Louis_XIV_2015.pdf",
+        "source": {
+          "id": "https://openalex.org/S4308707206",
+          "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I157725225",
+          "host_organization_name": "University of Illinois Urbana-Champaign",
+          "host_organization_lineage": [
+            "https://openalex.org/I157725225"
+          ],
+          "host_organization_lineage_names": [
+            "University of Illinois Urbana-Champaign"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]

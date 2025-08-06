@@ -1,0 +1,1983 @@
+[
+  {
+    "id": "https://openalex.org/W2996884277",
+    "title": "Progressive Feature Polishing Network for Salient Object Detection",
+    "relevance_score": 5.556012,
+    "doi": "https://doi.org/10.1609/aaai.v34i07.6892",
+    "topic_ids": [
+      "C2780719617",
+      "C2776401178",
+      "C41008148",
+      "C185798385",
+      "C2779343474",
+      "C154945302",
+      "C192209626",
+      "C138113353",
+      "C106131492",
+      "C153180895",
+      "C2776760102",
+      "C2781238097",
+      "C31972630",
+      "C127413603",
+      "C78519656",
+      "C151730666",
+      "C138885662",
+      "C41895202",
+      "C121332964",
+      "C13280743",
+      "C120665830",
+      "C86803240",
+      "C205649164",
+      "C177264268",
+      "C199360897"
+    ],
+    "best_pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/6892/6746",
+    "backup_pdf": "https://doi.org/10.1609/aaai.v34i07.6892",
+    "raw": {
+      "id": "https://openalex.org/W2996884277",
+      "display_name": "Progressive Feature Polishing Network for Salient Object Detection",
+      "relevance_score": 5.556012,
+      "doi": "https://doi.org/10.1609/aaai.v34i07.6892",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780719617",
+          "wikidata": "https://www.wikidata.org/wiki/Q1030752",
+          "display_name": "Salient",
+          "level": 2,
+          "score": 0.8077922
+        },
+        {
+          "id": "https://openalex.org/C2776401178",
+          "wikidata": "https://www.wikidata.org/wiki/Q12050496",
+          "display_name": "Feature (linguistics)",
+          "level": 2,
+          "score": 0.8057529
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7807768
+        },
+        {
+          "id": "https://openalex.org/C185798385",
+          "wikidata": "https://www.wikidata.org/wiki/Q1161707",
+          "display_name": "Benchmark (surveying)",
+          "level": 2,
+          "score": 0.71979195
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.60873055
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.5377524
+        },
+        {
+          "id": "https://openalex.org/C192209626",
+          "wikidata": "https://www.wikidata.org/wiki/Q190909",
+          "display_name": "Focus (optics)",
+          "level": 2,
+          "score": 0.51858664
+        },
+        {
+          "id": "https://openalex.org/C138113353",
+          "wikidata": "https://www.wikidata.org/wiki/Q611639",
+          "display_name": "Polishing",
+          "level": 2,
+          "score": 0.4945986
+        },
+        {
+          "id": "https://openalex.org/C106131492",
+          "wikidata": "https://www.wikidata.org/wiki/Q3072260",
+          "display_name": "Filter (signal processing)",
+          "level": 2,
+          "score": 0.48035562
+        },
+        {
+          "id": "https://openalex.org/C153180895",
+          "wikidata": "https://www.wikidata.org/wiki/Q7148389",
+          "display_name": "Pattern recognition (psychology)",
+          "level": 2,
+          "score": 0.42664352
+        },
+        {
+          "id": "https://openalex.org/C2776760102",
+          "wikidata": "https://www.wikidata.org/wiki/Q5139990",
+          "display_name": "Code (set theory)",
+          "level": 3,
+          "score": 0.42214632
+        },
+        {
+          "id": "https://openalex.org/C2781238097",
+          "wikidata": "https://www.wikidata.org/wiki/Q175026",
+          "display_name": "Object (grammar)",
+          "level": 2,
+          "score": 0.4146264
+        },
+        {
+          "id": "https://openalex.org/C31972630",
+          "wikidata": "https://www.wikidata.org/wiki/Q844240",
+          "display_name": "Computer vision",
+          "level": 1,
+          "score": 0.28772405
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.11068347
+        },
+        {
+          "id": "https://openalex.org/C78519656",
+          "wikidata": "https://www.wikidata.org/wiki/Q101333",
+          "display_name": "Mechanical engineering",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C151730666",
+          "wikidata": "https://www.wikidata.org/wiki/Q7205",
+          "display_name": "Paleontology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C13280743",
+          "wikidata": "https://www.wikidata.org/wiki/Q131089",
+          "display_name": "Geodesy",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C120665830",
+          "wikidata": "https://www.wikidata.org/wiki/Q14620",
+          "display_name": "Optics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C177264268",
+          "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+          "display_name": "Set (abstract data type)",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1609/aaai.v34i07.6892",
+        "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/6892/6746",
+        "source": {
+          "id": "https://openalex.org/S4210191458",
+          "display_name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "issn_l": "2159-5399",
+          "issn": [
+            "2159-5399",
+            "2374-3468"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320058",
+          "host_organization_name": "Association for the Advancement of Artificial Intelligence",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320058"
+          ],
+          "host_organization_lineage_names": [
+            "Association for the Advancement of Artificial Intelligence"
+          ],
+          "type": "conference"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://ojs.aaai.org/index.php/AAAI/article/download/6892/6746",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1609/aaai.v34i07.6892",
+          "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/6892/6746",
+          "source": {
+            "id": "https://openalex.org/S4210191458",
+            "display_name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+            "issn_l": "2159-5399",
+            "issn": [
+              "2159-5399",
+              "2374-3468"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320058",
+            "host_organization_name": "Association for the Advancement of Artificial Intelligence",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320058"
+            ],
+            "host_organization_lineage_names": [
+              "Association for the Advancement of Artificial Intelligence"
+            ],
+            "type": "conference"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://arxiv.org/abs/1911.05942",
+          "pdf_url": "https://arxiv.org/pdf/1911.05942",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [
+              "Cornell University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1609/aaai.v34i07.6892",
+        "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/6892/6746",
+        "source": {
+          "id": "https://openalex.org/S4210191458",
+          "display_name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "issn_l": "2159-5399",
+          "issn": [
+            "2159-5399",
+            "2374-3468"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320058",
+          "host_organization_name": "Association for the Advancement of Artificial Intelligence",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320058"
+          ],
+          "host_organization_lineage_names": [
+            "Association for the Advancement of Artificial Intelligence"
+          ],
+          "type": "conference"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4304165889",
+    "title": "Resize Me! Exploring the user experience of embodied realistic modulatable avatars for body image intervention in virtual reality",
+    "relevance_score": 3.1079056,
+    "doi": "https://doi.org/10.3389/frvir.2022.935449",
+    "topic_ids": [
+      "C2777365542",
+      "C22237779",
+      "C107457646",
+      "C100609095",
+      "C41008148",
+      "C194969405",
+      "C27415008",
+      "C2776459999",
+      "C26760741",
+      "C25344961",
+      "C2780598303",
+      "C42525527",
+      "C15744967",
+      "C49774154",
+      "C154945302",
+      "C76155785",
+      "C105795698",
+      "C33923547",
+      "C169760540",
+      "C118552586",
+      "C111919701",
+      "C19417346"
+    ],
+    "best_pdf": "https://www.frontiersin.org/articles/10.3389/frvir.2022.935449/pdf",
+    "backup_pdf": "https://doi.org/10.3389/frvir.2022.935449",
+    "raw": {
+      "id": "https://openalex.org/W4304165889",
+      "display_name": "Resize Me! Exploring the user experience of embodied realistic modulatable avatars for body image intervention in virtual reality",
+      "relevance_score": 3.1079056,
+      "doi": "https://doi.org/10.3389/frvir.2022.935449",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2777365542",
+          "wikidata": "https://www.wikidata.org/wiki/Q83090",
+          "display_name": "Avatar",
+          "level": 2,
+          "score": 0.7400584
+        },
+        {
+          "id": "https://openalex.org/C22237779",
+          "wikidata": "https://www.wikidata.org/wiki/Q907574",
+          "display_name": "Body schema",
+          "level": 3,
+          "score": 0.70124835
+        },
+        {
+          "id": "https://openalex.org/C107457646",
+          "wikidata": "https://www.wikidata.org/wiki/Q207434",
+          "display_name": "Human–computer interaction",
+          "level": 1,
+          "score": 0.6526551
+        },
+        {
+          "id": "https://openalex.org/C100609095",
+          "wikidata": "https://www.wikidata.org/wiki/Q1335050",
+          "display_name": "Embodied cognition",
+          "level": 2,
+          "score": 0.62812966
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.57364297
+        },
+        {
+          "id": "https://openalex.org/C194969405",
+          "wikidata": "https://www.wikidata.org/wiki/Q170519",
+          "display_name": "Virtual reality",
+          "level": 2,
+          "score": 0.5722821
+        },
+        {
+          "id": "https://openalex.org/C27415008",
+          "wikidata": "https://www.wikidata.org/wiki/Q7256382",
+          "display_name": "Psychological intervention",
+          "level": 2,
+          "score": 0.5055151
+        },
+        {
+          "id": "https://openalex.org/C2776459999",
+          "wikidata": "https://www.wikidata.org/wiki/Q2119376",
+          "display_name": "Fidelity",
+          "level": 2,
+          "score": 0.49490875
+        },
+        {
+          "id": "https://openalex.org/C26760741",
+          "wikidata": "https://www.wikidata.org/wiki/Q160402",
+          "display_name": "Perception",
+          "level": 2,
+          "score": 0.49057096
+        },
+        {
+          "id": "https://openalex.org/C25344961",
+          "wikidata": "https://www.wikidata.org/wiki/Q192726",
+          "display_name": "Virtual machine",
+          "level": 2,
+          "score": 0.43002862
+        },
+        {
+          "id": "https://openalex.org/C2780598303",
+          "wikidata": "https://www.wikidata.org/wiki/Q65921492",
+          "display_name": "Flexibility (engineering)",
+          "level": 2,
+          "score": 0.42889625
+        },
+        {
+          "id": "https://openalex.org/C42525527",
+          "wikidata": "https://www.wikidata.org/wiki/Q1209955",
+          "display_name": "Formative assessment",
+          "level": 2,
+          "score": 0.4134568
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.38948166
+        },
+        {
+          "id": "https://openalex.org/C49774154",
+          "wikidata": "https://www.wikidata.org/wiki/Q131765",
+          "display_name": "Multimedia",
+          "level": 1,
+          "score": 0.3387254
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.23687291
+        },
+        {
+          "id": "https://openalex.org/C76155785",
+          "wikidata": "https://www.wikidata.org/wiki/Q418",
+          "display_name": "Telecommunications",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C105795698",
+          "wikidata": "https://www.wikidata.org/wiki/Q12483",
+          "display_name": "Statistics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C118552586",
+          "wikidata": "https://www.wikidata.org/wiki/Q7867",
+          "display_name": "Psychiatry",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C19417346",
+          "wikidata": "https://www.wikidata.org/wiki/Q7922",
+          "display_name": "Pedagogy",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3389/frvir.2022.935449",
+        "pdf_url": "https://www.frontiersin.org/articles/10.3389/frvir.2022.935449/pdf",
+        "source": {
+          "id": "https://openalex.org/S4210228137",
+          "display_name": "Frontiers in Virtual Reality",
+          "issn_l": "2673-4192",
+          "issn": [
+            "2673-4192"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320527",
+          "host_organization_name": "Frontiers Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320527"
+          ],
+          "host_organization_lineage_names": [
+            "Frontiers Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.frontiersin.org/articles/10.3389/frvir.2022.935449/pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3389/frvir.2022.935449",
+          "pdf_url": "https://www.frontiersin.org/articles/10.3389/frvir.2022.935449/pdf",
+          "source": {
+            "id": "https://openalex.org/S4210228137",
+            "display_name": "Frontiers in Virtual Reality",
+            "issn_l": "2673-4192",
+            "issn": [
+              "2673-4192"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320527",
+            "host_organization_name": "Frontiers Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320527"
+            ],
+            "host_organization_lineage_names": [
+              "Frontiers Media"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/1154d5aca35b4b2a8ff2c50f901fac8e",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://arxiv.org/abs/2203.05060",
+          "pdf_url": "https://arxiv.org/pdf/2203.05060",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [
+              "Cornell University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3389/frvir.2022.935449",
+        "pdf_url": "https://www.frontiersin.org/articles/10.3389/frvir.2022.935449/pdf",
+        "source": {
+          "id": "https://openalex.org/S4210228137",
+          "display_name": "Frontiers in Virtual Reality",
+          "issn_l": "2673-4192",
+          "issn": [
+            "2673-4192"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320527",
+          "host_organization_name": "Frontiers Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320527"
+          ],
+          "host_organization_lineage_names": [
+            "Frontiers Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2944451185",
+    "title": "Transferring multiscale map styles using generative adversarial networks",
+    "relevance_score": 2.7286491,
+    "doi": "https://doi.org/10.1080/23729333.2019.1615729",
+    "topic_ids": [
+      "C41008148",
+      "C39890363",
+      "C154945302",
+      "C81363708",
+      "C37736160",
+      "C2988773926",
+      "C95623464",
+      "C108583219",
+      "C150899416"
+    ],
+    "best_pdf": "https://arxiv.org/pdf/1905.02200",
+    "backup_pdf": "https://arxiv.org/abs/1905.02200",
+    "raw": {
+      "id": "https://openalex.org/W2944451185",
+      "display_name": "Transferring multiscale map styles using generative adversarial networks",
+      "relevance_score": 2.7286491,
+      "doi": "https://doi.org/10.1080/23729333.2019.1615729",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.7382832
+        },
+        {
+          "id": "https://openalex.org/C39890363",
+          "wikidata": "https://www.wikidata.org/wiki/Q36108",
+          "display_name": "Generative grammar",
+          "level": 2,
+          "score": 0.68676364
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.68380785
+        },
+        {
+          "id": "https://openalex.org/C81363708",
+          "wikidata": "https://www.wikidata.org/wiki/Q17084460",
+          "display_name": "Convolutional neural network",
+          "level": 2,
+          "score": 0.6696056
+        },
+        {
+          "id": "https://openalex.org/C37736160",
+          "wikidata": "https://www.wikidata.org/wiki/Q1801315",
+          "display_name": "Adversarial system",
+          "level": 2,
+          "score": 0.6504289
+        },
+        {
+          "id": "https://openalex.org/C2988773926",
+          "wikidata": "https://www.wikidata.org/wiki/Q25104379",
+          "display_name": "Generative adversarial network",
+          "level": 3,
+          "score": 0.6081012
+        },
+        {
+          "id": "https://openalex.org/C95623464",
+          "wikidata": "https://www.wikidata.org/wiki/Q1096149",
+          "display_name": "Classifier (UML)",
+          "level": 2,
+          "score": 0.50430644
+        },
+        {
+          "id": "https://openalex.org/C108583219",
+          "wikidata": "https://www.wikidata.org/wiki/Q197536",
+          "display_name": "Deep learning",
+          "level": 2,
+          "score": 0.5001962
+        },
+        {
+          "id": "https://openalex.org/C150899416",
+          "wikidata": "https://www.wikidata.org/wiki/Q1820378",
+          "display_name": "Transfer of learning",
+          "level": 2,
+          "score": 0.42208493
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1080/23729333.2019.1615729",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210167602",
+          "display_name": "International Journal of Cartography",
+          "issn_l": "2372-9333",
+          "issn": [
+            "2372-9333",
+            "2372-9341"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://arxiv.org/pdf/1905.02200",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/23729333.2019.1615729",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210167602",
+            "display_name": "International Journal of Cartography",
+            "issn_l": "2372-9333",
+            "issn": [
+              "2372-9333",
+              "2372-9341"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://arxiv.org/abs/1905.02200",
+          "pdf_url": "https://arxiv.org/pdf/1905.02200",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [
+              "Cornell University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://api.datacite.org/dois/10.48550/arxiv.1905.02200",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4393179698",
+            "display_name": "DataCite API",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210145204",
+            "host_organization_name": "DataCite",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210145204"
+            ],
+            "host_organization_lineage_names": [
+              "DataCite"
+            ],
+            "type": "metadata"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://arxiv.org/abs/1905.02200",
+        "pdf_url": "https://arxiv.org/pdf/1905.02200",
+        "source": {
+          "id": "https://openalex.org/S4306400194",
+          "display_name": "arXiv (Cornell University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I205783295",
+          "host_organization_name": "Cornell University",
+          "host_organization_lineage": [
+            "https://openalex.org/I205783295"
+          ],
+          "host_organization_lineage_names": [
+            "Cornell University"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2583031321",
+    "title": "Adaptation reveals that facial expression averaging occurs during rapid serial presentation",
+    "relevance_score": 2.2237482,
+    "doi": "https://doi.org/10.1167/17.1.15",
+    "topic_ids": [
+      "C2779668609",
+      "C195704467",
+      "C26760741",
+      "C180747234",
+      "C15744967",
+      "C139807058",
+      "C179518139",
+      "C41008148",
+      "C46312422",
+      "C169760540",
+      "C33923547",
+      "C105795698"
+    ],
+    "best_pdf": "https://jov.arvojournals.org/arvo/content_public/journal/jov/935953/i1534-7362-17-1-15.pdf",
+    "backup_pdf": "https://doi.org/10.1167/17.1.15",
+    "raw": {
+      "id": "https://openalex.org/W2583031321",
+      "display_name": "Adaptation reveals that facial expression averaging occurs during rapid serial presentation",
+      "relevance_score": 2.2237482,
+      "doi": "https://doi.org/10.1167/17.1.15",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779668609",
+          "wikidata": "https://www.wikidata.org/wiki/Q623092",
+          "display_name": "Rapid serial visual presentation",
+          "level": 3,
+          "score": 0.8088423
+        },
+        {
+          "id": "https://openalex.org/C195704467",
+          "wikidata": "https://www.wikidata.org/wiki/Q327968",
+          "display_name": "Facial expression",
+          "level": 2,
+          "score": 0.6157722
+        },
+        {
+          "id": "https://openalex.org/C26760741",
+          "wikidata": "https://www.wikidata.org/wiki/Q160402",
+          "display_name": "Perception",
+          "level": 2,
+          "score": 0.5779525
+        },
+        {
+          "id": "https://openalex.org/C180747234",
+          "wikidata": "https://www.wikidata.org/wiki/Q23373",
+          "display_name": "Cognitive psychology",
+          "level": 1,
+          "score": 0.5365159
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.50243974
+        },
+        {
+          "id": "https://openalex.org/C139807058",
+          "wikidata": "https://www.wikidata.org/wiki/Q352374",
+          "display_name": "Adaptation (eye)",
+          "level": 2,
+          "score": 0.483898
+        },
+        {
+          "id": "https://openalex.org/C179518139",
+          "wikidata": "https://www.wikidata.org/wiki/Q5140297",
+          "display_name": "Coding (social sciences)",
+          "level": 2,
+          "score": 0.42281812
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.37501353
+        },
+        {
+          "id": "https://openalex.org/C46312422",
+          "wikidata": "https://www.wikidata.org/wiki/Q11024",
+          "display_name": "Communication",
+          "level": 1,
+          "score": 0.3318364
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.15655354
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.11658177
+        },
+        {
+          "id": "https://openalex.org/C105795698",
+          "wikidata": "https://www.wikidata.org/wiki/Q12483",
+          "display_name": "Statistics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1167/17.1.15",
+        "pdf_url": "https://jov.arvojournals.org/arvo/content_public/journal/jov/935953/i1534-7362-17-1-15.pdf",
+        "source": {
+          "id": "https://openalex.org/S137468011",
+          "display_name": "Journal of Vision",
+          "issn_l": "1534-7362",
+          "issn": [
+            "1534-7362"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310315919",
+          "host_organization_name": "Association for Research in Vision and Ophthalmology",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315919"
+          ],
+          "host_organization_lineage_names": [
+            "Association for Research in Vision and Ophthalmology"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://jov.arvojournals.org/arvo/content_public/journal/jov/935953/i1534-7362-17-1-15.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1167/17.1.15",
+          "pdf_url": "https://jov.arvojournals.org/arvo/content_public/journal/jov/935953/i1534-7362-17-1-15.pdf",
+          "source": {
+            "id": "https://openalex.org/S137468011",
+            "display_name": "Journal of Vision",
+            "issn_l": "1534-7362",
+            "issn": [
+              "1534-7362"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310315919",
+            "host_organization_name": "Association for Research in Vision and Ophthalmology",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315919"
+            ],
+            "host_organization_lineage_names": [
+              "Association for Research in Vision and Ophthalmology"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/28114490",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1167/17.1.15",
+        "pdf_url": "https://jov.arvojournals.org/arvo/content_public/journal/jov/935953/i1534-7362-17-1-15.pdf",
+        "source": {
+          "id": "https://openalex.org/S137468011",
+          "display_name": "Journal of Vision",
+          "issn_l": "1534-7362",
+          "issn": [
+            "1534-7362"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310315919",
+          "host_organization_name": "Association for Research in Vision and Ophthalmology",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315919"
+          ],
+          "host_organization_lineage_names": [
+            "Association for Research in Vision and Ophthalmology"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2606543828",
+    "title": "Human perception of subresolution fineness of dense textures based on image intensity statistics",
+    "relevance_score": 1.5887792,
+    "doi": "https://doi.org/10.1167/17.4.8",
+    "topic_ids": [
+      "C2776989763",
+      "C2781195486",
+      "C53533937",
+      "C93038891",
+      "C154945302",
+      "C163716315",
+      "C2776502983",
+      "C33923547",
+      "C31972630",
+      "C151201525",
+      "C115961682",
+      "C120665830",
+      "C41008148",
+      "C192562407",
+      "C121332964",
+      "C134306372",
+      "C62520636",
+      "C159985019"
+    ],
+    "best_pdf": "https://jov.arvojournals.org/arvo/content_public/journal/jov/936164/i1534-7362-17-4-8.pdf",
+    "backup_pdf": "https://doi.org/10.1167/17.4.8",
+    "raw": {
+      "id": "https://openalex.org/W2606543828",
+      "display_name": "Human perception of subresolution fineness of dense textures based on image intensity statistics",
+      "relevance_score": 1.5887792,
+      "doi": "https://doi.org/10.1167/17.4.8",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776989763",
+          "wikidata": "https://www.wikidata.org/wiki/Q1401905",
+          "display_name": "Fineness",
+          "level": 2,
+          "score": 0.74269664
+        },
+        {
+          "id": "https://openalex.org/C2781195486",
+          "wikidata": "https://www.wikidata.org/wiki/Q289436",
+          "display_name": "Texture (cosmology)",
+          "level": 3,
+          "score": 0.7313255
+        },
+        {
+          "id": "https://openalex.org/C53533937",
+          "wikidata": "https://www.wikidata.org/wiki/Q185020",
+          "display_name": "Histogram",
+          "level": 3,
+          "score": 0.6298822
+        },
+        {
+          "id": "https://openalex.org/C93038891",
+          "wikidata": "https://www.wikidata.org/wiki/Q1061524",
+          "display_name": "Intensity (physics)",
+          "level": 2,
+          "score": 0.6175599
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.596432
+        },
+        {
+          "id": "https://openalex.org/C163716315",
+          "wikidata": "https://www.wikidata.org/wiki/Q901177",
+          "display_name": "Gaussian",
+          "level": 2,
+          "score": 0.53697383
+        },
+        {
+          "id": "https://openalex.org/C2776502983",
+          "wikidata": "https://www.wikidata.org/wiki/Q690182",
+          "display_name": "Contrast (vision)",
+          "level": 2,
+          "score": 0.52823114
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.47332415
+        },
+        {
+          "id": "https://openalex.org/C31972630",
+          "wikidata": "https://www.wikidata.org/wiki/Q844240",
+          "display_name": "Computer vision",
+          "level": 1,
+          "score": 0.4553365
+        },
+        {
+          "id": "https://openalex.org/C151201525",
+          "wikidata": "https://www.wikidata.org/wiki/Q177239",
+          "display_name": "Limit (mathematics)",
+          "level": 2,
+          "score": 0.43940857
+        },
+        {
+          "id": "https://openalex.org/C115961682",
+          "wikidata": "https://www.wikidata.org/wiki/Q860623",
+          "display_name": "Image (mathematics)",
+          "level": 2,
+          "score": 0.37264252
+        },
+        {
+          "id": "https://openalex.org/C120665830",
+          "wikidata": "https://www.wikidata.org/wiki/Q14620",
+          "display_name": "Optics",
+          "level": 1,
+          "score": 0.31483424
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.26182035
+        },
+        {
+          "id": "https://openalex.org/C192562407",
+          "wikidata": "https://www.wikidata.org/wiki/Q228736",
+          "display_name": "Materials science",
+          "level": 0,
+          "score": 0.2438272
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.16814262
+        },
+        {
+          "id": "https://openalex.org/C134306372",
+          "wikidata": "https://www.wikidata.org/wiki/Q7754",
+          "display_name": "Mathematical analysis",
+          "level": 1,
+          "score": 0.11547285
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C159985019",
+          "wikidata": "https://www.wikidata.org/wiki/Q181790",
+          "display_name": "Composite material",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1167/17.4.8",
+        "pdf_url": "https://jov.arvojournals.org/arvo/content_public/journal/jov/936164/i1534-7362-17-4-8.pdf",
+        "source": {
+          "id": "https://openalex.org/S137468011",
+          "display_name": "Journal of Vision",
+          "issn_l": "1534-7362",
+          "issn": [
+            "1534-7362"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310315919",
+          "host_organization_name": "Association for Research in Vision and Ophthalmology",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315919"
+          ],
+          "host_organization_lineage_names": [
+            "Association for Research in Vision and Ophthalmology"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://jov.arvojournals.org/arvo/content_public/journal/jov/936164/i1534-7362-17-4-8.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1167/17.4.8",
+          "pdf_url": "https://jov.arvojournals.org/arvo/content_public/journal/jov/936164/i1534-7362-17-4-8.pdf",
+          "source": {
+            "id": "https://openalex.org/S137468011",
+            "display_name": "Journal of Vision",
+            "issn_l": "1534-7362",
+            "issn": [
+              "1534-7362"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310315919",
+            "host_organization_name": "Association for Research in Vision and Ophthalmology",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315919"
+            ],
+            "host_organization_lineage_names": [
+              "Association for Research in Vision and Ophthalmology"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/28423413",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1167/17.4.8",
+        "pdf_url": "https://jov.arvojournals.org/arvo/content_public/journal/jov/936164/i1534-7362-17-4-8.pdf",
+        "source": {
+          "id": "https://openalex.org/S137468011",
+          "display_name": "Journal of Vision",
+          "issn_l": "1534-7362",
+          "issn": [
+            "1534-7362"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310315919",
+          "host_organization_name": "Association for Research in Vision and Ophthalmology",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315919"
+          ],
+          "host_organization_lineage_names": [
+            "Association for Research in Vision and Ophthalmology"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2768263924",
+    "title": "Paradigm Shift in Chinese Landscape Representation",
+    "relevance_score": 1.2114377,
+    "doi": "https://doi.org/10.1080/25723618.2017.1339507",
+    "topic_ids": [
+      "C43540301",
+      "C64999355",
+      "C139997677",
+      "C2776359362",
+      "C158071213",
+      "C2777617010",
+      "C205783811",
+      "C90559484",
+      "C107038049",
+      "C33676613",
+      "C2991979461",
+      "C144024400",
+      "C188147891",
+      "C142362112",
+      "C111472728",
+      "C153349607",
+      "C15744967",
+      "C41008148",
+      "C138885662",
+      "C94625758",
+      "C27206212",
+      "C33923547",
+      "C17744445",
+      "C202444582",
+      "C199539241",
+      "C199360897"
+    ],
+    "best_pdf": "https://www.tandfonline.com/doi/pdf/10.1080/25723618.2017.1339507?needAccess=true",
+    "backup_pdf": "https://doi.org/10.1080/25723618.2017.1339507",
+    "raw": {
+      "id": "https://openalex.org/W2768263924",
+      "display_name": "Paradigm Shift in Chinese Landscape Representation",
+      "relevance_score": 1.2114377,
+      "doi": "https://doi.org/10.1080/25723618.2017.1339507",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C43540301",
+          "wikidata": "https://www.wikidata.org/wiki/Q689971",
+          "display_name": "Paradigm shift",
+          "level": 2,
+          "score": 0.7868513
+        },
+        {
+          "id": "https://openalex.org/C64999355",
+          "wikidata": "https://www.wikidata.org/wiki/Q681696",
+          "display_name": "Semiosis",
+          "level": 3,
+          "score": 0.70799196
+        },
+        {
+          "id": "https://openalex.org/C139997677",
+          "wikidata": "https://www.wikidata.org/wiki/Q60195",
+          "display_name": "Semiotics",
+          "level": 2,
+          "score": 0.67112434
+        },
+        {
+          "id": "https://openalex.org/C2776359362",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145286",
+          "display_name": "Representation (politics)",
+          "level": 3,
+          "score": 0.65059626
+        },
+        {
+          "id": "https://openalex.org/C158071213",
+          "wikidata": "https://www.wikidata.org/wiki/Q7257",
+          "display_name": "Ideology",
+          "level": 3,
+          "score": 0.5906997
+        },
+        {
+          "id": "https://openalex.org/C2777617010",
+          "wikidata": "https://www.wikidata.org/wiki/Q18957",
+          "display_name": "Mainstream",
+          "level": 2,
+          "score": 0.58088195
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.5485835
+        },
+        {
+          "id": "https://openalex.org/C90559484",
+          "wikidata": "https://www.wikidata.org/wiki/Q778379",
+          "display_name": "Expression (computer science)",
+          "level": 2,
+          "score": 0.49926114
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.47656444
+        },
+        {
+          "id": "https://openalex.org/C33676613",
+          "wikidata": "https://www.wikidata.org/wiki/Q13415176",
+          "display_name": "Dimension (graph theory)",
+          "level": 2,
+          "score": 0.43548885
+        },
+        {
+          "id": "https://openalex.org/C2991979461",
+          "wikidata": "https://www.wikidata.org/wiki/Q191163",
+          "display_name": "Landscape painting",
+          "level": 3,
+          "score": 0.4256178
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.40586308
+        },
+        {
+          "id": "https://openalex.org/C188147891",
+          "wikidata": "https://www.wikidata.org/wiki/Q147638",
+          "display_name": "Cognitive science",
+          "level": 1,
+          "score": 0.37746313
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.32785892
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.32025698
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.23130888
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.16908059
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.16245422
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.16136733
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.100397885
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C202444582",
+          "wikidata": "https://www.wikidata.org/wiki/Q837863",
+          "display_name": "Pure mathematics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/25723618.2017.1339507",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/25723618.2017.1339507?needAccess=true",
+        "source": {
+          "id": "https://openalex.org/S4210202094",
+          "display_name": "Comparative Literature East & West",
+          "issn_l": "2572-3618",
+          "issn": [
+            "2572-3618"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/25723618.2017.1339507?needAccess=true",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1080/25723618.2017.1339507",
+          "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/25723618.2017.1339507?needAccess=true",
+          "source": {
+            "id": "https://openalex.org/S4210202094",
+            "display_name": "Comparative Literature East & West",
+            "issn_l": "2572-3618",
+            "issn": [
+              "2572-3618"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/25723618.2017.1339507",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/25723618.2017.1339507?needAccess=true",
+        "source": {
+          "id": "https://openalex.org/S4210202094",
+          "display_name": "Comparative Literature East & West",
+          "issn_l": "2572-3618",
+          "issn": [
+            "2572-3618"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4390603426",
+    "title": "Evaluating the effectiveness of machine learning models for detecting AI-generated art",
+    "relevance_score": 1.1916989,
+    "doi": "https://doi.org/10.59720/23-132",
+    "topic_ids": [
+      "C154945302",
+      "C41008148",
+      "C2776445246",
+      "C502989409",
+      "C2776950860",
+      "C543847140",
+      "C119857082",
+      "C115961682",
+      "C142362112",
+      "C153349607",
+      "C15744967",
+      "C121684516",
+      "C11012388",
+      "C77805123"
+    ],
+    "best_pdf": "https://emerginginvestigators.org/articles/23-132/pdf",
+    "backup_pdf": "https://doi.org/10.59720/23-132",
+    "raw": {
+      "id": "https://openalex.org/W4390603426",
+      "display_name": "Evaluating the effectiveness of machine learning models for detecting AI-generated art",
+      "relevance_score": 1.1916989,
+      "doi": "https://doi.org/10.59720/23-132",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.7040107
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.67001605
+        },
+        {
+          "id": "https://openalex.org/C2776445246",
+          "wikidata": "https://www.wikidata.org/wiki/Q1792644",
+          "display_name": "Style (visual arts)",
+          "level": 2,
+          "score": 0.65026104
+        },
+        {
+          "id": "https://openalex.org/C502989409",
+          "wikidata": "https://www.wikidata.org/wiki/Q11425",
+          "display_name": "Animation",
+          "level": 2,
+          "score": 0.5986818
+        },
+        {
+          "id": "https://openalex.org/C2776950860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2914681",
+          "display_name": "Originality",
+          "level": 3,
+          "score": 0.526993
+        },
+        {
+          "id": "https://openalex.org/C543847140",
+          "wikidata": "https://www.wikidata.org/wiki/Q2642826",
+          "display_name": "Realism",
+          "level": 2,
+          "score": 0.5159653
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.43439287
+        },
+        {
+          "id": "https://openalex.org/C115961682",
+          "wikidata": "https://www.wikidata.org/wiki/Q860623",
+          "display_name": "Image (mathematics)",
+          "level": 2,
+          "score": 0.43160853
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.18610561
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.15846854
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.1552105
+        },
+        {
+          "id": "https://openalex.org/C121684516",
+          "wikidata": "https://www.wikidata.org/wiki/Q7600677",
+          "display_name": "Computer graphics (images)",
+          "level": 1,
+          "score": 0.14782503
+        },
+        {
+          "id": "https://openalex.org/C11012388",
+          "wikidata": "https://www.wikidata.org/wiki/Q170658",
+          "display_name": "Creativity",
+          "level": 2,
+          "score": 0.11122227
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.08042887
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.59720/23-132",
+        "pdf_url": "https://emerginginvestigators.org/articles/23-132/pdf",
+        "source": null,
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://emerginginvestigators.org/articles/23-132/pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.59720/23-132",
+          "pdf_url": "https://emerginginvestigators.org/articles/23-132/pdf",
+          "source": null,
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.59720/23-132",
+        "pdf_url": "https://emerginginvestigators.org/articles/23-132/pdf",
+        "source": null,
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

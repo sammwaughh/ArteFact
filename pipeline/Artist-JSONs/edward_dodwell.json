@@ -1,0 +1,684 @@
+[
+  {
+    "id": "https://openalex.org/W2169741971",
+    "title": "Book-Buying and the Grand Tour: the Italian Books at Belton House in Lincolnshire",
+    "relevance_score": 5.8415523,
+    "doi": "https://doi.org/10.1093/library/16.1.51",
+    "topic_ids": [
+      "C95457728",
+      "C2781291010",
+      "C74916050",
+      "C195244886",
+      "C53553401",
+      "C142362112",
+      "C107038049"
+    ],
+    "best_pdf": "https://academic.oup.com/library/article-pdf/16/1/51/5149318/51.pdf",
+    "backup_pdf": "https://doi.org/10.1093/library/16.1.51",
+    "raw": {
+      "id": "https://openalex.org/W2169741971",
+      "display_name": "Book-Buying and the Grand Tour: the Italian Books at Belton House in Lincolnshire",
+      "relevance_score": 5.8415523,
+      "doi": "https://doi.org/10.1093/library/16.1.51",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.45638517
+        },
+        {
+          "id": "https://openalex.org/C2781291010",
+          "wikidata": "https://www.wikidata.org/wiki/Q178580",
+          "display_name": "Period (music)",
+          "level": 2,
+          "score": 0.4328187
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.40962297
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.35275882
+        },
+        {
+          "id": "https://openalex.org/C53553401",
+          "wikidata": "https://www.wikidata.org/wiki/Q47307",
+          "display_name": "Genealogy",
+          "level": 1,
+          "score": 0.3438896
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.32383853
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/library/16.1.51",
+        "pdf_url": "https://academic.oup.com/library/article-pdf/16/1/51/5149318/51.pdf",
+        "source": {
+          "id": "https://openalex.org/S43579522",
+          "display_name": "The Library",
+          "issn_l": "0024-2160",
+          "issn": [
+            "0024-2160",
+            "1744-8581"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://academic.oup.com/library/article-pdf/16/1/51/5149318/51.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1093/library/16.1.51",
+          "pdf_url": "https://academic.oup.com/library/article-pdf/16/1/51/5149318/51.pdf",
+          "source": {
+            "id": "https://openalex.org/S43579522",
+            "display_name": "The Library",
+            "issn_l": "0024-2160",
+            "issn": [
+              "0024-2160",
+              "1744-8581"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647",
+              "https://openalex.org/P4310311648"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford",
+              "Oxford University Press"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.repository.cam.ac.uk/handle/1810/245882",
+          "pdf_url": "https://www.repository.cam.ac.uk/bitstreams/6722484c-aab3-4548-afc2-fc502e37ef4f/download",
+          "source": {
+            "id": "https://openalex.org/S4306401777",
+            "display_name": "Apollo (University of Cambridge)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I241749",
+            "host_organization_name": "University of Cambridge",
+            "host_organization_lineage": [
+              "https://openalex.org/I241749"
+            ],
+            "host_organization_lineage_names": [
+              "University of Cambridge"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/library/16.1.51",
+        "pdf_url": "https://academic.oup.com/library/article-pdf/16/1/51/5149318/51.pdf",
+        "source": {
+          "id": "https://openalex.org/S43579522",
+          "display_name": "The Library",
+          "issn_l": "0024-2160",
+          "issn": [
+            "0024-2160",
+            "1744-8581"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4384699295",
+    "title": "British Travelers and British Travel Writing: An Overview to British Travelers Visiting Albania in the First Half of 19th Century",
+    "relevance_score": 1.5480323,
+    "doi": "https://doi.org/10.7336/academicus.2023.28.11",
+    "topic_ids": [
+      "C33566652",
+      "C2908647359",
+      "C199033989",
+      "C95457728",
+      "C2993079128",
+      "C2780620123",
+      "C2781440851",
+      "C94625758",
+      "C144024400",
+      "C124952713",
+      "C199539241",
+      "C17744445",
+      "C142362112",
+      "C149923435",
+      "C41008148",
+      "C111919701"
+    ],
+    "best_pdf": "https://academicus.edu.al/nr28/Academicus-MMXXIII-28-191-199.pdf",
+    "backup_pdf": "https://doi.org/10.7336/academicus.2023.28.11",
+    "raw": {
+      "id": "https://openalex.org/W4384699295",
+      "display_name": "British Travelers and British Travel Writing: An Overview to British Travelers Visiting Albania in the First Half of 19th Century",
+      "relevance_score": 1.5480323,
+      "doi": "https://doi.org/10.7336/academicus.2023.28.11",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C33566652",
+          "wikidata": "https://www.wikidata.org/wiki/Q1065927",
+          "display_name": "Theme (computing)",
+          "level": 2,
+          "score": 0.5329643
+        },
+        {
+          "id": "https://openalex.org/C2908647359",
+          "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+          "display_name": "Population",
+          "level": 2,
+          "score": 0.5219759
+        },
+        {
+          "id": "https://openalex.org/C199033989",
+          "wikidata": "https://www.wikidata.org/wiki/Q1318295",
+          "display_name": "Narrative",
+          "level": 2,
+          "score": 0.5084345
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4691806
+        },
+        {
+          "id": "https://openalex.org/C2993079128",
+          "wikidata": "https://www.wikidata.org/wiki/Q1072723",
+          "display_name": "Travel writing",
+          "level": 2,
+          "score": 0.44823593
+        },
+        {
+          "id": "https://openalex.org/C2780620123",
+          "wikidata": "https://www.wikidata.org/wiki/Q7242",
+          "display_name": "Beauty",
+          "level": 2,
+          "score": 0.43417826
+        },
+        {
+          "id": "https://openalex.org/C2781440851",
+          "wikidata": "https://www.wikidata.org/wiki/Q35749",
+          "display_name": "Parliament",
+          "level": 3,
+          "score": 0.41857252
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.3094454
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.2932282
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.21222165
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.21199232
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.1811066
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.154264
+        },
+        {
+          "id": "https://openalex.org/C149923435",
+          "wikidata": "https://www.wikidata.org/wiki/Q37732",
+          "display_name": "Demography",
+          "level": 1,
+          "score": 0.12893778
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7336/academicus.2023.28.11",
+        "pdf_url": "https://academicus.edu.al/nr28/Academicus-MMXXIII-28-191-199.pdf",
+        "source": {
+          "id": "https://openalex.org/S2739231897",
+          "display_name": "Academicus International Scientific Journal",
+          "issn_l": "2079-3715",
+          "issn": [
+            "2079-3715",
+            "2309-1088"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314746",
+          "host_organization_name": "Academicus",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314746"
+          ],
+          "host_organization_lineage_names": [
+            "Academicus"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://academicus.edu.al/nr28/Academicus-MMXXIII-28-191-199.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7336/academicus.2023.28.11",
+          "pdf_url": "https://academicus.edu.al/nr28/Academicus-MMXXIII-28-191-199.pdf",
+          "source": {
+            "id": "https://openalex.org/S2739231897",
+            "display_name": "Academicus International Scientific Journal",
+            "issn_l": "2079-3715",
+            "issn": [
+              "2079-3715",
+              "2309-1088"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310314746",
+            "host_organization_name": "Academicus",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310314746"
+            ],
+            "host_organization_lineage_names": [
+              "Academicus"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7336/academicus.2023.28.11",
+        "pdf_url": "https://academicus.edu.al/nr28/Academicus-MMXXIII-28-191-199.pdf",
+        "source": {
+          "id": "https://openalex.org/S2739231897",
+          "display_name": "Academicus International Scientific Journal",
+          "issn_l": "2079-3715",
+          "issn": [
+            "2079-3715",
+            "2309-1088"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314746",
+          "host_organization_name": "Academicus",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314746"
+          ],
+          "host_organization_lineage_names": [
+            "Academicus"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3097828068",
+    "title": "The Old Cemetery for Foreigners in Rome with a new Inventory of its burials",
+    "relevance_score": 1.1688563,
+    "doi": "https://doi.org/10.30549/opathrom-13-08",
+    "topic_ids": [
+      "C146834321",
+      "C2908647359",
+      "C166957645",
+      "C142575187",
+      "C95457728",
+      "C195244886",
+      "C205649164",
+      "C142362112",
+      "C149923435",
+      "C144024400",
+      "C199539241",
+      "C17744445",
+      "C121332964",
+      "C120665830"
+    ],
+    "best_pdf": "http://ecsi.se/wp-content/uploads/2021/05/08_Stanley_Price.pdf",
+    "backup_pdf": "https://doi.org/10.30549/opathrom-13-08",
+    "raw": {
+      "id": "https://openalex.org/W3097828068",
+      "display_name": "The Old Cemetery for Foreigners in Rome with a new Inventory of its burials",
+      "relevance_score": 1.1688563,
+      "doi": "https://doi.org/10.30549/opathrom-13-08",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C146834321",
+          "wikidata": "https://www.wikidata.org/wiki/Q2979672",
+          "display_name": "Closure (psychology)",
+          "level": 2,
+          "score": 0.6014377
+        },
+        {
+          "id": "https://openalex.org/C2908647359",
+          "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+          "display_name": "Population",
+          "level": 2,
+          "score": 0.53479284
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.5324118
+        },
+        {
+          "id": "https://openalex.org/C142575187",
+          "wikidata": "https://www.wikidata.org/wiki/Q3358290",
+          "display_name": "Pyramid (geometry)",
+          "level": 2,
+          "score": 0.4853281
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4746005
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.4148808
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.35127434
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.32280678
+        },
+        {
+          "id": "https://openalex.org/C149923435",
+          "wikidata": "https://www.wikidata.org/wiki/Q37732",
+          "display_name": "Demography",
+          "level": 1,
+          "score": 0.1812748
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.15351471
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.11825463
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.053908378
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C120665830",
+          "wikidata": "https://www.wikidata.org/wiki/Q14620",
+          "display_name": "Optics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30549/opathrom-13-08",
+        "pdf_url": "http://ecsi.se/wp-content/uploads/2021/05/08_Stanley_Price.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210209294",
+          "display_name": "Opuscula Annual of the Swedish Institutes at Athens and Rome",
+          "issn_l": "2000-0898",
+          "issn": [
+            "2000-0898"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "http://ecsi.se/wp-content/uploads/2021/05/08_Stanley_Price.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.30549/opathrom-13-08",
+          "pdf_url": "http://ecsi.se/wp-content/uploads/2021/05/08_Stanley_Price.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210209294",
+            "display_name": "Opuscula Annual of the Swedish Institutes at Athens and Rome",
+            "issn_l": "2000-0898",
+            "issn": [
+              "2000-0898"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30549/opathrom-13-08",
+        "pdf_url": "http://ecsi.se/wp-content/uploads/2021/05/08_Stanley_Price.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210209294",
+          "display_name": "Opuscula Annual of the Swedish Institutes at Athens and Rome",
+          "issn_l": "2000-0898",
+          "issn": [
+            "2000-0898"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

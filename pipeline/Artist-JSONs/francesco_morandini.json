@@ -1,0 +1,980 @@
+[
+  {
+    "id": "https://openalex.org/W2765730137",
+    "title": "Francesco I’s museum: cultural politics at the Galleria degli Uffizi",
+    "relevance_score": 5.513126,
+    "doi": "https://doi.org/10.1093/jhc/fhx017",
+    "topic_ids": [
+      "C94625758",
+      "C2991913517",
+      "C142362112",
+      "C52119013",
+      "C153349607",
+      "C15708023",
+      "C199539241",
+      "C17744445"
+    ],
+    "best_pdf": "https://academic.oup.com/jhc/article-pdf/30/2/203/25182981/fhx017.pdf",
+    "backup_pdf": "https://doi.org/10.1093/jhc/fhx017",
+    "raw": {
+      "id": "https://openalex.org/W2765730137",
+      "display_name": "Francesco I’s museum: cultural politics at the Galleria degli Uffizi",
+      "relevance_score": 5.513126,
+      "doi": "https://doi.org/10.1093/jhc/fhx017",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.7864276
+        },
+        {
+          "id": "https://openalex.org/C2991913517",
+          "wikidata": "https://www.wikidata.org/wiki/Q2914650",
+          "display_name": "Cultural politics",
+          "level": 3,
+          "score": 0.6284791
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5259716
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.4694034
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.41222513
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.3226123
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.14046627
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.0991911
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/jhc/fhx017",
+        "pdf_url": "https://academic.oup.com/jhc/article-pdf/30/2/203/25182981/fhx017.pdf",
+        "source": {
+          "id": "https://openalex.org/S146592948",
+          "display_name": "Journal of the History of Collections",
+          "issn_l": "0954-6650",
+          "issn": [
+            "0954-6650",
+            "1477-8564"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://academic.oup.com/jhc/article-pdf/30/2/203/25182981/fhx017.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1093/jhc/fhx017",
+          "pdf_url": "https://academic.oup.com/jhc/article-pdf/30/2/203/25182981/fhx017.pdf",
+          "source": {
+            "id": "https://openalex.org/S146592948",
+            "display_name": "Journal of the History of Collections",
+            "issn_l": "0954-6650",
+            "issn": [
+              "0954-6650",
+              "1477-8564"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647",
+              "https://openalex.org/P4310311648"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford",
+              "Oxford University Press"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/jhc/fhx017",
+        "pdf_url": "https://academic.oup.com/jhc/article-pdf/30/2/203/25182981/fhx017.pdf",
+        "source": {
+          "id": "https://openalex.org/S146592948",
+          "display_name": "Journal of the History of Collections",
+          "issn_l": "0954-6650",
+          "issn": [
+            "0954-6650",
+            "1477-8564"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647",
+            "https://openalex.org/P4310311648"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford",
+            "Oxford University Press"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W1983495689",
+    "title": "A French King and a Magic Ring: The Girolami and a Relic of St. Zenobius in Renaissance Florence",
+    "relevance_score": 3.7492423,
+    "doi": "https://doi.org/10.2307/1262315",
+    "topic_ids": [
+      "C52069626",
+      "C2780493273",
+      "C2777704519",
+      "C2780415144",
+      "C2779343474",
+      "C2776203320",
+      "C142362112",
+      "C95457728",
+      "C195244886",
+      "C74916050",
+      "C52119013",
+      "C166957645",
+      "C121332964",
+      "C62520636"
+    ],
+    "best_pdf": "https://kuscholarworks.ku.edu/bitstream/1808/16965/1/CornelisonS_RQ_55%282%29434.pdf",
+    "backup_pdf": "https://hdl.handle.net/1808/16965",
+    "raw": {
+      "id": "https://openalex.org/W1983495689",
+      "display_name": "A French King and a Magic Ring: The Girolami and a Relic of St. Zenobius in Renaissance Florence",
+      "relevance_score": 3.7492423,
+      "doi": "https://doi.org/10.2307/1262315",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.86170775
+        },
+        {
+          "id": "https://openalex.org/C2780493273",
+          "wikidata": "https://www.wikidata.org/wiki/Q11038979",
+          "display_name": "Cult",
+          "level": 2,
+          "score": 0.8068364
+        },
+        {
+          "id": "https://openalex.org/C2777704519",
+          "wikidata": "https://www.wikidata.org/wiki/Q45732",
+          "display_name": "MAGIC (telescope)",
+          "level": 2,
+          "score": 0.79557854
+        },
+        {
+          "id": "https://openalex.org/C2780415144",
+          "wikidata": "https://www.wikidata.org/wiki/Q7388582",
+          "display_name": "SAINT",
+          "level": 2,
+          "score": 0.67944795
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.50813174
+        },
+        {
+          "id": "https://openalex.org/C2776203320",
+          "wikidata": "https://www.wikidata.org/wiki/Q28914",
+          "display_name": "Patron saint",
+          "level": 3,
+          "score": 0.47821066
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.45440692
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.42226315
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.3692478
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.36241746
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.31978133
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.1837658
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.2307/1262315",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S193779622",
+          "display_name": "Renaissance Quarterly",
+          "issn_l": "0034-4338",
+          "issn": [
+            "0034-4338",
+            "1935-0236"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://kuscholarworks.ku.edu/bitstream/1808/16965/1/CornelisonS_RQ_55%282%29434.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.2307/1262315",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S193779622",
+            "display_name": "Renaissance Quarterly",
+            "issn_l": "0034-4338",
+            "issn": [
+              "0034-4338",
+              "1935-0236"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/1808/16965",
+          "pdf_url": "https://kuscholarworks.ku.edu/bitstream/1808/16965/1/CornelisonS_RQ_55%282%29434.pdf",
+          "source": {
+            "id": "https://openalex.org/S4377196285",
+            "display_name": "KU ScholarWorks (University of Kansas)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I146416000",
+            "host_organization_name": "University of Kansas",
+            "host_organization_lineage": [
+              "https://openalex.org/I146416000"
+            ],
+            "host_organization_lineage_names": [
+              "University of Kansas"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://hdl.handle.net/1808/16965",
+        "pdf_url": "https://kuscholarworks.ku.edu/bitstream/1808/16965/1/CornelisonS_RQ_55%282%29434.pdf",
+        "source": {
+          "id": "https://openalex.org/S4377196285",
+          "display_name": "KU ScholarWorks (University of Kansas)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I146416000",
+          "host_organization_name": "University of Kansas",
+          "host_organization_lineage": [
+            "https://openalex.org/I146416000"
+          ],
+          "host_organization_lineage_names": [
+            "University of Kansas"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3047166346",
+    "title": "The Historiae Florentini populi by Poggio Bracciolini. Genesis and Fortune of an Alternative History of Florence",
+    "relevance_score": 1.9319572,
+    "doi": "https://doi.org/10.36253/978-88-6453-968-3.05",
+    "topic_ids": [
+      "C2781119825",
+      "C74916050",
+      "C2779343474",
+      "C142362112",
+      "C95457728",
+      "C195244886",
+      "C166957645"
+    ],
+    "best_pdf": "https://fupress.com/redir.ashx?RetUrl=14330.pdf",
+    "backup_pdf": "https://doi.org/10.36253/978-88-6453-968-3.05",
+    "raw": {
+      "id": "https://openalex.org/W3047166346",
+      "display_name": "The Historiae Florentini populi by Poggio Bracciolini. Genesis and Fortune of an Alternative History of Florence",
+      "relevance_score": 1.9319572,
+      "doi": "https://doi.org/10.36253/978-88-6453-968-3.05",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2781119825",
+          "wikidata": "https://www.wikidata.org/wiki/Q2163436",
+          "display_name": "Fifteenth",
+          "level": 2,
+          "score": 0.8271786
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.56418175
+        },
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.5442387
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.4535046
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.42941394
+        },
+        {
+          "id": "https://openalex.org/C195244886",
+          "wikidata": "https://www.wikidata.org/wiki/Q41493",
+          "display_name": "Ancient history",
+          "level": 1,
+          "score": 0.42533925
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.14230195
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-6453-968-3.05",
+        "pdf_url": "https://fupress.com/redir.ashx?RetUrl=14330.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210228410",
+          "display_name": "Atti",
+          "issn_l": "2239-3307",
+          "issn": [
+            "2239-3307"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://fupress.com/redir.ashx?RetUrl=14330.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.36253/978-88-6453-968-3.05",
+          "pdf_url": "https://fupress.com/redir.ashx?RetUrl=14330.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210228410",
+            "display_name": "Atti",
+            "issn_l": "2239-3307",
+            "issn": [
+              "2239-3307"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320196",
+            "host_organization_name": "Firenze University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320196"
+            ],
+            "host_organization_lineage_names": [
+              "Firenze University Press"
+            ],
+            "type": "ebook platform"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://urn.fi/URN:NBN:fi:jyu-202006255100",
+          "pdf_url": "https://jyx.jyu.fi/bitstream/123456789/70910/1/Merisalo_3978_23493.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400563",
+            "display_name": "Jyväskylä University Digital Archive (University of Jyväskylä)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I94722563",
+            "host_organization_name": "University of Jyväskylä",
+            "host_organization_lineage": [
+              "https://openalex.org/I94722563"
+            ],
+            "host_organization_lineage_names": [
+              "University of Jyväskylä"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.fupress.com/doi/capitoli/9788864539683_5",
+          "pdf_url": "https://media.fupress.com/files/pdf/24/4358/14330",
+          "source": {
+            "id": "https://openalex.org/S4306400539",
+            "display_name": "Directory of Open access Books (OAPEN Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-6453-968-3.05",
+        "pdf_url": "https://fupress.com/redir.ashx?RetUrl=14330.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210228410",
+          "display_name": "Atti",
+          "issn_l": "2239-3307",
+          "issn": [
+            "2239-3307"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3040569168",
+    "title": "Poggio Bracciolini and the Re(dis)covery of Antiquity: Textual and Material Traditions",
+    "relevance_score": 1.0744615,
+    "doi": "https://doi.org/10.36253/978-88-6453-968-3",
+    "topic_ids": [
+      "C153606108",
+      "C23987474",
+      "C29598333",
+      "C52069626",
+      "C142362112",
+      "C124952713",
+      "C74916050",
+      "C95457728",
+      "C52119013",
+      "C138885662",
+      "C166957645",
+      "C199539241",
+      "C27206212",
+      "C17744445",
+      "C2777688943"
+    ],
+    "best_pdf": "https://library.oapen.org/bitstream/20.500.12657/55578/1/9788864539683.pdf",
+    "backup_pdf": "https://doi.org/10.36253/978-88-6453-968-3",
+    "raw": {
+      "id": "https://openalex.org/W3040569168",
+      "display_name": "Poggio Bracciolini and the Re(dis)covery of Antiquity: Textual and Material Traditions",
+      "relevance_score": 1.0744615,
+      "doi": "https://doi.org/10.36253/978-88-6453-968-3",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C153606108",
+          "wikidata": "https://www.wikidata.org/wiki/Q46158",
+          "display_name": "Humanism",
+          "level": 2,
+          "score": 0.5631778
+        },
+        {
+          "id": "https://openalex.org/C23987474",
+          "wikidata": "https://www.wikidata.org/wiki/Q40634",
+          "display_name": "Philology",
+          "level": 3,
+          "score": 0.5568364
+        },
+        {
+          "id": "https://openalex.org/C29598333",
+          "wikidata": "https://www.wikidata.org/wiki/Q50675",
+          "display_name": "Historiography",
+          "level": 2,
+          "score": 0.5296281
+        },
+        {
+          "id": "https://openalex.org/C52069626",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692",
+          "display_name": "The Renaissance",
+          "level": 2,
+          "score": 0.4939025
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.4793142
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.4725998
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.38670805
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.33965865
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.33236796
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.33106527
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.13664064
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.111178786
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.101836294
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.088208586
+        },
+        {
+          "id": "https://openalex.org/C2777688943",
+          "wikidata": "https://www.wikidata.org/wiki/Q3092681",
+          "display_name": "Feminism",
+          "level": 2,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-6453-968-3",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210228410",
+          "display_name": "Atti",
+          "issn_l": "2239-3307",
+          "issn": [
+            "2239-3307"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://doi.org/10.36253/978-88-6453-968-3",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.36253/978-88-6453-968-3",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210228410",
+            "display_name": "Atti",
+            "issn_l": "2239-3307",
+            "issn": [
+              "2239-3307"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320196",
+            "host_organization_name": "Firenze University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320196"
+            ],
+            "host_organization_lineage_names": [
+              "Firenze University Press"
+            ],
+            "type": "ebook platform"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://directory.doabooks.org/handle/20.500.12854/82229",
+          "pdf_url": "https://library.oapen.org/bitstream/20.500.12657/55578/1/9788864539683.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.fupress.com/isbn/9788864539683",
+          "pdf_url": "https://media.fupress.com/files/pdf/24/3978/14377",
+          "source": {
+            "id": "https://openalex.org/S4306400539",
+            "display_name": "Directory of Open access Books (OAPEN Foundation)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.36253/978-88-6453-968-3",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210228410",
+          "display_name": "Atti",
+          "issn_l": "2239-3307",
+          "issn": [
+            "2239-3307"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320196",
+          "host_organization_name": "Firenze University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320196"
+          ],
+          "host_organization_lineage_names": [
+            "Firenze University Press"
+          ],
+          "type": "ebook platform"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

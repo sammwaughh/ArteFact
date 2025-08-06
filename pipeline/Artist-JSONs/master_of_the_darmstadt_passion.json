@@ -1,0 +1,636 @@
+[
+  {
+    "id": "https://openalex.org/W3123131446",
+    "title": "Roger Bacon, Letter to Pope Clement IV",
+    "relevance_score": 1.4204228,
+    "doi": "https://doi.org/10.21071/refime.v27i2.12915",
+    "topic_ids": [
+      "C2778950570",
+      "C74916050",
+      "C142362112",
+      "C138885662",
+      "C52119013",
+      "C95457728"
+    ],
+    "best_pdf": "http://helvia.uco.es/xmlui/bitstream/10396/23865/1/Refime%2027.2-10.pdf",
+    "backup_pdf": "https://www.uco.es/ucopress/ojs/index.php/refime/article/download/12915/12054",
+    "raw": {
+      "id": "https://openalex.org/W3123131446",
+      "display_name": "Roger Bacon, Letter to Pope Clement IV",
+      "relevance_score": 1.4204228,
+      "doi": "https://doi.org/10.21071/refime.v27i2.12915",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2778950570",
+          "wikidata": "https://www.wikidata.org/wiki/Q1466199",
+          "display_name": "Opus",
+          "level": 2,
+          "score": 0.95430183
+        },
+        {
+          "id": "https://openalex.org/C74916050",
+          "wikidata": "https://www.wikidata.org/wiki/Q841090",
+          "display_name": "Classics",
+          "level": 1,
+          "score": 0.44712102
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.41603512
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.39430687
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.3829339
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.3264201
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.21071/refime.v27i2.12915",
+        "pdf_url": "https://www.uco.es/ucopress/ojs/index.php/refime/article/download/12915/12054",
+        "source": {
+          "id": "https://openalex.org/S4210208991",
+          "display_name": "Revista Española de Filosofía Medieval",
+          "issn_l": "1133-0902",
+          "issn": [
+            "1133-0902",
+            "2530-7878"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.uco.es/ucopress/ojs/index.php/refime/article/download/12915/12054",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.21071/refime.v27i2.12915",
+          "pdf_url": "https://www.uco.es/ucopress/ojs/index.php/refime/article/download/12915/12054",
+          "source": {
+            "id": "https://openalex.org/S4210208991",
+            "display_name": "Revista Española de Filosofía Medieval",
+            "issn_l": "1133-0902",
+            "issn": [
+              "1133-0902",
+              "2530-7878"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/10396/23865",
+          "pdf_url": "http://helvia.uco.es/xmlui/bitstream/10396/23865/1/Refime%2027.2-10.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401816",
+            "display_name": "Universidad de Córdoba Insitutional Repository (Universidad de Córdoba)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210163269",
+            "host_organization_name": "Universidad Paccioli de Córdoba",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210163269"
+            ],
+            "host_organization_lineage_names": [
+              "Universidad Paccioli de Córdoba"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.21071/refime.v27i2.12915",
+        "pdf_url": "https://www.uco.es/ucopress/ojs/index.php/refime/article/download/12915/12054",
+        "source": {
+          "id": "https://openalex.org/S4210208991",
+          "display_name": "Revista Española de Filosofía Medieval",
+          "issn_l": "1133-0902",
+          "issn": [
+            "1133-0902",
+            "2530-7878"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2602837398",
+    "title": "What is Zbyněk Z. Stránský's \"influence\" on museology?",
+    "relevance_score": 1.3711843,
+    "doi": "https://doi.org/10.5817/mub2016-2-3",
+    "topic_ids": [
+      "C43211506",
+      "C205649164",
+      "C166957645"
+    ],
+    "best_pdf": "https://digilib.phil.muni.cz/bitstream/handle/11222.digilib/136261/2_MuseologicaBrunensia_5-2016-2_5.pdf?sequence=1",
+    "backup_pdf": "https://doi.org/10.5817/mub2016-2-3",
+    "raw": {
+      "id": "https://openalex.org/W2602837398",
+      "display_name": "What is Zbyněk Z. Stránský's \"influence\" on museology?",
+      "relevance_score": 1.3711843,
+      "doi": "https://doi.org/10.5817/mub2016-2-3",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C43211506",
+          "wikidata": "https://www.wikidata.org/wiki/Q460162",
+          "display_name": "Museology",
+          "level": 2,
+          "score": 0.900689
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.30826914
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.2241118
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5817/mub2016-2-3",
+        "pdf_url": "https://digilib.phil.muni.cz/bitstream/handle/11222.digilib/136261/2_MuseologicaBrunensia_5-2016-2_5.pdf?sequence=1",
+        "source": {
+          "id": "https://openalex.org/S4210198206",
+          "display_name": "Museologica Brunensia",
+          "issn_l": "1805-4722",
+          "issn": [
+            "1805-4722",
+            "2464-5362"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314295",
+          "host_organization_name": "Masaryk University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314295"
+          ],
+          "host_organization_lineage_names": [
+            "Masaryk University"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://digilib.phil.muni.cz/bitstream/handle/11222.digilib/136261/2_MuseologicaBrunensia_5-2016-2_5.pdf?sequence=1",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5817/mub2016-2-3",
+          "pdf_url": "https://digilib.phil.muni.cz/bitstream/handle/11222.digilib/136261/2_MuseologicaBrunensia_5-2016-2_5.pdf?sequence=1",
+          "source": {
+            "id": "https://openalex.org/S4210198206",
+            "display_name": "Museologica Brunensia",
+            "issn_l": "1805-4722",
+            "issn": [
+              "1805-4722",
+              "2464-5362"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310314295",
+            "host_organization_name": "Masaryk University",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310314295"
+            ],
+            "host_organization_lineage_names": [
+              "Masaryk University"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5817/mub2016-2-3",
+        "pdf_url": "https://digilib.phil.muni.cz/bitstream/handle/11222.digilib/136261/2_MuseologicaBrunensia_5-2016-2_5.pdf?sequence=1",
+        "source": {
+          "id": "https://openalex.org/S4210198206",
+          "display_name": "Museologica Brunensia",
+          "issn_l": "1805-4722",
+          "issn": [
+            "1805-4722",
+            "2464-5362"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310314295",
+          "host_organization_name": "Masaryk University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310314295"
+          ],
+          "host_organization_lineage_names": [
+            "Masaryk University"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2510469672",
+    "title": "C. P. E. BACH ‘IN TORMENTIS’: GOUT PAIN AND BODY LANGUAGE IN THE FANTASIA IN A MAJOR, <scp>h</scp>278 (1782)",
+    "relevance_score": 1.1382836,
+    "doi": "https://doi.org/10.1017/s1478570616000051",
+    "topic_ids": [
+      "C207347870",
+      "C554936623",
+      "C122980154",
+      "C2780792186",
+      "C15744967",
+      "C125468537",
+      "C558565934",
+      "C124952713",
+      "C118563197",
+      "C142362112",
+      "C11171543",
+      "C138885662",
+      "C153349607",
+      "C77805123",
+      "C41895202"
+    ],
+    "best_pdf": "https://kclpure.kcl.ac.uk/portal/files/55964665/Head_Tormentis_Final.pdf",
+    "backup_pdf": "https://kclpure.kcl.ac.uk/portal/en/publications/38c9d67f-775a-4ad7-b7f1-856cf6f33397",
+    "raw": {
+      "id": "https://openalex.org/W2510469672",
+      "display_name": "C. P. E. BACH ‘IN TORMENTIS’: GOUT PAIN AND BODY LANGUAGE IN THE FANTASIA IN A MAJOR, <scp>h</scp>278 (1782)",
+      "relevance_score": 1.1382836,
+      "doi": "https://doi.org/10.1017/s1478570616000051",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C207347870",
+          "wikidata": "https://www.wikidata.org/wiki/Q371174",
+          "display_name": "Gesture",
+          "level": 2,
+          "score": 0.6421128
+        },
+        {
+          "id": "https://openalex.org/C554936623",
+          "wikidata": "https://www.wikidata.org/wiki/Q199657",
+          "display_name": "Reading (process)",
+          "level": 2,
+          "score": 0.58771574
+        },
+        {
+          "id": "https://openalex.org/C122980154",
+          "wikidata": "https://www.wikidata.org/wiki/Q205555",
+          "display_name": "Feeling",
+          "level": 2,
+          "score": 0.57168674
+        },
+        {
+          "id": "https://openalex.org/C2780792186",
+          "wikidata": "https://www.wikidata.org/wiki/Q193206",
+          "display_name": "Anecdote",
+          "level": 2,
+          "score": 0.46303853
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.44631326
+        },
+        {
+          "id": "https://openalex.org/C125468537",
+          "wikidata": "https://www.wikidata.org/wiki/Q214961",
+          "display_name": "Improvisation",
+          "level": 2,
+          "score": 0.44611692
+        },
+        {
+          "id": "https://openalex.org/C558565934",
+          "wikidata": "https://www.wikidata.org/wiki/Q2743",
+          "display_name": "Musical",
+          "level": 2,
+          "score": 0.4346312
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.41570544
+        },
+        {
+          "id": "https://openalex.org/C118563197",
+          "wikidata": "https://www.wikidata.org/wiki/Q185030",
+          "display_name": "Genius",
+          "level": 2,
+          "score": 0.41165888
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.40964556
+        },
+        {
+          "id": "https://openalex.org/C11171543",
+          "wikidata": "https://www.wikidata.org/wiki/Q41630",
+          "display_name": "Psychoanalysis",
+          "level": 1,
+          "score": 0.39440548
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.34686875
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.22815803
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.1460154
+        },
+        {
+          "id": "https://openalex.org/C41895202",
+          "wikidata": "https://www.wikidata.org/wiki/Q8162",
+          "display_name": "Linguistics",
+          "level": 1,
+          "score": 0.12671816
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1017/s1478570616000051",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210174616",
+          "display_name": "Eighteenth Century Music",
+          "issn_l": "1478-5706",
+          "issn": [
+            "1478-5706",
+            "1478-5714"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310311721",
+          "host_organization_name": "Cambridge University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311721",
+            "https://openalex.org/P4310311702"
+          ],
+          "host_organization_lineage_names": [
+            "Cambridge University Press",
+            "University of Cambridge"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://kclpure.kcl.ac.uk/portal/files/55964665/Head_Tormentis_Final.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1017/s1478570616000051",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210174616",
+            "display_name": "Eighteenth Century Music",
+            "issn_l": "1478-5706",
+            "issn": [
+              "1478-5706",
+              "1478-5714"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310311721",
+            "host_organization_name": "Cambridge University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311721",
+              "https://openalex.org/P4310311702"
+            ],
+            "host_organization_lineage_names": [
+              "Cambridge University Press",
+              "University of Cambridge"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://kclpure.kcl.ac.uk/portal/en/publications/38c9d67f-775a-4ad7-b7f1-856cf6f33397",
+          "pdf_url": "https://kclpure.kcl.ac.uk/portal/files/55964665/Head_Tormentis_Final.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400216",
+            "display_name": "Research Portal (King's College London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I183935753",
+            "host_organization_name": "King's College London",
+            "host_organization_lineage": [
+              "https://openalex.org/I183935753"
+            ],
+            "host_organization_lineage_names": [
+              "King's College London"
+            ],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://kclpure.kcl.ac.uk/ws/files/55964665/Head_Tormentis_Final.pdf",
+          "pdf_url": "https://kclpure.kcl.ac.uk/ws/files/55964665/Head_Tormentis_Final.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400216",
+            "display_name": "Research Portal (King's College London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I183935753",
+            "host_organization_name": "King's College London",
+            "host_organization_lineage": [
+              "https://openalex.org/I183935753"
+            ],
+            "host_organization_lineage_names": [
+              "King's College London"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://kclpure.kcl.ac.uk/portal/en/publications/38c9d67f-775a-4ad7-b7f1-856cf6f33397",
+        "pdf_url": "https://kclpure.kcl.ac.uk/portal/files/55964665/Head_Tormentis_Final.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400216",
+          "display_name": "Research Portal (King's College London)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I183935753",
+          "host_organization_name": "King's College London",
+          "host_organization_lineage": [
+            "https://openalex.org/I183935753"
+          ],
+          "host_organization_lineage_names": [
+            "King's College London"
+          ],
+          "type": "repository"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]

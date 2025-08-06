@@ -1,0 +1,881 @@
+[
+  {
+    "id": "https://openalex.org/W2571629150",
+    "title": "Picturing peace: murals and memory in Colombia",
+    "relevance_score": 3.1586637,
+    "doi": "https://doi.org/10.1177/0306396816663387",
+    "topic_ids": [
+      "C2777420470",
+      "C94625758",
+      "C2777880217",
+      "C205783811",
+      "C186835682",
+      "C2779337067",
+      "C48103436",
+      "C50335755",
+      "C108170787",
+      "C139621336",
+      "C144024400",
+      "C107038049",
+      "C153349607",
+      "C17744445",
+      "C142362112",
+      "C199539241",
+      "C36289849",
+      "C121332964",
+      "C38652104",
+      "C11413529",
+      "C62520636",
+      "C41008148"
+    ],
+    "best_pdf": "https://pure.ulster.ac.uk/en/publications/d79e27fc-fa11-4318-9a87-00f5d1d770ce",
+    "backup_pdf": "https://doi.org/10.1177/0306396816663387",
+    "raw": {
+      "id": "https://openalex.org/W2571629150",
+      "display_name": "Picturing peace: murals and memory in Colombia",
+      "relevance_score": 3.1586637,
+      "doi": "https://doi.org/10.1177/0306396816663387",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2777420470",
+          "wikidata": "https://www.wikidata.org/wiki/Q219423",
+          "display_name": "Mural",
+          "level": 3,
+          "score": 0.9040053
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.70740706
+        },
+        {
+          "id": "https://openalex.org/C2777880217",
+          "wikidata": "https://www.wikidata.org/wiki/Q4674282",
+          "display_name": "Acknowledgement",
+          "level": 2,
+          "score": 0.6368314
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.6219298
+        },
+        {
+          "id": "https://openalex.org/C186835682",
+          "wikidata": "https://www.wikidata.org/wiki/Q1541559",
+          "display_name": "Graffiti",
+          "level": 2,
+          "score": 0.62045115
+        },
+        {
+          "id": "https://openalex.org/C2779337067",
+          "wikidata": "https://www.wikidata.org/wiki/Q4800961",
+          "display_name": "Articulation (sociology)",
+          "level": 3,
+          "score": 0.5667453
+        },
+        {
+          "id": "https://openalex.org/C48103436",
+          "wikidata": "https://www.wikidata.org/wiki/Q599031",
+          "display_name": "State (computer science)",
+          "level": 2,
+          "score": 0.52812725
+        },
+        {
+          "id": "https://openalex.org/C50335755",
+          "wikidata": "https://www.wikidata.org/wiki/Q483247",
+          "display_name": "Phenomenon",
+          "level": 2,
+          "score": 0.49596247
+        },
+        {
+          "id": "https://openalex.org/C108170787",
+          "wikidata": "https://www.wikidata.org/wiki/Q3951828",
+          "display_name": "Agency (philosophy)",
+          "level": 2,
+          "score": 0.44434202
+        },
+        {
+          "id": "https://openalex.org/C139621336",
+          "wikidata": "https://www.wikidata.org/wiki/Q3190382",
+          "display_name": "Economic Justice",
+          "level": 2,
+          "score": 0.42840877
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.42470977
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.36272582
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.35376453
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.33555114
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.3305807
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.31900516
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.18438122
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C38652104",
+          "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+          "display_name": "Computer security",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C11413529",
+          "wikidata": "https://www.wikidata.org/wiki/Q8366",
+          "display_name": "Algorithm",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1177/0306396816663387",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S180716411",
+          "display_name": "Race & Class",
+          "issn_l": "0306-3968",
+          "issn": [
+            "0306-3968",
+            "1741-3125"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://pure.ulster.ac.uk/en/publications/d79e27fc-fa11-4318-9a87-00f5d1d770ce",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1177/0306396816663387",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S180716411",
+            "display_name": "Race & Class",
+            "issn_l": "0306-3968",
+            "issn": [
+              "0306-3968",
+              "1741-3125"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320017",
+            "host_organization_name": "SAGE Publishing",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320017"
+            ],
+            "host_organization_lineage_names": [
+              "SAGE Publishing"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://pure.ulster.ac.uk/en/publications/d79e27fc-fa11-4318-9a87-00f5d1d770ce",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402454",
+            "display_name": "Ulster University Research Portal (Ulster University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I138801177",
+            "host_organization_name": "University of Ulster",
+            "host_organization_lineage": [
+              "https://openalex.org/I138801177"
+            ],
+            "host_organization_lineage_names": [
+              "University of Ulster"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://pure.ulster.ac.uk/ws/files/11580888/Picturing%20peace%20Race%20and%20Class.docx",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402454",
+            "display_name": "Ulster University Research Portal (Ulster University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I138801177",
+            "host_organization_name": "University of Ulster",
+            "host_organization_lineage": [
+              "https://openalex.org/I138801177"
+            ],
+            "host_organization_lineage_names": [
+              "University of Ulster"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://pure.ulster.ac.uk/en/publications/picturing-peace-murals-and-memory-in-colombia-3",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402454",
+            "display_name": "Ulster University Research Portal (Ulster University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I138801177",
+            "host_organization_name": "University of Ulster",
+            "host_organization_lineage": [
+              "https://openalex.org/I138801177"
+            ],
+            "host_organization_lineage_names": [
+              "University of Ulster"
+            ],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://pure.ulster.ac.uk/en/publications/d79e27fc-fa11-4318-9a87-00f5d1d770ce",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306402454",
+          "display_name": "Ulster University Research Portal (Ulster University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I138801177",
+          "host_organization_name": "University of Ulster",
+          "host_organization_lineage": [
+            "https://openalex.org/I138801177"
+          ],
+          "host_organization_lineage_names": [
+            "University of Ulster"
+          ],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2054790948",
+    "title": "Málaga – a failed resort of the early twentieth century?",
+    "relevance_score": 3.0891771,
+    "doi": "https://doi.org/10.1080/1755182x.2010.523145",
+    "topic_ids": [
+      "C48798503",
+      "C18918823",
+      "C136264566",
+      "C95457728",
+      "C14036430",
+      "C26271046",
+      "C17744445",
+      "C205649164",
+      "C6303427",
+      "C199539241",
+      "C166957645",
+      "C162324750",
+      "C78458016",
+      "C86803240"
+    ],
+    "best_pdf": "https://www.tandfonline.com/doi/pdf/10.1080/1755182X.2010.523145?needAccess=true",
+    "backup_pdf": "https://doi.org/10.1080/1755182x.2010.523145",
+    "raw": {
+      "id": "https://openalex.org/W2054790948",
+      "display_name": "Málaga – a failed resort of the early twentieth century?",
+      "relevance_score": 3.0891771,
+      "doi": "https://doi.org/10.1080/1755182x.2010.523145",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C48798503",
+          "wikidata": "https://www.wikidata.org/wiki/Q877546",
+          "display_name": "Reputation",
+          "level": 2,
+          "score": 0.81246674
+        },
+        {
+          "id": "https://openalex.org/C18918823",
+          "wikidata": "https://www.wikidata.org/wiki/Q49389",
+          "display_name": "Tourism",
+          "level": 2,
+          "score": 0.7888913
+        },
+        {
+          "id": "https://openalex.org/C136264566",
+          "wikidata": "https://www.wikidata.org/wiki/Q159810",
+          "display_name": "Economy",
+          "level": 1,
+          "score": 0.4624778
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.4564164
+        },
+        {
+          "id": "https://openalex.org/C14036430",
+          "wikidata": "https://www.wikidata.org/wiki/Q3736076",
+          "display_name": "Function (biology)",
+          "level": 2,
+          "score": 0.4550773
+        },
+        {
+          "id": "https://openalex.org/C26271046",
+          "wikidata": "https://www.wikidata.org/wiki/Q187097",
+          "display_name": "Economic geography",
+          "level": 1,
+          "score": 0.3705172
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.34641606
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.33754465
+        },
+        {
+          "id": "https://openalex.org/C6303427",
+          "wikidata": "https://www.wikidata.org/wiki/Q47398",
+          "display_name": "Economic history",
+          "level": 1,
+          "score": 0.32077125
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.13414171
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.12881222
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.10017416
+        },
+        {
+          "id": "https://openalex.org/C78458016",
+          "wikidata": "https://www.wikidata.org/wiki/Q840400",
+          "display_name": "Evolutionary biology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C86803240",
+          "wikidata": "https://www.wikidata.org/wiki/Q420",
+          "display_name": "Biology",
+          "level": 0,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/1755182x.2010.523145",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/1755182X.2010.523145?needAccess=true",
+        "source": {
+          "id": "https://openalex.org/S179702598",
+          "display_name": "Journal of Tourism History",
+          "issn_l": "1755-182X",
+          "issn": [
+            "1755-182X",
+            "1755-1838"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/1755182X.2010.523145?needAccess=true",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1080/1755182x.2010.523145",
+          "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/1755182X.2010.523145?needAccess=true",
+          "source": {
+            "id": "https://openalex.org/S179702598",
+            "display_name": "Journal of Tourism History",
+            "issn_l": "1755-182X",
+            "issn": [
+              "1755-182X",
+              "1755-1838"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/1755182x.2010.523145",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/1755182X.2010.523145?needAccess=true",
+        "source": {
+          "id": "https://openalex.org/S179702598",
+          "display_name": "Journal of Tourism History",
+          "issn_l": "1755-182X",
+          "issn": [
+            "1755-182X",
+            "1755-1838"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2599908739",
+    "title": "Imágenes e historia de la educación popular: representaciones fotográficas de las Misiones Pedagógicas en la Región de Murcia",
+    "relevance_score": 2.2770753,
+    "doi": "https://doi.org/10.5944/hme.5.2017.16799",
+    "topic_ids": [
+      "C2779343474",
+      "C75795011",
+      "C29598333",
+      "C152212766",
+      "C119657128",
+      "C58640448",
+      "C2983413640",
+      "C2778012447",
+      "C15708023",
+      "C161191863",
+      "C205649164",
+      "C153349607",
+      "C142362112",
+      "C166957645",
+      "C41008148",
+      "C138885662",
+      "C27206212",
+      "C199360897"
+    ],
+    "best_pdf": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+    "backup_pdf": "https://doi.org/10.5944/hme.5.2017.16799",
+    "raw": {
+      "id": "https://openalex.org/W2599908739",
+      "display_name": "Imágenes e historia de la educación popular: representaciones fotográficas de las Misiones Pedagógicas en la Región de Murcia",
+      "relevance_score": 2.2770753,
+      "doi": "https://doi.org/10.5944/hme.5.2017.16799",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779343474",
+          "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+          "display_name": "Context (archaeology)",
+          "level": 2,
+          "score": 0.6849654
+        },
+        {
+          "id": "https://openalex.org/C75795011",
+          "wikidata": "https://www.wikidata.org/wiki/Q917904",
+          "display_name": "Typology",
+          "level": 2,
+          "score": 0.6488369
+        },
+        {
+          "id": "https://openalex.org/C29598333",
+          "wikidata": "https://www.wikidata.org/wiki/Q50675",
+          "display_name": "Historiography",
+          "level": 2,
+          "score": 0.5060815
+        },
+        {
+          "id": "https://openalex.org/C152212766",
+          "wikidata": "https://www.wikidata.org/wiki/Q3625645",
+          "display_name": "The Republic",
+          "level": 2,
+          "score": 0.4804844
+        },
+        {
+          "id": "https://openalex.org/C119657128",
+          "wikidata": "https://www.wikidata.org/wiki/Q11633",
+          "display_name": "Photography",
+          "level": 2,
+          "score": 0.4560996
+        },
+        {
+          "id": "https://openalex.org/C58640448",
+          "wikidata": "https://www.wikidata.org/wiki/Q42515",
+          "display_name": "Cartography",
+          "level": 1,
+          "score": 0.43348116
+        },
+        {
+          "id": "https://openalex.org/C2983413640",
+          "wikidata": "https://www.wikidata.org/wiki/Q1080794",
+          "display_name": "Public education",
+          "level": 2,
+          "score": 0.41572583
+        },
+        {
+          "id": "https://openalex.org/C2778012447",
+          "wikidata": "https://www.wikidata.org/wiki/Q1034415",
+          "display_name": "Scope (computer science)",
+          "level": 2,
+          "score": 0.41031918
+        },
+        {
+          "id": "https://openalex.org/C15708023",
+          "wikidata": "https://www.wikidata.org/wiki/Q80083",
+          "display_name": "Humanities",
+          "level": 1,
+          "score": 0.40643927
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.3677773
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.35253564
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.34792173
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.33274707
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.1719163
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.095105916
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C27206212",
+          "wikidata": "https://www.wikidata.org/wiki/Q34178",
+          "display_name": "Theology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199360897",
+          "wikidata": "https://www.wikidata.org/wiki/Q9143",
+          "display_name": "Programming language",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5944/hme.5.2017.16799",
+        "pdf_url": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+        "source": {
+          "id": "https://openalex.org/S2739302436",
+          "display_name": "Historia y Memoria de la Educación",
+          "issn_l": "2444-0043",
+          "issn": [
+            "2444-0043"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321040",
+          "host_organization_name": "National University of Distance Education",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321040"
+          ],
+          "host_organization_lineage_names": [
+            "National University of Distance Education"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5944/hme.5.2017.16799",
+          "pdf_url": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+          "source": {
+            "id": "https://openalex.org/S2739302436",
+            "display_name": "Historia y Memoria de la Educación",
+            "issn_l": "2444-0043",
+            "issn": [
+              "2444-0043"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": false,
+            "host_organization": "https://openalex.org/P4310321040",
+            "host_organization_name": "National University of Distance Education",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310321040"
+            ],
+            "host_organization_lineage_names": [
+              "National University of Distance Education"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5944/hme.5.2017.16799",
+        "pdf_url": "http://revistas.uned.es/index.php/HMe/article/download/16799/15680",
+        "source": {
+          "id": "https://openalex.org/S2739302436",
+          "display_name": "Historia y Memoria de la Educación",
+          "issn_l": "2444-0043",
+          "issn": [
+            "2444-0043"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": false,
+          "host_organization": "https://openalex.org/P4310321040",
+          "host_organization_name": "National University of Distance Education",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321040"
+          ],
+          "host_organization_lineage_names": [
+            "National University of Distance Education"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

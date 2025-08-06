@@ -1,0 +1,936 @@
+[
+  {
+    "id": "https://openalex.org/W3125107352",
+    "title": "The Economics of Latin American Art: Creativity Patterns and Rates of Return",
+    "relevance_score": 9.657439,
+    "doi": "https://doi.org/10.3386/w10302",
+    "topic_ids": [
+      "C11012388",
+      "C158886217",
+      "C162324750",
+      "C149782125",
+      "C15744967",
+      "C17744445",
+      "C77805123",
+      "C199539241"
+    ],
+    "best_pdf": "http://papers.nber.org/papers/w10302.pdf",
+    "backup_pdf": "https://doi.org/10.3386/w10302",
+    "raw": {
+      "id": "https://openalex.org/W3125107352",
+      "display_name": "The Economics of Latin American Art: Creativity Patterns and Rates of Return",
+      "relevance_score": 9.657439,
+      "doi": "https://doi.org/10.3386/w10302",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C11012388",
+          "wikidata": "https://www.wikidata.org/wiki/Q170658",
+          "display_name": "Creativity",
+          "level": 2,
+          "score": 0.72808194
+        },
+        {
+          "id": "https://openalex.org/C158886217",
+          "wikidata": "https://www.wikidata.org/wiki/Q16799549",
+          "display_name": "Latin Americans",
+          "level": 2,
+          "score": 0.5579634
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.4496704
+        },
+        {
+          "id": "https://openalex.org/C149782125",
+          "wikidata": "https://www.wikidata.org/wiki/Q160039",
+          "display_name": "Econometrics",
+          "level": 1,
+          "score": 0.38272235
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.22696716
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.20307234
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.10194948
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.05462101
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3386/w10302",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://doi.org/10.3386/w10302",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3386/w10302",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://papers.nber.org/papers/w10302.pdf",
+          "pdf_url": "http://papers.nber.org/papers/w10302.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "mit",
+          "license_id": "https://openalex.org/licenses/mit",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://www.nber.org/papers/w10302.pdf",
+          "pdf_url": "http://www.nber.org/papers/w10302.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401271",
+            "display_name": "RePEc: Research Papers in Economics",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I77793887",
+            "host_organization_name": "Federal Reserve Bank of St. Louis",
+            "host_organization_lineage": [
+              "https://openalex.org/I77793887"
+            ],
+            "host_organization_lineage_names": [
+              "Federal Reserve Bank of St. Louis"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://eprints.lse.ac.uk/123098/1/63ff51bbe21f6.pdf",
+          "pdf_url": "http://eprints.lse.ac.uk/123098/1/63ff51bbe21f6.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401593",
+            "display_name": "London School of Economics and Political Science Research Online (London School of Economics and Political Science)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I909854389",
+            "host_organization_name": "London School of Economics and Political Science",
+            "host_organization_lineage": [
+              "https://openalex.org/I909854389"
+            ],
+            "host_organization_lineage_names": [
+              "London School of Economics and Political Science"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3386/w10302",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2054681039",
+    "title": "The Economics of Latin American Art: Creativity Patterns and Rates of Return",
+    "relevance_score": 5.8836904,
+    "doi": "https://doi.org/10.1353/eco.2004.0015",
+    "topic_ids": [
+      "C158886217",
+      "C11012388",
+      "C2780821815",
+      "C70789860",
+      "C27548731",
+      "C205783811",
+      "C2776291640",
+      "C162324750",
+      "C142362112",
+      "C153349607",
+      "C17744445",
+      "C106159729",
+      "C105795698",
+      "C33923547",
+      "C94625758",
+      "C199539241"
+    ],
+    "best_pdf": "https://storage.googleapis.com/jnl-lse-j-elaceaj-files/journals/1/articles/315/63ff51bbe21f6.pdf",
+    "backup_pdf": "https://doi.org/10.1353/eco.2004.0015",
+    "raw": {
+      "id": "https://openalex.org/W2054681039",
+      "display_name": "The Economics of Latin American Art: Creativity Patterns and Rates of Return",
+      "relevance_score": 5.8836904,
+      "doi": "https://doi.org/10.1353/eco.2004.0015",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C158886217",
+          "wikidata": "https://www.wikidata.org/wiki/Q16799549",
+          "display_name": "Latin Americans",
+          "level": 2,
+          "score": 0.89896435
+        },
+        {
+          "id": "https://openalex.org/C11012388",
+          "wikidata": "https://www.wikidata.org/wiki/Q170658",
+          "display_name": "Creativity",
+          "level": 2,
+          "score": 0.6646483
+        },
+        {
+          "id": "https://openalex.org/C2780821815",
+          "wikidata": "https://www.wikidata.org/wiki/Q5340806",
+          "display_name": "Portfolio",
+          "level": 2,
+          "score": 0.546077
+        },
+        {
+          "id": "https://openalex.org/C70789860",
+          "wikidata": "https://www.wikidata.org/wiki/Q2018526",
+          "display_name": "The arts",
+          "level": 2,
+          "score": 0.49777153
+        },
+        {
+          "id": "https://openalex.org/C27548731",
+          "wikidata": "https://www.wikidata.org/wiki/Q88272",
+          "display_name": "Investment (military)",
+          "level": 3,
+          "score": 0.46908322
+        },
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.44428033
+        },
+        {
+          "id": "https://openalex.org/C2776291640",
+          "wikidata": "https://www.wikidata.org/wiki/Q2912517",
+          "display_name": "Value (mathematics)",
+          "level": 2,
+          "score": 0.41599178
+        },
+        {
+          "id": "https://openalex.org/C162324750",
+          "wikidata": "https://www.wikidata.org/wiki/Q8134",
+          "display_name": "Economics",
+          "level": 0,
+          "score": 0.34037814
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.32722938
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.2013529
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.20124269
+        },
+        {
+          "id": "https://openalex.org/C106159729",
+          "wikidata": "https://www.wikidata.org/wiki/Q2294553",
+          "display_name": "Financial economics",
+          "level": 1,
+          "score": 0.14591408
+        },
+        {
+          "id": "https://openalex.org/C105795698",
+          "wikidata": "https://www.wikidata.org/wiki/Q12483",
+          "display_name": "Statistics",
+          "level": 1,
+          "score": 0.08206847
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C94625758",
+          "wikidata": "https://www.wikidata.org/wiki/Q7163",
+          "display_name": "Politics",
+          "level": 2,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1353/eco.2004.0015",
+        "pdf_url": "https://storage.googleapis.com/jnl-lse-j-elaceaj-files/journals/1/articles/315/63ff51bbe21f6.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210195359",
+          "display_name": "Economía",
+          "issn_l": "1529-7470",
+          "issn": [
+            "1529-7470",
+            "1533-6239"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://storage.googleapis.com/jnl-lse-j-elaceaj-files/journals/1/articles/315/63ff51bbe21f6.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1353/eco.2004.0015",
+          "pdf_url": "https://storage.googleapis.com/jnl-lse-j-elaceaj-files/journals/1/articles/315/63ff51bbe21f6.pdf",
+          "source": {
+            "id": "https://openalex.org/S4210195359",
+            "display_name": "Economía",
+            "issn_l": "1529-7470",
+            "issn": [
+              "1529-7470",
+              "1533-6239"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://papers.nber.org/papers/w10302.pdf",
+          "pdf_url": "http://papers.nber.org/papers/w10302.pdf",
+          "source": {
+            "id": "https://openalex.org/S4308707206",
+            "display_name": "Library Union Catalog of Bavaria, Berlin and Brandenburg (B3Kat Repository)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I157725225",
+            "host_organization_name": "University of Illinois Urbana-Champaign",
+            "host_organization_lineage": [
+              "https://openalex.org/I157725225"
+            ],
+            "host_organization_lineage_names": [
+              "University of Illinois Urbana-Champaign"
+            ],
+            "type": "repository"
+          },
+          "license": "mit",
+          "license_id": "https://openalex.org/licenses/mit",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "http://www.nber.org/papers/w10302.pdf",
+          "pdf_url": "http://www.nber.org/papers/w10302.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401271",
+            "display_name": "RePEc: Research Papers in Economics",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I77793887",
+            "host_organization_name": "Federal Reserve Bank of St. Louis",
+            "host_organization_lineage": [
+              "https://openalex.org/I77793887"
+            ],
+            "host_organization_lineage_names": [
+              "Federal Reserve Bank of St. Louis"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1353/eco.2004.0015",
+        "pdf_url": "https://storage.googleapis.com/jnl-lse-j-elaceaj-files/journals/1/articles/315/63ff51bbe21f6.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210195359",
+          "display_name": "Economía",
+          "issn_l": "1529-7470",
+          "issn": [
+            "1529-7470",
+            "1533-6239"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4393373109",
+    "title": "Saturnino Herrán’s portable murals: symbolism, material agency and conservation",
+    "relevance_score": 2.7252803,
+    "doi": "https://doi.org/10.1186/s40494-024-01197-2",
+    "topic_ids": [
+      "C142362112",
+      "C108170787",
+      "C153349607",
+      "C107038049",
+      "C144024400",
+      "C36289849"
+    ],
+    "best_pdf": "https://heritagesciencejournal.springeropen.com/counter/pdf/10.1186/s40494-024-01197-2",
+    "backup_pdf": "https://doi.org/10.1186/s40494-024-01197-2",
+    "raw": {
+      "id": "https://openalex.org/W4393373109",
+      "display_name": "Saturnino Herrán’s portable murals: symbolism, material agency and conservation",
+      "relevance_score": 2.7252803,
+      "doi": "https://doi.org/10.1186/s40494-024-01197-2",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5868156
+        },
+        {
+          "id": "https://openalex.org/C108170787",
+          "wikidata": "https://www.wikidata.org/wiki/Q3951828",
+          "display_name": "Agency (philosophy)",
+          "level": 2,
+          "score": 0.57227534
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.45624653
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.4095118
+        },
+        {
+          "id": "https://openalex.org/C144024400",
+          "wikidata": "https://www.wikidata.org/wiki/Q21201",
+          "display_name": "Sociology",
+          "level": 0,
+          "score": 0.19527048
+        },
+        {
+          "id": "https://openalex.org/C36289849",
+          "wikidata": "https://www.wikidata.org/wiki/Q34749",
+          "display_name": "Social science",
+          "level": 1,
+          "score": 0.075600564
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s40494-024-01197-2",
+        "pdf_url": "https://heritagesciencejournal.springeropen.com/counter/pdf/10.1186/s40494-024-01197-2",
+        "source": {
+          "id": "https://openalex.org/S2736968195",
+          "display_name": "Heritage Science",
+          "issn_l": "2050-7445",
+          "issn": [
+            "2050-7445"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://heritagesciencejournal.springeropen.com/counter/pdf/10.1186/s40494-024-01197-2",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1186/s40494-024-01197-2",
+          "pdf_url": "https://heritagesciencejournal.springeropen.com/counter/pdf/10.1186/s40494-024-01197-2",
+          "source": {
+            "id": "https://openalex.org/S2736968195",
+            "display_name": "Heritage Science",
+            "issn_l": "2050-7445",
+            "issn": [
+              "2050-7445"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319965",
+              "https://openalex.org/P4310319900"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Nature",
+              "Springer Science+Business Media"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1186/s40494-024-01197-2",
+        "pdf_url": "https://heritagesciencejournal.springeropen.com/counter/pdf/10.1186/s40494-024-01197-2",
+        "source": {
+          "id": "https://openalex.org/S2736968195",
+          "display_name": "Heritage Science",
+          "issn_l": "2050-7445",
+          "issn": [
+            "2050-7445"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965",
+            "https://openalex.org/P4310319900"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature",
+            "Springer Science+Business Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4396781129",
+    "title": "Multidimensional neural representations of social features during movie viewing",
+    "relevance_score": 1.3414422,
+    "doi": "https://doi.org/10.1093/scan/nsae030",
+    "topic_ids": [
+      "C15744967",
+      "C180747234",
+      "C77805123"
+    ],
+    "best_pdf": "https://academic.oup.com/scan/advance-article-pdf/doi/10.1093/scan/nsae030/57468073/nsae030.pdf",
+    "backup_pdf": "https://doi.org/10.1093/scan/nsae030",
+    "raw": {
+      "id": "https://openalex.org/W4396781129",
+      "display_name": "Multidimensional neural representations of social features during movie viewing",
+      "relevance_score": 1.3414422,
+      "doi": "https://doi.org/10.1093/scan/nsae030",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.7949358
+        },
+        {
+          "id": "https://openalex.org/C180747234",
+          "wikidata": "https://www.wikidata.org/wiki/Q23373",
+          "display_name": "Cognitive psychology",
+          "level": 1,
+          "score": 0.44182494
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.32812458
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/scan/nsae030",
+        "pdf_url": "https://academic.oup.com/scan/advance-article-pdf/doi/10.1093/scan/nsae030/57468073/nsae030.pdf",
+        "source": {
+          "id": "https://openalex.org/S107213193",
+          "display_name": "Social Cognitive and Affective Neuroscience",
+          "issn_l": "1749-5016",
+          "issn": [
+            "1749-5016",
+            "1749-5024"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311647",
+          "host_organization_name": "University of Oxford",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://academic.oup.com/scan/advance-article-pdf/doi/10.1093/scan/nsae030/57468073/nsae030.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1093/scan/nsae030",
+          "pdf_url": "https://academic.oup.com/scan/advance-article-pdf/doi/10.1093/scan/nsae030/57468073/nsae030.pdf",
+          "source": {
+            "id": "https://openalex.org/S107213193",
+            "display_name": "Social Cognitive and Affective Neuroscience",
+            "issn_l": "1749-5016",
+            "issn": [
+              "1749-5016",
+              "1749-5024"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310311647",
+            "host_organization_name": "University of Oxford",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "University of Oxford"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://durham-repository.worktribe.com/output/2465853",
+          "pdf_url": "https://durham-repository.worktribe.com/preview/2466554/2465853VOR.pdf",
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://durham-repository.worktribe.com/file/2465853/1/Published%20Journal%20Article",
+          "pdf_url": "https://durham-repository.worktribe.com/file/2465853/1/Published%20Journal%20Article",
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11130526",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1101/2023.11.22.568258",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402567",
+            "display_name": "bioRxiv (Cold Spring Harbor Laboratory)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2750212522",
+            "host_organization_name": "Cold Spring Harbor Laboratory",
+            "host_organization_lineage": [
+              "https://openalex.org/I2750212522"
+            ],
+            "host_organization_lineage_names": [
+              "Cold Spring Harbor Laboratory"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38722755",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1093/scan/nsae030",
+        "pdf_url": "https://academic.oup.com/scan/advance-article-pdf/doi/10.1093/scan/nsae030/57468073/nsae030.pdf",
+        "source": {
+          "id": "https://openalex.org/S107213193",
+          "display_name": "Social Cognitive and Affective Neuroscience",
+          "issn_l": "1749-5016",
+          "issn": [
+            "1749-5016",
+            "1749-5024"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310311647",
+          "host_organization_name": "University of Oxford",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311647"
+          ],
+          "host_organization_lineage_names": [
+            "University of Oxford"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

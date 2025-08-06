@@ -1,0 +1,326 @@
+[
+  {
+    "id": "https://openalex.org/W2430757365",
+    "title": "The Fear of Art: How Censorship Becomes Iconoclasm",
+    "relevance_score": 34.34811,
+    "doi": "https://doi.org/10.1353/sor.2016.0019",
+    "topic_ids": [
+      "C2776951763",
+      "C52930066",
+      "C2776261394",
+      "C107038049",
+      "C142362112",
+      "C199539241",
+      "C17744445",
+      "C52119013"
+    ],
+    "best_pdf": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+    "backup_pdf": "https://doi.org/10.7916/2bap-c392",
+    "raw": {
+      "id": "https://openalex.org/W2430757365",
+      "display_name": "The Fear of Art: How Censorship Becomes Iconoclasm",
+      "relevance_score": 34.34811,
+      "doi": "https://doi.org/10.1353/sor.2016.0019",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776951763",
+          "wikidata": "https://www.wikidata.org/wiki/Q181543",
+          "display_name": "Iconoclasm",
+          "level": 2,
+          "score": 0.9732008
+        },
+        {
+          "id": "https://openalex.org/C52930066",
+          "wikidata": "https://www.wikidata.org/wiki/Q543",
+          "display_name": "Censorship",
+          "level": 2,
+          "score": 0.9159707
+        },
+        {
+          "id": "https://openalex.org/C2776261394",
+          "wikidata": "https://www.wikidata.org/wiki/Q315562",
+          "display_name": "Impossibility",
+          "level": 2,
+          "score": 0.49771145
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.44890162
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.4262913
+        },
+        {
+          "id": "https://openalex.org/C199539241",
+          "wikidata": "https://www.wikidata.org/wiki/Q7748",
+          "display_name": "Law",
+          "level": 1,
+          "score": 0.23259991
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.23230812
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.13964263
+        }
+      ],
+      "primary_location": {
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1353/sor.2016.0019",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4317411217",
+          "display_name": "Deleted Journal",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": true,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1353/sor.2016.0019",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4317411217",
+            "display_name": "Deleted Journal",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": true,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.7916/2bap-c392",
+          "pdf_url": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+          "source": {
+            "id": "https://openalex.org/S4306402601",
+            "display_name": "Columbia Academic Commons (Columbia University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I78577930",
+            "host_organization_name": "Columbia University",
+            "host_organization_lineage": [
+              "https://openalex.org/I78577930"
+            ],
+            "host_organization_lineage_names": [
+              "Columbia University"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7916/2bap-c392",
+        "pdf_url": "https://academiccommons.columbia.edu/doi/10.7916/w9yv-ye54/download",
+        "source": {
+          "id": "https://openalex.org/S4306402601",
+          "display_name": "Columbia Academic Commons (Columbia University)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I78577930",
+          "host_organization_name": "Columbia University",
+          "host_organization_lineage": [
+            "https://openalex.org/I78577930"
+          ],
+          "host_organization_lineage_names": [
+            "Columbia University"
+          ],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2317792012",
+    "title": "More “Drawings as Intermediary Stages”: Dirk Vellert’s History of Abraham",
+    "relevance_score": 13.304805,
+    "doi": "https://doi.org/10.5092/jhna.2013.5.2.2",
+    "topic_ids": [
+      "C142362112",
+      "C52119013"
+    ],
+    "best_pdf": "https://jhna.org/wp-content/uploads/2017/08/JHNA_5.2_Konowitz.pdf",
+    "backup_pdf": "https://doi.org/10.5092/jhna.2013.5.2.2",
+    "raw": {
+      "id": "https://openalex.org/W2317792012",
+      "display_name": "More “Drawings as Intermediary Stages”: Dirk Vellert’s History of Abraham",
+      "relevance_score": 13.304805,
+      "doi": "https://doi.org/10.5092/jhna.2013.5.2.2",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.7441068
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.40164495
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2013.5.2.2",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_5.2_Konowitz.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_5.2_Konowitz.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5092/jhna.2013.5.2.2",
+          "pdf_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_5.2_Konowitz.pdf",
+          "source": {
+            "id": "https://openalex.org/S137142838",
+            "display_name": "Journal of Historians of Netherlandish Art",
+            "issn_l": "1949-9833",
+            "issn": [
+              "1949-9833",
+              "2473-1404"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5092/jhna.2013.5.2.2",
+        "pdf_url": "https://jhna.org/wp-content/uploads/2017/08/JHNA_5.2_Konowitz.pdf",
+        "source": {
+          "id": "https://openalex.org/S137142838",
+          "display_name": "Journal of Historians of Netherlandish Art",
+          "issn_l": "1949-9833",
+          "issn": [
+            "1949-9833",
+            "2473-1404"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  }
+]

@@ -1,0 +1,927 @@
+[
+  {
+    "id": "https://openalex.org/W4324021309",
+    "title": "Bodily feelings and aesthetic experience of art",
+    "relevance_score": 14.069796,
+    "doi": "https://doi.org/10.1080/02699931.2023.2183180",
+    "topic_ids": [
+      "C122980154",
+      "C2780719617",
+      "C15744967",
+      "C107038049",
+      "C180747234",
+      "C142362112",
+      "C77805123",
+      "C41008148",
+      "C154945302"
+    ],
+    "best_pdf": "https://doi.org/10.1080/02699931.2023.2183180",
+    "backup_pdf": "https://psyarxiv.com/7bywj/download",
+    "raw": {
+      "id": "https://openalex.org/W4324021309",
+      "display_name": "Bodily feelings and aesthetic experience of art",
+      "relevance_score": 14.069796,
+      "doi": "https://doi.org/10.1080/02699931.2023.2183180",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C122980154",
+          "wikidata": "https://www.wikidata.org/wiki/Q205555",
+          "display_name": "Feeling",
+          "level": 2,
+          "score": 0.92877924
+        },
+        {
+          "id": "https://openalex.org/C2780719617",
+          "wikidata": "https://www.wikidata.org/wiki/Q1030752",
+          "display_name": "Salient",
+          "level": 2,
+          "score": 0.7040029
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.57665396
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.47492132
+        },
+        {
+          "id": "https://openalex.org/C180747234",
+          "wikidata": "https://www.wikidata.org/wiki/Q23373",
+          "display_name": "Cognitive psychology",
+          "level": 1,
+          "score": 0.44775528
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.34522623
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.2080386
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.15564036
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.110933214
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/02699931.2023.2183180",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S150535073",
+          "display_name": "Cognition & Emotion",
+          "issn_l": "0269-9931",
+          "issn": [
+            "0269-9931",
+            "1464-0600"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://doi.org/10.1080/02699931.2023.2183180",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1080/02699931.2023.2183180",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S150535073",
+            "display_name": "Cognition & Emotion",
+            "issn_l": "0269-9931",
+            "issn": [
+              "0269-9931",
+              "1464-0600"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://psyarxiv.com/7bywj/",
+          "pdf_url": "https://psyarxiv.com/7bywj/download",
+          "source": {
+            "id": "https://openalex.org/S4306401687",
+            "display_name": "PsyArXiv (OSF Preprints)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2799848540",
+            "host_organization_name": "Center for Open Science",
+            "host_organization_lineage": [
+              "https://openalex.org/I2799848540"
+            ],
+            "host_organization_lineage_names": [
+              "Center for Open Science"
+            ],
+            "type": "repository"
+          },
+          "license": "mit",
+          "license_id": "https://openalex.org/licenses/mit",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://osf.io/7bywj",
+          "pdf_url": "https://osf.io/7bywj/download",
+          "source": {
+            "id": "https://openalex.org/S4306401687",
+            "display_name": "PsyArXiv (OSF Preprints)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2799848540",
+            "host_organization_name": "Center for Open Science",
+            "host_organization_lineage": [
+              "https://openalex.org/I2799848540"
+            ],
+            "host_organization_lineage_names": [
+              "Center for Open Science"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/36912601",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [
+              "National Institutes of Health"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1080/02699931.2023.2183180",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S150535073",
+          "display_name": "Cognition & Emotion",
+          "issn_l": "0269-9931",
+          "issn": [
+            "0269-9931",
+            "1464-0600"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_name": "Taylor & Francis",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W2997783034",
+    "title": "Picturing the Immaterial",
+    "relevance_score": 5.970744,
+    "doi": "https://doi.org/10.23995/tht.88662",
+    "topic_ids": [
+      "C205783811",
+      "C2780876879",
+      "C107038049",
+      "C142362112",
+      "C2776445246",
+      "C2776275044",
+      "C113194728",
+      "C2776242748",
+      "C2778757428",
+      "C8868529",
+      "C153349607",
+      "C124952713",
+      "C138885662",
+      "C558565934",
+      "C95457728",
+      "C15744967",
+      "C111472728",
+      "C166957645",
+      "C169760540"
+    ],
+    "best_pdf": "https://tahiti.journal.fi/article/download/88662/47825",
+    "backup_pdf": "https://doi.org/10.23995/tht.88662",
+    "raw": {
+      "id": "https://openalex.org/W2997783034",
+      "display_name": "Picturing the Immaterial",
+      "relevance_score": 5.970744,
+      "doi": "https://doi.org/10.23995/tht.88662",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C205783811",
+          "wikidata": "https://www.wikidata.org/wiki/Q11629",
+          "display_name": "Painting",
+          "level": 2,
+          "score": 0.73629785
+        },
+        {
+          "id": "https://openalex.org/C2780876879",
+          "wikidata": "https://www.wikidata.org/wiki/Q3054749",
+          "display_name": "Meaning (existential)",
+          "level": 2,
+          "score": 0.6435325
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.6270464
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.577668
+        },
+        {
+          "id": "https://openalex.org/C2776445246",
+          "wikidata": "https://www.wikidata.org/wiki/Q1792644",
+          "display_name": "Style (visual arts)",
+          "level": 2,
+          "score": 0.5498474
+        },
+        {
+          "id": "https://openalex.org/C2776275044",
+          "wikidata": "https://www.wikidata.org/wiki/Q192822",
+          "display_name": "Tonality",
+          "level": 3,
+          "score": 0.4757321
+        },
+        {
+          "id": "https://openalex.org/C113194728",
+          "wikidata": "https://www.wikidata.org/wiki/Q4130159",
+          "display_name": "Musicality",
+          "level": 3,
+          "score": 0.46690565
+        },
+        {
+          "id": "https://openalex.org/C2776242748",
+          "wikidata": "https://www.wikidata.org/wiki/Q2426218",
+          "display_name": "Modernism (music)",
+          "level": 2,
+          "score": 0.4556674
+        },
+        {
+          "id": "https://openalex.org/C2778757428",
+          "wikidata": "https://www.wikidata.org/wiki/Q1250464",
+          "display_name": "Realm",
+          "level": 2,
+          "score": 0.4554621
+        },
+        {
+          "id": "https://openalex.org/C8868529",
+          "wikidata": "https://www.wikidata.org/wiki/Q124794",
+          "display_name": "Taste",
+          "level": 2,
+          "score": 0.43341887
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.4014144
+        },
+        {
+          "id": "https://openalex.org/C124952713",
+          "wikidata": "https://www.wikidata.org/wiki/Q8242",
+          "display_name": "Literature",
+          "level": 1,
+          "score": 0.35060203
+        },
+        {
+          "id": "https://openalex.org/C138885662",
+          "wikidata": "https://www.wikidata.org/wiki/Q5891",
+          "display_name": "Philosophy",
+          "level": 0,
+          "score": 0.24004906
+        },
+        {
+          "id": "https://openalex.org/C558565934",
+          "wikidata": "https://www.wikidata.org/wiki/Q2743",
+          "display_name": "Musical",
+          "level": 2,
+          "score": 0.18788105
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.16313833
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.12666011
+        },
+        {
+          "id": "https://openalex.org/C111472728",
+          "wikidata": "https://www.wikidata.org/wiki/Q9471",
+          "display_name": "Epistemology",
+          "level": 1,
+          "score": 0.12345207
+        },
+        {
+          "id": "https://openalex.org/C166957645",
+          "wikidata": "https://www.wikidata.org/wiki/Q23498",
+          "display_name": "Archaeology",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.23995/tht.88662",
+        "pdf_url": "https://tahiti.journal.fi/article/download/88662/47825",
+        "source": {
+          "id": "https://openalex.org/S4210173732",
+          "display_name": "Tahiti",
+          "issn_l": "2242-0665",
+          "issn": [
+            "2242-0665"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://tahiti.journal.fi/article/download/88662/47825",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.23995/tht.88662",
+          "pdf_url": "https://tahiti.journal.fi/article/download/88662/47825",
+          "source": {
+            "id": "https://openalex.org/S4210173732",
+            "display_name": "Tahiti",
+            "issn_l": "2242-0665",
+            "issn": [
+              "2242-0665"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/0766596e27f248c1ae3c0519797de71c",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.23995/tht.88662",
+        "pdf_url": "https://tahiti.journal.fi/article/download/88662/47825",
+        "source": {
+          "id": "https://openalex.org/S4210173732",
+          "display_name": "Tahiti",
+          "issn_l": "2242-0665",
+          "issn": [
+            "2242-0665"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-sa",
+        "license_id": "https://openalex.org/licenses/cc-by-sa",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W3139122231",
+    "title": "Crystals and skulls at Villa Gyllenberg",
+    "relevance_score": 2.0030596,
+    "doi": "https://doi.org/10.30664/ar.101486",
+    "topic_ids": [
+      "C37531588",
+      "C142362112",
+      "C52119013",
+      "C153349607",
+      "C205649164",
+      "C53553401",
+      "C95457728"
+    ],
+    "best_pdf": "https://journal.fi/ar/article/download/101486/60386",
+    "backup_pdf": "https://doi.org/10.30664/ar.101486",
+    "raw": {
+      "id": "https://openalex.org/W3139122231",
+      "display_name": "Crystals and skulls at Villa Gyllenberg",
+      "relevance_score": 2.0030596,
+      "doi": "https://doi.org/10.30664/ar.101486",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C37531588",
+          "wikidata": "https://www.wikidata.org/wiki/Q464980",
+          "display_name": "Exhibition",
+          "level": 2,
+          "score": 0.8209878
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.5123902
+        },
+        {
+          "id": "https://openalex.org/C52119013",
+          "wikidata": "https://www.wikidata.org/wiki/Q50637",
+          "display_name": "Art history",
+          "level": 1,
+          "score": 0.49314612
+        },
+        {
+          "id": "https://openalex.org/C153349607",
+          "wikidata": "https://www.wikidata.org/wiki/Q36649",
+          "display_name": "Visual arts",
+          "level": 1,
+          "score": 0.39597306
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.36261362
+        },
+        {
+          "id": "https://openalex.org/C53553401",
+          "wikidata": "https://www.wikidata.org/wiki/Q47307",
+          "display_name": "Genealogy",
+          "level": 1,
+          "score": 0.3232324
+        },
+        {
+          "id": "https://openalex.org/C95457728",
+          "wikidata": "https://www.wikidata.org/wiki/Q309",
+          "display_name": "History",
+          "level": 0,
+          "score": 0.23083681
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30664/ar.101486",
+        "pdf_url": "https://journal.fi/ar/article/download/101486/60386",
+        "source": {
+          "id": "https://openalex.org/S2739323565",
+          "display_name": "Approaching Religion",
+          "issn_l": "1799-3121",
+          "issn": [
+            "1799-3121"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310317122",
+          "host_organization_name": "Donner Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317122"
+          ],
+          "host_organization_lineage_names": [
+            "Donner Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://journal.fi/ar/article/download/101486/60386",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.30664/ar.101486",
+          "pdf_url": "https://journal.fi/ar/article/download/101486/60386",
+          "source": {
+            "id": "https://openalex.org/S2739323565",
+            "display_name": "Approaching Religion",
+            "issn_l": "1799-3121",
+            "issn": [
+              "1799-3121"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310317122",
+            "host_organization_name": "Donner Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310317122"
+            ],
+            "host_organization_lineage_names": [
+              "Donner Institute"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true
+        },
+        {
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/4d1a97cde4284ef990487859120b5ed6",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.30664/ar.101486",
+        "pdf_url": "https://journal.fi/ar/article/download/101486/60386",
+        "source": {
+          "id": "https://openalex.org/S2739323565",
+          "display_name": "Approaching Religion",
+          "issn_l": "1799-3121",
+          "issn": [
+            "1799-3121"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_indexed_in_scopus": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310317122",
+          "host_organization_name": "Donner Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310317122"
+          ],
+          "host_organization_lineage_names": [
+            "Donner Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+      }
+    }
+  },
+  {
+    "id": "https://openalex.org/W4237541151",
+    "title": "Bodily Feelings and Aesthetic Experience of Art",
+    "relevance_score": 1.2638333,
+    "doi": "https://doi.org/10.31234/osf.io/7bywj",
+    "topic_ids": [
+      "C122980154",
+      "C2780719617",
+      "C15744967",
+      "C180747234",
+      "C107038049",
+      "C142362112",
+      "C77805123",
+      "C41008148",
+      "C154945302"
+    ],
+    "best_pdf": "https://psyarxiv.com/7bywj/download",
+    "backup_pdf": "https://doi.org/10.31234/osf.io/7bywj",
+    "raw": {
+      "id": "https://openalex.org/W4237541151",
+      "display_name": "Bodily Feelings and Aesthetic Experience of Art",
+      "relevance_score": 1.2638333,
+      "doi": "https://doi.org/10.31234/osf.io/7bywj",
+      "concepts": [
+        {
+          "id": "https://openalex.org/C122980154",
+          "wikidata": "https://www.wikidata.org/wiki/Q205555",
+          "display_name": "Feeling",
+          "level": 2,
+          "score": 0.90288234
+        },
+        {
+          "id": "https://openalex.org/C2780719617",
+          "wikidata": "https://www.wikidata.org/wiki/Q1030752",
+          "display_name": "Salient",
+          "level": 2,
+          "score": 0.69622
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.6234051
+        },
+        {
+          "id": "https://openalex.org/C180747234",
+          "wikidata": "https://www.wikidata.org/wiki/Q23373",
+          "display_name": "Cognitive psychology",
+          "level": 1,
+          "score": 0.499403
+        },
+        {
+          "id": "https://openalex.org/C107038049",
+          "wikidata": "https://www.wikidata.org/wiki/Q35986",
+          "display_name": "Aesthetics",
+          "level": 1,
+          "score": 0.4316792
+        },
+        {
+          "id": "https://openalex.org/C142362112",
+          "wikidata": "https://www.wikidata.org/wiki/Q735",
+          "display_name": "Art",
+          "level": 0,
+          "score": 0.27845567
+        },
+        {
+          "id": "https://openalex.org/C77805123",
+          "wikidata": "https://www.wikidata.org/wiki/Q161272",
+          "display_name": "Social psychology",
+          "level": 1,
+          "score": 0.2395451
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.13433969
+        },
+        {
+          "id": "https://openalex.org/C154945302",
+          "wikidata": "https://www.wikidata.org/wiki/Q11660",
+          "display_name": "Artificial intelligence",
+          "level": 1,
+          "score": 0.089291036
+        }
+      ],
+      "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.31234/osf.io/7bywj",
+        "pdf_url": "https://psyarxiv.com/7bywj/download",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      },
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://psyarxiv.com/7bywj/download",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.31234/osf.io/7bywj",
+          "pdf_url": "https://psyarxiv.com/7bywj/download",
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        },
+        {
+          "is_oa": true,
+          "landing_page_url": "https://osf.io/7bywj",
+          "pdf_url": "https://osf.io/7bywj/download",
+          "source": {
+            "id": "https://openalex.org/S4306401687",
+            "display_name": "PsyArXiv (OSF Preprints)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_indexed_in_scopus": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2799848540",
+            "host_organization_name": "Center for Open Science",
+            "host_organization_lineage": [
+              "https://openalex.org/I2799848540"
+            ],
+            "host_organization_lineage_names": [
+              "Center for Open Science"
+            ],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false
+        }
+      ],
+      "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.31234/osf.io/7bywj",
+        "pdf_url": "https://psyarxiv.com/7bywj/download",
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false
+      }
+    }
+  }
+]
