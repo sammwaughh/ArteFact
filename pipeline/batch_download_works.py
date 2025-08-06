@@ -16,6 +16,7 @@ $ python Pipeline/batch_download_works.py
 from __future__ import annotations
 
 import sys
+import json            # NEW – read blacklist
 from pathlib import Path
 from typing import List
 import pandas as pd
@@ -30,6 +31,8 @@ from download_works_on import JSON_DIR, process_artist
 ROOT = Path(__file__).resolve().parent
 PAINTERS_FILE = ROOT / "painters.xlsx"
 CHECKPOINT_FILE = ROOT / "download_checkpoint.txt"
+# blacklist file (optional)
+BLACKLIST_FILE  = ROOT / "blacklist.json"
 
 # ---------- painter-row range (1-based, inclusive) -------------------------
 RANGE_START: int = 1        # first row to include (1 = first painter)
@@ -44,6 +47,18 @@ def _load_painters() -> List[str]:                     # NEW
     df = pd.read_excel(PAINTERS_FILE, usecols=[0])
     names = df.iloc[:, 0].dropna().astype(str).str.strip()
     return [n for n in names if n]
+
+
+# ───────────────────────── blacklist ──────────────────────────
+def _load_blacklist() -> set[str]:
+    """Return a set of painters to skip; empty if file absent/malformed."""
+    try:
+        return set(json.loads(BLACKLIST_FILE.read_text()))
+    except FileNotFoundError:
+        return set()
+    except Exception:
+        print("⚠️  Could not parse blacklist.json – ignoring")
+        return set()
 
 
 def _load_checkpoint() -> set[str]:                    # NEW
@@ -74,7 +89,9 @@ def main() -> None:
         sys.exit("❌ Selected painter range is empty – adjust RANGE_START / RANGE_END")
 
     completed  = _load_checkpoint()
-    remaining  = [p for p in painters if p not in completed]
+    blacklist  = _load_blacklist()
+    remaining  = [p for p in painters
+                  if p not in completed and p not in blacklist]
 
     if not remaining:
         sys.exit("✅ All painters in the selected range already processed.")

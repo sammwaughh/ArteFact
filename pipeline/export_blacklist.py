@@ -27,8 +27,10 @@ def main() -> None:
     if "Blacklist" not in df.columns:
         raise SystemExit("❌ Column “Blacklist” missing in the spreadsheet")
 
-    names = (
-        df.loc[df["Blacklist"].astype(bool), "Painter"]
+    # only rows where the cell value is exactly 1 (after numeric coerce)
+    mask   = pd.to_numeric(df["Blacklist"], errors="coerce").fillna(0).astype(int) == 1
+    names  = (
+        df.loc[mask, "Painter"]
         .dropna()
         .astype(str)
         .str.strip()
