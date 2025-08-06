@@ -1,0 +1,10 @@
+name: query_alex_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas                # Data-frame handling
+  - openpyxl              # Excel I/O for painters.xlsx
+  - requests              # HTTP for OpenAlex
+  - urllib3               # Explicit because requests relies on it
+  - pip                   # Optional PyPI installs later

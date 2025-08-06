@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # filepath: /Users/samuelwaugh/Desktop/ArtContext/Pipeline/download_single_work.py
 """
-download_work_pdf.py ─ fetch a single PDF for an OpenAlex work ID.
+download_single_work.py ─ fetch a single PDF for an OpenAlex work ID.
 
 CLI
 ---
@@ -15,6 +15,7 @@ to PDF_Bucket/<ID>.pdf.
 
 from __future__ import annotations
 
+import os
 import json
 import logging
 import sys
@@ -37,7 +38,7 @@ except ImportError:
 ROOT_DIR = Path(__file__).resolve().parent
 
 JSON_DIR = ROOT_DIR / "Artist-JSONs"
-OUT_DIR = ROOT_DIR / "PDF_Bucket"
+OUT_DIR  = Path(os.environ.get("PDF_BUCKET", ROOT_DIR / "PDF_Bucket"))
 OUT_DIR.mkdir(exist_ok=True)
 
 CONTACT_EMAIL = "samjmwaugh@gmail.com"
