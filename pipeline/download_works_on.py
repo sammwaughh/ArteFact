@@ -19,6 +19,9 @@ from typing import Dict, List
 # Local helper – PDF fetcher only
 from download_single_work import download_pdf
 
+# Add import at the top
+from sharding import SHARDS_DIR
+
 # ─────────────────────────── paths & logging ───────────────────────────────
 
 ROOT = Path(__file__).resolve().parent
@@ -56,6 +59,13 @@ def process_artist(artist: str) -> None:
     json_fp = JSON_DIR / f"{slug}.json"
     logger = _setup_logger(slug)
     logger.info("Reading %s", json_fp)
+
+    # PATCH: Ensure shards directory exists before processing
+    SHARDS_DIR.mkdir(exist_ok=True)
+    for i in range(32):  # Create all shard directories
+        shard_dir = SHARDS_DIR / f"shard_{i:02d}"
+        shard_dir.mkdir(exist_ok=True)
+        (shard_dir / "PDF_Bucket").mkdir(exist_ok=True)
 
     works = _load_works(json_fp)
     if not works:

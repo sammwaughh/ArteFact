@@ -33,6 +33,9 @@ try:
 except ImportError:
     PdfReader = None  # fallback – basic header check only
 
+# Add import at the top
+from sharding import locate_pdf_bucket, upsert_work_record
+
 # ─────────────────────────── folders & constants ────────────────────────────
 # Always resolve relative to this file, not the CWD.
 ROOT_DIR = Path(__file__).resolve().parent
@@ -174,6 +177,7 @@ def _slug(openalex_id: str) -> str:
 
 def download_pdf(openalex_id: str) -> Path | None:
     target_slug = _slug(openalex_id)
+    
     # Search every JSON file
     for fp in JSON_DIR.glob("*.json"):
         try:
@@ -195,7 +199,9 @@ def download_pdf(openalex_id: str) -> Path | None:
                             time.sleep(int(r.headers.get("Retry-After", "60")))
                             r = SESSION.get(url, timeout=TIMEOUT_SEC)
                         if r.status_code == 200 and r.content:
-                            dest = OUT_DIR / f"{target_slug}.pdf"
+                            # PATCH: Use sharded PDF storage
+                            pdf_bucket_dir = locate_pdf_bucket(target_slug)
+                            dest = pdf_bucket_dir / f"{target_slug}.pdf"
                             dest.write_bytes(r.content)
 
                             # validate PDF before proceeding
@@ -208,42 +214,26 @@ def download_pdf(openalex_id: str) -> Path | None:
 
                             logger.info("Saved PDF → %s", dest)
 
-                            # ────── update works.json  (kept in Pipeline/) ──────
-                            works_file = ROOT_DIR / "works.json"
-                            try:
-                                db = json.loads(works_file.read_text())
-                                if not isinstance(db, dict):  # safeguard
-                                    db = {}
-                            except FileNotFoundError:
-                                db = {}
-                            except Exception:
-                                db = {}
-
+                            # PATCH: Use sharded metadata storage instead of single files
                             work_key = target_slug  # e.g. "W1549104703"
-                            # keep existing sentence/image info if present
-                            prev = db.get(work_key, {})
                             entry = {
                                 "Artist": fp.stem.lower(),
                                 "Link": url,
-                                "Number of Sentences": prev.get(
-                                    "Number of Sentences", 0
-                                ),
+                                "Number of Sentences": 0,  # Will be populated later
                                 "DOI": str(w.get("doi", "")).strip(),
-                                "ImageIDs": prev.get("ImageIDs", []),
+                                "ImageIDs": [],
                                 "TopicIDs": [str(t) for t in w.get("topic_ids", [])],
                                 "Relevance": float(
                                     w.get("relevance_score", w.get("relevance", 0.0))
                                 ),
                             }
-                            db[work_key] = entry  # (re)write unconditionally
+                            
+                            # PATCH: Store in appropriate shard instead of single works.json
+                            upsert_work_record(work_key, entry)
+                            logger.info("↳ metadata stored in shard for %s", work_key)
 
-                            works_file.write_text(
-                                json.dumps(db, indent=2, ensure_ascii=False)
-                            )
-                            logger.info("↳ metadata (re)written to %s", works_file)
-
-                            # --------------- update artists.json --------------
-                            _update_artists_json(fp.stem.lower(), work_key)
+                            # PATCH: Remove the old single-file updates
+                            # (works.json and artists.json will be built by merge script)
                             return dest
                         else:
                             logger.warning("%s → HTTP %s", url, r.status_code)

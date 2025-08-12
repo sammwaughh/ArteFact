@@ -26,6 +26,8 @@ import os
 
 # Re-use the single-artist routine & its paths
 from download_works_on import JSON_DIR, process_artist
+# Add import for sharding functionality
+from sharding import SHARDS_DIR
 
 
 ROOT = Path(__file__).resolve().parent
@@ -78,6 +80,11 @@ def main() -> None:
     if not JSON_DIR.exists():
         sys.exit(f"❌ Artist-JSONs directory not found at {JSON_DIR}")
 
+    # PATCH: Ensure shards directory exists and is properly configured
+    SHARDS_DIR.mkdir(exist_ok=True)
+    print(f"📁 Shards directory: {SHARDS_DIR}")
+    print(f"🔢 Number of shards: {len([_ for _ in SHARDS_DIR.glob('shard_*')])}")
+
     painters   = _load_painters()
 
     # Apply 1-based inclusive slice
@@ -109,6 +116,25 @@ def main() -> None:
                 _append_checkpoint(name)
             except Exception as exc:
                 print(f"⚠️  {name}: {exc}")
+
+    # PATCH: Print summary of sharded results
+    print("\n📊 Sharding Summary:")
+    total_works = 0
+    for i in range(32):
+        shard_file = SHARDS_DIR / f"shard_{i:02d}" / f"works_shard_{i:02d}.json"
+        if shard_file.exists():
+            try:
+                shard_data = json.loads(shard_file.read_text())
+                count = len(shard_data)
+                total_works += count
+                print(f"  Shard {i:02d}: {count:6d} works")
+            except Exception:
+                print(f"  Shard {i:02d}: ERROR reading file")
+        else:
+            print(f"  Shard {i:02d}: No file")
+    
+    print(f"  Total: {total_works} works across all shards")
+    print(f"\n💡 Run merge_works_and_artists.py to consolidate metadata")
 
 
 # ───────────────────────────── entry point ─────────────────────────────────
