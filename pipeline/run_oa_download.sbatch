@@ -6,7 +6,6 @@
 #SBATCH --account=bddur51
 #SBATCH --partition=gpu              # policy: must use GPU partition
 #SBATCH --gres=half:1                # half-GPU slice → 32 CPUs available
-#SBATCH --cpus-per-task=32           # match ThreadPool / shard writers
 #SBATCH --mem=8G
 #SBATCH --time=2-00:00:00
 #SBATCH --output=/projects/bddur51/artefact-context/pipeline/logs/oa_%j.out
