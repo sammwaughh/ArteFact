@@ -15,6 +15,7 @@ import argparse
 import logging
 import subprocess
 import sys
+import os
 from pathlib import Path
 
 # ─────────────────────────── logging ─────────────────────────────────────
@@ -34,7 +35,7 @@ def _get_logger(stem: str) -> logging.Logger:
     return logger
 
 
-def convert_via_cli(pdf_path: Path, timeout_sec: int = 3600) -> None:
+def convert_via_cli(pdf_path: Path, timeout_sec: int = 3600, output_dir: Path = None) -> None:
     """Run Marker CLI on *pdf_path* and write output to Marker_Output/<stem>/."""
     logger = _get_logger(pdf_path.stem)
 
@@ -42,9 +43,12 @@ def convert_via_cli(pdf_path: Path, timeout_sec: int = 3600) -> None:
         logger.error("File not found: %s", pdf_path)
         sys.exit(1)
 
-    # Output directory: Pipeline/Marker_Output/<PDF-stem>/
-    # Give Marker the parent folder only; it will create <PDF-stem>/ itself
-    out_dir = Path(__file__).resolve().parent / "Marker_Output"
+    # Output directory: Use provided output_dir or default to pipeline directory
+    if output_dir is None:
+        out_dir = Path(__file__).resolve().parent / "Marker_Output"
+    else:
+        out_dir = output_dir / "Marker_Output"
+    
     out_dir.mkdir(parents=True, exist_ok=True)
 
     cmd = [
@@ -83,6 +87,7 @@ def main() -> None:
         )
     )
     ap.add_argument("id_or_path", help="WorkID or path to the PDF")
+    ap.add_argument("--output-dir", type=Path, help="Output directory for Marker_Output")
     args = ap.parse_args()
 
     inp = args.id_or_path
@@ -93,7 +98,7 @@ def main() -> None:
         root = Path(__file__).resolve().parent
         pdf_path = root / "PDF_Bucket" / f"{inp}.pdf"
 
-    convert_via_cli(pdf_path)
+    convert_via_cli(pdf_path, output_dir=args.output_dir)
 
 
 if __name__ == "__main__":
