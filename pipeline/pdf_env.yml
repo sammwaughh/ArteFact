@@ -12,8 +12,6 @@ dependencies:
     - openpyxl>=3.1
     - psutil>=5.9
     - httpx[http2]>=0.27
-    - pypdfium2>=4.20
-    - striprtf>=0.0.22
     - Pillow>=10.3
     - nltk>=3.8
     - PyYAML>=6.0
