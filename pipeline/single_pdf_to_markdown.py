@@ -94,9 +94,10 @@ def main() -> None:
     if inp.lower().endswith(".pdf") or "/" in inp:
         pdf_path = Path(inp).expanduser().resolve()
     else:
-        # bare ID ⇒ assume Pipeline/PDF_Bucket/<ID>.pdf
-        root = Path(__file__).resolve().parent
-        pdf_path = root / "PDF_Bucket" / f"{inp}.pdf"
+        # Remove this hardcoded path assumption
+        # root = Path(__file__).resolve().parent
+        # pdf_path = root / "PDF_Bucket" / f"{inp}.pdf"
+        raise ValueError(f"Cannot resolve bare ID '{inp}' without full path in sharded mode")
 
     convert_via_cli(pdf_path, output_dir=args.output_dir)
 

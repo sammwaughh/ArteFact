@@ -1,9 +1,0 @@
-name: pdf_processing_env
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python=3.11
-  - pip
-  - pip:
-    - marker-pdf[full]>=1.8.2,<2
