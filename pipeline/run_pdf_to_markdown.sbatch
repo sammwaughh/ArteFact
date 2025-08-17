@@ -18,7 +18,7 @@ set -euo pipefail
 # ── Paths ─────────────────────────────────────────────────────────────────────
 PROJ_ROOT=/projects/bddur51/artefact-context/pipeline     # code repo
 # IMPORTANT: point this to the directory that already contains shards/shard_XX/PDF_Bucket
-RUN_ROOT=/nobackup/projects/bddur51/artefact-context-run   # <-- set this to your real run root
+RUN_ROOT=/nobackup/projects/bddur51/oa_run_914266
 
 # Create dirs before cd (fixes the previous failure)
 mkdir -p "$PROJ_ROOT/logs"
