@@ -17,15 +17,15 @@ set -euo pipefail
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 PROJ_ROOT=/projects/bddur51/artefact-context/pipeline     # code repo
-LUSTRE_ROOT=/nobackup/projects/bddur51                    # 10 TB Lustre
-RUN_DIR=$LUSTRE_ROOT/oa_run_${SLURM_JOB_ID}               # per-job run folder
+# IMPORTANT: point this to the directory that already contains shards/shard_XX/PDF_Bucket
+RUN_ROOT=/nobackup/projects/bddur51/artefact-context-run   # <-- set this to your real run root
 
 # Create dirs before cd (fixes the previous failure)
 mkdir -p "$PROJ_ROOT/logs"
 
 echo "=== Bede PDF to Markdown run context ==="
 echo "SLURM_JOB_ID=$SLURM_JOB_ID"
-echo "RUN_DIR=$RUN_DIR"
+echo "RUN_ROOT=$RUN_ROOT"
 echo "PROJ_ROOT=$PROJ_ROOT"
 date
 hostname
@@ -36,13 +36,12 @@ conda activate pdf_processing_env  # ← Changed from download_works_env
 python -V
 which python
 
-# Verify marker_single is available
-echo "Checking marker_single availability..."
-which marker_single || echo "WARNING: marker_single not found in PATH"
-marker_single --version || echo "WARNING: marker_single version check failed"
+# Ensure deps are installed (once per env)
+# pip install --upgrade pip
+# pip install "pymupdf>=1.24" "Pillow>=10.0.0"
 
 # ── Sharding knobs (read by your Python code) ─────────────────────────────────
-export RUN_ROOT="$RUN_DIR"
+export RUN_ROOT="$RUN_ROOT"
 export OA_SHARDS=32
 
 # ── Execute PDF to Markdown conversion ────────────────────────────────────────
@@ -50,15 +49,14 @@ cd "$PROJ_ROOT"
 
 echo "Starting PDF to Markdown conversion..."
 echo "Working from: $PROJ_ROOT"
-echo "Shard data in: $RUN_DIR"
-python batch_pdf_to_markdown_sharded.py --max-workers 16 --output-dir "$RUN_DIR"
+echo "Shard data in: $RUN_ROOT"
+python batch_pdf_to_markdown_sharded.py --max-workers ${SLURM_CPUS_PER_TASK:-16} --output-dir "$RUN_ROOT"
 
 # ── Final summary ─────────────────────────────────────────────────────────────
 echo "----------------------------------------------------------------"
 echo " PDF to Markdown conversion complete"
 echo " Check logs for detailed results"
-echo " Output: $RUN_DIR/Marker_Output/"
-echo " Logs: /projects/bddur51/artefact-context/pipeline/logs/pdf2md_${SLURM_JOB_ID}.{out,err}"
+echo " Output: $RUN_ROOT/Marker_Output/"
 echo "----------------------------------------------------------------"
 echo "Done."
 ###############################################################################

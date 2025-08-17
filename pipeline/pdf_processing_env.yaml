@@ -1,0 +1,16 @@
+name: pdf_processing_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # Primary backend
+  - pymupdf>=1.24
+  - pillow>=10
+  # Fallback (pure-Python) text extractor if PyMuPDF is unavailable
+  - pdfminer.six>=20231228
+  # Useful std tools (optional)
+  - tqdm
+  - setuptools
+  - wheel
