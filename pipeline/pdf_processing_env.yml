@@ -4,11 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.11
-  - pip
   - pillow>=10
   - pdfminer.six>=20231228
   - tqdm
-  - setuptools
-  - wheel
-  - pip:
-      - pymupdf>=1.24
+  - pip

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Convert a single PDF to Markdown (plus extracted images) using a PyMuPDF backend
-compatible with Bede (CPU-only).
+Convert a single PDF to text + images using a Bede-compatible CPU-only backend.
 """
 from __future__ import annotations
 import argparse
