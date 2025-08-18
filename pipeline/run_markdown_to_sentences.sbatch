@@ -38,15 +38,15 @@ which python
 export NLTK_DATA="$RUN_ROOT/nltk_data"
 mkdir -p "$NLTK_DATA"
 python - <<'PY'
-import nltk, os
-for res in ("punkt","punkt_tab"):
+import nltk
+for res, lookup in (
+    ("punkt", "tokenizers/punkt/english.pickle"),
+    ("punkt_tab", "tokenizers/punkt_tab/english"),
+):
     try:
-        nltk.data.find(f"tokenizers/{res}/english")
-    except LookupError:
-        try:
-            nltk.download(res, quiet=False)
-        except Exception as e:
-            print(f"WARNING: failed to download {res}: {e}")
+        nltk.data.find(lookup)
+    except (LookupError, OSError):
+        nltk.download(res, quiet=False)
 PY
 
 # Sanity check inputs

@@ -32,15 +32,13 @@ from typing import Dict, List
 import nltk
 
 # ── ensure required NLTK data are present ──────────────────────────────
-for res in ("punkt", "punkt_tab"):
+for res, lookup in (
+    ("punkt", "tokenizers/punkt/english.pickle"),
+    ("punkt_tab", "tokenizers/punkt_tab/english"),
+):
     try:
-        lookup_path = (
-            "tokenizers/punkt/english.pickle"
-            if res == "punkt"
-            else "tokenizers/punkt_tab/english"
-        )
-        nltk.data.find(lookup_path)
-    except LookupError:
+        nltk.data.find(lookup)
+    except (LookupError, OSError):
         nltk.download(res, quiet=True)
 
 
