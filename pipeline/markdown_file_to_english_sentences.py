@@ -25,6 +25,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import os
 from pathlib import Path
 from typing import Dict, List
 
@@ -68,9 +69,11 @@ def extract_sentences_from_markdown(file_path: str) -> List[str]:
 
 
 # ───────────────────────────── I/O utils ────────────────────────────────────
-ROOT = Path(__file__).resolve().parent  # Pipeline/
-SENTENCES_FILE = ROOT / "sentences.json"
-WORKS_FILE = ROOT / "works.json"
+CODE_ROOT = Path(__file__).resolve().parent  # Pipeline/
+RUN_ROOT = Path(os.getenv("RUN_ROOT", str(CODE_ROOT)))
+SENTENCES_FILE = RUN_ROOT / "sentences.json"
+WORKS_FILE = RUN_ROOT / "works.json"
+MARKER_DIR = RUN_ROOT / "Marker_Output"
 
 
 def _load_json(path: Path, default):
@@ -163,6 +166,6 @@ if __name__ == "__main__":
         md_path = Path(arg).expanduser().resolve()
     else:
         work_id = arg.strip()
-        md_path = (ROOT / "Marker_Output" / work_id / f"{work_id}.md").resolve()
+        md_path = (MARKER_DIR / work_id / f"{work_id}.md").resolve()
 
     process_markdown(md_path)
