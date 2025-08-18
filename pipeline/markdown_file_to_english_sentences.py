@@ -34,9 +34,11 @@ import nltk
 # ── ensure required NLTK data are present ──────────────────────────────
 for res in ("punkt", "punkt_tab"):
     try:
-        # punkt ⇒ …/tokenizers/punkt/english.pickle
-        # punkt_tab ⇒ …/tokenizers/punkt_tab/english/…
-        lookup_path = f"tokenizers/{res}/english"
+        lookup_path = (
+            "tokenizers/punkt/english.pickle"
+            if res == "punkt"
+            else "tokenizers/punkt_tab/english"
+        )
         nltk.data.find(lookup_path)
     except LookupError:
         nltk.download(res, quiet=True)
