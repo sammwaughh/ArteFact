@@ -1,0 +1,10 @@
+name: sentences_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - nltk=3.8.1
+  - pip:
+      # empty for now

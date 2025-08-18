@@ -22,12 +22,16 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from typing import List
+import os
 
 from markdown_file_to_english_sentences import process_markdown
 
-ROOT = Path(__file__).resolve().parent  # Pipeline/
-MARKER_DIR = ROOT / "Marker_Output"
-LOG_DIR = ROOT / "logs/Markdown-To-Sentences-Logs"
+CODE_ROOT = Path(__file__).resolve().parent
+RUN_ROOT = Path(os.getenv("RUN_ROOT", str(CODE_ROOT)))
+SENTENCES_FILE = RUN_ROOT / "sentences.json"
+WORKS_FILE = RUN_ROOT / "works.json"
+MARKER_DIR = RUN_ROOT / "Marker_Output"
+LOG_DIR = RUN_ROOT / "logs/Markdown-To-Sentences-Logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
 
