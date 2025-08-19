@@ -1,0 +1,20 @@
+name: embedding_env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pytorch
+  - torchvision
+  - torchaudio
+  - transformers>=4.30.0
+  - peft>=0.4.0
+  - tqdm
+  - safetensors
+  - accelerate
+  - pip:
+      # Core dependencies only - no CUDA compilation required
+      - ipython
+      - jupyter
