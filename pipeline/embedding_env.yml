@@ -4,17 +4,16 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.11
-  - pip
+  - python=3.10
   - pytorch
   - torchvision
   - torchaudio
-  - transformers>=4.30.0
-  - peft>=0.4.0
-  - tqdm
+  - cpuonly
+  - transformers
   - safetensors
-  - accelerate
+  - tqdm
+  - pip
   - pip:
-      # Core dependencies only - no CUDA compilation required
-      - ipython
-      - jupyter
+    - peft
+    - sentencepiece
+    - protobuf
