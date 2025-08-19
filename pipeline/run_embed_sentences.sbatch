@@ -7,7 +7,7 @@
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --mem=32G
-#SBATCH --time=8-00:00:00
+#SBATCH --time=2-00:00:00
 #SBATCH --output=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_%j.out
 #SBATCH --error=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
