@@ -5,10 +5,10 @@ channels:
   - defaults
 dependencies:
   - python=3.10
-  - pytorch
-  - transformers
+  - pytorch=1.13.1
+  - transformers=4.27.4
   - safetensors
   - tqdm
   - pip
   - pip:
-    - peft
+    - peft==0.4.0
