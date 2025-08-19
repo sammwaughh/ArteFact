@@ -89,8 +89,20 @@ def main() -> None:
 
     logger.info(f"Processing {len(md_files)} Markdown files")
 
+    # Load existing data to check what's already processed
+    from markdown_file_to_english_sentences import _load_json
+    sentences_db = _load_json(SENTENCES_FILE, {})
+    works_db = _load_json(WORKS_FILE, {})
+
     for i, md in enumerate(md_files, 1):
+        work_id = md.stem
         logger.info(f"[{i}/{len(md_files)}] Processing: {md.name}")
+        
+        # Skip if already processed
+        if work_id in works_db and works_db[work_id].get("Number of Sentences", 0) > 0:
+            logger.info(f"  → Skipping {work_id} (already processed)")
+            continue
+            
         try:
             # Capture all stdout/stderr from process_markdown
             with contextlib.redirect_stdout(

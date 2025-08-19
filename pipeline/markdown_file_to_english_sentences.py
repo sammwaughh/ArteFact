@@ -124,6 +124,25 @@ def process_markdown(md_path: Path) -> None:
     if not new_ids and not rewritten_ids:
         print("No sentences extracted.")
         return
+    elif not new_ids and rewritten_ids:
+        # Only rewritten sentences - still update the work entry
+        work_entry = works_db.setdefault(
+            work_id,
+            {
+                "Artist": "",
+                "Link": "",
+                "Number of Sentences": 0,
+                "DOI": "",
+                "ImageIDs": [],
+                "TopicIDs": [],
+            },
+        )
+        work_entry["Number of Sentences"] = sum(
+            sid.startswith(work_id + "_s") for sid in sentences_db
+        )
+        _save_json(WORKS_FILE, works_db)
+        print(f"✅ Updated work entry for {work_id} (already processed)")
+        return
 
     # update works.json
     work_entry = works_db.setdefault(
