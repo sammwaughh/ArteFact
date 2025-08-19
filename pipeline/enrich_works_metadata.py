@@ -3,15 +3,18 @@
 enrich_works_metadata.py
 ------------------------
 Enrich works.json with bibliographic metadata (author, title, year, BibTeX)
-by querying the Crossref API using DOIs.
+by querying the Crossref API using DOIs from the Bede RUN_ROOT.
 
 Usage
 -----
-$ python enrich_works_metadata.py
+$ python pipeline/enrich_works_metadata.py
+$ sbatch pipeline/run_enrich_works.sbatch
 """
 
 import json
 import time
+import os
+import sys
 from pathlib import Path
 from typing import Dict, Optional, Tuple
 
@@ -24,10 +27,15 @@ CROSSREF_MAILTO = "samjmwaugh@gmail.com"  # Replace with your email
 RATE_LIMIT_DELAY = 0.1  # Seconds between requests (be polite to API)
 TIMEOUT = 10  # Request timeout in seconds
 
-# File paths
-ROOT = Path(__file__).resolve().parent
-WORKS_FILE = ROOT / "works.json"
-OUTPUT_FILE = ROOT / "works_enriched.json"
+# File paths - use RUN_ROOT from environment
+RUN_ROOT = Path(os.getenv("RUN_ROOT", ".")).resolve()
+WORKS_FILE = RUN_ROOT / "works.json"
+OUTPUT_FILE = RUN_ROOT / "works_enriched.json"
+
+print(f"�� Working directory: {Path.cwd()}")
+print(f"📁 RUN_ROOT: {RUN_ROOT}")
+print(f"📄 Input works file: {WORKS_FILE}")
+print(f"📄 Output enriched file: {OUTPUT_FILE}")
 
 
 def clean_doi(doi_url: str) -> str:
@@ -205,14 +213,21 @@ def enrich_work_metadata(work_id: str, work_data: Dict) -> Tuple[bool, Dict]:
 
 def main():
     """Process all works and enrich with metadata."""
-    print("Loading works.json...")
+    if not WORKS_FILE.exists():
+        print(f"❌ {WORKS_FILE} not found")
+        sys.exit(1)
+    
+    print("�� Loading works.json...")
     with open(WORKS_FILE, "r") as f:
         works = json.load(f)
 
-    print(f"Found {len(works)} works to process\n")
+    print(f"�� Found {len(works)} works to process\n")
 
     enriched_works = {}
     success_count = 0
+    doi_count = sum(1 for w in works.values() if w.get("DOI"))
+
+    print(f"🔍 {doi_count} works have DOIs for enrichment")
 
     # Process each work
     for work_id, work_data in tqdm(works.items(), desc="Enriching works"):
@@ -226,19 +241,20 @@ def main():
         time.sleep(RATE_LIMIT_DELAY)
 
     # Save enriched data
-    print(f"\nWriting enriched data to {OUTPUT_FILE}...")
+    print(f"\n💾 Writing enriched data to {OUTPUT_FILE}...")
     with open(OUTPUT_FILE, "w") as f:
         json.dump(enriched_works, f, indent=2)
 
-    print(f"\nComplete! Successfully enriched {success_count}/{len(works)} works")
-    print(f"Results saved to: {OUTPUT_FILE}")
+    print(f"\n✅ Complete! Successfully enriched {success_count}/{len(works)} works")
+    print(f"📁 Results saved to: {OUTPUT_FILE}")
+    print(f"�� File size: {OUTPUT_FILE.stat().st_size / (1024**2):.1f} MB")
 
     # Show sample of enriched data
     if enriched_works:
         sample_id = list(enriched_works.keys())[0]
         sample = enriched_works[sample_id]
         if "Author_Name" in sample:
-            print("\nSample enriched entry:")
+            print("\n📋 Sample enriched entry:")
             print(f"  Work ID: {sample_id}")
             print(f"  Authors: {sample.get('Author_Name', 'N/A')}")
             print(f"  Title: {sample.get('Work_Title', 'N/A')}")
