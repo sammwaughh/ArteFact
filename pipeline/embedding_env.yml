@@ -6,14 +6,9 @@ channels:
 dependencies:
   - python=3.10
   - pytorch
-  - torchvision
-  - torchaudio
-  - cpuonly
   - transformers
   - safetensors
   - tqdm
   - pip
   - pip:
     - peft
-    - sentencepiece
-    - protobuf
