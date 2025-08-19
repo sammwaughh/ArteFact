@@ -29,7 +29,7 @@ hostname
 
 # ── Conda environment ─────────────────────────────────────────────────────────
 source /projects/bddur51/$USER/miniconda/etc/profile.d/conda.sh
-conda activate sentences_env
+conda activate embedding_env
 python -V
 which python
 
@@ -81,9 +81,9 @@ import json,os,pathlib
 rr=os.environ["RUN_ROOT"]
 emb_dir=pathlib.Path(rr)/"Embeddings"
 
-# Check safetensors files
-clip_st=emb_dir/"CLIP_embeddings.safetensors"
-painting_st=emb_dir/"PaintingCLIP_embeddings.safetensors"
+# Check safetensors files (lowercase)
+clip_st=emb_dir/"clip_embeddings.safetensors"
+painting_st=emb_dir/"paintingclip_embeddings.safetensors"
 
 print("CLIP embeddings:", "✅" if clip_st.exists() else "❌")
 if painting_st.exists():
@@ -91,9 +91,9 @@ if painting_st.exists():
 else:
     print("PaintingCLIP embeddings:", "⚠️ (not generated)")
 
-# Check sentence ID files
-clip_ids=emb_dir/"CLIP_embeddings_sentence_ids.json"
-painting_ids=emb_dir/"PaintingCLIP_embeddings_sentence_ids.json"
+# Check sentence ID files (lowercase)
+clip_ids=emb_dir/"clip_embeddings_sentence_ids.json"
+painting_ids=emb_dir/"paintingclip_embeddings_sentence_ids.json"
 
 if clip_ids.exists():
     with open(clip_ids) as f:

@@ -136,12 +136,15 @@ def save_embeddings_consolidated(
 ) -> None:
     """Save embeddings in consolidated safetensors format."""
     
-    # Save safetensors file
-    st_file = EMBEDDINGS_DIR / f"{model_type}_embeddings.safetensors"
+    # Convert model_type to lowercase for backend compatibility
+    model_type_lower = model_type.lower()
+    
+    # Save safetensors file with lowercase naming
+    st_file = EMBEDDINGS_DIR / f"{model_type_lower}_embeddings.safetensors"
     save_file({"embeddings": embeddings}, str(st_file))
     
-    # Save sentence IDs
-    ids_file = EMBEDDINGS_DIR / f"{model_type}_embeddings_sentence_ids.json"
+    # Save sentence IDs with lowercase naming
+    ids_file = EMBEDDINGS_DIR / f"{model_type_lower}_embeddings_sentence_ids.json"
     with open(ids_file, 'w', encoding='utf-8') as f:
         json.dump(sentence_ids, f, ensure_ascii=False, indent=2)
     
@@ -166,23 +169,43 @@ def update_sentences_json_with_embeddings(
     print(f"✅ Updated sentences.json with {model_type} embedding status")
 
 def copy_to_backend_format() -> None:
-    """Copy embeddings to backend-expected format."""
-    backend_dir = CODE_ROOT.parent / "data" / "embeddings"
-    backend_dir.mkdir(parents=True, exist_ok=True)
+    """Copy embeddings to backend-expected format with correct naming."""
     
-    # Copy safetensors files
+    # Backend embeddings directory
+    backend_emb_dir = CODE_ROOT.parent / "data" / "embeddings"
+    backend_emb_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Backend json_info directory
+    backend_json_dir = CODE_ROOT.parent / "data" / "json_info"
+    backend_json_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Copy embeddings (already lowercase from save function)
     for st_file in EMBEDDINGS_DIR.glob("*_embeddings.safetensors"):
-        backend_file = backend_dir / st_file.name
+        backend_file = backend_emb_dir / st_file.name
         shutil.copy2(st_file, backend_file)
         print(f"📋 Copied {st_file.name} to {backend_file}")
     
-    # Copy sentence ID files
+    # Copy sentence ID files (already lowercase)
     for ids_file in EMBEDDINGS_DIR.glob("*_embeddings_sentence_ids.json"):
-        backend_file = backend_dir / ids_file.name
+        backend_file = backend_emb_dir / ids_file.name
         shutil.copy2(ids_file, backend_file)
         print(f"📋 Copied {ids_file.name} to {backend_file}")
     
-    print(f"✅ All embeddings copied to {backend_dir}")
+    # Copy updated metadata files
+    sentences_src = RUN_ROOT / "sentences.json"
+    works_src = RUN_ROOT / "works.json"
+    
+    if sentences_src.exists():
+        shutil.copy2(sentences_src, backend_json_dir / "sentences.json")
+        print(f"📋 Copied sentences.json to {backend_json_dir}")
+    
+    if works_src.exists():
+        shutil.copy2(works_src, backend_json_dir / "works.json")
+        print(f"📋 Copied works.json to {backend_json_dir}")
+    
+    print(f"✅ All files copied to backend format:")
+    print(f"   Embeddings: {backend_emb_dir}")
+    print(f"   Metadata: {backend_json_dir}")
 
 def generate_model_embeddings(
     sentences_db: Dict[str, Dict[str, Any]], 
@@ -234,28 +257,29 @@ def main() -> None:
     
     print(f"📖 Loaded {len(sentences_db)} sentence entries")
     
-    # Generate CLIP embeddings
-    generate_model_embeddings(sentences_db, DEFAULT_MODEL, "CLIP")
+    # Generate CLIP embeddings (will save as "clip_embeddings.safetensors")
+    generate_model_embeddings(sentences_db, DEFAULT_MODEL, "clip")
     
-    # Generate PaintingCLIP embeddings
+    # Generate PaintingCLIP embeddings (will save as "paintingclip_embeddings.safetensors")
     if PAINTING_ADAPTER_DIR.exists():
-        generate_model_embeddings(sentences_db, PAINTING_ADAPTER, "PaintingCLIP")
+        generate_model_embeddings(sentences_db, PAINTING_ADAPTER, "paintingclip")
     else:
         print(f"⚠️  PaintingCLIP adapter not found at {PAINTING_ADAPTER_DIR}")
         print("   Skipping PaintingCLIP embedding generation")
     
     # Copy to backend format
-    print("\n�� Copying embeddings to backend format...")
+    print("\n Copying embeddings to backend format...")
     copy_to_backend_format()
     
     print("\n✅ All embeddings generated successfully!")
     print(f"📁 Embeddings saved to: {EMBEDDINGS_DIR}")
     print(f"📁 Backend copies: {CODE_ROOT.parent}/data/embeddings/")
+    print(f"📁 Backend metadata: {CODE_ROOT.parent}/data/json_info/")
     print("\n📋 Summary:")
-    print("   - CLIP embeddings: CLIP_embeddings.safetensors")
-    print("   - PaintingCLIP embeddings: PaintingCLIP_embeddings.safetensors")
+    print("   - CLIP embeddings: clip_embeddings.safetensors")
+    print("   - PaintingCLIP embeddings: paintingclip_embeddings.safetensors")
     print("   - Sentence IDs: *_embeddings_sentence_ids.json")
-    print("   - Updated sentences.json with embedding status")
+    print("   - Updated sentences.json and works.json")
 
 if __name__ == "__main__":
     main()
