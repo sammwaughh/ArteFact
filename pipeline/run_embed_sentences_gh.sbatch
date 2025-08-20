@@ -5,9 +5,8 @@
 #SBATCH --gres=gpu:1                # Full H100 node
 #SBATCH --nodes=1                   # Single node
 #SBATCH --ntasks=1                  # Single task
-#SBATCH --cpus-per-task=72          # Use ALL 72 ARM64 cores
-#SBATCH --mem=480G                  # Use ALL available memory
-#SBATCH --time=2-00:00:00           # MAXIMUM allowed: 2 days
+#SBATCH --mem=240G                  # Use 240GB (half of 480GB to be safe)
+#SBATCH --time=2-00:00:00
 #SBATCH --output=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_gh_%j.out
 #SBATCH --error=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_gh_%j.err
 
@@ -75,6 +74,7 @@ echo "✅ Script found"
 echo "=== GPU Verification ==="
 python -c "
 import torch
+import os
 print(f'PyTorch version: {torch.__version__}')
 print(f'CUDA available: {torch.cuda.is_available()}')
 print(f'GPU count: {torch.cuda.device_count()}')

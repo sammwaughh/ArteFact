@@ -44,11 +44,11 @@ DEFAULT_MODEL = "openai/clip-vit-base-patch32"
 PAINTING_ADAPTER = "PaintingCLIP"
 PAINTING_ADAPTER_DIR = RUN_ROOT / PAINTING_ADAPTER
 
-# Performance settings - MAXIMUM OPTIMIZATION for GH200
-BATCH_SIZE = 1024  # Increased to 1024 - GH200 has 95GB GPU memory
+# Performance settings - CORRECTED for GH200
+BATCH_SIZE = 1024  # Single consistent batch size
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 USE_AMP = True  # Enable Automatic Mixed Precision
-NUM_WORKERS = min(72, mp.cpu_count())  # Use all available CPU cores
+NUM_WORKERS = min(36, mp.cpu_count())  # Reduced to 36 for safety
 
 # Memory optimization
 TORCH_CUDA_EMPTY_CACHE_FREQ = 10  # Clear cache every 10 batches
@@ -103,38 +103,44 @@ def extract_sentences_data(sentences_db: Dict[str, Dict[str, Any]]) -> Tuple[Lis
     return sentence_ids, sentence_texts
 
 def extract_sentences_data_parallel(sentences_db: Dict[str, Dict[str, Any]]) -> Tuple[List[str], List[str]]:
-    """Extract sentence IDs and texts using parallel processing."""
-    sentence_ids = []
-    sentence_texts = []
+    """Extract sentence IDs and texts using parallel processing with error handling."""
+    try:
+        sentence_ids = []
+        sentence_texts = []
+        
+        # Use parallel processing for large datasets
+        with ProcessPoolExecutor(max_workers=NUM_WORKERS) as executor:
+            # Split work into chunks
+            items = list(sentences_db.items())
+            chunk_size = max(1, len(items) // NUM_WORKERS)
+            
+            def process_chunk(chunk):
+                ids, texts = [], []
+                for sentence_id, entry in chunk:
+                    text = entry.get("English Original", "").strip()
+                    if isinstance(text, str) and text:
+                        ids.append(sentence_id)
+                        texts.append(text)
+                return ids, texts
+            
+            # Process chunks in parallel
+            futures = []
+            for i in range(0, len(items), chunk_size):
+                chunk = items[i:i + chunk_size]
+                futures.append(executor.submit(process_chunk, chunk))
+            
+            # Collect results
+            for future in futures:
+                chunk_ids, chunk_texts = future.result()
+                sentence_ids.extend(chunk_ids)
+                sentence_texts.extend(chunk_texts)
+        
+        return sentence_ids, sentence_texts
     
-    # Use parallel processing for large datasets
-    with ProcessPoolExecutor(max_workers=NUM_WORKERS) as executor:
-        # Split work into chunks
-        items = list(sentences_db.items())
-        chunk_size = max(1, len(items) // NUM_WORKERS)
-        
-        def process_chunk(chunk):
-            ids, texts = [], []
-            for sentence_id, entry in chunk:
-                text = entry.get("English Original", "").strip()
-                if isinstance(text, str) and text:
-                    ids.append(sentence_id)
-                    texts.append(text)
-            return ids, texts
-        
-        # Process chunks in parallel
-        futures = []
-        for i in range(0, len(items), chunk_size):
-            chunk = items[i:i + chunk_size]
-            futures.append(executor.submit(process_chunk, chunk))
-        
-        # Collect results
-        for future in futures:
-            chunk_ids, chunk_texts = future.result()
-            sentence_ids.extend(chunk_ids)
-            sentence_texts.extend(chunk_texts)
-    
-    return sentence_ids, sentence_texts
+    except Exception as e:
+        print(f"⚠️  Parallel processing failed: {e}")
+        print("🔄 Falling back to sequential processing...")
+        return extract_sentences_data(sentences_db)
 
 def generate_embeddings_batch(
     texts: List[str], 
@@ -350,38 +356,44 @@ def generate_model_embeddings_optimized(
     model_name: str, 
     model_type: str
 ) -> None:
-    """Generate embeddings with maximum optimization."""
+    """Generate embeddings with maximum optimization and error handling."""
     print(f"\n🔧 Generating {model_type.upper()} embeddings (OPTIMIZED)...")
     
-    # Use parallel extraction for large datasets
-    if len(sentences_db) > 1000000:  # 1M+ sentences
-        print("📖 Using parallel processing for large dataset...")
-        sentence_ids, sentence_texts = extract_sentences_data_parallel(sentences_db)
-    else:
-        sentence_ids, sentence_texts = extract_sentences_data(sentences_db)
-    
-    print(f"📖 Processing {len(sentence_ids)} sentences")
-    
-    if not sentence_ids:
-        print(f"⚠️  No valid sentences found for {model_type}")
+    try:
+        # Use parallel extraction for large datasets
+        if len(sentences_db) > 1000000:  # 1M+ sentences
+            print("📖 Using parallel processing for large dataset...")
+            sentence_ids, sentence_texts = extract_sentences_data_parallel(sentences_db)
+        else:
+            sentence_ids, sentence_texts = extract_sentences_data(sentences_db)
+        
+        print(f"📖 Processing {len(sentence_ids)} sentences")
+        
+        if not sentence_ids:
+            print(f"⚠️  No valid sentences found for {model_type}")
+            return
+        
+        # Load model
+        model, processor = load_model_and_processor(model_name)
+        
+        # Generate embeddings with maximum optimization
+        embeddings = generate_embeddings_batch_optimized(sentence_texts, processor, model, BATCH_SIZE)
+        
+        # Save in consolidated format
+        save_embeddings_consolidated(embeddings, sentence_ids, model_type)
+        
+        # Update sentences.json
+        update_sentences_json_with_embeddings(sentences_db, model_type)
+        
+        # Clean up model to free memory
+        del model, processor, embeddings
+        torch.cuda.empty_cache()
+        gc.collect()
+        
+    except Exception as e:
+        print(f"❌ Error generating {model_type} embeddings: {e}")
+        print("🔄 Attempting to continue with next model...")
         return
-    
-    # Load model
-    model, processor = load_model_and_processor(model_name)
-    
-    # Generate embeddings with maximum optimization
-    embeddings = generate_embeddings_batch_optimized(sentence_texts, processor, model, BATCH_SIZE)
-    
-    # Save in consolidated format
-    save_embeddings_consolidated(embeddings, sentence_ids, model_type)
-    
-    # Update sentences.json
-    update_sentences_json_with_embeddings(sentences_db, model_type)
-    
-    # Clean up model to free memory
-    del model, processor, embeddings
-    torch.cuda.empty_cache()
-    gc.collect()
 
 # ───────────────────────────── main ──────────────────────────────────────
 def main() -> None:
