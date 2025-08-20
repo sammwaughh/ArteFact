@@ -41,13 +41,12 @@ DEFAULT_MODEL = "openai/clip-vit-base-patch32"
 PAINTING_ADAPTER = "PaintingCLIP"
 PAINTING_ADAPTER_DIR = RUN_ROOT / PAINTING_ADAPTER
 
-# Performance settings
-BATCH_SIZE = 64  # Adjust based on GPU memory
-DEVICE = (
-    "mps"
-    if torch.backends.mps.is_available()
-    else "cuda" if torch.cuda.is_available() else "cpu"
-)
+# Performance settings - OPTIMIZED for GH200
+BATCH_SIZE = 256  # Increased from 64 - GH200 has 96GB GPU memory
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"  # Remove MPS check (Mac-specific)
+
+# Add mixed precision for faster computation
+USE_AMP = True  # Enable Automatic Mixed Precision
 
 # ───────────────────────────── helpers ───────────────────────────────────
 def load_sentences() -> Dict[str, Dict[str, Any]]:
@@ -102,10 +101,14 @@ def generate_embeddings_batch(
     texts: List[str], 
     processor: CLIPProcessor, 
     model: CLIPModel, 
-    batch_size: int = 64
+    batch_size: int = 256  # Updated default
 ) -> torch.Tensor:
-    """Generate embeddings for a batch of texts efficiently."""
+    """Generate embeddings for a batch of texts efficiently with AMP."""
     all_embeddings = []
+    
+    # Enable mixed precision for faster computation
+    if USE_AMP and torch.cuda.is_available():
+        scaler = torch.cuda.amp.GradScaler()
     
     for i in tqdm(range(0, len(texts), batch_size), desc="Generating embeddings"):
         batch_texts = texts[i:i + batch_size]
@@ -121,9 +124,14 @@ def generate_embeddings_batch(
         inputs = {k: v.to(DEVICE) for k, v in inputs.items()}
         
         with torch.no_grad():
-            text_features = model.get_text_features(**inputs)
-            # Normalize embeddings
-            text_embeddings = F.normalize(text_features, dim=-1)
+            if USE_AMP and torch.cuda.is_available():
+                with torch.cuda.amp.autocast():
+                    text_features = model.get_text_features(**inputs)
+                    text_embeddings = F.normalize(text_features, dim=-1)
+            else:
+                text_features = model.get_text_features(**inputs)
+                text_embeddings = F.normalize(text_features, dim=-1)
+            
             all_embeddings.append(text_embeddings.cpu())
     
     # Concatenate all batches
@@ -247,6 +255,12 @@ def main() -> None:
     print(f"�� Working directory: {CODE_ROOT}")
     print(f"📁 Run directory: {RUN_ROOT}")
     print(f"📁 Embeddings directory: {EMBEDDINGS_DIR}")
+    
+    # GPU info
+    if torch.cuda.is_available():
+        print(f"🎮 GPU: {torch.cuda.get_device_name(0)}")
+        print(f" GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
+        print(f" CUDA Version: {torch.version.cuda}")
     
     # Load sentences database
     print("\n📖 Loading sentences database...")
