@@ -5,6 +5,7 @@
 #SBATCH --time=00:30:00
 #SBATCH --mem=4G
 #SBATCH --partition=standard
+#SBATCH --account=bddur51  # ← Add this line
 
 # Load conda environment
 source /projects/bddur51/samjmwaugh/miniconda/etc/profile.d/conda.sh
