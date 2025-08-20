@@ -5,7 +5,7 @@
 #SBATCH --gres=gpu:1                # Full H100 node
 #SBATCH --cpus-per-task=72          # Use all 72 ARM64 cores
 #SBATCH --mem=96G                   # Increased to match GPU memory
-#SBATCH --time=4-00:00:00           # Increased time for large dataset
+#SBATCH --time=8-00:00:00           # 8 days for safety
 #SBATCH --output=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_gh_%j.out
 #SBATCH --error=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_gh_%j.err
 
@@ -24,38 +24,67 @@ echo "GPU memory: $SLURM_MEM_PER_NODE"
 date
 hostname
 
-# ── Grace-Hopper Environment Setup ────────────────────────────────────────────
-# Load CUDA module for optimal performance
+# ── Environment Setup ─────────────────────────────────────────────────────────
 module load cuda/12.6.2
-
-# Use existing environment instead of creating new one
 source ~/embedding_env_gh/bin/activate
 
 # ── Performance Tuning ────────────────────────────────────────────────────────
-# Set environment variables for optimal performance
 export CUDA_LAUNCH_BLOCKING=0
 export TORCH_CUDNN_V8_API_ENABLED=1
 export TORCH_CUDNN_V8_API_DISABLED=0
 
-# ── Run Embedding Generation ──────────────────────────────────────────────────
+# ── Pre-Run Setup ────────────────────────────────────────────────────────────
 cd "$PROJ_ROOT"
 export RUN_ROOT="$RUN_ROOT"
 
-# Verify GPU access and performance
+# Create logs directory
+mkdir -p pipeline/logs
+
+# ── Pre-Run Verification ─────────────────────────────────────────────────────
+echo "=== Pre-Run Verification ==="
+echo "Current directory: $(pwd)"
+
+# Check data files exist
+echo "Checking data files..."
+if [[ ! -f "$RUN_ROOT/sentences.json" ]]; then
+    echo "❌ ERROR: sentences.json not found at $RUN_ROOT/sentences.json"
+    exit 1
+fi
+echo "✅ sentences.json found"
+
+if [[ ! -d "$RUN_ROOT/PaintingCLIP" ]]; then
+    echo "⚠️  WARNING: PaintingCLIP directory not found - will skip PaintingCLIP embeddings"
+else
+    echo "✅ PaintingCLIP directory found"
+fi
+
+# Check script exists
+if [[ ! -f "pipeline/efficient_batch_embed_sentences.py" ]]; then
+    echo "❌ ERROR: Script not found at pipeline/efficient_batch_embed_sentences.py"
+    exit 1
+fi
+echo "✅ Script found"
+
+# ── GPU Verification ──────────────────────────────────────────────────────────
 echo "=== GPU Verification ==="
 python -c "
 import torch
 print(f'PyTorch version: {torch.__version__}')
 print(f'CUDA available: {torch.cuda.is_available()}')
 print(f'GPU count: {torch.cuda.device_count()}')
-print(f'GPU name: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"None\"}')
-print(f'GPU memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB' if torch.cuda.is_available() else 'No GPU')
+print(f'GPU: {torch.cuda.get_device_name(0)}')
+print(f'GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB')
 print(f'CUDA version: {torch.version.cuda}')
 "
 
-# Run the script with performance monitoring
+# ── Run Embedding Generation ──────────────────────────────────────────────────
 echo "=== Starting Embedding Generation ==="
+echo "Start time: $(date)"
+echo "Running script from: $(pwd)"
+echo "Script path: $(pwd)/pipeline/efficient_batch_embed_sentences.py"
+
 time python pipeline/efficient_batch_embed_sentences.py
+echo "End time: $(date)"
 
 echo "=== Embedding generation complete ==="
 echo "Job completed at: $(date)"
