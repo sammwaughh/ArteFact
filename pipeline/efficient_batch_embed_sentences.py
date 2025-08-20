@@ -28,6 +28,9 @@ from transformers import CLIPModel, CLIPProcessor
 from peft import PeftModel
 from safetensors.torch import save_file
 from tqdm import tqdm
+import multiprocessing as mp
+from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
+import gc
 
 # ───────────────────────────── configuration ──────────────────────────────
 CODE_ROOT = Path(__file__).resolve().parent  # Pipeline/
@@ -41,12 +44,14 @@ DEFAULT_MODEL = "openai/clip-vit-base-patch32"
 PAINTING_ADAPTER = "PaintingCLIP"
 PAINTING_ADAPTER_DIR = RUN_ROOT / PAINTING_ADAPTER
 
-# Performance settings - OPTIMIZED for GH200
-BATCH_SIZE = 256  # Increased from 64 - GH200 has 96GB GPU memory
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"  # Remove MPS check (Mac-specific)
-
-# Add mixed precision for faster computation
+# Performance settings - MAXIMUM OPTIMIZATION for GH200
+BATCH_SIZE = 1024  # Increased to 1024 - GH200 has 95GB GPU memory
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 USE_AMP = True  # Enable Automatic Mixed Precision
+NUM_WORKERS = min(72, mp.cpu_count())  # Use all available CPU cores
+
+# Memory optimization
+TORCH_CUDA_EMPTY_CACHE_FREQ = 10  # Clear cache every 10 batches
 
 # ───────────────────────────── helpers ───────────────────────────────────
 def load_sentences() -> Dict[str, Dict[str, Any]]:
@@ -97,6 +102,40 @@ def extract_sentences_data(sentences_db: Dict[str, Dict[str, Any]]) -> Tuple[Lis
     
     return sentence_ids, sentence_texts
 
+def extract_sentences_data_parallel(sentences_db: Dict[str, Dict[str, Any]]) -> Tuple[List[str], List[str]]:
+    """Extract sentence IDs and texts using parallel processing."""
+    sentence_ids = []
+    sentence_texts = []
+    
+    # Use parallel processing for large datasets
+    with ProcessPoolExecutor(max_workers=NUM_WORKERS) as executor:
+        # Split work into chunks
+        items = list(sentences_db.items())
+        chunk_size = max(1, len(items) // NUM_WORKERS)
+        
+        def process_chunk(chunk):
+            ids, texts = [], []
+            for sentence_id, entry in chunk:
+                text = entry.get("English Original", "").strip()
+                if isinstance(text, str) and text:
+                    ids.append(sentence_id)
+                    texts.append(text)
+            return ids, texts
+        
+        # Process chunks in parallel
+        futures = []
+        for i in range(0, len(items), chunk_size):
+            chunk = items[i:i + chunk_size]
+            futures.append(executor.submit(process_chunk, chunk))
+        
+        # Collect results
+        for future in futures:
+            chunk_ids, chunk_texts = future.result()
+            sentence_ids.extend(chunk_ids)
+            sentence_texts.extend(chunk_texts)
+    
+    return sentence_ids, sentence_texts
+
 def generate_embeddings_batch(
     texts: List[str], 
     processor: CLIPProcessor, 
@@ -136,6 +175,64 @@ def generate_embeddings_batch(
     
     # Concatenate all batches
     return torch.cat(all_embeddings, dim=0)
+
+def generate_embeddings_batch_optimized(
+    texts: List[str], 
+    processor: CLIPProcessor, 
+    model: CLIPModel, 
+    batch_size: int = 1024
+) -> torch.Tensor:
+    """Generate embeddings with maximum GPU utilization."""
+    all_embeddings = []
+    
+    # Pre-allocate tensors for better memory management
+    total_batches = (len(texts) + batch_size - 1) // batch_size
+    
+    print(f"🎯 Processing {len(texts)} sentences in {total_batches} batches of {batch_size}")
+    print(f"🎮 GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
+    
+    for i in tqdm(range(0, len(texts), batch_size), desc="Generating embeddings"):
+        batch_texts = texts[i:i + batch_size]
+        
+        # Process batch
+        inputs = processor(
+            text=batch_texts, 
+            return_tensors="pt", 
+            padding=True, 
+            truncation=True,
+            max_length=77
+        )
+        inputs = {k: v.to(DEVICE, non_blocking=True) for k, v in inputs.items()}
+        
+        with torch.no_grad():
+            if USE_AMP and torch.cuda.is_available():
+                with torch.cuda.amp.autocast():
+                    text_features = model.get_text_features(**inputs)
+                    text_embeddings = F.normalize(text_features, dim=-1)
+            else:
+                text_features = model.get_text_features(**inputs)
+                text_embeddings = F.normalize(text_features, dim=-1)
+            
+            # Move to CPU and clear GPU memory immediately
+            cpu_embeddings = text_embeddings.cpu()
+            all_embeddings.append(cpu_embeddings)
+            
+            # Clear GPU memory periodically
+            if (i // batch_size + 1) % TORCH_CUDA_EMPTY_CACHE_FREQ == 0:
+                del text_features, text_embeddings
+                torch.cuda.empty_cache()
+                gc.collect()
+    
+    # Concatenate all batches
+    print("🔗 Concatenating embeddings...")
+    result = torch.cat(all_embeddings, dim=0)
+    
+    # Final cleanup
+    del all_embeddings
+    torch.cuda.empty_cache()
+    gc.collect()
+    
+    return result
 
 def save_embeddings_consolidated(
     embeddings: torch.Tensor, 
@@ -248,19 +345,63 @@ def generate_model_embeddings(
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
 
+def generate_model_embeddings_optimized(
+    sentences_db: Dict[str, Dict[str, Any]], 
+    model_name: str, 
+    model_type: str
+) -> None:
+    """Generate embeddings with maximum optimization."""
+    print(f"\n🔧 Generating {model_type.upper()} embeddings (OPTIMIZED)...")
+    
+    # Use parallel extraction for large datasets
+    if len(sentences_db) > 1000000:  # 1M+ sentences
+        print("📖 Using parallel processing for large dataset...")
+        sentence_ids, sentence_texts = extract_sentences_data_parallel(sentences_db)
+    else:
+        sentence_ids, sentence_texts = extract_sentences_data(sentences_db)
+    
+    print(f"📖 Processing {len(sentence_ids)} sentences")
+    
+    if not sentence_ids:
+        print(f"⚠️  No valid sentences found for {model_type}")
+        return
+    
+    # Load model
+    model, processor = load_model_and_processor(model_name)
+    
+    # Generate embeddings with maximum optimization
+    embeddings = generate_embeddings_batch_optimized(sentence_texts, processor, model, BATCH_SIZE)
+    
+    # Save in consolidated format
+    save_embeddings_consolidated(embeddings, sentence_ids, model_type)
+    
+    # Update sentences.json
+    update_sentences_json_with_embeddings(sentences_db, model_type)
+    
+    # Clean up model to free memory
+    del model, processor, embeddings
+    torch.cuda.empty_cache()
+    gc.collect()
+
 # ───────────────────────────── main ──────────────────────────────────────
 def main() -> None:
-    """Main function to generate embeddings for both CLIP and PaintingCLIP."""
-    print(f"�� Starting efficient batch embedding generation on {DEVICE}")
-    print(f"�� Working directory: {CODE_ROOT}")
+    """Main function with maximum optimization."""
+    print(f"🚀 Starting MAXIMUM OPTIMIZED embedding generation on {DEVICE}")
+    print(f"📁 Working directory: {CODE_ROOT}")
     print(f"📁 Run directory: {RUN_ROOT}")
     print(f"📁 Embeddings directory: {EMBEDDINGS_DIR}")
     
     # GPU info
     if torch.cuda.is_available():
         print(f"🎮 GPU: {torch.cuda.get_device_name(0)}")
-        print(f" GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
-        print(f" CUDA Version: {torch.version.cuda}")
+        print(f"🎮 GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
+        print(f"🎮 CUDA Version: {torch.version.cuda}")
+        print(f"⚡ Mixed Precision: {'Enabled' if USE_AMP else 'Disabled'}")
+    
+    # CPU info
+    print(f"🖥️  CPU Cores: {mp.cpu_count()}")
+    print(f"🖥️  Batch Size: {BATCH_SIZE}")
+    print(f"🖥️  Workers: {NUM_WORKERS}")
     
     # Load sentences database
     print("\n📖 Loading sentences database...")
@@ -271,29 +412,24 @@ def main() -> None:
     
     print(f"📖 Loaded {len(sentences_db)} sentence entries")
     
-    # Generate CLIP embeddings (will save as "clip_embeddings.safetensors")
-    generate_model_embeddings(sentences_db, DEFAULT_MODEL, "clip")
+    # Generate CLIP embeddings
+    generate_model_embeddings_optimized(sentences_db, DEFAULT_MODEL, "clip")
     
-    # Generate PaintingCLIP embeddings (will save as "paintingclip_embeddings.safetensors")
+    # Generate PaintingCLIP embeddings
     if PAINTING_ADAPTER_DIR.exists():
-        generate_model_embeddings(sentences_db, PAINTING_ADAPTER, "paintingclip")
+        generate_model_embeddings_optimized(sentences_db, PAINTING_ADAPTER, "paintingclip")
     else:
         print(f"⚠️  PaintingCLIP adapter not found at {PAINTING_ADAPTER_DIR}")
         print("   Skipping PaintingCLIP embedding generation")
     
     # Copy to backend format
-    print("\n Copying embeddings to backend format...")
+    print("\n🔄 Copying embeddings to backend format...")
     copy_to_backend_format()
     
     print("\n✅ All embeddings generated successfully!")
     print(f"📁 Embeddings saved to: {EMBEDDINGS_DIR}")
     print(f"📁 Backend copies: {CODE_ROOT.parent}/data/embeddings/")
     print(f"📁 Backend metadata: {CODE_ROOT.parent}/data/json_info/")
-    print("\n📋 Summary:")
-    print("   - CLIP embeddings: clip_embeddings.safetensors")
-    print("   - PaintingCLIP embeddings: paintingclip_embeddings.safetensors")
-    print("   - Sentence IDs: *_embeddings_sentence_ids.json")
-    print("   - Updated sentences.json and works.json")
 
 if __name__ == "__main__":
     main()

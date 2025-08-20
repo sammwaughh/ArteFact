@@ -3,9 +3,11 @@
 #SBATCH --account=bddur51
 #SBATCH --partition=gh              # Grace-Hopper partition
 #SBATCH --gres=gpu:1                # Full H100 node
-#SBATCH --cpus-per-task=72          # Use all 72 ARM64 cores
-#SBATCH --mem=96G                   # Increased to match GPU memory
-#SBATCH --time=8-00:00:00           # 8 days for safety
+#SBATCH --nodes=1                   # Single node
+#SBATCH --ntasks=1                  # Single task
+#SBATCH --cpus-per-task=72          # Use ALL 72 ARM64 cores
+#SBATCH --mem=480G                  # Use ALL available memory
+#SBATCH --time=2-00:00:00           # MAXIMUM allowed: 2 days
 #SBATCH --output=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_gh_%j.out
 #SBATCH --error=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_gh_%j.err
 
@@ -15,12 +17,13 @@ set -euo pipefail
 PROJ_ROOT=/projects/bddur51/artefact-context
 RUN_ROOT=/nobackup/projects/bddur51/oa_run_914266
 
-echo "=== Grace-Hopper Embedding Generation ==="
+echo "=== Grace-Hopper Embedding Generation (OPTIMIZED) ==="
 echo "SLURM_JOB_ID=$SLURM_JOB_ID"
 echo "RUN_ROOT=$RUN_ROOT"
 echo "Architecture: $(uname -m)"
 echo "CPU cores: $SLURM_CPUS_PER_TASK"
 echo "GPU memory: $SLURM_MEM_PER_NODE"
+echo "Job time limit: $SLURM_TIMELIMIT"
 date
 hostname
 
@@ -32,6 +35,9 @@ source ~/embedding_env_gh/bin/activate
 export CUDA_LAUNCH_BLOCKING=0
 export TORCH_CUDNN_V8_API_ENABLED=1
 export TORCH_CUDNN_V8_API_DISABLED=0
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export NUMEXPR_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
 # ── Pre-Run Setup ────────────────────────────────────────────────────────────
 cd "$PROJ_ROOT"
@@ -75,13 +81,16 @@ print(f'GPU count: {torch.cuda.device_count()}')
 print(f'GPU: {torch.cuda.get_device_name(0)}')
 print(f'GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB')
 print(f'CUDA version: {torch.version.cuda}')
+print(f'CPU cores available: {os.cpu_count()}')
 "
 
 # ── Run Embedding Generation ──────────────────────────────────────────────────
-echo "=== Starting Embedding Generation ==="
+echo "=== Starting OPTIMIZED Embedding Generation ==="
 echo "Start time: $(date)"
 echo "Running script from: $(pwd)"
 echo "Script path: $(pwd)/pipeline/efficient_batch_embed_sentences.py"
+echo "CPU cores: $SLURM_CPUS_PER_TASK"
+echo "Memory: $SLURM_MEM_PER_NODE"
 
 time python pipeline/efficient_batch_embed_sentences.py
 echo "End time: $(date)"
