@@ -20,27 +20,51 @@ echo "=== Grace-Hopper Embedding Generation (OPTIMIZED) ==="
 echo "SLURM_JOB_ID=$SLURM_JOB_ID"
 echo "RUN_ROOT=$RUN_ROOT"
 echo "Architecture: $(uname -m)"
-echo "CPU cores: $SLURM_CPUS_PER_TASK"
-echo "GPU memory: $SLURM_MEM_PER_NODE"
-echo "Job time limit: $SLURM_TIMELIMIT"
+echo "CPU cores: ${SLURM_CPUS_PER_TASK:-'Not set'}"
+echo "GPU memory: ${SLURM_MEM_PER_NODE:-'Not set'}"
+echo "Job time limit: ${SLURM_TIMELIMIT:-'Not set'}"
 date
 hostname
 
 # ── Environment Setup ─────────────────────────────────────────────────────────
-module load cuda/12.6.2
-source ~/embedding_env_gh/bin/activate
+if ! module load cuda/12.6.2; then
+    echo "❌ ERROR: Failed to load CUDA module"
+    exit 1
+fi
+
+if ! source ~/embedding_env_gh/bin/activate; then
+    echo "❌ ERROR: Failed to activate Python environment"
+    exit 1
+fi
 
 # ── Performance Tuning ────────────────────────────────────────────────────────
 export CUDA_LAUNCH_BLOCKING=0
 export TORCH_CUDNN_V8_API_ENABLED=1
 export TORCH_CUDNN_V8_API_DISABLED=0
-export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export NUMEXPR_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+# ADD THESE: Grace-Hopper specific optimizations
+export CUDA_DEVICE_ORDER=PCI_BUS_ID
+export CUDA_VISIBLE_DEVICES=0
+export NCCL_IB_DISABLE=1  # Disable InfiniBand for single-node jobs
+export NCCL_P2P_DISABLE=1 # Disable P2P for single-node jobs
+
+export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-64}
+export MKL_NUM_THREADS=${SLURM_CPUS_PER_TASK:-64}
+export NUMEXPR_NUM_THREADS=${SLURM_CPUS_PER_TASK:-64}
+
+# ADD THIS: Use local scratch space for temporary files
+if [ -n "${SLURM_TMPDIR:-}" ]; then
+    export TMPDIR="$SLURM_TMPDIR"
+    export TEMP="$SLURM_TMPDIR"
+    echo "Using local scratch space: $SLURM_TMPDIR"
+else
+    echo "Warning: SLURM_TMPDIR not set, using default temp location"
+fi
 
 # ── Pre-Run Setup ────────────────────────────────────────────────────────────
 cd "$PROJ_ROOT"
 export RUN_ROOT="$RUN_ROOT"
+export SLURM_SUBMIT_DIR="$PROJ_ROOT"  # ADD THIS: Explicit working directory
 
 # Create logs directory
 mkdir -p pipeline/logs
