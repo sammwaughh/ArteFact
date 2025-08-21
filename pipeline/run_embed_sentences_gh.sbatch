@@ -6,7 +6,7 @@
 #SBATCH --nodes=1                   # Single node
 #SBATCH --ntasks=1                  # Single task
 #SBATCH --mem=240G                  # Use 240GB (half of 480GB to be safe)
-#SBATCH --time=2-00:00:00
+#SBATCH --time=1-00:00:00
 #SBATCH --output=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_gh_%j.out
 #SBATCH --error=/projects/bddur51/artefact-context/pipeline/logs/embed_sentences_gh_%j.err
 
@@ -27,7 +27,7 @@ date
 hostname
 
 # ── Environment Setup ─────────────────────────────────────────────────────────
-if ! module load cuda/12.6.2; then
+if ! module load cuda/12.4.1; then
     echo "❌ ERROR: Failed to load CUDA module"
     exit 1
 fi
