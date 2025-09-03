@@ -1,21 +1,3 @@
----
-title: ArteFact
-emoji: 🖼️
-colorFrom: blue
-colorTo: purple
-sdk: docker
-pinned: false
-short_description: Discover insights into the art-history corpus with visual AI
-# Optional metadata (shows on the card; not required to run)
-models:
-  - openai/clip-vit-base-patch32
-  - samwaugh/paintingclip-lora
-datasets:
-  - samwaugh/artefact-embeddings
-  - samwaugh/artefact-json
-  - samwaugh/artefact-markdown
----
-
 # ArteFact — Art History AI Research Platform
 
 **ArteFact** is a sophisticated web application that bridges visual art and textual scholarship using AI. By automatically linking visual elements in artworks to scholarly descriptions, it empowers researchers, students, and art enthusiasts to discover new connections and understand artworks in their broader academic context.
