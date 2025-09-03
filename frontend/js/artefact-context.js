@@ -1,7 +1,7 @@
 // ==========================
 // == GLOBAL CONFIGURATION ==
 // ==========================
-const API_BASE_URL = 'http://127.0.0.1:8000';
+const API_BASE_URL = "";
 
 // Variables to store session/run state
 let runId;
@@ -346,14 +346,24 @@ $(document).ready(function () {
     if (file) {
       const reader = new FileReader();
       reader.onload = function (e) {
-        // REMOVED: saveCurrentImageToHistory(); // Save current image before loading new one
         $('#uploadedImage').attr('src', e.target.result).removeClass('d-none');
         $('#uploadTrigger').addClass('d-none');
         $('.card:has(#uploadTrigger)').addClass('d-none');
         $('#exampleContainer').addClass('d-none');
         $('#workingOverlay').removeClass('d-none');
         $('#imageTools').removeClass('d-none');
-        fetchPresign();
+        
+        // Wait for image to load before proceeding
+        $('#uploadedImage').on('load', function() {
+          fetchPresign();
+        });
+        
+        // Fallback if load event doesn't fire
+        setTimeout(() => {
+          if ($('#uploadedImage').attr('src')) {
+            fetchPresign();
+          }
+        }, 1000);
       };
       reader.readAsDataURL(file);
     }
@@ -380,7 +390,6 @@ $(document).ready(function () {
     if (file && file.type.startsWith('image/')) {
       const reader = new FileReader();
       reader.onload = function (e) {
-        // REMOVED: saveCurrentImageToHistory(); // Save current image before loading new one
         $('#uploadedImage').attr('src', e.target.result).removeClass('d-none');
         $('#uploadTrigger').addClass('d-none');
         $('#workingOverlay').removeClass('d-none');
@@ -403,7 +412,6 @@ $(document).ready(function () {
   // Handle selection of an example image
   $('#selectImageBtn').on('click', function () {
     if (selectedSrc) {
-      // REMOVED: saveCurrentImageToHistory(); // Save current image before loading new one
       $('#uploadedImage').attr('src', selectedSrc).removeClass('d-none');
       $('#uploadTrigger').addClass('d-none');
       $('.card:has(#uploadTrigger)').addClass('d-none');
@@ -429,20 +437,26 @@ $(document).ready(function () {
  * and registering a run. Triggers polling for run status.
  */
 function fetchPresign() {
-  $('#debugStatus').text('Requesting ID...');
-  logWorkingMessage('Requesting Session ID...', 'text-white');
+  try {
+    $('#debugStatus').text('Requesting ID...');
+    logWorkingMessage('Requesting Session ID...', 'text-white');
 
-  // Save the current image to history immediately when backend processing starts
-  saveCurrentImageToHistory();
+    // Fix: Call saveCurrentImageToHistory here
+    saveCurrentImageToHistory();
 
-  fetch(`${API_BASE_URL}/presign`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ fileName: 'selected.jpg' })
-  })
-    .then(res => res.json())
+    fetch(`${API_BASE_URL}/presign`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ fileName: 'selected.jpg' })
+    })
+    .then(res => {
+      if (!res.ok) {
+        throw new Error(`Presign failed: ${res.status}`);
+      }
+      return res.json();
+    })
     .then(data => {
       runId = data.runId;
       imageKey = data.imageKey;
@@ -471,10 +485,15 @@ function fetchPresign() {
         .then(res => {
           if (res.status === 204) {
             logWorkingMessage('Image uploaded successfully (204 No Content)', 'text-white');
-          } else {
+          } else if (res.ok) {
+            // Only try to parse JSON if the response is successful and not 204
             return res.json().then(() => {
               logWorkingMessage('Image uploaded successfully', 'text-white');
             });
+          } else {
+            // Handle error responses
+            logWorkingMessage(`Upload failed with status: ${res.status}`, 'text-danger');
+            throw new Error(`Upload failed: ${res.status}`);
           }
         })
         .then(() => {
@@ -508,14 +527,28 @@ function fetchPresign() {
         .then(res => {
            // Don't parse empty 202 response as JSON
            if (res.status === 202) {
-             return {};
+             // For 202 status, return an object with status to indicate acceptance
+             return { status: 'accepted' };
            }
            return res.json();
          })
          .then(response => {
           logWorkingMessage('Run registered successfully', 'text-white');
           $('#debugStatus').text('Run submitted');
-          pollRunStatus(runId);
+          
+          // If we got sentences directly (stub mode), display them
+          if (response.sentences && response.sentences.length > 0) {
+            logWorkingMessage('Stub mode: displaying sentences directly', 'text-white');
+            display_sentences(response);
+            $('#workingOverlay').addClass('d-none');
+          } else if (response.status === 'accepted') {
+            // Real ML mode: poll for results
+            logWorkingMessage('Run accepted, starting to poll for results...', 'text-white');
+            pollRunStatus(runId);
+          } else {
+            // Fallback: poll anyway
+            pollRunStatus(runId);
+          }
          })
         .catch(err => {
           console.error('Upload or /runs error:', err);
@@ -529,7 +562,14 @@ function fetchPresign() {
       console.error('Presign error:', err);
       $('#debugStatus').text('Error fetching ID');
       logWorkingMessage('Error fetching ID', 'text-danger');
+      // Fix: Show error to user and allow retry
+      $('#workingOverlay').addClass('d-none');
+      $('#uploadTrigger').removeClass('d-none');
     });
+  } catch (err) {
+    console.error('Error in fetchPresign:', err);
+    logWorkingMessage('Error in fetchPresign: ' + err.message, 'text-danger');
+  }
 }
 
 /**
@@ -538,11 +578,21 @@ function fetchPresign() {
  * @param {string} runId - The run/session ID to poll.
  */
 function pollRunStatus(runId) {
+  if (!runId) {
+    console.error('pollRunStatus called with invalid runId:', runId);
+    return;
+  }
+  
   logWorkingMessage('Polling run status...', 'text-white');
 
   const intervalId = setInterval(() => {
     fetch(`${API_BASE_URL}/runs/${runId}`)
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`Status check failed: ${res.status}`);
+        }
+        return res.json();
+      })
       .then(data => {
         $('#debugStatus').text(`Status: ${data.status}`);
         logWorkingMessage(`Status: ${data.status}`, 'text-white');
@@ -562,6 +612,7 @@ function pollRunStatus(runId) {
               .then(res => res.json())
               .then(output => {
                 logWorkingMessage('Outputs received', 'text-white');
+                console.log('Raw output data:', output); // Debug logging
                 display_sentences(output);
                 $('#workingOverlay').addClass('d-none');
               })
@@ -591,8 +642,10 @@ function pollRunStatus(runId) {
       })
       .catch(err => {
         console.error('Polling error:', err);
-        logWorkingMessage('Error polling status', 'text-danger');
+        logWorkingMessage('Error polling status: ' + err.message, 'text-danger');
         clearInterval(intervalId);
+        // Fix: Show error to user
+        $('#workingOverlay').addClass('d-none');
       });
   }, 1000);
 }
@@ -603,6 +656,11 @@ function pollRunStatus(runId) {
  * @returns {string}
  */
 function escapeHTML(str) {
+  // Defensive: ensure str is a string
+  if (typeof str !== 'string') {
+    console.warn('escapeHTML called with non-string:', str);
+    return String(str || '');
+  }
   return str.replace(/[&<>'"]/g, tag => (
     {'&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'}[tag]
   ));
@@ -613,46 +671,71 @@ function escapeHTML(str) {
  * @param {Array|Object} data - Array of sentence objects or {sentences:[…]}
  */
 function display_sentences(data) {
-  // normalise payload
-  if (!Array.isArray(data)) {
-    data = (data && Array.isArray(data.sentences)) ? data.sentences : [];
-  }
-  if (!data.length) {                       // nothing to show ⇒ just hide overlay
+  try {
+    console.log('display_sentences called with:', data); // Debug logging
+    
+    // Validate input
+    if (!data) {
+      console.warn('display_sentences called with null/undefined data');
+      $('#workingOverlay').addClass('d-none');
+      return;
+    }
+    
+    // normalise payload
+    if (!Array.isArray(data)) {
+      data = (data && Array.isArray(data.sentences)) ? data.sentences : [];
+    }
+    console.log('Normalized data:', data); // Debug logging
+    
+    if (!data.length) {                       // nothing to show ⇒ just hide overlay
+      $('#workingOverlay').addClass('d-none');
+      return;
+    }
+
+    // Show the sentences panel
+    $('.col-md-3').removeClass('d-none');
+    $('#sentenceList').empty();
+
+    /* ---------- sentence list construction ---------- */
+    data.forEach((item, index) => {
+      console.log(`Processing item ${index}:`, item); // Debug logging
+      
+      // Validate required fields
+      if (!item.english_original || typeof item.english_original !== 'string') {
+        console.warn(`Item ${index} has invalid english_original:`, item.english_original);
+        return; // Skip this item
+      }
+      
+      const li = $(`
+        <li class="list-group-item sentence-item mb-1"
+            data-work="${item.work || 'unknown'}"
+            data-sentence="${escapeHTML(item.english_original)}">
+          <div class="d-flex align-items-center">
+            <span class="flex-grow-1">${escapeHTML(item.english_original)}</span>
+            <button class="btn btn-sm btn-outline-dark ms-2 heatmap-btn"
+                    title="View heatmap"
+                    data-sentence="${escapeHTML(item.english_original)}">
+              <i class="bi bi-thermometer-half"></i>
+            </button>
+          </div>
+        </li>
+      `);
+      li.find('span').on('click', function () {
+        lookupDOI(li.data('work'), li.data('sentence'));
+      });
+      li.find('.heatmap-btn').on('click', function(e) {
+        e.stopPropagation();
+        requestHeatmap($(this).data('sentence'));
+      });
+      $('#sentenceList').append(li);
+    });
+    showBottomCards();
+    adjustMainWidth();
+  } catch (err) {
+    console.error('Error in display_sentences:', err);
+    logWorkingMessage('Error displaying sentences: ' + err.message, 'text-danger');
     $('#workingOverlay').addClass('d-none');
-    return;
   }
-
-  // Show the sentences panel
-  $('.col-md-3').removeClass('d-none');
-  $('#sentenceList').empty();
-
-  /* ---------- sentence list construction ---------- */
-  data.forEach(item => {
-    const li = $(`
-      <li class="list-group-item sentence-item mb-1"
-          data-work="${item.work}"
-          data-sentence="${escapeHTML(item.english_original)}">
-        <div class="d-flex align-items-center">
-          <span class="flex-grow-1">${escapeHTML(item.english_original)}</span>
-          <button class="btn btn-sm btn-outline-dark ms-2 heatmap-btn"
-                  title="View heatmap"
-                  data-sentence="${escapeHTML(item.english_original)}">
-            <i class="bi bi-thermometer-half"></i>
-          </button>
-        </div>
-      </li>
-    `);
-    li.find('span').on('click', function () {
-      lookupDOI(li.data('work'), li.data('sentence'));
-    });
-    li.find('.heatmap-btn').on('click', function(e) {
-      e.stopPropagation();
-      requestHeatmap($(this).data('sentence'));
-    });
-    $('#sentenceList').append(li);
-  });
-  showBottomCards();
-  adjustMainWidth();
 }
 
 // helper runs whenever the right-hand column is shown/hidden

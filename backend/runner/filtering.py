@@ -2,44 +2,22 @@
 Filtering logic for sentence selection based on topics and creators.
 """
 
-import json
-from pathlib import Path
 from typing import Any, Dict, List, Set
 
-# Load data files
-ROOT = Path(__file__).resolve().parents[2]
-DATA_DIR = ROOT / "data" / "json_info"
+# Import data from config (loaded from HF datasets)
+from .config import sentences, works, creators, topics, topic_names
 
-# Load all necessary data
-with open(DATA_DIR / "sentences.json", "r", encoding="utf-8") as f:
-    SENTENCES = json.load(f)
-
-with open(DATA_DIR / "works.json", "r", encoding="utf-8") as f:
-    WORKS = json.load(f)
-
-with open(DATA_DIR / "topics.json", "r", encoding="utf-8") as f:
-    TOPICS = json.load(f)
-
-# Load creators mapping
-with open(DATA_DIR / "creators.json", "r", encoding="utf-8") as f:
-    CREATORS_MAP = json.load(f)
-
+# Data is now loaded from Hugging Face datasets in config.py
+# No need to load from local files anymore
 
 def get_filtered_sentence_ids(
     filter_topics: List[str] = None, filter_creators: List[str] = None
 ) -> Set[str]:
     """
     Get the set of sentence IDs that match the given filters.
-
-    Args:
-        filter_topics: List of topic codes to filter by (e.g., ["C2778983918", ...])
-        filter_creators: List of creator names to filter by
-
-    Returns:
-        Set of sentence IDs that match all filters
     """
-    # Start with all sentence IDs
-    valid_sentence_ids = set(SENTENCES.keys())
+    # Start with all sentence IDs from the sentences dictionary
+    valid_sentence_ids = set(sentences.keys())
 
     # If no filters, return all sentences
     if not filter_topics and not filter_creators:
@@ -50,24 +28,24 @@ def get_filtered_sentence_ids(
 
     # Apply topic filter
     if filter_topics:
-        # Using topics.json (topic -> works mapping)
+        # Using topics dictionary (topic -> works mapping)
         # For each selected topic, get all works that have it
         for topic_id in filter_topics:
-            if topic_id in TOPICS:
+            if topic_id in topics:
                 # Add all works that have this topic
-                valid_work_ids.update(TOPICS[topic_id])
+                valid_work_ids.update(topics[topic_id])
     else:
         # If no topic filter, all works are valid so far
-        valid_work_ids = set(WORKS.keys())
+        valid_work_ids = set(works.keys())
 
     # Apply creator filter
     if filter_creators:
-        # Direct lookup in creators.json (more efficient)
+        # Direct lookup in creators dictionary (more efficient)
         creator_work_ids = set()
         for creator_name in filter_creators:
-            if creator_name in CREATORS_MAP:
-                # Get all works by this creator directly from creators.json
-                creator_work_ids.update(CREATORS_MAP[creator_name])
+            if creator_name in creators:
+                # Get all works by this creator directly from creators dictionary
+                creator_work_ids.update(creators[creator_name])
 
         # Intersect with existing valid_work_ids if topics were filtered
         if filter_topics:
@@ -95,7 +73,7 @@ def apply_filters_to_results(
     Filter a list of results based on topics and creators.
 
     Args:
-        results: List of result dictionaries with 'sentence_id' field
+        results: List of result dictionaries with 'id' field
         filter_topics: List of topic codes to filter by
         filter_creators: List of creator names to filter by
 
@@ -109,7 +87,7 @@ def apply_filters_to_results(
 
     # Filter results to only include valid sentences
     filtered_results = [
-        result for result in results if result.get("sentence_id") in valid_sentence_ids
+        result for result in results if result.get("id") in valid_sentence_ids
     ]
 
     # Re-rank the filtered results

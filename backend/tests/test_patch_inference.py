@@ -35,7 +35,7 @@ def print_results(results: List[Dict[str, Any]], title: str, max_display: int = 
         print(f"\n{i}. {result['english_original'][:100]}...")
         print(f"   Score: {result['score']:.4f}")
         print(f"   Work: {result['work']}")
-        print(f"   ID: {result['sentence_id']}")
+        print(f"   ID: {result['id']}")
 
     if len(results) > max_display:
         print(f"\n... and {len(results) - max_display} more results")
@@ -151,7 +151,7 @@ def main():
 
     # Get the top sentence from whole image
     if whole_image_results:
-        top_sentence_id = whole_image_results[0]["sentence_id"]
+        top_sentence_id = whole_image_results[0]["id"]
         top_sentence_text = whole_image_results[0]["english_original"]
 
         print(f"Top whole-image sentence: {top_sentence_text[:80]}...")
@@ -175,7 +175,7 @@ def main():
             region_score = None
             region_rank = None
             for rank, result in enumerate(region_results, 1):
-                if result["sentence_id"] == top_sentence_id:
+                if result["id"] == top_sentence_id:
                     region_score = result["score"]
                     region_rank = rank
                     break

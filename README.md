@@ -1,361 +1,259 @@
-# ArteFact App
+---
+title: ArteFact
+emoji: 🖼️
+colorFrom: blue
+colorTo: purple
+sdk: docker
+pinned: false
+short_description: Discover insights into the art-history corpus with visual AI
+# Optional metadata (shows on the card; not required to run)
+models:
+  - openai/clip-vit-base-patch32
+  - samwaugh/paintingclip-lora
+datasets:
+  - samwaugh/artefact-embeddings
+  - samwaugh/artefact-json
+  - samwaugh/artefact-markdown
+---
 
-A web-based application for analysing artwork images using PaintingCLIP, a fine-tuned CLIP model specialised for art-historical content. The system matches uploaded artwork images against a corpus of pre-computed sentence embeddings from art history texts, returning the most semantically similar passages.
+# ArteFact — Art History AI Research Platform
 
-## Overview
+**ArteFact** is a sophisticated web application that bridges visual art and textual scholarship using AI. By automatically linking visual elements in artworks to scholarly descriptions, it empowers researchers, students, and art enthusiasts to discover new connections and understand artworks in their broader academic context.
 
-This application consists of:
-- A Flask backend API that handles image uploads and runs ML inference
-- A vanilla JavaScript frontend for image upload and result display
-- A PaintingCLIP model for specialized art analysis
-- Pre-computed embeddings from art-historical texts
-- A reproducible **ArtContext** research pipeline (see `pipeline/`) that
-  harvests texts, converts PDFs to Markdown, extracts sentences and
-  generates CLIP / PaintingCLIP embeddings.
+##  What ArteFact Does
 
-## Prerequisites
+- **Upload or select artwork images** and find scholarly passages that describe similar visual elements
+- **Search by region** - crop specific areas of paintings to find text about those visual details  
+- **Filter results** by art historical topics or specific creators
+- **Switch AI models** between CLIP and PaintingCLIP for different analysis approaches
+- **Access scholarly sources** with full citations, DOI links, and BibTeX references
+- **Generate heatmaps** showing which image regions contribute to text similarity using Grad-ECLIP
+- **Interactive grid analysis** - click on 7×7 grid cells to analyze specific image regions
 
-- Python 3.8+
-- pip
-- A modern web browser
+## 🏗️ Architecture Overview
 
-## Installation
+### **Backend: Flask API with ML Pipeline**
+- **Flask server** (`backend/runner/app.py`) serving the SPA from `frontend/`
+- **ML Models**: CLIP base model + PaintingCLIP LoRA fine-tuned adapter
+- **Inference Engine**: Region-aware analysis with 7×7 grid overlay and patch-level attention
+- **Background Processing**: Thread-based task queue for ML inference with progress tracking
+- **Caching System**: Intelligent caching of model components and embeddings for performance
 
-### 1. Clone the Repository
+### **Frontend: Interactive Web Application**
+- **Single-page application** with responsive Bootstrap design
+- **Image Tools**: Upload, crop, edit, undo, and analyze specific regions
+- **Grid Analysis**: Click-to-analyze 7×7 grid cells for spatial understanding
+- **Model Selection**: Dropdown to switch between CLIP and PaintingCLIP models
+- **Academic Integration**: Full citation management, source verification, and BibTeX export
+- **Real-time Feedback**: Progress indicators and status updates during processing
 
+### **Data Architecture: Distributed Hugging Face Datasets**
+- **`artefact-embeddings`**: Pre-computed sentence embeddings (12.8GB total)
+  - `clip_embeddings.safetensors` (6.39GB) - CLIP model embeddings for 3.1M sentences
+  - `paintingclip_embeddings.safetensors` (6.39GB) - PaintingCLIP embeddings for 3.1M sentences
+  - `clip_sentence_ids.json` & `paintingclip_sentence_ids.json` - Sentence ID mappings
+- **`artefact-json`**: Metadata and structured data
+  - `sentences.json` - 3.1M sentence metadata with work associations
+  - `works.json` - 7,200 work records with DOI and citation information
+  - `creators.json` - Artist/creator mappings for filtering
+  - `topics.json` - Topic classifications for content filtering
+  - `topic_names.json` - Human-readable topic names
+- **`artefact-markdown`**: Source documents and images (239,996 files)
+  - 7,200 work directories with markdown files and associated images
+  - Organized by work ID for efficient retrieval and context display
+- **Local Models**: PaintingCLIP LoRA weights in `data/models/PaintingCLIP/`
+
+## 🚀 Getting Started
+
+### **Prerequisites**
+- Python 3.9+
+- Docker (for containerized deployment)
+- Access to Hugging Face datasets (public access)
+
+### **Local Development**
 ```bash
-git clone <repository-url>
+# Clone the repository
+git clone https://github.com/sammwaughh/artefact-context.git
 cd artefact-context
+
+# Install backend dependencies
+cd backend
+pip install -e .
+
+# Set environment variables
+export STUB_MODE=1  # Use stub responses for development
+export DATA_ROOT=./data
+
+# Run the Flask development server
+python -m backend.runner.app
 ```
 
-### 2. Set Up Python Environment
-
+### **Hugging Face Spaces Deployment**
 ```bash
-# Create a virtual environment
-python -m venv .venv
+# Add HF Spaces remote
+git remote add hf https://huggingface.co/spaces/samwaugh/ArteFact
 
-# Activate the virtual environment
-# On macOS/Linux:
-source .venv/bin/activate
-# On Windows:
-# .venv\Scripts\activate
+# Deploy to Space
+git push hf main:main
 
-# Install dependencies
-pip install -e backend/          # installs from backend/pyproject.toml
+# Force rebuild if needed (use HF Space settings → Factory Reset)
 ```
 
-### 3. Verify Model Files
+## ⚙️ Configuration
 
-Ensure you have the following directories with their required files:
-- PaintingCLIP - LoRA adapter files for the fine-tuned model
-- PaintingCLIP_Embeddings - Pre-computed sentence embeddings (`.pt` files)
+### **Environment Variables**
+- `STUB_MODE`: Set to `1` for stub responses, `0` for real ML inference
+- `DATA_ROOT`: Data directory path (default: `/data` for HF Spaces)
+- `PORT`: Server port (set by Hugging Face Spaces)
+- `MAX_WORKERS`: Thread pool size for ML inference (default: 2)
+- `ARTEFACT_JSON_DATASET`: HF dataset name for JSON metadata (default: `samwaugh/artefact-json`)
+- `ARTEFACT_EMBEDDINGS_DATASET`: HF dataset name for embeddings (default: `samwaugh/artefact-embeddings`)
+- `ARTEFACT_MARKDOWN_DATASET`: HF dataset name for markdown files (default: `samwaugh/artefact-markdown`)
 
-## Running the Application
+### **Data Sources**
+The application automatically connects to distributed Hugging Face datasets:
+- **Embeddings**: `samwaugh/artefact-embeddings` for fast similarity search using safetensors format
+- **Metadata**: `samwaugh/artefact-json` for sentence, work, and topic information
+- **Documents**: `samwaugh/artefact-markdown` for source documents and context
+- **Models**: Local `data/models/` directory for ML model weights with fallback to base CLIP
 
-### Quick start (two terminals)
+## 📊 Data Processing Pipeline
 
-1. **Backend**
+### **ArtContext Research Pipeline**
+ArteFact processes a massive corpus of art historical texts:
 
-```bash
-# First time only
-chmod +x backend/run_backend.sh
-./backend/run_backend.sh          # → http://localhost:8000
+- **Scale**: 3.1 million sentences from scholarly articles across 7,200 works
+- **Processing**: Executed on Durham University's Bede HPC cluster
+- **GPU**: NVIDIA H100 with 32GB memory
+- **Processing Time**: ~12 minutes for full corpus embedding generation
+- **Output**: Structured embeddings and metadata for real-time analysis
+
+### **Data Organization**
+```
+data/
+├── models/
+│   └── PaintingClip/          # LoRA fine-tuned weights
+│       ├── adapter_config.json
+│       ├── adapter_model.safetensors
+│       └── README.md
+└── artifacts/                 # Uploaded images
+└── outputs/                   # Inference results
+
+# Data hosted on Hugging Face Hub:
+# - samwaugh/artefact-embeddings: 12.8GB embeddings in safetensors format
+# - samwaugh/artefact-json: 5 JSON metadata files
+# - samwaugh/artefact-markdown: 239,996 files across 7,200 work directories
 ```
 
-2. **Frontend**
-
-```bash
-# First time only
-chmod +x frontend/run_frontend.sh
-./frontend/run_frontend.sh        # → http://localhost:8080
-```
-
-Then open `http://localhost:8080` in your browser.
-
-### Manual start
-
-```bash
-# Backend
-python -m backend.runner.app      # or: python backend/runner/app.py
-# Frontend (simple HTTP server)
-cd frontend && python -m http.server 8080
-```
-
-## Usage
-
-1. **Choose or Upload an Artwork**
-
-   • Drag & drop an image, click “Upload Image”, or pick one of the example
-   thumbnails.  
-   • The chosen image appears in the centre panel and the working overlay
-   pops up.
-
-2. **Select Model (Optional)**
-
-   Use the “Model: …” dropdown in the navbar to switch between *CLIP* and
-   *PaintingCLIP* before you run the query.
-
-3. **Apply Filters (Optional)**
-
-   • Click topic pills to restrict retrieval to specific subject codes.  
-   • Search for creators in the right-hand panel or in the header search
-   box and add them as tags.  
-   • Selected topics/creators are shown under the image.
-
-4. **Process the Image**
-
-   The backend receives the upload, computes the embedding and returns the
-   most similar passages. Progress is streamed in the debug overlay; the
-   sidebar stays hidden until results arrive.
-
-5. **Explore the Results**
-
-   • Top 25 sentences appear in the left sidebar.  
-   • Click the magnifying-glass icon to fetch full metadata / DOI;
-     a banner with BibTeX and an iframe preview opens at the top.
-
-6. **Region-Specific Search (Optional)**
-
-   • Open *Settings → View Grid* to overlay a 7 × 7 grid.  
-   • Click any cell to rerank the corpus for that region only; sentences
-     refresh instantly and the clicked area flashes briefly.
-
-7. **Image Tools**
-
-   • **Crop** – draw a rectangle to analyze a sub-region.  
-   • **Undo** – revert to the previous image state.  
-   • **Rerun** – re-execute the pipeline with the current image (useful
-     after changing model or filters).  
-   • **Heatmap** – generate a Grad-ECLIP saliency map that shows which
-     areas of the painting most influenced the top-ranked sentence
-     (click the thermometer icon next to any sentence).  
-   • The **Image History** strip now adds every new image
-     automatically as soon as backend processing begins and keeps the
-     most recent thumbnail on the left. History is preserved when you
-     refresh the UI via the logo.
-
-
-8. **Debug Panel**
-
-   Click the circled “i” button to show/hide a real-time log of network
-   requests, run-IDs and backend status.
-
-Uploaded images are stored in `data/artifacts/`, JSON results in
-`data/outputs/`; both folders are auto-created at runtime.
-
-## Project Structure
-
-```
-artefact-context/
-├── backend/
-│   ├── runner/                 # Flask backend source
-│   │   ├── app.py              # API server
-│   │   ├── tasks.py            # Background job runner
-│   │   ├── inference.py        # PaintingCLIP inference pipeline
-│   │   └── …                   # heatmap.py, patch_inference.py, …
-│   ├── run_backend.sh          # Helper script → starts the backend
-│   └── tests/                  # Unit tests
-├── data/
-│   ├── artifacts/              # Uploaded images  (created at runtime)
-│   ├── outputs/                # JSON results     (created at runtime)
-│   ├── embeddings/
-│   │   ├── CLIP_Embeddings/
-│   │   └── PaintingCLIP_Embeddings/
-│   ├── json_info/              # Metadata JSONs: sentences.json, works.json, …
-│   └── models/
-│       └── PaintingCLIP/       # LoRA adapter files
-├── frontend/
-│   ├── index.html              # Single-page UI
-│   ├── js/artefact-context.js  # Front-end logic
-│   ├── css/artefact-context.css
-│   └── run_frontend.sh         # Simple static-server wrapper
-├── pipeline/                   # ArtContext data-collection pipeline
-│   ├── *.py                    # Batch scripts (Wikidata, OpenAlex, …)
-│   ├── README.md               # Detailed pipeline guide
-│   └── slurm/                  # HPC job scripts (optional)
-└── README.md
-```
-
-## Data File Structures
-
-### sentences.json
-Maps sentence IDs to their metadata. Currently contains minimal metadata:
-
-```json
-{
-  "W1982215463_s0001": {
-    "English Original": "The actual sentence text...",
-    "Has PaintingCLIP Embedding": true
-  }
-}
-```
-
-**Note**: The inference pipeline adds the "English Original" field dynamically from other sources if not present in this file.
-
-### works.json
-Contains rich metadata for every source work (book, article, catalogue …).
-
-```json
-{
-  "W4206160935": {
-    "Author_Name": "John Guille Millais",
-    "Work_Title": "The Life and Letters of Sir John Everett Millais",
-    "Year": "2012",
-    "Link": "https://archive.org/download/lifelettersofsir01milliala/lifelettersofsir01milliala_bw.pdf",
-    "DOI": "https://doi.org/10.1017/cbo9781139343862",
-    "Number of Sentences": 4874,
-    "ImageIDs": [],
-    "TopicIDs": [
-      "C2778983918", "C520712124", "C205783811", "C554144382",
-      "C142362112", "C52119013", "C2780586970", "C543847140",
-      "C95457728",  "C153349607", "C199539241", "C138885662",
-      "C27206212",  "C17744445"
-    ],
-    "Relevance": 3.7782803,
-    "BibTeX": "@misc{W4206160935,\\n  author = \"John Guille Millais\",\\n  title = \"{The Life and Letters of Sir John Everett Millais}\",\\n  year = \"2012\",\\n  publisher = \"{Cambridge University Press}\",\\n  doi = \"{10.1017/cbo9781139343862}\",\\n  url = \"{https://doi.org/10.1017/cbo9781139343862}\",\\n}"
-  }
-}
-```
-
-Key fields  
-• `Author_Name`, `Work_Title`, `Year` – human-readable bibliographic data  
-• `DOI` / `Link` – external identifiers for look-ups and previews  
-• `Number of Sentences` – total sentences extracted for the corpus  
-• `TopicIDs` – subject codes that reference this work  
-• `ImageIDs` – images associated with the work (can be empty)  
-• `Relevance` – pre-computed relevance score used for ranking  
-• `BibTeX` – ready-to-copy
-
-### topics.json
-Maps topic IDs to lists of work IDs that cover that topic:
-
-```json
-{
-  "C2778983918": ["W4206160935"],
-  "C520712124": ["W4206160935", "W1234567890"]
-}
-```
-
-### topic_names.json
-Human-readable names for topic IDs:
-
-```json
-{
-  "C52119013": "Art History",
-  "C204034006": "Art Criticism",
-  "C501303744": "Iconography"
-}
-```
-
-### creators.json
-Maps artist/creator names to their associated works:
-
-```json
-{
-  "arthur_hughes": ["W4206160935", "W2029124454", ...],
-  "francesco_hayez": ["W1982215463", "W4388661114", ...],
-  "george_stubbs": ["W2020798572", "W2021094421", ...]
-}
-```
-
-## API Endpoints
-
-- `POST /presign` - Request upload credentials
-- `POST /upload/<runId>` - Upload image file
-- `POST /runs` - Start inference job
-- `GET /runs/<runId>` - Check job status
-- `GET /outputs/<filename>` - Retrieve inference results
-- `GET /work/<id>` - Get work metadata for DOI lookup
-
-## Key Components
-
-### backend/runner
-
-| File | Purpose |
-|------|---------|
-| **app.py** | Flask API gateway. Handles image upload, run creation, status queries, file serving and auxiliary routes (topics, creators, heatmap, etc.). |
-| **tasks.py** | Lightweight job runner executed via `ThreadPoolExecutor`. Pulls images from `data/artifacts`, calls `inference.run_inference`, stores JSON to `data/outputs`, and updates in-memory run status. |
-| **inference.py** | Core CLIP / PaintingCLIP retrieval pipeline. Loads the model (with optional LoRA adapter), reads pre-computed embeddings, performs similarity search and optional Grad-ECLIP heat-map generation. |
-| **patch_inference.py** | Region-aware extension that converts ViT patch tokens into a 2-D grid and re-ranks sentences for a user-clicked cell (7 × 7 by default). |
-| **heatmap.py** | Implements Grad-ECLIP for visualising which image regions contribute most to a given sentence match; returns PNG overlays. |
-| **filtering.py** | Utility layer that filters sentences by selected topic IDs or creator names using the metadata in `data/json_info/*.json`. |
-| **\_\_init\_\_.py** | Marks the folder as a Python package; no runtime logic. |
-
-### frontend
-
-*`frontend/js/artefact-context.js`* – jQuery/Bootstrap SPA that handles image input, filter selection, grid overlay, cropping/undo, polling, and result rendering.
-
-### Data folders
-
-* `data/artifacts/` – uploaded images  
-* `data/outputs/` – JSON results  
-* `data/embeddings/` – sentence vectors for CLIP / PaintingCLIP  
-* `data/json_info/` – metadata JSONs (`sentences.json`, `works.json`, …)  
-* `data/models/PaintingCLIP/` – LoRA adapter weights
-
-## Troubleshooting
-
-1. **Port Already in Use**: If ports 8000 or 8080 are occupied, modify the port numbers in:
-   - app.py (line with `app.run()`)
-   - `run.sh` 
-   - artefact-context.js (API_BASE_URL)
-
-2. **Missing Dependencies**: Ensure all packages are installed:
-```bash
-pip install -e backend/
-```
-
-3. **Model Loading Errors**: Verify that:
-   - PaintingCLIP directory contains LoRA adapter files
-   - PaintingCLIP_Embeddings contains `.pt` files
-
-4. **CORS Issues**: The backend is configured to accept requests from any origin. For production, update CORS settings in app.py.
-
-## Development Notes
-
-- The system uses an in-memory store for job tracking (resets on server restart)
-- Uploaded images are saved to **data/artifacts**
-- Inference results are saved to **data/outputs**
-- The frontend uses jQuery and Bootstrap for UI components
-- Debug panel available via the (i) button in the bottom-right corner
-
-## Research Pipeline (ArtContext)
-
-The `pipeline/` folder contains a standalone workflow for building the
-text corpus that powers the viewer:
-
-1. **Wikidata Harvest** – scrape painter metadata  
-2. **OpenAlex Queries** – fetch scholarly works per painter  
-3. **PDF Download → Markdown** – convert works for NLP processing  
-4. **Sentence Extraction** – write sentences to `sentences.json`  
-5. **Embedding Generation** – CLIP & PaintingCLIP vectors  
-6. **Topic/Creator Indexes** – build `topics.json`, `creators.json`
-
-Run the stages locally:
-
-```bash
-cd pipeline
-python batch_harvest_wikidata.py
-python batch_query_open_alex.py
-python batch_download_works.py
-python batch_pdf_to_markdown.py
-python batch_markdown_file_to_english_sentences.py
-python batch_embed_sentences.py
-```
-
-For large-scale processing an HPC version is provided (see
-`pipeline/Using_Bede.md`) with Slurm job files in `pipeline/slurm/`.
-
-Key pipeline outputs (consumed by the Flask app):
-
-* `data/json_info/sentences.json` – sentences + flags  
-* `data/json_info/works.json`     – work-level metadata  
-* `data/json_info/topics.json`    – topic → work index  
-* `data/embeddings/{CLIP_,PaintingCLIP_}Embeddings/` – `.pt` files
-
-## Acknowledgements
-
-This work made use of the facilities of the N8 Centre of Excellence in Computationally Intensive Research (N8 CIR) provided and funded by the N8 research partnership and EPSRC (Grant No. EP/T022167/1). The Centre is co-ordinated by the Universities of Durham, Manchester and York.  
-I also gratefully acknowledge the supervision and guidance of **Dr Stuart James (Department of Computer Science, Durham University).**
-
-_Note: In line with N8 CIR policy, details of any publication or other public output arising from this project will be sent to **enquiries@n8cir.org.uk** on release._
+## 🧠 AI Models & Features
+
+### **Core Models**
+- **CLIP**: OpenAI's CLIP-ViT-B/32 for general image-text understanding
+- **PaintingCLIP**: Fine-tuned version specialized for art historical content using LoRA adapters
+- **Model Switching**: Users can choose between models for different analysis types
+- **Fallback System**: Graceful degradation to base CLIP if LoRA adapter is unavailable
+
+### **Advanced AI Features**
+- **Region-Aware Analysis**: 7×7 grid overlay for spatial understanding of image regions
+- **Grad-ECLIP Heatmaps**: Visual explanations of AI decision-making with attention visualization
+- **Smart Filtering**: Topic and creator-based result filtering with real-time updates
+- **Patch-Level Attention**: ViT patch embeddings for detailed analysis of image components
+- **Batch Processing**: Efficient processing of large embedding datasets with memory optimization
+- **Direct File Loading**: Fast loading of consolidated safetensors files for optimal performance
+
+## 🎨 User Interface Features
+
+### **Image Analysis Tools**
+- **Drag & Drop Upload**: Easy image input with preview and validation
+- **Interactive Grid**: Click-to-analyze specific image regions with visual feedback
+- **Crop & Edit**: Built-in image manipulation tools with undo functionality
+- **Image History**: Track and compare different analyses with thumbnail navigation
+- **Example Gallery**: Pre-loaded historical artworks for quick testing
+
+### **Academic Integration**
+- **Citation Management**: One-click BibTeX copying with formatted output
+- **Source Verification**: Direct links to scholarly articles and DOI resolution
+- **Context Preservation**: Full paragraph context for matched sentences
+- **Work Exploration**: Browse related images and metadata from the same scholarly work
+- **Modal Documentation**: Detailed work information with embedded PDF previews
+
+### **User Experience**
+- **Real-time Progress**: Loading indicators and status updates during processing
+- **Responsive Design**: Mobile-friendly interface with Bootstrap components
+- **Error Handling**: Graceful error messages and recovery options
+- **Performance Optimization**: Caching and efficient data loading for fast responses
+
+## 🔬 Research & Development
+
+### **Technical Innovations**
+- **Efficient Embedding Storage**: Safetensors format for fast loading and memory efficiency
+- **Memory-Optimized Inference**: Intelligent caching and batch processing
+- **Real-Time Analysis**: Sub-second response times for similarity search
+- **Scalable Architecture**: Designed for production deployment with distributed data
+- **Distributed Data**: Hugging Face datasets for scalable data management and collaboration
+- **Robust Error Handling**: Fallback mechanisms and graceful degradation
+
+### **Academic Applications**
+- **Art Historical Research**: Discover connections across large scholarly corpora
+- **Digital Humanities**: Computational analysis of visual-textual relationships
+- **Educational Tools**: Interactive learning for art history students and researchers
+- **Scholarly Discovery**: AI-powered literature review and citation analysis
+- **Cross-Reference Analysis**: Find related works and themes across different time periods
+
+## 🛠️ Technical Implementation
+
+### **Backend Architecture**
+- **Flask Application**: RESTful API with async task processing
+- **Thread Pool**: Background processing for ML inference tasks
+- **Caching Layer**: Intelligent caching of model components and embeddings
+- **Error Recovery**: Robust error handling with user-friendly messages
+- **Data Validation**: Input validation and sanitization for security
+
+### **Frontend Architecture**
+- **Single Page Application**: jQuery-based interactive interface
+- **Bootstrap UI**: Responsive design with modern components
+- **Real-time Updates**: WebSocket-like polling for task status
+- **State Management**: Client-side state for user interactions and preferences
+- **Accessibility**: Keyboard navigation and screen reader support
+
+## 🤝 Contributing
+
+### **Development Setup**
+1. Fork the repository
+2. Create a feature branch
+3. Install development dependencies: `pip install -e ".[dev]"`
+4. Run tests: `pytest backend/tests/`
+5. Submit a pull request
+
+### **Data Contributions**
+- **Embeddings**: Process new art historical texts and generate embeddings
+- **Models**: Improve fine-tuning and model performance
+- **Documentation**: Enhance user guides and API documentation
+- **Testing**: Add test cases for new features and edge cases
+
+## 📄 License & Acknowledgments
+
+**License**: MIT License
+
+**Created by**: [Samuel Waugh](https://www.linkedin.com/in/samuel-waugh-31903b1bb/)
+
+**Supervised by**: [Dr. Stuart James](https://stuart-james.com), Department of Computer Science, Durham University
+
+**Supported by**: [N8 Centre of Excellence in Computationally Intensive Research (N8 CIR)](https://n8cir.org.uk/themes/internships/internships-2025/)
+
+**Special Thanks**: Durham University's Bede HPC cluster for providing computational resources needed to process the large-scale art history corpus using Grace Hopper GPUs.
+
+This work made use of the facilities of the N8 Centre of Excellence in Computationally Intensive Research (N8 CIR) provided and funded by the N8 research partnership and EPSRC (Grant No. EP/T022167/1). The Centre is coordinated by the Universities of Durham, Manchester and York.
+
+## 🔗 Links
+
+- **Live Application**: [ArteFact on Hugging Face Spaces](https://huggingface.co/spaces/samwaugh/ArteFact)
+- **Source Code**: [GitHub Repository](https://github.com/sammwaughh/artefact-context)
+- **Research Paper**: [Download PDF](paper/waugh2025artcontext.pdf)
+- **Embeddings Dataset**: [artefact-embeddings on HF](https://huggingface.co/datasets/samwaugh/artefact-embeddings)
+- **JSON Dataset**: [artefact-json on HF](https://huggingface.co/datasets/samwaugh/artefact-json)
+- **Markdown Dataset**: [artefact-markdown on HF](https://huggingface.co/datasets/samwaugh/artefact-markdown)
+
+---
+
+*ArteFact represents a significant contribution to computational art history, making large-scale scholarly resources accessible through AI-powered visual analysis while maintaining academic rigor and providing transparent explanations of AI decision-making. The application leverages Hugging Face's distributed data infrastructure for scalable and collaborative research, enabling researchers worldwide to explore the connections between visual art and textual scholarship.*

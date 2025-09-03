@@ -1,0 +1,24 @@
+# Web framework and server
+flask>=3
+gunicorn>=21
+flask-cors
+
+# Hugging Face ecosystem
+huggingface_hub>=0.20
+hf_transfer>=0.1.4
+datasets>=2.0.0
+
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.30.0
+peft>=0.4.0
+
+# Computer vision and image processing
+pillow>=10.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Optional: GPU acceleration (if available)
+# torchvision>=0.15.0  # Uncomment if you need additional vision models
+
+safetensors>=0.4.0

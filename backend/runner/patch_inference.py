@@ -175,7 +175,7 @@ def rank_sentences_for_cell(
         work_id = sid.split("_")[0]
         out.append(
             {
-                "sentence_id": sid,
+                "id": sid,  # Frontend expects "id", not "sentence_id"
                 "score": float(sc),
                 "english_original": meta.get("English Original", ""),
                 "work": work_id,
